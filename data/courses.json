@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Algebra: Concepts and Connections",
+    "subject": "Mathematics",
+    "prerequisite_or_eligibility": "Successful completion of 8th Grade Math or 7th Grade Advanced Math",
+    "planning_grade_band": [9],
+    "catalog_role": "Core math sequence"
+  },
+  {
+    "name": "Geometry: Concepts and Connections",
+    "subject": "Mathematics",
+    "prerequisite_or_eligibility": "Successful completion of Algebra: Concepts and Connections",
+    "planning_grade_band": [9, 10],
+    "catalog_role": "Core math sequence"
+  },
+  {
+    "name": "Advanced Algebra: Concepts and Connections",
+    "subject": "Mathematics",
+    "prerequisite_or_eligibility": "Successful completion of Geometry: Concepts and Connections or Honors Geometry: Concepts and Connections",
+    "planning_grade_band": [10, 11],
+    "catalog_role": "Core math sequence"
+  },
+  {
+    "name": "Precalculus",
+    "subject": "Mathematics",
+    "prerequisite_or_eligibility": "Successful completion of Advanced Algebra: Concepts and Connections",
+    "planning_grade_band": [11, 12],
+    "catalog_role": "Advanced core math option"
+  },
+  {
+    "name": "AP Precalculus",
+    "subject": "Mathematics",
+    "prerequisite_or_eligibility": "Successful completion of FCS Accelerated Geometry B/Advanced Algebra: Concepts and Connections or FCS Honors Advanced Algebra: Concepts and Connections",
+    "planning_grade_band": [10, 11, 12],
+    "catalog_role": "Advanced/AP math option"
+  }
+]
