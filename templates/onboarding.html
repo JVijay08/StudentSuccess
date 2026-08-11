@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <meta name="supported-color-schemes" content="dark light">
+    <meta name="theme-color" content="#071407">
+    <title>Set Up Your Profile | StudentSuccess</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/onboarding.css') }}">
+</head>
+<body class="theme-dark">
+    <main class="onboarding-page">
+        <section class="onboarding-section">
+            <div class="onboarding-heading">
+                <p class="first-title">STUDENTSUCCESS</p>
+                <h1>Build Your Academic Starting Point</h1>
+                <p class="subheading">Add a few details about yourself to help StudentSuccess personalize future planning tools, recommendations, and workload insights. You can always update your profile later.</p>
+            </div>
+            <form class="profile-form" method="post" action="{{ url_for('profile.onboarding') }}">
+                {% if errors %}
+    <div class="form-errors" role="alert">
+        <h2>Please correct the following:</h2>
+        <ul>{% for error in errors %}
+            <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+            {% endif %}
+                <div class="form-section">
+                    <div class="form-group full-width">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first_name" maxlength="80" placeholder="Enter Your First Name" value="{{ form_data.get('first_name', '') }}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="grade-level">Current Grade Level</label>
+                        <select id="grade_level" name="grade_level" required>
+                            <option value="">Choose a grade</option>
+
+                            <option
+                                value="9"
+                                {% if form_data.get('grade_level') == '9' %}selected{% endif %}
+                            >
+                                9th Grade
+                            </option>
+
+                            <option value="10" {% if form_data.get('grade_level') == '10' %}selected{% endif %}>10th Grade</option>
+
+                            <option value="11" {% if form_data.get('grade_level') == '11' %}selected{% endif %}>11th Grade</option>
+
+                            <option value="12" {% if form_data.get('grade_level') == '12' %}selected{% endif %}>12th Grade</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="graduation-year">Graduation Year</label>
+                        <input type="number" id="graduation-year" name="graduation_year" min="2026" max="2046" placeholder="Enter Your Graduation Year" value="{{ form_data.get('graduation_year', '') }}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="current-gpa">Current GPA</label>
+                        <input type="number" id="current-gpa" name="current_gpa" min="0.0" max="5.0" step="0.01" placeholder="Enter Your Current GPA" value="{{ form_data.get('current_gpa', '') }}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="target-gpa">Target GPA</label>
+                        <input type="number" id="target-gpa" name="target_gpa" min="0.0" max="5.0" step="0.01" placeholder="Enter Your Target GPA" value="{{ form_data.get('target_gpa', '') }}" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="study-hours-wk">Study Hours per Week</label>
+                        <input type="number" id="study-hours-wk" name="study_hours_per_week" min="0" max="168" step="0.5" placeholder="Enter Your Study Hours per Week" value="{{ form_data.get('study_hours_per_week', '') }}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="career-interest">Career Interest</label>
+                        <input type="text" id="career-interest" name="career_goals" maxlength="120" placeholder="Enter Your Career Interest" value="{{ form_data.get('career_interest', '') }}">
+                    </div>
+                    <div class="form-group">
+                        <label for="course-rigor-preference">Preferred Course Rigor</label>
+                        <select
+                            id="course_rigor_preference"
+                            name="course_rigor_preference"
+                        >
+                            <option value="">Choose later</option>
+
+                            <option
+                                value="Balanced"
+                                {% if form_data.get('course_rigor_preference') == 'Balanced' %}
+                                    selected
+                                {% endif %}
+                            >
+                                Balanced
+                            </option>
+
+                            <option
+                                value="Challenging"
+                                {% if form_data.get('course_rigor_preference') == 'Challenging' %}
+                                    selected
+                                {% endif %}
+                            >
+                                Challenging
+                            </option>
+
+                            <option
+                                value="Highly Challenging"
+                                {% if form_data.get('course_rigor_preference') == 'Highly Challenging' %}
+                                    selected
+                                {% endif %}
+                            >
+                                Highly Challenging
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <p>You can always update your preferences later in the settings.</p>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
