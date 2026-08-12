@@ -1,37 +1,1003 @@
 [
   {
-    "name": "Algebra: Concepts and Connections",
-    "subject": "Mathematics",
-    "prerequisite_or_eligibility": "Successful completion of 8th Grade Math or 7th Grade Advanced Math",
-    "planning_grade_band": [9],
-    "catalog_role": "Core math sequence"
+    "course_id": "MATH_ALGEBRA_CC",
+    "course_name": "Algebra: Concepts and Connections",
+    "subject": "Math",
+    "course_type": "Standard",
+    "grade_levels": [
+      9
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "8th Grade Math",
+      "7th Grade Advanced Math"
+    ],
+    "graduation_category": "Math",
+    "career_clusters": []
   },
   {
-    "name": "Geometry: Concepts and Connections",
-    "subject": "Mathematics",
-    "prerequisite_or_eligibility": "Successful completion of Algebra: Concepts and Connections",
-    "planning_grade_band": [9, 10],
-    "catalog_role": "Core math sequence"
+    "course_id": "MATH_GEOMETRY_CC",
+    "course_name": "Geometry: Concepts and Connections",
+    "subject": "Math",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "Algebra: Concepts and Connections"
+    ],
+    "graduation_category": "Math",
+    "career_clusters": []
   },
   {
-    "name": "Advanced Algebra: Concepts and Connections",
-    "subject": "Mathematics",
-    "prerequisite_or_eligibility": "Successful completion of Geometry: Concepts and Connections or Honors Geometry: Concepts and Connections",
-    "planning_grade_band": [10, 11],
-    "catalog_role": "Core math sequence"
+    "course_id": "MATH_ADVANCED_ALGEBRA_CC",
+    "course_name": "Advanced Algebra: Concepts and Connections",
+    "subject": "Math",
+    "course_type": "Standard",
+    "grade_levels": [
+      10,
+      11
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "Geometry: Concepts and Connections",
+      "Honors Geometry: Concepts and Connections"
+    ],
+    "graduation_category": "Math",
+    "career_clusters": []
   },
   {
-    "name": "Precalculus",
-    "subject": "Mathematics",
-    "prerequisite_or_eligibility": "Successful completion of Advanced Algebra: Concepts and Connections",
-    "planning_grade_band": [11, 12],
-    "catalog_role": "Advanced core math option"
+    "course_id": "MATH_PRECALCULUS",
+    "course_name": "Precalculus",
+    "subject": "Math",
+    "course_type": "Standard",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "Advanced Algebra: Concepts and Connections"
+    ],
+    "graduation_category": "Math",
+    "career_clusters": []
   },
   {
-    "name": "AP Precalculus",
-    "subject": "Mathematics",
-    "prerequisite_or_eligibility": "Successful completion of FCS Accelerated Geometry B/Advanced Algebra: Concepts and Connections or FCS Honors Advanced Algebra: Concepts and Connections",
-    "planning_grade_band": [10, 11, 12],
-    "catalog_role": "Advanced/AP math option"
+    "course_id": "MATH_AP_PRECALCULUS",
+    "course_name": "AP Precalculus",
+    "subject": "Math",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "FCS Accelerated Geometry B/Advanced Algebra: Concepts and Connections",
+      "FCS Honors Advanced Algebra: Concepts and Connections"
+    ],
+    "graduation_category": "Math",
+    "career_clusters": []
+  },
+  {
+    "course_id": "ENGLISH_AP_LANGUAGE",
+    "course_name": "AP English Language and Composition/American Literature",
+    "subject": "English",
+    "course_type": "AP",
+    "grade_levels": [
+      11
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": []
+  },
+  {
+    "course_id": "ENGLISH_AP_LITERATURE",
+    "course_name": "AP English Literature and Composition",
+    "subject": "English",
+    "course_type": "AP",
+    "grade_levels": [
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "American Literature and Composition",
+      "AP English Language and Composition/American Literature"
+    ],
+    "graduation_category": "English",
+    "career_clusters": []
+  },
+  {
+    "course_id": "MATH_AP_CALC_AB",
+    "course_name": "AP Calculus AB",
+    "subject": "Math",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Math",
+    "career_clusters": []
+  },
+  {
+    "course_id": "MATH_AP_CALC_BC",
+    "course_name": "AP Calculus BC",
+    "subject": "Math",
+    "course_type": "AP",
+    "grade_levels": [
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "AP Calculus AB"
+    ],
+    "graduation_category": "Math",
+    "career_clusters": []
+  },
+  {
+    "course_id": "MATH_AP_STATISTICS",
+    "course_name": "AP Statistics",
+    "subject": "Math",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "Advanced Algebra: Concepts and Connections"
+    ],
+    "graduation_category": "Math",
+    "career_clusters": [
+      "Data Science"
+    ]
+  },
+  {
+    "course_id": "SCI_AP_BIOLOGY",
+    "course_name": "AP Biology",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "Biology",
+      "Chemistry"
+    ],
+    "graduation_category": "Science",
+    "career_clusters": [
+      "Health Science",
+      "Environmental Science"
+    ]
+  },
+  {
+    "course_id": "SCI_AP_CHEMISTRY",
+    "course_name": "AP Chemistry",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "Chemistry",
+      "Advanced Algebra: Concepts and Connections"
+    ],
+    "graduation_category": "Science",
+    "career_clusters": [
+      "Health Science",
+      "Engineering"
+    ]
+  },
+  {
+    "course_id": "SCI_AP_ENVIRONMENTAL_SCIENCE",
+    "course_name": "AP Environmental Science",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "Biology",
+      "Chemistry",
+      "Algebra: Concepts and Connections"
+    ],
+    "graduation_category": "Science",
+    "career_clusters": [
+      "Environmental Science"
+    ]
+  },
+  {
+    "course_id": "SCI_AP_PHYSICS_1",
+    "course_name": "AP Physics 1",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "Geometry: Concepts and Connections",
+      "Algebra: Concepts and Connections",
+      "Biology"
+    ],
+    "graduation_category": "Science",
+    "career_clusters": [
+      "Engineering"
+    ]
+  },
+  {
+    "course_id": "SCI_AP_PHYSICS_2",
+    "course_name": "AP Physics 2",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "AP Physics 1"
+    ],
+    "graduation_category": "Science",
+    "career_clusters": [
+      "Engineering"
+    ]
+  },
+  {
+    "course_id": "SCI_AP_PHYSICS_C_ELECTRICITY_MAGNETISM",
+    "course_name": "AP Physics C: Electricity and Magnetism",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "Calculus"
+    ],
+    "graduation_category": "Science",
+    "career_clusters": [
+      "Engineering"
+    ]
+  },
+  {
+    "course_id": "SCI_AP_PHYSICS_C_MECHANICS",
+    "course_name": "AP Physics C: Mechanics",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "Calculus"
+    ],
+    "graduation_category": "Science",
+    "career_clusters": [
+      "Engineering"
+    ]
+  },
+  {
+    "course_id": "SOC_AP_EUROPEAN_HISTORY",
+    "course_name": "AP European History",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": []
+  },
+  {
+    "course_id": "SOC_AP_US_GOVERNMENT_POLITICS",
+    "course_name": "AP United States Government and Politics",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [
+      "Government and Public Administration"
+    ]
+  },
+  {
+    "course_id": "SOC_AP_HUMAN_GEOGRAPHY",
+    "course_name": "AP Human Geography",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": []
+  },
+  {
+    "course_id": "SOC_AP_MACROECONOMICS",
+    "course_name": "AP Macroeconomics",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [
+      "Business",
+      "Finance"
+    ]
+  },
+  {
+    "course_id": "SOC_AP_PSYCHOLOGY",
+    "course_name": "AP Psychology",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [
+      "Health Science",
+      "Human Services"
+    ]
+  },
+  {
+    "course_id": "SOC_AP_US_HISTORY",
+    "course_name": "AP United States History",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      11
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": []
+  },
+  {
+    "course_id": "SOC_AP_WORLD_HISTORY",
+    "course_name": "AP World History",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": []
+  },
+  {
+    "course_id": "LANG_AP_FRENCH",
+    "course_name": "AP French Language and Culture",
+    "subject": "World Language",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "French III"
+    ],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "LANG_AP_GERMAN",
+    "course_name": "AP German Language and Culture",
+    "subject": "World Language",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "German III"
+    ],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "LANG_AP_LATIN",
+    "course_name": "AP Latin Literature",
+    "subject": "World Language",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "Latin III"
+    ],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "LANG_AP_SPANISH_LANGUAGE",
+    "course_name": "AP Spanish Language and Culture",
+    "subject": "World Language",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "Spanish III"
+    ],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "LANG_AP_SPANISH_LITERATURE",
+    "course_name": "AP Spanish Literature and Culture",
+    "subject": "World Language",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "AP Spanish Language and Culture"
+    ],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "ART_AP_ART_HISTORY",
+    "course_name": "AP Art History",
+    "subject": "Fine Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Arts and Entertainment"
+    ]
+  },
+  {
+    "course_id": "ART_AP_2D_DESIGN",
+    "course_name": "AP Studio Art: 2D Design",
+    "subject": "Fine Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Arts and Entertainment"
+    ]
+  },
+  {
+    "course_id": "ART_AP_3D_DESIGN",
+    "course_name": "AP Studio Art: 3D Design",
+    "subject": "Fine Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Arts and Entertainment"
+    ]
+  },
+  {
+    "course_id": "ART_AP_DRAWING",
+    "course_name": "AP Studio Art: Drawing",
+    "subject": "Fine Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Arts and Entertainment"
+    ]
+  },
+  {
+    "course_id": "ART_AP_MUSIC_THEORY",
+    "course_name": "AP Music Theory",
+    "subject": "Fine Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Arts and Entertainment"
+    ]
+  },
+  {
+    "course_id": "CTAE_AP_COMPUTER_SCIENCE_A",
+    "course_name": "AP Computer Science A",
+    "subject": "CTAE",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "Computer Science Principles",
+      "AP Computer Science Principles"
+    ],
+    "graduation_category": "CTAE",
+    "career_clusters": [
+      "Computer Science",
+      "Software Development"
+    ]
+  },
+  {
+    "course_id": "CTAE_AP_COMPUTER_SCIENCE_PRINCIPLES",
+    "course_name": "AP Computer Science Principles",
+    "subject": "CTAE",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "Introduction to Software Technology"
+    ],
+    "graduation_category": "CTAE",
+    "career_clusters": [
+      "Computer Science",
+      "Software Development"
+    ]
+  },
+  {
+    "course_id": "ENGLISH_IB_LITERATURE_HL",
+    "course_name": "IB English Literature HL",
+    "subject": "English",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": []
+  },
+  {
+    "course_id": "LANG_IB_SPANISH_SL",
+    "course_name": "IB Spanish SL",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "LANG_IB_SPANISH_HL",
+    "course_name": "IB Spanish HL",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "LANG_IB_FRENCH_SL",
+    "course_name": "IB French SL",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "LANG_IB_FRENCH_HL",
+    "course_name": "IB French HL",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "LANG_IB_GERMAN_SL",
+    "course_name": "IB German SL",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "LANG_IB_GERMAN_HL",
+    "course_name": "IB German HL",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "LANG_IB_LATIN_SL",
+    "course_name": "IB Latin SL",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "LANG_IB_LATIN_HL",
+    "course_name": "IB Latin HL",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "SOC_IB_HISTORY_AMERICAS_SL",
+    "course_name": "IB History of the Americas SL",
+    "subject": "Social Studies",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": []
+  },
+  {
+    "course_id": "SOC_IB_HISTORY_AMERICAS_HL",
+    "course_name": "IB History of the Americas HL",
+    "subject": "Social Studies",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": []
+  },
+  {
+    "course_id": "CTAE_IB_BUSINESS_SL",
+    "course_name": "IB Business SL",
+    "subject": "CTAE",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "CTAE",
+    "career_clusters": [
+      "Business",
+      "Finance"
+    ]
+  },
+  {
+    "course_id": "SOC_IB_PSYCHOLOGY_SL",
+    "course_name": "IB Psychology SL",
+    "subject": "Social Studies",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": []
+  },
+  {
+    "course_id": "SCI_IB_BIOLOGY_HL",
+    "course_name": "IB Biology HL",
+    "subject": "Science",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": []
+  },
+  {
+    "course_id": "SCI_IB_PHYSICS_HL",
+    "course_name": "IB Physics HL",
+    "subject": "Science",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": []
+  },
+  {
+    "course_id": "SCI_IB_CHEMISTRY_SL",
+    "course_name": "IB Chemistry SL",
+    "subject": "Science",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": []
+  },
+  {
+    "course_id": "CTAE_IB_COMPUTER_SCIENCE_SL",
+    "course_name": "IB Computer Science SL",
+    "subject": "CTAE",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "CTAE",
+    "career_clusters": [
+      "Computer Science",
+      "Software Development"
+    ]
+  },
+  {
+    "course_id": "SCI_IB_ENVIRONMENTAL_SCIENCE_SL",
+    "course_name": "IB Environmental Science SL",
+    "subject": "Science",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [
+      "Environmental Science"
+    ]
+  },
+  {
+    "course_id": "MATH_IB_ANALYSIS_APPROACHES_SL",
+    "course_name": "IB Math Analysis & Approaches SL",
+    "subject": "Math",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Math",
+    "career_clusters": []
+  },
+  {
+    "course_id": "MATH_IB_APPLICATIONS_INTERPRETATIONS_SL",
+    "course_name": "IB Math Applications & Interpretations SL",
+    "subject": "Math",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Math",
+    "career_clusters": []
+  },
+  {
+    "course_id": "ART_IB_VISUAL_ARTS_SL",
+    "course_name": "IB Visual Arts SL",
+    "subject": "Fine Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Arts and Entertainment"
+    ]
+  },
+  {
+    "course_id": "ART_IB_VISUAL_ARTS_HL",
+    "course_name": "IB Visual Arts HL",
+    "subject": "Fine Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Arts and Entertainment"
+    ]
+  },
+  {
+    "course_id": "ART_IB_THEATER",
+    "course_name": "IB Theater",
+    "subject": "Fine Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Arts and Entertainment"
+    ]
   }
 ]
