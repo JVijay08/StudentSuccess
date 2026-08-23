@@ -69,3 +69,24 @@ def get_courses_by_grade(grade_level):
             matching_courses.append(course)
 
     return matching_courses
+
+
+def filter_courses(grade_level=None, subject=None, course_type=None):
+
+    courses = load_courses()
+    matching_courses = []
+
+    for course in courses:
+
+        if grade_level is not None and grade_level not in course["grade_levels"]:
+            continue
+
+        if subject is not None and course["subject"].lower() != subject.lower():
+            continue
+
+        if course_type is not None and course["course_type"].lower() != course_type.lower():
+            continue
+
+        matching_courses.append(course)
+
+    return matching_courses
