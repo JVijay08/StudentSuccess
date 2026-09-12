@@ -6,7 +6,7 @@ StudentSuccess is a local academic-planning project. Its guiding rule is simple:
 
 ## Current local data
 
-The SQLite database may contain a student's first name, grade, graduation year, GPA goals, weekly study-time estimate, career interest, and course-rigor preference. When task planning is implemented, it may also contain assignment details and planned-versus-actual start times.
+The SQLite database may contain a student's first name, grade, graduation year, GPA goals, weekly study-time estimate, career interest, and course-rigor preference. The task planner also stores assignment details and planned-versus-actual start times.
 
 The development database is stored locally in `instance/studentsuccess.db` and is ignored by Git. It should not be shared or committed.
 

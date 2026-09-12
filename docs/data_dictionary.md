@@ -41,12 +41,29 @@ Each course record contains:
 
 The current catalog has 59 records. It is curated reference data, not student behavior data.
 
-## Task behavior (planned next)
+## Task (implemented)
 
-The next model should record a task's title, subject, type, deadline, estimated minutes, difficulty, interest level, status, planned start, actual start, completion time, and timestamps. It should reference `student_profiles.id`.
+Database table: `tasks`
 
-These fields are planned until a working task route and tests are added. No prediction output, health data, or opaque scoring should be stored.
+| Field | Type | Required | Purpose |
+|---|---|---:|---|
+| id | Integer | Yes | Primary key |
+| student_profile_id | Integer | Yes | Foreign key to `student_profiles.id` |
+| title | String(160) | Yes | Assignment name |
+| subject | String(80) | No | Subject grouping |
+| task_type | String(40) | No | Homework, project, exam, or another type |
+| due_at | DateTime | Yes | Deadline |
+| estimated_minutes | Integer | Yes | Estimated work, from 1 through 1440 minutes |
+| difficulty | String(20) | Yes | Low, medium, or high |
+| interest_level | String(20) | Yes | Low, medium, or high |
+| status | String(20) | Yes | Not started, in progress, or completed |
+| planned_start_at | DateTime | No | When the student intends to begin |
+| started_at | DateTime | No | When the student records the actual start |
+| completed_at | DateTime | No | When the student records completion |
+| created_at | DateTime | Yes | UTC creation time |
+| updated_at | DateTime | Yes | UTC last-update time |
 
+Task risk is calculated at display time and is not stored as a prediction. The rule-based service explains deadline, start-status, workload, difficulty, and interest signals.
 ## Future behavioral history
 
 Planned-versus-actual start times can later support personal summaries such as typical delay windows by subject or task type. Collection should begin only through a visible task feature, remain minimal, and use transparent calculations before any machine-learning work is considered.

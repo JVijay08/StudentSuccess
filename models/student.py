@@ -28,6 +28,11 @@ class StudentProfile(db.Model):
         default=get_current_time,
         onupdate=get_current_time,
     )
+    tasks = db.relationship(
+        "Task",
+        back_populates="student_profile",
+        cascade="all, delete-orphan",
+    )
 
     def __repr__(self):
         return f"<StudentProfile id {self.id} first_name {self.first_name}>"

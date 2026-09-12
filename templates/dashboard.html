@@ -18,10 +18,11 @@
         </a>
         <nav>
           <a class="active" href="{{ url_for('main.dashboard') }}">Dashboard</a>
+          <a href="{{ url_for('tasks.tasks') }}">Tasks</a>
           <a href="{{ url_for('profile.onboarding') }}">Student profile</a>
         </nav>
       </div>
-      <p class="module-note">Course planning is preserved as a secondary backend module. Its interface is planned for a later release.</p>
+      <p class="module-note">Course planning remains available as a secondary backend module. Its interface is planned for a later release.</p>
     </aside>
 
     <main>
@@ -37,15 +38,29 @@
       </header>
 
       <section class="focus-card">
-        <p class="eyebrow accent">TODAY</p>
-        <h2>Turn an assignment into a startable next step.</h2>
-        <p>The task planner is the next core module. It will track when you planned to start, when you actually started, and which kinds of work you tend to delay.</p>
-        <a class="button" href="{{ url_for('profile.onboarding') }}">
-          {% if profile %}Update profile{% else %}Set up profile{% endif %}
-        </a>
+        <p class="eyebrow accent">WHAT TO WORK ON NOW</p>
+        {% if recommended_task %}
+          <h2>{{ recommended_task.title }}</h2>
+          <p>{{ recommended_risk.level }} procrastination risk: {{ recommended_risk.reasons|join(", ") }}.</p>
+          <a class="button" href="{{ url_for('tasks.tasks') }}">Open task planner</a>
+        {% elif profile %}
+          <h2>Add your first real assignment.</h2>
+          <p>Record its deadline and planned start so StudentSuccess can give you a transparent priority signal.</p>
+          <a class="button" href="{{ url_for('tasks.tasks') }}">Add a task</a>
+        {% else %}
+          <h2>Start with your profile.</h2>
+          <p>A small amount of academic context is enough to begin. StudentSuccess does not need unrelated personal information.</p>
+          <a class="button" href="{{ url_for('profile.onboarding') }}">Set up profile</a>
+        {% endif %}
       </section>
 
       <section class="grid">
+        <article class="card">
+          <p class="eyebrow">TASKS</p>
+          <h2>{{ active_task_count }} active</h2>
+          <p>Risk is calculated from visible rules such as time until due, start status, workload, difficulty, and interest.</p>
+        </article>
+
         <article class="card">
           <p class="eyebrow">PROFILE</p>
           {% if profile %}
@@ -57,14 +72,8 @@
             </dl>
           {% else %}
             <h2>No profile yet</h2>
-            <p>Add a few basic academic details to establish your planning context.</p>
+            <p>Add basic academic details to establish your planning context.</p>
           {% endif %}
-        </article>
-
-        <article class="card">
-          <p class="eyebrow">CURRENT DIRECTION</p>
-          <h2>Procrastination-aware planning</h2>
-          <p>StudentSuccess is focused on deciding what to work on now and learning from planned-versus-actual start behavior.</p>
         </article>
       </section>
     </main>

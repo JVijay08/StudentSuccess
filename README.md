@@ -10,10 +10,11 @@ The project aims to help a student choose what to work on now, compare planned a
 
 - Flask application factory and Blueprints
 - Student onboarding and editable profile stored in SQLite
-- A profile-aware dashboard without fake predictions or scores
+- A profile-aware dashboard with a real recommended next task
 - A curated 59-course JSON catalog
 - Course lookup and filtering services
-- Automated route and course-service tests
+- Task creation, planned/actual start tracking, completion, and explainable rule-based risk
+- Automated route, task, risk, and course-service tests
 
 Machine learning, AI assistance, optimization, authentication, calendar integration, and a course-planning interface are not implemented.
 
@@ -76,4 +77,4 @@ StudentSuccess/
 
 ## Short roadmap
 
-The next feature is a small task workflow that records planned and actual start times. Transparent rule-based procrastination risk can follow from those records. Adaptive scheduling, optimization, or machine learning should only be considered after useful real behavior data exists.
+The next step is to summarize planned-versus-actual start delays by task type and subject. Adaptive scheduling, optimization, or machine learning should only be considered after useful real behavior data exists.

@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#081225">
+  <title>Tasks | StudentSuccess</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/tasks.css') }}">
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <p class="eyebrow">STUDENTSUCCESS</p>
+        <h1>{{ profile.first_name }}'s tasks</h1>
+        <p>Plan a start, record the real start, and keep risk explanations visible.</p>
+      </div>
+      <a href="{{ url_for('main.dashboard') }}">Back to dashboard</a>
+    </header>
+
+    <section class="panel">
+      <h2>Add a task</h2>
+      {% if errors %}
+        <div class="errors" role="alert">
+          <ul>
+            {% for error in errors %}<li>{{ error }}</li>{% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+      <form method="post">
+        <label>Title
+          <input name="title" maxlength="160" value="{{ form_data.get('title', '') }}" required>
+        </label>
+        <label>Subject
+          <input name="subject" maxlength="80" value="{{ form_data.get('subject', '') }}">
+        </label>
+        <label>Task type
+          <input name="task_type" maxlength="40" placeholder="Homework, project, exam..." value="{{ form_data.get('task_type', '') }}">
+        </label>
+        <label>Due date and time
+          <input type="datetime-local" name="due_at" value="{{ form_data.get('due_at', '') }}" required>
+        </label>
+        <label>Planned start
+          <input type="datetime-local" name="planned_start_at" value="{{ form_data.get('planned_start_at', '') }}">
+        </label>
+        <label>Estimated minutes
+          <input type="number" name="estimated_minutes" min="1" max="1440" value="{{ form_data.get('estimated_minutes', '') }}" required>
+        </label>
+        <label>Difficulty
+          <select name="difficulty" required>
+            {% for option in ["low", "medium", "high"] %}
+              <option value="{{ option }}" {% if form_data.get('difficulty', 'medium') == option %}selected{% endif %}>{{ option|title }}</option>
+            {% endfor %}
+          </select>
+        </label>
+        <label>Interest level
+          <select name="interest_level" required>
+            {% for option in ["low", "medium", "high"] %}
+              <option value="{{ option }}" {% if form_data.get('interest_level', 'medium') == option %}selected{% endif %}>{{ option|title }}</option>
+            {% endfor %}
+          </select>
+        </label>
+        <button type="submit">Add task</button>
+      </form>
+    </section>
+
+    <section class="task-list">
+      <h2>Task queue</h2>
+      {% if task_rows %}
+        {% for task, risk in task_rows %}
+          <article class="task-card">
+            <div>
+              <p class="eyebrow risk-{{ risk.level|lower }}">{{ risk.level }} RISK</p>
+              <h3>{{ task.title }}</h3>
+              <p>{{ task.subject or "No subject" }} · {{ task.estimated_minutes }} minutes · due {{ task.due_at.strftime("%b %d, %Y at %I:%M %p") }}</p>
+              <ul>
+                {% for reason in risk.reasons %}<li>{{ reason }}</li>{% endfor %}
+              </ul>
+            </div>
+            <div class="actions">
+              <span>{{ task.status|replace("_", " ")|title }}</span>
+              {% if task.status == "not_started" %}
+                <form method="post" action="{{ url_for('tasks.start_task', task_id=task.id) }}">
+                  <button type="submit">Start now</button>
+                </form>
+              {% endif %}
+              {% if task.status != "completed" %}
+                <form method="post" action="{{ url_for('tasks.complete_task', task_id=task.id) }}">
+                  <button class="secondary" type="submit">Complete</button>
+                </form>
+              {% endif %}
+            </div>
+          </article>
+        {% endfor %}
+      {% else %}
+        <p class="empty">No tasks yet. Add one above to begin recording start behavior.</p>
+      {% endif %}
+    </section>
+  </main>
+</body>
+</html>

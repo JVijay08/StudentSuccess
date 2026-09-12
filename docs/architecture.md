@@ -16,9 +16,9 @@ Browser
 
 ## Directory responsibilities
 
-- `models/`: SQLAlchemy models for information that must persist. `StudentProfile` is the current model.
-- `routes/`: Blueprints that validate requests, coordinate models or services, and render responses. Main routes own the dashboard; profile routes own onboarding.
-- `services/`: reusable application logic that does not belong in a route or model. The course service reads and filters the JSON catalog.
+- `models/`: SQLAlchemy models for information that must persist. `StudentProfile` and `Task` are the current models.
+- `routes/`: Blueprints that validate requests, coordinate models or services, and render responses. Main routes own the dashboard, profile routes own onboarding, and task routes own task creation and status changes.
+- `services/`: reusable application logic that does not belong in a route or model. The course service reads and filters the JSON catalog. The procrastination service calculates transparent task risk from visible rules.
 - `templates/`: Jinja HTML returned to the browser.
 - `static/`: CSS used by the templates.
 - `data/`: curated, version-controlled reference data. It is not a substitute for the SQLite application database.
