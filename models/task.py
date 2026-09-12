@@ -23,6 +23,8 @@ class Task(db.Model):
     planned_start_at = db.Column(db.DateTime(timezone=True), nullable=True)
     started_at = db.Column(db.DateTime(timezone=True), nullable=True)
     completed_at = db.Column(db.DateTime(timezone=True), nullable=True)
+    recurrence_rule = db.Column(db.String(20), nullable=True)
+    prep_for_id = db.Column(db.Integer, db.ForeignKey("tasks.id"), nullable=True)
     created_at = db.Column(
         db.DateTime(timezone=True), nullable=False, default=get_current_time
     )

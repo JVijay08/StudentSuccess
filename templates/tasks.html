@@ -19,6 +19,16 @@
       <a href="{{ url_for('main.dashboard') }}">Back to dashboard</a>
     </header>
 
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <div class="flash" role="status">
+          {% for category, message in messages %}
+            <p class="flash-{{ category }}">{{ message }}</p>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
     <section class="panel">
       <h2>Add a task</h2>
       {% if errors %}
@@ -61,6 +71,15 @@
             {% endfor %}
           </select>
         </label>
+        <label>Repeats
+          <select name="recurrence_rule">
+            <option value="" {% if form_data.get('recurrence_rule', '') == '' %}selected{% endif %}>None</option>
+            <option value="daily" {% if form_data.get('recurrence_rule') == 'daily' %}selected{% endif %}>Daily</option>
+            <option value="weekly" {% if form_data.get('recurrence_rule') == 'weekly' %}selected{% endif %}>Weekly</option>
+            <option value="biweekly" {% if form_data.get('recurrence_rule') == 'biweekly' %}selected{% endif %}>Every 2 weeks</option>
+            <option value="monthly" {% if form_data.get('recurrence_rule') == 'monthly' %}selected{% endif %}>Monthly</option>
+          </select>
+        </label>
         <button type="submit">Add task</button>
       </form>
     </section>
@@ -68,18 +87,23 @@
     <section class="task-list">
       <h2>Task queue</h2>
       {% if task_rows %}
-        {% for task, risk in task_rows %}
+        {% for row in task_rows %}
+          {% set task = row.task %}
+          {% set level = "HIGH" if row.score >= 7 else "MEDIUM" if row.score >= 4 else "LOW" %}
           <article class="task-card">
             <div>
-              <p class="eyebrow risk-{{ risk.level|lower }}">{{ risk.level }} RISK</p>
-              <h3>{{ task.title }}</h3>
+              <p class="eyebrow risk-{{ level|lower }}">{{ level }} RISK</p>
+              <h3>{{ task.title }}{% if task.recurrence_rule %} <small class="task-marker">(recurring)</small>{% endif %}{% if task.prep_for_id %} <small class="task-marker">(prep)</small>{% endif %}</h3>
               <p>{{ task.subject or "No subject" }} · {{ task.estimated_minutes }} minutes · due {{ task.due_at.strftime("%b %d, %Y at %I:%M %p") }}</p>
               <ul>
-                {% for reason in risk.reasons %}<li>{{ reason }}</li>{% endfor %}
+                {% for reason in row.reasons %}<li>{{ reason }}</li>{% endfor %}
               </ul>
             </div>
             <div class="actions">
               <span>{{ task.status|replace("_", " ")|title }}</span>
+              {% if task.status != "completed" %}
+                <a href="{{ url_for('tasks.edit_task', task_id=task.id) }}">Edit</a>
+              {% endif %}
               {% if task.status == "not_started" %}
                 <form method="post" action="{{ url_for('tasks.start_task', task_id=task.id) }}">
                   <button type="submit">Start now</button>
@@ -90,6 +114,9 @@
                   <button class="secondary" type="submit">Complete</button>
                 </form>
               {% endif %}
+              <form method="post" action="{{ url_for('tasks.delete_task', task_id=task.id) }}">
+                <button class="secondary" type="submit" onclick="return confirm('Delete this task?')" aria-label="Delete {{ task.title }}">Delete</button>
+              </form>
             </div>
           </article>
         {% endfor %}

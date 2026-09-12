@@ -224,3 +224,32 @@ button:active {
         width: 100%;
     }
 }
+
+.onboarding-heading {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.back-link {
+    flex-shrink: 0;
+    color: #87d8ff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: #c4ecff;
+    text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+    .onboarding-heading {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+}

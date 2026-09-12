@@ -19,13 +19,28 @@
         <nav>
           <a class="active" href="{{ url_for('main.dashboard') }}">Dashboard</a>
           <a href="{{ url_for('tasks.tasks') }}">Tasks</a>
-          <a href="{{ url_for('profile.onboarding') }}">Student profile</a>
+          <a href="{{ url_for('profile.profile_view') }}">Student profile</a>
         </nav>
       </div>
-      <p class="module-note">Course planning remains available as a secondary backend module. Its interface is planned for a later release.</p>
+      <div class="sidebar-footer">
+        <p class="module-note">Course planning remains available as a secondary backend module. Its interface is planned for a later release.</p>
+        <form class="logout-form" method="post" action="{{ url_for('auth.logout') }}">
+          <button type="submit" class="logout-button">Log out</button>
+        </form>
+      </div>
     </aside>
 
     <main>
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          <div class="flash" role="status">
+            {% for category, message in messages %}
+              <p class="flash-{{ category }}">{{ message }}</p>
+            {% endfor %}
+          </div>
+        {% endif %}
+      {% endwith %}
+
       <header>
         <p class="eyebrow">YOUR ACADEMIC WORKSPACE</p>
         {% if profile %}
@@ -39,9 +54,15 @@
 
       <section class="focus-card">
         <p class="eyebrow accent">WHAT TO WORK ON NOW</p>
-        {% if recommended_task %}
-          <h2>{{ recommended_task.title }}</h2>
-          <p>{{ recommended_risk.level }} procrastination risk: {{ recommended_risk.reasons|join(", ") }}.</p>
+        {% if prioritized_tasks %}
+          <ol class="priority-list">
+            {% for row in prioritized_tasks[:3] %}
+              <li class="priority-item">
+                <h2>{{ row.task.title }}</h2>
+                <p><span class="priority-score">Risk score {{ row.score }}</span>{% if row.reasons %}: {{ row.reasons|join(", ") }}{% endif %}.</p>
+              </li>
+            {% endfor %}
+          </ol>
           <a class="button" href="{{ url_for('tasks.tasks') }}">Open task planner</a>
         {% elif profile %}
           <h2>Add your first real assignment.</h2>
@@ -55,6 +76,34 @@
       </section>
 
       <section class="grid">
+        <article class="card">
+          <p class="eyebrow">OVERDUE TO START</p>
+          {% if overdue_tasks %}
+            <ul class="overdue-list">
+              {% for row in overdue_tasks %}
+                <li class="overdue-item">
+                  <h2>{{ row.title }} <small>({{ row.group_label }})</small></h2>
+                  <p>Due {{ row.due_at_display }} &mdash; {{ row.overdue_display }}.</p>
+
+                  <form method="post" action="{{ url_for('tasks.start_task', task_id=row.task_id) }}">
+                    <input type="hidden" name="redirect_to" value="dashboard">
+                    <button type="submit" class="button">Start now</button>
+                  </form>
+
+                  <form method="post" action="{{ url_for('tasks.reschedule_task', task_id=row.task_id) }}" class="reschedule-form">
+                    <label for="reschedule-{{ row.task_id }}">New planned start</label>
+                    <input id="reschedule-{{ row.task_id }}" type="datetime-local" name="planned_start_at" required>
+                    <button type="submit" class="button secondary">Reschedule</button>
+                  </form>
+                </li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <h2>Nothing overdue to start.</h2>
+            <p>When a task's planned start time passes before you begin it, it will show up here with quick ways to start or replan.</p>
+          {% endif %}
+        </article>
+
         <article class="card">
           <p class="eyebrow">TASKS</p>
           <h2>{{ active_task_count }} active</h2>
@@ -73,6 +122,106 @@
           {% else %}
             <h2>No profile yet</h2>
             <p>Add basic academic details to establish your planning context.</p>
+          {% endif %}
+        </article>
+
+        <article class="card">
+          <p class="eyebrow">COMPLETION RATE</p>
+          {% if success_rate.percent is not none %}
+            <h2>{{ success_rate.completed }} / {{ success_rate.total }} tasks completed &mdash; {{ success_rate.percent }}%</h2>
+            <p>Share of all your tasks that have reached completed status.</p>
+          {% else %}
+            <h2>No tasks yet.</h2>
+            <p>Add tasks to begin tracking how many you finish.</p>
+          {% endif %}
+        </article>
+
+        <article class="card">
+          <p class="eyebrow">START-DELAY SUMMARY</p>
+          {% if start_delay_summary %}
+            <table class="summary-table">
+              <caption class="visually-hidden">Average start delay by subject</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Subject</th>
+                  <th scope="col">Mean delay (hours)</th>
+                  <th scope="col">Pattern</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for row in start_delay_summary %}
+                  <tr>
+                    <td>{{ row.subject }}</td>
+                    <td>{{ row.mean_delay_hours }}</td>
+                    <td>{{ row.label }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          {% else %}
+            <h2>Not enough data yet.</h2>
+            <p>Once you plan a start time and then start tasks, StudentSuccess will summarize your timing here.</p>
+          {% endif %}
+        </article>
+
+        <article class="card">
+          <p class="eyebrow">ESTIMATE ACCURACY</p>
+          {% if estimate_accuracy.overall or estimate_accuracy.groups %}
+            {% if estimate_accuracy.overall %}
+              <h2>Overall: {{ estimate_accuracy.overall.rate }}&times; &mdash; {{ estimate_accuracy.overall.label }}</h2>
+            {% endif %}
+            {% if estimate_accuracy.groups %}
+              <table class="summary-table">
+                <caption class="visually-hidden">Estimate accuracy (burn rate) by subject or task type</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Group</th>
+                    <th scope="col">Burn rate</th>
+                    <th scope="col">What it means</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for row in estimate_accuracy.groups %}
+                    <tr>
+                      <td>{{ row.group }}</td>
+                      <td>{{ row.rate }}</td>
+                      <td>{{ row.label }}</td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            {% endif %}
+          {% else %}
+            <h2>Not enough completed tasks yet.</h2>
+            <p>Not enough completed tasks yet to measure estimate accuracy. Once you start and complete a few tasks, StudentSuccess will show how your actual time compares to your estimates here.</p>
+          {% endif %}
+        </article>
+
+        <article class="card">
+          <p class="eyebrow">RECENT START HISTORY</p>
+          {% if start_history %}
+            <table class="summary-table">
+              <caption class="visually-hidden">Most recently completed tasks and how late or early they were started</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Task</th>
+                  <th scope="col">Delay</th>
+                  <th scope="col">Completed</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for entry in start_history %}
+                  <tr>
+                    <td>{{ entry.title }} <small>({{ entry.group_label }})</small></td>
+                    <td>{{ entry.delay_display }}</td>
+                    <td>{{ entry.completed_at_display }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          {% else %}
+            <h2>No start history yet.</h2>
+            <p>Complete a few tasks and StudentSuccess will list how early or late you started each one.</p>
           {% endif %}
         </article>
       </section>

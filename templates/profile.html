@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#081225">
+  <title>Student profile | StudentSuccess</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
+</head>
+<body>
+  <main class="profile-page">
+    <header class="profile-header">
+      <div>
+        <p class="eyebrow">STUDENTSUCCESS</p>
+        <h1>{{ profile.first_name }}'s profile</h1>
+        <p class="subheading">A read-only view of your academic and account details.</p>
+      </div>
+      <a class="back-link" href="{{ url_for('main.dashboard') }}">Back to dashboard</a>
+    </header>
+
+    <section class="card">
+      <h2>Academic profile</h2>
+      <dl class="detail-list">
+        <div><dt>First name</dt><dd>{{ profile.first_name }}</dd></div>
+        <div><dt>Grade level</dt><dd>{{ profile.grade }}th grade</dd></div>
+        <div><dt>Graduation year</dt><dd>{{ profile.graduation_year }}</dd></div>
+        <div><dt>Current GPA</dt><dd>{{ profile.current_gpa }}</dd></div>
+        <div><dt>Target GPA</dt><dd>{{ profile.target_gpa }}</dd></div>
+        <div><dt>Study hours per week</dt><dd>{{ profile.study_hours_per_week|round(1) }} hours</dd></div>
+        <div><dt>Career interest</dt><dd>{{ profile.career_goals or "Not set" }}</dd></div>
+        <div><dt>Preferred course rigor</dt><dd>{{ profile.course_rigor or "Not set" }}</dd></div>
+      </dl>
+    </section>
+
+    <section class="card">
+      <h2>Account</h2>
+      <dl class="detail-list">
+        <div><dt>Username</dt><dd>{{ username }}</dd></div>
+        <div><dt>Member since</dt><dd>{{ member_since }}</dd></div>
+      </dl>
+    </section>
+
+    <div class="actions">
+      <a class="button" href="{{ url_for('profile.onboarding') }}">Edit profile</a>
+    </div>
+  </main>
+</body>
+</html>

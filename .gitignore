@@ -1,13 +1,13 @@
-# Python cache files
-__pycache__/
+﻿__pycache__/
 *.py[cod]
 
-# Virtual environments
 .venv/
 venv/
 
-# Environment secrets
 .env
 
-# Local SQLite database
 instance/*.db
+instance/*.bak
+
+# Kiro spec / workflow files - not for version control
+.kiro/

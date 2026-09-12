@@ -218,3 +218,177 @@ dd {
     grid-template-columns: 1fr;
   }
 }
+
+.priority-list {
+  margin: 0 0 8px;
+  padding-left: 20px;
+  display: grid;
+  gap: 14px;
+}
+
+.priority-item h2 {
+  margin-bottom: 4px;
+  font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+}
+
+.priority-item p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.priority-score {
+  color: var(--teal);
+  font-weight: 700;
+}
+
+.summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.summary-table th,
+.summary-table td {
+  padding: 10px 8px;
+  text-align: left;
+  border-bottom: 1px solid rgba(157, 190, 255, 0.1);
+}
+
+.summary-table th {
+  color: var(--dim);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.summary-table tbody tr:last-child td,
+.summary-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.summary-table td {
+  color: var(--text);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.sidebar-footer {
+  display: grid;
+  gap: 16px;
+}
+
+.logout-form {
+  margin: 0;
+}
+
+.logout-button {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--muted);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  background: transparent;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.logout-button:hover {
+  color: var(--text);
+  border-color: rgba(49, 133, 255, 0.35);
+  background: rgba(49, 133, 255, 0.12);
+}
+
+.flash {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(16, 31, 60, 0.6);
+}
+
+.flash p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.flash-warning {
+  color: #ffcf70;
+}
+
+.flash-error {
+  color: #ff8a8a;
+}
+
+.overdue-list {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.overdue-item {
+  display: grid;
+  gap: 8px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(157, 190, 255, 0.1);
+}
+
+.overdue-item:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.overdue-item h2 {
+  margin: 0;
+  font-size: clamp(1.1rem, 2.4vw, 1.4rem);
+}
+
+.overdue-item form {
+  margin: 0;
+}
+
+.button.secondary {
+  color: var(--text);
+  background: transparent;
+  border: 1px solid rgba(49, 133, 255, 0.4);
+}
+
+.reschedule-form {
+  display: grid;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.reschedule-form label {
+  color: var(--dim);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.reschedule-form input {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  font: inherit;
+  background: rgba(6, 17, 38, 0.6);
+}

@@ -1,37 +1,13 @@
-﻿import pytest
-
-from app import create_app
-from extensions import db
+﻿from extensions import db
 from models import StudentProfile
 
 
-@pytest.fixture()
-def app(tmp_path):
-    app = create_app(
-        {
-            "TESTING": True,
-            "SQLALCHEMY_DATABASE_URI": (
-                f"sqlite:///{tmp_path / 'routes-test.db'}"
-            ),
-        }
-    )
-
-    yield app
-
-    with app.app_context():
-        db.session.remove()
-        db.drop_all()
+def test_dashboard_and_onboarding_get_work(authed_client):
+    assert authed_client.get("/dashboard").status_code == 200
+    assert authed_client.get("/onboarding").status_code == 200
 
 
-def test_dashboard_and_onboarding_get_work(app):
-    client = app.test_client()
-
-    assert client.get("/dashboard").status_code == 200
-    assert client.get("/onboarding").status_code == 200
-
-
-def test_onboarding_saves_and_updates_profile(app):
-    client = app.test_client()
+def test_onboarding_saves_and_updates_profile(app, authed_client):
     data = {
         "first_name": "Jayesh",
         "grade_level": "11",
@@ -43,12 +19,12 @@ def test_onboarding_saves_and_updates_profile(app):
         "course_rigor_preference": "Challenging",
     }
 
-    response = client.post("/onboarding", data=data)
+    response = authed_client.post("/onboarding", data=data)
     assert response.status_code == 302
 
     data["first_name"] = "J"
     data["career_interest"] = "Computer Science"
-    response = client.post("/onboarding", data=data)
+    response = authed_client.post("/onboarding", data=data)
     assert response.status_code == 302
 
     with app.app_context():
@@ -61,9 +37,8 @@ def test_onboarding_saves_and_updates_profile(app):
     assert profiles[0].course_rigor == "Challenging"
 
 
-def test_onboarding_backend_limits_match_form(app):
-    client = app.test_client()
-    response = client.post(
+def test_onboarding_backend_limits_match_form(authed_client):
+    response = authed_client.post(
         "/onboarding",
         data={
             "first_name": "Alex",

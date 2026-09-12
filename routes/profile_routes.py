@@ -1,13 +1,17 @@
-from flask import Blueprint, redirect, render_template, request, url_for
+from flask import Blueprint, g, redirect, render_template, request, url_for
+
+from services.datetime_util import EASTERN
 
 from extensions import db
 from models import StudentProfile
+from services.auth_service import login_required
 
 
 profile_bp = Blueprint("profile", __name__)
 
 
 @profile_bp.route("/onboarding", methods=["GET", "POST"])
+@login_required
 def onboarding():
     errors = []
 
@@ -104,10 +108,11 @@ def onboarding():
                 form_data=request.form,
             )
 
-        profile = StudentProfile.query.first()
+        profile = StudentProfile.query.filter_by(user_id=g.current_user.id).first()
 
         if profile is None:
             profile = StudentProfile()
+            profile.user_id = g.current_user.id
             db.session.add(profile)
 
         profile.first_name = first_name
@@ -123,7 +128,7 @@ def onboarding():
 
         return redirect(url_for("main.dashboard"))
 
-    existing_profile = StudentProfile.query.first()
+    existing_profile = StudentProfile.query.filter_by(user_id=g.current_user.id).first()
 
     if existing_profile is not None:
         form_data = {
@@ -147,4 +152,29 @@ def onboarding():
         "onboarding.html",
         errors=[],
         form_data=form_data,
+    )
+
+
+@profile_bp.get("/profile")
+@login_required
+def profile_view():
+    profile = StudentProfile.query.filter_by(
+        user_id=g.current_user.id
+    ).first()
+
+    if profile is None:
+        return redirect(url_for("profile.onboarding"))
+
+    created_at = g.current_user.created_at
+    if created_at.tzinfo is None:
+        from datetime import timezone
+
+        created_at = created_at.replace(tzinfo=timezone.utc)
+    member_since = created_at.astimezone(EASTERN).strftime("%B %d, %Y")
+
+    return render_template(
+        "profile.html",
+        profile=profile,
+        username=g.current_user.username,
+        member_since=member_since,
     )

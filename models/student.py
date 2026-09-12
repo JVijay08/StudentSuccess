@@ -28,6 +28,13 @@ class StudentProfile(db.Model):
         default=get_current_time,
         onupdate=get_current_time,
     )
+    user_id = db.Column(
+        db.Integer, db.ForeignKey("users.id"), unique=True, nullable=True
+    )
+    user = db.relationship(
+        "User",
+        back_populates="profile",
+    )
     tasks = db.relationship(
         "Task",
         back_populates="student_profile",

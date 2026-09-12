@@ -6,7 +6,7 @@ StudentSuccess is a focused Flask application for procrastination-aware academic
 
 The project aims to help a student choose what to work on now, compare planned and actual start times, recognize repeated delay patterns, and eventually build more realistic schedules from real behavior.
 
-## Implemented today
+## Implemented
 
 - Flask application factory and Blueprints
 - Student onboarding and editable profile stored in SQLite

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <meta name="theme-color" content="#071407">
+    <title>Log In | StudentSuccess</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/onboarding.css') }}">
+</head>
+<body class="theme-dark">
+    <main class="onboarding-page">
+        <section class="onboarding-section">
+            <div class="onboarding-heading">
+                <p class="first-title">STUDENTSUCCESS</p>
+                <h1>Welcome Back</h1>
+                <p class="subheading">Log in to your account to view your tasks and academic dashboard.</p>
+            </div>
+
+            {% if errors %}
+            <div class="form-errors" role="alert">
+                <h2>Please correct the following:</h2>
+                <ul>
+                    {% for error in errors %}
+                    <li>{{ error }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+
+            <form class="profile-form" method="post" action="{{ url_for('auth.login') }}">
+                <div class="form-section">
+                    <div class="form-group full-width">
+                        <label for="username">Username</label>
+                        <input
+                            type="text"
+                            id="username"
+                            name="username"
+                            maxlength="80"
+                            placeholder="Enter your username"
+                            value="{{ form_data.get('username', '') }}"
+                            required
+                            autocomplete="username"
+                        >
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="password">Password</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            required
+                            autocomplete="current-password"
+                        >
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <p>Don't have an account? <a href="{{ url_for('auth.register') }}">Sign up</a></p>
+                    <button type="submit">Log In</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
