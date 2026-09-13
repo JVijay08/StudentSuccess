@@ -191,7 +191,11 @@ def remove_from_plan(planned_course_id):
     if redirect_response:
         return redirect_response
 
-    planned = db.get_or_404(PlannedCourse, planned_course_id)
+    planned = db.session.get(PlannedCourse, planned_course_id)
+    if planned is None:
+        flash("That course was already removed from your plan.", "warning")
+        return redirect(url_for("courses.course_plan"))
+
     if planned.student_profile_id != profile.id:
         abort(404)
 

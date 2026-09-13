@@ -66,6 +66,12 @@ def test_course_can_be_added_and_removed_from_plan(app, authed_client):
     with app.app_context():
         assert PlannedCourse.query.count() == 0
 
+    second_delete_response = authed_client.post(
+        f"/courses/plan/{planned_id}/delete"
+    )
+    assert second_delete_response.status_code == 302
+    assert second_delete_response.headers["Location"].endswith("/courses/plan")
+
 
 def test_course_detail_and_comparison_render(authed_client):
     complete_profile(authed_client)

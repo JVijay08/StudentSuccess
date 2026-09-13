@@ -1,10 +1,44 @@
 ﻿from extensions import db
 from models import StudentProfile
+from services.auth_service import SESSION_TIMEOUT_MINUTES
 
 
 def test_dashboard_and_onboarding_get_work(authed_client):
     assert authed_client.get("/dashboard").status_code == 200
     assert authed_client.get("/onboarding").status_code == 200
+
+
+def test_authenticated_session_is_permanent_and_refreshes_activity(app, authed_client):
+    from datetime import datetime, timedelta, timezone
+
+    with authed_client.session_transaction() as session:
+        assert session.permanent is True
+        session["_last_active"] = (
+            datetime.now(timezone.utc)
+            - timedelta(minutes=SESSION_TIMEOUT_MINUTES - 1)
+        ).isoformat()
+
+    response = authed_client.get("/dashboard")
+
+    assert response.status_code == 200
+    with authed_client.session_transaction() as session:
+        refreshed = datetime.fromisoformat(session["_last_active"])
+        assert refreshed > datetime.now(timezone.utc) - timedelta(seconds=10)
+
+
+def test_authenticated_session_expires_after_inactivity(app, authed_client):
+    from datetime import datetime, timedelta, timezone
+
+    with authed_client.session_transaction() as session:
+        session["_last_active"] = (
+            datetime.now(timezone.utc)
+            - timedelta(minutes=SESSION_TIMEOUT_MINUTES + 1)
+        ).isoformat()
+
+    response = authed_client.get("/dashboard")
+
+    assert response.status_code == 302
+    assert response.headers["Location"].endswith("/login")
 
 
 def test_onboarding_saves_and_updates_profile(app, authed_client):
