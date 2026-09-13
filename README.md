@@ -11,12 +11,12 @@ The project aims to help a student choose what to work on now, compare planned a
 - Flask application factory and Blueprints
 - Student onboarding and editable profile stored in SQLite
 - A profile-aware dashboard with a real recommended next task
-- A catalog-aware course explorer with a national reference catalog and a Forsyth County local catalog
+- A catalog-aware course explorer with state selection, national reference courses, imported state catalogs, AP/IB program catalogs, and a Forsyth County local catalog
 - Course explorer with search, filters, details, comparison, prerequisites, and four-year planning
 - Task creation, planned/actual start tracking, completion, and explainable rule-based risk
 - Automated route, task, risk, and course-service tests
 
-Machine learning, AI assistance, optimization, and calendar integration are not implemented. The national catalog is a planning reference, not a universal state graduation or placement authority.
+Machine learning, AI assistance, optimization, and calendar integration are not implemented. State selection is available for all 50 states, with imported data for Alabama, Arkansas, Florida, Georgia/Forsyth, Kentucky, Louisiana, Mississippi, North Carolina, South Carolina, Tennessee, Virginia, and West Virginia. Coverage varies by supplied source. The national and AP/IB catalogs are planning references, not universal graduation or placement authorities.
 
 ## Technology
 

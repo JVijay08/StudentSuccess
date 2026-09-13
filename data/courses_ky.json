@@ -1,0 +1,542 @@
+[
+  {
+    "course_id": "KY_480110",
+    "course_name": "Introduction to Computer-Aided Drafting",
+    "subject": "CTE / Engineering & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE / Engineering & Design",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 Programs of Study Directory"
+  },
+  {
+    "course_id": "KY_480117",
+    "course_name": "Introduction to Architecture",
+    "subject": "CTE / Engineering & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE / Engineering & Design",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 Programs of Study Directory"
+  },
+  {
+    "course_id": "KY_480116",
+    "course_name": "Architectural Design",
+    "subject": "CTE / Engineering & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE / Engineering & Design",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 Programs of Study Directory"
+  },
+  {
+    "course_id": "KY_480127",
+    "course_name": "Industrial Drafting Processes",
+    "subject": "CTE / Engineering & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE / Engineering & Design",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 Programs of Study Directory"
+  },
+  {
+    "course_id": "KY_480113",
+    "course_name": "Engineering Graphics",
+    "subject": "CTE / Engineering & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE / Engineering & Design",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 Programs of Study Directory"
+  },
+  {
+    "course_id": "KY_470924",
+    "course_name": "Advanced Dimensioning and Measurement",
+    "subject": "CTE / Engineering & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE / Engineering & Design",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 Programs of Study Directory"
+  },
+  {
+    "course_id": "KY_480179",
+    "course_name": "Special Problems (CAD)",
+    "subject": "CTE / Engineering & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE / Engineering & Design",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 Programs of Study Directory"
+  },
+  {
+    "course_id": "KY_480112",
+    "course_name": "Intermediate Computer-Aided Drafting",
+    "subject": "CTE / Engineering & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE / Engineering & Design",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 Programs of Study Directory"
+  },
+  {
+    "course_id": "KY_480145",
+    "course_name": "Internship (CAD)",
+    "subject": "CTE / Engineering & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE / Engineering & Design",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 Programs of Study Directory"
+  },
+  {
+    "course_id": "KY_480142",
+    "course_name": "Co-op I (CAD)",
+    "subject": "CTE / Engineering & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE / Engineering & Design",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 Programs of Study Directory"
+  },
+  {
+    "course_id": "KY_332001",
+    "course_name": "Introduction to 3D Printing Technology",
+    "subject": "CTE / Engineering & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE / Engineering & Design",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 Programs of Study Directory"
+  },
+  {
+    "course_id": "KY_210221",
+    "course_name": "Engineering I",
+    "subject": "CTE / Engineering & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE / Engineering & Design",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 Programs of Study Directory"
+  },
+  {
+    "course_id": "KY_210222",
+    "course_name": "Engineering II",
+    "subject": "CTE / Engineering & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE / Engineering & Design",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 Programs of Study Directory"
+  },
+  {
+    "course_id": "KY_210138",
+    "course_name": "Technical Design I",
+    "subject": "CTE / Engineering & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE / Engineering & Design",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 Programs of Study Directory"
+  },
+  {
+    "course_id": "KY_210108",
+    "course_name": "Technical Design II",
+    "subject": "CTE / Engineering & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE / Engineering & Design",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 Programs of Study Directory"
+  },
+  {
+    "course_id": "KY_302601",
+    "course_name": "Biology 1",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 State Course Codes page"
+  },
+  {
+    "course_id": "KY_304521",
+    "course_name": "Chemistry I",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 State Course Codes page"
+  },
+  {
+    "course_id": "KY_304821",
+    "course_name": "Physics I",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 State Course Codes page"
+  },
+  {
+    "course_id": "KY_304611",
+    "course_name": "Earth Space Science",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 State Course Codes page"
+  },
+  {
+    "course_id": "KY_302061",
+    "course_name": "Biology 1",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 State Course Codes page"
+  },
+  {
+    "course_id": "KY_304058",
+    "course_name": "Introduction to Chemistry and Physics",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 State Course Codes page"
+  },
+  {
+    "course_id": "KY_302698",
+    "course_name": "Biology with Earth Space Science",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 State Course Codes page"
+  },
+  {
+    "course_id": "KY_304598",
+    "course_name": "Chemistry with Earth/Space Science",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 State Course Codes page"
+  },
+  {
+    "course_id": "KY_304898",
+    "course_name": "Physics with Earth/Space Science",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 State Course Codes page"
+  },
+  {
+    "course_id": "KY_303051",
+    "course_name": "Conceptual Science I",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 State Course Codes page"
+  },
+  {
+    "course_id": "KY_303052",
+    "course_name": "Conceptual Science II",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 State Course Codes page"
+  },
+  {
+    "course_id": "KY_303053",
+    "course_name": "Conceptual Science III",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Kentucky",
+    "source_page": null,
+    "source": "KDE 2026-2027 State Course Codes page"
+  }
+]

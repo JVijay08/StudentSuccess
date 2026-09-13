@@ -1,0 +1,1233 @@
+[
+  {
+    "course_id": "AP_2D_ART_DESIGN",
+    "course_name": "AP 2-D Art and Design",
+    "subject": "Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Arts"
+    ]
+  },
+  {
+    "course_id": "AP_3D_ART_DESIGN",
+    "course_name": "AP 3-D Art and Design",
+    "subject": "Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Arts"
+    ]
+  },
+  {
+    "course_id": "AP_DRAWING",
+    "course_name": "AP Drawing",
+    "subject": "Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Arts"
+    ]
+  },
+  {
+    "course_id": "AP_ART_HISTORY",
+    "course_name": "AP Art History",
+    "subject": "Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Arts"
+    ]
+  },
+  {
+    "course_id": "AP_MUSIC_THEORY",
+    "course_name": "AP Music Theory",
+    "subject": "Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Arts"
+    ]
+  },
+  {
+    "course_id": "AP_ENGLISH_LANGUAGE",
+    "course_name": "AP English Language and Composition",
+    "subject": "English",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": []
+  },
+  {
+    "course_id": "AP_ENGLISH_LITERATURE",
+    "course_name": "AP English Literature and Composition",
+    "subject": "English",
+    "course_type": "AP",
+    "grade_levels": [
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": []
+  },
+  {
+    "course_id": "AP_SEMINAR",
+    "course_name": "AP Seminar",
+    "subject": "English",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": []
+  },
+  {
+    "course_id": "AP_RESEARCH",
+    "course_name": "AP Research",
+    "subject": "English",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "AP Seminar"
+    ],
+    "graduation_category": "Elective",
+    "career_clusters": []
+  },
+  {
+    "course_id": "AP_AFRICAN_AMERICAN_STUDIES",
+    "course_name": "AP African American Studies",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": []
+  },
+  {
+    "course_id": "AP_COMPARATIVE_GOVERNMENT",
+    "course_name": "AP Comparative Government and Politics",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": []
+  },
+  {
+    "course_id": "AP_EUROPEAN_HISTORY",
+    "course_name": "AP European History",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": []
+  },
+  {
+    "course_id": "AP_HUMAN_GEOGRAPHY",
+    "course_name": "AP Human Geography",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": []
+  },
+  {
+    "course_id": "AP_MACROECONOMICS",
+    "course_name": "AP Macroeconomics",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [
+      "Business"
+    ]
+  },
+  {
+    "course_id": "AP_MICROECONOMICS",
+    "course_name": "AP Microeconomics",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [
+      "Business"
+    ]
+  },
+  {
+    "course_id": "AP_PSYCHOLOGY",
+    "course_name": "AP Psychology",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [
+      "Health Science"
+    ]
+  },
+  {
+    "course_id": "AP_US_GOVERNMENT",
+    "course_name": "AP United States Government and Politics",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": []
+  },
+  {
+    "course_id": "AP_US_HISTORY",
+    "course_name": "AP United States History",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": []
+  },
+  {
+    "course_id": "AP_WORLD_HISTORY",
+    "course_name": "AP World History: Modern",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": []
+  },
+  {
+    "course_id": "AP_PRECALCULUS",
+    "course_name": "AP Precalculus",
+    "subject": "Math",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Math",
+    "career_clusters": [
+      "Engineering"
+    ]
+  },
+  {
+    "course_id": "AP_CALCULUS_AB",
+    "course_name": "AP Calculus AB",
+    "subject": "Math",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "Precalculus"
+    ],
+    "graduation_category": "Math",
+    "career_clusters": [
+      "Engineering",
+      "Data Science"
+    ]
+  },
+  {
+    "course_id": "AP_CALCULUS_BC",
+    "course_name": "AP Calculus BC",
+    "subject": "Math",
+    "course_type": "AP",
+    "grade_levels": [
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "AP Calculus AB"
+    ],
+    "graduation_category": "Math",
+    "career_clusters": [
+      "Engineering",
+      "Data Science"
+    ]
+  },
+  {
+    "course_id": "AP_COMPUTER_SCIENCE_A",
+    "course_name": "AP Computer Science A",
+    "subject": "Computer Science",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Technology"
+    ]
+  },
+  {
+    "course_id": "AP_COMPUTER_SCIENCE_PRINCIPLES",
+    "course_name": "AP Computer Science Principles",
+    "subject": "Computer Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Technology"
+    ]
+  },
+  {
+    "course_id": "AP_STATISTICS",
+    "course_name": "AP Statistics",
+    "subject": "Math",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Math",
+    "career_clusters": [
+      "Data Science"
+    ]
+  },
+  {
+    "course_id": "AP_DATA_SCIENCE",
+    "course_name": "AP Data Science (Pilot variations)",
+    "subject": "Computer Science",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Data Science"
+    ]
+  },
+  {
+    "course_id": "AP_BIOLOGY",
+    "course_name": "AP Biology",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "Biology",
+      "Chemistry"
+    ],
+    "graduation_category": "Science",
+    "career_clusters": [
+      "Health Science"
+    ]
+  },
+  {
+    "course_id": "AP_CHEMISTRY",
+    "course_name": "AP Chemistry",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "Chemistry",
+      "Algebra II"
+    ],
+    "graduation_category": "Science",
+    "career_clusters": [
+      "Health Science",
+      "Engineering"
+    ]
+  },
+  {
+    "course_id": "AP_ENVIRONMENTAL_SCIENCE",
+    "course_name": "AP Environmental Science",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "Biology"
+    ],
+    "graduation_category": "Science",
+    "career_clusters": [
+      "Environmental Science"
+    ]
+  },
+  {
+    "course_id": "AP_PHYSICS_1",
+    "course_name": "AP Physics 1: Algebra-Based",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "Algebra II"
+    ],
+    "graduation_category": "Science",
+    "career_clusters": [
+      "Engineering"
+    ]
+  },
+  {
+    "course_id": "AP_PHYSICS_2",
+    "course_name": "AP Physics 2: Algebra-Based",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "AP Physics 1"
+    ],
+    "graduation_category": "Science",
+    "career_clusters": [
+      "Engineering"
+    ]
+  },
+  {
+    "course_id": "AP_PHYSICS_C_ELECTRICITY",
+    "course_name": "AP Physics C: Electricity and Magnetism",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "Calculus"
+    ],
+    "graduation_category": "Science",
+    "career_clusters": [
+      "Engineering"
+    ]
+  },
+  {
+    "course_id": "AP_PHYSICS_C_MECHANICS",
+    "course_name": "AP Physics C: Mechanics",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "Calculus"
+    ],
+    "graduation_category": "Science",
+    "career_clusters": [
+      "Engineering"
+    ]
+  },
+  {
+    "course_id": "AP_CHINESE",
+    "course_name": "AP Chinese Language and Culture",
+    "subject": "World Language",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": []
+  },
+  {
+    "course_id": "AP_FRENCH",
+    "course_name": "AP French Language and Culture",
+    "subject": "World Language",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": []
+  },
+  {
+    "course_id": "AP_GERMAN",
+    "course_name": "AP German Language and Culture",
+    "subject": "World Language",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": []
+  },
+  {
+    "course_id": "AP_ITALIAN",
+    "course_name": "AP Italian Language and Culture",
+    "subject": "World Language",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": []
+  },
+  {
+    "course_id": "AP_JAPANESE",
+    "course_name": "AP Japanese Language and Culture",
+    "subject": "World Language",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": []
+  },
+  {
+    "course_id": "AP_LATIN",
+    "course_name": "AP Latin",
+    "subject": "World Language",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": []
+  },
+  {
+    "course_id": "AP_SPANISH_LANGUAGE",
+    "course_name": "AP Spanish Language and Culture",
+    "subject": "World Language",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": []
+  },
+  {
+    "course_id": "AP_SPANISH_LITERATURE",
+    "course_name": "AP Spanish Literature and Culture",
+    "subject": "World Language",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": []
+  },
+  {
+    "course_id": "AP_BUSINESS_PERSONAL_FINANCE",
+    "course_name": "AP Business with Personal Finance",
+    "subject": "Business",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Business"
+    ]
+  },
+  {
+    "course_id": "AP_CYBERSECURITY",
+    "course_name": "AP Cybersecurity",
+    "subject": "Computer Science",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Technology"
+    ]
+  },
+  {
+    "course_id": "AP_NETWORKING",
+    "course_name": "AP Networking",
+    "subject": "Computer Science",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Technology"
+    ]
+  },
+  {
+    "course_id": "VA_10109",
+    "course_name": "AP Networking Fundamentals",
+    "subject": "Computer Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Computer Science",
+    "career_clusters": [],
+    "source_state": "Virginia",
+    "source_page": null,
+    "source": "Virtual Virginia 2026-2027 online course catalog"
+  },
+  {
+    "course_id": "VA_01005",
+    "course_name": "AP English Language & Composition",
+    "subject": "English Language Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Virginia",
+    "source_page": null,
+    "source": "Virtual Virginia 2026-2027 online course catalog"
+  },
+  {
+    "course_id": "VA_01006",
+    "course_name": "AP English Literature & Composition",
+    "subject": "English Language Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Virginia",
+    "source_page": null,
+    "source": "Virtual Virginia 2026-2027 online course catalog"
+  },
+  {
+    "course_id": "VA_04158",
+    "course_name": "AP Comparative Government & Politics",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Virginia",
+    "source_page": null,
+    "source": "Virtual Virginia 2026-2027 online course catalog"
+  },
+  {
+    "course_id": "VA_24414",
+    "course_name": "AP Chinese Language & Culture",
+    "subject": "World Languages",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "Virginia",
+    "source_page": null,
+    "source": "Virtual Virginia 2026-2027 online course catalog"
+  },
+  {
+    "course_id": "VA_24114",
+    "course_name": "AP French Language & Culture",
+    "subject": "World Languages",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "Virginia",
+    "source_page": null,
+    "source": "Virtual Virginia 2026-2027 online course catalog"
+  },
+  {
+    "course_id": "VA_24264",
+    "course_name": "AP German Language & Culture",
+    "subject": "World Languages",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "Virginia",
+    "source_page": null,
+    "source": "Virtual Virginia 2026-2027 online course catalog"
+  },
+  {
+    "course_id": "WV_AP_STUDIO_ART",
+    "course_name": "AP Studio Art",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_AP_ENGLISH_LANG",
+    "course_name": "AP English Lang",
+    "subject": "English",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_AP_ENGLISH_LIT",
+    "course_name": "AP English Lit",
+    "subject": "English",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_AP_CALCULUS",
+    "course_name": "AP Calculus",
+    "subject": "Mathematics",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_AP_US_GOV_POLITICS",
+    "course_name": "AP US Gov & Politics",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_AP_COMPARATIVE_GOV_POLITICS",
+    "course_name": "AP Comparative Gov & Politics",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_AP_SPANISH",
+    "course_name": "AP Spanish",
+    "subject": "World Language",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "FL_1001420",
+    "course_name": "AP English Language and Comp",
+    "subject": "Advanced Placement",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Advanced Placement",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "GA_ENGLISH_AP_LANGUAGE",
+    "course_name": "AP English Language and Composition/American Literature",
+    "subject": "English Language Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      11
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_ART_AP_2D_DESIGN",
+    "course_name": "AP Studio Art: 2D Design",
+    "subject": "Fine Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Arts and Entertainment"
+    ],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_ART_AP_3D_DESIGN",
+    "course_name": "AP Studio Art: 3D Design",
+    "subject": "Fine Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Arts and Entertainment"
+    ],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_ART_AP_DRAWING",
+    "course_name": "AP Studio Art: Drawing",
+    "subject": "Fine Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Arts and Entertainment"
+    ],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_SCI_AP_PHYSICS_1",
+    "course_name": "AP Physics 1",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "Geometry: Concepts and Connections",
+      "Algebra: Concepts and Connections",
+      "Biology"
+    ],
+    "graduation_category": "Science",
+    "career_clusters": [
+      "Engineering"
+    ],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_SCI_AP_PHYSICS_2",
+    "course_name": "AP Physics 2",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "AP Physics 1"
+    ],
+    "graduation_category": "Science",
+    "career_clusters": [
+      "Engineering"
+    ],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_SOC_AP_WORLD_HISTORY",
+    "course_name": "AP World History",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_LANG_AP_LATIN",
+    "course_name": "AP Latin Literature",
+    "subject": "World Language",
+    "course_type": "AP",
+    "grade_levels": [
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "Latin III"
+    ],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  }
+]

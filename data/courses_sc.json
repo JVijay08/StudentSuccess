@@ -1,0 +1,1994 @@
+[
+  {
+    "course_id": "SC_4919",
+    "course_name": "Academic Seminar I for English",
+    "subject": "Academic Seminar",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Academic Seminar",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 36,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_4929",
+    "course_name": "Academic Seminar II for Mathematics",
+    "subject": "Academic Seminar",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Academic Seminar",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 36,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_4939",
+    "course_name": "Academic Seminar III for English and Mathematics",
+    "subject": "Academic Seminar",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Academic Seminar",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 37,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_4949",
+    "course_name": "Academic Seminar IV for Braille",
+    "subject": "Academic Seminar",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Academic Seminar",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 37,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_57S0",
+    "course_name": "Career Exploratory",
+    "subject": "Career Readiness",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career Readiness",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 52,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_389919CH",
+    "course_name": "Workforce Readiness",
+    "subject": "Career Readiness",
+    "course_type": "Standard",
+    "grade_levels": [
+      11
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career Readiness",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 53,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_389911CW",
+    "course_name": "Workplace Skills 1",
+    "subject": "Career Readiness",
+    "course_type": "Standard",
+    "grade_levels": [
+      10,
+      11
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career Readiness",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 52,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_389913CW",
+    "course_name": "Workplace Skills 2",
+    "subject": "Career Readiness",
+    "course_type": "Standard",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career Readiness",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 52,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_389915CW",
+    "course_name": "Workplace Skills 3",
+    "subject": "Career Readiness",
+    "course_type": "Standard",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career Readiness",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 53,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_389917CW",
+    "course_name": "Workplace Skills 4",
+    "subject": "Career Readiness",
+    "course_type": "Standard",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career Readiness",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 53,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_6372",
+    "course_name": "PLTW Computer Science Essentials",
+    "subject": "Computer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      10
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Computer Science",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 29,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5660",
+    "course_name": "Agricultural Mechanics and Technology",
+    "subject": "CTE - Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Agriculture",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 45,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5620",
+    "course_name": "Agricultural Science & Technology for the Workplace",
+    "subject": "CTE - Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Agriculture",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 44,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5624",
+    "course_name": "Agricultural Science and Technology",
+    "subject": "CTE - Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Agriculture",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 44,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5690",
+    "course_name": "Agriculture Internship, Work-Based Credit",
+    "subject": "CTE - Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Agriculture",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 45,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5603",
+    "course_name": "Animal Science",
+    "subject": "CTE - Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Agriculture",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 43,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5608",
+    "course_name": "Animal Science for the Workplace 1",
+    "subject": "CTE - Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Agriculture",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 43,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5609",
+    "course_name": "Animal Science for the Workplace 2",
+    "subject": "CTE - Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Agriculture",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 44,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5652",
+    "course_name": "Horticulture for the Workplace 1",
+    "subject": "CTE - Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Agriculture",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 45,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5653",
+    "course_name": "Horticulture for the Workplace 2",
+    "subject": "CTE - Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Agriculture",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 45,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5650",
+    "course_name": "Introduction to Horticulture",
+    "subject": "CTE - Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      10,
+      11
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Agriculture",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 45,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5612",
+    "course_name": "Small Animal Care",
+    "subject": "CTE - Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      10,
+      11
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Agriculture",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 44,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5290",
+    "course_name": "Arts, Entertainment & Design Internship, Work-Based Credit",
+    "subject": "CTE - Arts, Entertainment, and Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Arts, Entertainment, and Design",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 47,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_6122",
+    "course_name": "Design 3",
+    "subject": "CTE - Arts, Entertainment, and Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Arts, Entertainment, and Design",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 47,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_6123",
+    "course_name": "Digital Art and Design 4",
+    "subject": "CTE - Arts, Entertainment, and Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Arts, Entertainment, and Design",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 47,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3769",
+    "course_name": "Yearbook Production",
+    "subject": "CTE - Arts, Entertainment, and Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Arts, Entertainment, and Design",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 47,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_6091",
+    "course_name": "Carpentry 1",
+    "subject": "CTE - Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Construction",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 46,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_6092",
+    "course_name": "Carpentry 2",
+    "subject": "CTE - Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Construction",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 46,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_6093",
+    "course_name": "Carpentry 3",
+    "subject": "CTE - Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Construction",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 46,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_6094",
+    "course_name": "Carpentry 4",
+    "subject": "CTE - Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Construction",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 46,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_6690",
+    "course_name": "Construction Internship, work-based-credit",
+    "subject": "CTE - Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Construction",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 46,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5800",
+    "course_name": "Child Development 1",
+    "subject": "CTE - Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Education",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 49,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5801",
+    "course_name": "Child Development 2",
+    "subject": "CTE - Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      10,
+      11
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Education",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 49,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5700",
+    "course_name": "Early Childhood Education 1",
+    "subject": "CTE - Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      10,
+      11
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Education",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 48,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5701",
+    "course_name": "Early Childhood Education 2",
+    "subject": "CTE - Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Education",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 48,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_6390",
+    "course_name": "Education Internship, work-based-credit",
+    "subject": "CTE - Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Education",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 50,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5808",
+    "course_name": "Family & Consumer Science 1",
+    "subject": "CTE - Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Education",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 49,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5809",
+    "course_name": "Family & Consumer Science 2",
+    "subject": "CTE - Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      10,
+      11
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Education",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 49,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5890",
+    "course_name": "Family and Consumer Sciences Internship, work-based-credit",
+    "subject": "CTE - Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Education",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 50,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5824",
+    "course_name": "Foods and Nutrition 1",
+    "subject": "CTE - Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      10,
+      11
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Education",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 50,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5825",
+    "course_name": "Foods and Nutrition 2",
+    "subject": "CTE - Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Education",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 50,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5702",
+    "course_name": "Introduction to Early Childhood Education",
+    "subject": "CTE - Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Education",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 48,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_6015",
+    "course_name": "Introduction to Transportation, Distribution & Logistics Services",
+    "subject": "CTE - Supply Chain and Transportation",
+    "course_type": "Standard",
+    "grade_levels": [
+      9
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Supply Chain and Transportation",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 51,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_6302",
+    "course_name": "Power Equipment Technology 3",
+    "subject": "CTE - Supply Chain and Transportation",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Supply Chain and Transportation",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 51,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_6303",
+    "course_name": "Power Equipment Technology 4",
+    "subject": "CTE - Supply Chain and Transportation",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Supply Chain and Transportation",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 51,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_6790",
+    "course_name": "Supply Chain & Transportation Internship, Work-Based Credit",
+    "subject": "CTE - Supply Chain and Transportation",
+    "course_type": "Standard",
+    "grade_levels": [
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "CTE - Supply Chain and Transportation",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 51,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3701",
+    "course_name": "Driver Education",
+    "subject": "Driver Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Driver Education",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 39,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3799",
+    "course_name": "SC Driver Permit Preparation",
+    "subject": "Driver Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Driver Education",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 39,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3908",
+    "course_name": "Employability Education I",
+    "subject": "Employability Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Employability Education",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 34,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3918",
+    "course_name": "Employability Education II",
+    "subject": "Employability Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      10
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Employability Education",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 34,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3928",
+    "course_name": "Employability Education III",
+    "subject": "Employability Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      11
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Employability Education",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 34,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3938",
+    "course_name": "Employability Education IV",
+    "subject": "Employability Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Employability Education",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 35,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3024",
+    "course_name": "English 1",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 21,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3025",
+    "course_name": "English 2",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      10
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 22,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3026",
+    "course_name": "English 3",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      11
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 22,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3027",
+    "course_name": "English 4",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 22,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3900",
+    "course_name": "Essentials of English I",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 30,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3910",
+    "course_name": "Essentials of English II",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      10
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 30,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3920",
+    "course_name": "Essentials of English III",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      11
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 31,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3930",
+    "course_name": "Essentials of English IV",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 31,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_5141",
+    "course_name": "Personal Finance",
+    "subject": "Financial Literacy",
+    "course_type": "Standard",
+    "grade_levels": [
+      11
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Financial Literacy",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 30,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_4114",
+    "course_name": "Algebra 1",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      10
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 24,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_4115",
+    "course_name": "Algebra 2 with Probability",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      11
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 24,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_4119",
+    "course_name": "Applications and Modeling",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 26,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_4142",
+    "course_name": "Discrete Mathematics",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 25,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3901",
+    "course_name": "Essentials of Math I: Practical Geometry & Statistics",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 31,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3911",
+    "course_name": "Essentials of Math II: Practical Algebra",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      10
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 32,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3921",
+    "course_name": "Essentials of Math III: Practical Reasoning in Math",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      11
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 32,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3931",
+    "course_name": "Essentials of Math IV: Practical Applications & Modeling",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 32,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_4122",
+    "course_name": "Geometry with Statistics",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 24,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_4131",
+    "course_name": "Pre-Calculus",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 25,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_4118",
+    "course_name": "Reasoning in Mathematics",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 26,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_4120",
+    "course_name": "Statistical Modeling",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 25,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3541",
+    "course_name": "Chorus 1",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 41,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3542",
+    "course_name": "Chorus 2",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 41,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3543",
+    "course_name": "Chorus 3",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 41,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3544",
+    "course_name": "Chorus 4",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 41,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3560",
+    "course_name": "General Music",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 41,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3570",
+    "course_name": "Music Composition",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 42,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_4586",
+    "course_name": "Music Composition and Songwriting",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 42,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_4585",
+    "course_name": "Music Technology",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 42,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_4521",
+    "course_name": "Theatre 1",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 42,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_4584",
+    "course_name": "World Music",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 42,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3441",
+    "course_name": "Physical Education 1",
+    "subject": "Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 29,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3442",
+    "course_name": "Physical Education 2",
+    "subject": "Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      10,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 38,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3221",
+    "course_name": "Biology 1",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      10
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 27,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3231",
+    "course_name": "Chemistry 1",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 27,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3261",
+    "course_name": "Environmental Science",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      11
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 27,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3902",
+    "course_name": "Essentials of Science I: Biology",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      11
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 32,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3912",
+    "course_name": "Essentials of Science II: Physical Science",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 33,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3211",
+    "course_name": "Physical Science",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 26,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3308",
+    "course_name": "Economics and Personal Finance",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      10
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 28,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3903",
+    "course_name": "Essentials of Social Studies I: US History and Constitution",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      11
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 33,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3913",
+    "course_name": "Essentials of Social Studies II: US Government",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 33,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3306",
+    "course_name": "Modern World History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 28,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3330",
+    "course_name": "U.S. Government",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      10
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 28,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3320",
+    "course_name": "U.S. History and Constitution",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 29,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_6051",
+    "course_name": "PLTW \u2013 Introduction to Engineering Design",
+    "subject": "STEM",
+    "course_type": "Standard",
+    "grade_levels": [
+      10,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "STEM",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 39,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_39M8",
+    "course_name": "Essentials of Technology",
+    "subject": "Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Technology",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 35,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3501",
+    "course_name": "Art 1",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 40,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3502",
+    "course_name": "Art 2",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 40,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3503",
+    "course_name": "Art 3",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 40,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3504",
+    "course_name": "Art 4",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 40,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3511",
+    "course_name": "Art Appreciation 1",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 40,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3521",
+    "course_name": "Art: Drawing 1",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 40,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3525",
+    "course_name": "Art: Painting 1",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 40,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_4561",
+    "course_name": "Ceramics 1",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 41,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3032",
+    "course_name": "Creative Writing",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      10,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 39,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_4566",
+    "course_name": "Photography 1",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 41,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3681",
+    "course_name": "American Sign Language 1",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      9
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 37,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3682",
+    "course_name": "American Sign Language 2",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      10
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 38,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3683",
+    "course_name": "American Sign Language 3",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      11
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 38,
+    "source": "South Carolina"
+  },
+  {
+    "course_id": "SC_3684",
+    "course_name": "American Sign Language 4",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "South Carolina",
+    "source_page": 38,
+    "source": "South Carolina"
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "course_id": "VA_02052",
+    "course_name": "Advanced Mathematics 8 & Algebra I",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Virginia",
+    "source_page": null,
+    "source": "Virtual Virginia 2026-2027 online course catalog"
+  },
+  {
+    "course_id": "VA_02052_2",
+    "course_name": "Algebra I",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Virginia",
+    "source_page": null,
+    "source": "Virtual Virginia 2026-2027 online course catalog"
+  },
+  {
+    "course_id": "VA_02056",
+    "course_name": "Algebra II",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Virginia",
+    "source_page": null,
+    "source": "Virtual Virginia 2026-2027 online course catalog"
+  },
+  {
+    "course_id": "VA_02106",
+    "course_name": "Algebra II & Trigonometry",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Virginia",
+    "source_page": null,
+    "source": "Virtual Virginia 2026-2027 online course catalog"
+  },
+  {
+    "course_id": "VA_02902",
+    "course_name": "Algebra, Functions, and Data Analysis",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Virginia",
+    "source_page": null,
+    "source": "Virtual Virginia 2026-2027 online course catalog"
+  },
+  {
+    "course_id": "VA_04908",
+    "course_name": "African American History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Virginia",
+    "source_page": null,
+    "source": "Virtual Virginia 2026-2027 online course catalog"
+  },
+  {
+    "course_id": "VA_24852",
+    "course_name": "American Sign Language I",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "Virginia",
+    "source_page": null,
+    "source": "Virtual Virginia 2026-2027 online course catalog"
+  },
+  {
+    "course_id": "VA_24853",
+    "course_name": "American Sign Language II",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "Virginia",
+    "source_page": null,
+    "source": "Virtual Virginia 2026-2027 online course catalog"
+  },
+  {
+    "course_id": "VA_24854",
+    "course_name": "American Sign Language III",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "Virginia",
+    "source_page": null,
+    "source": "Virtual Virginia 2026-2027 online course catalog"
+  },
+  {
+    "course_id": "VA_24855",
+    "course_name": "American Sign Language IV",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "Virginia",
+    "source_page": null,
+    "source": "Virtual Virginia 2026-2027 online course catalog"
+  }
+]

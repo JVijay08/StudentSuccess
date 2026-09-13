@@ -22,9 +22,9 @@ Database table: `student_profiles`
 
 The onboarding form uses `career_interest` as its request key and maps it to the model's `career_goals` field.
 
-## Course catalog (implemented)
+## Course catalogs (implemented)
 
-File: `data/courses.json`
+Files: `data/courses_national.json`, `data/courses.json`, `data/courses_ap.json`, `data/courses_ib.json`, and the imported state files in `data/courses_*.json`.
 
 Each course record contains:
 
@@ -39,7 +39,7 @@ Each course record contains:
 - `graduation_category`: graduation-area label
 - `career_clusters`: optional related career categories
 
-The current catalog has 59 records. It is curated reference data, not student behavior data.
+The catalogs are separated into national reference, state, Forsyth County local, AP program, and IB program sources. State coverage follows the supplied source documents and may be statewide, provider-specific, or school-specific. These catalogs are reference data, not student behavior data or official universal graduation rules.
 
 ## PlannedCourse (implemented)
 

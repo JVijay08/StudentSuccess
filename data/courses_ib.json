@@ -1,0 +1,4303 @@
+[
+  {
+    "course_id": "IB_ENGLISH_A_LANGUAGE_LITERATURE",
+    "course_name": "IB English A: Language and Literature",
+    "subject": "Studies in Language and Literature",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": []
+  },
+  {
+    "course_id": "IB_ENGLISH_A_LITERATURE",
+    "course_name": "IB English A: Literature",
+    "subject": "Studies in Language and Literature",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": []
+  },
+  {
+    "course_id": "IB_SPANISH_A_LANGUAGE_LITERATURE",
+    "course_name": "IB Spanish A: Language and Literature",
+    "subject": "Studies in Language and Literature",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "IB_FRENCH_A_LANGUAGE_LITERATURE",
+    "course_name": "IB French A: Language and Literature",
+    "subject": "Studies in Language and Literature",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "IB_GERMAN_A_LANGUAGE_LITERATURE",
+    "course_name": "IB German A: Language and Literature",
+    "subject": "Studies in Language and Literature",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "IB_CHINESE_A_LANGUAGE_LITERATURE",
+    "course_name": "IB Chinese A: Language and Literature",
+    "subject": "Studies in Language and Literature",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "IB_ARABIC_A_LITERATURE",
+    "course_name": "IB Arabic A: Literature",
+    "subject": "Studies in Language and Literature",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "IB_JAPANESE_A_LITERATURE",
+    "course_name": "IB Japanese A: Literature",
+    "subject": "Studies in Language and Literature",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "IB_SPANISH_B",
+    "course_name": "IB Spanish B",
+    "subject": "Language Acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "IB_FRENCH_B",
+    "course_name": "IB French B",
+    "subject": "Language Acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "IB_GERMAN_B",
+    "course_name": "IB German B",
+    "subject": "Language Acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "IB_MANDARIN_B",
+    "course_name": "IB Chinese B - Mandarin",
+    "subject": "Language Acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "IB_JAPANESE_B",
+    "course_name": "IB Japanese B",
+    "subject": "Language Acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "IB_LATIN",
+    "course_name": "IB Latin",
+    "subject": "Language Acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": []
+  },
+  {
+    "course_id": "IB_BUSINESS_MANAGEMENT",
+    "course_name": "IB Business Management",
+    "subject": "Individuals and Societies",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [
+      "Business"
+    ]
+  },
+  {
+    "course_id": "IB_ECONOMICS",
+    "course_name": "IB Economics",
+    "subject": "Individuals and Societies",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [
+      "Business"
+    ]
+  },
+  {
+    "course_id": "IB_GLOBAL_POLITICS",
+    "course_name": "IB Global Politics",
+    "subject": "Individuals and Societies",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": []
+  },
+  {
+    "course_id": "IB_HISTORY",
+    "course_name": "IB History",
+    "subject": "Individuals and Societies",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": []
+  },
+  {
+    "course_id": "IB_HISTORY_AMERICAS",
+    "course_name": "IB History of the Americas",
+    "subject": "Individuals and Societies",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": []
+  },
+  {
+    "course_id": "IB_PSYCHOLOGY",
+    "course_name": "IB Psychology",
+    "subject": "Individuals and Societies",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [
+      "Health Science"
+    ]
+  },
+  {
+    "course_id": "IB_ART_HISTORY",
+    "course_name": "IB Art History",
+    "subject": "Individuals and Societies",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Arts",
+    "career_clusters": [
+      "Arts"
+    ]
+  },
+  {
+    "course_id": "IB_BIOLOGY",
+    "course_name": "IB Biology",
+    "subject": "Sciences",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [
+      "Health Science"
+    ]
+  },
+  {
+    "course_id": "IB_CHEMISTRY",
+    "course_name": "IB Chemistry",
+    "subject": "Sciences",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [
+      "Health Science",
+      "Engineering"
+    ]
+  },
+  {
+    "course_id": "IB_PHYSICS",
+    "course_name": "IB Physics",
+    "subject": "Sciences",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [
+      "Engineering"
+    ]
+  },
+  {
+    "course_id": "IB_COMPUTER_SCIENCE",
+    "course_name": "IB Computer Science",
+    "subject": "Sciences",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Technology"
+    ]
+  },
+  {
+    "course_id": "IB_DESIGN_TECHNOLOGY",
+    "course_name": "IB Design Technology",
+    "subject": "Sciences",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Engineering"
+    ]
+  },
+  {
+    "course_id": "IB_ENVIRONMENTAL_SYSTEMS",
+    "course_name": "IB Environmental Systems and Societies",
+    "subject": "Interdisciplinary",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [
+      "Environmental Science"
+    ]
+  },
+  {
+    "course_id": "IB_MATH_ANALYSIS_APPROACHES",
+    "course_name": "IB Mathematics: Analysis and Approaches",
+    "subject": "Mathematics",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Math",
+    "career_clusters": [
+      "Engineering",
+      "Data Science"
+    ]
+  },
+  {
+    "course_id": "IB_MATH_APPLICATIONS_INTERPRETATIONS",
+    "course_name": "IB Mathematics: Applications and Interpretations",
+    "subject": "Mathematics",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Math",
+    "career_clusters": [
+      "Data Science"
+    ]
+  },
+  {
+    "course_id": "IB_DANCE",
+    "course_name": "IB Dance",
+    "subject": "Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Arts",
+    "career_clusters": [
+      "Arts"
+    ]
+  },
+  {
+    "course_id": "IB_FILM",
+    "course_name": "IB Film",
+    "subject": "Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Arts",
+    "career_clusters": [
+      "Arts"
+    ]
+  },
+  {
+    "course_id": "IB_MUSIC",
+    "course_name": "IB Music",
+    "subject": "Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Arts",
+    "career_clusters": [
+      "Arts"
+    ]
+  },
+  {
+    "course_id": "IB_THEATRE",
+    "course_name": "IB Theatre",
+    "subject": "Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Arts",
+    "career_clusters": [
+      "Arts"
+    ]
+  },
+  {
+    "course_id": "IB_VISUAL_ARTS",
+    "course_name": "IB Visual Arts",
+    "subject": "Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Arts",
+    "career_clusters": [
+      "Arts"
+    ]
+  },
+  {
+    "course_id": "IB_THEORY_OF_KNOWLEDGE",
+    "course_name": "IB Theory of Knowledge",
+    "subject": "Interdisciplinary",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": []
+  },
+  {
+    "course_id": "IB_NATURE_OF_SCIENCE",
+    "course_name": "IB Nature of Science",
+    "subject": "Interdisciplinary",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": []
+  },
+  {
+    "course_id": "NC_0I00",
+    "course_name": "IB Personal and Professional Skills",
+    "subject": "Supplemental Employability Skills",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Supplemental Employability Skills",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 123,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_2I01",
+    "course_name": "IB Computer Science HL",
+    "subject": "Supplemental Technical Courses",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Supplemental Technical Courses",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 125,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_2I00",
+    "course_name": "IB Computer Science SL",
+    "subject": "Supplemental Technical Courses",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Supplemental Technical Courses",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 125,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_3I07",
+    "course_name": "IB Design Technology HL",
+    "subject": "Supplemental Technical Courses",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Supplemental Technical Courses",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 125,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_3I06",
+    "course_name": "IB Design Technology SL",
+    "subject": "Supplemental Technical Courses",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Supplemental Technical Courses",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 125,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_4I02",
+    "course_name": "IB Economics HL",
+    "subject": "Supplemental Technical Courses",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Supplemental Technical Courses",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 125,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_4I01",
+    "course_name": "IB Economics SL",
+    "subject": "Supplemental Technical Courses",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Supplemental Technical Courses",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 126,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_BI05",
+    "course_name": "IB Information Technology in a Global Society",
+    "subject": "Supplemental Technical Courses",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Supplemental Technical Courses",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 126,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_3I10",
+    "course_name": "IB Sports Exercise and Health Science HL",
+    "subject": "Supplemental Technical Courses",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Supplemental Technical Courses",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 126,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_3I08",
+    "course_name": "IB Sports Exercise and Health Science SL",
+    "subject": "Supplemental Technical Courses",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Supplemental Technical Courses",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 126,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "TN_7_26",
+    "course_name": "IB German A Language and Literature I SL/HL",
+    "subject": "Language Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_27",
+    "course_name": "IB German A Language and Literature II SL/HL",
+    "subject": "Language Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "GA_CTAE_IB_BUSINESS_SL",
+    "course_name": "IB Business SL",
+    "subject": "Career & Technical Education",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "CTAE",
+    "career_clusters": [
+      "Business",
+      "Finance"
+    ],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_ENGLISH_IB_LITERATURE_HL",
+    "course_name": "IB English Literature HL",
+    "subject": "English Language Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_ART_IB_THEATER",
+    "course_name": "IB Theater",
+    "subject": "Fine Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Arts and Entertainment"
+    ],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_ART_IB_VISUAL_ARTS_HL",
+    "course_name": "IB Visual Arts HL",
+    "subject": "Fine Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Arts and Entertainment"
+    ],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_ART_IB_VISUAL_ARTS_SL",
+    "course_name": "IB Visual Arts SL",
+    "subject": "Fine Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Elective",
+    "career_clusters": [
+      "Arts and Entertainment"
+    ],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_MATH_IB_ANALYSIS_APPROACHES_SL",
+    "course_name": "IB Math Analysis & Approaches SL",
+    "subject": "Mathematics",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Math",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_MATH_IB_APPLICATIONS_INTERPRETATIONS_SL",
+    "course_name": "IB Math Applications & Interpretations SL",
+    "subject": "Mathematics",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Math",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_SCI_IB_BIOLOGY_HL",
+    "course_name": "IB Biology HL",
+    "subject": "Science",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_SCI_IB_CHEMISTRY_SL",
+    "course_name": "IB Chemistry SL",
+    "subject": "Science",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_SCI_IB_ENVIRONMENTAL_SCIENCE_SL",
+    "course_name": "IB Environmental Science SL",
+    "subject": "Science",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [
+      "Environmental Science"
+    ],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_SCI_IB_PHYSICS_HL",
+    "course_name": "IB Physics HL",
+    "subject": "Science",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_SOC_IB_HISTORY_AMERICAS_HL",
+    "course_name": "IB History of the Americas HL",
+    "subject": "Social Studies",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_SOC_IB_HISTORY_AMERICAS_SL",
+    "course_name": "IB History of the Americas SL",
+    "subject": "Social Studies",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_SOC_IB_PSYCHOLOGY_SL",
+    "course_name": "IB Psychology SL",
+    "subject": "Social Studies",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_LANG_IB_FRENCH_HL",
+    "course_name": "IB French HL",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_LANG_IB_FRENCH_SL",
+    "course_name": "IB French SL",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_LANG_IB_GERMAN_HL",
+    "course_name": "IB German HL",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_LANG_IB_GERMAN_SL",
+    "course_name": "IB German SL",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_LANG_IB_LATIN_HL",
+    "course_name": "IB Latin HL",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_LANG_IB_LATIN_SL",
+    "course_name": "IB Latin SL",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_LANG_IB_SPANISH_HL",
+    "course_name": "IB Spanish HL",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "GA_LANG_IB_SPANISH_SL",
+    "course_name": "IB Spanish SL",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source_page": null,
+    "source": "Georgia"
+  },
+  {
+    "course_id": "IB_IB_LITERARY_ART",
+    "course_name": "IB Literary Art",
+    "subject": "Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Arts",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 6,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_REFLECTIVE_PROJECT",
+    "course_name": "IB Reflective Project",
+    "subject": "CP core",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "CP core",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 6,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_ASTRONOMY",
+    "course_name": "IB Astronomy",
+    "subject": "Individuals and societies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Individuals and societies",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_BRAZILIAN_SOCIAL_STUDIES",
+    "course_name": "IB Brazilian Social Studies",
+    "subject": "Individuals and societies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Individuals and societies",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_DIGITAL_SOCIETIES",
+    "course_name": "IB Digital Societies",
+    "subject": "Individuals and societies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Individuals and societies",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_HISTORY_AFRICA_AND_MIDDLE_EAST",
+    "course_name": "IB History Africa And Middle East",
+    "subject": "Individuals and societies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Individuals and societies",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_HISTORY_AMERICAS",
+    "course_name": "IB History Americas",
+    "subject": "Individuals and societies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Individuals and societies",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_HISTORY_ASIA_AND_OCEANIA",
+    "course_name": "IB History Asia And Oceania",
+    "subject": "Individuals and societies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Individuals and societies",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_HISTORY_EUROPE",
+    "course_name": "IB History Europe",
+    "subject": "Individuals and societies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Individuals and societies",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_MODERN_HISTORY_OF_KAZAKHSTAN",
+    "course_name": "IB Modern History Of Kazakhstan",
+    "subject": "Individuals and societies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Individuals and societies",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_PHILOSOPHY",
+    "course_name": "IB Philosophy",
+    "subject": "Individuals and societies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Individuals and societies",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_SOCIAL_AND_CULTURAL_ANTHOPOLOGY",
+    "course_name": "IB Social And Cultural Anthopology",
+    "subject": "Individuals and societies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Individuals and societies",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_TURKEY_IN_THE_20TH_CENTURY",
+    "course_name": "IB Turkey In The 20Th Century",
+    "subject": "Individuals and societies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Individuals and societies",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_WORLD_ARTS_AND_CULTURES",
+    "course_name": "IB World Arts And Cultures",
+    "subject": "Individuals and societies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Individuals and societies",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 6,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_WORLD_RELIGIONS",
+    "course_name": "IB World Religions",
+    "subject": "Individuals and societies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Individuals and societies",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 6,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_ARABIC_AB_INITIO",
+    "course_name": "IB Arabic Ab Initio",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_ARABIC_B",
+    "course_name": "IB Arabic B",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_CHINESE_B_CANTONESE",
+    "course_name": "IB Chinese B - Cantonese",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_CLASSIC_GREEK",
+    "course_name": "IB Classic Greek",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_CLASSIC_GREEK_AND_ROMAN_STUDIES",
+    "course_name": "IB Classic Greek And Roman Studies",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_DANISH_AB_INITIO",
+    "course_name": "IB Danish Ab Initio",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_DANISH_B",
+    "course_name": "IB Danish B",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_DUTCH_AB_INITIO",
+    "course_name": "IB Dutch Ab Initio",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_DUTCH_B",
+    "course_name": "IB Dutch B",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_ENGLISH_AB_INITIO",
+    "course_name": "IB English Ab Initio",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_ENGLISH_B",
+    "course_name": "IB English B",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_FINNISH_B",
+    "course_name": "IB Finnish B",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_FRENCH_AB_INITIO",
+    "course_name": "IB French Ab Initio",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_GERMAN_AB_INITIO",
+    "course_name": "IB German Ab Initio",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_HEBREW_B",
+    "course_name": "IB Hebrew B",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_HINDI_B",
+    "course_name": "IB Hindi B",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_INDONESIAN_AB_INITIO",
+    "course_name": "IB Indonesian Ab Initio",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_INDONESIAN_B",
+    "course_name": "IB Indonesian B",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_ITALIAN_AB_INITIO",
+    "course_name": "IB Italian Ab Initio",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_ITALIAN_B",
+    "course_name": "IB Italian B",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_JAPANESE_AB_INITIO",
+    "course_name": "IB Japanese Ab Initio",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_KISWAHILI_AB_INITIO",
+    "course_name": "IB Kiswahili Ab Initio",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_KISWAHILI_B",
+    "course_name": "IB Kiswahili B",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_KOREAN_B",
+    "course_name": "IB Korean B",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_MALAY_B",
+    "course_name": "IB Malay B",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_MANDARIN_AB_INITIO",
+    "course_name": "IB Mandarin Ab Initio",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_NORWEGIAN_B",
+    "course_name": "IB Norwegian B",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_PORTUGUESE_B",
+    "course_name": "IB Portuguese B",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_RUSSIAN_AB_INITIO",
+    "course_name": "IB Russian Ab Initio",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_RUSSIAN_B",
+    "course_name": "IB Russian B",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_SPANISH_AB_INITIO",
+    "course_name": "IB Spanish Ab Initio",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_SWEDISH_AB_INITIO",
+    "course_name": "IB Swedish Ab Initio",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_SWEDISH_B",
+    "course_name": "IB Swedish B",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_TAMIL_B",
+    "course_name": "IB Tamil B",
+    "subject": "Language acquisition",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language acquisition",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 5,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_MATHEMATICS_ANALYSIS_AND_APPROACHES",
+    "course_name": "IB Mathematics Analysis And Approaches",
+    "subject": "Mathematics",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 6,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_MATHEMATICS_APPLICATIONS_AND_INTERPRETATIONS",
+    "course_name": "IB Mathematics Applications And Interpretations",
+    "subject": "Mathematics",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 6,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_DESIGN_TECHOLOGY",
+    "course_name": "IB Design Techology",
+    "subject": "Sciences",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Sciences",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 6,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_FOOD_SCIENCE_AND_TECHNOLOGY",
+    "course_name": "IB Food Science And Technology",
+    "subject": "Sciences",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Sciences",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 6,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_GEOGRAPHY",
+    "course_name": "IB Geography",
+    "subject": "Sciences",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Sciences",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 6,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_MARINE_SCIENCE",
+    "course_name": "IB Marine Science",
+    "subject": "Sciences",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Sciences",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 6,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_SPORTS_EXERCISE_AND_HEALTH_SCIENCE",
+    "course_name": "IB Sports Exercise And Health Science",
+    "subject": "Sciences",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Sciences",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 6,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_AFRIKAANS_A_LITERATURE",
+    "course_name": "IB Afrikaans A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 1,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_ALBANIAN_A_LITERATURE",
+    "course_name": "IB Albanian A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 1,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_AMHARIC_A_LITERATURE",
+    "course_name": "IB Amharic A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 1,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_ARABIC_A_LANGUAGE_AND_LITERATURE",
+    "course_name": "IB Arabic A Language And Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 1,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_ARMENIAN_A_LITERATURE",
+    "course_name": "IB Armenian A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 1,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_AZERBAIJANI_A_LITERATURE",
+    "course_name": "IB Azerbaijani A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 1,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_BELARUSIAN_A_LITERATURE",
+    "course_name": "IB Belarusian A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 1,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_BEMBA_A_LITERATURE",
+    "course_name": "IB Bemba A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 1,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_BENGALI_A_LITERATURE",
+    "course_name": "IB Bengali A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 1,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_BOSNIAN_A_LITERATURE",
+    "course_name": "IB Bosnian A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 1,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_BULGARIAN_A_LITERATURE",
+    "course_name": "IB Bulgarian A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 1,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_BURMESE_A_LITERATURE",
+    "course_name": "IB Burmese A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 1,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_CATALAN_A_LITERATURE",
+    "course_name": "IB Catalan A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 1,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_CHICHEWA_A_LITERATURE",
+    "course_name": "IB Chichewa A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 1,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_CHINESE_A_LANGUAGE_AND_LITERATURE",
+    "course_name": "IB Chinese A Language And Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 1,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_CHINESE_A_LITERATURE",
+    "course_name": "IB Chinese A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 1,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_CROATIAN_A_LITERATURE",
+    "course_name": "IB Croatian A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 1,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_CZECH_A_LITERATURE",
+    "course_name": "IB Czech A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 1,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_DANISH_A_LITERATURE",
+    "course_name": "IB Danish A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 1,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_DUTCH_A_LANGUAGE_AND_LITERATURE",
+    "course_name": "IB Dutch A Language And Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 1,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_DUTCH_A_LITERATURE",
+    "course_name": "IB Dutch A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 1,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_DZONGKHA_A_LITERATURE",
+    "course_name": "IB Dzongkha A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 1,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_ENGLISH_A_LANGUAGE_AND_LITERATURE",
+    "course_name": "IB English A Language And Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_ESTONIAN_A_LITERATURE",
+    "course_name": "IB Estonian A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_FILIPINO_A_LITERATURE",
+    "course_name": "IB Filipino A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_FINNISH_A_LITERATURE",
+    "course_name": "IB Finnish A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_FRENCH_A_LANGUAGE_AND_LITERATURE",
+    "course_name": "IB French A Language And Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_FRENCH_A_LITERATURE",
+    "course_name": "IB French A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_GEORGIAN_A_LITERATURE",
+    "course_name": "IB Georgian A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_GERMAN_A_LANGUAGE_AND_LITERATURE",
+    "course_name": "IB German A Language And Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_GERMAN_A_LITERATURE",
+    "course_name": "IB German A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_GUARANI_A_LITERATURE",
+    "course_name": "IB Guarani A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_HEBREW_A_LITERATURE",
+    "course_name": "IB Hebrew A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_HINDI_A_LITERATURE",
+    "course_name": "IB Hindi A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_HUNGARIAN_A_LITERATURE",
+    "course_name": "IB Hungarian A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_ICELANDIC_A_LITERATURE",
+    "course_name": "IB Icelandic A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_INDONESIAN_A_LANG_AND_LITERATURE",
+    "course_name": "IB Indonesian A: Lang And Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_INDONESIAN_A_LITERATURE",
+    "course_name": "IB Indonesian A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_ITALIAN_A_LANGUAGE_AND_LITERATURE",
+    "course_name": "IB Italian A Language And Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_ITALIAN_A_LITERATURE",
+    "course_name": "IB Italian A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_JAPANESE_A_LANGUAGE_AND_LITERATURE",
+    "course_name": "IB Japanese A Language And Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_KAZAKH_A_LITERATURE",
+    "course_name": "IB Kazakh A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_KHMER_A_LITERATURE",
+    "course_name": "IB Khmer A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_KINYARWANDA_A_LITERATURE",
+    "course_name": "IB Kinyarwanda A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_KISWAHILI_A_LITERATURE",
+    "course_name": "IB Kiswahili A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_KOREAN_A_LANG_AND_LITERATURE",
+    "course_name": "IB Korean A: Lang And Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_KOREAN_A_LITERATURE",
+    "course_name": "IB Korean A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_LAO_A_LITERATURE",
+    "course_name": "IB Lao A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_LATVIAN_A_LITERATURE",
+    "course_name": "IB Latvian A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_LITERATURE_AND_PERFORMANCE",
+    "course_name": "IB Literature And Performance",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_LITHUANIAN_A_LITERATURE",
+    "course_name": "IB Lithuanian A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_LUGANDA_A_LITERATURE",
+    "course_name": "IB Luganda A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_MACEDONIAN_A_LITERATURE",
+    "course_name": "IB Macedonian A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_MALAGASY_A_LITERATURE",
+    "course_name": "IB Malagasy A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 2,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_MALAY_A_LITERATURE",
+    "course_name": "IB Malay A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_MALAYALAM_A_LITERATURE",
+    "course_name": "IB Malayalam A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_MODERN_GREEK_A_LANGUAGE_AND_LITERATURE",
+    "course_name": "IB Modern Greek A Language And Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_MODERN_GREEK_A_LITERATURE",
+    "course_name": "IB Modern Greek A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_MONGOLIAN_A_LITERATURE",
+    "course_name": "IB Mongolian A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_NDEBELE_A_LITERATURE",
+    "course_name": "IB Ndebele A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_NEPALI_A_LITERATURE",
+    "course_name": "IB Nepali A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_NORWEGIAN_A_LANGUAGE_AND_LITERATURE",
+    "course_name": "IB Norwegian A Language And Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_NORWEGIAN_A_LITERATURE",
+    "course_name": "IB Norwegian A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_PERSIAN_A_LITERATURE",
+    "course_name": "IB Persian A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_POLISH_A_LITERATURE",
+    "course_name": "IB Polish A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_PORTUGUESE_A_LANGUAGE_AND_LITERATURE",
+    "course_name": "IB Portuguese A Language And Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_PORTUGUESE_A_LITERATURE",
+    "course_name": "IB Portuguese A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_PUNJABI_A_LITERATURE",
+    "course_name": "IB Punjabi A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_ROMANIAN_A_LITERATURE",
+    "course_name": "IB Romanian A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_RUSSIAN_A_LANGUAGE_AND_LITERATURE",
+    "course_name": "IB Russian A Language And Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_RUSSIAN_A_LITERATURE",
+    "course_name": "IB Russian A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_SERBIAN_A_LITERATURE",
+    "course_name": "IB Serbian A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_SESOTHO_A_LITERATURE",
+    "course_name": "IB Sesotho A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_SHONA_A_LITERATURE",
+    "course_name": "IB Shona A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_SINHALA_A_LITERATURE",
+    "course_name": "IB Sinhala A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_SISWATI_A_LITERATURE",
+    "course_name": "IB Siswati A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_SLOVAK_A_LITERATURE",
+    "course_name": "IB Slovak A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_SLOVENE_A_LITERATURE",
+    "course_name": "IB Slovene A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_SOMALI_A_LITERATURE",
+    "course_name": "IB Somali A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_SPANISH_A_LANGUAGE_AND_LITERATURE",
+    "course_name": "IB Spanish A Language And Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_SPANISH_A_LITERATURE",
+    "course_name": "IB Spanish A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_SWEDISH_A_LANGUAGE_AND_LITERATURE",
+    "course_name": "IB Swedish A Language And Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_SWEDISH_A_LITERATURE",
+    "course_name": "IB Swedish A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_TAJIK_A_LITERATURE",
+    "course_name": "IB Tajik A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_TAMIL_A_LITERATURE",
+    "course_name": "IB Tamil A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_TELUGU_A_LITERATURE",
+    "course_name": "IB Telugu A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_THAI_A_LANGUAGE_AND_LITERATURE",
+    "course_name": "IB Thai A Language And Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 3,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_THAI_A_LITERATURE",
+    "course_name": "IB Thai A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_TIBETAN_A_LITERATURE",
+    "course_name": "IB Tibetan A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_TURKISH_A_LITERATURE",
+    "course_name": "IB Turkish A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_UKRAINIAN_A_LITERATURE",
+    "course_name": "IB Ukrainian A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_URDU_A_LITERATURE",
+    "course_name": "IB Urdu A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_UYGHUR_A_LITERATURE",
+    "course_name": "IB Uyghur A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_VIETNAMESE_A_LANG_AND_LITERATURE",
+    "course_name": "IB Vietnamese A: Lang And Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_VIETNAMESE_A_LITERATURE",
+    "course_name": "IB Vietnamese A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_WELSH_A_LITERATURE",
+    "course_name": "IB Welsh A: Literature",
+    "subject": "Studies in language and literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 4,
+    "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IB_IB_LANGUAGE_AND_CULTURE",
+    "course_name": "IB Language And Culture",
+    "subject": "Studies in language and literature AND individuals and societies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Studies in language and literature AND individuals and societies",
+    "career_clusters": [],
+    "source_state": "International Baccalaureate",
+    "source_page": 6,
+    "source": "International Baccalaureate"
+  }
+]

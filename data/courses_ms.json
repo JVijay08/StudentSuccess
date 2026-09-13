@@ -1,0 +1,382 @@
+[
+  {
+    "course_id": "MS_CAREER_AND_TECHNICAL_EDUCATION_COURSES_FROM_THE_STUDENT_S_PROGRAM_OF_STUDY",
+    "course_name": "Career and Technical Education courses from the student\u2019s program of study",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "Mississippi",
+    "source_page": null,
+    "source": "Mississippi"
+  },
+  {
+    "course_id": "MS_ELECTIVES_ALIGNED_WITH_THE_STUDENT_PATHWAY_OR_POSTSECONDARY_ADMISSION_STANDARDS",
+    "course_name": "Electives aligned with the student pathway or postsecondary admission standards",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Mississippi",
+    "source_page": null,
+    "source": "Mississippi"
+  },
+  {
+    "course_id": "MS_ENGLISH_I",
+    "course_name": "English I",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Mississippi",
+    "source_page": null,
+    "source": "Mississippi"
+  },
+  {
+    "course_id": "MS_ENGLISH_II",
+    "course_name": "English II",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Mississippi",
+    "source_page": null,
+    "source": "Mississippi"
+  },
+  {
+    "course_id": "MS_ART_FINE_ART_REQUIREMENT",
+    "course_name": "Art / Fine Art requirement",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "Mississippi",
+    "source_page": null,
+    "source": "Mississippi"
+  },
+  {
+    "course_id": "MS_COMPREHENSIVE_HEALTH",
+    "course_name": "Comprehensive Health",
+    "subject": "Health & Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health & Physical Education",
+    "career_clusters": [],
+    "source_state": "Mississippi",
+    "source_page": null,
+    "source": "Mississippi"
+  },
+  {
+    "course_id": "MS_PHYSICAL_EDUCATION",
+    "course_name": "Physical Education",
+    "subject": "Health & Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health & Physical Education",
+    "career_clusters": [],
+    "source_state": "Mississippi",
+    "source_page": null,
+    "source": "Mississippi"
+  },
+  {
+    "course_id": "MS_ALGEBRA_I",
+    "course_name": "Algebra I",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Mississippi",
+    "source_page": null,
+    "source": "Mississippi"
+  },
+  {
+    "course_id": "MS_BIOLOGY_I",
+    "course_name": "Biology I",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Mississippi",
+    "source_page": null,
+    "source": "Mississippi"
+  },
+  {
+    "course_id": "MS_ECONOMICS",
+    "course_name": "Economics",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Mississippi",
+    "source_page": null,
+    "source": "Mississippi"
+  },
+  {
+    "course_id": "MS_GEOGRAPHY",
+    "course_name": "Geography",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Mississippi",
+    "source_page": null,
+    "source": "Mississippi"
+  },
+  {
+    "course_id": "MS_MISSISSIPPI_STUDIES",
+    "course_name": "Mississippi Studies",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Mississippi",
+    "source_page": null,
+    "source": "Mississippi"
+  },
+  {
+    "course_id": "MS_U_S_GOVERNMENT",
+    "course_name": "U.S. Government",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Mississippi",
+    "source_page": null,
+    "source": "Mississippi"
+  },
+  {
+    "course_id": "MS_U_S_HISTORY",
+    "course_name": "U.S. History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Mississippi",
+    "source_page": null,
+    "source": "Mississippi"
+  },
+  {
+    "course_id": "MS_WORLD_HISTORY",
+    "course_name": "World History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Mississippi",
+    "source_page": null,
+    "source": "Mississippi"
+  },
+  {
+    "course_id": "MS_9TH_STEM",
+    "course_name": "9th STEM",
+    "subject": "Technology / Business",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Technology / Business",
+    "career_clusters": [],
+    "source_state": "Mississippi",
+    "source_page": null,
+    "source": "Mississippi"
+  },
+  {
+    "course_id": "MS_COMPUTER_APPLICATIONS_AND_KEYBOARDING",
+    "course_name": "Computer Applications and Keyboarding",
+    "subject": "Technology / Business",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Technology / Business",
+    "career_clusters": [],
+    "source_state": "Mississippi",
+    "source_page": null,
+    "source": "Mississippi"
+  },
+  {
+    "course_id": "MS_ICT",
+    "course_name": "ICT",
+    "subject": "Technology / Business",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Technology / Business",
+    "career_clusters": [],
+    "source_state": "Mississippi",
+    "source_page": null,
+    "source": "Mississippi"
+  },
+  {
+    "course_id": "MS_TECHNOLOGY_FOUNDATIONS",
+    "course_name": "Technology Foundations",
+    "subject": "Technology / Business",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Technology / Business",
+    "career_clusters": [],
+    "source_state": "Mississippi",
+    "source_page": null,
+    "source": "Mississippi"
+  }
+]

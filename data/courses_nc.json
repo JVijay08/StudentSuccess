@@ -1,0 +1,6374 @@
+[
+  {
+    "course_id": "NC_CR20",
+    "course_name": "SREB AC Fundamentals of Aerospace Technology Honors",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 36,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CR21",
+    "course_name": "SREB AC Advanced Aerospace Technology Honors",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CR20 SREB AC Fundamentals of Aerospace Technology Honors"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 37,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CR22",
+    "course_name": "SREB AC Aeronautics Engineering Applications Honors",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 37,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CR23",
+    "course_name": "SREB AC Astronautics Engineering Applications Honors",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CR22 SREB AC Aeronautics Engineering Applications Honors"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 38,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IE71",
+    "course_name": "SREB AC Introduction to Automated Materials Joining Honors",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 38,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IE72",
+    "course_name": "SREB AC Applications in Automated Materials Joining Honors",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IE71 SREB AC Introduction to Automated Materials Joining Honors"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 39,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IE73",
+    "course_name": "SREB AC Advanced Concepts in Materials Joining Honors",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 39,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IE74",
+    "course_name": "SREB AC Projects in Automated Materials Joining Honors",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IE73 SREB AC Advanced Concepts in Materials Joining Honors"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 40,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC61",
+    "course_name": "Drafting I Honors",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 40,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IV22",
+    "course_name": "Drafting II - Engineering Honors",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IC61 Drafting I Honors"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 41,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IV23",
+    "course_name": "Drafting III - Engineering Honors",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IV22 Drafting II - Engineering Honors"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 41,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CE12",
+    "course_name": "PLTW Engineering Essentials",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 41,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CE10",
+    "course_name": "PLTW Introduction to Engineering Design Honors",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 41,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CE11",
+    "course_name": "PLTW Principles of Engineering",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 42,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CE13",
+    "course_name": "PLTW Digital Electronics",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CE10 PLTW Introduction to Engineering Design Honors or CE11 PLTW Principles of Engineering"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 42,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CE17",
+    "course_name": "PLTW Computer Integrated Manufacturing Honors",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CE10 PLTW Introduction to Engineering Design Honors or CE11 PLTW Principles of Engineering"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 42,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CE14",
+    "course_name": "PLTW Civil Engineering and Architecture",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CE10 PLTW Introduction to Engineering Design Honors or CE11 PLTW Principles of Engineering"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 43,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CE15",
+    "course_name": "PLTW Aerospace Engineering Honors",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CE10 PLTW Introduction to Engineering Design Honors or CE11 PLTW Principles of Engineering"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 43,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CE18",
+    "course_name": "PLTW Environmental Sustainability Honors",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CE10 PLTW Introduction to Engineering Design Honors or CE11 PLTW Principles of Engineering"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 43,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CE16",
+    "course_name": "PLTW Capstone",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 43,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_TR11",
+    "course_name": "SREB AC Advanced Technology for Design and Production Honors",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 44,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_TR12",
+    "course_name": "SREB AC Systems of Advanced Technology Honors",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "SREB AC Advanced Technology for Design and Production"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 44,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_TR13",
+    "course_name": "SREB AC Mechatronic Systems for Advanced Technology Honors",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 44,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_TR14",
+    "course_name": "SREB AC Design for the Production of Advanced Products Honors",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "SREB AC Mechatronic Systems for Advanced Production"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 45,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IM41",
+    "course_name": "Metals Manufacturing Technology I Honors",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 45,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IM42",
+    "course_name": "Metals Manufacturing Technology II Honors",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IM41 Metals Manufacturing Technology I Honors"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 45,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IM43",
+    "course_name": "Metals Manufacturing Technology III Honors",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IM42 Metals Manufacturing Technology II Honors"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 46,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CT10",
+    "course_name": "Technology Engineering and Design",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 46,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CT11",
+    "course_name": "Technological Design",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CT10 Technology Engineering and Design"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 46,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CT12",
+    "course_name": "Engineering Design",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CT10 Technology Engineering and Design"
+    ],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 46,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AA21",
+    "course_name": "Animal Science I",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 105,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AA22",
+    "course_name": "Animal Science II \u2013 Food Animal Honors",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "AA21 Animal Science I"
+    ],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 106,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AA23",
+    "course_name": "Animal Science II \u2013 Companion Animal",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "AA21 Animal Science I"
+    ],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 106,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AA41",
+    "course_name": "Veterinary Assisting Honors",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "AA22 Animal Science II \u2013 Food Animal Honors or AA23 Animal Science II - Companion Animal or AA32 Equine Science II Honors"
+    ],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 106,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AA31",
+    "course_name": "Equine Science I",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 107,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AA32",
+    "course_name": "Equine Science II Honors",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "AA31 Equine Science I"
+    ],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 107,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AA41_2",
+    "course_name": "Veterinary Assisting Honors",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "AA22 Animal Science II \u2013 Food Animal Honors or AA23 Animal Science II - Companion Animal or AA32 Equine Science II Honors"
+    ],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 107,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FN41",
+    "course_name": "Food and Nutrition I",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 108,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FN43",
+    "course_name": "Food Science and Technology Honors",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "FN41 Food and Nutrition I OR FN42 Food and Nutrition II"
+    ],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 108,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AP41",
+    "course_name": "Horticulture I \u2013 Introduction to Plants",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 108,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AP44",
+    "course_name": "Horticulture II - Landscape Construction Honors",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 108,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AP42",
+    "course_name": "Horticulture II \u2013 Plant Production",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "AP41 Horticulture I \u2013 Introduction to Plants"
+    ],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 109,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AS31",
+    "course_name": "Agricultural Mechanics I",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 109,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AS32",
+    "course_name": "Agricultural Mechanics II Honors",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 109,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AS33",
+    "course_name": "Agricultural Mechanics II - Small Engines Honors",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "AS31 Agricultural Mechanics I"
+    ],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 110,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AU21",
+    "course_name": "Sustainable Agriculture Production I",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 110,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AU22",
+    "course_name": "Sustainable Agriculture Production II",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 110,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CD20",
+    "course_name": "3D Modeling and Animation I",
+    "subject": "Arts, Entertainment & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Arts, Entertainment & Design",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 96,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CD21",
+    "course_name": "3D Modeling and Animation II",
+    "subject": "Arts, Entertainment & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CD20 3D Modeling and Animation I"
+    ],
+    "graduation_category": "Arts, Entertainment & Design",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 97,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CD10",
+    "course_name": "Adobe Visual Design I Honors",
+    "subject": "Arts, Entertainment & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Arts, Entertainment & Design",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 97,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CD11",
+    "course_name": "Adobe Visual Design II Honors",
+    "subject": "Arts, Entertainment & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CD10 Adobe Visual Design I Honors"
+    ],
+    "graduation_category": "Arts, Entertainment & Design",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 97,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CD14",
+    "course_name": "Adobe Video Design I",
+    "subject": "Arts, Entertainment & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Entertainment & Design",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 97,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CD15",
+    "course_name": "Adobe Video Design II",
+    "subject": "Arts, Entertainment & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CD14 Adobe Video Design I"
+    ],
+    "graduation_category": "Arts, Entertainment & Design",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 98,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FA07",
+    "course_name": "Fashion and Textiles I - Fundamentals",
+    "subject": "Arts, Entertainment & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Arts, Entertainment & Design",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 98,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FA09",
+    "course_name": "Fashion and Textiles II - Merchandising",
+    "subject": "Arts, Entertainment & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "FA07 Fashon and Textiles I - Fundamentals"
+    ],
+    "graduation_category": "Arts, Entertainment & Design",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 98,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FA07_2",
+    "course_name": "Fashion and Textiles I - Fundamentals",
+    "subject": "Arts, Entertainment & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Arts, Entertainment & Design",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 99,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FA08",
+    "course_name": "Fashion and Textiles II - Design",
+    "subject": "Arts, Entertainment & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "FA07 Fashon and Textiles I - Fundamentals"
+    ],
+    "graduation_category": "Arts, Entertainment & Design",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 99,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CD20_2",
+    "course_name": "3D Modeling and Animation I",
+    "subject": "Arts, Entertainment & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Arts, Entertainment & Design",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 99,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CD30",
+    "course_name": "Game Art and Design",
+    "subject": "Arts, Entertainment & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Entertainment & Design",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 99,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CD31",
+    "course_name": "Advanced Game Art and Design",
+    "subject": "Arts, Entertainment & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CD30 Game Art and Design"
+    ],
+    "graduation_category": "Arts, Entertainment & Design",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 100,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FI21",
+    "course_name": "Interior Design I - Fundamentals",
+    "subject": "Arts, Entertainment & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Arts, Entertainment & Design",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 100,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FI22",
+    "course_name": "Interior Design II - Studio",
+    "subject": "Arts, Entertainment & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "FI21 Interior Design I Fundamentals"
+    ],
+    "graduation_category": "Arts, Entertainment & Design",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 100,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FI23",
+    "course_name": "Interior Design II - Technology Honors",
+    "subject": "Arts, Entertainment & Design",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Entertainment & Design",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 100,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC21",
+    "course_name": "Carpentry I",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 47,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC22",
+    "course_name": "Carpentry II Honors",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 47,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC23",
+    "course_name": "Carpentry III Honors",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IC22 Carpentry II Honors"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 48,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC24",
+    "course_name": "Carpentry IV",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IC23 Carpentry III Honors"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 48,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC61_2",
+    "course_name": "Drafting I Honors",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 48,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC62",
+    "course_name": "Drafting II \u2013 Architectural Honors",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IC61 Drafting I Honors"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 49,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC63",
+    "course_name": "Drafting III - Architectural Honors",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IC62 Drafting II - Architectural Honors"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 49,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC41",
+    "course_name": "Electrical Trades I Honors",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 49,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC42",
+    "course_name": "Electrical Trades II Honors",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 49,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC43",
+    "course_name": "Electrical Trades III Honors",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IC42 Electrical Trades II Honors"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 50,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC44",
+    "course_name": "Electrical Trades IV",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IC43 Electrical Trades III Honors"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 50,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC00",
+    "course_name": "Construction Core",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 50,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC31",
+    "course_name": "HVACR I Honors",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IC00 Construction Core"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 51,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC32",
+    "course_name": "HVACR II Honors",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IC31 HVACR I Honors"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 51,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC33",
+    "course_name": "HVACR III Honors",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IC32 HVACR II Honors"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 51,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC11",
+    "course_name": "Masonry I Honors",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 51,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC12",
+    "course_name": "Masonry II Honors",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IC11 Masonry I Honors"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 52,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC13",
+    "course_name": "Masonry III Honors",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IC12 Masonry II Honors"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 52,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC00_2",
+    "course_name": "Construction Core",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 52,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC51",
+    "course_name": "Plumbing I",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IC00 Construction Core"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 53,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC52",
+    "course_name": "Plumbing II Honors",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IC51 Plumbing I"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 53,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC53",
+    "course_name": "Plumbing III Honors",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IC52 Plumbing II Honors"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 53,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IM61",
+    "course_name": "Welding Technology I Honors",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 54,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IM62",
+    "course_name": "Welding Technology II Honors",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IM61 Welding Technology I Honors"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 54,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IM63",
+    "course_name": "Welding Technology III Honors",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IM62 Welding Technology II Honors"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 54,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IM21",
+    "course_name": "Woodworking I",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 55,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IM22",
+    "course_name": "Woodworking II Honors",
+    "subject": "Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IM21 Woodworking I"
+    ],
+    "graduation_category": "Construction",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 55,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_0V08",
+    "course_name": "CIE Computer Science AS",
+    "subject": "Digital Technology & Computer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Digital Technology & Computer Science",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 81,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_0V09",
+    "course_name": "CIE Computer Science A",
+    "subject": "Digital Technology & Computer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Digital Technology & Computer Science",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 81,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CI10",
+    "course_name": "Cisco Network Engineering Technology I Honors",
+    "subject": "Digital Technology & Computer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Digital Technology & Computer Science",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 82,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CI11",
+    "course_name": "Cisco Network Engineering Technology II Honors",
+    "subject": "Digital Technology & Computer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CI10 Cisco Network Engineering Technology I Honors"
+    ],
+    "graduation_category": "Digital Technology & Computer Science",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 82,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CI00",
+    "course_name": "CompTIA IT Fundamentals",
+    "subject": "Digital Technology & Computer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Digital Technology & Computer Science",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 82,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CI01",
+    "course_name": "Computer Engineering Technology I Honors",
+    "subject": "Digital Technology & Computer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CI00 CompTIA IT Fundamentals"
+    ],
+    "graduation_category": "Digital Technology & Computer Science",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 83,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CI02",
+    "course_name": "Computer Engineering Technology II Honors",
+    "subject": "Digital Technology & Computer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CI01 Computer Engineering Technology I Honors"
+    ],
+    "graduation_category": "Digital Technology & Computer Science",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 83,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CP05",
+    "course_name": "Coding in Minecraft \u2013 Expert Coding",
+    "subject": "Digital Technology & Computer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Digital Technology & Computer Science",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 83,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CS20",
+    "course_name": "Computer Science I",
+    "subject": "Digital Technology & Computer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Digital Technology & Computer Science",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 83,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CS21",
+    "course_name": "Computer Science II",
+    "subject": "Digital Technology & Computer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CS20 Computer Science I"
+    ],
+    "graduation_category": "Digital Technology & Computer Science",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 84,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CS30",
+    "course_name": "Introduction to Data Science",
+    "subject": "Digital Technology & Computer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Digital Technology & Computer Science",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 84,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CS31",
+    "course_name": "SAS Base Programming Honors",
+    "subject": "Digital Technology & Computer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CS30 Introduction to Data Science"
+    ],
+    "graduation_category": "Digital Technology & Computer Science",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 85,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CI20",
+    "course_name": "Network Administration I",
+    "subject": "Digital Technology & Computer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Digital Technology & Computer Science",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 85,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CI21",
+    "course_name": "Network Administration II Honors",
+    "subject": "Digital Technology & Computer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CI20 Network Administration I"
+    ],
+    "graduation_category": "Digital Technology & Computer Science",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 85,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CI30",
+    "course_name": "Cybersecurity I",
+    "subject": "Digital Technology & Computer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Digital Technology & Computer Science",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 86,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CI31",
+    "course_name": "Cybersecurity II Honors",
+    "subject": "Digital Technology & Computer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CI30 Cybersecurity I"
+    ],
+    "graduation_category": "Digital Technology & Computer Science",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 86,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CP10",
+    "course_name": "Python Programming I",
+    "subject": "Digital Technology & Computer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Digital Technology & Computer Science",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 86,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CP11",
+    "course_name": "Python Programming II Honors",
+    "subject": "Digital Technology & Computer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CP10 Python Programming I"
+    ],
+    "graduation_category": "Digital Technology & Computer Science",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 86,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_ID10",
+    "course_name": "Drone Technology Fundamentals",
+    "subject": "Digital Technology & Computer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Digital Technology & Computer Science",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 87,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_ID11",
+    "course_name": "Drone Technology I",
+    "subject": "Digital Technology & Computer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "ID10 Drone Technology Fundamentals"
+    ],
+    "graduation_category": "Digital Technology & Computer Science",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 87,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_ID12",
+    "course_name": "Drone Technology II Honors",
+    "subject": "Digital Technology & Computer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "ID11 Drone Technology I"
+    ],
+    "graduation_category": "Digital Technology & Computer Science",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 87,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FE60",
+    "course_name": "Child Development",
+    "subject": "Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Education",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 60,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FE11",
+    "course_name": "Early Childhood Education I Honors",
+    "subject": "Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Education",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 60,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FE12",
+    "course_name": "Early Childhood Education II Honors",
+    "subject": "Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "FE11 Early Childhood Education I Honors"
+    ],
+    "graduation_category": "Education",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 61,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FE21",
+    "course_name": "Teaching as a Profession I Honors",
+    "subject": "Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "Students must be in 10th-12th grade and have a GPA of at least 2.5."
+    ],
+    "graduation_category": "Education",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 61,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FE22",
+    "course_name": "Teaching as a Profession II Honors",
+    "subject": "Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "FE21 Teaching as a Profession I Honors"
+    ],
+    "graduation_category": "Education",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 62,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FE23",
+    "course_name": "Teaching as a Profession Field Experience Honors",
+    "subject": "Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "FE22 Teaching as a Profession II Honors"
+    ],
+    "graduation_category": "Education",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 62,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_TR31",
+    "course_name": "SREB AC Clean Energy Technology I \u2013 Clean Energy Systems Honors",
+    "subject": "Energy & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Energy & Natural Resources",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 112,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_TR32",
+    "course_name": "SREB AC Clean Energy Technology II \u2013 Clean Energy Applications Honors",
+    "subject": "Energy & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Energy & Natural Resources",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 112,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_TR33",
+    "course_name": "SREB AC Clean Energy Technology III \u2013 Clean Energy Strategies Honors",
+    "subject": "Energy & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "TR32 SREB AC Clean Energy Technology II \u2013 Clean Energy Applications Honors"
+    ],
+    "graduation_category": "Energy & Natural Resources",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 113,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_TR34",
+    "course_name": "SREB AC Clean Energy Innovations Honors",
+    "subject": "Energy & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "TR33 SREB AC Clean Energy Technology III \u2013 Clean Energy Strategies Honors"
+    ],
+    "graduation_category": "Energy & Natural Resources",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 113,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_TR21",
+    "course_name": "SREB AC Energy and Power Foundations Honors",
+    "subject": "Energy & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Energy & Natural Resources",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 113,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_TR22",
+    "course_name": "SREB AC Energy Transmission and Distribution Honors",
+    "subject": "Energy & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "TR21 SREB AC Energy and Power Foundations Honors"
+    ],
+    "graduation_category": "Energy & Natural Resources",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 114,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_TR23",
+    "course_name": "SREB AC Electronics and Control Systems Honors",
+    "subject": "Energy & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "TR22 SREB AC Energy Transmission and Distribution Honors"
+    ],
+    "graduation_category": "Energy & Natural Resources",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 114,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_TR24",
+    "course_name": "SREB AC Advanced Science and Engineered Systems Honors",
+    "subject": "Energy & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "TR23 SREB AC Electronics and Control Systems Honors"
+    ],
+    "graduation_category": "Energy & Natural Resources",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 115,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CR15",
+    "course_name": "SREB AC IST Nature of Science and Technology Honors",
+    "subject": "Energy & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Energy & Natural Resources",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 115,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CR16",
+    "course_name": "SREB AC IST: Core Applications of Science and Technology Honors",
+    "subject": "Energy & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Energy & Natural Resources",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 115,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AN51",
+    "course_name": "Natural Resources I",
+    "subject": "Energy & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Energy & Natural Resources",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 116,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AN52",
+    "course_name": "Natural Resources II",
+    "subject": "Energy & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "AN51 Natural Resources I"
+    ],
+    "graduation_category": "Energy & Natural Resources",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 116,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AN53",
+    "course_name": "Natural Resources II - Forestry",
+    "subject": "Energy & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Energy & Natural Resources",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 116,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC00_3",
+    "course_name": "Construction Core",
+    "subject": "Energy & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Energy & Natural Resources",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 117,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC71",
+    "course_name": "Solar Photovoltaics I",
+    "subject": "Energy & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IC00 Construction Core"
+    ],
+    "graduation_category": "Energy & Natural Resources",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 117,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IC72",
+    "course_name": "Solar Photovoltaics II",
+    "subject": "Energy & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Energy & Natural Resources",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 117,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_BA10",
+    "course_name": "Accounting I",
+    "subject": "Financial Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Financial Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 119,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_BA20",
+    "course_name": "Accounting II Honors",
+    "subject": "Financial Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "BA10 Accounting I"
+    ],
+    "graduation_category": "Financial Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 119,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_0V07",
+    "course_name": "CIE Accounting AS",
+    "subject": "Financial Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Financial Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 120,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_BF10",
+    "course_name": "Business Essentials",
+    "subject": "Financial Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Financial Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 120,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_BF10_2",
+    "course_name": "Business Essentials",
+    "subject": "Financial Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Financial Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 121,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_BF21",
+    "course_name": "Financial Planning I",
+    "subject": "Financial Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "BF10 Business Essentials"
+    ],
+    "graduation_category": "Financial Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 121,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_BF22",
+    "course_name": "Financial Planning II",
+    "subject": "Financial Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Financial Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 121,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HP71",
+    "course_name": "PLTW Human Body Systems",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "HP70 PLTW Principles of Biomedical Sciences"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 63,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HU40",
+    "course_name": "Health Science I",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 63,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HB11",
+    "course_name": "Biomedical Technology",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 63,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HH32",
+    "course_name": "Pharmacy Technician Honors",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "HU42 Health Science II OR HB11 Biomedical Technology"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 64,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HP70",
+    "course_name": "PLTW Principles of Biomedical Sciences",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 64,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HP71_2",
+    "course_name": "PLTW Human Body Systems",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "HP70 PLTW Principles of Biomedical Sciences"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 64,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HP72",
+    "course_name": "PLTW Medical Interventions",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 64,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HP73",
+    "course_name": "PLTW Biomedical Innovations Honors",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "HP72 PLTW Medical Interventions"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 65,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CE16_2",
+    "course_name": "PLTW Capstone",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CE13 PLTW Digital Electronics or CE14 PLTW Civil Engineering and Architecture or CE15 PLTW Aerospace Engineering Honors or CE17 PLTW Computer Integrated Manufacturing Honors or CE18 PLTW Environmental Sustainability or HP72 PLTW Medical Interventions"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 65,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FC13",
+    "course_name": "Counseling and Mental Health I",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 65,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FC14",
+    "course_name": "Counseling and Mental Health II",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "FC13 Counseling and Mental Health I"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 66,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FN41_2",
+    "course_name": "Food and Nutrition I",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 66,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FN42",
+    "course_name": "Food and Nutrition II",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "FN41 Foods and Nutrition I"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 66,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FN43_2",
+    "course_name": "Food Science and Technology Honors",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 66,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HR11",
+    "course_name": "SREB AC Health Informatics I - Data and Use Honors",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 67,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HR12",
+    "course_name": "SREB AC Health Informatics II - Transforming Data Honors",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "HR11 SREB AC Health Informatics I - Data and Use Honors"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 67,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HR13",
+    "course_name": "SREB AC Health Informatics II - Transforming Information Honors",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 67,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HR14",
+    "course_name": "SREB AC Health Informatics IV - Problems and Solutions Honors",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "HR13 SREB AC Health Informatics II - Transforming Information Honors"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 68,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HP71_3",
+    "course_name": "PLTW Human Body Systems",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "HP70 PLTW Principles of Biomedical Sciences"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 68,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HU40_2",
+    "course_name": "Health Science I",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 68,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HU42",
+    "course_name": "Health Science II",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "HU40 Health Science I OR HP71 PLTW Human Body Systems"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 69,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HU45",
+    "course_name": "Medical Assisting and Non-Practicum",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "HU42 Health Science II or HP71 PLTW Human Body Systems. Students must be at least 16 years old, have completed HU42 Health Science II, and have the BLS Provider credential.*"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 69,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HU46",
+    "course_name": "Medical Assisting and Practicum",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "HU42 Health Science II or HP71 PLTW Human Body Systems. Students must be at least 16 years old, have completed HU42 Health Science II, and have the BLS Provider credential.*"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 69,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HN42",
+    "course_name": "Nursing Fundamentals and Non-Practicum Honors",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "HU42 Health Science II"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 70,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HN43",
+    "course_name": "Nursing Fundamentals and Practicum Honors",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "HU42 Health Science II **"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 70,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HN44",
+    "course_name": "Fundamentals of Gerontology",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 70,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HH32_2",
+    "course_name": "Pharmacy Technician Honors",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "HU42 Health Science II OR HB11 Biomedical Technology"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 71,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HN45",
+    "course_name": "Public Health Fundamentals",
+    "subject": "Healthcare & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "HU42 Health Science II **"
+    ],
+    "graduation_category": "Healthcare & Human Services",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 71,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FH10",
+    "course_name": "Culinary Arts and Hospitality I",
+    "subject": "Hospitality, Events & Tourism",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Hospitality, Events & Tourism",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 102,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FH11",
+    "course_name": "Culinary Arts and Hospitality II Applications Honors",
+    "subject": "Hospitality, Events & Tourism",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "FH10 Culinary Arts and Hospitality I"
+    ],
+    "graduation_category": "Hospitality, Events & Tourism",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 102,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FH13",
+    "course_name": "Culinary Arts and Hospitality III Honors",
+    "subject": "Hospitality, Events & Tourism",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "FH11 Culinary Arts and Hospitality II Applications Honors OR FH12 Culinary Arts and Hospitality II Internship Honors"
+    ],
+    "graduation_category": "Hospitality, Events & Tourism",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 103,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FH14",
+    "course_name": "Culinary Arts and Hospitality IV Applications Honors",
+    "subject": "Hospitality, Events & Tourism",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "FH13 Culinary Arts and Hospitality III Honors"
+    ],
+    "graduation_category": "Hospitality, Events & Tourism",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 103,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FH10_2",
+    "course_name": "Culinary Arts and Hospitality I",
+    "subject": "Hospitality, Events & Tourism",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Hospitality, Events & Tourism",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 103,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FH12",
+    "course_name": "Culinary Arts and Hospitality II Internship Honors",
+    "subject": "Hospitality, Events & Tourism",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Hospitality, Events & Tourism",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 103,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FH13_2",
+    "course_name": "Culinary Arts and Hospitality III Honors",
+    "subject": "Hospitality, Events & Tourism",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "FH11 Culinary Arts and Hospitality II Applications Honors OR FH12 Culinary Arts and Hospitality II Internship Honors"
+    ],
+    "graduation_category": "Hospitality, Events & Tourism",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 104,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FH31",
+    "course_name": "Hospitality and Tourism Management I",
+    "subject": "Hospitality, Events & Tourism",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Hospitality, Events & Tourism",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 104,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FH32",
+    "course_name": "Hospitality and Tourism Management II",
+    "subject": "Hospitality, Events & Tourism",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "FH31 Hospitality and Tourism Management I"
+    ],
+    "graduation_category": "Hospitality, Events & Tourism",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 104,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_BB30",
+    "course_name": "Business Ethics and Law I",
+    "subject": "Management & Entrepreneurship",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Management & Entrepreneurship",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 88,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_BB32",
+    "course_name": "Business Ethics and Law II",
+    "subject": "Management & Entrepreneurship",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Management & Entrepreneurship",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 88,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_ME11",
+    "course_name": "Entrepreneurship I",
+    "subject": "Management & Entrepreneurship",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Management & Entrepreneurship",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 89,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_ME12",
+    "course_name": "Entrepreneurship II Honors",
+    "subject": "Management & Entrepreneurship",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "ME11 Entrepreneurship I"
+    ],
+    "graduation_category": "Management & Entrepreneurship",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 89,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_BF10_3",
+    "course_name": "Business Essentials",
+    "subject": "Management & Entrepreneurship",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Management & Entrepreneurship",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 89,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_BB40",
+    "course_name": "Business Management I",
+    "subject": "Management & Entrepreneurship",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "BF10 Business Essentials"
+    ],
+    "graduation_category": "Management & Entrepreneurship",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 90,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_BB42",
+    "course_name": "Business Management II",
+    "subject": "Management & Entrepreneurship",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "BB40 Business Management I"
+    ],
+    "graduation_category": "Management & Entrepreneurship",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 90,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_BF10_4",
+    "course_name": "Business Essentials",
+    "subject": "Management & Entrepreneurship",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Management & Entrepreneurship",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 91,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CC10",
+    "course_name": "Microsoft Word and PowerPoint",
+    "subject": "Management & Entrepreneurship",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Management & Entrepreneurship",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 91,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CC11",
+    "course_name": "Microsoft Excel Honors",
+    "subject": "Management & Entrepreneurship",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Management & Entrepreneurship",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 91,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CD10_2",
+    "course_name": "Adobe Visual Design I Honors",
+    "subject": "Management & Entrepreneurship",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Management & Entrepreneurship",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 91,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_GS11",
+    "course_name": "Project Management I",
+    "subject": "Management & Entrepreneurship",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Management & Entrepreneurship",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 92,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_GS11_2",
+    "course_name": "Project Management I",
+    "subject": "Management & Entrepreneurship",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Management & Entrepreneurship",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 92,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_GS12",
+    "course_name": "Project Management II Honors",
+    "subject": "Management & Entrepreneurship",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "GS11 Project Management I"
+    ],
+    "graduation_category": "Management & Entrepreneurship",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 92,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_MM51",
+    "course_name": "Marketing I",
+    "subject": "Marketing & Sales",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Marketing & Sales",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 93,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_MM52",
+    "course_name": "Marketing II",
+    "subject": "Marketing & Sales",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "MM51 Marketing I"
+    ],
+    "graduation_category": "Marketing & Sales",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 93,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_MI31",
+    "course_name": "Sales I",
+    "subject": "Marketing & Sales",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Marketing & Sales",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 94,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_MI32",
+    "course_name": "Sales II",
+    "subject": "Marketing & Sales",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "MI31 Sales I"
+    ],
+    "graduation_category": "Marketing & Sales",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 94,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_MH31",
+    "course_name": "Sport and Event Marketing I",
+    "subject": "Marketing & Sales",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Marketing & Sales",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 94,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_MH32",
+    "course_name": "Sport and Event Marketing II Honors",
+    "subject": "Marketing & Sales",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Marketing & Sales",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 94,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AY12",
+    "course_name": "Agricultural and Environmental Biotechnology",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 24,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY14",
+    "course_name": "Apple: Everyone Can Code II - Adventures",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CY13 Apple: Everyone Can Code I - Puzzles"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 24,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY13",
+    "course_name": "Apple: Everyone Can Code I - Puzzles",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 24,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_EY30",
+    "course_name": "Career Exploration",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 25,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY30",
+    "course_name": "Coding in Minecraft - Introductory",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 25,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY31",
+    "course_name": "Coding in Minecraft - Intermediate",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CY30 Coding in Minecraft - Introductory"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 25,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY32",
+    "course_name": "Coding in Minecraft - Advanced",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CY31 Coding in Minecraft - Intermediate"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 25,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY20",
+    "course_name": "Computer Science Discoveries I",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 26,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY21",
+    "course_name": "Computer Science Discoveries II",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CY20 Computer Science Discoveries I"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 26,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY22",
+    "course_name": "Computer Science Discoveries III",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CY21 Computer Science Discoveries II"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 26,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY04",
+    "course_name": "Digital Literacy",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 26,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY40",
+    "course_name": "Engineering: Exploring Technology I",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 27,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY41",
+    "course_name": "Engineering: Exploring Technology II",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CY40 Engineering: Exploring Technology I"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 27,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY42",
+    "course_name": "Engineering: Invention and Innovation I",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 27,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY43",
+    "course_name": "Engineering: Invention and Innovation II",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 27,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY44",
+    "course_name": "Engineering: Technological Systems I",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 28,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY45",
+    "course_name": "Engineering: Technological Systems II",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "CY44 Engineering: Technological Systems I"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 28,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AY23",
+    "course_name": "Exploring Agricultural Issues",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 28,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AY21",
+    "course_name": "Exploring Animal and Plant Science",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 28,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FY12",
+    "course_name": "Exploring Apparel and Interior Design",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 29,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_BY12",
+    "course_name": "Exploring Business Activities",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 29,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_BY10",
+    "course_name": "Exploring Business and Entrepreneurship",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 29,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_BY13",
+    "course_name": "Exploring Business Procedures and Leadership",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 29,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FY14",
+    "course_name": "Exploring Childcare",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 30,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_BY11",
+    "course_name": "Exploring Economic Systems",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 30,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AY20",
+    "course_name": "Exploring Environmental and Natural Resources",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 30,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_EY12",
+    "course_name": "Exploring Financial Literacy",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 30,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AY22",
+    "course_name": "Exploring Food and Agricultural Products",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 31,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FY11",
+    "course_name": "Exploring Nutrition and Wellness",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 31,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FY10",
+    "course_name": "Exploring Social and Emotional Skills",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 31,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AY24",
+    "course_name": "Fundamentals of the Agricultural Science Program",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 32,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AY10",
+    "course_name": "Fundamentals of Biotechnology",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 32,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AY11",
+    "course_name": "Introduction to Biotechnology",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 32,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY02",
+    "course_name": "Introduction to Office Productivity",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 32,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY01",
+    "course_name": "Keyboarding and Basic Word Processing",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 33,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY03",
+    "course_name": "Office Productivity Applications",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 33,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY62",
+    "course_name": "PLTW Gateway: App Creators",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 33,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY61",
+    "course_name": "PLTW Gateway: Automation and Robotics",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 33,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY63",
+    "course_name": "PLTW Gateway: Computer Science for Innovators and Makers",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 34,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY60",
+    "course_name": "PLTW Gateway: Design and Modeling",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 34,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY64",
+    "course_name": "PLTW Gateway: Energy and the Environment",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 34,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY65",
+    "course_name": "PLTW Gateway: Flight and Space",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 34,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY68",
+    "course_name": "PLTW Gateway: Green Architecture",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 35,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY67",
+    "course_name": "PLTW Gateway: Magic of Electrons",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 35,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY69",
+    "course_name": "PLTW Gateway: Medical Detectives",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 35,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CY66",
+    "course_name": "PLTW Gateway: Science of Technology",
+    "subject": "Middle Grades Exploration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Middle Grades Exploration",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 35,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IP11",
+    "course_name": "Public Safety I",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 72,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IP22",
+    "course_name": "Emergency Medical Technology II Honors",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IP21 Emergency Medical Technology I Honors and English III **"
+    ],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 72,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IP32",
+    "course_name": "Firefighter Technology II",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IP31 Firefighter Technology I"
+    ],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 73,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IP42",
+    "course_name": "Law and Justice II Honors",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IP41 Law and Justice I"
+    ],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 73,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IP51",
+    "course_name": "Emergency Management I",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IP11 Public Safety I OR IP22 Emergency Medical Technology II Honors OR IP32 Firefighter Technology II OR IP42 Law and Justice II Honors"
+    ],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 73,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IP52",
+    "course_name": "Emergency Management II Honors",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IP51 Emergency Management I"
+    ],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 73,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IP21",
+    "course_name": "Emergency Medical Technology I Honors",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "English II**"
+    ],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 74,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IP22_2",
+    "course_name": "Emergency Medical Technology II Honors",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IP21 Emergency Medical Technology I Honors and English III **"
+    ],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 74,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IP31",
+    "course_name": "Firefighter Technology I",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 74,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IP32_2",
+    "course_name": "Firefighter Technology II",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IP31 Firefighter Technology I"
+    ],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 75,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IP33",
+    "course_name": "Firefighter Technology III Honors",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IP32 Firefighter Technology II"
+    ],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 75,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_9501",
+    "course_name": "JROTC I",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 75,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_9502",
+    "course_name": "JROTC II",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 76,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_9503",
+    "course_name": "JROTC III",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 76,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_9504",
+    "course_name": "JROTC IV",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 76,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_9505",
+    "course_name": "JROTC V",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 76,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_9506",
+    "course_name": "JROTC VI",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 77,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_9507",
+    "course_name": "JROTC VII",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 77,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_9508",
+    "course_name": "JROTC VIII",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 77,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IP41",
+    "course_name": "Law and Justice I",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 78,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IP42_2",
+    "course_name": "Law and Justice II Honors",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IP41 Law and Justice I"
+    ],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 78,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IP51_2",
+    "course_name": "Emergency Management I",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IP11 Public Safety I OR IP22 Emergency Medical Technology II Honors OR IP32 Firefighter Technology II OR IP42 Law and Justice II Honors"
+    ],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 78,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IP11_2",
+    "course_name": "Public Safety I",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 79,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IP12",
+    "course_name": "Public Safety II Honors",
+    "subject": "Public Service & Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IP11 Public Safety I"
+    ],
+    "graduation_category": "Public Service & Safety",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 79,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_ED45",
+    "course_name": "Career Management",
+    "subject": "Supplemental Employability Skills",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Supplemental Employability Skills",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 123,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CA10",
+    "course_name": "Artificial Intelligence I",
+    "subject": "Supplemental Technical Courses",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Supplemental Technical Courses",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 124,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_0V06",
+    "course_name": "CIE Travel and Tourism AS",
+    "subject": "Supplemental Technical Courses",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Supplemental Technical Courses",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 124,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_AU10",
+    "course_name": "Foundations of Agriculture",
+    "subject": "Supplemental Technical Courses",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Supplemental Technical Courses",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 124,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_HU10",
+    "course_name": "Foundations of Health Science",
+    "subject": "Supplemental Technical Courses",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Supplemental Technical Courses",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 124,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CS10",
+    "course_name": "Introduction to Computer Science",
+    "subject": "Supplemental Technical Courses",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Supplemental Technical Courses",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 127,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CI35",
+    "course_name": "PLTW Cybersecurity",
+    "subject": "Supplemental Technical Courses",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Supplemental Technical Courses",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 127,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_FC11",
+    "course_name": "Principles of Family and Human Services",
+    "subject": "Supplemental Technical Courses",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Supplemental Technical Courses",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 127,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IT35",
+    "course_name": "Automotive Body Repair I",
+    "subject": "Supply Chain & Transportation",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Supply Chain & Transportation",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 56,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IT36",
+    "course_name": "Automotive Body Repair II",
+    "subject": "Supply Chain & Transportation",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IT35 Automotive Body Repair I"
+    ],
+    "graduation_category": "Supply Chain & Transportation",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 56,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IT37",
+    "course_name": "Automotive Body Repair III \u2013 Non-structural",
+    "subject": "Supply Chain & Transportation",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Supply Chain & Transportation",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 56,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IT38",
+    "course_name": "Automotive Body Repair III \u2013 Refinishing and Plastic Repair",
+    "subject": "Supply Chain & Transportation",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IT36 Automotive Body Repair II"
+    ],
+    "graduation_category": "Supply Chain & Transportation",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 57,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IT11",
+    "course_name": "Automotive Service Fundamentals",
+    "subject": "Supply Chain & Transportation",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Supply Chain & Transportation",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 57,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IT16",
+    "course_name": "Automotive Service I",
+    "subject": "Supply Chain & Transportation",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IT11 Automotive Service Fundamentals"
+    ],
+    "graduation_category": "Supply Chain & Transportation",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 57,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IT17",
+    "course_name": "Automotive Service II Honors",
+    "subject": "Supply Chain & Transportation",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IT16 Automotive Service I"
+    ],
+    "graduation_category": "Supply Chain & Transportation",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 58,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IT18",
+    "course_name": "Automotive Service III Honors",
+    "subject": "Supply Chain & Transportation",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IT17 Automotive Service II Honors"
+    ],
+    "graduation_category": "Supply Chain & Transportation",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 58,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IE41",
+    "course_name": "SREB AC Introduction to Logistics Honors",
+    "subject": "Supply Chain & Transportation",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Supply Chain & Transportation",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 58,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IE42",
+    "course_name": "SREB AC Functional Areas in Logistics Honors",
+    "subject": "Supply Chain & Transportation",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Supply Chain & Transportation",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 58,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IE43",
+    "course_name": "SREB AC Global Logistics Management Honors",
+    "subject": "Supply Chain & Transportation",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IE42 SREB AC Functional Areas in Logistics Honors"
+    ],
+    "graduation_category": "Supply Chain & Transportation",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 59,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_IE44",
+    "course_name": "SREB AC Logistics and Supply Chain Management Honors",
+    "subject": "Supply Chain & Transportation",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "IE43 SREB AC Global Logistics Management Honors"
+    ],
+    "graduation_category": "Supply Chain & Transportation",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 59,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_WS01",
+    "course_name": "CTE Advanced Studies Honors",
+    "subject": "Work-Based Learning",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "Two CTE courses: one must be a concentrator course"
+    ],
+    "graduation_category": "Work-Based Learning",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 21,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_WA01",
+    "course_name": "CTE Apprenticeship",
+    "subject": "Work-Based Learning",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Work-Based Learning",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 21,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_CTE_CAREER_AND_COLLEGE_PROMISE",
+    "course_name": "CTE Career and College Promise",
+    "subject": "Work-Based Learning",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Work-Based Learning",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 21,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_WO01",
+    "course_name": "CTE Cooperative Education",
+    "subject": "Work-Based Learning",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "To get academic credit, the aligned coursework and related paid employment must be completed in the same academic year, which may be concurrent or consecutive semesters."
+    ],
+    "graduation_category": "Work-Based Learning",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 22,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_WE01",
+    "course_name": "CTE Entrepreneurial Experience",
+    "subject": "Work-Based Learning",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "Two CTE course credits: one must be a concentrator course."
+    ],
+    "graduation_category": "Work-Based Learning",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 22,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_WI01",
+    "course_name": "CTE Internship",
+    "subject": "Work-Based Learning",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Work-Based Learning",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 23,
+    "source": "North Carolina"
+  },
+  {
+    "course_id": "NC_WP01",
+    "course_name": "CTE Pre-apprenticeship",
+    "subject": "Work-Based Learning",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [
+      "None"
+    ],
+    "graduation_category": "Work-Based Learning",
+    "career_clusters": [],
+    "source_state": "North Carolina",
+    "source_page": 23,
+    "source": "North Carolina"
+  }
+]

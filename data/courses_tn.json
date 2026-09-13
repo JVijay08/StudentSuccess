@@ -1,0 +1,6422 @@
+[
+  {
+    "course_id": "TN_1_1",
+    "course_name": "Special Education Intervention",
+    "subject": "Academic Intervention",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Academic Intervention",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_13_1",
+    "course_name": "Advanced Electromechanical Technology",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_13_2",
+    "course_name": "Digital Electronics",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_13_3",
+    "course_name": "Introduction to Electromechanical",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_13_4",
+    "course_name": "Manufacturing Practicum",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_13_5",
+    "course_name": "Mechatronics I",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_13_6",
+    "course_name": "Mechatronics II",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_13_7",
+    "course_name": "Principles of Machining I",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_13_8",
+    "course_name": "Principles of Machining II",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_13_9",
+    "course_name": "Principles of Manufacturing",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_13_10",
+    "course_name": "Welding I",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_13_11",
+    "course_name": "Welding II",
+    "subject": "Advanced Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Advanced Manufacturing",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_1",
+    "course_name": "Advanced Food Science",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_2",
+    "course_name": "Agricultural and Biosystems Engineering",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_3",
+    "course_name": "Agricultural Business and Finance",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_4",
+    "course_name": "Agricultural Power and Equipment",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_5",
+    "course_name": "Agriscience",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_6",
+    "course_name": "Applied Environmental Science",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_7",
+    "course_name": "Food Science and Safety",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_8",
+    "course_name": "Greenhouse Management",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_9",
+    "course_name": "Introduction to Agricultural Sciences",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_10",
+    "course_name": "Landscaping and Turf Science",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_11",
+    "course_name": "Large Animal Science",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_12",
+    "course_name": "Natural Resources Management",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_13",
+    "course_name": "Organizational Leadership and Communications",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_14",
+    "course_name": "Plant and Soil Science",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_15",
+    "course_name": "Principles of Agribusiness",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_16",
+    "course_name": "Principles of Agricultural Mechanics",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_17",
+    "course_name": "Principles of Food Production",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_18",
+    "course_name": "Principles of Plant Science and Hydroculture",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_19",
+    "course_name": "Small Animal Science",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_20",
+    "course_name": "Statewide Dual Credit: Introduction to Agriculture Business",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_21",
+    "course_name": "Statewide Dual Credit: Introduction to Plant Science",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_22",
+    "course_name": "Supervised Agricultural Experience (SAE)",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_14_23",
+    "course_name": "Veterinary Science",
+    "subject": "Agriculture, Food, & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food, & Natural Resources",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 7,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_15_1",
+    "course_name": "Architectural & Engineering Design I",
+    "subject": "Architecture & Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Architecture & Construction",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 8,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_15_2",
+    "course_name": "Architectural & Engineering Design II",
+    "subject": "Architecture & Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Architecture & Construction",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 8,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_15_3",
+    "course_name": "Architectural & Engineering Design III",
+    "subject": "Architecture & Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Architecture & Construction",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 8,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_15_4",
+    "course_name": "Advanced Interior Design",
+    "subject": "Architecture & Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Architecture & Construction",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 8,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_15_5",
+    "course_name": "Commercial Interior Design",
+    "subject": "Architecture & Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Architecture & Construction",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 8,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_15_6",
+    "course_name": "Construction Practicum",
+    "subject": "Architecture & Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Architecture & Construction",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 8,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_15_7",
+    "course_name": "Electrical Systems",
+    "subject": "Architecture & Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Architecture & Construction",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 8,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_15_8",
+    "course_name": "Foundations of Interior Design",
+    "subject": "Architecture & Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Architecture & Construction",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 8,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_15_9",
+    "course_name": "Fundamentals of Construction",
+    "subject": "Architecture & Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Architecture & Construction",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 8,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_15_10",
+    "course_name": "HVAC",
+    "subject": "Architecture & Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Architecture & Construction",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 8,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_15_11",
+    "course_name": "Mechanical, Electrical, & Plumbing Systems (MEP)",
+    "subject": "Architecture & Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Architecture & Construction",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 8,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_15_12",
+    "course_name": "Plumping Systems",
+    "subject": "Architecture & Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Architecture & Construction",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 8,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_16_1",
+    "course_name": "Advanced Fashion Design",
+    "subject": "Arts, Audio/Visual Technology, & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Visual Technology, & Communications",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 8,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_16_2",
+    "course_name": "Applied Arts Practicum",
+    "subject": "Arts, Audio/Visual Technology, & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Visual Technology, & Communications",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 8,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_16_3",
+    "course_name": "A/V Production I",
+    "subject": "Arts, Audio/Visual Technology, & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Visual Technology, & Communications",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 8,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_16_4",
+    "course_name": "A/V Production II",
+    "subject": "Arts, Audio/Visual Technology, & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Visual Technology, & Communications",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 8,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_16_5",
+    "course_name": "A/V Production III",
+    "subject": "Arts, Audio/Visual Technology, & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Visual Technology, & Communications",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 8,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_16_6",
+    "course_name": "Digital Arts & Design I",
+    "subject": "Arts, Audio/Visual Technology, & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Visual Technology, & Communications",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 8,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_16_7",
+    "course_name": "Digital Arts & Design II",
+    "subject": "Arts, Audio/Visual Technology, & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Visual Technology, & Communications",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 8,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_16_8",
+    "course_name": "Digital Arts & Design III",
+    "subject": "Arts, Audio/Visual Technology, & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Visual Technology, & Communications",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 8,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_16_9",
+    "course_name": "Fashion Design",
+    "subject": "Arts, Audio/Visual Technology, & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Visual Technology, & Communications",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 8,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_16_10",
+    "course_name": "Foundations of Fashion Design",
+    "subject": "Arts, Audio/Visual Technology, & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Visual Technology, & Communications",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 8,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_17_1",
+    "course_name": "Advanced Computer Applications",
+    "subject": "Business Management & Administration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business Management & Administration",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_17_2",
+    "course_name": "American Business Legal Systems",
+    "subject": "Business Management & Administration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business Management & Administration",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_17_3",
+    "course_name": "Business & Entrepreneurship Practicum",
+    "subject": "Business Management & Administration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business Management & Administration",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_17_4",
+    "course_name": "Business Communications",
+    "subject": "Business Management & Administration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business Management & Administration",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_17_5",
+    "course_name": "Business Economics",
+    "subject": "Business Management & Administration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business Management & Administration",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_17_6",
+    "course_name": "Business Management",
+    "subject": "Business Management & Administration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business Management & Administration",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_17_7",
+    "course_name": "Computer Applications",
+    "subject": "Business Management & Administration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business Management & Administration",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_17_8",
+    "course_name": "Introduction to Business & Marketing",
+    "subject": "Business Management & Administration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business Management & Administration",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_17_9",
+    "course_name": "Personal Finance",
+    "subject": "Business Management & Administration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business Management & Administration",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_3_1",
+    "course_name": "Computer Literacy",
+    "subject": "Computer Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Computer Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_3_2",
+    "course_name": "BASIC",
+    "subject": "Computer Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Computer Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_3_3",
+    "course_name": "Pascal",
+    "subject": "Computer Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Computer Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_3_4",
+    "course_name": "FORTRAN",
+    "subject": "Computer Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Computer Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_3_5",
+    "course_name": "C",
+    "subject": "Computer Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Computer Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_3_6",
+    "course_name": "C++",
+    "subject": "Computer Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Computer Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_3_7",
+    "course_name": "JAVA",
+    "subject": "Computer Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Computer Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_3_8",
+    "course_name": "Advanced Placement Computer Science A",
+    "subject": "Computer Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Computer Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_3_9",
+    "course_name": "Advanced Placement Computer Science Principles",
+    "subject": "Computer Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Computer Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_3_10",
+    "course_name": "Computer Applications",
+    "subject": "Computer Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Computer Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_3_11",
+    "course_name": "Adventures in Computing",
+    "subject": "Computer Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Computer Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_18_1",
+    "course_name": "Fundamentals of Education",
+    "subject": "Education & Training",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Education & Training",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_18_2",
+    "course_name": "School Counseling",
+    "subject": "Education & Training",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Education & Training",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_18_3",
+    "course_name": "Teaching as a Profession I",
+    "subject": "Education & Training",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Education & Training",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_18_4",
+    "course_name": "Teaching as a Profession II",
+    "subject": "Education & Training",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Education & Training",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_18_5",
+    "course_name": "Teaching as a Profession III",
+    "subject": "Education & Training",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Education & Training",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_19_1",
+    "course_name": "Accounting I",
+    "subject": "Finance",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Finance",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_19_2",
+    "course_name": "Accounting II",
+    "subject": "Finance",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Finance",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_19_3",
+    "course_name": "Banking and Finance",
+    "subject": "Finance",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Finance",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_19_4",
+    "course_name": "Financial Planning",
+    "subject": "Finance",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Finance",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_5_1",
+    "course_name": "Preparing for the ACT, College, and Career",
+    "subject": "General Education Exploratory",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "General Education Exploratory",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_30_1",
+    "course_name": "Career Exploration",
+    "subject": "General Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "General Electives",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 13,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_30_2",
+    "course_name": "Jobs for Tennessee Graduates (JTG)",
+    "subject": "General Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "General Electives",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 13,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_20_1",
+    "course_name": "Principles of Public Service",
+    "subject": "Government & Public Administration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Government & Public Administration",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_20_2",
+    "course_name": "Public Law and Budgeting",
+    "subject": "Government & Public Administration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Government & Public Administration",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_20_3",
+    "course_name": "Public Management and Administration",
+    "subject": "Government & Public Administration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Government & Public Administration",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_21_1",
+    "course_name": "Anatomy and Physiology",
+    "subject": "Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_21_2",
+    "course_name": "Behavioral and Community Health",
+    "subject": "Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_21_3",
+    "course_name": "Biomedical Applications",
+    "subject": "Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_21_4",
+    "course_name": "Cardiovascular Services",
+    "subject": "Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_21_5",
+    "course_name": "Clinical Internship",
+    "subject": "Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_21_6",
+    "course_name": "Dental Science",
+    "subject": "Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_21_7",
+    "course_name": "Diagnostic Medicine",
+    "subject": "Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_21_8",
+    "course_name": "Emergency Medical Services",
+    "subject": "Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_21_9",
+    "course_name": "Exercise Science",
+    "subject": "Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_21_10",
+    "course_name": "Forensic Science",
+    "subject": "Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_21_11",
+    "course_name": "Global Health and Epidemiology",
+    "subject": "Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 9,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_21_12",
+    "course_name": "Health Information Technology",
+    "subject": "Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_21_13",
+    "course_name": "Introduction to Health Science",
+    "subject": "Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_21_14",
+    "course_name": "Health Science Education",
+    "subject": "Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_21_15",
+    "course_name": "Medical Terminology",
+    "subject": "Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_21_16",
+    "course_name": "Medical Therapeutics",
+    "subject": "Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_21_17",
+    "course_name": "Nursing Education",
+    "subject": "Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_21_18",
+    "course_name": "Pharmacological Sciences",
+    "subject": "Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_21_19",
+    "course_name": "Rehabilitation Careers",
+    "subject": "Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_6_1",
+    "course_name": "Physical Education",
+    "subject": "Health, Physical Education, and Wellness",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health, Physical Education, and Wellness",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_6_2",
+    "course_name": "Health Education",
+    "subject": "Health, Physical Education, and Wellness",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health, Physical Education, and Wellness",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_6_3",
+    "course_name": "Wellness",
+    "subject": "Health, Physical Education, and Wellness",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health, Physical Education, and Wellness",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_22_1",
+    "course_name": "Culinary Arts I",
+    "subject": "Hospitality & Tourism",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Hospitality & Tourism",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_22_2",
+    "course_name": "Culinary Arts II",
+    "subject": "Hospitality & Tourism",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Hospitality & Tourism",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_22_3",
+    "course_name": "Culinary Arts III",
+    "subject": "Hospitality & Tourism",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Hospitality & Tourism",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_22_4",
+    "course_name": "Culinary Arts IV",
+    "subject": "Hospitality & Tourism",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Hospitality & Tourism",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_22_5",
+    "course_name": "Event Planning & Management",
+    "subject": "Hospitality & Tourism",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Hospitality & Tourism",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_22_6",
+    "course_name": "Hospitality Management",
+    "subject": "Hospitality & Tourism",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Hospitality & Tourism",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_22_7",
+    "course_name": "Hospitality Marketing",
+    "subject": "Hospitality & Tourism",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Hospitality & Tourism",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_22_8",
+    "course_name": "Hospitality & Tourism Exploration",
+    "subject": "Hospitality & Tourism",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Hospitality & Tourism",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_23_1",
+    "course_name": "Barbering I",
+    "subject": "Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Human Services",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_23_2",
+    "course_name": "Barbering II",
+    "subject": "Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Human Services",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_23_3",
+    "course_name": "Barbering III",
+    "subject": "Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Human Services",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_23_4",
+    "course_name": "Chemistry of Cosmetology",
+    "subject": "Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Human Services",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_23_5",
+    "course_name": "Design Principles of Cosmetology",
+    "subject": "Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Human Services",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_23_6",
+    "course_name": "Early Childhood Education Careers I",
+    "subject": "Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Human Services",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_23_7",
+    "course_name": "Early Childhood Education Careers II",
+    "subject": "Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Human Services",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_23_8",
+    "course_name": "Early Childhood Education Careers III",
+    "subject": "Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Human Services",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_23_9",
+    "course_name": "Early Childhood Education Careers IV",
+    "subject": "Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Human Services",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_23_10",
+    "course_name": "Family Studies",
+    "subject": "Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Human Services",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_23_11",
+    "course_name": "Introduction to Human Studies",
+    "subject": "Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Human Services",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_23_12",
+    "course_name": "Introduction to Social Health",
+    "subject": "Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Human Services",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_23_13",
+    "course_name": "Human Services Practicum",
+    "subject": "Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Human Services",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_23_14",
+    "course_name": "Lifespan Development",
+    "subject": "Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Human Services",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_23_15",
+    "course_name": "Nutrition Across the Lifespan",
+    "subject": "Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Human Services",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_23_16",
+    "course_name": "Nutrition Science and Diet Therapy",
+    "subject": "Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Human Services",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_23_17",
+    "course_name": "Principles of Cosmetology",
+    "subject": "Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Human Services",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 10,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_24_1",
+    "course_name": "Cabling and Internetworking",
+    "subject": "Information Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Information Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_24_2",
+    "course_name": "Computer Systems",
+    "subject": "Information Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Information Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_24_3",
+    "course_name": "Information Technology Foundations",
+    "subject": "Information Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Information Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_24_4",
+    "course_name": "Information Technology Clinical Internship",
+    "subject": "Information Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Information Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_24_5",
+    "course_name": "Networking",
+    "subject": "Information Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Information Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_24_6",
+    "course_name": "Programming and Logic I",
+    "subject": "Information Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Information Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_24_7",
+    "course_name": "Programming and Logic II",
+    "subject": "Information Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Information Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_24_8",
+    "course_name": "Programming & Software Development Practicum",
+    "subject": "Information Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Information Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_24_9",
+    "course_name": "Web Design Foundations",
+    "subject": "Information Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Information Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_24_10",
+    "course_name": "Web Site Development",
+    "subject": "Information Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Information Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_24_11",
+    "course_name": "Web Design Practicum",
+    "subject": "Information Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Information Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_1",
+    "course_name": "English Language Arts I, II, III, IV",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_2",
+    "course_name": "Advanced Placement English Language & Composition",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_3",
+    "course_name": "Advanced Placement English Literature & Composition",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_4",
+    "course_name": "Speech",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_5",
+    "course_name": "Journalism",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_6",
+    "course_name": "Competency English",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_7",
+    "course_name": "Creative Writing",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_8",
+    "course_name": "Latin I, II, III, IV",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_9",
+    "course_name": "French I, II, III, IV",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_10",
+    "course_name": "German I, II, III, IV",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_11",
+    "course_name": "Spanish I, II, III, IV",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_12",
+    "course_name": "Russian I, II, III, IV",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_13",
+    "course_name": "Japanese I, II, III, IV",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_14",
+    "course_name": "Chinese I, II, III, IV",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_15",
+    "course_name": "Other Languages I, II, III, IV",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_16",
+    "course_name": "Advanced Placement Chinese Language & Culture",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_17",
+    "course_name": "Advanced Placement French Language & Culture",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_18",
+    "course_name": "Advanced Placement German Language & Culture",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_19",
+    "course_name": "Advanced Placement Italian Language & Culture",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_20",
+    "course_name": "Advanced Placement Japanese Language & Culture",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_21",
+    "course_name": "Advanced Placement Spanish Language & Culture",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_22",
+    "course_name": "Advanced Placement Spanish Literature & Culture",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_23",
+    "course_name": "Advanced Placement Latin",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_24",
+    "course_name": "Advanced Placement Seminar",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_25",
+    "course_name": "Advanced Placement Research",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_28",
+    "course_name": "English as a Second Language",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_29",
+    "course_name": "Tier III English Language Arts",
+    "subject": "Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_25_1",
+    "course_name": "Court Systems and Practices",
+    "subject": "Law, Public Safety, Corrections, & Security",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Law, Public Safety, Corrections, & Security",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_25_2",
+    "course_name": "Criminal Justice I",
+    "subject": "Law, Public Safety, Corrections, & Security",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Law, Public Safety, Corrections, & Security",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_25_3",
+    "course_name": "Criminal Justice II",
+    "subject": "Law, Public Safety, Corrections, & Security",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Law, Public Safety, Corrections, & Security",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_25_4",
+    "course_name": "Criminal Justice III: Investigations",
+    "subject": "Law, Public Safety, Corrections, & Security",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Law, Public Safety, Corrections, & Security",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_25_5",
+    "course_name": "Emergency Preparedness",
+    "subject": "Law, Public Safety, Corrections, & Security",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Law, Public Safety, Corrections, & Security",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_25_6",
+    "course_name": "Fire Prevention",
+    "subject": "Law, Public Safety, Corrections, & Security",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Law, Public Safety, Corrections, & Security",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_25_7",
+    "course_name": "Fire Science I",
+    "subject": "Law, Public Safety, Corrections, & Security",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Law, Public Safety, Corrections, & Security",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_25_8",
+    "course_name": "Fire Science II",
+    "subject": "Law, Public Safety, Corrections, & Security",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Law, Public Safety, Corrections, & Security",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_25_9",
+    "course_name": "Principles of Fire and Emergency Services",
+    "subject": "Law, Public Safety, Corrections, & Security",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Law, Public Safety, Corrections, & Security",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_25_10",
+    "course_name": "Principles of Law, Corrections, and Security",
+    "subject": "Law, Public Safety, Corrections, & Security",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Law, Public Safety, Corrections, & Security",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_26_1",
+    "course_name": "Advertising and Public Relations",
+    "subject": "Marketing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Marketing",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_26_2",
+    "course_name": "Entrepreneurship",
+    "subject": "Marketing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Marketing",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_26_3",
+    "course_name": "Marketing & Management I\u2014Principles",
+    "subject": "Marketing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Marketing",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_26_4",
+    "course_name": "Marketing & Management II\u2014Advanced Strategies",
+    "subject": "Marketing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Marketing",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_26_6",
+    "course_name": "Virtual Enterprise International",
+    "subject": "Marketing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Marketing",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_8_1",
+    "course_name": "Foundations I, II, Algebra IA",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_8_2",
+    "course_name": "Algebra I",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_8_3",
+    "course_name": "Geometry",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_8_4",
+    "course_name": "Algebra II",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_8_5",
+    "course_name": "Advanced Algebra and Trigonometry",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_8_6",
+    "course_name": "Statistics",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_8_7",
+    "course_name": "Discrete Mathematics with Statistics & Probability",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 3,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_8_8",
+    "course_name": "Precalculus",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 3,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_8_9",
+    "course_name": "Calculus",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 3,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_8_10",
+    "course_name": "Advanced Placement Statistics",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 3,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_8_11",
+    "course_name": "Advanced Placement Calculus AB",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 3,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_8_12",
+    "course_name": "Advanced Placement Calculus BC",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 3,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_8_13",
+    "course_name": "Bridge Math Course",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 3,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_8_14",
+    "course_name": "Senior Finite Math",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 3,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_8_15",
+    "course_name": "Tier III Mathematics Intervention",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 3,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_1",
+    "course_name": "Physical Science",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_2",
+    "course_name": "Biology I, II",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_3",
+    "course_name": "Biology I A, B",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_4",
+    "course_name": "Human Anatomy and Physiology",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_5",
+    "course_name": "Chemistry I, II",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_6",
+    "course_name": "Chemistry I A, B",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_7",
+    "course_name": "Earth Science",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_8",
+    "course_name": "Geology",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_9",
+    "course_name": "Environmental Science",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_10",
+    "course_name": "Ecology",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_11",
+    "course_name": "Physics",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_12",
+    "course_name": "Physics I A, B",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_13",
+    "course_name": "Physical World Concepts",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_14",
+    "course_name": "Scientific Research",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_15",
+    "course_name": "Advanced Placement Biology",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_16",
+    "course_name": "Advanced Placement Chemistry",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_17",
+    "course_name": "Advanced Placement Environmental Science",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_18",
+    "course_name": "Advanced Placement Physics I",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_19",
+    "course_name": "Advanced Placement Physics II",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_20",
+    "course_name": "Advanced Placement Physics C: Electricity & Magnetism",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_21",
+    "course_name": "Advanced Placement Physics C: Mechanics",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_1",
+    "course_name": "Advanced Design Applications (EBD)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_2",
+    "course_name": "Advanced Technological Applications (EBD)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_3",
+    "course_name": "Aerospace Engineering (PLTW)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_4",
+    "course_name": "Automation and Robotics (PLTW)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_5",
+    "course_name": "Biotechnical Engineering (PLTW)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_6",
+    "course_name": "Civil Engineering and Architecture (PLTW)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_7",
+    "course_name": "Computer Integrated Manufacturing (PLTW)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_8",
+    "course_name": "Design and Modeling (PLTW)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 11,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_9",
+    "course_name": "Digital Electronics (PLTW)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_10",
+    "course_name": "Energy and the Environment (PLTW)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_11",
+    "course_name": "Engineering Design (EBD)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_12",
+    "course_name": "Engineering Design and Development (PLTW)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_13",
+    "course_name": "Engineering Design I",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_14",
+    "course_name": "Engineering Design II",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_15",
+    "course_name": "Engineering Practicum",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_16",
+    "course_name": "Exploring Technology (EBD)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_17",
+    "course_name": "Flight and Space (PLTW)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_18",
+    "course_name": "Foundations of Technology (EBD)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_19",
+    "course_name": "Green Architecture (PLTW)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_20",
+    "course_name": "Introduction to Engineering Design (PLTW)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_21",
+    "course_name": "Introduction to Geographical Information Systems",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_22",
+    "course_name": "Inventions and Innovations (EBD)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_23",
+    "course_name": "Magic of Electrons (PLTW)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_24",
+    "course_name": "Medical Detectives (PLTW)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_25",
+    "course_name": "Principles of Engineering (PLTW)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_26",
+    "course_name": "Principles of Engineering and Technology",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_27",
+    "course_name": "Principles of Technology I",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_28",
+    "course_name": "Principles of Technology II",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_29",
+    "course_name": "Robotics and Automated Systems",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_30",
+    "course_name": "Science and Technology (PLTW)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_31",
+    "course_name": "STEM Designers",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_32",
+    "course_name": "STEM Explorers",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_33",
+    "course_name": "STEM Innovators",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_34",
+    "course_name": "STEM I: Foundation",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_35",
+    "course_name": "STEM II: Applications",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_36",
+    "course_name": "STEM III: STEM in Context",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_37",
+    "course_name": "STEM IV: Practicum",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_38",
+    "course_name": "Technological Design (EBD)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_27_39",
+    "course_name": "Technological Systems (EBD)",
+    "subject": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering, & Mathematics (STEM)",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_12_1",
+    "course_name": "Service-Learning",
+    "subject": "Service Learning",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Service Learning",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 6,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_1",
+    "course_name": "United States History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_2",
+    "course_name": "Economics",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_3",
+    "course_name": "United States Government",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_4",
+    "course_name": "Psychology",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_5",
+    "course_name": "Sociology",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_6",
+    "course_name": "World Geography",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_7",
+    "course_name": "World History and Geography",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_8",
+    "course_name": "Contemporary Issues",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_9",
+    "course_name": "Ancient History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_10",
+    "course_name": "African-American History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_11",
+    "course_name": "Advanced Placement United States History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_12",
+    "course_name": "Advanced Placement European History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_13",
+    "course_name": "Advanced Placement World History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_14",
+    "course_name": "Advanced Placement Macroeconomics",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_15",
+    "course_name": "Advanced Placement Microeconomics",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_16",
+    "course_name": "Advanced Placement U.S. Government & Politics",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_17",
+    "course_name": "Advanced Placement Comparative Government & Politics",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_18",
+    "course_name": "Advanced Placement Human Geography",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_19",
+    "course_name": "Advanced Placement Psychology",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_20",
+    "course_name": "International Baccalaureate, History of the Americas HL",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_21",
+    "course_name": "Personal Finance",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_28_1",
+    "course_name": "Aviation I: Principles of Flight",
+    "subject": "Transportation, Distribution, & Logistics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Transportation, Distribution, & Logistics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_28_2",
+    "course_name": "Aviation II: Advanced Flight",
+    "subject": "Transportation, Distribution, & Logistics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Transportation, Distribution, & Logistics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_28_3",
+    "course_name": "Collision Repair: Estimating and Customer Service",
+    "subject": "Transportation, Distribution, & Logistics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Transportation, Distribution, & Logistics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_28_4",
+    "course_name": "Collision Repair: Non-Structural",
+    "subject": "Transportation, Distribution, & Logistics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Transportation, Distribution, & Logistics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_28_5",
+    "course_name": "Collision Repair: Painting and Refinishing",
+    "subject": "Transportation, Distribution, & Logistics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Transportation, Distribution, & Logistics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_28_6",
+    "course_name": "Collision Repair: Structural",
+    "subject": "Transportation, Distribution, & Logistics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Transportation, Distribution, & Logistics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_28_7",
+    "course_name": "Distribution & Logistics I",
+    "subject": "Transportation, Distribution, & Logistics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Transportation, Distribution, & Logistics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_28_8",
+    "course_name": "Distribution & Logistics II: Management",
+    "subject": "Transportation, Distribution, & Logistics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Transportation, Distribution, & Logistics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_28_9",
+    "course_name": "Foundations of Distribution & Logistics",
+    "subject": "Transportation, Distribution, & Logistics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Transportation, Distribution, & Logistics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_28_10",
+    "course_name": "Introduction to Aerospace",
+    "subject": "Transportation, Distribution, & Logistics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Transportation, Distribution, & Logistics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_28_11",
+    "course_name": "Introduction to Collision Repair",
+    "subject": "Transportation, Distribution, & Logistics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Transportation, Distribution, & Logistics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 12,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_28_12",
+    "course_name": "Maintenance and Light Repair I",
+    "subject": "Transportation, Distribution, & Logistics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Transportation, Distribution, & Logistics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 13,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_28_13",
+    "course_name": "Maintenance and Light Repair II",
+    "subject": "Transportation, Distribution, & Logistics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Transportation, Distribution, & Logistics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 13,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_28_14",
+    "course_name": "Maintenance and Light Repair III",
+    "subject": "Transportation, Distribution, & Logistics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Transportation, Distribution, & Logistics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 13,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_28_15",
+    "course_name": "Maintenance and Light Repair IV",
+    "subject": "Transportation, Distribution, & Logistics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Transportation, Distribution, & Logistics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 13,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_28_16",
+    "course_name": "Transportation Core",
+    "subject": "Transportation, Distribution, & Logistics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Transportation, Distribution, & Logistics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 13,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_4_1",
+    "course_name": "General Music",
+    "subject": "Visual and Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual and Performing Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_4_2",
+    "course_name": "Instrumental Music I, II, III, IV",
+    "subject": "Visual and Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual and Performing Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_4_3",
+    "course_name": "Vocal/Choral Music I, II, III, IV",
+    "subject": "Visual and Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual and Performing Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_4_4",
+    "course_name": "Class Piano I, II, III, IV",
+    "subject": "Visual and Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual and Performing Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_4_5",
+    "course_name": "Music History",
+    "subject": "Visual and Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual and Performing Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_4_6",
+    "course_name": "Music Theory",
+    "subject": "Visual and Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual and Performing Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_4_7",
+    "course_name": "Visual Art I, II, III, IV",
+    "subject": "Visual and Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual and Performing Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_4_8",
+    "course_name": "Visual Art History",
+    "subject": "Visual and Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual and Performing Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_4_9",
+    "course_name": "Dance I, II, III, IV",
+    "subject": "Visual and Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual and Performing Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_4_10",
+    "course_name": "Theater I, II, III, IV",
+    "subject": "Visual and Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual and Performing Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_4_11",
+    "course_name": "Advanced Placement Music Theory",
+    "subject": "Visual and Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual and Performing Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_4_12",
+    "course_name": "Advanced Placement Art History",
+    "subject": "Visual and Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual and Performing Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_4_13",
+    "course_name": "Advanced Placement Studio Art: 2-D Design",
+    "subject": "Visual and Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual and Performing Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_4_14",
+    "course_name": "Advanced Placement Studio Art: 3-D Design",
+    "subject": "Visual and Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual and Performing Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_4_15",
+    "course_name": "Advanced Placement Studio Art: Drawing",
+    "subject": "Visual and Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual and Performing Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_29_1",
+    "course_name": "Work-Based Learning: Career Practicum",
+    "subject": "Work\u2010Based Learning",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Work\u2010Based Learning",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 13,
+    "source": "Tennessee"
+  }
+]

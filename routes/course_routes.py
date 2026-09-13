@@ -62,6 +62,16 @@ def _selected_catalog(value):
     return value if value in course_service.get_catalogs() else "national"
 
 
+def _catalog_selection(args_or_form):
+    state_code = args_or_form.get("state", "").strip().upper()
+    state_lookup = {
+        option["code"]: option for option in course_service.get_state_options()
+    }
+    if state_code in state_lookup:
+        return state_lookup[state_code]["catalog_id"], state_code
+    return _selected_catalog(args_or_form.get("catalog", "national")), ""
+
+
 @course_bp.get("/courses")
 @login_required
 def course_explorer():
@@ -69,7 +79,7 @@ def course_explorer():
     if redirect_response:
         return redirect_response
 
-    catalog_id = _selected_catalog(request.args.get("catalog", "national"))
+    catalog_id, state_code = _catalog_selection(request.args)
     filters = {
         "query": request.args.get("q", "").strip() or None,
         "grade_level": request.args.get("grade", type=int),
@@ -88,7 +98,9 @@ def course_explorer():
         filters=request.args,
         options=course_service.get_catalog_options(catalog_id),
         catalogs=course_service.get_catalogs(),
+        states=course_service.get_state_options(),
         catalog_id=catalog_id,
+        state_code=state_code,
         planned_ids=_planned_ids(profile, catalog_id),
     )
 

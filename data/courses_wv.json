@@ -1,0 +1,2982 @@
+[
+  {
+    "course_id": "WV_BRCTC_SCHOLARS_PSYCHOLOGY_12TH",
+    "course_name": "BRCTC Scholars Psychology (12th)",
+    "subject": "Additional Courses",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Additional Courses",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_BRCTC_SCHOLARS_AMER_FED_GOV_12TH",
+    "course_name": "BRCTC Scholars Amer. Fed. Gov. (12th)",
+    "subject": "Additional Courses",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Additional Courses",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_COLLEGE_RELEASE_SEE_YOUR_SCHOOL_COUNSELOR",
+    "course_name": "College Release (See Your School Counselor)",
+    "subject": "Additional Courses",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Additional Courses",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_BRCTC_SCHOLARS_MATH_100_12TH",
+    "course_name": "BRCTC Scholars Math 100 (12th)",
+    "subject": "Additional Courses",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Additional Courses",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_BRCTC_SCHOLARS_MATH_101_12TH",
+    "course_name": "BRCTC Scholars Math 101 (12th)",
+    "subject": "Additional Courses",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Additional Courses",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_INTERNSHIP_12TH_GRADE_ONLY_MUST_SUBMIT_ATTENDANCE_EXCEPTION_FORM_FOR_ADMIN_APPROVAL",
+    "course_name": "Internship (12th grade ONLY-Must submit attendance exception form for Admin Approval)",
+    "subject": "Additional Courses",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Additional Courses",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_INTRO_TO_AG_CTE",
+    "course_name": "Intro to Ag (CTE)",
+    "subject": "Agriculture, Food & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food & Natural Resources",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_FUND_OF_AG_MECH_CTE",
+    "course_name": "Fund of Ag Mech (CTE)",
+    "subject": "Agriculture, Food & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food & Natural Resources",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_AG_CO_OP_CTE",
+    "course_name": "Ag Co-op (CTE)",
+    "subject": "Agriculture, Food & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food & Natural Resources",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_THE_SCI_OF_AG_CTE",
+    "course_name": "The Sci. of Ag. (CTE)",
+    "subject": "Agriculture, Food & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food & Natural Resources",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_AG_STRUCTURES_CTE_EVEN_YRS",
+    "course_name": "Ag Structures (CTE-even yrs)",
+    "subject": "Agriculture, Food & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food & Natural Resources",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_AG_EQUIP_REPAIR_CTE_ODD_YRS",
+    "course_name": "Ag Equip. & Repair (CTE-odd yrs)",
+    "subject": "Agriculture, Food & Natural Resources",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture, Food & Natural Resources",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_JRTI_CARPENTRY_CTE",
+    "course_name": "JRTI Carpentry (CTE)",
+    "subject": "Architecture & Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Architecture & Construction",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_JRTI_ELECTRICAL_TECH_CTE",
+    "course_name": "JRTI Electrical Tech (CTE)",
+    "subject": "Architecture & Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Architecture & Construction",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_JRTI_MASONRY_CTE",
+    "course_name": "JRTI Masonry (CTE)",
+    "subject": "Architecture & Construction",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Architecture & Construction",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_ART_I",
+    "course_name": "Art I",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_ART_II",
+    "course_name": "Art II",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_ART_III",
+    "course_name": "Art III",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_ART_IV",
+    "course_name": "Art IV",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_STDO_ART_I_SCULPT",
+    "course_name": "Stdo Art I (Sculpt.)",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_STDO_ART_II_SCULPT",
+    "course_name": "Stdo Art II (Sculpt.)",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_ART_HIST_APPREC_AESTH",
+    "course_name": "Art Hist., Apprec. & Aesth.",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_BAND_I",
+    "course_name": "Band I",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_BAND_II",
+    "course_name": "Band II",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_BAND_III",
+    "course_name": "Band III",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_BAND_IV",
+    "course_name": "Band IV",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_CHORUS_I",
+    "course_name": "Chorus I",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_CHORUS_II",
+    "course_name": "Chorus II",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_CHORUS_III",
+    "course_name": "Chorus III",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_CHORUS_IV",
+    "course_name": "Chorus IV",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_MUSIC_THEORY",
+    "course_name": "Music Theory",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_MUSIC_APPRECIATION",
+    "course_name": "Music Appreciation",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_GUITAR_I",
+    "course_name": "Guitar I",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_GUITAR_II",
+    "course_name": "Guitar II",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_GUITAR_III",
+    "course_name": "Guitar III",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_GUITAR_IV",
+    "course_name": "Guitar IV",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_THEATRE_I",
+    "course_name": "Theatre I",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_THEATRE_II",
+    "course_name": "Theatre II",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_THEATRE_III",
+    "course_name": "Theatre III",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_THEATRE_IV",
+    "course_name": "Theatre IV",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_DANCE_I",
+    "course_name": "Dance I",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_DANCE_II",
+    "course_name": "Dance II",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_DANCE_III",
+    "course_name": "Dance III",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_DANCE_IV",
+    "course_name": "Dance IV",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_DIGITAL_IMAGING_MULTIMEDIA",
+    "course_name": "Digital Imaging Multimedia",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_JRTI_GRAPHIC_DESIGN_CTE",
+    "course_name": "JRTI Graphic Design (CTE)",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_JRTI_MULTIMEDIA_PUB_CTE",
+    "course_name": "JRTI Multimedia Pub (CTE)",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_NEWSPAPER_I",
+    "course_name": "Newspaper I",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_NEWSPAPER_II",
+    "course_name": "Newspaper II",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_NEWSPAPER_III",
+    "course_name": "Newspaper III",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_NEWSPAPER_IV",
+    "course_name": "Newspaper IV",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_SCHOOL_YEARBOOK_I",
+    "course_name": "School Yearbook I",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_SCHOOL_YEARBOOK_II",
+    "course_name": "School Yearbook II",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_SCHOOL_YEARBOOK_III",
+    "course_name": "School Yearbook III",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_SCHOOL_YEARBOOK_IV",
+    "course_name": "School Yearbook IV",
+    "subject": "Arts, Audio/Video Technology & Communications",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Arts, Audio/Video Technology & Communications",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_CWST_I_WORK_I_7_11TH",
+    "course_name": "CWST I/Work I (7) (11th)",
+    "subject": "Business, Management & Administration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business, Management & Administration",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_BUS_COMP_APP_I",
+    "course_name": "Bus Comp App I",
+    "subject": "Business, Management & Administration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business, Management & Administration",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_BUSINESS_AND_MARKETING_ESS",
+    "course_name": "Business and Marketing Ess.",
+    "subject": "Business, Management & Administration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business, Management & Administration",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_CWST_II_WORK_II_6_7_12TH",
+    "course_name": "CWST II/Work II (6&7) (12th)",
+    "subject": "Business, Management & Administration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business, Management & Administration",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_OFFICE_PROCEDURES",
+    "course_name": "Office Procedures",
+    "subject": "Business, Management & Administration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business, Management & Administration",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_BUSINESS_COMPUTER_COMM",
+    "course_name": "Business Computer Comm",
+    "subject": "Business, Management & Administration",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business, Management & Administration",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_BRCTC_JUMPSTART_GROW_YOUR_OWN_EDUCATION_12TH",
+    "course_name": "BRCTC JumpStart Grow Your Own: Education (12th)",
+    "subject": "Education & Training",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Education & Training",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_ENGLISH_9_P",
+    "course_name": "English 9 (P)",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_ENGLISH_10_P",
+    "course_name": "English 10 (P)",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_ENGLISH_11_P",
+    "course_name": "English 11 (P)",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_ENGLISH_12_P",
+    "course_name": "English 12 (P)",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_ENGLISH_9",
+    "course_name": "English 9",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_ENGLISH_10",
+    "course_name": "English 10",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_ENGLISH_11",
+    "course_name": "English 11",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_ENGLISH_12",
+    "course_name": "English 12",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_H_ENGLISH_9",
+    "course_name": "H English 9",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_H_ENGLISH_10",
+    "course_name": "H English 10",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_BRCTC_ENGLISH_101_102",
+    "course_name": "BRCTC English 101/102",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_PERSONAL_FINANCE",
+    "course_name": "Personal Finance",
+    "subject": "Finance",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Finance",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_WVVS_BUSINESS_LAW",
+    "course_name": "WVVS Business Law",
+    "subject": "Finance",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Finance",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_WVVS_INTRODUCTION_TO_FINANCE",
+    "course_name": "WVVS Introduction to Finance",
+    "subject": "Finance",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Finance",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_WVVS_MEDICAL_TERMINOLOGY",
+    "course_name": "WVVS Medical Terminology",
+    "subject": "Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Science",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_JRTI_THERAPUEUTIC_SERVICES_CTE",
+    "course_name": "JRTI Therapueutic Services (CTE)",
+    "subject": "Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Science",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_WVVS_FOUND_OF_HEALTH_SCI",
+    "course_name": "WVVS Found of Health Sci",
+    "subject": "Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Science",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_BRCTC_JUMPSTART_TOURISM_AND_HOSPITALITY_12TH",
+    "course_name": "BRCTC JumpStart Tourism and Hospitality (12th)",
+    "subject": "Hospitality & Tourism",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Hospitality & Tourism",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_JRTI_PROSTART_RESTAURANT_MANAGEMENT_CTE",
+    "course_name": "JRTI ProStart Restaurant Management (CTE)",
+    "subject": "Hospitality & Tourism",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Hospitality & Tourism",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_WVVS_PARENTING_STRONG_FAMILIES",
+    "course_name": "WVVS Parenting & Strong Families",
+    "subject": "Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Human Services",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_WVVS_HUMAN_DEVELOPMENT",
+    "course_name": "WVVS Human Development",
+    "subject": "Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Human Services",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_BRCTC_JUMPSTART_CYBER_SECURITY_12TH",
+    "course_name": "BRCTC JumpStart Cyber Security (12th)",
+    "subject": "Information Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Information Technology",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_JRTI_ADV_INFO_TECH_CTE",
+    "course_name": "JRTI Adv Info Tech (CTE)",
+    "subject": "Information Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Information Technology",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_JRTI_CODING_APP_GAME_DESIGN_CTE",
+    "course_name": "JRTI Coding, App & Game Design (CTE)",
+    "subject": "Information Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Information Technology",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_JRTI_CYBERSECURITY_CISCO_CTE",
+    "course_name": "JRTI Cybersecurity/CISCO (CTE)",
+    "subject": "Information Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Information Technology",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_JRTI_EMERGENCY_FIREFIGHTING_MGMT_SERVICES_CTE",
+    "course_name": "JRTI Emergency & Firefighting MGMT Services (CTE)",
+    "subject": "Law, Public Safety, Corrections & Security",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Law, Public Safety, Corrections & Security",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_JRTI_LAW_PUBLIC_SAFETY_CTE",
+    "course_name": "JRTI Law & Public Safety (CTE)",
+    "subject": "Law, Public Safety, Corrections & Security",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Law, Public Safety, Corrections & Security",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_JRTI_APPLIED_ENGINEERING_ROBOTICS_CTE",
+    "course_name": "JRTI Applied Engineering/Robotics (CTE)",
+    "subject": "Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Manufacturing",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_JRTI_WELDING_CTE",
+    "course_name": "JRTI Welding (CTE)",
+    "subject": "Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Manufacturing",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_MELLOTT_UNIVERSITY_12TH",
+    "course_name": "Mellott University (12th)",
+    "subject": "Manufacturing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Manufacturing",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_ALGEBRA_I_P",
+    "course_name": "Algebra I (P)",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_ALGEBRA_II_P",
+    "course_name": "Algebra II (P)",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_AMM",
+    "course_name": "AMM",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_ALGEBRA_I",
+    "course_name": "Algebra I",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_ALGEBRA_II",
+    "course_name": "Algebra II",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_CO_REQ_MTH_100_100A",
+    "course_name": "Co-Req Mth 100/100A",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_GEOMETRY_P",
+    "course_name": "Geometry (P)",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_H_ALGEBRA_II",
+    "course_name": "H Algebra II",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_GEOMETRY",
+    "course_name": "Geometry",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_APPLIED_STATISTICS",
+    "course_name": "Applied Statistics",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_H_GEOMETRY",
+    "course_name": "H Geometry",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_H_TRIG_PRE_CALC",
+    "course_name": "H Trig Pre-Calc",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_BRCTC_MTH_100_101",
+    "course_name": "BRCTC Mth 100/101",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_PE",
+    "course_name": "PE",
+    "subject": "PE/Health/Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "PE/Health/Safety",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_HEALTH",
+    "course_name": "Health",
+    "subject": "PE/Health/Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "PE/Health/Safety",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_FITNESS_CONDITIONING",
+    "course_name": "Fitness & Conditioning",
+    "subject": "PE/Health/Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "PE/Health/Safety",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_DRIVER_S_EDUCATION",
+    "course_name": "Driver\u2019s Education",
+    "subject": "PE/Health/Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "PE/Health/Safety",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_WEIGHT_TRAINING_I",
+    "course_name": "Weight Training I",
+    "subject": "PE/Health/Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "PE/Health/Safety",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_WEIGHT_TRAINING_II",
+    "course_name": "Weight Training II",
+    "subject": "PE/Health/Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "PE/Health/Safety",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_WEIGHT_TRAINING_III",
+    "course_name": "Weight Training III",
+    "subject": "PE/Health/Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "PE/Health/Safety",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_WEIGHT_TRAINING_IV",
+    "course_name": "Weight Training IV",
+    "subject": "PE/Health/Safety",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "PE/Health/Safety",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_ERTH_SPACE_SCI",
+    "course_name": "Erth/Space Sci",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_ENVIRONMENTAL_SCIENCE",
+    "course_name": "Environmental Science",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_H_ENV_SCI_AP_ENV_SCI",
+    "course_name": "H Env Sci/AP Env Sci",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_H_ERTH_SPACE_SCI",
+    "course_name": "H Erth/Space Sci",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_CHEMISTRY",
+    "course_name": "Chemistry",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_H_CHEMISTRY",
+    "course_name": "H Chemistry",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_BIOLOGY",
+    "course_name": "Biology",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_FORENSIC_SCIENCE",
+    "course_name": "Forensic Science",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_HAP",
+    "course_name": "HAP",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_H_BIOLOGY",
+    "course_name": "H Biology",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_PHYSICAL_SCIENCE",
+    "course_name": "Physical Science",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_PHYSICS",
+    "course_name": "Physics",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_EXPERIMENTAL_DESIGN",
+    "course_name": "Experimental Design",
+    "subject": "Science, Technology, Engineering & Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering & Mathematics",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_BRCTC_JUMPSTART_ANIMAL_SCIENCE_12TH",
+    "course_name": "BRCTC JumpStart Animal Science (12th)",
+    "subject": "Science, Technology, Engineering & Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering & Mathematics",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_JRTI_AEROSPACE_ENGINEERING_CTE",
+    "course_name": "JRTI Aerospace Engineering (CTE)",
+    "subject": "Science, Technology, Engineering & Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science, Technology, Engineering & Mathematics",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_WORLD_STUDIES",
+    "course_name": "World Studies",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_H_CIVICS_AND_GOVERNMENT",
+    "course_name": "H Civics and Government",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_WVVS_AP_MICROECONOMICS",
+    "course_name": "WVVS AP Microeconomics",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_H_WORLD_STUDIES",
+    "course_name": "H World Studies",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_ECONOMICS",
+    "course_name": "Economics",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_WVVS_AP_MACROECONOMICS",
+    "course_name": "WVVS AP Macroeconomics",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_US_STUDIES",
+    "course_name": "US Studies",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_PSYCHOLOGY",
+    "course_name": "Psychology",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_WVVS_AP_HUMAN_GEOGRAPHY",
+    "course_name": "WVVS AP Human Geography",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_H_US_STUDIES_COMP",
+    "course_name": "H US Studies Comp",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_SOCIOLOGY",
+    "course_name": "Sociology",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_GEOGRAPHY",
+    "course_name": "Geography",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_CONTEMPORARY_STUDIES",
+    "course_name": "Contemporary Studies",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_CIVICS_AND_GOVERNMENT",
+    "course_name": "Civics and Government",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 1,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_JRTI_AUTOMOTIVE_TECHNOLOGY_CTE",
+    "course_name": "JRTI Automotive Technology (CTE)",
+    "subject": "Transportation, Distribution & Logistics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Transportation, Distribution & Logistics",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_JRTI_DIESEL_TECHNOLOGY_CTE",
+    "course_name": "JRTI Diesel Technology (CTE)",
+    "subject": "Transportation, Distribution & Logistics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Transportation, Distribution & Logistics",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_SPANISH_I",
+    "course_name": "Spanish I",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_SPANISH_II",
+    "course_name": "Spanish II",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_SPANISH_III",
+    "course_name": "Spanish III",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_SPANISH_IV",
+    "course_name": "Spanish IV",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  },
+  {
+    "course_id": "WV_WVVS_WORLD_LANGUAGE_10TH_12TH",
+    "course_name": "WVVS World Language (10th-12th)",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "West Virginia",
+    "source_page": 2,
+    "source": "West Virginia"
+  }
+]

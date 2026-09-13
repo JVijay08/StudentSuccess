@@ -5,6 +5,7 @@
     get_courses_by_subject,
     get_courses_by_type,
     get_catalogs,
+    get_state_options,
     load_courses,
 )
 
@@ -54,9 +55,69 @@ def test_national_and_local_catalogs_are_separate():
     national_courses = load_courses("national")
     local_courses = load_courses("forsyth-ga")
 
-    assert set(catalogs) == {"national", "forsyth-ga"}
+    assert {"national", "forsyth-ga", "ap", "ib"}.issubset(catalogs)
+    assert {"al", "ar", "fl", "ky", "la", "ms", "nc", "sc", "tn", "va", "wv"}.issubset(catalogs)
     assert any(course["course_name"] == "Algebra I" for course in national_courses)
     assert any(
         course["course_name"] == "Algebra: Concepts and Connections"
         for course in local_courses
     )
+
+
+def test_program_catalogs_include_supplied_ap_and_ib_references():
+    ap_courses = load_courses("ap")
+    ib_courses = load_courses("ib")
+
+    assert any(course["course_name"] == "AP Cybersecurity" for course in ap_courses)
+    assert any(course["course_name"] == "IB Global Politics" for course in ib_courses)
+    assert all(course["course_type"] == "AP" for course in ap_courses)
+    assert all(course["course_type"] == "IB" for course in ib_courses)
+
+
+def test_state_options_cover_all_us_states_and_mark_only_loaded_states():
+    states = get_state_options()
+
+    assert len(states) == 50
+    assert any(
+        state["code"] == "GA"
+        and state["available"]
+        and state["catalog_id"] == "forsyth-ga"
+        for state in states
+    )
+    assert any(
+        state["code"] == "WI"
+        and not state["available"]
+        and state["catalog_id"] == "national"
+        for state in states
+    )
+    for code, catalog_id in {
+        "AL": "al",
+        "AR": "ar",
+        "FL": "fl",
+        "KY": "ky",
+        "LA": "la",
+        "MS": "ms",
+        "NC": "nc",
+        "SC": "sc",
+        "TN": "tn",
+        "VA": "va",
+        "WV": "wv",
+    }.items():
+        assert any(
+            state["code"] == code
+            and state["available"]
+            and state["catalog_id"] == catalog_id
+            for state in states
+        )
+
+
+def test_imported_state_catalogs_and_program_merges_are_usable():
+    for catalog_id in ["al", "ar", "fl", "ky", "la", "ms", "nc", "sc", "tn", "va", "wv"]:
+        courses = load_courses(catalog_id)
+        assert courses
+        assert len({course["course_id"] for course in courses}) == len(courses)
+
+    assert len(load_courses("ap")) >= 67
+    assert len(load_courses("ib")) >= 223
+    assert all(course["course_type"] == "AP" for course in load_courses("ap"))
+    assert all(course["course_type"] == "IB" for course in load_courses("ib"))

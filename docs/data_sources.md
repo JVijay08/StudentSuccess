@@ -16,6 +16,9 @@ Project-created workload labels are educational estimates. They are not official
 |---|---|---|---|---|---|
 | Local course catalog | Forsyth County Schools | High School Course Digest, accessed July 4, 2026 | Local course names, prerequisites, grade levels, graduation category | Public official source | In Use |
 | National reference catalog | StudentSuccess taxonomy | Common course families for broad planning | Reference names, broad grade bands, planning relationships | Project-created reference | In Use |
+| AP program catalog | College Board AP course list supplied for this project | AP course names and broad planning categories | Program reference | Supplied reference | In Use |
+| IB program catalog | International Baccalaureate DP subject list supplied for this project | Active DP subject names, groups, and broad planning categories | Program reference | Supplied reference | In Use |
+| State course catalogs | Supplied Alabama, Arkansas, Florida, Kentucky, Louisiana, Mississippi, North Carolina, South Carolina, Tennessee, Virginia, and West Virginia databases | State or provider course records normalized for course exploration | State reference | Supplied references | In Use |
 
 ---
 
@@ -36,11 +39,11 @@ The course catalog source was selected because it is hosted by the official scho
 
 ## Catalog Scope
 
-The app includes two deliberately separate catalogs. The national reference catalog contains common course families for broad planning. The Forsyth County catalog contains 59 representative local high-school courses.
+The app includes separate state, national, AP, and IB catalogs. The state files are derived from the supplied databases and retain their source scope: Alabama and Arkansas are statewide source catalogs; North Carolina is a statewide CTE inventory; Tennessee is a dated statewide approved-course policy; and the remaining imported sources are provider, school, pathway, or partial catalogs. The Forsyth County catalog contains 59 representative local high-school courses. The AP and IB catalogs are program-level references and are not claims that every school offers every listed course.
 
 This intentionally small catalog is designed to demonstrate course sequences, prerequisites, advanced-course options, career pathways, and language progression without attempting to reproduce the entire district catalog.
 
-The structured datasets are maintained in `data/courses_national.json` and `data/courses.json`.
+The structured datasets are maintained in `data/courses_national.json`, `data/courses.json`, `data/courses_ap.json`, `data/courses_ib.json`, and the imported state files in `data/courses_*.json`. The repeatable normalization command is `scripts/import_course_databases.py`.
 
 ### Important Data Rule
 

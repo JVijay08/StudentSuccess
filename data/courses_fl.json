@@ -1,0 +1,3282 @@
+[
+  {
+    "course_id": "FL_0717300",
+    "course_name": "American Sign Language 1",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0717310",
+    "course_name": "American Sign Language 2",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5001020",
+    "course_name": "Art - Grade 1",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5001030",
+    "course_name": "Art - Grade 2",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5001060",
+    "course_name": "Art - Intermediate 3",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0100320",
+    "course_name": "Art in World Cultures",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5001010",
+    "course_name": "Art \u2013 Grade Kindergarten",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5001040",
+    "course_name": "Art \u2013 Intermediate 1",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5001050",
+    "course_name": "Art \u2013 Intermediate 2",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0200315",
+    "course_name": "Computer Science Principles",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1900300",
+    "course_name": "Driver\u2019s Education",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0701320",
+    "course_name": "French 1",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0701330",
+    "course_name": "French 2",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0701340",
+    "course_name": "French 3 Honors",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0701350",
+    "course_name": "French 4 Honors",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0702320",
+    "course_name": "German 1",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0702330",
+    "course_name": "German 2",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0702340",
+    "course_name": "German 3 Honors",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0100310",
+    "course_name": "Introduction to Art History",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0712300",
+    "course_name": "Japanese 1",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0712310",
+    "course_name": "Japanese 2",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0100070",
+    "course_name": "M/J Art in World Cultures",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1700060",
+    "course_name": "M/J Career Research & Decision Making",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0103000",
+    "course_name": "M/J Digital Art & Design 1",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1301090",
+    "course_name": "M/J Exploring Music 1",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1301100",
+    "course_name": "M/J Exploring Music 2",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1301110",
+    "course_name": "M/J Exploring Music 3",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0708000",
+    "course_name": "M/J Spanish, Beginning",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0708010",
+    "course_name": "M/J Spanish, Intermediate",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0101010",
+    "course_name": "M/J Two-Dimensional Studio Art 1",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0101020",
+    "course_name": "M/J Two-Dimensional Studio Art 2",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5013070",
+    "course_name": "Music - Grade 1",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5013080",
+    "course_name": "Music - Grade 2",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5013060",
+    "course_name": "Music - Grade Kindergarten",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5013090",
+    "course_name": "Music - Intermediate 1",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5013100",
+    "course_name": "Music - Intermediate 2",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5013110",
+    "course_name": "Music - Intermediate 3",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1300300",
+    "course_name": "Music Theory 1",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0708340",
+    "course_name": "Spanish 1",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0708350",
+    "course_name": "Spanish 2",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0708360",
+    "course_name": "Spanish 3 Honors",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_0708370",
+    "course_name": "Spanish 4 Honors",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5007020",
+    "course_name": "Spanish-Elementary",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1007305",
+    "course_name": "Speech 1",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5010024",
+    "course_name": "Basic Skills in Reading 3-5",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5010020",
+    "course_name": "Basic Skills in Reading K-2",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1001310",
+    "course_name": "English 1",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1001315",
+    "course_name": "English 1 for Credit Recovery",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1001340",
+    "course_name": "English 2",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1001345",
+    "course_name": "English 2 for Credit Recovery",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1001370",
+    "course_name": "English 3",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1001375",
+    "course_name": "English 3 for Credit Recovery",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1001400",
+    "course_name": "English 4",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1001402",
+    "course_name": "English 4 for Credit Recovery",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1001320",
+    "course_name": "English Honors 1",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1001350",
+    "course_name": "English Honors 2",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1001380",
+    "course_name": "English Honors 3",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1001410",
+    "course_name": "English Honors 4",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1000412",
+    "course_name": "Intensive Reading 1",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1000414",
+    "course_name": "Intensive Reading 2",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1000416",
+    "course_name": "Intensive Reading 3",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1000418",
+    "course_name": "Intensive Reading 4",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1006300",
+    "course_name": "Journalism 1",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5010046",
+    "course_name": "Language Arts - Grade Five",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5010045",
+    "course_name": "Language Arts - Grade Four",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5010042",
+    "course_name": "Language Arts - Grade One",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5010044",
+    "course_name": "Language Arts - Grade Three",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5010043",
+    "course_name": "Language Arts - Grade Two",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5010041",
+    "course_name": "Language Arts - Kindergarten",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1000010",
+    "course_name": "M/J Intensive Reading 1",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1000012",
+    "course_name": "M/J Intensive Reading 2",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1000014",
+    "course_name": "M/J Intensive Reading 3",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1001010",
+    "course_name": "M/J Language Arts 1",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1001020",
+    "course_name": "M/J Language Arts 1, Advanced",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1001040",
+    "course_name": "M/J Language Arts 2",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1001050",
+    "course_name": "M/J Language Arts 2, Advanced",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1001070",
+    "course_name": "M/J Language Arts 3",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1001080",
+    "course_name": "M/J Language Arts 3, Advanced",
+    "subject": "English Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_3026010",
+    "course_name": "HOPE \u2013 Physical Education (Core)",
+    "subject": "Health & Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health & Physical Education",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1508060",
+    "course_name": "M/J Comprehensive - Grades 6/7",
+    "subject": "Health & Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health & Physical Education",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1508070",
+    "course_name": "M/J Comprehensive - Grades 7/8",
+    "subject": "Health & Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health & Physical Education",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1508000",
+    "course_name": "M/J Fitness - Grade 6",
+    "subject": "Health & Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health & Physical Education",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1501300",
+    "course_name": "Personal Fitness",
+    "subject": "Health & Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health & Physical Education",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5015030",
+    "course_name": "Physical Education - Grade 1",
+    "subject": "Health & Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health & Physical Education",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5015040",
+    "course_name": "Physical Education - Grade 2",
+    "subject": "Health & Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health & Physical Education",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5015050",
+    "course_name": "Physical Education - Grade 3",
+    "subject": "Health & Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health & Physical Education",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5015060",
+    "course_name": "Physical Education - Grade 4",
+    "subject": "Health & Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health & Physical Education",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5015070",
+    "course_name": "Physical Education - Grade 5",
+    "subject": "Health & Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health & Physical Education",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5015020",
+    "course_name": "Physical Education - Grade Kindergarten",
+    "subject": "Health & Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health & Physical Education",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1503350",
+    "course_name": "Team Sports 1",
+    "subject": "Health & Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health & Physical Education",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1200310",
+    "course_name": "Algebra 1",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1200315",
+    "course_name": "Algebra 1 for Credit Recovery",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1200320",
+    "course_name": "Algebra 1 Honors",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1200370",
+    "course_name": "Algebra 1-A",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1200380",
+    "course_name": "Algebra 1-B",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1200330",
+    "course_name": "Algebra 2",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1200340",
+    "course_name": "Algebra 2 Honors",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5012015",
+    "course_name": "Foundational Skills in Mathematics 3-5",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1200400",
+    "course_name": "Foundational Skills in Mathematics 9-12",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5012005",
+    "course_name": "Foundational Skills in Mathematics K-2",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1206310",
+    "course_name": "Geometry",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1206315",
+    "course_name": "Geometry for Credit Recovery",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1206320",
+    "course_name": "Geometry Honors",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1205020",
+    "course_name": "M/J Accelerated Mathematics Grade 6",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1205050",
+    "course_name": "M/J Accelerated Mathematics Grade 7",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1204000",
+    "course_name": "M/J Foundational Skills in Mathematics 6-8",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1205010",
+    "course_name": "M/J Grade 6 Mathematics",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1205040",
+    "course_name": "M/J Grade 7 Mathematics",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1205070",
+    "course_name": "M/J Grade 8 Pre-Algebra",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5012070",
+    "course_name": "Mathematics - Grade Five",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5012060",
+    "course_name": "Mathematics - Grade Four",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5012020",
+    "course_name": "Mathematics - Grade Kindergarten",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5012030",
+    "course_name": "Mathematics - Grade One",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5012050",
+    "course_name": "Mathematics - Grade Three",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5012040",
+    "course_name": "Mathematics - Grade Two",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1202340",
+    "course_name": "Pre-Calculus Honors",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_1210300",
+    "course_name": "Probability & Statistics with Applications Honors",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2000310",
+    "course_name": "Biology 1",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2000315",
+    "course_name": "Biology 1 for Credit Recovery",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2000320",
+    "course_name": "Biology 1 Honors",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2003340",
+    "course_name": "Chemistry 1",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2003345",
+    "course_name": "Chemistry 1 for Credit Recovery",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2003350",
+    "course_name": "Chemistry 1 Honors",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2001310",
+    "course_name": "Earth/Space Science",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2002040",
+    "course_name": "M/J Comprehensive Science 1",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2002050",
+    "course_name": "M/J Comprehensive Science 1, Advanced",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2002070",
+    "course_name": "M/J Comprehensive Science 2",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2002080",
+    "course_name": "M/J Comprehensive Science 2, Advanced",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2002100",
+    "course_name": "M/J Comprehensive Science 3",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2002110",
+    "course_name": "M/J Comprehensive Science 3, Advanced",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2002500",
+    "course_name": "Marine Science 1",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2003310",
+    "course_name": "Physical Science",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2003320",
+    "course_name": "Physical Science Honors",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2003380",
+    "course_name": "Physics 1",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2003390",
+    "course_name": "Physics 1 Honors",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5020060",
+    "course_name": "Science - Grade Five",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5020050",
+    "course_name": "Science - Grade Four",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5020010",
+    "course_name": "Science - Grade K",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5020020",
+    "course_name": "Science - Grade One",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5020040",
+    "course_name": "Science - Grade Three",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5020030",
+    "course_name": "Science - Grade Two",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2100335",
+    "course_name": "African-American History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2102335",
+    "course_name": "Economics w/Financial Literacy",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2102345",
+    "course_name": "Economics w/Financial Literacy Honors",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2106010",
+    "course_name": "M/J Civics",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2100010",
+    "course_name": "M/J United States History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2100015",
+    "course_name": "M/J US History & Career Planning",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2109010",
+    "course_name": "M/J World History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2102372",
+    "course_name": "Personal Financial Literacy",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2107300",
+    "course_name": "Psychology 1",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5021030",
+    "course_name": "Social Studies Grade 1",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5021040",
+    "course_name": "Social Studies Grade 2",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5021050",
+    "course_name": "Social Studies Grade 3",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5021060",
+    "course_name": "Social Studies Grade 4",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5021070",
+    "course_name": "Social Studies Grade 5",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_5021020",
+    "course_name": "Social Studies Grade K",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2106310",
+    "course_name": "United States Government",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2106320",
+    "course_name": "United States Government Honors",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2100310",
+    "course_name": "United States History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2100315",
+    "course_name": "United States History for Credit Recovery",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2100320",
+    "course_name": "United States History Honors",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2103300",
+    "course_name": "World Cultural Geography",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2109310",
+    "course_name": "World History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  },
+  {
+    "course_id": "FL_2109320",
+    "course_name": "World History Honors",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Florida",
+    "source_page": null,
+    "source": "Florida"
+  }
+]
