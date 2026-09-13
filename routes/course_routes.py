@@ -64,6 +64,12 @@ def _selected_catalog(value):
 
 def _catalog_selection(args_or_form):
     state_code = args_or_form.get("state", "").strip().upper()
+    requested_catalog = args_or_form.get("catalog", "").strip()
+    catalogs = course_service.get_catalogs()
+    requested_config = catalogs.get(requested_catalog)
+    if requested_config and requested_config["kind"] == "program":
+        return requested_catalog, state_code
+
     state_lookup = {
         option["code"]: option for option in course_service.get_state_options()
     }

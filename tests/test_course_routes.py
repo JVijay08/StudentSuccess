@@ -28,6 +28,16 @@ def test_course_explorer_filters_catalog(authed_client):
     assert b"AP Biology" not in response.data
 
 
+def test_program_catalog_selection_overrides_stale_state_selection(authed_client):
+    complete_profile(authed_client)
+
+    response = authed_client.get("/courses?state=GA&catalog=ap")
+
+    assert response.status_code == 200
+    assert b"AP Cybersecurity" in response.data
+    assert b"Algebra: Concepts and Connections" not in response.data
+
+
 def test_course_can_be_added_and_removed_from_plan(app, authed_client):
     complete_profile(authed_client)
 
