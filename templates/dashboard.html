@@ -19,11 +19,12 @@
         <nav>
           <a class="active" href="{{ url_for('main.dashboard') }}">Dashboard</a>
           <a href="{{ url_for('tasks.tasks') }}">Tasks</a>
+          <a href="{{ url_for('courses.course_explorer') }}">Course map</a>
           <a href="{{ url_for('profile.profile_view') }}">Student profile</a>
         </nav>
       </div>
       <div class="sidebar-footer">
-        <p class="module-note">Course planning remains available as a secondary backend module. Its interface is planned for a later release.</p>
+        <p class="module-note">Course map is ready for exploring pathways, prerequisites, and your four-year plan.</p>
         <form class="logout-form" method="post" action="{{ url_for('auth.logout') }}">
           <button type="submit" class="logout-button">Log out</button>
         </form>

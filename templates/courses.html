@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#18283d">
+  <title>Course explorer | StudentSuccess</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/courses.css') }}">
+</head>
+<body>
+  <main class="course-page">
+    <header class="page-header">
+      <div>
+        <p class="eyebrow">STUDENTSUCCESS / COURSE MAP</p>
+        <h1>Build a course path with context.</h1>
+        <p class="lede">Explore the catalog, check prerequisites, and save options to a four-year plan.</p>
+      </div>
+      <div class="header-actions">
+        <a class="quiet-link" href="{{ url_for('main.dashboard') }}">Dashboard</a>
+        <a class="button" href="{{ url_for('courses.course_plan') }}">My plan</a>
+      </div>
+    </header>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <div class="flash" role="status">
+          {% for category, message in messages %}<p class="flash-{{ category }}">{{ message }}</p>{% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    <section class="explorer-layout">
+      <aside class="filter-panel">
+        <div class="section-kicker">FILTER THE CATALOG</div>
+        <form method="get">
+          <label>Search
+            <input name="q" value="{{ filters.get('q', '') }}" placeholder="Calculus, engineering...">
+          </label>
+          <label>Grade year
+            <select name="grade">
+              <option value="">Any year</option>
+              {% for grade in [9, 10, 11, 12] %}<option value="{{ grade }}" {% if filters.get('grade') == grade|string %}selected{% endif %}>{{ grade }}th grade</option>{% endfor %}
+            </select>
+          </label>
+          <label>Subject
+            <select name="subject"><option value="">All subjects</option>{% for option in options.subjects %}<option value="{{ option }}" {% if filters.get('subject') == option %}selected{% endif %}>{{ option }}</option>{% endfor %}</select>
+          </label>
+          <label>Course type
+            <select name="course_type"><option value="">All types</option>{% for option in options.course_types %}<option value="{{ option }}" {% if filters.get('course_type') == option %}selected{% endif %}>{{ option }}</option>{% endfor %}</select>
+          </label>
+          <label>Rigor
+            <select name="rigor"><option value="">Any rigor</option>{% for option in options.rigor_levels %}<option value="{{ option }}" {% if filters.get('rigor') == option %}selected{% endif %}>{{ option }}</option>{% endfor %}</select>
+          </label>
+          <label>Workload
+            <select name="workload"><option value="">Any workload</option>{% for option in options.workload_levels %}<option value="{{ option }}" {% if filters.get('workload') == option %}selected{% endif %}>{{ option }}</option>{% endfor %}</select>
+          </label>
+          <label>Career cluster
+            <select name="career"><option value="">Any pathway</option>{% for option in options.career_clusters %}<option value="{{ option }}" {% if filters.get('career') == option %}selected{% endif %}>{{ option }}</option>{% endfor %}</select>
+          </label>
+          <button type="submit">Apply filters</button>
+          <a class="reset-link" href="{{ url_for('courses.course_explorer') }}">Reset</a>
+        </form>
+      </aside>
+
+      <section class="results-panel">
+        <div class="results-heading"><div><span class="section-kicker">{{ courses|length }} MATCHES</span><h2>Course catalog</h2></div><span class="micro-note">Select up to three to compare</span></div>
+        <form method="get" action="{{ url_for('courses.course_compare') }}">
+          <div class="course-grid">
+            {% for course in courses %}
+              <article class="course-card">
+                <div class="course-card-top"><span class="tag">{{ course.course_type }}</span><label class="compare-check"><input type="checkbox" name="id" value="{{ course.course_id }}"> Compare</label></div>
+                <h3><a href="{{ url_for('courses.course_detail', course_id=course.course_id) }}">{{ course.course_name }}</a></h3>
+                <p class="course-meta">{{ course.subject }} · grades {{ course.grade_levels|join(', ') }}</p>
+                <div class="metric-row"><span>{{ course.rigor_level }} rigor</span><span>{{ course.workload_level }} workload</span></div>
+                <div class="cluster-row">{% for cluster in course.career_clusters %}<span>{{ cluster }}</span>{% else %}<span>Core pathway</span>{% endfor %}</div>
+                {% if course.course_id in planned_ids %}<p class="saved-label">Already in your plan</p>{% endif %}
+                <div class="card-actions"><a class="text-link" href="{{ url_for('courses.course_detail', course_id=course.course_id) }}">View details</a>{% if course.course_id not in planned_ids %}<button type="button" class="small-button" data-course-id="{{ course.course_id }}" onclick="this.closest('.course-card').querySelector('.quick-add').hidden = false; this.hidden = true;">Add to plan</button>{% endif %}</div>
+                <div class="quick-add" hidden><form method="post" action="{{ url_for('courses.add_to_plan', course_id=course.course_id) }}"><label>Grade year<select name="school_year">{% for grade in [9,10,11,12] %}<option value="{{ grade }}" {% if grade == profile.grade %}selected{% endif %}>{{ grade }}th</option>{% endfor %}</select></label><button type="submit" class="small-button">Save</button></form></div>
+              </article>
+            {% else %}
+              <div class="empty-state"><h3>No courses match those filters.</h3><p>Try widening the grade, subject, or workload selection.</p></div>
+            {% endfor %}
+          </div>
+          {% if courses %}<button class="compare-button" type="submit">Compare selected courses</button>{% endif %}
+        </form>
+      </section>
+    </section>
+  </main>
+</body>
+</html>

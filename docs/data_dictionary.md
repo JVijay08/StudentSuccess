@@ -41,6 +41,22 @@ Each course record contains:
 
 The current catalog has 59 records. It is curated reference data, not student behavior data.
 
+## PlannedCourse (implemented)
+
+Database table: `planned_courses`
+
+| Field | Type | Required | Purpose |
+|---|---|---:|---|
+| id | Integer | Yes | Primary key |
+| student_profile_id | Integer | Yes | Owner of the saved plan item |
+| course_id | String | Yes | Stable identifier from `data/courses.json` |
+| school_year | Integer | Yes | Planned grade year, from 9 through 12 |
+| term | String | Yes | Full year, fall, or spring planning label |
+| status | String | Yes | Considering, planned, or completed |
+| created_at | DateTime | Yes | When the course was added |
+
+The same course cannot be added twice for the same student and grade year. Catalog metadata is resolved from JSON at display time.
+
 ## Task (implemented)
 
 Database table: `tasks`

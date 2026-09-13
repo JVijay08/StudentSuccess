@@ -6,6 +6,7 @@ from flask import Flask
 from config import config
 from extensions import db
 from routes.auth_routes import auth_bp
+from routes.course_routes import course_bp
 from routes.main_routes import main_bp
 from routes.profile_routes import profile_bp
 from routes.task_routes import task_bp
@@ -27,6 +28,7 @@ def create_app(test_config=None):
     db.init_app(app)
 
     app.register_blueprint(auth_bp)
+    app.register_blueprint(course_bp)
     app.register_blueprint(main_bp)
     app.register_blueprint(profile_bp)
     app.register_blueprint(task_bp)

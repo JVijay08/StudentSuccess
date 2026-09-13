@@ -12,11 +12,11 @@ The project aims to help a student choose what to work on now, compare planned a
 - Student onboarding and editable profile stored in SQLite
 - A profile-aware dashboard with a real recommended next task
 - A curated 59-course JSON catalog
-- Course lookup and filtering services
+- Course explorer with search, filters, details, comparison, prerequisites, and four-year planning
 - Task creation, planned/actual start tracking, completion, and explainable rule-based risk
 - Automated route, task, risk, and course-service tests
 
-Machine learning, AI assistance, optimization, authentication, calendar integration, and a course-planning interface are not implemented.
+Machine learning, AI assistance, optimization, and calendar integration are not implemented.
 
 ## Technology
 

@@ -48,7 +48,15 @@ def get_courses_by_grade(grade_level):
     ]
 
 
-def filter_courses(grade_level=None, subject=None, course_type=None):
+def filter_courses(
+    grade_level=None,
+    subject=None,
+    course_type=None,
+    rigor_level=None,
+    workload_level=None,
+    career_cluster=None,
+    query=None,
+):
     matching_courses = []
 
     for course in load_courses():
@@ -64,6 +72,54 @@ def filter_courses(grade_level=None, subject=None, course_type=None):
         ):
             continue
 
+        if (
+            rigor_level is not None
+            and course["rigor_level"].lower() != rigor_level.lower()
+        ):
+            continue
+
+        if (
+            workload_level is not None
+            and course["workload_level"].lower() != workload_level.lower()
+        ):
+            continue
+
+        if career_cluster is not None and career_cluster.lower() not in [
+            cluster.lower() for cluster in course.get("career_clusters", [])
+        ]:
+            continue
+
+        if query is not None:
+            searchable = " ".join(
+                [
+                    course["course_name"],
+                    course["subject"],
+                    course["course_type"],
+                    *course.get("career_clusters", []),
+                ]
+            ).lower()
+            if query.lower() not in searchable:
+                continue
+
         matching_courses.append(course)
 
     return matching_courses
+
+
+def get_catalog_options():
+    courses = load_courses()
+    return {
+        "subjects": sorted({course["subject"] for course in courses}),
+        "course_types": sorted({course["course_type"] for course in courses}),
+        "rigor_levels": sorted({course["rigor_level"] for course in courses}),
+        "workload_levels": sorted(
+            {course["workload_level"] for course in courses}
+        ),
+        "career_clusters": sorted(
+            {
+                cluster
+                for course in courses
+                for cluster in course.get("career_clusters", [])
+            }
+        ),
+    }
