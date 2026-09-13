@@ -66,11 +66,13 @@ fictional demo data. The included `scripts/seed_test_login.py` creates a
 populated local test account for screenshots and walkthroughs; it is not a
 production account and should not be used with real student information.
 
-The Render blueprint disables `DEMO_RESET_ON_DEPLOY`, so deployments do not
-delete accounts. Set `DATABASE_URL` in the Render service to a persistent
-PostgreSQL database before accepting users. Without it, the app falls back to
-SQLite, whose filesystem is temporary on Render and can be lost on redeploy or
-instance replacement.
+The Render blueprint disables `DEMO_RESET_ON_DEPLOY` and connects the web
+service to the managed `studentsuccess-db` PostgreSQL database, so deployments
+do not delete accounts and service restarts do not lose them. If the service was
+created before this database was added to `render.yaml`, apply the blueprint
+update in Render and confirm that `DATABASE_URL` is linked to
+`studentsuccess-db`. Without that connection, the app falls back to SQLite,
+whose filesystem is temporary on Render.
 
 The `/health` endpoint returns `{"status": "ok"}` for deployment checks.
 
