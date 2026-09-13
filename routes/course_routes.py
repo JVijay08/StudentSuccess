@@ -18,22 +18,29 @@ def _profile_or_redirect():
     return profile, None
 
 
-def _planned_ids(profile):
-    return {planned.course_id for planned in profile.planned_courses}
+def _planned_ids(profile, catalog_id=None):
+    return {
+        planned.course_id
+        for planned in profile.planned_courses
+        if catalog_id is None or planned.catalog_id == catalog_id
+    }
 
 
 def _planned_course_rows(profile):
-    catalog = {
-        course["course_id"]: course for course in course_service.load_courses()
-    }
     rows = []
     for planned in sorted(
         profile.planned_courses,
         key=lambda item: (item.school_year, item.term, item.course_id),
     ):
+        catalog = {
+            course["course_id"]: course
+            for course in course_service.load_courses(planned.catalog_id)
+        }
         course = catalog.get(planned.course_id)
         if course is not None:
-            rows.append({"planned": planned, "course": course})
+            rows.append(
+                {"planned": planned, "course": course, "catalog_id": planned.catalog_id}
+            )
     return rows
 
 
@@ -51,6 +58,10 @@ def _prerequisite_status(course, planned_rows):
     return {"missing": missing, "has_prerequisites": bool(course.get("prerequisites"))}
 
 
+def _selected_catalog(value):
+    return value if value in course_service.get_catalogs() else "national"
+
+
 @course_bp.get("/courses")
 @login_required
 def course_explorer():
@@ -58,6 +69,7 @@ def course_explorer():
     if redirect_response:
         return redirect_response
 
+    catalog_id = _selected_catalog(request.args.get("catalog", "national"))
     filters = {
         "query": request.args.get("q", "").strip() or None,
         "grade_level": request.args.get("grade", type=int),
@@ -66,6 +78,7 @@ def course_explorer():
         "rigor_level": request.args.get("rigor") or None,
         "workload_level": request.args.get("workload") or None,
         "career_cluster": request.args.get("career") or None,
+        "catalog": catalog_id,
     }
     courses = course_service.filter_courses(**filters)
     return render_template(
@@ -73,8 +86,10 @@ def course_explorer():
         profile=profile,
         courses=courses,
         filters=request.args,
-        options=course_service.get_catalog_options(),
-        planned_ids=_planned_ids(profile),
+        options=course_service.get_catalog_options(catalog_id),
+        catalogs=course_service.get_catalogs(),
+        catalog_id=catalog_id,
+        planned_ids=_planned_ids(profile, catalog_id),
     )
 
 
@@ -85,17 +100,22 @@ def course_detail(course_id):
     if redirect_response:
         return redirect_response
 
-    course = course_service.get_course_by_id(course_id)
+    catalog_id = _selected_catalog(request.args.get("catalog", "national"))
+    course = course_service.get_course_by_id(course_id, catalog_id)
     if course is None:
         abort(404)
 
-    planned_rows = _planned_course_rows(profile)
+    planned_rows = [
+        row for row in _planned_course_rows(profile) if row["catalog_id"] == catalog_id
+    ]
     return render_template(
         "course_detail.html",
         profile=profile,
         course=course,
-        planned_ids=_planned_ids(profile),
+        planned_ids=_planned_ids(profile, catalog_id),
         prerequisite_status=_prerequisite_status(course, planned_rows),
+        catalog_id=catalog_id,
+        catalog=course_service.get_catalogs()[catalog_id],
     )
 
 
@@ -106,7 +126,8 @@ def add_to_plan(course_id):
     if redirect_response:
         return redirect_response
 
-    course = course_service.get_course_by_id(course_id)
+    catalog_id = _selected_catalog(request.form.get("catalog", "national"))
+    course = course_service.get_course_by_id(course_id, catalog_id)
     if course is None:
         abort(404)
 
@@ -122,6 +143,7 @@ def add_to_plan(course_id):
 
     existing = PlannedCourse.query.filter_by(
         student_profile_id=profile.id,
+        catalog_id=catalog_id,
         course_id=course_id,
         school_year=school_year,
     ).first()
@@ -129,6 +151,7 @@ def add_to_plan(course_id):
         db.session.add(
             PlannedCourse(
                 student_profile_id=profile.id,
+                catalog_id=catalog_id,
                 course_id=course_id,
                 school_year=school_year,
                 term=term,
@@ -196,6 +219,7 @@ def course_plan():
         profile=profile,
         year_summaries=year_summaries,
         planned_rows=rows,
+        catalogs=course_service.get_catalogs(),
     )
 
 
@@ -206,12 +230,19 @@ def course_compare():
     if redirect_response:
         return redirect_response
 
+    catalog_id = _selected_catalog(request.args.get("catalog", "national"))
     course_ids = request.args.getlist("id")
     if len(course_ids) == 1 and "," in course_ids[0]:
         course_ids = course_ids[0].split(",")
     courses = [
-        course_service.get_course_by_id(course_id)
+        course_service.get_course_by_id(course_id, catalog_id)
         for course_id in course_ids[:3]
     ]
     courses = [course for course in courses if course is not None]
-    return render_template("course_compare.html", profile=profile, courses=courses)
+    return render_template(
+        "course_compare.html",
+        profile=profile,
+        courses=courses,
+        catalog_id=catalog_id,
+        catalog=course_service.get_catalogs()[catalog_id],
+    )

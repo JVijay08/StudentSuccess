@@ -12,6 +12,7 @@ class PlannedCourse(db.Model):
     __table_args__ = (
         db.UniqueConstraint(
             "student_profile_id",
+            "catalog_id",
             "course_id",
             "school_year",
             name="unique_student_course_year",
@@ -22,6 +23,7 @@ class PlannedCourse(db.Model):
     student_profile_id = db.Column(
         db.Integer, db.ForeignKey("student_profiles.id"), nullable=False
     )
+    catalog_id = db.Column(db.String(40), nullable=False, default="national")
     course_id = db.Column(db.String(100), nullable=False)
     school_year = db.Column(db.Integer, nullable=False)
     term = db.Column(db.String(30), nullable=False, default="Full year")

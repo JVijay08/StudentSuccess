@@ -2,6 +2,7 @@
 import os
 
 from flask import Flask
+from sqlalchemy import inspect, text
 
 from config import config
 from extensions import db
@@ -37,8 +38,25 @@ def create_app(test_config=None):
         from models import StudentProfile, Task, User
 
         db.create_all()
+        _migrate_planned_course_catalog_column()
 
     return app
+
+
+def _migrate_planned_course_catalog_column():
+    inspector = inspect(db.engine)
+    if "planned_courses" not in inspector.get_table_names():
+        return
+
+    columns = {column["name"] for column in inspector.get_columns("planned_courses")}
+    if "catalog_id" not in columns:
+        db.session.execute(
+            text(
+                "ALTER TABLE planned_courses "
+                "ADD COLUMN catalog_id VARCHAR(40) NOT NULL DEFAULT 'forsyth-ga'"
+            )
+        )
+        db.session.commit()
 
 
 app = create_app()

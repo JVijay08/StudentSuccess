@@ -11,12 +11,12 @@ The project aims to help a student choose what to work on now, compare planned a
 - Flask application factory and Blueprints
 - Student onboarding and editable profile stored in SQLite
 - A profile-aware dashboard with a real recommended next task
-- A curated 59-course JSON catalog
+- A catalog-aware course explorer with a national reference catalog and a Forsyth County local catalog
 - Course explorer with search, filters, details, comparison, prerequisites, and four-year planning
 - Task creation, planned/actual start tracking, completion, and explainable rule-based risk
 - Automated route, task, risk, and course-service tests
 
-Machine learning, AI assistance, optimization, and calendar integration are not implemented.
+Machine learning, AI assistance, optimization, and calendar integration are not implemented. The national catalog is a planning reference, not a universal state graduation or placement authority.
 
 ## Technology
 

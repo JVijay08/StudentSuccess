@@ -14,7 +14,8 @@ Project-created workload labels are educational estimates. They are not official
 
 | Data Type | Source Organization | Source Title / Page | What Will Be Used | Source Type | Status |
 |---|---|---|---|---|---|
-| Course catalog | Forsyth County Schools | High School Course Digest, accessed July 4, 2026 | Course names, prerequisites, grade levels, graduation category | Public official source | In Use |
+| Local course catalog | Forsyth County Schools | High School Course Digest, accessed July 4, 2026 | Local course names, prerequisites, grade levels, graduation category | Public official source | In Use |
+| National reference catalog | StudentSuccess taxonomy | Common course families for broad planning | Reference names, broad grade bands, planning relationships | Project-created reference | In Use |
 
 ---
 
@@ -33,17 +34,17 @@ The course catalog source was selected because it is hosted by the official scho
 
 ---
 
-## Initial Course Catalog Scope
+## Catalog Scope
 
-The current StudentSuccess course catalog contains 59 representative Forsyth County high-school courses.
+The app includes two deliberately separate catalogs. The national reference catalog contains common course families for broad planning. The Forsyth County catalog contains 59 representative local high-school courses.
 
 This intentionally small catalog is designed to demonstrate course sequences, prerequisites, advanced-course options, career pathways, and language progression without attempting to reproduce the entire district catalog.
 
-The structured dataset is maintained in `data/courses.json`.
+The structured datasets are maintained in `data/courses_national.json` and `data/courses.json`.
 
 ### Important Data Rule
 
-Prerequisites, eligibility notes, course titles, and official course descriptions below are based on public Forsyth County Schools course information.
+Prerequisites, eligibility notes, course titles, and official course descriptions in the local catalog are based on public Forsyth County Schools course information. National prerequisite relationships are planning references and must be verified locally.
 
 The `Planning Grade Band` column is a StudentSuccess planning estimate unless the official source explicitly states the grade level. It is not an official district placement guarantee.
 

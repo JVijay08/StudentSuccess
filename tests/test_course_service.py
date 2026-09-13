@@ -4,6 +4,7 @@
     get_courses_by_grade,
     get_courses_by_subject,
     get_courses_by_type,
+    get_catalogs,
     load_courses,
 )
 
@@ -45,4 +46,17 @@ def test_filter_courses_combines_filters():
         and course["subject"] == "Math"
         and course["course_type"] == "AP"
         for course in courses
+    )
+
+
+def test_national_and_local_catalogs_are_separate():
+    catalogs = get_catalogs()
+    national_courses = load_courses("national")
+    local_courses = load_courses("forsyth-ga")
+
+    assert set(catalogs) == {"national", "forsyth-ga"}
+    assert any(course["course_name"] == "Algebra I" for course in national_courses)
+    assert any(
+        course["course_name"] == "Algebra: Concepts and Connections"
+        for course in local_courses
     )

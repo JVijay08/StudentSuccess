@@ -4,10 +4,30 @@ from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 COURSES_FILE = PROJECT_ROOT / "data" / "courses.json"
+CATALOGS = {
+    "national": {
+        "label": "National reference",
+        "description": "Common course families for broad planning; verify local requirements.",
+        "path": PROJECT_ROOT / "data" / "courses_national.json",
+    },
+    "forsyth-ga": {
+        "label": "Forsyth County, Georgia",
+        "description": "Representative local catalog sourced from Forsyth County Schools.",
+        "path": COURSES_FILE,
+    },
+}
 
 
-def load_courses():
-    with COURSES_FILE.open("r", encoding="utf-8") as file:
+def get_catalogs():
+    return CATALOGS
+
+
+def load_courses(catalog="forsyth-ga"):
+    catalog_config = CATALOGS.get(catalog)
+    if catalog_config is None:
+        raise ValueError(f"Unknown course catalog: {catalog}")
+
+    with catalog_config["path"].open("r", encoding="utf-8") as file:
         courses = json.load(file)
 
     if not isinstance(courses, list):
@@ -16,34 +36,34 @@ def load_courses():
     return courses
 
 
-def get_course_by_id(course_id):
-    for course in load_courses():
+def get_course_by_id(course_id, catalog="forsyth-ga"):
+    for course in load_courses(catalog):
         if course["course_id"] == course_id:
             return course
 
     return None
 
 
-def get_courses_by_subject(subject):
+def get_courses_by_subject(subject, catalog="forsyth-ga"):
     return [
         course
-        for course in load_courses()
+        for course in load_courses(catalog)
         if course["subject"].lower() == subject.lower()
     ]
 
 
-def get_courses_by_type(course_type):
+def get_courses_by_type(course_type, catalog="forsyth-ga"):
     return [
         course
-        for course in load_courses()
+        for course in load_courses(catalog)
         if course["course_type"].lower() == course_type.lower()
     ]
 
 
-def get_courses_by_grade(grade_level):
+def get_courses_by_grade(grade_level, catalog="forsyth-ga"):
     return [
         course
-        for course in load_courses()
+        for course in load_courses(catalog)
         if grade_level in course["grade_levels"]
     ]
 
@@ -56,10 +76,11 @@ def filter_courses(
     workload_level=None,
     career_cluster=None,
     query=None,
+    catalog="forsyth-ga",
 ):
     matching_courses = []
 
-    for course in load_courses():
+    for course in load_courses(catalog):
         if grade_level is not None and grade_level not in course["grade_levels"]:
             continue
 
@@ -106,8 +127,8 @@ def filter_courses(
     return matching_courses
 
 
-def get_catalog_options():
-    courses = load_courses()
+def get_catalog_options(catalog="forsyth-ga"):
+    courses = load_courses(catalog)
     return {
         "subjects": sorted({course["subject"] for course in courses}),
         "course_types": sorted({course["course_type"] for course in courses}),

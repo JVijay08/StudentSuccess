@@ -49,6 +49,7 @@ Database table: `planned_courses`
 |---|---|---:|---|
 | id | Integer | Yes | Primary key |
 | student_profile_id | Integer | Yes | Owner of the saved plan item |
+| catalog_id | String | Yes | National reference or local catalog identifier |
 | course_id | String | Yes | Stable identifier from `data/courses.json` |
 | school_year | Integer | Yes | Planned grade year, from 9 through 12 |
 | term | String | Yes | Full year, fall, or spring planning label |
