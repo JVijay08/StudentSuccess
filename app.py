@@ -39,6 +39,7 @@ def create_app(test_config=None):
 
         db.create_all()
         _migrate_planned_course_catalog_column()
+        _reset_demo_accounts_for_deployment()
 
     return app
 
@@ -57,6 +58,32 @@ def _migrate_planned_course_catalog_column():
             )
         )
         db.session.commit()
+
+
+def _reset_demo_accounts_for_deployment():
+    if os.environ.get("DEMO_RESET_ON_DEPLOY") != "1":
+        return
+
+    commit_sha = os.environ.get("RENDER_GIT_COMMIT")
+    if not commit_sha:
+        return
+
+    from models import DeploymentState, User
+
+    state = db.session.get(DeploymentState, 1)
+    if state is not None and state.commit_sha == commit_sha:
+        return
+
+    for user in User.query.all():
+        db.session.delete(user)
+
+    if state is None:
+        state = DeploymentState(id=1, commit_sha=commit_sha)
+        db.session.add(state)
+    else:
+        state.commit_sha = commit_sha
+
+    db.session.commit()
 
 
 app = create_app()

@@ -7,5 +7,7 @@ services:
     envVars:
       - key: APP_ENV
         value: production
+      - key: DEMO_RESET_ON_DEPLOY
+        value: "1"
       - key: SECRET_KEY
         generateValue: true

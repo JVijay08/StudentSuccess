@@ -66,6 +66,11 @@ fictional demo data. The included `scripts/seed_test_login.py` creates a
 populated local test account for screenshots and walkthroughs; it is not a
 production account and should not be used with real student information.
 
+The Render blueprint enables `DEMO_RESET_ON_DEPLOY`, which clears all accounts
+once when the deployed Git commit changes. This keeps demo usernames available
+without deleting accounts every time a sleeping free service wakes up. Disable
+that variable before accepting real users.
+
 The `/health` endpoint returns `{"status": "ok"}` for deployment checks.
 
 Render's free service sleeps after inactivity and its local SQLite filesystem is

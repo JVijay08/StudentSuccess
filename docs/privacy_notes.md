@@ -29,3 +29,10 @@ Before accepting beta users, add authentication, access controls, a deletion/exp
 ## Security basics
 
 Keep secrets out of source control, validate input on the server, minimize logs containing student-entered content, and back up or export local data only with the student's knowledge.
+
+## Demo reset mode
+
+The Render demo enables `DEMO_RESET_ON_DEPLOY`. When the Render Git commit changes,
+the application removes all users and their associated profiles, tasks, and
+planned courses once. This mode is intentionally destructive and must be disabled
+before the application accepts real student data.
