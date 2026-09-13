@@ -11,7 +11,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Agriculture, Food and Natural Resources",
     "career_clusters": [],
@@ -71,7 +71,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Architecture and Construction",
     "career_clusters": [],
@@ -91,7 +91,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Business and Marketing",
     "career_clusters": [],
@@ -151,7 +151,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Business and Marketing",
     "career_clusters": [],
@@ -211,7 +211,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Business and Marketing",
     "career_clusters": [],
@@ -311,7 +311,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Business and Marketing",
     "career_clusters": [],
@@ -391,7 +391,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Computer and Information Sciences",
     "career_clusters": [],
@@ -471,7 +471,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Computer and Information Sciences",
     "career_clusters": [],
@@ -491,7 +491,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Computer and Information Sciences",
     "career_clusters": [],
@@ -511,7 +511,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Computer and Information Sciences",
     "career_clusters": [],
@@ -531,7 +531,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Computer and Information Sciences",
     "career_clusters": [],
@@ -551,7 +551,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Computer and Information Sciences",
     "career_clusters": [],
@@ -591,7 +591,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Computer and Information Sciences",
     "career_clusters": [],
@@ -771,7 +771,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Engineering and Technology",
     "career_clusters": [],
@@ -791,7 +791,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Engineering and Technology",
     "career_clusters": [],
@@ -1450,8 +1450,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Honors",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "English Language and Literature",
     "career_clusters": [],
@@ -1490,8 +1490,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Honors",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "English Language and Literature",
     "career_clusters": [],
@@ -1530,8 +1530,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Honors",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "English Language and Literature",
     "career_clusters": [],
@@ -1570,8 +1570,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Honors",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "English Language and Literature",
     "career_clusters": [],
@@ -1610,8 +1610,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Honors",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "English Language and Literature",
     "career_clusters": [],
@@ -1650,8 +1650,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Honors",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "English Language and Literature",
     "career_clusters": [],
@@ -1690,8 +1690,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Honors",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "English Language and Literature",
     "career_clusters": [],
@@ -1730,8 +1730,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Honors",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "English Language and Literature",
     "career_clusters": [],
@@ -2051,7 +2051,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "English Language and Literature",
     "career_clusters": [],
@@ -2071,7 +2071,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Health Care Sciences",
     "career_clusters": [],
@@ -2091,7 +2091,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Health Care Sciences",
     "career_clusters": [],
@@ -2111,7 +2111,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Health Care Sciences",
     "career_clusters": [],
@@ -2171,7 +2171,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Health Care Sciences",
     "career_clusters": [],
@@ -2191,7 +2191,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Health Care Sciences",
     "career_clusters": [],
@@ -2231,7 +2231,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Health Care Sciences",
     "career_clusters": [],
@@ -2251,7 +2251,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Health Care Sciences",
     "career_clusters": [],
@@ -2271,7 +2271,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Health Care Sciences",
     "career_clusters": [],
@@ -2331,7 +2331,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Health Care Sciences",
     "career_clusters": [],
@@ -2371,7 +2371,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Hospitality and Tourism",
     "career_clusters": [],
@@ -2491,7 +2491,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Human Services",
     "career_clusters": [],
@@ -2591,7 +2591,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Life and Physical Science",
     "career_clusters": [],
@@ -2630,8 +2630,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Honors",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Life and Physical Science",
     "career_clusters": [],
@@ -2670,8 +2670,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Honors",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Life and Physical Science",
     "career_clusters": [],
@@ -2711,7 +2711,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Life and Physical Science",
     "career_clusters": [],
@@ -2910,8 +2910,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Honors",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Life and Physical Science",
     "career_clusters": [],
@@ -2950,8 +2950,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Honors",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Life and Physical Science",
     "career_clusters": [],
@@ -3730,8 +3730,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Honors",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Mathematics",
     "career_clusters": [],
@@ -3770,8 +3770,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Honors",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Mathematics",
     "career_clusters": [],
@@ -3810,8 +3810,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Honors",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Mathematics",
     "career_clusters": [],
@@ -3850,8 +3850,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Honors",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Mathematics",
     "career_clusters": [],
@@ -4450,8 +4450,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Honors",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Mathematics",
     "career_clusters": [],
@@ -4510,8 +4510,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Honors",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Mathematics",
     "career_clusters": [],
@@ -4951,7 +4951,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Miscellaneous",
     "career_clusters": [],
@@ -4971,7 +4971,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Miscellaneous",
     "career_clusters": [],
@@ -5271,7 +5271,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Physical, Health, and Safety Education",
     "career_clusters": [],
@@ -5291,7 +5291,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Physical, Health, and Safety Education",
     "career_clusters": [],
@@ -5431,7 +5431,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Physical, Health, and Safety Education",
     "career_clusters": [],
@@ -5451,7 +5451,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Physical, Health, and Safety Education",
     "career_clusters": [],
@@ -5631,7 +5631,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Social Sciences and History",
     "career_clusters": [],
@@ -5831,7 +5831,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Social Sciences and History",
     "career_clusters": [],
@@ -6711,7 +6711,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Student Orientation",
     "career_clusters": [],
@@ -6731,7 +6731,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Student Orientation",
     "career_clusters": [],
@@ -6751,7 +6751,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Student Orientation",
     "career_clusters": [],
@@ -6771,7 +6771,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Student Orientation",
     "career_clusters": [],
@@ -6791,7 +6791,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Student Orientation",
     "career_clusters": [],
@@ -6810,8 +6810,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Visual and Performing Arts",
     "career_clusters": [],
@@ -6831,7 +6831,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Visual and Performing Arts",
     "career_clusters": [],
@@ -6891,7 +6891,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Visual and Performing Arts",
     "career_clusters": [],
@@ -6911,7 +6911,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Visual and Performing Arts",
     "career_clusters": [],
@@ -6931,7 +6931,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Visual and Performing Arts",
     "career_clusters": [],
@@ -7591,7 +7591,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Visual and Performing Arts",
     "career_clusters": [],
@@ -7731,7 +7731,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Visual and Performing Arts",
     "career_clusters": [],
@@ -7771,7 +7771,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "World Languages",
     "career_clusters": [],
@@ -8091,7 +8091,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "World Languages",
     "career_clusters": [],
@@ -8111,7 +8111,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "World Languages",
     "career_clusters": [],
@@ -8811,7 +8811,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "World Languages",
     "career_clusters": [],
@@ -8831,7 +8831,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "World Languages",
     "career_clusters": [],

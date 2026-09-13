@@ -250,8 +250,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Career & Technology Education",
     "career_clusters": [],
@@ -471,7 +471,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Career & Technology Education",
     "career_clusters": [],
@@ -491,7 +491,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Career & Technology Education",
     "career_clusters": [],
@@ -511,7 +511,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Career & Technology Education",
     "career_clusters": [],
@@ -531,7 +531,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Career & Technology Education",
     "career_clusters": [],
@@ -551,7 +551,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Career & Technology Education",
     "career_clusters": [],
@@ -1570,8 +1570,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Performing Arts",
     "career_clusters": [],
@@ -1590,8 +1590,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Performing Arts",
     "career_clusters": [],
@@ -1791,7 +1791,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Performing Arts",
     "career_clusters": [],
@@ -1811,7 +1811,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Performing Arts",
     "career_clusters": [],
@@ -2031,7 +2031,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Physical Education & Health Science",
     "career_clusters": [],
@@ -2530,8 +2530,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Visual Arts",
     "career_clusters": [],
@@ -2550,8 +2550,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Visual Arts",
     "career_clusters": [],
@@ -2570,8 +2570,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Visual Arts",
     "career_clusters": [],
@@ -2590,8 +2590,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Visual Arts",
     "career_clusters": [],
@@ -2610,8 +2610,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Visual Arts",
     "career_clusters": [],
@@ -2630,8 +2630,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Visual Arts",
     "career_clusters": [],
@@ -2771,7 +2771,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Visual Arts",
     "career_clusters": [],
@@ -2791,7 +2791,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Visual Arts",
     "career_clusters": [],
@@ -2811,7 +2811,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Visual Arts",
     "career_clusters": [],
@@ -2831,7 +2831,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Visual Arts",
     "career_clusters": [],
@@ -2871,7 +2871,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "World Languages",
     "career_clusters": [],

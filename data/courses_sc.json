@@ -81,7 +81,7 @@
       10
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Career Readiness",
     "career_clusters": [],
@@ -187,7 +187,7 @@
       10
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Computer Science",
     "career_clusters": [],
@@ -258,8 +258,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "CTE - Agriculture",
     "career_clusters": [],
@@ -363,7 +363,7 @@
       11
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "CTE - Agriculture",
     "career_clusters": [],
@@ -398,8 +398,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "CTE - Arts, Entertainment, and Design",
     "career_clusters": [],
@@ -542,8 +542,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "CTE - Construction",
     "career_clusters": [],
@@ -632,8 +632,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "CTE - Education",
     "career_clusters": [],
@@ -686,8 +686,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "CTE - Education",
     "career_clusters": [],
@@ -741,7 +741,7 @@
       10
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "CTE - Education",
     "career_clusters": [],
@@ -758,7 +758,7 @@
       9
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "CTE - Supply Chain and Transportation",
     "career_clusters": [],
@@ -810,8 +810,8 @@
     "grade_levels": [
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "CTE - Supply Chain and Transportation",
     "career_clusters": [],
@@ -1000,7 +1000,7 @@
       9
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "English Language Arts",
     "career_clusters": [],
@@ -1017,7 +1017,7 @@
       10
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "English Language Arts",
     "career_clusters": [],
@@ -1034,7 +1034,7 @@
       11
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "English Language Arts",
     "career_clusters": [],
@@ -1051,7 +1051,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "English Language Arts",
     "career_clusters": [],
@@ -1154,7 +1154,7 @@
       9
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Mathematics",
     "career_clusters": [],
@@ -1171,7 +1171,7 @@
       10
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Mathematics",
     "career_clusters": [],
@@ -1188,7 +1188,7 @@
       11
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Mathematics",
     "career_clusters": [],
@@ -1205,7 +1205,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Mathematics",
     "career_clusters": [],
@@ -1559,7 +1559,7 @@
       11
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Science",
     "career_clusters": [],
@@ -1577,7 +1577,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Science",
     "career_clusters": [],
@@ -1629,7 +1629,7 @@
       11
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Social Studies",
     "career_clusters": [],
@@ -1647,7 +1647,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Social Studies",
     "career_clusters": [],
@@ -1717,7 +1717,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "STEM",
     "career_clusters": [],
@@ -1735,7 +1735,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Technology",
     "career_clusters": [],

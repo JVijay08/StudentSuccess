@@ -131,7 +131,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Career & Technical Education",
     "career_clusters": [],
@@ -171,7 +171,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Career & Technical Education",
     "career_clusters": [],
@@ -191,7 +191,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Career & Technical Education",
     "career_clusters": [],
@@ -311,7 +311,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Career & Technical Education",
     "career_clusters": [],
@@ -331,7 +331,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Career & Technical Education",
     "career_clusters": [],
@@ -351,7 +351,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Career & Technical Education",
     "career_clusters": [],
@@ -371,7 +371,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Career & Technical Education",
     "career_clusters": [],
@@ -391,7 +391,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Career & Technical Education",
     "career_clusters": [],
@@ -411,7 +411,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Career & Technical Education",
     "career_clusters": [],
@@ -431,7 +431,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Career & Technical Education",
     "career_clusters": [],
@@ -451,7 +451,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Career & Technical Education",
     "career_clusters": [],
@@ -530,8 +530,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "English",
     "career_clusters": [],
@@ -550,8 +550,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "English",
     "career_clusters": [],
@@ -691,7 +691,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "English",
     "career_clusters": [],
@@ -711,7 +711,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "English",
     "career_clusters": [],
@@ -1310,8 +1310,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Mathematics",
     "career_clusters": [],
@@ -1330,8 +1330,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Mathematics",
     "career_clusters": [],
@@ -1710,8 +1710,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Science",
     "career_clusters": [],
@@ -1730,8 +1730,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Science",
     "career_clusters": [],
@@ -1911,7 +1911,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Science",
     "career_clusters": [],
@@ -2031,7 +2031,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Social Science",
     "career_clusters": [],
@@ -2051,7 +2051,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Social Science",
     "career_clusters": [],
@@ -2071,7 +2071,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Social Science",
     "career_clusters": [],
@@ -2290,8 +2290,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Theology",
     "career_clusters": [],

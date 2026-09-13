@@ -30,8 +30,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Family Consumer Sciences & Human Services",
     "career_clusters": [],
@@ -110,8 +110,8 @@
       11,
       12
     ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "rigor_level": "Advanced",
+    "workload_level": "High",
     "prerequisites": [],
     "graduation_category": "Family Consumer Sciences & Human Services",
     "career_clusters": [],
@@ -291,7 +291,7 @@
       12
     ],
     "rigor_level": "Standard",
-    "workload_level": "Medium",
+    "workload_level": "Low",
     "prerequisites": [],
     "graduation_category": "Family Consumer Sciences & Human Services",
     "career_clusters": [],

@@ -31,6 +31,18 @@ STATE_CODES = {
     "Kansas": "KS",
 }
 
+FOUNDATIONAL_TITLE_PATTERN = re.compile(
+    r"\b(?:basic|beginning|essentials?|exploratory|exploration|foundations?|"
+    r"fundamentals?|intro|introduction|introductory|orientation|survey)\b",
+    re.IGNORECASE,
+)
+HONORS_TITLE_PATTERN = re.compile(r"\bhonou?rs?\b", re.IGNORECASE)
+ADVANCED_TITLE_PATTERN = re.compile(
+    r"\b(?:advanced|accelerated|capstone|college[ -]level|dual[ -](?:credit|enrollment)|"
+    r"internship|practicum)\b",
+    re.IGNORECASE,
+)
+
 
 def slug(value):
     return re.sub(r"[^A-Z0-9]+", "_", str(value).upper()).strip("_")
@@ -45,6 +57,27 @@ def course_kind(record):
     if kind == "IB" or name.startswith("IB ") or "INTERNATIONAL BACCALAUREATE" in source_section:
         return "IB"
     return "Standard"
+
+
+def planning_levels(record, kind):
+    """Return conservative project-created rigor and workload estimates.
+
+    Imported state sources generally provide course titles, not official
+    difficulty ratings. Only explicit title or catalog signals change the
+    neutral Standard/Medium defaults.
+    """
+    name = str(record.get("course_name") or record.get("subject_name") or "")
+    subject = str(record.get("subject") or record.get("source_section") or "")
+
+    if kind in {"AP", "IB"}:
+        return "Advanced", "High"
+    if HONORS_TITLE_PATTERN.search(name):
+        return "Honors", "High"
+    if subject.casefold() == "college credit" or ADVANCED_TITLE_PATTERN.search(name):
+        return "Advanced", "High"
+    if FOUNDATIONAL_TITLE_PATTERN.search(name):
+        return "Standard", "Low"
+    return "Standard", "Medium"
 
 
 def grade_levels(record):
@@ -80,6 +113,9 @@ def source_identifier(record):
 def normalize_record(record, subject, state_code, source_state, index):
     kind = course_kind(record)
     name = record.get("course_name") or record.get("subject_name")
+    rigor_level, workload_level = planning_levels(
+        {**record, "course_name": name, "subject": subject}, kind
+    )
     source = record.get("source") or source_state
     identifier = f"{state_code}_{slug(source_identifier(record))}"
     if not identifier.strip("_"):
@@ -90,8 +126,8 @@ def normalize_record(record, subject, state_code, source_state, index):
         "subject": subject,
         "course_type": kind,
         "grade_levels": grade_levels(record),
-        "rigor_level": record.get("rigor_level") or ("Advanced" if kind in {"AP", "IB"} else "Standard"),
-        "workload_level": record.get("workload_level") or ("High" if kind in {"AP", "IB"} else "Medium"),
+        "rigor_level": rigor_level,
+        "workload_level": workload_level,
         "prerequisites": prerequisites(record),
         "graduation_category": record.get("graduation_category") or subject,
         "career_clusters": record.get("career_clusters") or [],

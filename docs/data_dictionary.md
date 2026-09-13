@@ -33,13 +33,21 @@ Each course record contains:
 - `subject`: subject used for filtering
 - `course_type`: Standard, AP, or IB
 - `grade_levels`: planning-appropriate grade numbers
-- `rigor_level`: catalog planning label
-- `workload_level`: project-created planning estimate
+- `rigor_level`: project-created planning label (`Standard`, `Honors`, or `Advanced`)
+- `workload_level`: project-created planning estimate (`Low`, `Medium`, or `High`)
 - `prerequisites`: prerequisite course names or eligibility notes
 - `graduation_category`: graduation-area label
 - `career_clusters`: optional related career categories
 
 The catalogs are separated into national reference, state, Forsyth County local, AP program, and IB program sources. State coverage follows the supplied source documents and may be statewide, provider-specific, district-specific, pathway-specific, or school-specific. These catalogs are reference data, not student behavior data or official universal graduation rules.
+
+Imported state sources usually do not publish difficulty ratings. The importer
+therefore assigns non-neutral planning labels only from explicit catalog signals:
+AP, IB, Honors, college/dual credit, accelerated, advanced, capstone, internship,
+and practicum titles use elevated labels; introductory, basic, foundational,
+fundamentals, essentials, beginning, exploratory, orientation, and survey titles
+use a low workload estimate. Ambiguous titles retain `Standard` rigor and
+`Medium` workload.
 
 ## PlannedCourse (implemented)
 
