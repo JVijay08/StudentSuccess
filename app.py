@@ -1,4 +1,5 @@
 ﻿from pathlib import Path
+import os
 
 from flask import Flask
 
@@ -16,6 +17,9 @@ def create_app(test_config=None):
 
     if test_config is not None:
         app.config.update(test_config)
+
+    if not app.config.get("SECRET_KEY"):
+        raise RuntimeError("SECRET_KEY must be set before starting the application.")
 
     instance_dir = Path(app.instance_path)
     instance_dir.mkdir(parents=True, exist_ok=True)
@@ -38,5 +42,14 @@ def create_app(test_config=None):
 app = create_app()
 
 
+@app.get("/health")
+def health_check():
+    return {"status": "ok"}
+
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(
+        debug=os.environ.get("FLASK_DEBUG", "0") == "1",
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", "5000")),
+    )

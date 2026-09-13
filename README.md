@@ -50,6 +50,28 @@ To run tests:
 python -m pytest
 ```
 
+## Public demo launch
+
+The app is configured for Render with `render.yaml`. Use a Render **Web Service**
+with the Free compute plan, then confirm these commands if entering the service
+manually:
+
+```text
+Build: pip install -r requirements.txt
+Start: gunicorn app:app
+```
+
+Before sharing the link, set `SECRET_KEY` in the host environment and use only
+fictional demo data. The included `scripts/seed_test_login.py` creates a
+populated local test account for screenshots and walkthroughs; it is not a
+production account and should not be used with real student information.
+
+The `/health` endpoint returns `{"status": "ok"}` for deployment checks.
+
+Render's free service sleeps after inactivity and its local SQLite filesystem is
+temporary, so this deployment is suitable for a portfolio demo rather than
+reliable long-term data storage.
+
 ## Project structure
 
 ```text
