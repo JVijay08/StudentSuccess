@@ -1,5 +1,6 @@
 Flask>=3.0,<4.0
 Flask-SQLAlchemy>=3.1,<4.0
+gunicorn>=23.0,<24.0
 pytest>=8.0,<9.0
 tzdata>=2024.1  # provides the IANA tz database for zoneinfo on Windows
 hypothesis>=6.0,<7.0  # property-based testing for delay/suggestion services
