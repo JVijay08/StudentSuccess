@@ -30,9 +30,9 @@ Before accepting beta users, add authentication, access controls, a deletion/exp
 
 Keep secrets out of source control, validate input on the server, minimize logs containing student-entered content, and back up or export local data only with the student's knowledge.
 
-## Demo reset mode
+## Deployment persistence
 
-The Render demo enables `DEMO_RESET_ON_DEPLOY`. When the Render Git commit changes,
-the application removes all users and their associated profiles, tasks, and
-planned courses once. This mode is intentionally destructive and must be disabled
-before the application accepts real student data.
+Local development uses SQLite in `instance/studentsuccess.db`. Render
+deployments must provide a persistent `DATABASE_URL`, preferably a managed
+PostgreSQL database. The Render blueprint disables `DEMO_RESET_ON_DEPLOY`; the
+reset remains available only when explicitly enabled for a disposable demo.
