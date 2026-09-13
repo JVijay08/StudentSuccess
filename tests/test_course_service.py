@@ -78,6 +78,7 @@ def test_state_options_cover_all_us_states_and_mark_only_loaded_states():
     states = get_state_options()
 
     assert len(states) == 50
+    assert len({state["code"] for state in states}) == 50
     assert any(
         state["code"] == "GA"
         and state["available"]

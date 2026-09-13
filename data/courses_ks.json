@@ -1,0 +1,502 @@
+[
+  {
+    "course_id": "KS_BUSINESS_ESSENTIALS",
+    "course_name": "Business Essentials",
+    "subject": "Business",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_BUSINESS_LAW",
+    "course_name": "Business Law",
+    "subject": "Business",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_BUSINESS_MANAGEMENT_LEADERSHIP",
+    "course_name": "Business Management & Leadership",
+    "subject": "Business",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_BUSINESS_SOFTWARE_APPLICATIONS",
+    "course_name": "Business Software Applications",
+    "subject": "Business",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_ADVANCED_MATERIALS_FABRICATION",
+    "course_name": "Advanced Materials & Fabrication",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_ADVANCED_DEBATE",
+    "course_name": "Advanced Debate",
+    "subject": "Communications / Debate",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Communications / Debate",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_ARGUMENTATION_DEBATE",
+    "course_name": "Argumentation & Debate",
+    "subject": "Communications / Debate",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Communications / Debate",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_21ST_CENTURY_JOURNALISM",
+    "course_name": "21st Century Journalism",
+    "subject": "English / Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English / Language Arts",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_ADVANCED_CREATIVE_WRITING",
+    "course_name": "Advanced Creative Writing",
+    "subject": "English / Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English / Language Arts",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_BAKING_PASTRY",
+    "course_name": "Baking & Pastry",
+    "subject": "Family & Consumer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family & Consumer Science",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_ADVANCED_ACTING",
+    "course_name": "Advanced Acting",
+    "subject": "Fine Arts / Theatre",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts / Theatre",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_ADVANCED_COMPETITIVE_SPEAKING_ACTING",
+    "course_name": "Advanced Competitive Speaking & Acting",
+    "subject": "Fine Arts / Theatre",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts / Theatre",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_ADVANCED_REPERTORY_THEATRE",
+    "course_name": "Advanced Repertory Theatre",
+    "subject": "Fine Arts / Theatre",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts / Theatre",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_ADVANCED_TECHNICAL_THEATRE",
+    "course_name": "Advanced Technical Theatre",
+    "subject": "Fine Arts / Theatre",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts / Theatre",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_BEGINNING_ACTING",
+    "course_name": "Beginning Acting",
+    "subject": "Fine Arts / Theatre",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts / Theatre",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_BEGINNING_COMPETITIVE_SPEAKING_ACTING",
+    "course_name": "Beginning Competitive Speaking & Acting",
+    "subject": "Fine Arts / Theatre",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts / Theatre",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_ACT_TEST_PREPARATION",
+    "course_name": "ACT Test Preparation",
+    "subject": "General Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "General Electives",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_ADVANCED_ALGEBRA",
+    "course_name": "Advanced Algebra",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_ALGEBRA_I",
+    "course_name": "Algebra I",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_ALGEBRA_II",
+    "course_name": "Algebra II",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_ANATOMY_PHYSIOLOGY",
+    "course_name": "Anatomy & Physiology",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_ASTRONOMY",
+    "course_name": "Astronomy",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_BIOLOGY",
+    "course_name": "Biology",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_AMERICAN_GOVERNMENT",
+    "course_name": "American Government",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_AMERICAN_JUSTICE_FOR_ALL",
+    "course_name": "American Justice for All",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  }
+]

@@ -4299,5 +4299,1625 @@
     "source_state": "International Baccalaureate",
     "source_page": 6,
     "source": "International Baccalaureate"
+  },
+  {
+    "course_id": "IN_4584",
+    "course_name": "IB Computer Science Higher Level",
+    "subject": "Computer Science / Digital Technology",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Computer Science / Digital Technology",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 78,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_4586",
+    "course_name": "IB Computer Science Standard Level",
+    "subject": "Computer Science / Digital Technology",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Computer Science / Digital Technology",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 78,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_2600",
+    "course_name": "IB Language A-Literature A: Literature School Supported Self-Taught",
+    "subject": "English/Language Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English/Language Arts",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 71,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1136",
+    "course_name": "IB Language A: Language and Literature Higher Level",
+    "subject": "English/Language Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English/Language Arts",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 65,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1138",
+    "course_name": "IB Language A: Language and Literature Standard Level",
+    "subject": "English/Language Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English/Language Arts",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 66,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1130",
+    "course_name": "IB Language A: Literature Higher Level",
+    "subject": "English/Language Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English/Language Arts",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 64,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1132",
+    "course_name": "IB Language A: Literature Standard Level",
+    "subject": "English/Language Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English/Language Arts",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 65,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1134",
+    "course_name": "IB Literature and Performance Standard Level",
+    "subject": "English/Language Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English/Language Arts",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 65,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_4144",
+    "course_name": "IB Dance Higher Level",
+    "subject": "Fine Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 75,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_4148",
+    "course_name": "IB Dance Standard Level",
+    "subject": "Fine Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 76,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_4270",
+    "course_name": "IB Film Higher Level",
+    "subject": "Fine Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 77,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_4272",
+    "course_name": "IB Film Standard Level",
+    "subject": "Fine Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 77,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_4212",
+    "course_name": "IB Music Higher Level",
+    "subject": "Fine Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 76,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_4214",
+    "course_name": "IB Music Standard Level",
+    "subject": "Fine Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 76,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_4264",
+    "course_name": "IB Theater Arts Standard Level",
+    "subject": "Fine Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 77,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_4262",
+    "course_name": "IB Theatre Arts Higher Level",
+    "subject": "Fine Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 76,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_4090",
+    "course_name": "IB Visual Arts Higher Level",
+    "subject": "Fine Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 74,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_4092",
+    "course_name": "IB Visual Arts Standard Level",
+    "subject": "Fine Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 75,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_0556",
+    "course_name": "IB Environmental Systems and Societies HL",
+    "subject": "Health and Wellness",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Health and Wellness",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 63,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_4580",
+    "course_name": "IB Business and Management Higher Level",
+    "subject": "International Baccalaureate",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "International Baccalaureate",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 77,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_4582",
+    "course_name": "IB Business and Management Standard Level",
+    "subject": "International Baccalaureate",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "International Baccalaureate",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 78,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_4822",
+    "course_name": "IB Design Technology Higher Level",
+    "subject": "International Baccalaureate",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "International Baccalaureate",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 78,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_4824",
+    "course_name": "IB Design Technology Standard Level",
+    "subject": "International Baccalaureate",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "International Baccalaureate",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 79,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_3016",
+    "course_name": "IB Environmental Systems and Societies Standard Level",
+    "subject": "International Baccalaureate",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "International Baccalaureate",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 72,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_5242",
+    "course_name": "IB Information Technology in a Global Society Higher Level",
+    "subject": "International Baccalaureate",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "International Baccalaureate",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 79,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_5246",
+    "course_name": "IB Information Technology in a Global Society Standard Level",
+    "subject": "International Baccalaureate",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "International Baccalaureate",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 79,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_0553",
+    "course_name": "IB Personal and Professional Skills I",
+    "subject": "International Baccalaureate",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "International Baccalaureate",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 64,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_0554",
+    "course_name": "IB Personal and Professional Skills II",
+    "subject": "International Baccalaureate",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "International Baccalaureate",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 64,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1600",
+    "course_name": "IB Philosophy Higher Level",
+    "subject": "International Baccalaureate",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "International Baccalaureate",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 69,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1602",
+    "course_name": "IB Philosophy Standard Level",
+    "subject": "International Baccalaureate",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "International Baccalaureate",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 69,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1608",
+    "course_name": "IB Social and Cultural Anthropology Higher Level",
+    "subject": "International Baccalaureate",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "International Baccalaureate",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 69,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1610",
+    "course_name": "IB Social and Cultural Anthropology Standard Level",
+    "subject": "International Baccalaureate",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "International Baccalaureate",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 70,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1588",
+    "course_name": "IB World Religions Standard Level",
+    "subject": "International Baccalaureate",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "International Baccalaureate",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 67,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_2520",
+    "course_name": "Algebra I (A)",
+    "subject": "Mathematics",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 81,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_2516",
+    "course_name": "Algebra I Lab (A)",
+    "subject": "Mathematics",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 80,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_2522",
+    "course_name": "Algebra II (A)",
+    "subject": "Mathematics",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 81,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_2524",
+    "course_name": "Analytical Algebra II",
+    "subject": "Mathematics",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 81,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_2514",
+    "course_name": "CCR Bridge: Math Ready",
+    "subject": "Mathematics",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 80,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_2590",
+    "course_name": "IB Mathematics: Analysis and Approaches Higher Level",
+    "subject": "Mathematics",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 72,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_2588",
+    "course_name": "IB Mathematics: Analysis and Approaches Standard Level",
+    "subject": "Mathematics",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 72,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_2594",
+    "course_name": "IB Mathematics: Applications and Interpretations Higher Level",
+    "subject": "Mathematics",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 72,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_2592",
+    "course_name": "IB Mathematics: Applications and Interpretations Standard Level",
+    "subject": "Mathematics",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 72,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_2518",
+    "course_name": "Integrated Mathematics I Lab (A)",
+    "subject": "Mathematics",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 80,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_3032",
+    "course_name": "IB Biology Higher Level",
+    "subject": "Science",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 73,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_3034",
+    "course_name": "IB Biology Standard Level",
+    "subject": "Science",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 73,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_3070",
+    "course_name": "IB Chemistry Higher Level",
+    "subject": "Science",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 73,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_3072",
+    "course_name": "IB Chemistry Standard Level",
+    "subject": "Science",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 73,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_3096",
+    "course_name": "IB Physics Higher Level",
+    "subject": "Science",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 74,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_3098",
+    "course_name": "IB Physics Standard Level",
+    "subject": "Science",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 74,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1614",
+    "course_name": "IB Sports, Exercise, and Health Sciences Higher Level",
+    "subject": "Science",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 70,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_3510",
+    "course_name": "IB Sports, Exercise, and Health Sciences Standard Level",
+    "subject": "Science",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 74,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1580",
+    "course_name": "IB Economics Higher Level",
+    "subject": "Social Studies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 66,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1582",
+    "course_name": "IB Economics Standard Level",
+    "subject": "Social Studies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 66,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1584",
+    "course_name": "IB Geography, Higher Level",
+    "subject": "Social Studies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 67,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1586",
+    "course_name": "IB Geography, Standard Level",
+    "subject": "Social Studies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 67,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1598",
+    "course_name": "IB Global Politics Higher Level",
+    "subject": "Social Studies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 68,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1578",
+    "course_name": "IB Global Politics Standard Level",
+    "subject": "Social Studies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 66,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1590",
+    "course_name": "IB History, Higher Level",
+    "subject": "Social Studies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 68,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1592",
+    "course_name": "IB History, Standard Level",
+    "subject": "Social Studies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 68,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1604",
+    "course_name": "IB Psychology Higher Level",
+    "subject": "Social Studies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 69,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1606",
+    "course_name": "IB Psychology Standard Level",
+    "subject": "Social Studies",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 69,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_2300",
+    "course_name": "IB Classical Languages Higher Level",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 70,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_2302",
+    "course_name": "IB Classical Languages Standard Level",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 70,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_2306",
+    "course_name": "IB World Language B Higher Level",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 71,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_2308",
+    "course_name": "IB World Language B Standard Level",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 71,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_4094",
+    "course_name": "IB World Language ab Initio Higher Level",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 75,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_2310",
+    "course_name": "IB World Language ab Initio Standard Level",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 71,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "MN_01012",
+    "course_name": "IB Language A: Language and Literature (English)",
+    "subject": "English Language and Literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English Language and Literature",
+    "career_clusters": [],
+    "source_state": "Minnesota",
+    "source_page": null,
+    "source": "Minnesota"
+  },
+  {
+    "course_id": "MN_01008",
+    "course_name": "IB Language A: Literature (English)",
+    "subject": "English Language and Literature",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English Language and Literature",
+    "career_clusters": [],
+    "source_state": "Minnesota",
+    "source_page": null,
+    "source": "Minnesota"
+  },
+  {
+    "course_id": "NE_050053",
+    "course_name": "IB LANGUAGE A (ENGLISH) MIDDLE YEARS PROGRAM",
+    "subject": "English Language Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 4,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_050052",
+    "course_name": "IB LANGUAGE A - (ENGLISH)",
+    "subject": "English Language Arts",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 4,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_110625",
+    "course_name": "IB FURTHER MATHEMATICS-HIGHER LEVEL",
+    "subject": "Mathematics",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 8,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_110623",
+    "course_name": "IB MATHEMATICAL STUDIES-STANDARD LEVEL",
+    "subject": "Mathematics",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 8,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_110624",
+    "course_name": "IB MATHEMATICS STANDARD LEVEL",
+    "subject": "Mathematics",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 8,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_110627",
+    "course_name": "IB MATHEMATICS-HIGHER LEVEL",
+    "subject": "Mathematics",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 8,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_060227",
+    "course_name": "IB LANGUAGE A - FRENCH",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 12,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_060237",
+    "course_name": "IB LANGUAGE A - GERMAN",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 12,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_060247",
+    "course_name": "IB LANGUAGE A - SPANISH",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 12,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_060228",
+    "course_name": "IB LANGUAGE B - FRENCH",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 12,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_060238",
+    "course_name": "IB LANGUAGE B - GERMAN",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 12,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_060248",
+    "course_name": "IB LANGUAGE B - SPANISH",
+    "subject": "World Language",
+    "course_type": "IB",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 12,
+    "source": "Nebraska"
   }
 ]

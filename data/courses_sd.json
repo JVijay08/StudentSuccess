@@ -1,0 +1,2622 @@
+[
+  {
+    "course_id": "SD_ACS_141_142",
+    "course_name": "LITERACY REINFORCEMENT",
+    "subject": "Academic Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Academic Services",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 13,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_ACS_131_132",
+    "course_name": "READING REINFORCEMENT",
+    "subject": "Academic Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Academic Services",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 13,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_ACS_121_122",
+    "course_name": "STUDY CENTER",
+    "subject": "Academic Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Academic Services",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 12,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_BUS_310",
+    "course_name": "ACCOUNTING I",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 15,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_BUS_320",
+    "course_name": "ACCOUNTING II",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 15,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_IND_220",
+    "course_name": "ARCHITECTURAL DRAFTING",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 14,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_CSC_147",
+    "course_name": "ARTIFICIAL INTELLIGENCE SURVEY",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 16,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_IND_240",
+    "course_name": "BUILDING TRADES",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 14,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_EDU_360",
+    "course_name": "CAREER EXPLORATION",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 17,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_CSC_388",
+    "course_name": "COMPUTER FORENSICS FUNDAMENTALS",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 17,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_CSC_150",
+    "course_name": "COMPUTER SCIENCE I",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 16,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_CSC_250",
+    "course_name": "COMPUTER SCIENCE II",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 17,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_BUS_330",
+    "course_name": "CONSUMER LAW",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 15,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_BUS_340",
+    "course_name": "ECONOMICS",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 15,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_CSC_163",
+    "course_name": "HARDWARE, VIRTUALIZATION, AND DATA COMMUNICATION",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 16,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_CSC_247",
+    "course_name": "INTRODUCTION TO ARTIFICIAL INTELLIGENCE",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 16,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_IND_140",
+    "course_name": "INTRODUCTION TO BUILDING CONSTRUCTION",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 14,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_BUS_110",
+    "course_name": "INTRODUCTION TO BUSINESS",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 15,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_CLI_101",
+    "course_name": "INTRODUCTION TO CYBER LEADERSHIP (fall semester only)",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 16,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_CSC_134",
+    "course_name": "INTRODUCTION TO CYBER OPERATIONS",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 16,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_HIM_150",
+    "course_name": "INTRODUCTION TO DIGITAL HEALTH INFORMATICS",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 17,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_MATH_201",
+    "course_name": "INTRODUCTION TO DISCRETE MATHEMATICS",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 17,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_IND_120",
+    "course_name": "INTRODUCTION TO DRAFTING AND DESIGN",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 14,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_CSC_285",
+    "course_name": "NETWORKING I",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 17,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_BUS_210",
+    "course_name": "PERSONAL FINANCE",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 15,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_IND_440",
+    "course_name": "WOODWORKING AND CABINETRY",
+    "subject": "Career & Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 14,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_ENG_121_122",
+    "course_name": "ADVANCED ENGLISH I",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 18,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_ENG_221_222",
+    "course_name": "ADVANCED ENGLISH II",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 18,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_ENG_301_302",
+    "course_name": "COMPOSITION AND AMERICAN LITERATURE (offered in 2026-2027)",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 19,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_ENG_401_402",
+    "course_name": "COMPOSITION AND WORLD LITERATURE (offered in 2027-2028)",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 20,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_ENG_111_112",
+    "course_name": "ENGLISH I",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 18,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_ENG_211_212",
+    "course_name": "ENGLISH II",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 18,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_ENG_311_312",
+    "course_name": "ENGLISH III",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 19,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_ENG_411_412",
+    "course_name": "ENGLISH IV",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 20,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_ENG_101_102",
+    "course_name": "SURVEY OF ENGLISH I",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 18,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_ENG_201_202",
+    "course_name": "SURVEY OF ENGLISH II",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 18,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAC_311_312",
+    "course_name": "CHAMBER SINGERS         (Pass/Fail)",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 23,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAB_101_102",
+    "course_name": "CONCERT BAND",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 24,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAC_301_302",
+    "course_name": "CONCERT CHOIR",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 23,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAB_211_212",
+    "course_name": "Concert Orchestra",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 25,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAA_110",
+    "course_name": "DRAWING AND PAINTING I",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 21,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAA_210",
+    "course_name": "DRAWING AND PAINTING II",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 21,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAA_310",
+    "course_name": "DRAWING AND PAINTING III",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 21,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAA_410",
+    "course_name": "DRAWING AND PAINTING IV",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 21,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAA_360",
+    "course_name": "FUNCTIONAL DESIGN",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 22,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAA_510",
+    "course_name": "ICONOGRAPHY",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 22,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAB_201_202",
+    "course_name": "JAZZ ENSEMBLE I (Pass/Fail)",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 25,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAB_121_122",
+    "course_name": "JAZZ ENSEMBLE II (Pass/Fail)",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 25,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAC_121_122",
+    "course_name": "MIXED CHORUS",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 23,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAO_110",
+    "course_name": "ORAL INTERPRETATION I (fall semester only)",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 26,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAO_210",
+    "course_name": "ORAL INTERPRETATION II (fall semester only)",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 26,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAC_201_202",
+    "course_name": "OVATION!                   (Pass/Fail)",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 23,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAA_340",
+    "course_name": "PHOTOGRAPHIC ARTS",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 22,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAA_320",
+    "course_name": "POTTERY I",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 21,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAA_330",
+    "course_name": "POTTERY II",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 21,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAB_111_112",
+    "course_name": "SYMPHONIC BAND",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 24,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAB_221_222",
+    "course_name": "Symphonic Orchestra",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 25,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAO_310",
+    "course_name": "TEAM ORAL INTERPRETATION (fall semester only)",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 26,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAD_112",
+    "course_name": "THEATER PRODUCTION & DESIGN",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 27,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAD_210",
+    "course_name": "THEATER PRODUCTION II",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 27,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAC_101_102",
+    "course_name": "TREBLE CHOIR",
+    "subject": "Fine Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 23,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_PE_310",
+    "course_name": "PREVENTION AND CARE OF ATHLETIC INJURIES I",
+    "subject": "General Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "General Electives",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 28,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_EDU_351_352",
+    "course_name": "TUTORING               1/2 to",
+    "subject": "General Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "General Electives",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 28,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_WRL_100",
+    "course_name": "U.S. LANGUAGE & CULTURE",
+    "subject": "General Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "General Electives",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 28,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_COM_241_242",
+    "course_name": "YEARBOOK",
+    "subject": "General Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "General Electives",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 28,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_MAT_321_322",
+    "course_name": "ADVANCED ALGEBRA II",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 31,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_MAT_231_232",
+    "course_name": "ADVANCED GEOMETRY",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 31,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_MAT_131_132",
+    "course_name": "ALGEBRA I",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 30,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_MAT_111_112",
+    "course_name": "ALGEBRA IA",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 30,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_MAT_121_122",
+    "course_name": "ALGEBRA IB",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 30,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_MAT_311_312",
+    "course_name": "ALGEBRA II",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 31,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_MAT_101_102",
+    "course_name": "ALGEBRA SKILLS",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 30,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_MAT_351_352",
+    "course_name": "COLLEGE ALGEBRA",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 32,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_MAT_221_222",
+    "course_name": "GEOMETRY",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 31,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_MAT_301_302",
+    "course_name": "INTERMEDIATE ALGEBRA II",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 31,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_MAT_211_212",
+    "course_name": "INTERMEDIATE GEOMETRY",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 30,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_MAT_333_334",
+    "course_name": "PRE-COLLEGE ALGEBRA",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 31,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_MAT_341_342",
+    "course_name": "PRECALCULUS",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 32,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_PE_220",
+    "course_name": "LIFETIME ACTIVITIES I",
+    "subject": "Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 33,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_PE_230",
+    "course_name": "LIFETIME ACTIVITIES II",
+    "subject": "Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 33,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_PE_310_2",
+    "course_name": "PREVENTION AND CARE OF ATHLETIC INJURIES I",
+    "subject": "Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 33,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_PE_260",
+    "course_name": "THEORY OF COACHING/OFFICIATING",
+    "subject": "Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 33,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_PE_240",
+    "course_name": "WEIGHT TRAINING I",
+    "subject": "Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 33,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_PE_250",
+    "course_name": "WEIGHT TRAINING II",
+    "subject": "Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 33,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_PE_110",
+    "course_name": "WELLNESS FOR LIFE",
+    "subject": "Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 33,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SCI_221_222",
+    "course_name": "ADVANCED BIOLOGY I",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 35,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SCI_251_252",
+    "course_name": "ADVANCED CHEMISTRY I",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 36,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SCI_311_312",
+    "course_name": "ANATOMY AND PHYSIOLOGY",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 37,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SCI_211_212",
+    "course_name": "BIOLOGY I",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 35,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SCI_241_242",
+    "course_name": "CHEMISTRY I",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 35,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SCI_231_232",
+    "course_name": "CHEMISTRY IN THE COMMUNITY",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 35,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SCI_401_402",
+    "course_name": "COLLEGE BIOLOGY",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 35,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SCI_301_302",
+    "course_name": "CONCEPTUAL PHYSICS",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 36,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SCI_321_322",
+    "course_name": "PHYSICS",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 36,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SCI_341_342",
+    "course_name": "PRINCIPLES OF ENGINEERING",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 37,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SCI_201_202",
+    "course_name": "SURVEY OF BIOLOGY",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 35,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_BUS_330_2",
+    "course_name": "CONSUMER LAW",
+    "subject": "Social Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 40,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_BUS_340_2",
+    "course_name": "ECONOMICS",
+    "subject": "Social Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 40,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SSE_310",
+    "course_name": "PSYCHOLOGY",
+    "subject": "Social Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 40,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SSE_330",
+    "course_name": "SOCIOLOGY",
+    "subject": "Social Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 40,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SSC_221_222",
+    "course_name": "SURVERY OF U.S. HISTORY",
+    "subject": "Social Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 39,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SSC_310",
+    "course_name": "SURVEY OF U.S. GOVERNMENT",
+    "subject": "Social Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 39,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SSC_120",
+    "course_name": "SURVEY OF WORLD GEOGRAPHY",
+    "subject": "Social Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 38,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SSC_220",
+    "course_name": "SURVEY OF WORLD HISTORY",
+    "subject": "Social Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 38,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SSE_220",
+    "course_name": "TRAGEDIES IN HISTORY",
+    "subject": "Social Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 40,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SSC_320",
+    "course_name": "U.S. GOVERNMENT",
+    "subject": "Social Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 39,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SSC_231_232",
+    "course_name": "U.S. HISTORY",
+    "subject": "Social Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 39,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SSC_130",
+    "course_name": "WORLD GEOGRAPHY",
+    "subject": "Social Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 38,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SSC_230",
+    "course_name": "WORLD HISTORY",
+    "subject": "Social Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 38,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAO_110_2",
+    "course_name": "ORAL INTERPRETATION I (fall semester only)",
+    "subject": "Speech",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Speech",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 41,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAO_210_2",
+    "course_name": "ORAL INTERPRETATION II (fall semester only)",
+    "subject": "Speech",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Speech",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 41,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_ENG_220",
+    "course_name": "SPEECH",
+    "subject": "Speech",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Speech",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 41,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_ENG_320",
+    "course_name": "SPEECH COMMUNICATION",
+    "subject": "Speech",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Speech",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 42,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_FAO_310_2",
+    "course_name": "TEAM ORAL INTERPRETATION (fall semester only)",
+    "subject": "Speech",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Speech",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 41,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_THE_450",
+    "course_name": "ADVANCED THEOLOGICAL SEMINAR (ATS)",
+    "subject": "Theology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Theology",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 44,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_THE_410",
+    "course_name": "APOLOGETICS",
+    "subject": "Theology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Theology",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 44,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_THE_430",
+    "course_name": "CHRISTIAN SERVICE",
+    "subject": "Theology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Theology",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 44,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_THE_231_232",
+    "course_name": "JESUS AND THE CHURCH",
+    "subject": "Theology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Theology",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 43,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_THE_131_132",
+    "course_name": "JESUS AND THE SCRIPTURES",
+    "subject": "Theology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Theology",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 43,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_THE_440",
+    "course_name": "MEN, WOMEN, FRIENDSHIP, AND VOCATION",
+    "subject": "Theology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Theology",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 44,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_THE_320",
+    "course_name": "MORALITY",
+    "subject": "Theology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Theology",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 43,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_THE_445",
+    "course_name": "PHILOSOPHY: HAPPINESS AND THE HUMAN PERSON",
+    "subject": "Theology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Theology",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 44,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_THE_310",
+    "course_name": "SACRAMENTS",
+    "subject": "Theology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Theology",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 43,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_WRL_101_102",
+    "course_name": "GERMAN I",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 45,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_WRL_201_202",
+    "course_name": "GERMAN II",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 45,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_WRL_301_302",
+    "course_name": "GERMAN III",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 45,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_WRL_501_502",
+    "course_name": "GERMAN V",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 45,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_WRL_325_326",
+    "course_name": "SPANISH FOR SPANISH SPEAKERS",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 46,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_WRL_121_122",
+    "course_name": "SPANISH I",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 46,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_WRL_221_222",
+    "course_name": "SPANISH II",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 46,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_WRL_321_322",
+    "course_name": "SPANISH III",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 46,
+    "source": "South Dakota"
+  }
+]

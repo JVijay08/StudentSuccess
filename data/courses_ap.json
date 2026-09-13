@@ -1229,5 +1229,3386 @@
     "source_state": "Georgia",
     "source_page": null,
     "source": "Georgia"
+  },
+  {
+    "course_id": "AR_565030",
+    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level course. CulAvate understanding of coding through analyzing, wriAng, and tesAng code while exploring concepts like modularity, variables, and control structures. The course is taught using one of the most in-demand programming languages, Java. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Computer Science Flex, Gradua/on Requirement for Natural Science (3rd Science or Computer Science), Gradua/on Requirement for Mathema/cs or Computer Science (4th Mathema/cs or Computer Science), Career-Focused Elec/ve AP\u00ae Computer Science Principles - Year 1",
+    "subject": "Computer Science",
+    "course_type": "AP",
+    "grade_levels": [
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Computer Science",
+    "career_clusters": [],
+    "source_state": "Arkansas",
+    "source_page": 45,
+    "source": "Arkansas"
+  },
+  {
+    "course_id": "AR_465430",
+    "course_name": "Prerequisite Course Code(s): None Grade Range: 8 - 12 Weight: 5.0 Descrip:on: Introductory college-level compuAng course introducing the breadth of the field of computer science. Design and evaluate soluAons, and apply computer science to solve problems through the development of algorithms and programs. Incorporate abstracAon into programs and use data to discover new knowledge. Explain how compuAng innovaAons and compuAng systems-including the internet-work, explore their potenAal impacts, and contribute to a compuAng culture that is collaboraAve and ethical. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Computer Science Flex, Gradua/on Requirement for Natural Science (3rd Science or Computer Science), Gradua/on Requirement for Mathema/cs or Computer Science (4th Mathema/cs or Computer Science), Career-Focused Elec/ve Artificial Intelligence",
+    "subject": "Computer Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Computer Science",
+    "career_clusters": [],
+    "source_state": "Arkansas",
+    "source_page": 45,
+    "source": "Arkansas"
+  },
+  {
+    "course_id": "AR_517040",
+    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level composiAon course. CulAvate understanding of wriAng and rhetorical arguments through reading, analyzing, and wriAng texts while exploring topics like rhetorical situaAon, claims and evidence, reasoning and organizaAon, and style. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for English 9, Gradua/on Requirement for English 10, Gradua/on Requirement for English 11, Gradua/on Requirement for English 12, Career-Focused Elec/ve AP\u00ae English Literature and Composition",
+    "subject": "English Language Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Arkansas",
+    "source_page": 50,
+    "source": "Arkansas"
+  },
+  {
+    "course_id": "AR_517070",
+    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level literary analysis course. CulAvate understanding of literature through reading and analyzing texts as they explore concepts like character, se\\ng, structure, perspecAve, figuraAve language, and literary analysis in the context of literary works. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for English 9, Gradua/on Requirement for English 10, Gradua/on Requirement for English 11, Gradua/on Requirement for English 12, Career-Focused Elec/ve AP\u00ae Research",
+    "subject": "English Language Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Arkansas",
+    "source_page": 50,
+    "source": "Arkansas"
+  },
+  {
+    "course_id": "AR_517010",
+    "course_name": "Prerequisite Course Code(s): None Grade Range: 8 - 12 Weight: 5.0 Descrip:on: FoundaAonal course in the AP Capstone experience. Engage in cross-curricular conversaAons that explore the complexiAes of academic and real-world topics and issues by analyzing divergent perspecAves. InvesAgate a problem or issue, analyze arguments, compare di\ufb00erent perspecAves, synthesize informaAon from mulAple sources, and communicate ideas. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for English 9, Gradua/on Requirement for English 10, Gradua/on Requirement for English 11, Gradua/on Requirement for English 12, Career-Focused Elec/ve C Cambridge Advanced English General Paper",
+    "subject": "English Language Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Arkansas",
+    "source_page": 51,
+    "source": "Arkansas"
+  },
+  {
+    "course_id": "AR_559060",
+    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level two-dimensional design course. Refine and apply 2-D skills to ideas developed throughout the course. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Fine Arts, Career-Focused Elec/ve AP\u00ae 3-D Art and Design",
+    "subject": "Fine Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "Arkansas",
+    "source_page": 61,
+    "source": "Arkansas"
+  },
+  {
+    "course_id": "AR_559030",
+    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level three-dimensional design course. Refine and apply 3-D skills to ideas developed throughout the course. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Fine Arts, Career-Focused Elec/ve AP\u00ae Art History",
+    "subject": "Fine Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "Arkansas",
+    "source_page": 61,
+    "source": "Arkansas"
+  },
+  {
+    "course_id": "AR_559040",
+    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level art history course. CulAvate understanding of art history through analyzing works of art and placing them in historical context. Explore concepts including theories and interpretaAons of art, the impact of materials, processes, and techniques on art and art making, and understanding purpose and audience in art historical analysis. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Fine Arts, Career-Focused Elec/ve AP\u00ae Drawing",
+    "subject": "Fine Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "Arkansas",
+    "source_page": 61,
+    "source": "Arkansas"
+  },
+  {
+    "course_id": "AR_559010",
+    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level drawing course. Refine and apply drawing skills to ideas developed throughout the course. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Fine Arts, Career-Focused Elec/ve AP\u00ae Music Theory",
+    "subject": "Fine Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "Arkansas",
+    "source_page": 61,
+    "source": "Arkansas"
+  },
+  {
+    "course_id": "AR_450070",
+    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level music theory course. CulAvate understanding of music theory through analyzing performed and notated music. Explore concepts of pitch, rhythm, form, and musical design. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Fine Arts, Career-Focused Elec/ve Art History (Baroque to Contemporary)",
+    "subject": "Fine Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "Arkansas",
+    "source_page": 61,
+    "source": "Arkansas"
+  },
+  {
+    "course_id": "AR_521030",
+    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level biology course. CulAvate understanding of biology through inquiry-based invesAgaAons of topics like evoluAon, energeAcs, informaAon storage and transfer, and system interacAons. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Natural Science (Biology), Gradua/on Requirement for Natural Science (3rd Science or Computer Science), Career-Focused Elec/ve AP\u00ae Chemistry",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Arkansas",
+    "source_page": 84,
+    "source": "Arkansas"
+  },
+  {
+    "course_id": "AR_523030",
+    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level chemistry course. CulAvate understanding of chemistry through inquiry-based lab invesAgaAons while exploring four Big Ideas: scale, proporAon, and quanAty; structure and properAes of substances; transformaAons; and energy. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Natural Science (Physical Sciences), Gradua/on Requirement for Natural Science (3rd Science or Computer Science), Career-Focused Elec/ve AP\u00ae Environmental Science",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Arkansas",
+    "source_page": 84,
+    "source": "Arkansas"
+  },
+  {
+    "course_id": "AR_522090",
+    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Algebra-based, introductory college-level physics course. CulAvate understanding of physics through classroom study, in-class acAvity, and hands-on, inquiry-based laboratory work as they explore concepts like systems, fields, force interacAons, change, and conservaAon. Develop the ability to reason about physical phenomena using important science pracAces, such as explaining relaAonships, applying and jusAfying the use of mathemaAcal rouAnes, designing experiments, analyzing data, and making connecAons across content related topics. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Natural Science (Physical Sciences), Gradua/on Requirement for Natural Science (3rd Science or Computer Science), Career-Focused Elec/ve AP\u00ae Physics 2",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Arkansas",
+    "source_page": 84,
+    "source": "Arkansas"
+  },
+  {
+    "course_id": "AR_522040",
+    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Algebra-based, introductory college-level physics course. CulAvate understanding of physics through classroom study, in-class acAvity, and hands-on, inquiry-based laboratory work as they explore concepts like systems, fields, force interacAons, change, conservaAon, waves, and probability. Develop the ability to reason about physical phenomena using important science pracAces, such as explaining relaAonships, applying and jusAfying the use of mathemaAcal rouAnes, designing experiments, analyzing data, and making connecAons across content related topics. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Natural Science (Physical Sciences), Gradua/on Requirement for Natural Science (3rd Science or Computer Science), Career-Focused Elec/ve AP\u00ae Physics C: Electricity and Magnetism",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Arkansas",
+    "source_page": 84,
+    "source": "Arkansas"
+  },
+  {
+    "course_id": "AR_425050",
+    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Calculus-based introductory college-level physics course. CulAvate understanding of physics through classroom study and acAviAes as well as hands-on laboratory work as they explore concepts like change, force interacAons, fields, and conservaAon. Develop the ability to reason about physical phenomena using important science pracAces, such as creaAng and analyzing representaAons of physical scenarios, designing experiments, analyzing data, and using mathemaAcs to model and to solve problems across content related topics. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Natural Science (Physical Sciences), Gradua/on Requirement for Natural Science (3rd Science or Computer Science), Career-Focused Elec/ve Astronomy",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Arkansas",
+    "source_page": 85,
+    "source": "Arkansas"
+  },
+  {
+    "course_id": "AR_579140",
+    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level macroeconomics course. CulAvate an understanding of the principles that apply to an economic system as a whole by using principles and models to describe economic situaAons and predict and explain outcomes with graphs, charts, and data to explore economic measurements, markets, macroeconomic models, and macroeconomic policies. This course is aligned with the Arkansas personal Finance standards. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Economics, Career-Focused Elec/ve ADE Approved AP\u00ae Microeconomics with Personal Finance",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Arkansas",
+    "source_page": 91,
+    "source": "Arkansas"
+  },
+  {
+    "course_id": "AR_474700",
+    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level microeconomics course. CulAvate an understanding of the principles that apply to the funcAons of individual economic decision-makers by using principles and models to describe economic situaAons and predict and explain outcomes with graphs, charts, and data to explore concepts like scarcity and markets; costs, benefits, and marginal analysis; producAon choices and behavior; and market ine\ufb03ciency and public policy. This course is aligned with the Arkansas personal Finance standards. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Economics, Career-Focused Elec/ve African American History",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Arkansas",
+    "source_page": 91,
+    "source": "Arkansas"
+  },
+  {
+    "course_id": "AR_570020",
+    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level course in U.S. government and poliAcs that includes Arkansas academic standards to meet the Civics requirement. CulAvate an understanding of U.S. government and poliAcs through analysis of data and text-based sources while exploring topics like consAtuAonalism, liberty and order, civic parAcipaAon in a representaAve democracy, compeAng policy-making interests, and methods of poliAcal analysis. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Social Studies (Civics), Career-Focused Elec/ve AP\u00ae United States History",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Arkansas",
+    "source_page": 92,
+    "source": "Arkansas"
+  },
+  {
+    "course_id": "AR_571020",
+    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level U.S. history course. CulAvate an understanding of U.S. history from c. 1491 CE to the present through analyzing historical sources and learning to make connecAons and craV historical arguments while exploring concepts like American and naAonal idenAty; work, exchange, and technology; geography and the environment; migraAon and seLlement; poliAcs and power; America in the world; American and regional culture; and social structures. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Social Studies (United States History), Career-Focused Elec/ve AP\u00ae World History",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Arkansas",
+    "source_page": 92,
+    "source": "Arkansas"
+  },
+  {
+    "course_id": "AR_540080",
+    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Equivalent to an upper-intermediate level college course in LaAn with focus on in-depth study of selecAons from works in LaAn literature: Vergil\u2019s Aeneid and Caesar\u2019s Gallic War. CulAvate an understanding of classics through preparing and translaAng readings and considering themes in the context of ancient literature. This is a College Board Advanced Placement course. Credit Fulfills: Career-Focused Elec/ve AP\u00ae Spanish Literature and Culture",
+    "subject": "World Languages",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "Arkansas",
+    "source_page": 99,
+    "source": "Arkansas"
+  },
+  {
+    "course_id": "AR_441000",
+    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: College level introductory survey course of literature wriLen in Spanish. Develop interpreAve, interpersonal, and presentaAonal skills in Spanish language as well as criAcal reading and analyAcal wriAng while exploring short stories, novels, plays, essays, and poetry from Spain, LaAn America, and U.S. Hispanic authors along with other non-required texts. This is a College Board Advanced Placement course. Credit Fulfills: Career-Focused Elec/ve F French Courses Descrip:on: Communicate ideas (that is, to understand, speak, read, and write the language) and increase communicaAve and cultural proficiency in the target language(s). Introduce cultures, tradiAons, and current events at an appropriate level through selected readings, audio/visual recordings, and other authenAc materials to give students an appreciaAon of the similariAes and di\ufb00erences in the life, customs, and cultures of other peoples and civilizaAons. French I",
+    "subject": "World Languages",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "Arkansas",
+    "source_page": 99,
+    "source": "Arkansas"
+  },
+  {
+    "course_id": "TN_3_8",
+    "course_name": "Advanced Placement Computer Science A",
+    "subject": "Computer Technology",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Computer Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_3_9",
+    "course_name": "Advanced Placement Computer Science Principles",
+    "subject": "Computer Technology",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Computer Technology",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_2",
+    "course_name": "Advanced Placement English Language & Composition",
+    "subject": "Language Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_3",
+    "course_name": "Advanced Placement English Literature & Composition",
+    "subject": "Language Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_16",
+    "course_name": "Advanced Placement Chinese Language & Culture",
+    "subject": "Language Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_17",
+    "course_name": "Advanced Placement French Language & Culture",
+    "subject": "Language Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_18",
+    "course_name": "Advanced Placement German Language & Culture",
+    "subject": "Language Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_19",
+    "course_name": "Advanced Placement Italian Language & Culture",
+    "subject": "Language Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_20",
+    "course_name": "Advanced Placement Japanese Language & Culture",
+    "subject": "Language Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_21",
+    "course_name": "Advanced Placement Spanish Language & Culture",
+    "subject": "Language Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_22",
+    "course_name": "Advanced Placement Spanish Literature & Culture",
+    "subject": "Language Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_23",
+    "course_name": "Advanced Placement Latin",
+    "subject": "Language Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_24",
+    "course_name": "Advanced Placement Seminar",
+    "subject": "Language Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_7_25",
+    "course_name": "Advanced Placement Research",
+    "subject": "Language Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Language Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 2,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_8_10",
+    "course_name": "Advanced Placement Statistics",
+    "subject": "Mathematics",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 3,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_8_11",
+    "course_name": "Advanced Placement Calculus AB",
+    "subject": "Mathematics",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 3,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_8_12",
+    "course_name": "Advanced Placement Calculus BC",
+    "subject": "Mathematics",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 3,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_15",
+    "course_name": "Advanced Placement Biology",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_16",
+    "course_name": "Advanced Placement Chemistry",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_17",
+    "course_name": "Advanced Placement Environmental Science",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_18",
+    "course_name": "Advanced Placement Physics I",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_19",
+    "course_name": "Advanced Placement Physics II",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_20",
+    "course_name": "Advanced Placement Physics C: Electricity & Magnetism",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_10_21",
+    "course_name": "Advanced Placement Physics C: Mechanics",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 4,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_11",
+    "course_name": "Advanced Placement United States History",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_12",
+    "course_name": "Advanced Placement European History",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_13",
+    "course_name": "Advanced Placement World History",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_14",
+    "course_name": "Advanced Placement Macroeconomics",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_15",
+    "course_name": "Advanced Placement Microeconomics",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_16",
+    "course_name": "Advanced Placement U.S. Government & Politics",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_17",
+    "course_name": "Advanced Placement Comparative Government & Politics",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_18",
+    "course_name": "Advanced Placement Human Geography",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_11_19",
+    "course_name": "Advanced Placement Psychology",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 5,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_4_11",
+    "course_name": "Advanced Placement Music Theory",
+    "subject": "Visual and Performing Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Visual and Performing Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_4_12",
+    "course_name": "Advanced Placement Art History",
+    "subject": "Visual and Performing Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Visual and Performing Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_4_13",
+    "course_name": "Advanced Placement Studio Art: 2-D Design",
+    "subject": "Visual and Performing Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Visual and Performing Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_4_14",
+    "course_name": "Advanced Placement Studio Art: 3-D Design",
+    "subject": "Visual and Performing Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Visual and Performing Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "TN_4_15",
+    "course_name": "Advanced Placement Studio Art: Drawing",
+    "subject": "Visual and Performing Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Visual and Performing Arts",
+    "career_clusters": [],
+    "source_state": "Tennessee",
+    "source_page": 1,
+    "source": "Tennessee"
+  },
+  {
+    "course_id": "IL_AP_POLITICS_GOVERNMENT_COMPARATIVE",
+    "course_name": "AP Politics & Government: Comparative",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Illinois",
+    "source_page": null,
+    "source": "Illinois"
+  },
+  {
+    "course_id": "IL_AP_POLITICS_GOVERNMENT_US",
+    "course_name": "AP Politics & Government: US",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Illinois",
+    "source_page": null,
+    "source": "Illinois"
+  },
+  {
+    "course_id": "IL_AP_US_HISTORY",
+    "course_name": "AP US History",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Illinois",
+    "source_page": null,
+    "source": "Illinois"
+  },
+  {
+    "course_id": "IN_4590",
+    "course_name": "AP CK Cyber: Networking",
+    "subject": "Computer Science / Digital Technology",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Computer Science / Digital Technology",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 18,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_4592",
+    "course_name": "AP CK Cyber: Security",
+    "subject": "Computer Science / Digital Technology",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Computer Science / Digital Technology",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 18,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1104",
+    "course_name": "AP Seminar: English",
+    "subject": "English/Language Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English/Language Arts",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 7,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_4210",
+    "course_name": "AP Music Theory (L)",
+    "subject": "Fine Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 17,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_3081",
+    "course_name": "AP Physics 2: Algebra-Based (L)",
+    "subject": "Mathematics",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 15,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_2544",
+    "course_name": "Advanced Mathematics, College Credit",
+    "subject": "Mathematics",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 6,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_3020",
+    "course_name": "AP Biology (L)",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 15,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_3012",
+    "course_name": "AP Environmental Science (L)",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 14,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_3087",
+    "course_name": "AP Physics C: Electricity and Magnetism (L)",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 15,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_3089",
+    "course_name": "AP Physics C: Mechanics (L)",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 16,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_3090",
+    "course_name": "Advanced Science, College Credit (L)",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 6,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "IN_1612",
+    "course_name": "AP World History Modern",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Indiana",
+    "source_page": 10,
+    "source": "Indiana"
+  },
+  {
+    "course_id": "MI_2041_2042",
+    "course_name": "AP Government (Civics)",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 44,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MN_01007",
+    "course_name": "AP Combined English Language/Literature and Composition",
+    "subject": "English Language and Literature",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English Language and Literature",
+    "career_clusters": [],
+    "source_state": "Minnesota",
+    "source_page": null,
+    "source": "Minnesota"
+  },
+  {
+    "course_id": "OH_1131",
+    "course_name": "AP PHYSICS",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 45,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "WI_AP_COMPUTER_SCIENCE_A_S1_V25",
+    "course_name": "AP Computer Science A S1 v25",
+    "subject": "Computer and Information Sciences",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Computer and Information Sciences",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_COMPUTER_SCIENCE_A_S2_V25",
+    "course_name": "AP Computer Science A S2 v25",
+    "subject": "Computer and Information Sciences",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Computer and Information Sciences",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_COMPUTER_SCIENCE_PRINCIPLES_S1_V23",
+    "course_name": "AP Computer Science Principles S1 v23",
+    "subject": "Computer and Information Sciences",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Computer and Information Sciences",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_COMPUTER_SCIENCE_PRINCIPLES_S2_V23",
+    "course_name": "AP Computer Science Principles S2 v23",
+    "subject": "Computer and Information Sciences",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Computer and Information Sciences",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_ENGLISH_LANGUAGE_AND_COMPOSITION_S1_V20",
+    "course_name": "AP English Language and Composition S1 v20",
+    "subject": "English Language and Literature",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English Language and Literature",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_ENGLISH_LANGUAGE_AND_COMPOSITION_S2_V20",
+    "course_name": "AP English Language and Composition S2 v20",
+    "subject": "English Language and Literature",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English Language and Literature",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_ENGLISH_LITERATURE_COMPOSITION_S1",
+    "course_name": "AP English Literature & Composition S1",
+    "subject": "English Language and Literature",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English Language and Literature",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_ENGLISH_LITERATURE_COMPOSITION_S2",
+    "course_name": "AP English Literature & Composition S2",
+    "subject": "English Language and Literature",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English Language and Literature",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_BIOLOGY_S1_V25",
+    "course_name": "AP Biology S1 v25",
+    "subject": "Life and Physical Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Life and Physical Science",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_BIOLOGY_S2_V25",
+    "course_name": "AP Biology S2 v25",
+    "subject": "Life and Physical Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Life and Physical Science",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_CHEMISTRY_S1_V21_1",
+    "course_name": "AP Chemistry S1 v21.1",
+    "subject": "Life and Physical Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Life and Physical Science",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_CHEMISTRY_S2_V21_1",
+    "course_name": "AP Chemistry S2 v21.1",
+    "subject": "Life and Physical Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Life and Physical Science",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_ENVIRONMENTAL_SCIENCE_S1_V20",
+    "course_name": "AP Environmental Science S1 v20",
+    "subject": "Life and Physical Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Life and Physical Science",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_ENVIRONMENTAL_SCIENCE_S2_V20",
+    "course_name": "AP Environmental Science S2 v20",
+    "subject": "Life and Physical Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Life and Physical Science",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_PHYSICS_1_A_V24",
+    "course_name": "AP Physics 1 A v24",
+    "subject": "Life and Physical Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Life and Physical Science",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_PHYSICS_1_B_V24",
+    "course_name": "AP Physics 1 B v24",
+    "subject": "Life and Physical Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Life and Physical Science",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_PHYSICS_2_S1",
+    "course_name": "AP Physics 2 S1",
+    "subject": "Life and Physical Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Life and Physical Science",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_PHYSICS_2_S2",
+    "course_name": "AP Physics 2 S2",
+    "subject": "Life and Physical Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Life and Physical Science",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_CALCULUS_AB_S1_V20",
+    "course_name": "AP Calculus AB S1 v20",
+    "subject": "Mathematics",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_CALCULUS_AB_S2_V20",
+    "course_name": "AP Calculus AB S2 v20",
+    "subject": "Mathematics",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_CALCULUS_BC_S1_V20",
+    "course_name": "AP Calculus BC S1 v20",
+    "subject": "Mathematics",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_CALCULUS_BC_S2_V20",
+    "course_name": "AP Calculus BC S2 v20",
+    "subject": "Mathematics",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_STATISTICS_S1_V27",
+    "course_name": "AP Statistics S1 v27",
+    "subject": "Mathematics",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_STATISTICS_S2_V27",
+    "course_name": "AP Statistics S2 v27",
+    "subject": "Mathematics",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_COMPARATIVE_GOVERNMENT",
+    "course_name": "AP Comparative Government",
+    "subject": "Social Sciences and History",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Sciences and History",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_EUROPEAN_HISTORY_A_V21",
+    "course_name": "AP European History A v21",
+    "subject": "Social Sciences and History",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Sciences and History",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_EUROPEAN_HISTORY_B_V21",
+    "course_name": "AP European History B v21",
+    "subject": "Social Sciences and History",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Sciences and History",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_HUMAN_GEOGRAPHY_S1_V20",
+    "course_name": "AP Human Geography S1 v20",
+    "subject": "Social Sciences and History",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Sciences and History",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_HUMAN_GEOGRAPHY_S2_V20",
+    "course_name": "AP Human Geography S2 v20",
+    "subject": "Social Sciences and History",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Sciences and History",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_MACROECONOMICS_V20",
+    "course_name": "AP Macroeconomics v20",
+    "subject": "Social Sciences and History",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Sciences and History",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_MICROECONOMICS_V20",
+    "course_name": "AP Microeconomics v20",
+    "subject": "Social Sciences and History",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Sciences and History",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_PSYCHOLOGY_A_V24",
+    "course_name": "AP Psychology A v24",
+    "subject": "Social Sciences and History",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Sciences and History",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_PSYCHOLOGY_B_V24",
+    "course_name": "AP Psychology B v24",
+    "subject": "Social Sciences and History",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Sciences and History",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_UNITED_STATES_GOVERNMENT_AND_POLITICS_V24",
+    "course_name": "AP United States Government and Politics v24",
+    "subject": "Social Sciences and History",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Sciences and History",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_UNITED_STATES_HISTORY_S1_V24",
+    "course_name": "AP United States History S1 v24",
+    "subject": "Social Sciences and History",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Sciences and History",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_UNITED_STATES_HISTORY_S2_V24",
+    "course_name": "AP United States History S2 v24",
+    "subject": "Social Sciences and History",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Sciences and History",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_WORLD_HISTORY_MODERN_A_V20",
+    "course_name": "AP World History: Modern A v20",
+    "subject": "Social Sciences and History",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Sciences and History",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_WORLD_HISTORY_MODERN_B_V20",
+    "course_name": "AP World History: Modern B v20",
+    "subject": "Social Sciences and History",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Sciences and History",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_ART_HISTORY_S1_V15",
+    "course_name": "AP Art History S1 v15",
+    "subject": "Visual and Performing Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Visual and Performing Arts",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_ART_HISTORY_S2_V15",
+    "course_name": "AP Art History S2 v15",
+    "subject": "Visual and Performing Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Visual and Performing Arts",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_SPANISH_A_V26",
+    "course_name": "AP Spanish A v26",
+    "subject": "World Languages",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "WI_AP_SPANISH_B_V26",
+    "course_name": "AP Spanish B v26",
+    "subject": "World Languages",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "Wisconsin",
+    "source_page": null,
+    "source": "Wisconsin"
+  },
+  {
+    "course_id": "IA_TEC551_552",
+    "course_name": "AP Computer Sci Principles",
+    "subject": "Career & Technology Education",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 67,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_SOC507_508",
+    "course_name": "AP Government",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 31,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ART501_502",
+    "course_name": "AP Art: 2D Studio",
+    "subject": "Visual Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 45,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ART507_508",
+    "course_name": "AP Art: 3D Studio",
+    "subject": "Visual Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 46,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ART503_504",
+    "course_name": "AP Art: Art History",
+    "subject": "Visual Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 45,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ART505_506",
+    "course_name": "AP Art: Drawing Studio",
+    "subject": "Visual Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 46,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "KS_AP_BUSINESS_PERSONAL_FINANCE",
+    "course_name": "AP Business & Personal Finance",
+    "subject": "Business",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Business",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_AP_COMPUTER_SCIENCE_A_JAVA",
+    "course_name": "AP Computer Science A (Java)",
+    "subject": "Computer Science / Technology",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Computer Science / Technology",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_AP_ENGLISH_LITERATURE",
+    "course_name": "AP English Literature",
+    "subject": "English / Language Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English / Language Arts",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_AP_2D_DESIGN",
+    "course_name": "AP 2D Design",
+    "subject": "Fine Arts / Theatre",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts / Theatre",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_AP_PRE_CALCULUS",
+    "course_name": "AP Pre-Calculus",
+    "subject": "Mathematics",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_AP_PHYSICS_I",
+    "course_name": "AP Physics I",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_AP_PHYSICS_II",
+    "course_name": "AP Physics II",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_AP_U_S_GOVERNMENT_POLITICS",
+    "course_name": "AP U.S. Government & Politics",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_AP_U_S_HISTORY",
+    "course_name": "AP U.S. History",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_AP_CHINESE_LANGUAGE",
+    "course_name": "AP Chinese Language",
+    "subject": "World Languages",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_AP_FRENCH_LANGUAGE",
+    "course_name": "AP French Language",
+    "subject": "World Languages",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "KS_AP_SPANISH_LANGUAGE",
+    "course_name": "AP Spanish Language",
+    "subject": "World Languages",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "Kansas",
+    "source_page": null,
+    "source": "Blue Valley High School Course Guide public catalog extract"
+  },
+  {
+    "course_id": "NE_050050",
+    "course_name": "ADVANCED PLACEMENT ENGLISH LANG/COMP",
+    "subject": "English Language Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 4,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_050051",
+    "course_name": "ADVANCED PLACEMENT ENGLISH LIT/COMP",
+    "subject": "English Language Arts",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "English Language Arts",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 4,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_020500",
+    "course_name": "ADVANCED PLACEMENT STUDIO ART 2D",
+    "subject": "Fine Arts - Art",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts - Art",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 5,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_020501",
+    "course_name": "ADVANCED PLACEMENT STUDIO ART 3D",
+    "subject": "Fine Arts - Art",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts - Art",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 5,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_020502",
+    "course_name": "ADVANCED PLACEMENT STUDIO ART DRAW",
+    "subject": "Fine Arts - Art",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Fine Arts - Art",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 5,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_135021",
+    "course_name": "ADVANCED PLACEMENT PHYSICS 1: ALGEBRA-BASED",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 10,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_135022",
+    "course_name": "ADVANCED PLACEMENT PHYSICS 2: ALGEBRA-BASED",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 10,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_135023",
+    "course_name": "ADVANCED PLACEMENT PHYSICS C: ELECTRICITY AND MAGNETISM",
+    "subject": "Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 10,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_151115",
+    "course_name": "ADVANCED PLACEMENT COMPARITIVE GOVERNMENT AND POLITICS",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 12,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_151113",
+    "course_name": "ADVANCED PLACEMENT UNITED STATES GOVERNMENT AND POLITICS",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 11,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_150830",
+    "course_name": "ADVANCED PLACEMENT US HISTORY",
+    "subject": "Social Studies",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 11,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_060276",
+    "course_name": "ADVANCED PLACEMENT CHINESE LANGUAGE AND CULTURE",
+    "subject": "World Language",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 13,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_060226",
+    "course_name": "ADVANCED PLACEMENT FRENCH LANGUAGE AND CULTURE",
+    "subject": "World Language",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 12,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_060236",
+    "course_name": "ADVANCED PLACEMENT GERMAN LANGUAGE AND CULTURE",
+    "subject": "World Language",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 12,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_060253",
+    "course_name": "ADVANCED PLACEMENT JAPANESE LANGUAGE AND CULTURE",
+    "subject": "World Language",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 13,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_060246",
+    "course_name": "ADVANCED PLACEMENT SPANISH LANGUAGE AND CULTURE",
+    "subject": "World Language",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 12,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "NE_060255",
+    "course_name": "ADVANCED PLACEMENT SPANISH LITERATURE AND CULTURE",
+    "subject": "World Language",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Nebraska",
+    "source_page": 13,
+    "source": "Nebraska"
+  },
+  {
+    "course_id": "ND_HCO3121B",
+    "course_name": "AP Computer Science A, 1st Sem",
+    "subject": "Advanced Placement",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Advanced Placement",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HCO3122B",
+    "course_name": "AP Computer Science A, 2nd Sem",
+    "subject": "Advanced Placement",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Advanced Placement",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HEN5211B",
+    "course_name": "AP English Language and Composition, 1st Sem",
+    "subject": "Advanced Placement",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Advanced Placement",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HEN5212B",
+    "course_name": "AP English Language and Composition, 2nd Sem",
+    "subject": "Advanced Placement",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Advanced Placement",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSC4161B",
+    "course_name": "AP Environmental Science, 1st Sem",
+    "subject": "Advanced Placement",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Advanced Placement",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSC4162B",
+    "course_name": "AP Environmental Science, 2nd Sem",
+    "subject": "Advanced Placement",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Advanced Placement",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS4221B",
+    "course_name": "AP Human Geography, 1st Sem",
+    "subject": "Advanced Placement",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Advanced Placement",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS4222B",
+    "course_name": "AP Human Geography, 2nd Sem",
+    "subject": "Advanced Placement",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Advanced Placement",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS4341B",
+    "course_name": "AP Psychology, 1st Sem",
+    "subject": "Advanced Placement",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Advanced Placement",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS4342B",
+    "course_name": "AP Psychology, 2nd Sem",
+    "subject": "Advanced Placement",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Advanced Placement",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS2621B",
+    "course_name": "AP US History, 1st Sem",
+    "subject": "Advanced Placement",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Advanced Placement",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS2622B",
+    "course_name": "AP US History, 2nd Sem",
+    "subject": "Advanced Placement",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Advanced Placement",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "SD_SSC_420",
+    "course_name": "AP HUMAN GEOGRAPHY (spring semester only)",
+    "subject": "Social Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 38,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_SSC_410",
+    "course_name": "AP U.S. GOVERNMENT (spring semester only)",
+    "subject": "Social Science",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "Social Science",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 39,
+    "source": "South Dakota"
+  },
+  {
+    "course_id": "SD_WRL_401_402",
+    "course_name": "AP GERMAN LANGUAGE",
+    "subject": "World Languages",
+    "course_type": "AP",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "High",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "South Dakota",
+    "source_page": 45,
+    "source": "South Dakota"
   }
 ]

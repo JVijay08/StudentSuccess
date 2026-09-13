@@ -1,0 +1,4442 @@
+[
+  {
+    "course_id": "ND_HAV1011B",
+    "course_name": "Aerospace: The Journey of Flight, 1st Sem",
+    "subject": "Aerospace",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Aerospace",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAV1012B",
+    "course_name": "Aerospace: The Journey of Flight, 2nd Sem",
+    "subject": "Aerospace",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Aerospace",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAV1001B",
+    "course_name": "Introduction to Careers in Unmanned Aircraft Systems",
+    "subject": "Aerospace",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Aerospace",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAV1021B",
+    "course_name": "Private Pilot: Ground I",
+    "subject": "Aerospace",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Aerospace",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAV1022B",
+    "course_name": "Private Pilot: Ground II",
+    "subject": "Aerospace",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Aerospace",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAV1023B",
+    "course_name": "Private Pilot: Ground III",
+    "subject": "Aerospace",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Aerospace",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2061B",
+    "course_name": "Agribusiness I",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2062B",
+    "course_name": "Agribusiness II",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2071B",
+    "course_name": "Agricultural Careers",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2371B",
+    "course_name": "Animal Science I",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2372B",
+    "course_name": "Animal Science II",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2101B",
+    "course_name": "Animal Science: Beef Production",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG1381B",
+    "course_name": "Animal Science: Poultry Production",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2111B",
+    "course_name": "Animal Science: Sheep Production",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2121B",
+    "course_name": "Animal Science: Swine Production",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG1361B",
+    "course_name": "Arc and Gas Welding Theory",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2131B",
+    "course_name": "Crop Science",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2141B",
+    "course_name": "Equine Science I",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2321B",
+    "course_name": "Equine Science I: FFA and SAE",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2142B",
+    "course_name": "Equine Science II",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2143B",
+    "course_name": "Equine Science III",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2161B",
+    "course_name": "Farm Business Management: Credit & Financing",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2181B",
+    "course_name": "Farm Business Management: Financial Planning",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2151B",
+    "course_name": "Farm Business Management: Introduction",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2191B",
+    "course_name": "Farm Business Management: Production Decisions",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2211B",
+    "course_name": "Greenhouse Technology I",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2212B",
+    "course_name": "Greenhouse Technology II: Hydroponics",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2221B",
+    "course_name": "Introduction to Agriculture",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2281B",
+    "course_name": "Introduction to Agriculture: FFA and SAE",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2231B",
+    "course_name": "Leadership",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2261B",
+    "course_name": "Leadership: FFA and SAE",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2243B",
+    "course_name": "Plant Science",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2301B",
+    "course_name": "Plant Science: FFA and SAE",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG1391B",
+    "course_name": "Veterinary Assistant Certification I",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG1392B",
+    "course_name": "Veterinary Assistant Certification II",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2241B",
+    "course_name": "Veterinary Science I",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2311B",
+    "course_name": "Veterinary Science I: FFA and SAE",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG2242B",
+    "course_name": "Veterinary Science II",
+    "subject": "Agriculture",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Agriculture",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAR1271B",
+    "course_name": "2D Studio Art",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAR1261B",
+    "course_name": "3D Modeling",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAR3201B",
+    "course_name": "Art in World Cultures",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAR2021B",
+    "course_name": "Basic Drawing",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAR3031B",
+    "course_name": "Beginning Painting",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAR2221B",
+    "course_name": "Digital Art & Design",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAR2181B",
+    "course_name": "Digital Photography I",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAR3182B",
+    "course_name": "Digital Photography II",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAR2191B",
+    "course_name": "Fashion & Interior Design",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAR2231B",
+    "course_name": "Graphic Design, 1st Sem",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAR2232B",
+    "course_name": "Graphic Design, 2nd Sem",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HBU1261B",
+    "course_name": "Accounting I",
+    "subject": "Business & Marketing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business & Marketing",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HBU1262B",
+    "course_name": "Accounting II",
+    "subject": "Business & Marketing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business & Marketing",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HBU1341B",
+    "course_name": "Accounting III",
+    "subject": "Business & Marketing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business & Marketing",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HBU1342B",
+    "course_name": "Accounting IV",
+    "subject": "Business & Marketing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business & Marketing",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HBU2321B",
+    "course_name": "Basic Web Design",
+    "subject": "Business & Marketing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business & Marketing",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HBU1361B",
+    "course_name": "Entrepreneurship 1a: Introduction",
+    "subject": "Business & Marketing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business & Marketing",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HBU2231B",
+    "course_name": "Foundations in Personal Finance",
+    "subject": "Business & Marketing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business & Marketing",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HBU3131B",
+    "course_name": "Hospitality & Tourism: Traveling the Globe",
+    "subject": "Business & Marketing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business & Marketing",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HBU3121B",
+    "course_name": "International Business: Global Commerce in the 21st Century",
+    "subject": "Business & Marketing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business & Marketing",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HBU2291B",
+    "course_name": "Introduction to Business",
+    "subject": "Business & Marketing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business & Marketing",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HBU1331B",
+    "course_name": "Marketing Foundations 1a: Introduction",
+    "subject": "Business & Marketing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business & Marketing",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HBU1332B",
+    "course_name": "Marketing Foundations 1b: Building Your Base",
+    "subject": "Business & Marketing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business & Marketing",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HBU1351B",
+    "course_name": "Principles of Information Technology 1a: Introduction",
+    "subject": "Business & Marketing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business & Marketing",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HBU1352B",
+    "course_name": "Principles of Information Technology 1b: Working with Computers",
+    "subject": "Business & Marketing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business & Marketing",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HBU6181B",
+    "course_name": "Social Media: Our Connected World",
+    "subject": "Business & Marketing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business & Marketing",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HBU2141B",
+    "course_name": "Sports and Entertainment Marketing",
+    "subject": "Business & Marketing",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business & Marketing",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HCO1211B",
+    "course_name": "Cybersecurity 1a: Foundations",
+    "subject": "Computer Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Computer Education",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HCO1212B",
+    "course_name": "Cybersecurity 1b: Defense Against Threats",
+    "subject": "Computer Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Computer Education",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HCO4171B",
+    "course_name": "Foundations of Game Design 1a: Introduction",
+    "subject": "Computer Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Computer Education",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HCO4172B",
+    "course_name": "Foundations of Game Design 1b: Storytelling, Mechanics, and Production",
+    "subject": "Computer Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Computer Education",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HCO1251B",
+    "course_name": "Foundations of Programming",
+    "subject": "Computer Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Computer Education",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HCO1261B",
+    "course_name": "Introduction to Programming 1a: Introduction",
+    "subject": "Computer Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Computer Education",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HCO1262B",
+    "course_name": "Introduction to Programming 1b: Problem Solving through Programming",
+    "subject": "Computer Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Computer Education",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_DSC1011B",
+    "course_name": "Anatomy & Physiology, First Semester",
+    "subject": "Dual Credit",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Dual Credit",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_DSC1012B",
+    "course_name": "Anatomy & Physiology, Second Semester",
+    "subject": "Dual Credit",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Dual Credit",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_DMA1011B",
+    "course_name": "College Algebra",
+    "subject": "Dual Credit",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Dual Credit",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_DEN1011B",
+    "course_name": "English 110",
+    "subject": "Dual Credit",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Dual Credit",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_DEN1012B",
+    "course_name": "English 120",
+    "subject": "Dual Credit",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Dual Credit",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_DSC2021B",
+    "course_name": "General Biology I (with lab)",
+    "subject": "Dual Credit",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Dual Credit",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_DSC2022B",
+    "course_name": "General Biology II (with lab)",
+    "subject": "Dual Credit",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Dual Credit",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_DSS1011B",
+    "course_name": "Introduction to Psychology",
+    "subject": "Dual Credit",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Dual Credit",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_DGE1011B",
+    "course_name": "Principles of Education and Training",
+    "subject": "Dual Credit",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Dual Credit",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_DSS1021B",
+    "course_name": "Sociology",
+    "subject": "Dual Credit",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Dual Credit",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_DMA1021B",
+    "course_name": "Trigonometry",
+    "subject": "Dual Credit",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Dual Credit",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HEN4111B",
+    "course_name": "Creative Writing",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HEN5401B",
+    "course_name": "English Fundamentals: Writing",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HEN3261B",
+    "course_name": "Gothic Literature: Monster Stories",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HEN1701B",
+    "course_name": "Journalism 1a: Introduction",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HEN1702B",
+    "course_name": "Journalism 1b: Investigating the Truth",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HEN2631B",
+    "course_name": "Language Arts 10, 1st Sem",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HEN2632B",
+    "course_name": "Language Arts 10, 2nd Sem",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HEN3491B",
+    "course_name": "Language Arts 11, 1st Sem",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HEN3492B",
+    "course_name": "Language Arts 11, 2nd Sem",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HEN2571B",
+    "course_name": "Language Arts 12, 1st Sem",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HEN2572B",
+    "course_name": "Language Arts 12, 2nd Sem",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HEN1621B",
+    "course_name": "Language Arts 9, 1st Sem",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HEN1622B",
+    "course_name": "Language Arts 9, 2nd Sem",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HEN5121B",
+    "course_name": "Mythology and Folklore: Legendary Tales",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HEN1691B",
+    "course_name": "Public Speaking 1a: Introduction",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HEN1692B",
+    "course_name": "Public Speaking 1b: Finding Your Voice",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HEN1671B",
+    "course_name": "Reading and Writing for Purpose",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HEN2461B",
+    "course_name": "The Lord of the Rings: An Exploration of the Films and Their Literary Influences",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HEN5431B",
+    "course_name": "Theater Studies",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HEN2421B",
+    "course_name": "Theater, Cinema and Film Production",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HFC2201B",
+    "course_name": "Child Development",
+    "subject": "Family & Consumer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family & Consumer Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HFC1211B",
+    "course_name": "Culinary Arts 1a: Introduction",
+    "subject": "Family & Consumer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family & Consumer Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HFC1212B",
+    "course_name": "Culinary Arts 1b: Finding Your Palate",
+    "subject": "Family & Consumer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family & Consumer Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HFC1191B",
+    "course_name": "Culinary Arts 2: Baking, Pastry, and More!",
+    "subject": "Family & Consumer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family & Consumer Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HFC1221B",
+    "course_name": "Early Childhood Education 1a: Introduction",
+    "subject": "Family & Consumer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family & Consumer Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HFC1222B",
+    "course_name": "Early Childhood Education 1b: Developing Early Learners",
+    "subject": "Family & Consumer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family & Consumer Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HFC4111B",
+    "course_name": "Nutrition",
+    "subject": "Family & Consumer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family & Consumer Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HFC4071B",
+    "course_name": "Personal Management: Independent Living",
+    "subject": "Family & Consumer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family & Consumer Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HFC4121B",
+    "course_name": "Real World Parenting",
+    "subject": "Family & Consumer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family & Consumer Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HFC2081B",
+    "course_name": "Relationships",
+    "subject": "Family & Consumer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family & Consumer Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HHC1121B",
+    "course_name": "Allied Health Assistant 1a: Introduction",
+    "subject": "Health Careers",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Careers",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HHC1122B",
+    "course_name": "Allied Health Assistant 1b: Skills & Specialties",
+    "subject": "Health Careers",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Careers",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HHC1061B",
+    "course_name": "Health Careers",
+    "subject": "Health Careers",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Careers",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HHC1112B",
+    "course_name": "Health Science 1b: Professional Responsibilities",
+    "subject": "Health Careers",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Careers",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HHC1111B",
+    "course_name": "Health Science Foundations 1a: Introduction",
+    "subject": "Health Careers",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Careers",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HHC1091B",
+    "course_name": "Intro to Careers in Dentistry",
+    "subject": "Health Careers",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Careers",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HHC2011B",
+    "course_name": "Intro to Nursing I",
+    "subject": "Health Careers",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Careers",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HHC2012B",
+    "course_name": "Intro to Nursing II",
+    "subject": "Health Careers",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Careers",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HHC1101B",
+    "course_name": "Medical Terminology 1a: Introduction",
+    "subject": "Health Careers",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Careers",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HHC1102B",
+    "course_name": "Medical Terminology 1b: Discovering Word Foundations",
+    "subject": "Health Careers",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health Careers",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HMA1561B",
+    "course_name": "Algebra 1, 1st Sem",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HMA1562B",
+    "course_name": "Algebra 1, 2nd Sem",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HMA1571B",
+    "course_name": "Algebra 2, 1st Sem",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HMA1572B",
+    "course_name": "Algebra 2, 2nd Sem",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HMA1531B",
+    "course_name": "Consumer Math, 1st Sem",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HMA1532B",
+    "course_name": "Consumer Math, 2nd Sem",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HMA2491B",
+    "course_name": "General Math, 1st Sem",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HMA2492B",
+    "course_name": "General Math, 2nd Sem",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HMA1551B",
+    "course_name": "Geometry, 1st Sem",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HMA1552B",
+    "course_name": "Geometry, 2nd Sem",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HMA1541B",
+    "course_name": "Prealgebra, 1st Sem",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HMA1542B",
+    "course_name": "Prealgebra, 2nd Sem",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HMA2521B",
+    "course_name": "Precalculus, 1st Sem",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HMA2522B",
+    "course_name": "Precalculus, 2nd Sem",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HMU2061B",
+    "course_name": "Beginning Piano",
+    "subject": "Music",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Music",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HMU2051B",
+    "course_name": "Guitar I, 1st Sem",
+    "subject": "Music",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Music",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HMU2052B",
+    "course_name": "Guitar I, 2nd Sem",
+    "subject": "Music",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Music",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HMU6041B",
+    "course_name": "Music Appreciation: The Enjoyment of Listening",
+    "subject": "Music",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Music",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HPH3071B",
+    "course_name": "Advanced PE I",
+    "subject": "Physical Education & Health",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education & Health",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HPH1181B",
+    "course_name": "Drugs & Alcohol",
+    "subject": "Physical Education & Health",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education & Health",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HPH3101B",
+    "course_name": "Exercise Science",
+    "subject": "Physical Education & Health",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education & Health",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HPH1171B",
+    "course_name": "First Aid & Safety",
+    "subject": "Physical Education & Health",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education & Health",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HPH4061B",
+    "course_name": "Fitness Fundamentals I",
+    "subject": "Physical Education & Health",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education & Health",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HPH3211B",
+    "course_name": "Health and Personal Wellness",
+    "subject": "Physical Education & Health",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education & Health",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HPH1191B",
+    "course_name": "Intro to Coaching",
+    "subject": "Physical Education & Health",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education & Health",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HPH3121B",
+    "course_name": "Intro to Group Sports",
+    "subject": "Physical Education & Health",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education & Health",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HPH3131B",
+    "course_name": "Intro to Individual Sports",
+    "subject": "Physical Education & Health",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education & Health",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HPH3141B",
+    "course_name": "Running",
+    "subject": "Physical Education & Health",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education & Health",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HPH1201B",
+    "course_name": "Sports Officiating",
+    "subject": "Physical Education & Health",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education & Health",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HPH3151B",
+    "course_name": "Strength Training",
+    "subject": "Physical Education & Health",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education & Health",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HPH3161B",
+    "course_name": "Walking Fitness",
+    "subject": "Physical Education & Health",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education & Health",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSC2491B",
+    "course_name": "Anatomy and Physiology 1a: Introduction",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSC2492B",
+    "course_name": "Anatomy and Physiology 1b: Discovering Form and Function",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSC1501B",
+    "course_name": "Astronomy 1a: Introduction",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSC1502B",
+    "course_name": "Astronomy 1b: Exploring the Universe",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSC1521B",
+    "course_name": "Biology, 1st Sem",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSC1522B",
+    "course_name": "Biology, 2nd Sem",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSC2451B",
+    "course_name": "Chemistry, 1st Sem",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSC2452B",
+    "course_name": "Chemistry, 2nd Sem",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSC4221B",
+    "course_name": "Forensic Science II: More Secrets of the Dead",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSC1471B",
+    "course_name": "Forensics: The Science of Crime",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSC2411B",
+    "course_name": "Introduction to Forestry & Natural Resources",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSC2401B",
+    "course_name": "Introduction to Renewable Technologies",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSC2421B",
+    "course_name": "Marine Science: Secrets of the Blue",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSC1431B",
+    "course_name": "Meteorology",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSC3081B",
+    "course_name": "Ornithology",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSC1511B",
+    "course_name": "Physical Science, 1st Sem",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSC1512B",
+    "course_name": "Physical Science, 2nd Sem",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSC1481B",
+    "course_name": "Physics, 1st Sem",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSC1482B",
+    "course_name": "Physics, 2nd Sem",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS3811B",
+    "course_name": "African-American History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS4721B",
+    "course_name": "American History, 1st Sem",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS4722B",
+    "course_name": "American History, 2nd Sem",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS4441B",
+    "course_name": "Anthropology I: Uncovering Human Mysteries",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS4411B",
+    "course_name": "Criminology: Inside the Criminal Mind",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS1641B",
+    "course_name": "Economics with Financial Literacy",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS2481B",
+    "course_name": "History of the Holocaust",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS2761B",
+    "course_name": "Human Geography: Our Global Identity",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS2771B",
+    "course_name": "Introduction to Women's Studies: A Personal Journey Through Film",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS4301B",
+    "course_name": "Law & Order: Introduction to Legal Studies",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS2841B",
+    "course_name": "North Dakota Studies",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS4311B",
+    "course_name": "Personal Psychology I: The Road to Self Discovery",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS4312B",
+    "course_name": "Personal Psychology II: Living in a Complex World",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS2781B",
+    "course_name": "Social Problems I: A World in Crisis",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS2791B",
+    "course_name": "Social Problems II: Crisis, Conflicts & Challenges",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS4401B",
+    "course_name": "Sociology I: The Study of Human Relationships",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS4402B",
+    "course_name": "Sociology II: Your Social Life",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS1881B",
+    "course_name": "United States Government",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS1821B",
+    "course_name": "World History, 1st Sem",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS1822B",
+    "course_name": "World History, 2nd Sem",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HSS4391B",
+    "course_name": "World Religions: Exploring Diversity",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HTE4021B",
+    "course_name": "Auto Fundamentals",
+    "subject": "Technical & Agriculture Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Technical & Agriculture Education",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HTE3051B",
+    "course_name": "Carpentry and Building Construction",
+    "subject": "Technical & Agriculture Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Technical & Agriculture Education",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HTE2121B",
+    "course_name": "Concepts of Engineering & Technology",
+    "subject": "Technical & Agriculture Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Technical & Agriculture Education",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HTE2111B",
+    "course_name": "Introduction to Manufacturing: Product Design & Innovation",
+    "subject": "Technical & Agriculture Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Technical & Agriculture Education",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG1351B",
+    "course_name": "Principles of Agriculture, Food & Natural Resources",
+    "subject": "Technical & Agriculture Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Technical & Agriculture Education",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HAG3031B",
+    "course_name": "Small Pet Care",
+    "subject": "Technical & Agriculture Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Technical & Agriculture Education",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HHC1071B",
+    "course_name": "American Sign Language 1a: Introduction",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HHC1072B",
+    "course_name": "American Sign Language 1b: Learn to Sign",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HHC1081B",
+    "course_name": "American Sign Language 2a: Communicating",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HHC1082B",
+    "course_name": "American Sign Language 2b: Advancing Communication Skills",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HWL1211B",
+    "course_name": "French I, 1st Sem",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HWL1212B",
+    "course_name": "French I, 2nd Sem",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HWL1221B",
+    "course_name": "French II, 3rd Sem",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HWL1222B",
+    "course_name": "French II, 4th Sem",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HWL1191B",
+    "course_name": "German I, 1st Sem",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HWL1192B",
+    "course_name": "German I, 2nd Sem",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HWL1201B",
+    "course_name": "German II, 3rd Sem",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HWL1202B",
+    "course_name": "German II, 4th Sem",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HWL1231B",
+    "course_name": "Latin I, 1st Sem",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HWL1232B",
+    "course_name": "Latin I, 2nd Sem",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HWL1241B",
+    "course_name": "Latin II, 3rd Sem",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HWL1242B",
+    "course_name": "Latin II, 4th Sem",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HWL1251B",
+    "course_name": "Spanish I, 1st Sem",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HWL1252B",
+    "course_name": "Spanish I, 2nd Sem",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HWL1261B",
+    "course_name": "Spanish II, 3rd Sem",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HWL1262B",
+    "course_name": "Spanish II, 4th Sem",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HWL1271B",
+    "course_name": "Spanish III, 5th Sem",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  },
+  {
+    "course_id": "ND_HWL1272B",
+    "course_name": "Spanish III, 6th Sem",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "North Dakota",
+    "source_page": null,
+    "source": "North Dakota"
+  }
+]

@@ -39,7 +39,7 @@ Each course record contains:
 - `graduation_category`: graduation-area label
 - `career_clusters`: optional related career categories
 
-The catalogs are separated into national reference, state, Forsyth County local, AP program, and IB program sources. State coverage follows the supplied source documents and may be statewide, provider-specific, or school-specific. These catalogs are reference data, not student behavior data or official universal graduation rules.
+The catalogs are separated into national reference, state, Forsyth County local, AP program, and IB program sources. State coverage follows the supplied source documents and may be statewide, provider-specific, district-specific, pathway-specific, or school-specific. These catalogs are reference data, not student behavior data or official universal graduation rules.
 
 ## PlannedCourse (implemented)
 

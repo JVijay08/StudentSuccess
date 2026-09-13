@@ -1,0 +1,2962 @@
+[
+  {
+    "course_id": "IA_MIS321_322",
+    "course_name": "ALP Extended Learning Seminar",
+    "subject": "Additional Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Additional Electives",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 50,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_MIS324",
+    "course_name": "ALP Leadership & Mentoring",
+    "subject": "Additional Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Additional Electives",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 50,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_MIS3422",
+    "course_name": "Avenue Scholars Employability Skills",
+    "subject": "Additional Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Additional Electives",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 51,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_MIS441_442_4422",
+    "course_name": "Avenue Scholars Exploring Careers",
+    "subject": "Additional Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Additional Electives",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 52,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_MIS3412",
+    "course_name": "Avenue Scholars Exploring Careers 1",
+    "subject": "Additional Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Additional Electives",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 51,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_MIS261_262",
+    "course_name": "College Career Readiness 10",
+    "subject": "Additional Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Additional Electives",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 52,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_MIS361_362",
+    "course_name": "College Career Readiness 11",
+    "subject": "Additional Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Additional Electives",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 52,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_MIS461_462",
+    "course_name": "College Career Readiness 12",
+    "subject": "Additional Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Additional Electives",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 53,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_MIS161_162",
+    "course_name": "College Career Readiness 9",
+    "subject": "Additional Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Additional Electives",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 52,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_MIS495_496_4962",
+    "course_name": "Exploring Careers I-JAG (MIS195/1952/196/1962), (MIS295/2952/296/2962), (MIS395/396/3962),",
+    "subject": "Additional Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Additional Electives",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 53,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_MIS315_316",
+    "course_name": "Leadership",
+    "subject": "Additional Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Additional Electives",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 50,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_BUS301",
+    "course_name": "Accounting",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 70,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_BUS333",
+    "course_name": "Advanced Computer Applications",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 70,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_BUS133",
+    "course_name": "Careers in Business",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 69,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_FCS103",
+    "course_name": "Child Development 1",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 82,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_FCS203",
+    "course_name": "Child Development 2",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 82,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_EGR508",
+    "course_name": "College Civil Engineering & Architecture",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 63,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_FCS213",
+    "course_name": "Fashion Runway",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 85,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_CTE101",
+    "course_name": "Future Ready: Acad Career Plan",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 86,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_CTE301",
+    "course_name": "Future Set: Acad Career Plan",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 86,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_BUS105",
+    "course_name": "General Business",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 70,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_HLTH201",
+    "course_name": "Health: Relationships",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 83,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_FCS207",
+    "course_name": "Housing & Design Industry",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 85,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_BUS163",
+    "course_name": "Intro Social Media Marketing",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 71,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_BUS111",
+    "course_name": "Intro to Computer Apps",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 69,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_BUS314",
+    "course_name": "Intro to Entrepreneurship",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 72,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_HLTH131",
+    "course_name": "Intro to Health Sci Careers",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 87,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_BUS311",
+    "course_name": "Intro to Marketing",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 71,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_BUS313",
+    "course_name": "Marketing / Sales",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 71,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_FCS107",
+    "course_name": "Nutrition & Food Prep 1",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 83,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_FCS109",
+    "course_name": "Nutrition & Food Prep 2",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 83,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_EGR506",
+    "course_name": "PLTW Digital Electronics",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 62,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_HLTH101",
+    "course_name": "Personal Health & Development",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 82,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_FCS225",
+    "course_name": "Sustainable Fashion & Construction",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 84,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_FCS113",
+    "course_name": "Textile Construction (Sewing) 1",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 84,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_FCS205",
+    "course_name": "Textile Construction (Sewing) 2",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 84,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_STA2662",
+    "course_name": "Year 1 = *Carpentry (STA265/2652/2653/2654) and Carpentry HS",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 75,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_CUL3653",
+    "course_name": "Year 1 = *Culinary Arts (CUL365/3652/366/3663) and Culinary Arts HS",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 83,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ART361_3622",
+    "course_name": "Year 1 = *Graphic Communications",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 65,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_STA3762",
+    "course_name": "Year 1 = *Welding (STA375/3752/3753/3763) and Welding HS",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 76,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_CAR3133_3144",
+    "course_name": "Year 1 = Automotive Collision HS",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 89,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_MDA2112_2122",
+    "course_name": "Year 1 = Broadcasting/Film I HS (MDA211/212) and *Broadcasting/Film I",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 65,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_TAC251_2522",
+    "course_name": "Year 1 = Dream to Teach I HS",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 81,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_STA371_372",
+    "course_name": "Year 1 = Electrical Construction HS",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 75,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_FDM3274_3284_3285",
+    "course_name": "Year 1 = Fashion Design & Merch HS",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 85,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_CUL465_4652_4653_466_4662_4663",
+    "course_name": "Year 2 = *Culinary Arts II",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 83,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_FDM4273_428",
+    "course_name": "Year 2 = *Fashion Design & Merchandising II (FDM427/4274) & Fashion Design & Merch II HS",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 85,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_STA475_4754_4755_4764_4767",
+    "course_name": "Year 2 = *Welding II",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 76,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_CAR4133_4142",
+    "course_name": "Year 2 = Automotive Collision II HS",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 89,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_MDA3112_3122",
+    "course_name": "Year 2 = Broadcasting & Film II (MDA311/312) and *Broadcasting/Film II",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 65,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_STA471_472",
+    "course_name": "Year 2 = Electrical Construction II HS",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 75,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_CUL4693",
+    "course_name": "Year 3 = *Culinary Arts III (CUL469/4692/4694/4695/4696/4697/472) and Culinary Arts III HS",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 83,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ART4693_470",
+    "course_name": "Year 3 = *Graphic Comm III GRD463 (ART4692) and Adv Graphic Comm III HS",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 65,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_MDA411_412",
+    "course_name": "Year 3 = Broadcasting & Film III HS",
+    "subject": "Career & Technology Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career & Technology Education",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 65,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_LA531_532",
+    "course_name": "College AP English Language & Composition",
+    "subject": "English and Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English and Language Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 24,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_LA529_530",
+    "course_name": "College AP English Literature & Composition",
+    "subject": "English and Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English and Language Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 24,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_LA526",
+    "course_name": "College Creative Writing",
+    "subject": "English and Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English and Language Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 23,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_LA521",
+    "course_name": "College Speech",
+    "subject": "English and Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English and Language Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 23,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_LA303",
+    "course_name": "Creative Writing 1",
+    "subject": "English and Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English and Language Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 22,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_LA411",
+    "course_name": "Creative Writing 2",
+    "subject": "English and Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English and Language Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 23,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_LA103_104",
+    "course_name": "English I",
+    "subject": "English and Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English and Language Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 21,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_LA205_206",
+    "course_name": "English II",
+    "subject": "English and Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English and Language Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 21,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_LA305_306",
+    "course_name": "English III",
+    "subject": "English and Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English and Language Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 22,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_LA403_404",
+    "course_name": "English IV",
+    "subject": "English and Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English and Language Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 22,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_LA220",
+    "course_name": "Journalism (EN)",
+    "subject": "English and Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English and Language Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 21,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_LA315",
+    "course_name": "Mass Comm / Mass Media",
+    "subject": "English and Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English and Language Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 22,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_LA321",
+    "course_name": "Newspaper",
+    "subject": "English and Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English and Language Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 22,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_LA1210_1220",
+    "course_name": "Power English",
+    "subject": "English and Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English and Language Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 21,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_LA227",
+    "course_name": "Speech",
+    "subject": "English and Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English and Language Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 22,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_LA131",
+    "course_name": "Thematic Study of Literature 1",
+    "subject": "English and Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English and Language Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 21,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_LA231",
+    "course_name": "Thematic Study of Literature 2",
+    "subject": "English and Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English and Language Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 21,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_LA323",
+    "course_name": "Yearbook",
+    "subject": "English and Language Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English and Language Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 22,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_MTH111_112",
+    "course_name": "Algebra I",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 26,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_MTH311_312",
+    "course_name": "Algebra II",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 26,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_MTH351_352",
+    "course_name": "Compacted Algebra II/Pre-Calculus",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 26,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_MTH325_326",
+    "course_name": "Exploring Justice through Mathematics",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 26,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_MTH327_328",
+    "course_name": "Exploring Math in the Trades",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 26,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_MTH211_212",
+    "course_name": "Geometry",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 26,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_DRM331_332",
+    "course_name": "Advanced Play Production",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 41,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_DRM329_330",
+    "course_name": "Advanced Theatre Arts",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 41,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_VOC209_210",
+    "course_name": "Auditioned Treble Choir",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 39,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_BND101_102",
+    "course_name": "Band",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 37,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_VOC113_114",
+    "course_name": "Bass Choir",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 39,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_VOC311_312",
+    "course_name": "Chamber Choir",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 39,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ORC301_302",
+    "course_name": "Chamber Orchestra",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 40,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_VOC101_102",
+    "course_name": "Concert Choir",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 38,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_VOC223_224",
+    "course_name": "Gospel Choir",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 39,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_DRM231_232",
+    "course_name": "Intermediate Play Production",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 41,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_DRM229_230",
+    "course_name": "Intermediate Theatre Arts",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 41,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_DRM131_132",
+    "course_name": "Intro Play Production",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 41,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_DRM129_130",
+    "course_name": "Intro Theatre Arts",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 41,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_VOC221_222",
+    "course_name": "Jazz Choir",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 39,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_BND307_308",
+    "course_name": "Jazz I",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 38,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_BND207_208",
+    "course_name": "Jazz II",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 38,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_MUS153",
+    "course_name": "Music Theory",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 40,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ORC101_102",
+    "course_name": "Orchestra",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 40,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_VOC211_212",
+    "course_name": "Show Choir",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 39,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_VOC111_112",
+    "course_name": "Treble Choir",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 38,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_VOC403_404",
+    "course_name": "Varsity Show Choir",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 39,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_BND117_118",
+    "course_name": "Wind Ensemble",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 37,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_PHY241",
+    "course_name": "Aquatics",
+    "subject": "Physical Education & Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education & Health Science",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 49,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_PHY100N",
+    "course_name": "Exploratory PE (9th Grade)",
+    "subject": "Physical Education & Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education & Health Science",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 47,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_PHY115",
+    "course_name": "Fitness Walking",
+    "subject": "Physical Education & Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education & Health Science",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 48,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_PHY131",
+    "course_name": "Innovative Fitness",
+    "subject": "Physical Education & Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education & Health Science",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 48,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_PHY227",
+    "course_name": "Psychology of Health & Fit",
+    "subject": "Physical Education & Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education & Health Science",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 49,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_PHY327_328",
+    "course_name": "Sports Officiating and Leadership",
+    "subject": "Physical Education & Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education & Health Science",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 49,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_PHY105",
+    "course_name": "Team Games/Act & Sports",
+    "subject": "Physical Education & Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education & Health Science",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 48,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_PHY109",
+    "course_name": "Total Body Fitness & Cond",
+    "subject": "Physical Education & Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education & Health Science",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 48,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_PHY117",
+    "course_name": "Unified PE",
+    "subject": "Physical Education & Health Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education & Health Science",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 48,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_SCI309",
+    "course_name": "Anatomy and Physiology",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 35,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_SCI311",
+    "course_name": "Astronomy",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 35,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_SCI203_204",
+    "course_name": "Biology",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 34,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_SCI301_302",
+    "course_name": "Chemistry",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 34,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_SCI519",
+    "course_name": "College AP Physics",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 36,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_SCI205_206",
+    "course_name": "Conceptual Physics",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 34,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_SCI201",
+    "course_name": "Environmental Science",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 34,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_SCI303",
+    "course_name": "Forensic Science",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 34,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_SOC263",
+    "course_name": "African American Studies",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 29,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_SOC261",
+    "course_name": "Global Black History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 29,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_SOC405",
+    "course_name": "Government",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 30,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_SOC265",
+    "course_name": "Indigenous/Native Peoples\u2019 History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 30,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_SOC269",
+    "course_name": "Latin American History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 30,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_SOC103_104",
+    "course_name": "Modern US History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 29,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_SOC407",
+    "course_name": "Personal Economics",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 30,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_SOC205",
+    "course_name": "Psychology",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 29,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_SOC209",
+    "course_name": "Sociology",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 29,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ART311_312",
+    "course_name": "Advanced 3D Design",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 45,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ART331",
+    "course_name": "Advanced Art History",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 45,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ART305_306",
+    "course_name": "Advanced Drawing",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 44,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ART341_342",
+    "course_name": "Advanced Graphic Design",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 45,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ART307_308",
+    "course_name": "Advanced Painting",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 44,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ART335_336",
+    "course_name": "Advanced Photography",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 45,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ART211",
+    "course_name": "Intermediate 3D Design-1",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 44,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ART231",
+    "course_name": "Intermediate Art History-1",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 44,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ART205",
+    "course_name": "Intermediate Drawing",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 43,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ART241",
+    "course_name": "Intermediate Graphic Design-1",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 44,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ART207",
+    "course_name": "Intermediate Painting",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 43,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ART235",
+    "course_name": "Intermediate Photography",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 44,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ART121",
+    "course_name": "Intro 2D Art",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 43,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ART122",
+    "course_name": "Intro 3D Art",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 43,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ART141",
+    "course_name": "Intro to Graphic Design",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 43,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_ART135",
+    "course_name": "Intro to Photography",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 43,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_WL519_520",
+    "course_name": "College AP Spanish IV",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 56,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_WL213_214",
+    "course_name": "Heritage Spanish Foundations",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 55,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_WL417_418",
+    "course_name": "Heritage Spanish Language Arts",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 55,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_WL111_112",
+    "course_name": "Spanish I",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 54,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_WL211_212",
+    "course_name": "Spanish II",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 55,
+    "source": "Iowa"
+  },
+  {
+    "course_id": "IA_WL311_312",
+    "course_name": "Spanish III",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "Iowa",
+    "source_page": 55,
+    "source": "Iowa"
+  }
+]

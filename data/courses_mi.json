@@ -1,0 +1,2862 @@
+[
+  {
+    "course_id": "MI_8213_8214",
+    "course_name": "Advanced Ceramics",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 21,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8293_8294",
+    "course_name": "Advanced Comic Illustration",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 22,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8043_8044",
+    "course_name": "Advanced Design",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 20,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8003_8004",
+    "course_name": "Advanced Drawing",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 20,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8403_8404",
+    "course_name": "Advanced Fiber Arts",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 21,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8283_8284",
+    "course_name": "Advanced Jewelry",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 22,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8163_8164",
+    "course_name": "Advanced Painting",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 21,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8373_8374",
+    "course_name": "Advanced Photography",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 22,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8211_8212",
+    "course_name": "Advanced Pottery and Sculpture",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 21,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8201",
+    "course_name": "Ceramics",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 21,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8291",
+    "course_name": "Comic Illustration",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 22,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8041",
+    "course_name": "Design",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 20,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8001",
+    "course_name": "Drawing",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 20,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8401",
+    "course_name": "Fiber Arts",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 21,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8281",
+    "course_name": "Jewelry",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 21,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8161",
+    "course_name": "Painting",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 20,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8371",
+    "course_name": "Photography",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 22,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8191",
+    "course_name": "Pottery and Sculpture",
+    "subject": "Art",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Art",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 21,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_6501",
+    "course_name": "Advanced Personal Financial Planning",
+    "subject": "Business",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 23,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_6883_6884",
+    "course_name": "Advanced School-Based Enterprise",
+    "subject": "Business",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 24,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_1835",
+    "course_name": "Applied Communication for the Office",
+    "subject": "Business",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 24,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_6411",
+    "course_name": "Business Law and Your Rights",
+    "subject": "Business",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 22,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_6841",
+    "course_name": "Entrepreneurship",
+    "subject": "Business",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 23,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_6831_6832",
+    "course_name": "Intro to Marketing",
+    "subject": "Business",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 23,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_6051",
+    "course_name": "Microsoft Office Suite",
+    "subject": "Business",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 23,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_6511",
+    "course_name": "Personal Financial Planning",
+    "subject": "Business",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 23,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_6881_6882",
+    "course_name": "School-Based Enterprise",
+    "subject": "Business",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 24,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_6301",
+    "course_name": "Small Business Accounting",
+    "subject": "Business",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 23,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_6861",
+    "course_name": "Sports and Entertainment Marketing",
+    "subject": "Business",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Business",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 24,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_9011_9012",
+    "course_name": "Auto Collision & Refinishing",
+    "subject": "Career and Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career and Technical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 55,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_9031_9032",
+    "course_name": "Automotive Technology 1",
+    "subject": "Career and Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career and Technical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 55,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_9041_9042",
+    "course_name": "Automotive Technology 2",
+    "subject": "Career and Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career and Technical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 55,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_9081_9082",
+    "course_name": "Construction Technology",
+    "subject": "Career and Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career and Technical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 56,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_9151_9152",
+    "course_name": "Criminal Justice",
+    "subject": "Career and Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career and Technical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 56,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_9101_9102",
+    "course_name": "Culinary Arts 1/2",
+    "subject": "Career and Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career and Technical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 56,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_9091_9092",
+    "course_name": "Education: Early Childhood",
+    "subject": "Career and Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career and Technical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 56,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_1397_1398",
+    "course_name": "English: Broadcast Journalism",
+    "subject": "Career and Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career and Technical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 57,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_9181_9182",
+    "course_name": "Graphic Arts and Design Technology",
+    "subject": "Career and Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career and Technical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 57,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_9481_9482",
+    "course_name": "Health Occupations",
+    "subject": "Career and Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career and Technical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 57,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_9601_9602",
+    "course_name": "Horticulture Science",
+    "subject": "Career and Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career and Technical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 58,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_9145_9146",
+    "course_name": "Hospitality Tourism Management",
+    "subject": "Career and Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career and Technical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 57,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_9291_9292",
+    "course_name": "Introduction to Cyber Security",
+    "subject": "Career and Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career and Technical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 58,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_7711_7712",
+    "course_name": "Mechanical Drafting",
+    "subject": "Career and Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career and Technical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 59,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_9421_9422",
+    "course_name": "Medical Assisting",
+    "subject": "Career and Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career and Technical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 58,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_9441_9442",
+    "course_name": "Medical Investigations",
+    "subject": "Career and Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career and Technical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 59,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_9071_9072",
+    "course_name": "PC Servicing and Networking",
+    "subject": "Career and Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career and Technical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 59,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_9451_9452",
+    "course_name": "Sports Medicine, Physical Therapy, and Occupational Therapy",
+    "subject": "Career and Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career and Technical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 59,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_9871_9872",
+    "course_name": "Student Externship",
+    "subject": "Career and Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career and Technical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 60,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_1677_1678",
+    "course_name": "TV and Broadcast Media",
+    "subject": "Career and Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career and Technical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 60,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_9831_9832",
+    "course_name": "Teacher Cadet",
+    "subject": "Career and Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career and Technical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 60,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_9971_9972",
+    "course_name": "Work-Based Learning (WBL)",
+    "subject": "Career and Technical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Career and Technical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 60,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_1251",
+    "course_name": "Acting",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 27,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_1111",
+    "course_name": "Creative Writing",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 27,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_1221",
+    "course_name": "Debate",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 28,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_1371_1372",
+    "course_name": "English 11",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 26,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_1381_1382",
+    "course_name": "English 12",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 26,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_1331_1332",
+    "course_name": "English 9",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 25,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_1731_1732",
+    "course_name": "English \u2013 College and Career Literacy",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 28,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_1141",
+    "course_name": "Journalism",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 27,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_1741_1742",
+    "course_name": "Leadership / Mentoring \u2013 Communication",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 28,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_1181_1182",
+    "course_name": "Publications",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 28,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_1201",
+    "course_name": "Speech",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 27,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_7701",
+    "course_name": "Technology Education (Modular Technology)",
+    "subject": "Industrial Technology",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Industrial Technology",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 29,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_7371",
+    "course_name": "Child Development",
+    "subject": "Life Management",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Life Management",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 30,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_7391",
+    "course_name": "Food and Nutrition",
+    "subject": "Life Management",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Life Management",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 29,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_7151",
+    "course_name": "Gourmet Cooking",
+    "subject": "Life Management",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Life Management",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 30,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_7281",
+    "course_name": "Independent Living",
+    "subject": "Life Management",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Life Management",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 30,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_3101_3102",
+    "course_name": "Algebra 1",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 31,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_3103_3104",
+    "course_name": "Algebra 1 Essentials",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 32,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_3301_3302",
+    "course_name": "Algebra 2",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 32,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_3405_3406",
+    "course_name": "Algebra 2 Essentials",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 32,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_3391_3392",
+    "course_name": "Financial Algebra",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 33,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_3201_3202",
+    "course_name": "Geometry",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 32,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_3193_3194",
+    "course_name": "Geometry Essentials",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 32,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_3311_3312",
+    "course_name": "Honors Algebra 2",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 32,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_3211_3212",
+    "course_name": "Honors Geometry",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 32,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_3941_3942",
+    "course_name": "Mathematical Reasoning for College & Career Readiness",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 34,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_3105_3106",
+    "course_name": "Pre-Algebra",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 31,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_3151_3152",
+    "course_name": "Statistics",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 33,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8901_8902",
+    "course_name": "Concert Choir",
+    "subject": "Music",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Music",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 36,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8711_8712",
+    "course_name": "Ensembles / Sectionals \u2013 Vocal",
+    "subject": "Music",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Music",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 36,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8521_8522",
+    "course_name": "Freshman Band",
+    "subject": "Music",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Music",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 35,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8601_8602",
+    "course_name": "Freshman Choir",
+    "subject": "Music",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Music",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 36,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8531_8532",
+    "course_name": "Jazz Band",
+    "subject": "Music",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Music",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 35,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8565",
+    "course_name": "Music Appreciation",
+    "subject": "Music",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Music",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 36,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8801_8802",
+    "course_name": "Show Choir",
+    "subject": "Music",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Music",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 36,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8511_8512",
+    "course_name": "Symphony Band",
+    "subject": "Music",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Music",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 35,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8501_8502",
+    "course_name": "Wind Symphony",
+    "subject": "Music",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Music",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 35,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8617_8618",
+    "course_name": "Dance 1",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 63,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8717_8718",
+    "course_name": "Dance 2",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 63,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_8817_8818",
+    "course_name": "Dance 3",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 63,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_1367_1368",
+    "course_name": "English 10",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 61,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_1347_1348",
+    "course_name": "English 11",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 62,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_1337_1338",
+    "course_name": "English 9",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 61,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_1257_1258",
+    "course_name": "Theatre 10",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 62,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_1267_1268",
+    "course_name": "Theatre 11",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 62,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_1277_1278",
+    "course_name": "Theatre 12",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 62,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_1247_1248",
+    "course_name": "Theatre 9",
+    "subject": "Performing Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Performing Arts",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 61,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_0101",
+    "course_name": "Advanced Physical Education",
+    "subject": "Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 38,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_0421",
+    "course_name": "Aerobic Exercise",
+    "subject": "Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 39,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_0911",
+    "course_name": "Foundations of Physical Education",
+    "subject": "Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 38,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_0251",
+    "course_name": "Health Education",
+    "subject": "Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 38,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_0071",
+    "course_name": "Team Sports",
+    "subject": "Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 38,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_0311",
+    "course_name": "Weight Training",
+    "subject": "Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Physical Education",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 39,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_4131_4132",
+    "course_name": "Anatomy and Physiology",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 41,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_4121_4122",
+    "course_name": "Biology",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 40,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_4221_4222",
+    "course_name": "Chemistry",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 40,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_4161",
+    "course_name": "Earth & Space Science \u2013 Astronomy",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 42,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_4141",
+    "course_name": "Environmental Science",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 42,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_4041",
+    "course_name": "Forensic Science A",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 41,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_4042",
+    "course_name": "Forensic Science B",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 42,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_4151_4152",
+    "course_name": "Honors Biology",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 40,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_4251_4252",
+    "course_name": "Honors Chemistry",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 41,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_4321_4322",
+    "course_name": "Honors Physics",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 41,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_4311_4312",
+    "course_name": "Physics",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 41,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_9853",
+    "course_name": "Robotics Club",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 42,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_4941_4942",
+    "course_name": "Scientific Reasoning for College & Career Readiness",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 42,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_2351",
+    "course_name": "Economics \u2013 Integrated Social Studies",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 44,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_2231",
+    "course_name": "Government",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 43,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_2103_2104",
+    "course_name": "Honors U.S. History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 43,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_1751_1752",
+    "course_name": "Leadership / Mentoring \u2013 Social Studies",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 45,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_2451",
+    "course_name": "Psychology",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 45,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_2141_2142",
+    "course_name": "Social Studies \u2013 College and Career Literacy",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 45,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_2311",
+    "course_name": "Sociology",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 45,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_2101_2102",
+    "course_name": "U.S. History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 43,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_2011_2012",
+    "course_name": "World History",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 44,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_5311_5312",
+    "course_name": "French 1",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 46,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_5321_5322",
+    "course_name": "French 2",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 46,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_5331_5332",
+    "course_name": "French 3",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 46,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_5341_5342",
+    "course_name": "French 4",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 47,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_5611_5612",
+    "course_name": "German 1",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 46,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_5621_5622",
+    "course_name": "German 2",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 46,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_5631_5632",
+    "course_name": "German 3",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 46,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_5641_5642",
+    "course_name": "German 4",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 47,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_5811_5812",
+    "course_name": "Italian 1",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 46,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_5821_5822",
+    "course_name": "Italian 2",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 46,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_5831_5832",
+    "course_name": "Italian 3",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 46,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_5841_5842",
+    "course_name": "Italian 4",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 47,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_5511_5512",
+    "course_name": "Spanish 1",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 46,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_5521_5522",
+    "course_name": "Spanish 2",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 46,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_5531_5532",
+    "course_name": "Spanish 3",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 46,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_5541_5542",
+    "course_name": "Spanish 4",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 47,
+    "source": "Michigan"
+  },
+  {
+    "course_id": "MI_5551_5552",
+    "course_name": "Spanish 5",
+    "subject": "World Language",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Language",
+    "career_clusters": [],
+    "source_state": "Michigan",
+    "source_page": 47,
+    "source": "Michigan"
+  }
+]

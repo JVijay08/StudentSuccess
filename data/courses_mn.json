@@ -1,0 +1,142 @@
+[
+  {
+    "course_id": "MN_01009",
+    "course_name": "English as a Second Language (ESL)\u2013Transition Language Arts",
+    "subject": "English Language and Literature",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language and Literature",
+    "career_clusters": [],
+    "source_state": "Minnesota",
+    "source_page": null,
+    "source": "Minnesota"
+  },
+  {
+    "course_id": "MN_01011",
+    "course_name": "English/Language Arts Comprehensive\u2013Multi-Grade Level",
+    "subject": "English Language and Literature",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language and Literature",
+    "career_clusters": [],
+    "source_state": "Minnesota",
+    "source_page": null,
+    "source": "Minnesota"
+  },
+  {
+    "course_id": "MN_01001",
+    "course_name": "English/Language Arts I (9th Grade)",
+    "subject": "English Language and Literature",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language and Literature",
+    "career_clusters": [],
+    "source_state": "Minnesota",
+    "source_page": null,
+    "source": "Minnesota"
+  },
+  {
+    "course_id": "MN_01002",
+    "course_name": "English/Language Arts II (10th Grade)",
+    "subject": "English Language and Literature",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language and Literature",
+    "career_clusters": [],
+    "source_state": "Minnesota",
+    "source_page": null,
+    "source": "Minnesota"
+  },
+  {
+    "course_id": "MN_01003",
+    "course_name": "English/Language Arts III (11th Grade)",
+    "subject": "English Language and Literature",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language and Literature",
+    "career_clusters": [],
+    "source_state": "Minnesota",
+    "source_page": null,
+    "source": "Minnesota"
+  },
+  {
+    "course_id": "MN_01004",
+    "course_name": "English/Language Arts IV (12th Grade)",
+    "subject": "English Language and Literature",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language and Literature",
+    "career_clusters": [],
+    "source_state": "Minnesota",
+    "source_page": null,
+    "source": "Minnesota"
+  },
+  {
+    "course_id": "MN_01010",
+    "course_name": "Language Arts Laboratory",
+    "subject": "English Language and Literature",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English Language and Literature",
+    "career_clusters": [],
+    "source_state": "Minnesota",
+    "source_page": null,
+    "source": "Minnesota"
+  }
+]

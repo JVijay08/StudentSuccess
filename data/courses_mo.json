@@ -1,0 +1,362 @@
+[
+  {
+    "course_id": "MO_096820",
+    "course_name": "Apparel, Textiles and Fashion",
+    "subject": "Family Consumer Sciences & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family Consumer Sciences & Human Services",
+    "career_clusters": [],
+    "source_state": "Missouri",
+    "source_page": null,
+    "source": "Missouri"
+  },
+  {
+    "course_id": "MO_096822",
+    "course_name": "Apparel, Textiles and Fashion, Advanced",
+    "subject": "Family Consumer Sciences & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family Consumer Sciences & Human Services",
+    "career_clusters": [],
+    "source_state": "Missouri",
+    "source_page": null,
+    "source": "Missouri"
+  },
+  {
+    "course_id": "MO_096803",
+    "course_name": "Career Development/Entrepreneurship",
+    "subject": "Family Consumer Sciences & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family Consumer Sciences & Human Services",
+    "career_clusters": [],
+    "source_state": "Missouri",
+    "source_page": null,
+    "source": "Missouri"
+  },
+  {
+    "course_id": "MO_096821",
+    "course_name": "Child Development I",
+    "subject": "Family Consumer Sciences & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family Consumer Sciences & Human Services",
+    "career_clusters": [],
+    "source_state": "Missouri",
+    "source_page": null,
+    "source": "Missouri"
+  },
+  {
+    "course_id": "MO_096826",
+    "course_name": "Child Development II",
+    "subject": "Family Consumer Sciences & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family Consumer Sciences & Human Services",
+    "career_clusters": [],
+    "source_state": "Missouri",
+    "source_page": null,
+    "source": "Missouri"
+  },
+  {
+    "course_id": "MO_096837",
+    "course_name": "Family Consumer Sciences Internship",
+    "subject": "Family Consumer Sciences & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family Consumer Sciences & Human Services",
+    "career_clusters": [],
+    "source_state": "Missouri",
+    "source_page": null,
+    "source": "Missouri"
+  },
+  {
+    "course_id": "MO_096814",
+    "course_name": "Family/Consumer Resource Management",
+    "subject": "Family Consumer Sciences & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family Consumer Sciences & Human Services",
+    "career_clusters": [],
+    "source_state": "Missouri",
+    "source_page": null,
+    "source": "Missouri"
+  },
+  {
+    "course_id": "MO_096827",
+    "course_name": "Food Science",
+    "subject": "Family Consumer Sciences & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family Consumer Sciences & Human Services",
+    "career_clusters": [],
+    "source_state": "Missouri",
+    "source_page": null,
+    "source": "Missouri"
+  },
+  {
+    "course_id": "MO_096829",
+    "course_name": "Foods, General",
+    "subject": "Family Consumer Sciences & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family Consumer Sciences & Human Services",
+    "career_clusters": [],
+    "source_state": "Missouri",
+    "source_page": null,
+    "source": "Missouri"
+  },
+  {
+    "course_id": "MO_096840",
+    "course_name": "Health and Family Education*",
+    "subject": "Family Consumer Sciences & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family Consumer Sciences & Human Services",
+    "career_clusters": [],
+    "source_state": "Missouri",
+    "source_page": null,
+    "source": "Missouri"
+  },
+  {
+    "course_id": "MO_096818",
+    "course_name": "Housing Environments and Design",
+    "subject": "Family Consumer Sciences & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family Consumer Sciences & Human Services",
+    "career_clusters": [],
+    "source_state": "Missouri",
+    "source_page": null,
+    "source": "Missouri"
+  },
+  {
+    "course_id": "MO_096828",
+    "course_name": "Human Development",
+    "subject": "Family Consumer Sciences & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family Consumer Sciences & Human Services",
+    "career_clusters": [],
+    "source_state": "Missouri",
+    "source_page": null,
+    "source": "Missouri"
+  },
+  {
+    "course_id": "MO_096910",
+    "course_name": "International Foods",
+    "subject": "Family Consumer Sciences & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family Consumer Sciences & Human Services",
+    "career_clusters": [],
+    "source_state": "Missouri",
+    "source_page": null,
+    "source": "Missouri"
+  },
+  {
+    "course_id": "MO_096823",
+    "course_name": "Interpersonal Relationships",
+    "subject": "Family Consumer Sciences & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family Consumer Sciences & Human Services",
+    "career_clusters": [],
+    "source_state": "Missouri",
+    "source_page": null,
+    "source": "Missouri"
+  },
+  {
+    "course_id": "MO_096911",
+    "course_name": "Introduction to the Hospitality Industry",
+    "subject": "Family Consumer Sciences & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family Consumer Sciences & Human Services",
+    "career_clusters": [],
+    "source_state": "Missouri",
+    "source_page": null,
+    "source": "Missouri"
+  },
+  {
+    "course_id": "MO_096824",
+    "course_name": "Nutrition and Wellness",
+    "subject": "Family Consumer Sciences & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family Consumer Sciences & Human Services",
+    "career_clusters": [],
+    "source_state": "Missouri",
+    "source_page": null,
+    "source": "Missouri"
+  },
+  {
+    "course_id": "MO_096830",
+    "course_name": "Parenting",
+    "subject": "Family Consumer Sciences & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family Consumer Sciences & Human Services",
+    "career_clusters": [],
+    "source_state": "Missouri",
+    "source_page": null,
+    "source": "Missouri"
+  },
+  {
+    "course_id": "MO_996400",
+    "course_name": "Personal Finance*",
+    "subject": "Family Consumer Sciences & Human Services",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family Consumer Sciences & Human Services",
+    "career_clusters": [],
+    "source_state": "Missouri",
+    "source_page": null,
+    "source": "Missouri"
+  }
+]

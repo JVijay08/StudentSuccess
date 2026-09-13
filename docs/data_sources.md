@@ -18,7 +18,7 @@ Project-created workload labels are educational estimates. They are not official
 | National reference catalog | StudentSuccess taxonomy | Common course families for broad planning | Reference names, broad grade bands, planning relationships | Project-created reference | In Use |
 | AP program catalog | College Board AP course list supplied for this project | AP course names and broad planning categories | Program reference | Supplied reference | In Use |
 | IB program catalog | International Baccalaureate DP subject list supplied for this project | Active DP subject names, groups, and broad planning categories | Program reference | Supplied reference | In Use |
-| State course catalogs | Supplied Alabama, Arkansas, Florida, Kentucky, Louisiana, Mississippi, North Carolina, South Carolina, Tennessee, Virginia, and West Virginia databases | State or provider course records normalized for course exploration | State reference | Supplied references | In Use |
+| State course catalogs | Supplied regional databases covering Alabama, Arkansas, Florida, Georgia, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Michigan, Minnesota, Mississippi, Missouri, Nebraska, North Carolina, North Dakota, Ohio, South Carolina, South Dakota, Tennessee, Virginia, West Virginia, and Wisconsin | State, district, school, pathway, or provider course records normalized for course exploration | State reference | Supplied references | In Use |
 
 ---
 

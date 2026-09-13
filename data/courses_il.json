@@ -1,0 +1,62 @@
+[
+  {
+    "course_id": "IL_MATH_3",
+    "course_name": "Math 3",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Illinois",
+    "source_page": null,
+    "source": "Illinois"
+  },
+  {
+    "course_id": "IL_MATH_3_COMPRESSION",
+    "course_name": "Math 3 Compression",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Illinois",
+    "source_page": null,
+    "source": "Illinois"
+  },
+  {
+    "course_id": "IL_PRECALC_COMPRESSION",
+    "course_name": "PreCalc Compression",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Illinois",
+    "source_page": null,
+    "source": "Illinois"
+  }
+]

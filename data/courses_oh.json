@@ -1,0 +1,1562 @@
+[
+  {
+    "course_id": "OH_3501",
+    "course_name": "EDUCATION - EARLY EXPERIENCE FOR TEACHERS",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 21,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0343",
+    "course_name": "YEARBOOK PRODUCTION",
+    "subject": "Electives",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Electives",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 21,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0304",
+    "course_name": "ADVANCED ENGLISH 10",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 24,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0301",
+    "course_name": "ADVANCED ENGLISH 9",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 23,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0303",
+    "course_name": "ENGLISH 10",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 24,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0302",
+    "course_name": "ENGLISH 9",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 23,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0315",
+    "course_name": "English III - ART OF WRITING",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 25,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0313",
+    "course_name": "English III - CREATIVE WRITING",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 25,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0306",
+    "course_name": "English III - MEMOIRS",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 26,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0317",
+    "course_name": "English III - SHORT FICTION",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 25,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0305",
+    "course_name": "English IV - AMERICAN LITERATURE",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 27,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0314",
+    "course_name": "English IV - LITERARY ADAPTATIONS",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 27,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0323",
+    "course_name": "English IV - READING FOR COLLEGE (Current Issues)",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 27,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0316",
+    "course_name": "English IV - WORLD AUTHORS",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 28,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0400",
+    "course_name": "LIFE & STUDY SKILLS",
+    "subject": "Family & Consumer Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Family & Consumer Science",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 30,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0550",
+    "course_name": "FITNESS AND TEAM SPORTS",
+    "subject": "Health & Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health & Physical Education",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 32,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0512",
+    "course_name": "HEALTH",
+    "subject": "Health & Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health & Physical Education",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 30,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0510W",
+    "course_name": "P.E. WAIVER",
+    "subject": "Health & Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health & Physical Education",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 31,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0530",
+    "course_name": "WEIGHT TRAINING 1",
+    "subject": "Health & Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health & Physical Education",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 31,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0531",
+    "course_name": "WEIGHT TRAINING 2",
+    "subject": "Health & Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health & Physical Education",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 31,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0532",
+    "course_name": "WEIGHT TRAINING 3",
+    "subject": "Health & Physical Education",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Health & Physical Education",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 32,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0849",
+    "course_name": "ADVANCED MATH",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 35,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0819",
+    "course_name": "ALGEBRA A",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 33,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0820",
+    "course_name": "ALGEBRA B",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 33,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0821",
+    "course_name": "ALGEBRA I",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 34,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0822",
+    "course_name": "ALGEBRA II",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 35,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0855",
+    "course_name": "APPLIED MATHEMATICS & FUNCTIONS",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 35,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0824",
+    "course_name": "ENRICHED ALGEBRA II",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 35,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0831",
+    "course_name": "ENRICHED GEOMETRY",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 34,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0830",
+    "course_name": "GEOMETRY",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 34,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0852",
+    "course_name": "PRE-CALCULUS",
+    "subject": "Mathematics",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Mathematics",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 36,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0953",
+    "course_name": "BASS CHORUS",
+    "subject": "Music",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Music",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 37,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0940",
+    "course_name": "CONCERT BAND",
+    "subject": "Music",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Music",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 38,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0942",
+    "course_name": "JAZZ BAND",
+    "subject": "Music",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Music",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 39,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0960",
+    "course_name": "ORCHESTRA",
+    "subject": "Music",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Music",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 38,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0941",
+    "course_name": "SYMPHONIC BAND",
+    "subject": "Music",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Music",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 39,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0954",
+    "course_name": "TREBLE CHORUS",
+    "subject": "Music",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Music",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 37,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0952",
+    "course_name": "UNA VOCE",
+    "subject": "Music",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Music",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 37,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_1112",
+    "course_name": "ANATOMY & PHYSIOLOGY",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 44,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_1110",
+    "course_name": "BIOLOGY",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 41,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_1121",
+    "course_name": "CHEMISTRY",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 42,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_1140",
+    "course_name": "CURRENT SCIENCE ISSUES",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 45,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_1150",
+    "course_name": "FORENSICS I",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 43,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_1152",
+    "course_name": "FORENSICS II",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 44,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_1103",
+    "course_name": "INTEGRATED SCIENCE",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 41,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_IS1155",
+    "course_name": "ORGANIC CHEMISTRY I",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 42,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_IS1156",
+    "course_name": "ORGANIC CHEMISTRY II",
+    "subject": "Science",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Science",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 43,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_1261",
+    "course_name": "ADVANCED FINANCIAL LITERACY AND ECONOMICS",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 48,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_1278",
+    "course_name": "AMERICA AT WAR (20th Century)",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 49,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_1230",
+    "course_name": "AMERICAN GOVERNMENT",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 47,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_1220",
+    "course_name": "AMERICAN HISTORY",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 46,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_1282",
+    "course_name": "CONTEMPORARY WORLD ISSUES",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 49,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_1260",
+    "course_name": "FINANCIAL LITERACY AND ECONOMICS",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 48,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_POLSC102_DC",
+    "course_name": "GOVERNMENT",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 47,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_HIST1260_DC",
+    "course_name": "MODERN AMERICA -",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 47,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_1270",
+    "course_name": "MODERN WORLD HISTORY",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 46,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_1290",
+    "course_name": "PSYCHOLOGY",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 48,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_1292",
+    "course_name": "U.S. CIVIL WAR AND RECONSTRUCTION",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 48,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_1281",
+    "course_name": "WORLD GEOGRAPHY",
+    "subject": "Social Studies",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Social Studies",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 49,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0116",
+    "course_name": "ADVANCED CERAMICS AND SCULPTURE",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 17,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0126",
+    "course_name": "ADVANCED DRAWING",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 18,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0127",
+    "course_name": "ADVANCED DRAWING II",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 20,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0113",
+    "course_name": "ADVANCED PAINTING",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 19,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0114",
+    "course_name": "ADVANCED PAINTING II",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 20,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0131",
+    "course_name": "ADVANCED STUDIO JEWELRY",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 17,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0132",
+    "course_name": "ADVANCED STUDIO JEWELRY II",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 19,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_ART1010_DC",
+    "course_name": "ART 1010",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 16,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0109",
+    "course_name": "ART I",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 16,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0115",
+    "course_name": "CERAMICS AND SCULPTURE",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 16,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0150",
+    "course_name": "DIGITAL ART I",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 17,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0152",
+    "course_name": "DIGITAL ART II",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 19,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0155",
+    "course_name": "DIGITAL ART III",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 20,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0125",
+    "course_name": "DRAWING/PRINTMAKING",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 18,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0130",
+    "course_name": "INTRODUCTION TO STUDIO JEWELRY",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 16,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0112",
+    "course_name": "PAINTING",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 18,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0117",
+    "course_name": "STUDIO CERAMICS AND SCULPTURE",
+    "subject": "Visual Arts",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "Visual Arts",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 18,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0711",
+    "course_name": "SPANISH I (NOVICE MID)",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 50,
+    "source": "Ohio"
+  },
+  {
+    "course_id": "OH_0712",
+    "course_name": "SPANISH II (NOVICE HIGH)",
+    "subject": "World Languages",
+    "course_type": "Standard",
+    "grade_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "World Languages",
+    "career_clusters": [],
+    "source_state": "Ohio",
+    "source_page": 50,
+    "source": "Ohio"
+  }
+]

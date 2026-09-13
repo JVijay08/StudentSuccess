@@ -5849,47 +5849,6 @@
     "source": "Arkansas"
   },
   {
-    "course_id": "AR_565030",
-    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level course. CulAvate understanding of coding through analyzing, wriAng, and tesAng code while exploring concepts like modularity, variables, and control structures. The course is taught using one of the most in-demand programming languages, Java. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Computer Science Flex, Gradua/on Requirement for Natural Science (3rd Science or Computer Science), Gradua/on Requirement for Mathema/cs or Computer Science (4th Mathema/cs or Computer Science), Career-Focused Elec/ve AP\u00ae Computer Science Principles - Year 1",
-    "subject": "Computer Science",
-    "course_type": "Standard",
-    "grade_levels": [
-      8,
-      9,
-      10,
-      11,
-      12
-    ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
-    "prerequisites": [],
-    "graduation_category": "Computer Science",
-    "career_clusters": [],
-    "source_state": "Arkansas",
-    "source_page": 45,
-    "source": "Arkansas"
-  },
-  {
-    "course_id": "AR_465430",
-    "course_name": "Prerequisite Course Code(s): None Grade Range: 8 - 12 Weight: 5.0 Descrip:on: Introductory college-level compuAng course introducing the breadth of the field of computer science. Design and evaluate soluAons, and apply computer science to solve problems through the development of algorithms and programs. Incorporate abstracAon into programs and use data to discover new knowledge. Explain how compuAng innovaAons and compuAng systems-including the internet-work, explore their potenAal impacts, and contribute to a compuAng culture that is collaboraAve and ethical. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Computer Science Flex, Gradua/on Requirement for Natural Science (3rd Science or Computer Science), Gradua/on Requirement for Mathema/cs or Computer Science (4th Mathema/cs or Computer Science), Career-Focused Elec/ve Artificial Intelligence",
-    "subject": "Computer Science",
-    "course_type": "Standard",
-    "grade_levels": [
-      9,
-      10,
-      11,
-      12
-    ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
-    "prerequisites": [],
-    "graduation_category": "Computer Science",
-    "career_clusters": [],
-    "source_state": "Arkansas",
-    "source_page": 45,
-    "source": "Arkansas"
-  },
-  {
     "course_id": "AR_465490",
     "course_name": "Computer Engineering",
     "subject": "Computer Science",
@@ -6399,72 +6358,12 @@
     "source": "Arkansas"
   },
   {
-    "course_id": "AR_517040",
-    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level composiAon course. CulAvate understanding of wriAng and rhetorical arguments through reading, analyzing, and wriAng texts while exploring topics like rhetorical situaAon, claims and evidence, reasoning and organizaAon, and style. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for English 9, Gradua/on Requirement for English 10, Gradua/on Requirement for English 11, Gradua/on Requirement for English 12, Career-Focused Elec/ve AP\u00ae English Literature and Composition",
-    "subject": "English Language Arts",
-    "course_type": "Standard",
-    "grade_levels": [
-      9,
-      10,
-      11,
-      12
-    ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
-    "prerequisites": [],
-    "graduation_category": "English Language Arts",
-    "career_clusters": [],
-    "source_state": "Arkansas",
-    "source_page": 50,
-    "source": "Arkansas"
-  },
-  {
-    "course_id": "AR_517070",
-    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level literary analysis course. CulAvate understanding of literature through reading and analyzing texts as they explore concepts like character, se\\ng, structure, perspecAve, figuraAve language, and literary analysis in the context of literary works. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for English 9, Gradua/on Requirement for English 10, Gradua/on Requirement for English 11, Gradua/on Requirement for English 12, Career-Focused Elec/ve AP\u00ae Research",
-    "subject": "English Language Arts",
-    "course_type": "Standard",
-    "grade_levels": [
-      9,
-      10,
-      11,
-      12
-    ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
-    "prerequisites": [],
-    "graduation_category": "English Language Arts",
-    "career_clusters": [],
-    "source_state": "Arkansas",
-    "source_page": 50,
-    "source": "Arkansas"
-  },
-  {
     "course_id": "AR_517060",
     "course_name": "AP\u00ae Seminar",
     "subject": "English Language Arts",
     "course_type": "Standard",
     "grade_levels": [
       8,
-      9,
-      10,
-      11,
-      12
-    ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
-    "prerequisites": [],
-    "graduation_category": "English Language Arts",
-    "career_clusters": [],
-    "source_state": "Arkansas",
-    "source_page": 51,
-    "source": "Arkansas"
-  },
-  {
-    "course_id": "AR_517010",
-    "course_name": "Prerequisite Course Code(s): None Grade Range: 8 - 12 Weight: 5.0 Descrip:on: FoundaAonal course in the AP Capstone experience. Engage in cross-curricular conversaAons that explore the complexiAes of academic and real-world topics and issues by analyzing divergent perspecAves. InvesAgate a problem or issue, analyze arguments, compare di\ufb00erent perspecAves, synthesize informaAon from mulAple sources, and communicate ideas. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for English 9, Gradua/on Requirement for English 10, Gradua/on Requirement for English 11, Gradua/on Requirement for English 12, Career-Focused Elec/ve C Cambridge Advanced English General Paper",
-    "subject": "English Language Arts",
-    "course_type": "Standard",
-    "grade_levels": [
       9,
       10,
       11,
@@ -7696,106 +7595,6 @@
   {
     "course_id": "AR_559050",
     "course_name": "AP\u00ae 2-D Art and Design",
-    "subject": "Fine Arts",
-    "course_type": "Standard",
-    "grade_levels": [
-      9,
-      10,
-      11,
-      12
-    ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
-    "prerequisites": [],
-    "graduation_category": "Fine Arts",
-    "career_clusters": [],
-    "source_state": "Arkansas",
-    "source_page": 61,
-    "source": "Arkansas"
-  },
-  {
-    "course_id": "AR_559060",
-    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level two-dimensional design course. Refine and apply 2-D skills to ideas developed throughout the course. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Fine Arts, Career-Focused Elec/ve AP\u00ae 3-D Art and Design",
-    "subject": "Fine Arts",
-    "course_type": "Standard",
-    "grade_levels": [
-      9,
-      10,
-      11,
-      12
-    ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
-    "prerequisites": [],
-    "graduation_category": "Fine Arts",
-    "career_clusters": [],
-    "source_state": "Arkansas",
-    "source_page": 61,
-    "source": "Arkansas"
-  },
-  {
-    "course_id": "AR_559030",
-    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level three-dimensional design course. Refine and apply 3-D skills to ideas developed throughout the course. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Fine Arts, Career-Focused Elec/ve AP\u00ae Art History",
-    "subject": "Fine Arts",
-    "course_type": "Standard",
-    "grade_levels": [
-      9,
-      10,
-      11,
-      12
-    ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
-    "prerequisites": [],
-    "graduation_category": "Fine Arts",
-    "career_clusters": [],
-    "source_state": "Arkansas",
-    "source_page": 61,
-    "source": "Arkansas"
-  },
-  {
-    "course_id": "AR_559040",
-    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level art history course. CulAvate understanding of art history through analyzing works of art and placing them in historical context. Explore concepts including theories and interpretaAons of art, the impact of materials, processes, and techniques on art and art making, and understanding purpose and audience in art historical analysis. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Fine Arts, Career-Focused Elec/ve AP\u00ae Drawing",
-    "subject": "Fine Arts",
-    "course_type": "Standard",
-    "grade_levels": [
-      9,
-      10,
-      11,
-      12
-    ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
-    "prerequisites": [],
-    "graduation_category": "Fine Arts",
-    "career_clusters": [],
-    "source_state": "Arkansas",
-    "source_page": 61,
-    "source": "Arkansas"
-  },
-  {
-    "course_id": "AR_559010",
-    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level drawing course. Refine and apply drawing skills to ideas developed throughout the course. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Fine Arts, Career-Focused Elec/ve AP\u00ae Music Theory",
-    "subject": "Fine Arts",
-    "course_type": "Standard",
-    "grade_levels": [
-      9,
-      10,
-      11,
-      12
-    ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
-    "prerequisites": [],
-    "graduation_category": "Fine Arts",
-    "career_clusters": [],
-    "source_state": "Arkansas",
-    "source_page": 61,
-    "source": "Arkansas"
-  },
-  {
-    "course_id": "AR_450070",
-    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level music theory course. CulAvate understanding of music theory through analyzing performed and notated music. Explore concepts of pitch, rhythm, form, and musical design. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Fine Arts, Career-Focused Elec/ve Art History (Baroque to Contemporary)",
     "subject": "Fine Arts",
     "course_type": "Standard",
     "grade_levels": [
@@ -10445,46 +10244,6 @@
     "source": "Arkansas"
   },
   {
-    "course_id": "AR_521030",
-    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level biology course. CulAvate understanding of biology through inquiry-based invesAgaAons of topics like evoluAon, energeAcs, informaAon storage and transfer, and system interacAons. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Natural Science (Biology), Gradua/on Requirement for Natural Science (3rd Science or Computer Science), Career-Focused Elec/ve AP\u00ae Chemistry",
-    "subject": "Science",
-    "course_type": "Standard",
-    "grade_levels": [
-      9,
-      10,
-      11,
-      12
-    ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
-    "prerequisites": [],
-    "graduation_category": "Science",
-    "career_clusters": [],
-    "source_state": "Arkansas",
-    "source_page": 84,
-    "source": "Arkansas"
-  },
-  {
-    "course_id": "AR_523030",
-    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level chemistry course. CulAvate understanding of chemistry through inquiry-based lab invesAgaAons while exploring four Big Ideas: scale, proporAon, and quanAty; structure and properAes of substances; transformaAons; and energy. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Natural Science (Physical Sciences), Gradua/on Requirement for Natural Science (3rd Science or Computer Science), Career-Focused Elec/ve AP\u00ae Environmental Science",
-    "subject": "Science",
-    "course_type": "Standard",
-    "grade_levels": [
-      9,
-      10,
-      11,
-      12
-    ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
-    "prerequisites": [],
-    "graduation_category": "Science",
-    "career_clusters": [],
-    "source_state": "Arkansas",
-    "source_page": 84,
-    "source": "Arkansas"
-  },
-  {
     "course_id": "AR_522080",
     "course_name": "AP\u00ae Physics 1",
     "subject": "Science",
@@ -10505,68 +10264,8 @@
     "source": "Arkansas"
   },
   {
-    "course_id": "AR_522090",
-    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Algebra-based, introductory college-level physics course. CulAvate understanding of physics through classroom study, in-class acAvity, and hands-on, inquiry-based laboratory work as they explore concepts like systems, fields, force interacAons, change, and conservaAon. Develop the ability to reason about physical phenomena using important science pracAces, such as explaining relaAonships, applying and jusAfying the use of mathemaAcal rouAnes, designing experiments, analyzing data, and making connecAons across content related topics. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Natural Science (Physical Sciences), Gradua/on Requirement for Natural Science (3rd Science or Computer Science), Career-Focused Elec/ve AP\u00ae Physics 2",
-    "subject": "Science",
-    "course_type": "Standard",
-    "grade_levels": [
-      9,
-      10,
-      11,
-      12
-    ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
-    "prerequisites": [],
-    "graduation_category": "Science",
-    "career_clusters": [],
-    "source_state": "Arkansas",
-    "source_page": 84,
-    "source": "Arkansas"
-  },
-  {
-    "course_id": "AR_522040",
-    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Algebra-based, introductory college-level physics course. CulAvate understanding of physics through classroom study, in-class acAvity, and hands-on, inquiry-based laboratory work as they explore concepts like systems, fields, force interacAons, change, conservaAon, waves, and probability. Develop the ability to reason about physical phenomena using important science pracAces, such as explaining relaAonships, applying and jusAfying the use of mathemaAcal rouAnes, designing experiments, analyzing data, and making connecAons across content related topics. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Natural Science (Physical Sciences), Gradua/on Requirement for Natural Science (3rd Science or Computer Science), Career-Focused Elec/ve AP\u00ae Physics C: Electricity and Magnetism",
-    "subject": "Science",
-    "course_type": "Standard",
-    "grade_levels": [
-      9,
-      10,
-      11,
-      12
-    ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
-    "prerequisites": [],
-    "graduation_category": "Science",
-    "career_clusters": [],
-    "source_state": "Arkansas",
-    "source_page": 84,
-    "source": "Arkansas"
-  },
-  {
     "course_id": "AR_522050",
     "course_name": "AP\u00ae Physics C: Mechanics",
-    "subject": "Science",
-    "course_type": "Standard",
-    "grade_levels": [
-      9,
-      10,
-      11,
-      12
-    ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
-    "prerequisites": [],
-    "graduation_category": "Science",
-    "career_clusters": [],
-    "source_state": "Arkansas",
-    "source_page": 85,
-    "source": "Arkansas"
-  },
-  {
-    "course_id": "AR_425050",
-    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Calculus-based introductory college-level physics course. CulAvate understanding of physics through classroom study and acAviAes as well as hands-on laboratory work as they explore concepts like change, force interacAons, fields, and conservaAon. Develop the ability to reason about physical phenomena using important science pracAces, such as creaAng and analyzing representaAons of physical scenarios, designing experiments, analyzing data, and using mathemaAcs to model and to solve problems across content related topics. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Natural Science (Physical Sciences), Gradua/on Requirement for Natural Science (3rd Science or Computer Science), Career-Focused Elec/ve Astronomy",
     "subject": "Science",
     "course_type": "Standard",
     "grade_levels": [
@@ -11186,46 +10885,6 @@
     "source": "Arkansas"
   },
   {
-    "course_id": "AR_579140",
-    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level macroeconomics course. CulAvate an understanding of the principles that apply to an economic system as a whole by using principles and models to describe economic situaAons and predict and explain outcomes with graphs, charts, and data to explore economic measurements, markets, macroeconomic models, and macroeconomic policies. This course is aligned with the Arkansas personal Finance standards. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Economics, Career-Focused Elec/ve ADE Approved AP\u00ae Microeconomics with Personal Finance",
-    "subject": "Social Studies",
-    "course_type": "Standard",
-    "grade_levels": [
-      9,
-      10,
-      11,
-      12
-    ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
-    "prerequisites": [],
-    "graduation_category": "Social Studies",
-    "career_clusters": [],
-    "source_state": "Arkansas",
-    "source_page": 91,
-    "source": "Arkansas"
-  },
-  {
-    "course_id": "AR_474700",
-    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level microeconomics course. CulAvate an understanding of the principles that apply to the funcAons of individual economic decision-makers by using principles and models to describe economic situaAons and predict and explain outcomes with graphs, charts, and data to explore concepts like scarcity and markets; costs, benefits, and marginal analysis; producAon choices and behavior; and market ine\ufb03ciency and public policy. This course is aligned with the Arkansas personal Finance standards. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Economics, Career-Focused Elec/ve African American History",
-    "subject": "Social Studies",
-    "course_type": "Standard",
-    "grade_levels": [
-      9,
-      10,
-      11,
-      12
-    ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
-    "prerequisites": [],
-    "graduation_category": "Social Studies",
-    "career_clusters": [],
-    "source_state": "Arkansas",
-    "source_page": 91,
-    "source": "Arkansas"
-  },
-  {
     "course_id": "AR_574700",
     "course_name": "AP\u00ae African American Studies",
     "subject": "Social Studies",
@@ -11388,46 +11047,6 @@
   {
     "course_id": "AR_572040",
     "course_name": "AP\u00ae United States Government and Politics (for Civics credit)",
-    "subject": "Social Studies",
-    "course_type": "Standard",
-    "grade_levels": [
-      9,
-      10,
-      11,
-      12
-    ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
-    "prerequisites": [],
-    "graduation_category": "Social Studies",
-    "career_clusters": [],
-    "source_state": "Arkansas",
-    "source_page": 92,
-    "source": "Arkansas"
-  },
-  {
-    "course_id": "AR_570020",
-    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level course in U.S. government and poliAcs that includes Arkansas academic standards to meet the Civics requirement. CulAvate an understanding of U.S. government and poliAcs through analysis of data and text-based sources while exploring topics like consAtuAonalism, liberty and order, civic parAcipaAon in a representaAve democracy, compeAng policy-making interests, and methods of poliAcal analysis. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Social Studies (Civics), Career-Focused Elec/ve AP\u00ae United States History",
-    "subject": "Social Studies",
-    "course_type": "Standard",
-    "grade_levels": [
-      9,
-      10,
-      11,
-      12
-    ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
-    "prerequisites": [],
-    "graduation_category": "Social Studies",
-    "career_clusters": [],
-    "source_state": "Arkansas",
-    "source_page": 92,
-    "source": "Arkansas"
-  },
-  {
-    "course_id": "AR_571020",
-    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Introductory college-level U.S. history course. CulAvate an understanding of U.S. history from c. 1491 CE to the present through analyzing historical sources and learning to make connecAons and craV historical arguments while exploring concepts like American and naAonal idenAty; work, exchange, and technology; geography and the environment; migraAon and seLlement; poliAcs and power; America in the world; American and regional culture; and social structures. This is a College Board Advanced Placement course. Credit Fulfills: Gradua/on Requirement for Social Studies (United States History), Career-Focused Elec/ve AP\u00ae World History",
     "subject": "Social Studies",
     "course_type": "Standard",
     "grade_levels": [
@@ -12228,46 +11847,6 @@
   {
     "course_id": "AR_545070",
     "course_name": "AP\u00ae Latin",
-    "subject": "World Languages",
-    "course_type": "Standard",
-    "grade_levels": [
-      9,
-      10,
-      11,
-      12
-    ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
-    "prerequisites": [],
-    "graduation_category": "World Languages",
-    "career_clusters": [],
-    "source_state": "Arkansas",
-    "source_page": 99,
-    "source": "Arkansas"
-  },
-  {
-    "course_id": "AR_540080",
-    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: Equivalent to an upper-intermediate level college course in LaAn with focus on in-depth study of selecAons from works in LaAn literature: Vergil\u2019s Aeneid and Caesar\u2019s Gallic War. CulAvate an understanding of classics through preparing and translaAng readings and considering themes in the context of ancient literature. This is a College Board Advanced Placement course. Credit Fulfills: Career-Focused Elec/ve AP\u00ae Spanish Literature and Culture",
-    "subject": "World Languages",
-    "course_type": "Standard",
-    "grade_levels": [
-      9,
-      10,
-      11,
-      12
-    ],
-    "rigor_level": "Standard",
-    "workload_level": "Medium",
-    "prerequisites": [],
-    "graduation_category": "World Languages",
-    "career_clusters": [],
-    "source_state": "Arkansas",
-    "source_page": 99,
-    "source": "Arkansas"
-  },
-  {
-    "course_id": "AR_441000",
-    "course_name": "Prerequisite Course Code(s): None Grade Range: 9 - 12 Weight: 5.0 Descrip:on: College level introductory survey course of literature wriLen in Spanish. Develop interpreAve, interpersonal, and presentaAonal skills in Spanish language as well as criAcal reading and analyAcal wriAng while exploring short stories, novels, plays, essays, and poetry from Spain, LaAn America, and U.S. Hispanic authors along with other non-required texts. This is a College Board Advanced Placement course. Credit Fulfills: Career-Focused Elec/ve F French Courses Descrip:on: Communicate ideas (that is, to understand, speak, read, and write the language) and increase communicaAve and cultural proficiency in the target language(s). Introduce cultures, tradiAons, and current events at an appropriate level through selected readings, audio/visual recordings, and other authenAc materials to give students an appreciaAon of the similariAes and di\ufb00erences in the life, customs, and cultures of other peoples and civilizaAons. French I",
     "subject": "World Languages",
     "course_type": "Standard",
     "grade_levels": [

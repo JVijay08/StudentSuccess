@@ -9,14 +9,26 @@ STATE_CODES = {
     "Arkansas": "AR",
     "Florida": "FL",
     "Georgia": "GA",
+    "Illinois": "IL",
+    "Indiana": "IN",
+    "Iowa": "IA",
     "Kentucky": "KY",
     "Louisiana": "LA",
+    "Michigan": "MI",
+    "Minnesota": "MN",
     "Mississippi": "MS",
     "North Carolina": "NC",
+    "North Dakota": "ND",
+    "Nebraska": "NE",
+    "Ohio": "OH",
     "South Carolina": "SC",
     "Tennessee": "TN",
     "Virginia": "VA",
     "West Virginia": "WV",
+    "Wisconsin": "WI",
+    "South Dakota": "SD",
+    "Missouri": "MO",
+    "Kansas": "KS",
 }
 
 
@@ -27,9 +39,10 @@ def slug(value):
 def course_kind(record):
     name = record.get("course_name", "").upper()
     kind = str(record.get("course_type", "")).upper()
-    if kind == "AP" or name.startswith("AP "):
+    source_section = str(record.get("source_section", "")).upper()
+    if kind == "AP" or name.startswith("AP ") or "ADVANCED PLACEMENT" in name or source_section == "ADVANCED PLACEMENT":
         return "AP"
-    if kind == "IB" or name.startswith("IB "):
+    if kind == "IB" or name.startswith("IB ") or "INTERNATIONAL BACCALAUREATE" in source_section:
         return "IB"
     return "Standard"
 
@@ -146,12 +159,11 @@ def write_json(path, records):
 
 def main():
     parser = argparse.ArgumentParser(description="Import supplied state course databases.")
-    parser.add_argument("upper_south", type=Path)
-    parser.add_argument("deep_south", type=Path)
+    parser.add_argument("sources", type=Path, nargs="+")
     parser.add_argument("--output", type=Path, default=Path("data"))
     args = parser.parse_args()
 
-    sources = [json.loads(path.read_text(encoding="utf-8")) for path in (args.upper_south, args.deep_south)]
+    sources = [json.loads(path.read_text(encoding="utf-8")) for path in args.sources]
     states = {}
     ap_records = []
     ib_records = []
