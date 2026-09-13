@@ -4,9 +4,20 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
 DATABASE_PATH = BASE_DIR / "instance" / "studentsuccess.db"
-DATABASE_URL = os.environ.get("DATABASE_URL")
-if DATABASE_URL and DATABASE_URL.startswith("postgres://"):
-    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql+psycopg://", 1)
+
+
+def normalize_database_url(database_url):
+    if not database_url:
+        return database_url
+
+    for prefix in ("postgres://", "postgresql://"):
+        if database_url.startswith(prefix):
+            return database_url.replace(prefix, "postgresql+psycopg://", 1)
+
+    return database_url
+
+
+DATABASE_URL = normalize_database_url(os.environ.get("DATABASE_URL"))
 
 
 class config:
