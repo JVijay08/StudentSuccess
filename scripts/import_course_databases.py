@@ -73,6 +73,10 @@ def planning_levels(record, kind):
         return "Advanced", "High"
     if HONORS_TITLE_PATTERN.search(name):
         return "Honors", "High"
+    if subject.casefold() in {"math", "mathematics"} and re.search(
+        r"\bcompression\b", name, re.IGNORECASE
+    ):
+        return "Advanced", "High"
     if subject.casefold() == "college credit" or ADVANCED_TITLE_PATTERN.search(name):
         return "Advanced", "High"
     if FOUNDATIONAL_TITLE_PATTERN.search(name):
@@ -82,6 +86,24 @@ def planning_levels(record, kind):
 
 def grade_levels(record):
     levels = record.get("grade_levels")
+    name = str(record.get("course_name") or record.get("subject_name") or "")
+    embedded_range = re.search(
+        r"\bgrade range:\s*(9|10|11|12)\s*-\s*(9|10|11|12)\b",
+        name,
+        re.IGNORECASE,
+    )
+    if embedded_range:
+        first, last = map(int, embedded_range.groups())
+        return list(range(first, last + 1))
+
+    named_grade = re.search(
+        r"\((9|10|11|12)(?:st|nd|rd|th) grade\b[^)]*\)\s*$",
+        name,
+        re.IGNORECASE,
+    )
+    if named_grade:
+        return [int(named_grade.group(1))]
+
     if isinstance(levels, list) and levels:
         return sorted({int(level) for level in levels if str(level).isdigit()})
 

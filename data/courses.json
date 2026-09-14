@@ -264,7 +264,8 @@
     "rigor_level": "Advanced",
     "workload_level": "High",
     "prerequisites": [
-      "AP Physics 1"
+      "AP Physics 1",
+      "Precalculus (completed or concurrent)"
     ],
     "graduation_category": "Science",
     "career_clusters": [
@@ -283,7 +284,8 @@
     "rigor_level": "Advanced",
     "workload_level": "High",
     "prerequisites": [
-      "Calculus"
+      "Calculus",
+      "AP Physics C: Mechanics"
     ],
     "graduation_category": "Science",
     "career_clusters": [
@@ -302,7 +304,7 @@
     "rigor_level": "Advanced",
     "workload_level": "High",
     "prerequisites": [
-      "Calculus"
+      "Calculus (completed or concurrent)"
     ],
     "graduation_category": "Science",
     "career_clusters": [
@@ -850,7 +852,9 @@
     ],
     "rigor_level": "Advanced",
     "workload_level": "High",
-    "prerequisites": [],
+    "prerequisites": [
+      "IB program application required"
+    ],
     "graduation_category": "Science",
     "career_clusters": []
   },
@@ -865,7 +869,9 @@
     ],
     "rigor_level": "Advanced",
     "workload_level": "High",
-    "prerequisites": [],
+    "prerequisites": [
+      "IB program application required"
+    ],
     "graduation_category": "Science",
     "career_clusters": []
   },
@@ -880,7 +886,9 @@
     ],
     "rigor_level": "Advanced",
     "workload_level": "High",
-    "prerequisites": [],
+    "prerequisites": [
+      "IB program application required"
+    ],
     "graduation_category": "Science",
     "career_clusters": []
   },
@@ -913,7 +921,9 @@
     ],
     "rigor_level": "Advanced",
     "workload_level": "High",
-    "prerequisites": [],
+    "prerequisites": [
+      "IB program application required"
+    ],
     "graduation_category": "Science",
     "career_clusters": [
       "Environmental Science"

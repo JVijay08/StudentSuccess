@@ -1320,7 +1320,6 @@
     "subject": "Career & Technical Education",
     "course_type": "Standard",
     "grade_levels": [
-      10,
       11,
       12
     ],
@@ -4156,7 +4155,9 @@
     "course_type": "Standard",
     "grade_levels": [
       9,
-      10
+      10,
+      11,
+      12
     ],
     "rigor_level": "Standard",
     "workload_level": "Medium",
@@ -4737,6 +4738,7 @@
     "subject": "Career & Technical Education",
     "course_type": "Standard",
     "grade_levels": [
+      9,
       10,
       11,
       12
@@ -8572,7 +8574,6 @@
     "subject": "Fine Arts",
     "course_type": "Standard",
     "grade_levels": [
-      9,
       10,
       11,
       12
@@ -8928,6 +8929,7 @@
     "subject": "Fine Arts",
     "course_type": "Standard",
     "grade_levels": [
+      9,
       10,
       11,
       12
@@ -9084,7 +9086,6 @@
     "subject": "Fine Arts",
     "course_type": "Standard",
     "grade_levels": [
-      9,
       10,
       11,
       12
@@ -9302,7 +9303,6 @@
     "subject": "Fine Arts",
     "course_type": "Standard",
     "grade_levels": [
-      9,
       10,
       11,
       12

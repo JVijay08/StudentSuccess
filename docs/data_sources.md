@@ -30,6 +30,10 @@ Project-created workload labels are educational estimates. They are not official
 ## Source Links
 
 - Official Course Catalog: [https://www.forsyth.k12.ga.us/district-services/teaching-learning/high-school-course-digest](https://www.forsyth.k12.ga.us/district-services/teaching-learning/high-school-course-digest)
+- South Forsyth Science Course Offerings: [https://sfhs.forsyth.k12.ga.us/academics/science/course-offerings](https://sfhs.forsyth.k12.ga.us/academics/science/course-offerings)
+- South Forsyth IB Course Descriptions: [https://sfhs.forsyth.k12.ga.us/academics/advanced-studies/international-baccalaureate/ib-course-descriptions](https://sfhs.forsyth.k12.ga.us/academics/advanced-studies/international-baccalaureate/ib-course-descriptions)
+- Maine South 2025 Freshman Course Selection Guide: [https://south.maine207.org/wp-content/uploads/sites/3/2020/12/FRESHMAN-COURSE-SELECTION-GUIDE-FOR-2025.pdf](https://south.maine207.org/wp-content/uploads/sites/3/2020/12/FRESHMAN-COURSE-SELECTION-GUIDE-FOR-2025.pdf)
+- Minnesota Common Course Catalogue: [https://education.mn.gov/MDE/dse/datasub/MCCC/](https://education.mn.gov/MDE/dse/datasub/MCCC/)
 
 ## Verification Notes
 
@@ -50,6 +54,14 @@ The structured datasets are maintained in `data/courses_national.json`, `data/co
 Prerequisites, eligibility notes, course titles, and official course descriptions in the local catalog are based on public Forsyth County Schools course information. National prerequisite relationships are planning references and must be verified locally.
 
 The `Planning Grade Band` column is a StudentSuccess planning estimate unless the official source explicitly states the grade level. It is not an official district placement guarantee.
+
+### Difficulty and Workload Research Notes
+
+- Forsyth County and South Forsyth course pages describe AP courses as college-level and the IB Diploma as the school's most rigorous college-preparatory pathway; StudentSuccess therefore retains `Advanced` rigor and `High` workload planning labels for those courses.
+- South Forsyth's science catalog supplies the AP Physics sequence and concurrent-math requirements recorded in the Georgia catalog, and identifies its listed IB science courses as application-only.
+- Maine Township High School District 207 describes Math 3 Compression and PreCalc Compression as faster-paced courses that compress additional content in preparation for Calculus BC; these receive `Advanced` rigor and `High` workload planning labels.
+- The Minnesota Common Course Catalogue explicitly identifies grade-specific English/Language Arts I-IV classifications; those titles use their stated single grade instead of the generic 9-12 fallback.
+- These difficulty and workload values remain StudentSuccess planning estimates. Course challenge varies by student, teacher, school, pacing, and delivery format.
 
 Courses requiring department approval, application, teacher recommendation, or other special eligibility rules must retain that information in the future dataset.
 

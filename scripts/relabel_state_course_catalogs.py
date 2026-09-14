@@ -3,7 +3,7 @@
 import json
 from pathlib import Path
 
-from import_course_databases import course_kind, planning_levels
+from import_course_databases import course_kind, grade_levels, planning_levels
 
 
 DATA_DIR = Path(__file__).resolve().parents[1] / "data"
@@ -18,12 +18,15 @@ def relabel_catalog(path):
         rigor_level, workload_level = planning_levels(
             course, course_kind(course)
         )
+        corrected_grades = grade_levels(course)
         if (
             course.get("rigor_level") != rigor_level
             or course.get("workload_level") != workload_level
+            or course.get("grade_levels") != corrected_grades
         ):
             course["rigor_level"] = rigor_level
             course["workload_level"] = workload_level
+            course["grade_levels"] = corrected_grades
             changed += 1
 
     path.write_text(
