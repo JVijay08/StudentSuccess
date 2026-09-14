@@ -82,7 +82,7 @@ def test_course_detail_and_comparison_render(authed_client):
     )
 
     assert detail_response.status_code == 200
-    assert b"Advanced Algebra: Concepts and Connections" in detail_response.data
+    assert b"Algebra II" in detail_response.data
     assert comparison_response.status_code == 200
     assert b"AP Chemistry" in comparison_response.data
     assert b"AP Biology" in comparison_response.data

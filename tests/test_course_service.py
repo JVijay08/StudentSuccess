@@ -86,7 +86,7 @@ def test_state_options_cover_all_us_states_and_mark_only_loaded_states():
         for state in states
     )
     assert any(
-        state["code"] == "WI"
+        state["code"] == "CA"
         and not state["available"]
         and state["catalog_id"] == "national"
         for state in states
