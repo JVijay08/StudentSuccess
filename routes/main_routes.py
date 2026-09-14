@@ -5,6 +5,7 @@ from flask import Blueprint, g, redirect, render_template, url_for
 from models import StudentProfile, Task
 from services import (
     burn_rate_service,
+    course_service,
     datetime_util,
     delay_service,
     nudge_service,
@@ -14,6 +15,38 @@ from services.auth_service import login_required
 
 
 main_bp = Blueprint("main", __name__)
+
+
+def _build_course_load_summary(profile):
+    """Summarize the workload of courses planned for the student's current grade."""
+    workload_points = {"Low": 1, "Medium": 2, "High": 3}
+    courses = []
+
+    for planned in profile.planned_courses:
+        if planned.school_year != profile.grade:
+            continue
+        try:
+            course = course_service.get_course_by_id(
+                planned.course_id, planned.catalog_id
+            )
+        except ValueError:
+            course = None
+        if course is not None:
+            courses.append(course)
+
+    points = sum(
+        workload_points.get(course["workload_level"], 0) for course in courses
+    )
+    label = "Heavy" if points >= 8 else "Moderate" if points >= 4 else "Light"
+    high_workload_count = sum(
+        course["workload_level"] == "High" for course in courses
+    )
+    return {
+        "course_count": len(courses),
+        "high_workload_count": high_workload_count,
+        "points": points,
+        "label": label,
+    }
 
 
 def _as_utc(value):
@@ -133,8 +166,10 @@ def dashboard():
     start_history = []
     overdue_tasks = []
     estimate_accuracy = {"groups": [], "overall": None}
+    course_load = None
 
     if profile is not None:
+        course_load = _build_course_load_summary(profile)
         all_tasks = Task.query.filter_by(
             student_profile_id=profile.id
         ).all()
@@ -178,4 +213,5 @@ def dashboard():
         start_history=start_history,
         overdue_tasks=overdue_tasks,
         estimate_accuracy=estimate_accuracy,
+        course_load=course_load,
     )

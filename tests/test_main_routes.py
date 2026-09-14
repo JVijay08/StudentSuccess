@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta, timezone
 
 from extensions import db
-from models import StudentProfile, Task
+from models import PlannedCourse, StudentProfile, Task
 
 
 def add_profile(user_id):
@@ -200,6 +200,39 @@ def test_dashboard_overdue_empty_state(app, authed_client):
     response = authed_client.get("/dashboard")
     assert response.status_code == 200
     assert b"Nothing overdue to start." in response.data
+
+
+def test_dashboard_connects_current_course_load_to_task_planning(
+    app, authed_client
+):
+    with app.app_context():
+        profile = add_profile(authed_client.user_id)
+        for course_id in (
+            "NATIONAL_AP_ENGLISH_LANGUAGE",
+            "MATH_AP_CALC_AB",
+            "MATH_AP_STATISTICS",
+        ):
+            db.session.add(
+                PlannedCourse(
+                    student_profile_id=profile.id,
+                    catalog_id="national",
+                    course_id=course_id,
+                    school_year=11,
+                    term="Full year",
+                    status="planned",
+                )
+            )
+        db.session.commit()
+
+    response = authed_client.get("/dashboard")
+    body = response.data.decode()
+
+    assert response.status_code == 200
+    assert "CURRENT COURSE LOAD" in body
+    assert "Heavy" in body
+    assert "3 planned courses" in body
+    assert "3 high-workload courses" in body
+    assert "consistent weekly task planning" in body
 
 
 def test_dashboard_overdue_scoped_to_current_user(app, authed_client):

@@ -19,12 +19,12 @@
         <nav>
           <a class="active" href="{{ url_for('main.dashboard') }}">Dashboard</a>
           <a href="{{ url_for('tasks.tasks') }}">Tasks</a>
-          <a href="{{ url_for('courses.course_plan') }}">My courses</a>
+          <a href="{{ url_for('courses.course_plan') }}">Course load</a>
           <a href="{{ url_for('profile.profile_view') }}">Student profile</a>
         </nav>
       </div>
       <div class="sidebar-footer">
-        <p class="module-note">Course map is ready for exploring pathways, prerequisites, and your four-year plan.</p>
+        <p class="module-note">Use the course-load planner to keep long-term choices realistic, then turn them into tasks you can start.</p>
         <form class="logout-form" method="post" action="{{ url_for('auth.logout') }}">
           <button type="submit" class="logout-button">Log out</button>
         </form>
@@ -109,6 +109,19 @@
           <p class="eyebrow">TASKS</p>
           <h2>{{ active_task_count }} active</h2>
           <p>Risk is calculated from visible rules such as time until due, start status, workload, difficulty, and interest.</p>
+        </article>
+
+        <article class="card">
+          <p class="eyebrow">CURRENT COURSE LOAD</p>
+          {% if course_load and course_load.course_count %}
+            <h2>{{ course_load.label }} &mdash; {{ course_load.course_count }} planned course{% if course_load.course_count != 1 %}s{% endif %}</h2>
+            <p>{% if course_load.high_workload_count %}{{ course_load.high_workload_count }} high-workload course{% if course_load.high_workload_count != 1 %}s{% endif %} will need consistent weekly task planning.{% else %}Your current selections leave room to build a realistic weekly task plan.{% endif %}</p>
+            <a class="text-link" href="{{ url_for('courses.course_plan') }}">Review course load</a>
+          {% elif profile %}
+            <h2>No courses planned for {{ profile.grade }}th grade.</h2>
+            <p>Add only the courses you are seriously considering so workload guidance stays useful.</p>
+            <a class="text-link" href="{{ url_for('courses.course_explorer') }}">Plan course load</a>
+          {% endif %}
         </article>
 
         <article class="card">

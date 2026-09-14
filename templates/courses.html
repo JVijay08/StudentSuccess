@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#18283d">
-  <title>Course explorer | StudentSuccess</title>
+  <title>Course-load planner | StudentSuccess</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/courses.css') }}">
 </head>
 <body>
   <main class="course-page">
     <header class="page-header">
       <div>
-        <p class="eyebrow">STUDENTSUCCESS / COURSE MAP</p>
-        <h1>Build a course path with context.</h1>
-        <p class="lede">Explore the catalog, check prerequisites, and save options to a four-year plan.</p>
+        <p class="eyebrow">STUDENTSUCCESS / COURSE-LOAD PLANNER</p>
+        <h1>Choose a workload you can actually manage.</h1>
+        <p class="lede">Compare only the courses you are seriously considering, check prerequisites, and use the workload estimate to shape a realistic task plan.</p>
       </div>
       <div class="header-actions">
         <a class="quiet-link" href="{{ url_for('main.dashboard') }}">Dashboard</a>
@@ -31,7 +31,7 @@
 
     <section class="explorer-layout">
       <aside class="filter-panel">
-        <div class="section-kicker">FILTER THE CATALOG</div>
+        <div class="section-kicker">FIND A COURSE OPTION</div>
         <form method="get">
           <label>State
             <select name="state"><option value="">Choose a state</option>{% for state in states %}<option value="{{ state.code }}" {% if state_code == state.code %}selected{% endif %}>{{ state.name }}</option>{% endfor %}</select>
@@ -70,7 +70,7 @@
 
       <section class="results-panel">
         {% if state_code and catalog_id == 'national' %}<div class="catalog-note state-note">No verified local catalog is loaded for this state yet. Showing the national reference catalog instead.</div>{% endif %}
-        <div class="results-heading"><div><span class="section-kicker">{{ courses|length }} MATCHES</span><h2>Course catalog</h2></div><span class="micro-note">Select up to three to compare</span></div>
+        <div class="results-heading"><div><span class="section-kicker">{{ courses|length }} MATCHES</span><h2>Courses to consider</h2></div><span class="micro-note">Compare up to three before planning</span></div>
         <form id="compare-form" method="get" action="{{ url_for('courses.course_compare') }}"><input type="hidden" name="catalog" value="{{ catalog_id }}"></form>
           <div class="course-grid">
             {% for course in courses %}
