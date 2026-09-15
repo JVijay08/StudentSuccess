@@ -10,6 +10,7 @@ def test_public_home_explains_prototype_and_offers_fictional_demo(app):
     assert b"Plan less." in response.data
     assert b"Try the fictional demo" in response.data
     assert b"Use fictional data only" in response.data
+    assert b"high-school students" in response.data
 
 
 def test_login_page_can_return_to_public_home(app):

@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#18283d">
-  <title>My course plan | StudentSuccess</title>
+  <title>My Four-Year Plan | StudentSuccess</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/courses.css') }}">
   {% include '_accessibility_head.html' %}
 </head>
 <body>
   {% include '_accessibility_body.html' %}
   <main id="main-content" class="course-page">
-    <header class="page-header"><div><p class="eyebrow">STUDENTSUCCESS / COURSE LOAD</p><h1>Plan only what you can follow through on.</h1><p class="lede">Balance ambition with prerequisites, weekly study time, and the assignments these courses will create.</p></div><div class="header-actions"><a class="button" href="{{ url_for('courses.course_explorer') }}">Add course</a><a class="quiet-link" href="{{ url_for('main.dashboard') }}">Dashboard</a></div></header>
+    <header class="page-header"><div><p class="eyebrow">STUDENTSUCCESS / MY FOUR-YEAR PLAN</p><h1>Plan only what you can follow through on.</h1><p class="lede">Balance ambition with prerequisites, weekly study time, and the assignments these high-school courses will create.</p></div><div class="header-actions"><a class="button" href="{{ url_for('courses.course_explorer') }}">Explore Courses</a><a class="quiet-link" href="{{ url_for('main.dashboard') }}">Dashboard</a></div></header>
     <div class="catalog-note">Course-load ratings are planning estimates. Confirm graduation requirements, prerequisites, and availability with your school counselor.</div>
     <section class="plan-grid">{% for summary in year_summaries %}<article class="year-card"><div class="year-heading"><div><span class="section-kicker">YEAR {{ summary.school_year }}</span><h2>{{ summary.school_year }}th grade</h2></div><span class="workload workload-{{ summary.workload_label|lower }}">{{ summary.workload_label }} estimate</span></div>{% if summary.rows %}<ul class="planned-list">{% for row in summary.rows %}<li><div><a href="{{ url_for('courses.course_detail', course_id=row.course.course_id, catalog=row.catalog_id) }}">{{ row.course.course_name }}</a><small>{{ row.course.subject }} · {{ row.planned.term }} · {{ row.planned.status|title }} · {{ catalogs[row.catalog_id].label }}</small></div><form method="post" action="{{ url_for('courses.remove_from_plan', planned_course_id=row.planned.id) }}"><button class="icon-button" type="submit" aria-label="Remove {{ row.course.course_name }}">×</button></form></li>{% endfor %}</ul><p class="workload-note">{{ summary.rows|length }} course{% if summary.rows|length != 1 %}s{% endif %} · {{ summary.high_workload_count }} high-workload · score {{ summary.workload_points }}</p>{% else %}<p class="empty-state compact">No courses planned yet.</p>{% endif %}</article>{% endfor %}</section>
     <section class="plan-footer"><div><span class="section-kicker">TURN THE PLAN INTO ACTION</span><h2>Make the workload concrete.</h2><p>Confirm requirements with your counselor, then add upcoming assignments to see what deserves attention now.</p></div><a class="button" href="{{ url_for('tasks.tasks') }}">Open task planner</a></section>

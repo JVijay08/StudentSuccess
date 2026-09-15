@@ -2,7 +2,7 @@
 
 > **Public prototype:** StudentSuccess is still under development and is not ready to store real student information. Use fictional data only when exploring the live demo.
 
-StudentSuccess is a focused Flask application for procrastination-aware academic planning. It is designed for high school students who know what work they need to complete but have trouble starting before deadline pressure creates urgency.
+StudentSuccess is a procrastination-aware workload and action planner for high-school students. It helps students choose a manageable course load, decide what to work on now, and start assignments before deadline pressure creates urgency.
 
 **[Open the live prototype](https://studentsuccess.onrender.com/)** and choose **Try the fictional demo** for an isolated, pre-populated workspace.
 

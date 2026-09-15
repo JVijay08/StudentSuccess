@@ -16,18 +16,18 @@
       <div>
         <a class="brand" href="{{ url_for('main.dashboard') }}">
           <span class="brand-mark" aria-hidden="true"><span>S</span><span>S</span></span>
-          <span><strong>StudentSuccess</strong><small>Academic planning</small></span>
+          <span><strong>StudentSuccess</strong><small>High-school planning</small></span>
         </a>
         <nav>
           <a class="active" href="{{ url_for('main.dashboard') }}">Dashboard</a>
           <a href="{{ url_for('tasks.tasks') }}">Tasks</a>
-          <a href="{{ url_for('courses.course_plan') }}">Course load</a>
+          <a href="{{ url_for('courses.course_plan') }}">Course Load</a>
           <a href="{{ url_for('profile.profile_view') }}">Student profile</a>
           <a href="{{ url_for('settings.settings') }}">Settings</a>
         </nav>
       </div>
       <div class="sidebar-footer">
-        <p class="module-note">Use the course-load planner to keep long-term choices realistic, then turn them into tasks you can start.</p>
+        <p class="module-note">Your planned courses estimate overall workload. Your assignments determine what to work on next.</p>
         <form class="logout-form" method="post" action="{{ url_for('auth.logout') }}">
           <button type="submit" class="logout-button">Log out</button>
         </form>

@@ -14,16 +14,16 @@
     <header class="page-header">
       <div>
         <p class="eyebrow">STUDENTSUCCESS / COURSE-LOAD PLANNER</p>
-        <h1>Choose a workload you can actually manage.</h1>
+        <h1>Explore high-school courses.</h1>
         <p class="lede">Compare only the courses you are seriously considering, check prerequisites, and use the workload estimate to shape a realistic task plan.</p>
       </div>
       <div class="header-actions">
         <a class="quiet-link" href="{{ url_for('main.dashboard') }}">Dashboard</a>
-        <a class="button" href="{{ url_for('courses.course_plan') }}">My plan</a>
+        <a class="button" href="{{ url_for('courses.course_plan') }}">My Four-Year Plan</a>
       </div>
     </header>
 
-    <div class="catalog-note">Workload and rigor labels are planning estimates, not official placement advice. Confirm course requirements and availability with your school counselor.</div>
+    <div class="catalog-note">Designed for U.S. high-school planning. Workload and rigor labels are estimates, and offerings vary by school. Confirm requirements and availability with your counselor.</div>
 
     {% with messages = get_flashed_messages(with_categories=true) %}
       {% if messages %}

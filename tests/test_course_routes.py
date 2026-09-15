@@ -26,6 +26,7 @@ def test_course_explorer_filters_catalog(authed_client):
     assert response.status_code == 200
     assert b"AP Calculus AB" in response.data
     assert b"AP Biology" not in response.data
+    assert b"U.S. high-school planning" in response.data
 
 
 def test_program_catalog_selection_overrides_stale_state_selection(authed_client):
