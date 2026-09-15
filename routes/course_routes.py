@@ -217,24 +217,19 @@ def course_plan():
     for row in rows:
         by_year[row["planned"].school_year].append(row)
 
-    workload_points = {"Low": 1, "Medium": 2, "High": 3}
     year_summaries = []
     for school_year in range(9, 13):
         year_rows = by_year.get(school_year, [])
-        points = sum(
-            workload_points.get(row["course"]["workload_level"], 0)
-            for row in year_rows
+        summary = course_service.summarize_course_load(
+            [row["course"] for row in year_rows]
         )
-        year_summaries.append(
-            {
-                "school_year": school_year,
-                "rows": year_rows,
-                "workload_points": points,
-                "workload_label": (
-                    "Heavy" if points >= 8 else "Moderate" if points >= 4 else "Light"
-                ),
-            }
-        )
+        year_summaries.append({
+            "school_year": school_year,
+            "rows": year_rows,
+            "workload_points": summary["points"],
+            "workload_label": summary["label"],
+            "high_workload_count": summary["high_workload_count"],
+        })
 
     return render_template(
         "course_plan.html",

@@ -284,3 +284,35 @@ def get_catalog_options(catalog="forsyth-ga"):
             }
         ),
     }
+
+
+def summarize_course_load(courses):
+    """Return an explainable workload estimate for one school year.
+
+    Seven medium-workload courses represent a normal full schedule. A load is
+    marked heavy only when it exceeds that size or contains an unusually dense
+    concentration of high-workload courses.
+    """
+    workload_points = {"Low": 1, "Medium": 2, "High": 3}
+    course_count = len(courses)
+    high_workload_count = sum(
+        course.get("workload_level") == "High" for course in courses
+    )
+    points = sum(
+        workload_points.get(course.get("workload_level"), 0)
+        for course in courses
+    )
+
+    if course_count >= 8 or high_workload_count >= 4 or points >= 17:
+        label = "Heavy"
+    elif course_count >= 5 or high_workload_count >= 2 or points >= 8:
+        label = "Moderate"
+    else:
+        label = "Light"
+
+    return {
+        "course_count": course_count,
+        "high_workload_count": high_workload_count,
+        "points": points,
+        "label": label,
+    }

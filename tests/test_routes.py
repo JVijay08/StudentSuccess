@@ -1,6 +1,36 @@
 ﻿from extensions import db
-from models import StudentProfile
+from models import StudentProfile, Task, User
 from services.auth_service import SESSION_TIMEOUT_MINUTES
+
+
+def test_public_home_explains_prototype_and_offers_fictional_demo(app):
+    response = app.test_client().get("/")
+
+    assert response.status_code == 200
+    assert b"Plan less." in response.data
+    assert b"Try the fictional demo" in response.data
+    assert b"Use fictional data only" in response.data
+
+
+def test_one_click_demo_creates_isolated_populated_workspace(app):
+    client = app.test_client()
+
+    response = client.post("/demo", follow_redirects=True)
+
+    assert response.status_code == 200
+    assert b"Fictional demo workspace" in response.data
+    assert b"Finish algebra problem set" in response.data
+    assert b"Moderate estimate" in response.data
+    with app.app_context():
+        assert User.query.filter(User.username.startswith("demo-")).count() == 1
+        assert Task.query.count() == 7
+
+
+def test_authenticated_home_redirects_to_dashboard(authed_client):
+    response = authed_client.get("/")
+
+    assert response.status_code == 302
+    assert response.headers["Location"].endswith("/dashboard")
 
 
 def test_dashboard_and_onboarding_get_work(authed_client):

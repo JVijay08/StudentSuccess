@@ -42,6 +42,10 @@
         {% endif %}
       {% endwith %}
 
+      {% if session.get('demo_mode') %}
+        <div class="demo-banner" role="status"><strong>Fictional demo workspace.</strong> Explore freely—this sample account contains no real student information.</div>
+      {% endif %}
+
       <header>
         <p class="eyebrow">YOUR ACADEMIC WORKSPACE</p>
         {% if profile %}
@@ -77,7 +81,7 @@
       </section>
 
       <section class="grid">
-        <article class="card">
+        <article class="card card-overdue">
           <p class="eyebrow">OVERDUE TO START</p>
           {% if overdue_tasks %}
             <ul class="overdue-list">
@@ -105,16 +109,16 @@
           {% endif %}
         </article>
 
-        <article class="card">
+        <article class="card card-tasks">
           <p class="eyebrow">TASKS</p>
           <h2>{{ active_task_count }} active</h2>
           <p>Risk is calculated from visible rules such as time until due, start status, workload, difficulty, and interest.</p>
         </article>
 
-        <article class="card">
+        <article class="card card-courses">
           <p class="eyebrow">CURRENT COURSE LOAD</p>
           {% if course_load and course_load.course_count %}
-            <h2>{{ course_load.label }} &mdash; {{ course_load.course_count }} planned course{% if course_load.course_count != 1 %}s{% endif %}</h2>
+            <h2>{{ course_load.label }} estimate &mdash; {{ course_load.course_count }} planned course{% if course_load.course_count != 1 %}s{% endif %}</h2>
             <p>{% if course_load.high_workload_count %}{{ course_load.high_workload_count }} high-workload course{% if course_load.high_workload_count != 1 %}s{% endif %} will need consistent weekly task planning.{% else %}Your current selections leave room to build a realistic weekly task plan.{% endif %}</p>
             <a class="text-link" href="{{ url_for('courses.course_plan') }}">Review course load</a>
           {% elif profile %}
@@ -124,7 +128,7 @@
           {% endif %}
         </article>
 
-        <article class="card">
+        <article class="card card-profile">
           <p class="eyebrow">PROFILE</p>
           {% if profile %}
             <h2>{{ profile.grade }}th grade</h2>
@@ -139,7 +143,7 @@
           {% endif %}
         </article>
 
-        <article class="card">
+        <article class="card card-completion">
           <p class="eyebrow">COMPLETION RATE</p>
           {% if success_rate.percent is not none %}
             <h2>{{ success_rate.completed }} / {{ success_rate.total }} tasks completed &mdash; {{ success_rate.percent }}%</h2>
@@ -150,9 +154,9 @@
           {% endif %}
         </article>
 
-        <article class="card">
+        {% if start_delay_summary %}
+        <article class="card card-delay">
           <p class="eyebrow">START-DELAY SUMMARY</p>
-          {% if start_delay_summary %}
             <table class="summary-table">
               <caption class="visually-hidden">Average start delay by subject</caption>
               <thead>
@@ -172,15 +176,12 @@
                 {% endfor %}
               </tbody>
             </table>
-          {% else %}
-            <h2>Not enough data yet.</h2>
-            <p>Once you plan a start time and then start tasks, StudentSuccess will summarize your timing here.</p>
-          {% endif %}
         </article>
+        {% endif %}
 
-        <article class="card">
+        {% if estimate_accuracy.overall or estimate_accuracy.groups %}
+        <article class="card card-estimates">
           <p class="eyebrow">ESTIMATE ACCURACY</p>
-          {% if estimate_accuracy.overall or estimate_accuracy.groups %}
             {% if estimate_accuracy.overall %}
               <h2>Overall: {{ estimate_accuracy.overall.rate }}&times; &mdash; {{ estimate_accuracy.overall.label }}</h2>
             {% endif %}
@@ -205,15 +206,12 @@
                 </tbody>
               </table>
             {% endif %}
-          {% else %}
-            <h2>Not enough completed tasks yet.</h2>
-            <p>Not enough completed tasks yet to measure estimate accuracy. Once you start and complete a few tasks, StudentSuccess will show how your actual time compares to your estimates here.</p>
-          {% endif %}
         </article>
+        {% endif %}
 
-        <article class="card">
+        {% if start_history %}
+        <article class="card card-history">
           <p class="eyebrow">RECENT START HISTORY</p>
-          {% if start_history %}
             <table class="summary-table">
               <caption class="visually-hidden">Most recently completed tasks and how late or early they were started</caption>
               <thead>
@@ -233,11 +231,8 @@
                 {% endfor %}
               </tbody>
             </table>
-          {% else %}
-            <h2>No start history yet.</h2>
-            <p>Complete a few tasks and StudentSuccess will list how early or late you started each one.</p>
-          {% endif %}
         </article>
+        {% endif %}
       </section>
     </main>
   </div>

@@ -58,25 +58,27 @@ header > p:last-child, .card p, .focus-card > p:not(.eyebrow) { max-width: 600px
 .button.secondary:hover { color: var(--white); background: var(--ink); }
 .grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
 .card { min-width: 0; padding: 23px; }
-.card:nth-child(1) { grid-column: span 7; }
-.card:nth-child(2), .card:nth-child(3) { grid-column: span 5; }
-.card:nth-child(4) { grid-column: span 4; }
-.card:nth-child(5) { grid-column: span 8; }
-.card:nth-child(6), .card:nth-child(7) { grid-column: span 6; }
+.card-overdue, .card-courses { grid-column: span 7; }
+.card-tasks, .card-profile { grid-column: span 5; }
+.card-completion { grid-column: span 4; }
+.card-completion:last-child { grid-column: span 12; }
+.card-delay { grid-column: span 8; }
+.card-estimates, .card-history { grid-column: span 6; }
 .card h2 { margin-bottom: 12px; font-family: Georgia, serif; font-size: 1.45rem; font-weight: 400; }
 .card dl { margin: 0; }
 dl div { display: flex; justify-content: space-between; gap: 16px; padding: 9px 0; border-bottom: 1px solid var(--line); }
 dl div:last-child { border-bottom: 0; }
 dt { color: var(--muted); }
 dd { margin: 0; font-weight: 700; text-align: right; }
-.summary-table { width: 100%; border-collapse: collapse; font-size: .86rem; }
-.summary-table th, .summary-table td { padding: 9px 7px; text-align: left; border-bottom: 1px solid var(--line); }
+.summary-table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: .86rem; }
+.summary-table th, .summary-table td { padding: 9px 7px; overflow-wrap: anywhere; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
 .summary-table th { color: var(--muted); font: 700 .62rem "Courier New", monospace; letter-spacing: .08em; text-transform: uppercase; }
 .summary-table tbody tr:last-child td { border-bottom: 0; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .flash { display: grid; gap: 8px; margin-bottom: 24px; padding: 14px 16px; border-left: 4px solid var(--blue); background: var(--white); }
 .flash p { margin: 0; line-height: 1.5; }
 .flash-warning { color: #8f5b00; }.flash-error { color: #a8352a; }
+.demo-banner { margin-bottom: 24px; padding: 14px 16px; border-left: 4px solid var(--amber); color: #5f4300; background: #fff7dd; line-height: 1.5; }
 .overdue-list { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
 .overdue-item { display: grid; gap: 8px; padding: 14px 0; border-bottom: 1px solid var(--line); }
 .overdue-item:last-child { border-bottom: 0; padding-bottom: 0; }
@@ -85,5 +87,5 @@ dd { margin: 0; font-weight: 700; text-align: right; }
 .reschedule-form { display: grid; gap: 6px; margin-top: 3px; }
 .reschedule-form label { color: var(--muted); font: 700 .63rem "Courier New", monospace; letter-spacing: .08em; text-transform: uppercase; }
 .reschedule-form input { padding: 10px; border: 1px solid var(--line); border-radius: 2px; color: var(--ink); font: inherit; background: var(--white); }
-@media (max-width: 900px) { .shell { grid-template-columns: 190px minmax(0,1fr); } .grid { grid-template-columns: repeat(2,minmax(0,1fr)); } .card, .card:nth-child(n) { grid-column: span 1; grid-row: auto; } .card:first-child { grid-column: span 2; } }
+@media (max-width: 900px) { .shell { grid-template-columns: 190px minmax(0,1fr); } .grid { grid-template-columns: repeat(2,minmax(0,1fr)); } .card, .card-completion:last-child { grid-column: span 1; grid-row: auto; } .card:first-child { grid-column: span 2; } }
 @media (max-width: 680px) { .shell { display:block; } .sidebar { gap:22px; padding:18px; } nav { display:flex; margin-top:26px; overflow-x:auto; } nav a { white-space:nowrap; } .module-note { display:none; } main { padding:34px 18px 52px; } header h1 { font-size:clamp(2.6rem,15vw,4.5rem); } .grid { grid-template-columns:1fr; } .card:first-child { grid-column:auto; } .focus-card { padding:26px 22px; } }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#18283d">
+  <meta name="description" content="StudentSuccess turns course workload, deadlines, and start habits into one realistic next action.">
+  <meta property="og:title" content="StudentSuccess | Plan less. Start sooner.">
+  <meta property="og:description" content="A procrastination-aware academic planning prototype for high-school students.">
+  <meta property="og:type" content="website">
+  <title>StudentSuccess | Plan less. Start sooner.</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
+</head>
+<body>
+  <main>
+    <nav aria-label="Primary navigation">
+      <a class="brand" href="{{ url_for('main.home') }}">StudentSuccess</a>
+      <div><a href="{{ url_for('auth.login') }}">Log in</a><a class="nav-cta" href="{{ url_for('auth.register') }}">Create account</a></div>
+    </nav>
+
+    <section class="hero">
+      <div>
+        <p class="eyebrow">ACADEMIC PLANNING THAT LEADS TO ACTION</p>
+        <h1>Plan less.<br>Start sooner.</h1>
+        <p class="lede">StudentSuccess connects course workload, real deadlines, and your start habits to answer one useful question: what should I work on now?</p>
+        <div class="hero-actions">
+          <form method="post" action="{{ url_for('auth.start_demo') }}"><button type="submit">Try the fictional demo</button></form>
+          <a href="{{ url_for('auth.register') }}">Build your own test plan</a>
+        </div>
+        <p class="prototype-note"><strong>Public prototype.</strong> This project is still being developed and is not ready for real student information. Use fictional data only.</p>
+      </div>
+      <aside class="next-card" aria-label="Example recommendation">
+        <span>WHAT TO WORK ON NOW</span>
+        <strong>Finish algebra problem set</strong>
+        <p>Planned start passed 1 hour ago · due today · 50 minute estimate</p>
+        <small>Every recommendation shows its reasons.</small>
+      </aside>
+    </section>
+
+    <section class="feature-grid" aria-label="StudentSuccess features">
+      <article><span>01</span><h2>Choose a realistic load</h2><p>Compare course rigor and workload before building a four-year plan.</p></article>
+      <article><span>02</span><h2>Turn plans into starts</h2><p>Give assignments planned start times instead of tracking deadlines alone.</p></article>
+      <article><span>03</span><h2>Learn from real behavior</h2><p>See transparent patterns in delayed starts and inaccurate time estimates.</p></article>
+    </section>
+
+    <footer>
+      <p>Planning estimates are informational. Confirm course requirements and availability with your school counselor.</p>
+      <a href="https://github.com/JVijay08/StudentSuccess">View source on GitHub</a>
+    </footer>
+  </main>
+</body>
+</html>

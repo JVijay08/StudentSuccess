@@ -130,7 +130,7 @@ def test_start_history_empty_state(app, authed_client):
 
     response = authed_client.get("/dashboard")
     assert response.status_code == 200
-    assert b"No start history yet." in response.data
+    assert b"RECENT START HISTORY" not in response.data
 
 from models import User
 from services.auth_service import hash_password
@@ -229,7 +229,7 @@ def test_dashboard_connects_current_course_load_to_task_planning(
 
     assert response.status_code == 200
     assert "CURRENT COURSE LOAD" in body
-    assert "Heavy" in body
+    assert "Moderate estimate" in body
     assert "3 planned courses" in body
     assert "3 high-workload courses" in body
     assert "consistent weekly task planning" in body
@@ -463,8 +463,7 @@ def test_dashboard_estimate_accuracy_insufficient_history(app, authed_client):
     assert response.status_code == 200
     body = response.data.decode()
 
-    assert "ESTIMATE ACCURACY" in body
-    assert "Not enough completed tasks yet to measure estimate accuracy." in body
+    assert "ESTIMATE ACCURACY" not in body
 
 
 def test_dashboard_estimate_accuracy_unauthenticated_redirects(app):

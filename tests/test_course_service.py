@@ -7,6 +7,7 @@
     get_catalogs,
     get_state_options,
     load_courses,
+    summarize_course_load,
 )
 
 
@@ -122,3 +123,18 @@ def test_imported_state_catalogs_and_program_merges_are_usable():
     assert len(load_courses("ib")) >= 223
     assert all(course["course_type"] == "AP" for course in load_courses("ap"))
     assert all(course["course_type"] == "IB" for course in load_courses("ib"))
+
+
+def test_course_load_treats_five_or_seven_typical_courses_as_moderate():
+    medium_course = {"workload_level": "Medium"}
+
+    assert summarize_course_load([medium_course] * 5)["label"] == "Moderate"
+    assert summarize_course_load([medium_course] * 7)["label"] == "Moderate"
+
+
+def test_course_load_marks_unusually_large_or_advanced_schedules_heavy():
+    low_course = {"workload_level": "Low"}
+    high_course = {"workload_level": "High"}
+
+    assert summarize_course_load([low_course] * 8)["label"] == "Heavy"
+    assert summarize_course_load([high_course] * 4)["label"] == "Heavy"

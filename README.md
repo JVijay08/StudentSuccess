@@ -4,6 +4,12 @@
 
 StudentSuccess is a focused Flask application for procrastination-aware academic planning. It is designed for high school students who know what work they need to complete but have trouble starting before deadline pressure creates urgency.
 
+**[Open the live prototype](https://studentsuccess.onrender.com/)** and choose **Try the fictional demo** for an isolated, pre-populated workspace.
+
+![StudentSuccess landing page](docs/screenshots/landing.png)
+
+![StudentSuccess fictional demo dashboard](docs/screenshots/dashboard.png)
+
 ## What problem does it address?
 
 The project aims to help a student choose what to work on now, compare planned and actual start times, recognize repeated delay patterns, and eventually build more realistic schedules from real behavior.
@@ -17,6 +23,7 @@ The project aims to help a student choose what to work on now, compare planned a
 - Course explorer with search, filters, details, comparison, prerequisites, and four-year planning
 - Task creation, planned/actual start tracking, completion, and explainable rule-based risk
 - Automated route, task, risk, and course-service tests
+- Public landing page and isolated one-click fictional demo workspaces
 
 Machine learning, AI assistance, optimization, and calendar integration are not implemented. State selection is available for all 50 states, with imported data for Alabama, Arkansas, Florida, Georgia/Forsyth, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Michigan, Minnesota, Mississippi, Missouri, Nebraska, North Carolina, North Dakota, Ohio, South Carolina, South Dakota, Tennessee, Virginia, West Virginia, and Wisconsin. Coverage varies by supplied source. The national and AP/IB catalogs are planning references, not universal graduation or placement authorities.
 
@@ -26,6 +33,13 @@ Machine learning, AI assistance, optimization, and calendar integration are not 
 - Flask-SQLAlchemy with SQLite locally and PostgreSQL in persistent deployments
 - HTML and CSS
 - pytest
+
+## Important limitations
+
+- StudentSuccess is a prototype. Do not enter real student or school-record data.
+- Workload, rigor, risk, and priority labels are transparent planning estimates, not official academic advice.
+- Course offerings and requirements vary by school and must be confirmed with a school counselor.
+- The project does not currently use artificial intelligence or claim to make predictive decisions.
 
 ## Local setup
 
@@ -81,6 +95,10 @@ The `/health` endpoint returns `{"status": "ok"}` for deployment checks.
 Render's free service sleeps after inactivity and its local SQLite filesystem is
 temporary, so this deployment is suitable for a portfolio demo rather than
 reliable long-term data storage.
+
+## License
+
+StudentSuccess is available under the [MIT License](LICENSE).
 
 ## Project structure
 
