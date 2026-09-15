@@ -79,6 +79,7 @@ dd { margin: 0; font-weight: 700; text-align: right; }
 .flash p { margin: 0; line-height: 1.5; }
 .flash-warning { color: #8f5b00; }.flash-error { color: #a8352a; }
 .demo-banner { margin-bottom: 24px; padding: 14px 16px; border-left: 4px solid var(--amber); color: #5f4300; background: #fff7dd; line-height: 1.5; }
+.demo-checklist{display:grid;grid-template-columns:minmax(220px,.8fr) minmax(280px,1.2fr) auto;gap:24px;align-items:start;margin-bottom:24px;padding:22px;border:1px solid var(--line);border-top:5px solid var(--amber);background:var(--white);box-shadow:7px 7px 0 rgba(24,35,33,.08)}.demo-checklist h2{margin:0;font:400 1.35rem Georgia,serif}.demo-checklist ol{margin:0;padding-left:20px;color:var(--muted);line-height:1.6}.demo-checklist a{font-weight:700;text-decoration:underline}.demo-checklist button{width:auto;white-space:nowrap}
 .reminder-panel{margin-top:24px;padding:20px;border:1px solid var(--amber);background:#fff7dd}.reminder-panel>div{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:9px 0;border-top:1px solid var(--line)}.reminder-panel form{margin:0}.reminder-panel button{padding:8px 12px;font-size:.82rem}
 .overdue-list { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
 .overdue-item { display: grid; gap: 8px; padding: 14px 0; border-bottom: 1px solid var(--line); }
@@ -88,5 +89,5 @@ dd { margin: 0; font-weight: 700; text-align: right; }
 .reschedule-form { display: grid; gap: 6px; margin-top: 3px; }
 .reschedule-form label { color: var(--muted); font: 700 .63rem "Courier New", monospace; letter-spacing: .08em; text-transform: uppercase; }
 .reschedule-form input { padding: 10px; border: 1px solid var(--line); border-radius: 2px; color: var(--ink); font: inherit; background: var(--white); }
-@media (max-width: 900px) { .shell { grid-template-columns: 190px minmax(0,1fr); } .grid { grid-template-columns: repeat(2,minmax(0,1fr)); } .card, .card-completion:last-child { grid-column: span 1; grid-row: auto; } .card:first-child { grid-column: span 2; } }
+@media (max-width: 900px) { .shell { grid-template-columns: 190px minmax(0,1fr); } .grid { grid-template-columns: repeat(2,minmax(0,1fr)); } .card, .card-completion:last-child { grid-column: span 1; grid-row: auto; } .card:first-child { grid-column: span 2; } .demo-checklist{grid-template-columns:1fr}.demo-checklist button{justify-self:start} }
 @media (max-width: 680px) { .shell { display:block; } .sidebar { gap:22px; padding:18px; } nav { display:flex; margin-top:26px; overflow-x:auto; } nav a { white-space:nowrap; } .module-note { display:none; } main { padding:34px 18px 52px; } header h1 { font-size:clamp(2.6rem,15vw,4.5rem); } .grid { grid-template-columns:1fr; } .card:first-child { grid-column:auto; } .focus-card { padding:26px 22px; } }

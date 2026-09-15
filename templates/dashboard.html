@@ -47,6 +47,11 @@
 
       {% if session.get('demo_mode') %}
         <div class="demo-banner" role="status"><strong>Fictional demo workspace.</strong> Explore freely—this sample account contains no real student information.</div>
+        <section class="demo-checklist" id="demo-checklist" aria-labelledby="demo-checklist-title">
+          <div><p class="eyebrow">QUICK DEMO TOUR</p><h2 id="demo-checklist-title">See the core idea in a few minutes.</h2></div>
+          <ol><li>Review the explained next-action recommendation below.</li><li><a href="{{ url_for('tasks.tasks') }}">Start or complete a sample task.</a></li><li><a href="{{ url_for('courses.course_plan') }}">Review the fictional four-year course load.</a></li><li><a href="{{ url_for('settings.settings') }}">Try an accessibility preference.</a></li></ol>
+          <button type="button" id="dismiss-demo-checklist" class="button secondary">Dismiss tour</button>
+        </section>
       {% endif %}
 
       <header>
@@ -249,5 +254,6 @@
     </main>
   </div>
   <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
+  {% if session.get('demo_mode') %}<script src="{{ url_for('static', filename='js/demo-tour.js') }}"></script>{% endif %}
 </body>
 </html>

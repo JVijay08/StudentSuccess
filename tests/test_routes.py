@@ -11,6 +11,9 @@ def test_public_home_explains_prototype_and_offers_fictional_demo(app):
     assert b"Try the fictional demo" in response.data
     assert b"Use fictional data only" in response.data
     assert b"high-school students" in response.data
+    assert b'property="og:image"' in response.data
+    assert b'name="twitter:card" content="summary_large_image"' in response.data
+    assert b"may take up to a minute to wake" in response.data
 
 
 def test_login_page_can_return_to_public_home(app):
@@ -36,6 +39,7 @@ def test_one_click_demo_creates_isolated_populated_workspace(app):
 
     assert response.status_code == 200
     assert b"Fictional demo workspace" in response.data
+    assert b"QUICK DEMO TOUR" in response.data
     assert b"Finish algebra problem set" in response.data
     assert b"Moderate estimate" in response.data
     with app.app_context():
@@ -48,6 +52,28 @@ def test_authenticated_home_redirects_to_dashboard(authed_client):
 
     assert response.status_code == 302
     assert response.headers["Location"].endswith("/dashboard")
+
+
+def test_missing_page_has_friendly_recovery(app):
+    response = app.test_client().get("/definitely-not-a-page")
+
+    assert response.status_code == 404
+    assert b"That page is not here" in response.data
+    assert b"Return home" in response.data
+
+
+def test_server_error_has_friendly_recovery(app):
+    app.config["PROPAGATE_EXCEPTIONS"] = False
+
+    @app.get("/_test/error")
+    def forced_error():
+        raise RuntimeError("forced test error")
+
+    response = app.test_client().get("/_test/error")
+
+    assert response.status_code == 500
+    assert b"StudentSuccess hit a snag" in response.data
+    assert b"Try again" in response.data
 
 
 def test_dashboard_and_onboarding_get_work(authed_client):

@@ -9,3 +9,4 @@ button,input,select,textarea{min-height:44px}button,[role="button"],input,select
 [data-theme="dark"] .sidebar nav a:hover,[data-theme="dark"] .sidebar nav a:focus-visible,[data-theme="dark"] .sidebar nav a.active{color:#fff;background:#263b56}
 [data-theme="high-contrast"] .sidebar nav a{color:#fff;border-color:transparent}
 [data-theme="high-contrast"] .sidebar nav a:hover,[data-theme="high-contrast"] .sidebar nav a:focus-visible,[data-theme="high-contrast"] .sidebar nav a.active{color:#000;background:#ffd800;text-decoration:none}
+@media(max-width:760px){[data-text-scale="150"] .explorer-layout,[data-text-scale="200"] .explorer-layout,[data-text-scale="150"] .fields,[data-text-scale="200"] .fields{grid-template-columns:1fr!important}[data-text-scale="150"] .course-page,[data-text-scale="200"] .course-page{width:min(100% - 24px,600px)}[data-text-scale="200"] .header-actions{width:100%}}

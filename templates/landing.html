@@ -8,6 +8,13 @@
   <meta property="og:title" content="StudentSuccess | Plan less. Start sooner.">
   <meta property="og:description" content="A procrastination-aware academic planning prototype for high-school students.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ url_for('main.home', _external=True) }}">
+  <meta property="og:image" content="{{ url_for('static', filename='images/studentsuccess-social-preview.png', _external=True) }}">
+  <meta property="og:image:alt" content="StudentSuccess — Plan less. Start sooner.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="StudentSuccess | Plan less. Start sooner.">
+  <meta name="twitter:description" content="A procrastination-aware planning prototype for high-school students.">
+  <meta name="twitter:image" content="{{ url_for('static', filename='images/studentsuccess-social-preview.png', _external=True) }}">
   <title>StudentSuccess | Plan less. Start sooner.</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
   {% include '_accessibility_head.html' %}
@@ -29,7 +36,7 @@
           <form method="post" action="{{ url_for('auth.start_demo') }}"><button type="submit">Try the fictional demo</button></form>
           <a href="{{ url_for('auth.register') }}">Build your own test plan</a>
         </div>
-        <p class="prototype-note"><strong>Public prototype.</strong> This project is still being developed and is not ready for real student information. Use fictional data only.</p>
+        <p class="prototype-note"><strong>Public prototype.</strong> This project is still being developed and is not ready for real student information. Use fictional data only. The free demo server may take up to a minute to wake after inactivity.</p>
       </div>
       <aside class="next-card" aria-label="Example recommendation">
         <span>WHAT TO WORK ON NOW</span>

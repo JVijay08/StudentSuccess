@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>{{ status_code }} | StudentSuccess</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/error.css') }}">
+  {% include '_accessibility_head.html' %}
+</head>
+<body>
+  {% include '_accessibility_body.html' %}
+  <main id="main-content" class="error-page">
+    <a class="brand" href="{{ url_for('main.home') }}">StudentSuccess</a>
+    <section>
+      <p class="eyebrow">ERROR {{ status_code }}</p>
+      <h1>{{ heading }}</h1>
+      <p class="lede">{{ message }}</p>
+      <div class="error-actions">
+        {% if session.get('user_id') %}<a class="error-primary" href="{{ url_for('main.dashboard') }}">Return to Dashboard</a>{% else %}<a class="error-primary" href="{{ url_for('main.home') }}">Return home</a>{% endif %}
+        <button type="button" onclick="window.location.reload()">Try again</button>
+      </div>
+    </section>
+  </main>
+  <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
+</body>
+</html>

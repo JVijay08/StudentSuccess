@@ -1,7 +1,7 @@
 ﻿from pathlib import Path
 import os
 
-from flask import Flask, session
+from flask import Flask, render_template, session
 from sqlalchemy import inspect, text
 
 from config import config
@@ -56,6 +56,15 @@ def create_app(test_config=None):
         response.headers.setdefault("Referrer-Policy", "strict-origin-when-cross-origin")
         response.headers.setdefault("Permissions-Policy", "camera=(), microphone=(), geolocation=()")
         return response
+
+    @app.errorhandler(404)
+    def page_not_found(_error):
+        return render_template("error.html", status_code=404, heading="That page is not here.", message="The link may be outdated, or the item may have been removed."), 404
+
+    @app.errorhandler(500)
+    def internal_error(_error):
+        db.session.rollback()
+        return render_template("error.html", status_code=500, heading="StudentSuccess hit a snag.", message="Your saved information is still safe. Try the page again in a moment."), 500
 
     with app.app_context():
         from models import StudentProfile, Task, User

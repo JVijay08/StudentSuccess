@@ -6,6 +6,10 @@ StudentSuccess is a procrastination-aware workload and action planner for high-s
 
 **[Open the live prototype](https://studentsuccess.onrender.com/)** and choose **Try the fictional demo** for an isolated, pre-populated workspace.
 
+> The free Render service can take up to a minute to wake after inactivity. The demo uses fictional data and is intended for product exploration, not real student records.
+
+![StudentSuccess social preview](static/images/studentsuccess-social-preview.png)
+
 ![StudentSuccess landing page](docs/screenshots/landing.png)
 
 ![StudentSuccess fictional demo dashboard](docs/screenshots/dashboard.png)
@@ -27,6 +31,7 @@ The project aims to help a student choose what to work on now, compare planned a
 - Account-backed accessibility settings for themes, text size and spacing, reduced motion, focus mode, dashboard density, and optional cards
 - Personalized task defaults, time zones, date formats, user-controlled in-app reminders, snoozing, and calendar export
 - Data export, completed-history clearing, password changes, and full account deletion
+- A guided fictional-demo tour, friendly error recovery pages, and social-sharing metadata
 
 Machine learning, AI assistance, optimization, and calendar integration are not implemented. State selection is available for all 50 states, with imported data for Alabama, Arkansas, Florida, Georgia/Forsyth, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Michigan, Minnesota, Mississippi, Missouri, Nebraska, North Carolina, North Dakota, Ohio, South Carolina, South Dakota, Tennessee, Virginia, West Virginia, and Wisconsin. Coverage varies by supplied source. The national and AP/IB catalogs are planning references, not universal graduation or placement authorities.
 
@@ -139,4 +144,4 @@ StudentSuccess/
 
 ## Short roadmap
 
-The next step is to summarize planned-versus-actual start delays by task type and subject. Adaptive scheduling, optimization, or machine learning should only be considered after useful real behavior data exists.
+Near-term work includes long-term hosting, stronger public-form protections, richer links between planned courses and assignments, and broader usability testing with fictional scenarios. Adaptive scheduling, optimization, or machine learning should only be considered after useful real behavior data exists.
