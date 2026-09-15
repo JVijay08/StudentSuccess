@@ -96,6 +96,11 @@ def _migrate_task_reminder_columns():
             text("ALTER TABLE tasks ADD COLUMN reminder_snoozed_until TIMESTAMP")
         )
         db.session.commit()
+    if "reminder_enabled" not in columns:
+        db.session.execute(
+            text("ALTER TABLE tasks ADD COLUMN reminder_enabled BOOLEAN NOT NULL DEFAULT TRUE")
+        )
+        db.session.commit()
 
 
 def _migrate_task_actual_minutes_column():
@@ -105,11 +110,6 @@ def _migrate_task_actual_minutes_column():
     columns = {column["name"] for column in inspector.get_columns("tasks")}
     if "actual_minutes" not in columns:
         db.session.execute(text("ALTER TABLE tasks ADD COLUMN actual_minutes INTEGER"))
-        db.session.commit()
-    if "reminder_enabled" not in columns:
-        db.session.execute(
-            text("ALTER TABLE tasks ADD COLUMN reminder_enabled BOOLEAN NOT NULL DEFAULT TRUE")
-        )
         db.session.commit()
 
 
