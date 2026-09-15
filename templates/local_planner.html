@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Plan assignments and course workload in your browser. No account, name, or GPA needed.">
+  <title>Your planner | StudentSuccess</title>
+  <link rel="icon" href="{{ url_for('static', filename='images/favicon.svg') }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/local_planner.css') }}">
+  <script src="{{ url_for('static', filename='js/local_planner.js') }}" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="shell">
+    <nav aria-label="Primary navigation"><a class="brand" href="{{ url_for('main.home') }}">StudentSuccess</a><a href="#storage">Storage &amp; backups</a></nav>
+    <main id="main-content">
+      <header><p class="eyebrow">NO ACCOUNT NEEDED</p><h1>A little planning.<br>A clearer next step.</h1><p>Your assignments and course plan stay in this browser. No name, email, or GPA required.</p></header>
+      <noscript><p class="notice">Enable JavaScript to use this browser-saved planner. No plan information is sent to the server.</p></noscript>
+      <p id="message" role="status" aria-live="polite"></p>
+      <section class="focus" aria-labelledby="next-heading"><p class="eyebrow">WHAT TO WORK ON NOW</p><h2 id="next-heading">Add a task to find your next step.</h2><p id="next-reason">Start with a deadline and a small estimate of the time you need.</p><p id="progress"></p></section>
+      <div class="columns">
+        <section class="card" aria-labelledby="task-form-heading">
+          <h2 id="task-form-heading">Plan a task</h2>
+          <form id="task-form">
+            <label for="task-title">Task</label><input id="task-title" maxlength="160" required placeholder="Finish algebra practice" autocomplete="off">
+            <label for="task-subject">Subject <span>(optional)</span></label><input id="task-subject" maxlength="80" autocomplete="off">
+            <label for="task-due">Deadline</label><input id="task-due" type="datetime-local" required>
+            <label for="task-start">Planned start <span>(optional)</span></label><input id="task-start" type="datetime-local">
+            <label for="task-minutes">Estimated minutes</label><input id="task-minutes" type="number" min="1" max="10080" step="1" value="30" required>
+            <div class="actions"><button type="submit" id="save-task">Add task</button><button type="button" id="cancel-edit" class="secondary" hidden>Cancel edit</button></div>
+          </form>
+        </section>
+        <section class="card" aria-labelledby="tasks-heading"><div class="section-heading"><h2 id="tasks-heading">Your tasks</h2><label class="compact" for="show-completed"><input id="show-completed" type="checkbox"> Show completed</label></div><p class="hint">Ordered by missed deadlines, missed starts, then earliest deadline. Dates use this device's time zone.</p><ul id="tasks" class="items"></ul></section>
+      </div>
+      <section class="card" aria-labelledby="courses-heading"><p class="eyebrow">MAKE ROOM FOR THE WORK</p><h2 id="courses-heading">Course workload</h2><p>List courses for the term you’re planning and estimate their weekly work outside class. No school or grade needed.</p>
+        <form id="budget-form" class="inline-form"><div><label for="budget">Hours available to study each week</label><input id="budget" type="number" min="0" max="168" step="0.5" required></div><button type="submit">Save availability</button></form>
+        <form id="course-form" class="inline-form"><div><label for="course-title">Course</label><input id="course-title" maxlength="120" required autocomplete="off" placeholder="Algebra"></div><div><label for="course-hours">Study hours / week</label><input id="course-hours" type="number" min="0" max="168" step="0.5" required></div><button type="submit">Add course</button></form>
+        <p id="workload" role="status"></p><ul id="courses" class="items"></ul><p class="hint">These are your estimates, not official course requirements. Confirm requirements with your school counselor.</p>
+      </section>
+      <section class="card" id="storage" aria-labelledby="storage-heading"><h2 id="storage-heading">Your browser. Your plan.</h2><p id="storage-state">Saved on this browser; not uploaded to StudentSuccess.</p><p>Anyone using this browser profile can access your plan. Clearing site data, using private browsing, or switching devices can mean losing access. Download a backup to keep a copy or move it to another device.</p><div class="actions"><button id="export" type="button">Download backup</button><label class="file-label" for="import">Restore backup<input id="import" type="file" accept=".json,application/json"></label><button id="clear" class="danger" type="button">Erase this browser's plan</button></div><p class="hint">Backups contain your task and course details. Keep them somewhere private. Restoring replaces the plan in this browser.</p>
+        <details><summary>What does the website receive?</summary><p>The server receives ordinary page and asset requests, which may appear in hosting logs. This planner does not upload task text, course details, or backups. There is no automatic sync. Existing account workspaces and the fictional demo use server storage and remain separate from this plan.</p><a href="{{ url_for('auth.login') }}">Open an existing account</a></details>
+      </section>
+    </main><footer>StudentSuccess · Plan less. Start sooner.</footer>
+  </div>
+</body>
+</html>

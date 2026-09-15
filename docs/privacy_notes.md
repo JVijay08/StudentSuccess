@@ -6,6 +6,27 @@ StudentSuccess is a local academic-planning project. Its guiding rule is simple:
 
 ## Current local data
 
+### Browser planner (default public entry point)
+
+The public `/planner` page works without registration or a student profile.
+Its task titles, subjects, deadlines, planned/actual starts, completion status,
+course workload estimates, and weekly availability are stored in localStorage
+under `studentsuccess.local-plan.v1`. The planner does not send these fields to
+the server. It has no analytics, remote libraries, or automatic account sync.
+Ordinary page and static-asset requests still reach the host and may be logged.
+
+Browser data is accessible to anyone using the same browser profile. Clearing
+site data or using private browsing can remove it. The page supports JSON backup,
+validated replacement imports, and deletion of its own storage key. Backups are
+unencrypted and should be kept private. Storage failures are surfaced to the user;
+invalid stored data is preserved for download rather than silently overwritten.
+
+The browser planner uses user-entered course-hour estimates and deadline/start
+ordering. The existing account prototype separately provides catalog planning,
+behavior analytics, and account settings. No existing account data is migrated.
+
+### Account and demo workspaces
+
 The SQLite database may contain a student's first name, grade, graduation year, GPA goals, weekly study-time estimate, career interest, and course-rigor preference. The task planner also stores assignment details and planned-versus-actual start times.
 
 The development database is stored locally in `instance/studentsuccess.db` and is ignored by Git. It should not be shared or committed.

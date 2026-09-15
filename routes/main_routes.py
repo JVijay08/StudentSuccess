@@ -108,6 +108,11 @@ def home():
     return render_template("landing.html")
 
 
+@main_bp.get("/planner")
+def local_planner():
+    return render_template("local_planner.html")
+
+
 def _date_time_format(settings, include_time=False):
     date_formats = {
         "month-first": "%b %d, %Y",

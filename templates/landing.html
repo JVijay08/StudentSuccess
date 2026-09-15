@@ -24,19 +24,19 @@
   <main id="main-content">
     <nav aria-label="Primary navigation">
       <a class="brand" href="{{ url_for('main.home') }}">StudentSuccess</a>
-      <div><a href="{{ url_for('auth.login') }}">Log in</a><a class="nav-cta" href="{{ url_for('auth.register') }}">Create account</a></div>
+      <div><a href="{{ url_for('auth.login') }}">Existing account</a><a class="nav-cta" href="{{ url_for('main.local_planner') }}">Open planner</a></div>
     </nav>
 
     <section class="hero">
       <div>
-        <p class="eyebrow">ACADEMIC PLANNING THAT LEADS TO ACTION</p>
+        <p class="eyebrow">YOUR PLAN. NO SIGNUP REQUIRED.</p>
         <h1>Plan less.<br>Start sooner.</h1>
-        <p class="lede">StudentSuccess helps high-school students choose a manageable course load and start assignments before deadline pressure takes over. It connects real deadlines and start habits to answer one useful question: what should I work on now?</p>
+        <p class="lede">A calmer way for high-school students to plan coursework and start assignments. Get a clear next step without sharing your name, email, or GPA. Your plan stays in your browser.</p>
         <div class="hero-actions">
-          <form method="post" action="{{ url_for('auth.start_demo') }}"><button type="submit">Try the fictional demo</button></form>
-          <a href="{{ url_for('auth.register') }}">Build your own test plan</a>
+          <a class="primary-action" href="{{ url_for('main.local_planner') }}">Start planning — no signup</a>
+          <a href="{{ url_for('main.local_planner') }}#storage">How your plan is stored</a>
         </div>
-        <p class="prototype-note"><strong>Public prototype.</strong> This project is still being developed and is not ready for real student information. Use fictional data only. The free demo server may take up to a minute to wake after inactivity.</p>
+        <p class="prototype-note"><strong>Saved on this browser.</strong> Task and course details are not uploaded. Download a backup to keep your plan when changing devices or clearing browser data. Anyone using this browser profile can access it.</p>
       </div>
       <aside class="next-card" aria-label="Example recommendation">
         <span>WHAT TO WORK ON NOW</span>
@@ -47,14 +47,19 @@
     </section>
 
     <section class="feature-grid" aria-label="StudentSuccess features">
-      <article><span>01</span><h2>Choose a realistic load</h2><p>Compare course rigor and workload before building a four-year plan.</p></article>
+      <article><span>01</span><h2>Choose a realistic load</h2><p>Compare your estimated course workload with the time you have available each week.</p></article>
       <article><span>02</span><h2>Turn plans into starts</h2><p>Give assignments planned start times instead of tracking deadlines alone.</p></article>
-      <article><span>03</span><h2>Learn from real behavior</h2><p>See transparent patterns in delayed starts and inaccurate time estimates.</p></article>
+      <article><span>03</span><h2>Keep control of your plan</h2><p>No profile to fill out. Download a backup, restore it on another device, or erase your plan whenever you want.</p></article>
+    </section>
+
+    <section class="server-demo" aria-labelledby="demo-heading">
+      <h2 id="demo-heading">Want to explore the account-based prototype?</h2>
+      <p>The fictional demo includes sample history and a course catalog. Demo and account workspaces save information on the server and are separate from your browser plan. Use fictional data only. The free demo server may take up to a minute to wake after inactivity.</p>
+      <form method="post" action="{{ url_for('auth.start_demo') }}"><button type="submit">Try the fictional demo</button></form>
     </section>
 
     <footer>
       <p>Planning estimates are informational. Confirm course requirements and availability with your school counselor.</p>
-      <a href="https://github.com/JVijay08/StudentSuccess">View source on GitHub</a>
     </footer>
   </main>
   <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
