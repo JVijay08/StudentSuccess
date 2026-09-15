@@ -5,3 +5,7 @@ button,input,select,textarea{min-height:44px}button,[role="button"],input,select
 [data-theme="dark"] .sidebar,[data-theme="dark"] .focus-card,[data-theme="dark"] .next-card,[data-theme="high-contrast"] .sidebar,[data-theme="high-contrast"] .focus-card,[data-theme="high-contrast"] .next-card{color:#fff!important}
 [data-theme="dark"] .prototype-note,[data-theme="dark"] .demo-banner,[data-theme="dark"] .reminder-panel,[data-theme="dark"] .flash p,[data-theme="high-contrast"] .prototype-note,[data-theme="high-contrast"] .demo-banner,[data-theme="high-contrast"] .reminder-panel,[data-theme="high-contrast"] .flash p{color:var(--ink)!important;background:var(--night-soft)!important}
 [data-theme="dark"] input,[data-theme="dark"] select,[data-theme="dark"] textarea,[data-theme="high-contrast"] input,[data-theme="high-contrast"] select,[data-theme="high-contrast"] textarea{color:var(--ink);background:var(--white)}
+[data-theme="dark"] .sidebar nav a{color:#c4d0ca}
+[data-theme="dark"] .sidebar nav a:hover,[data-theme="dark"] .sidebar nav a:focus-visible,[data-theme="dark"] .sidebar nav a.active{color:#fff;background:#263b56}
+[data-theme="high-contrast"] .sidebar nav a{color:#fff;border-color:transparent}
+[data-theme="high-contrast"] .sidebar nav a:hover,[data-theme="high-contrast"] .sidebar nav a:focus-visible,[data-theme="high-contrast"] .sidebar nav a.active{color:#000;background:#ffd800;text-decoration:none}
