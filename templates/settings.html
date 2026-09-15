@@ -16,7 +16,7 @@
 
     <form method="post" class="settings-form">
       <section><h2>Appearance</h2><p>Browser zoom and assistive technology continue to work with these preferences.</p><div class="fields">
-        <label>Theme<select name="theme"><option value="system" {% if settings.theme=='system' %}selected{% endif %}>Use device setting</option><option value="light" {% if settings.theme=='light' %}selected{% endif %}>Light</option><option value="dark" {% if settings.theme=='dark' %}selected{% endif %}>Dark</option><option value="high-contrast" {% if settings.theme=='high-contrast' %}selected{% endif %}>High contrast</option></select></label>
+        <label>Theme<select name="theme"><option value="light" {% if settings.theme in ('light', 'system') %}selected{% endif %}>Light</option><option value="dark" {% if settings.theme=='dark' %}selected{% endif %}>Dark</option><option value="high-contrast" {% if settings.theme=='high-contrast' %}selected{% endif %}>High contrast</option></select></label>
         <label>Text size<select name="text_scale">{% for size in [100,125,150,200] %}<option value="{{ size }}" {% if settings.text_scale==size %}selected{% endif %}>{{ size }}%</option>{% endfor %}</select></label>
         <label>Font<select name="font_choice"><option value="system" {% if settings.font_choice=='system' %}selected{% endif %}>Application default</option><option value="sans" {% if settings.font_choice=='sans' %}selected{% endif %}>Plain sans-serif</option><option value="serif" {% if settings.font_choice=='serif' %}selected{% endif %}>Serif</option></select></label>
         <label class="check"><input type="checkbox" name="comfortable_spacing" {% if settings.comfortable_spacing %}checked{% endif %}> Use comfortable text spacing</label>

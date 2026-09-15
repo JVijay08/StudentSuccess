@@ -13,7 +13,7 @@ def get_or_create_settings(user):
 def default_settings():
     """Unsaved defaults for signed-out pages."""
     return UserSettings(
-        theme="system",
+        theme="light",
         text_scale=100,
         comfortable_spacing=False,
         reduce_motion=False,

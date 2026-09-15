@@ -9,7 +9,7 @@ class UserSettings(db.Model):
     user_id = db.Column(
         db.Integer, db.ForeignKey("users.id"), unique=True, nullable=False
     )
-    theme = db.Column(db.String(20), nullable=False, default="system")
+    theme = db.Column(db.String(20), nullable=False, default="light")
     text_scale = db.Column(db.Integer, nullable=False, default=100)
     comfortable_spacing = db.Column(db.Boolean, nullable=False, default=False)
     reduce_motion = db.Column(db.Boolean, nullable=False, default=False)
