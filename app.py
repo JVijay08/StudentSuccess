@@ -1,7 +1,7 @@
 ﻿from pathlib import Path
 import os
 
-from flask import Flask
+from flask import Flask, session
 from sqlalchemy import inspect, text
 
 from config import config
@@ -10,6 +10,7 @@ from routes.auth_routes import auth_bp
 from routes.course_routes import course_bp
 from routes.main_routes import main_bp
 from routes.profile_routes import profile_bp
+from routes.settings_routes import settings_bp
 from routes.task_routes import task_bp
 
 
@@ -32,13 +33,28 @@ def create_app(test_config=None):
     app.register_blueprint(course_bp)
     app.register_blueprint(main_bp)
     app.register_blueprint(profile_bp)
+    app.register_blueprint(settings_bp)
     app.register_blueprint(task_bp)
+
+    @app.context_processor
+    def inject_ui_settings():
+        from models import UserSettings
+        from services.settings_service import default_settings
+
+        user_id = session.get("user_id")
+        preferences = (
+            UserSettings.query.filter_by(user_id=user_id).first()
+            if user_id is not None
+            else None
+        )
+        return {"ui_settings": preferences or default_settings()}
 
     with app.app_context():
         from models import StudentProfile, Task, User
 
         db.create_all()
         _migrate_planned_course_catalog_column()
+        _migrate_task_reminder_columns()
         _reset_demo_accounts_for_deployment()
 
     return app
@@ -56,6 +72,24 @@ def _migrate_planned_course_catalog_column():
                 "ALTER TABLE planned_courses "
                 "ADD COLUMN catalog_id VARCHAR(40) NOT NULL DEFAULT 'forsyth-ga'"
             )
+        )
+        db.session.commit()
+
+
+def _migrate_task_reminder_columns():
+    inspector = inspect(db.engine)
+    if "tasks" not in inspector.get_table_names():
+        return
+
+    columns = {column["name"] for column in inspector.get_columns("tasks")}
+    if "reminder_snoozed_until" not in columns:
+        db.session.execute(
+            text("ALTER TABLE tasks ADD COLUMN reminder_snoozed_until TIMESTAMP")
+        )
+        db.session.commit()
+    if "reminder_enabled" not in columns:
+        db.session.execute(
+            text("ALTER TABLE tasks ADD COLUMN reminder_enabled BOOLEAN NOT NULL DEFAULT TRUE")
         )
         db.session.commit()
 

@@ -21,6 +21,7 @@ from services import (
     suggestion_service,
 )
 from services.auth_service import login_required
+from services.settings_service import get_or_create_settings
 
 
 def _flash_realism_warning(profile, task):
@@ -40,7 +41,7 @@ def _flash_realism_warning(profile, task):
         flash(warning, "warning")
 
 
-def _to_local_input(value):
+def _to_local_input(value, timezone_name="America/New_York"):
     """Format a stored UTC datetime as an Eastern ``datetime-local`` string.
 
     Returns an empty string when ``value`` is ``None`` so optional fields
@@ -50,10 +51,11 @@ def _to_local_input(value):
         return ""
     if value.tzinfo is None:
         value = value.replace(tzinfo=timezone.utc)
-    return value.astimezone(datetime_util.EASTERN).strftime("%Y-%m-%dT%H:%M")
+    from zoneinfo import ZoneInfo
+    return value.astimezone(ZoneInfo(timezone_name)).strftime("%Y-%m-%dT%H:%M")
 
 
-def _validate_task_form(form):
+def _validate_task_form(form, timezone_name="America/New_York"):
     """Validate task form input using the same rules as task creation.
 
     Returns a tuple of ``(cleaned, errors)`` where ``cleaned`` is a dict of
@@ -69,6 +71,7 @@ def _validate_task_form(form):
     estimated_minutes_text = form.get("estimated_minutes", "").strip()
     difficulty = form.get("difficulty", "").strip().lower()
     interest_level = form.get("interest_level", "").strip().lower()
+    reminder_enabled = "reminder_enabled" in form
 
     if not title:
         errors.append("Title is required.")
@@ -76,14 +79,14 @@ def _validate_task_form(form):
         errors.append("Title must be 160 characters or fewer.")
 
     try:
-        due_at = datetime_util.to_utc(due_at_text)
+        due_at = datetime_util.to_utc(due_at_text, timezone_name)
     except ValueError:
         due_at = None
         errors.append("Enter a valid due date and time.")
 
     try:
         planned_start_at = (
-            datetime_util.to_utc(planned_start_text)
+            datetime_util.to_utc(planned_start_text, timezone_name)
             if planned_start_text
             else None
         )
@@ -125,6 +128,7 @@ def _validate_task_form(form):
         "difficulty": difficulty,
         "interest_level": interest_level,
         "recurrence_rule": recurrence_rule,
+        "reminder_enabled": reminder_enabled,
     }
     return cleaned, errors
 
@@ -138,10 +142,11 @@ def tasks():
     profile = StudentProfile.query.filter_by(user_id=g.current_user.id).first()
     if profile is None:
         return redirect(url_for("profile.onboarding"))
+    settings = get_or_create_settings(g.current_user)
 
     errors = []
     if request.method == "POST":
-        cleaned, errors = _validate_task_form(request.form)
+        cleaned, errors = _validate_task_form(request.form, settings.timezone_name)
 
         if not errors:
             task = Task(
@@ -155,6 +160,7 @@ def tasks():
                 difficulty=cleaned["difficulty"],
                 interest_level=cleaned["interest_level"],
                 recurrence_rule=cleaned["recurrence_rule"],
+                reminder_enabled=cleaned["reminder_enabled"],
             )
             db.session.add(task)
             db.session.commit()
@@ -167,18 +173,30 @@ def tasks():
                 db.session.add(prep)
                 db.session.commit()
             _flash_realism_warning(profile, task)
+            if settings.suggest_breakdown and task.estimated_minutes > settings.work_session_minutes:
+                sessions = (task.estimated_minutes + settings.work_session_minutes - 1) // settings.work_session_minutes
+                flash(f"Consider splitting this into {sessions} sessions of about {settings.work_session_minutes} minutes.", "warning")
             return redirect(url_for("tasks.tasks"))
 
     task_list = Task.query.filter_by(student_profile_id=profile.id).order_by(
         Task.due_at
     )
     task_rows = priority_service.get_prioritized_tasks(list(task_list))
+    for row in task_rows:
+        row["due_at_display"] = datetime_util.format_local(
+            row["task"].due_at,
+            settings.timezone_name,
+            settings.time_format,
+            settings.date_format,
+            settings.relative_dates,
+        )
     return render_template(
         "tasks.html",
         profile=profile,
         task_rows=task_rows,
         errors=errors,
-        form_data=request.form,
+        form_data=request.form or {"estimated_minutes": settings.default_task_minutes},
+        settings=settings,
     )
 
 
@@ -190,10 +208,11 @@ def edit_task(task_id):
         abort(404)
 
     profile = task.student_profile
+    settings = get_or_create_settings(g.current_user)
     errors = []
 
     if request.method == "POST":
-        cleaned, errors = _validate_task_form(request.form)
+        cleaned, errors = _validate_task_form(request.form, settings.timezone_name)
         if not errors:
             task.title = cleaned["title"]
             task.subject = cleaned["subject"]
@@ -204,6 +223,7 @@ def edit_task(task_id):
             task.difficulty = cleaned["difficulty"]
             task.interest_level = cleaned["interest_level"]
             task.recurrence_rule = cleaned["recurrence_rule"]
+            task.reminder_enabled = cleaned["reminder_enabled"]
             db.session.commit()
             _flash_realism_warning(task.student_profile, task)
             return redirect(url_for("tasks.tasks"))
@@ -222,18 +242,20 @@ def edit_task(task_id):
                 "interest_level", ""
             ).strip().lower(),
             "recurrence_rule": request.form.get("recurrence_rule", ""),
+            "reminder_enabled": "reminder_enabled" in request.form,
         }
     else:
         form_data = {
             "title": task.title,
             "subject": task.subject or "",
             "task_type": task.task_type or "",
-            "due_at": _to_local_input(task.due_at),
-            "planned_start_at": _to_local_input(task.planned_start_at),
+            "due_at": _to_local_input(task.due_at, settings.timezone_name),
+            "planned_start_at": _to_local_input(task.planned_start_at, settings.timezone_name),
             "estimated_minutes": task.estimated_minutes,
             "difficulty": task.difficulty,
             "interest_level": task.interest_level,
             "recurrence_rule": task.recurrence_rule or "",
+            "reminder_enabled": task.reminder_enabled,
         }
 
     return render_template(
@@ -242,6 +264,7 @@ def edit_task(task_id):
         profile=profile,
         errors=errors,
         form_data=form_data,
+        settings=settings,
     )
 
 
@@ -271,7 +294,8 @@ def reschedule_task(task_id):
         flash("Enter a new planned start date and time to reschedule.", "error")
         return redirect(url_for("main.dashboard"))
     try:
-        new_planned = datetime_util.to_utc(raw)
+        settings = get_or_create_settings(g.current_user)
+        new_planned = datetime_util.to_utc(raw, settings.timezone_name)
     except ValueError:
         flash("Enter a valid planned start date and time.", "error")
         return redirect(url_for("main.dashboard"))
@@ -280,6 +304,23 @@ def reschedule_task(task_id):
         return redirect(url_for("main.dashboard"))
     task.planned_start_at = new_planned
     db.session.commit()
+    return redirect(url_for("main.dashboard"))
+
+
+@task_bp.post("/tasks/<int:task_id>/snooze-reminder")
+@login_required
+def snooze_reminder(task_id):
+    from datetime import timedelta
+
+    task = db.get_or_404(Task, task_id)
+    if task.student_profile.user_id != g.current_user.id:
+        abort(404)
+    settings = get_or_create_settings(g.current_user)
+    task.reminder_snoozed_until = datetime.now(timezone.utc) + timedelta(
+        minutes=settings.snooze_minutes
+    )
+    db.session.commit()
+    flash(f"Reminder snoozed for {settings.snooze_minutes} minutes.", "success")
     return redirect(url_for("main.dashboard"))
 
 

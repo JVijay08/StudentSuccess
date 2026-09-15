@@ -7,9 +7,11 @@
   <meta name="theme-color" content="#081225">
   <title>Student profile | StudentSuccess</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
+  {% include '_accessibility_head.html' %}
 </head>
 <body>
-  <main class="profile-page">
+  {% include '_accessibility_body.html' %}
+  <main id="main-content" class="profile-page">
     <header class="profile-header">
       <div>
         <p class="eyebrow">STUDENTSUCCESS</p>
@@ -43,7 +45,9 @@
 
     <div class="actions">
       <a class="button" href="{{ url_for('profile.onboarding') }}">Edit profile</a>
+      <a class="button" href="{{ url_for('settings.settings') }}">Accessibility and settings</a>
     </div>
   </main>
+  <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
 </body>
 </html>

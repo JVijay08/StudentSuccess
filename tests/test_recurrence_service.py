@@ -268,8 +268,14 @@ def test_property_day_based_advance_preserves_eastern_local_time(dt, rule):
     expected_date = (local_in + timedelta(days=_DAY_STEPS[rule])).date()
     assert local_out.date() == expected_date
 
-    # Local time-of-day is preserved across DST.
-    assert (local_out.hour, local_out.minute) == (local_in.hour, local_in.minute)
+    # Local time-of-day is preserved when that wall time exists. During the
+    # spring-forward gap, zoneinfo normalizes a nonexistent 02:xx to 03:xx.
+    expected_local = local_in + timedelta(days=_DAY_STEPS[rule])
+    normalized = expected_local.astimezone(timezone.utc).astimezone(EASTERN)
+    assert (local_out.hour, local_out.minute) == (
+        normalized.hour,
+        normalized.minute,
+    )
 
 
 # Feature: recurring-sessions, Property 2: Monthly advance preserves or clamps day-of-month

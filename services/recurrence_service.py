@@ -92,6 +92,7 @@ def next_occurrence_fields(session_task) -> dict:
         "difficulty": session_task.difficulty,
         "interest_level": session_task.interest_level,
         "recurrence_rule": rule,  # copied forward
+        "reminder_enabled": getattr(session_task, "reminder_enabled", True),
         "due_at": advance(session_task.due_at, rule),
         "planned_start_at": advance(planned, rule) if planned else None,
         "status": "not_started",
@@ -120,4 +121,5 @@ def prep_task_fields(session_task, lead_time: timedelta = DEFAULT_LEAD_TIME) -> 
         "started_at": None,
         "completed_at": None,
         "recurrence_rule": None,  # prep never recurs
+        "reminder_enabled": getattr(session_task, "reminder_enabled", True),
     }

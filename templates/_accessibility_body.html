@@ -1,0 +1,9 @@
+<a class="skip-link" href="#main-content">Skip to main content</a>
+{% if session.get('user_id') %}
+<div class="session-warning" id="session-warning" role="alertdialog" aria-modal="true" aria-labelledby="session-warning-title" hidden>
+  <strong id="session-warning-title">Your session will expire soon.</strong>
+  <p>Extend it to keep working. Saved information will not be deleted.</p>
+  <button type="button" id="extend-session">Extend session</button>
+</div>
+<script>window.studentSuccessSessionMinutes = {{ ui_settings.session_timeout_minutes|tojson }};</script>
+{% endif %}

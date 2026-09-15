@@ -7,9 +7,11 @@
   <meta name="theme-color" content="#081225">
   <title>Tasks | StudentSuccess</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/tasks.css') }}">
+  {% include '_accessibility_head.html' %}
 </head>
 <body>
-  <main>
+  {% include '_accessibility_body.html' %}
+  <main id="main-content">
     <header>
       <div>
         <p class="eyebrow">STUDENTSUCCESS</p>
@@ -38,7 +40,7 @@
           </ul>
         </div>
       {% endif %}
-      <form method="post">
+      <form method="post" id="task-form" data-start-buffer-days="{{ settings.start_buffer_days }}">
         <label>Title
           <input name="title" maxlength="160" value="{{ form_data.get('title', '') }}" required>
         </label>
@@ -80,9 +82,12 @@
             <option value="monthly" {% if form_data.get('recurrence_rule') == 'monthly' %}selected{% endif %}>Monthly</option>
           </select>
         </label>
+        <label><span>Reminder</span><span class="inline-check"><input type="checkbox" name="reminder_enabled" {% if form_data.get('reminder_enabled', true) %}checked{% endif %}> Include this task in reminders</span></label>
         <button type="submit">Add task</button>
       </form>
     </section>
+
+    {% if settings.calendar_export_enabled %}<p><a href="{{ url_for('settings.export_calendar') }}">Download active tasks as a calendar</a></p>{% endif %}
 
     <section class="task-list">
       <h2>Task queue</h2>
@@ -94,7 +99,7 @@
             <div>
               <p class="eyebrow risk-{{ level|lower }}">{{ level }} RISK</p>
               <h3>{{ task.title }}{% if task.recurrence_rule %} <small class="task-marker">(recurring)</small>{% endif %}{% if task.prep_for_id %} <small class="task-marker">(prep)</small>{% endif %}</h3>
-              <p>{{ task.subject or "No subject" }} · {{ task.estimated_minutes }} minutes · due {{ task.due_at.strftime("%b %d, %Y at %I:%M %p") }}</p>
+              <p>{{ task.subject or "No subject" }} · {{ task.estimated_minutes }} minutes · due {{ row.due_at_display }}</p>
               <ul>
                 {% for reason in row.reasons %}<li>{{ reason }}</li>{% endfor %}
               </ul>
@@ -125,5 +130,7 @@
       {% endif %}
     </section>
   </main>
+  <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
+  <script>const taskForm=document.getElementById('task-form');const due=taskForm.querySelector('[name=due_at]');const planned=taskForm.querySelector('[name=planned_start_at]');due.addEventListener('change',()=>{if(planned.value||!due.value)return;const date=new Date(due.value);date.setDate(date.getDate()-Number(taskForm.dataset.startBufferDays));const local=new Date(date.getTime()-date.getTimezoneOffset()*60000);planned.value=local.toISOString().slice(0,16)});</script>
 </body>
 </html>

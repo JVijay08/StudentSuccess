@@ -6,9 +6,11 @@
   <meta name="theme-color" content="#18283d">
   <title>{{ course.course_name }} | StudentSuccess</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/courses.css') }}">
+  {% include '_accessibility_head.html' %}
 </head>
 <body>
-  <main class="course-page narrow-page">
+  {% include '_accessibility_body.html' %}
+  <main id="main-content" class="course-page narrow-page">
     <header class="page-header detail-header"><div><p class="eyebrow">{{ catalog.label }} / COURSE DETAIL / {{ course.course_id }}</p><h1>{{ course.course_name }}</h1><p class="lede">{{ course.subject }} · {{ course.course_type }} · grades {{ course.grade_levels|join(', ') }}</p></div><a class="quiet-link" href="{{ url_for('courses.course_explorer', catalog=catalog_id) }}">Back to explorer</a></header>
     <section class="detail-layout">
       <article class="detail-main"><div class="detail-tags"><span class="tag">{{ course.rigor_level }} rigor</span><span class="tag">{{ course.workload_level }} workload</span></div><h2>Is this a fit for your path?</h2><p>This catalog view helps you compare options. Confirm current availability, placement rules, and department approval requirements with your school.</p><div class="detail-columns"><div><span class="section-kicker">PREREQUISITES</span>{% if course.prerequisites %}<ul class="plain-list">{% for prerequisite in course.prerequisites %}<li>{{ prerequisite }}</li>{% endfor %}</ul>{% else %}<p>No prerequisite is listed in this catalog.</p>{% endif %}</div><div><span class="section-kicker">PATHWAYS</span><div class="cluster-row large">{% for cluster in course.career_clusters %}<span>{{ cluster }}</span>{% else %}<span>Core graduation pathway</span>{% endfor %}</div><p class="catalog-note">Graduation category: {{ course.graduation_category }}</p></div></div></article>
@@ -16,5 +18,6 @@
     </section>
     <section class="notice-panel"><span class="section-kicker">PREREQUISITE CHECK</span>{% if prerequisite_status.has_prerequisites %}{% if prerequisite_status.missing %}<p>These prerequisites are not marked completed in your plan:</p><ul class="plain-list inline-list">{% for missing in prerequisite_status.missing %}<li>{{ missing }}</li>{% endfor %}</ul>{% else %}<p class="good-news">Your completed plan covers the listed prerequisites.</p>{% endif %}{% else %}<p>No prerequisite is listed for this course.</p>{% endif %}</section>
   </main>
+  <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
 </body>
 </html>

@@ -1,10 +1,11 @@
 from flask import Blueprint, g, redirect, render_template, request, url_for
 
-from services.datetime_util import EASTERN
+from zoneinfo import ZoneInfo
 
 from extensions import db
 from models import StudentProfile
 from services.auth_service import login_required
+from services.settings_service import get_or_create_settings
 
 
 profile_bp = Blueprint("profile", __name__)
@@ -164,13 +165,21 @@ def profile_view():
 
     if profile is None:
         return redirect(url_for("profile.onboarding"))
+    settings = get_or_create_settings(g.current_user)
 
     created_at = g.current_user.created_at
     if created_at.tzinfo is None:
         from datetime import timezone
 
         created_at = created_at.replace(tzinfo=timezone.utc)
-    member_since = created_at.astimezone(EASTERN).strftime("%B %d, %Y")
+    date_format = {
+        "month-first": "%B %d, %Y",
+        "day-first": "%d %B %Y",
+        "year-first": "%Y-%m-%d",
+    }.get(settings.date_format, "%B %d, %Y")
+    member_since = created_at.astimezone(
+        ZoneInfo(settings.timezone_name)
+    ).strftime(date_format)
 
     return render_template(
         "profile.html",

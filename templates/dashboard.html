@@ -7,8 +7,10 @@
   <meta name="theme-color" content="#081225">
   <title>StudentSuccess | Dashboard</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+  {% include '_accessibility_head.html' %}
 </head>
 <body>
+  {% include '_accessibility_body.html' %}
   <div class="shell">
     <aside class="sidebar">
       <div>
@@ -21,6 +23,7 @@
           <a href="{{ url_for('tasks.tasks') }}">Tasks</a>
           <a href="{{ url_for('courses.course_plan') }}">Course load</a>
           <a href="{{ url_for('profile.profile_view') }}">Student profile</a>
+          <a href="{{ url_for('settings.settings') }}">Settings</a>
         </nav>
       </div>
       <div class="sidebar-footer">
@@ -31,7 +34,7 @@
       </div>
     </aside>
 
-    <main>
+    <main id="main-content">
       {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
           <div class="flash" role="status">
@@ -61,10 +64,10 @@
         <p class="eyebrow accent">WHAT TO WORK ON NOW</p>
         {% if prioritized_tasks %}
           <ol class="priority-list">
-            {% for row in prioritized_tasks[:3] %}
+            {% for row in prioritized_tasks[:settings.recommendation_count] %}
               <li class="priority-item">
                 <h2>{{ row.task.title }}</h2>
-                <p><span class="priority-score">Risk score {{ row.score }}</span>{% if row.reasons %}: {{ row.reasons|join(", ") }}{% endif %}.</p>
+                <p><span class="priority-score">Risk score {{ row.score }}</span>{% if row.reasons %}: {{ row.reasons|join(", ") }}{% endif %}.{% if settings.recommendation_tone == 'encouraging' %} You can start with one small step.{% elif settings.recommendation_tone == 'direct' %} Start this now.{% endif %}</p>
               </li>
             {% endfor %}
           </ol>
@@ -80,8 +83,16 @@
         {% endif %}
       </section>
 
+      {% if reminder_tasks %}
+      <section class="reminder-panel" aria-labelledby="reminder-title">
+        <p class="eyebrow" id="reminder-title">REMINDERS YOU REQUESTED</p>
+        {% for task in reminder_tasks %}<div><strong>{{ task.title }}</strong><form method="post" action="{{ url_for('tasks.snooze_reminder', task_id=task.id) }}"><button type="submit">Snooze {{ settings.snooze_minutes }} minutes</button></form></div>{% endfor %}
+      </section>
+      {% endif %}
+
+      {% if settings.dashboard_mode != 'focus' %}
       <section class="grid">
-        <article class="card card-overdue">
+        {% if 'overdue' not in settings.hidden_cards %}<article class="card card-overdue">
           <p class="eyebrow">OVERDUE TO START</p>
           {% if overdue_tasks %}
             <ul class="overdue-list">
@@ -107,7 +118,7 @@
             <h2>Nothing overdue to start.</h2>
             <p>When a task's planned start time passes before you begin it, it will show up here with quick ways to start or replan.</p>
           {% endif %}
-        </article>
+        </article>{% endif %}
 
         <article class="card card-tasks">
           <p class="eyebrow">TASKS</p>
@@ -115,7 +126,7 @@
           <p>Risk is calculated from visible rules such as time until due, start status, workload, difficulty, and interest.</p>
         </article>
 
-        <article class="card card-courses">
+        {% if 'courses' not in settings.hidden_cards %}<article class="card card-courses">
           <p class="eyebrow">CURRENT COURSE LOAD</p>
           {% if course_load and course_load.course_count %}
             <h2>{{ course_load.label }} estimate &mdash; {{ course_load.course_count }} planned course{% if course_load.course_count != 1 %}s{% endif %}</h2>
@@ -126,9 +137,9 @@
             <p>Add only the courses you are seriously considering so workload guidance stays useful.</p>
             <a class="text-link" href="{{ url_for('courses.course_explorer') }}">Plan course load</a>
           {% endif %}
-        </article>
+        </article>{% endif %}
 
-        <article class="card card-profile">
+        {% if 'profile' not in settings.hidden_cards %}<article class="card card-profile">
           <p class="eyebrow">PROFILE</p>
           {% if profile %}
             <h2>{{ profile.grade }}th grade</h2>
@@ -141,9 +152,9 @@
             <h2>No profile yet</h2>
             <p>Add basic academic details to establish your planning context.</p>
           {% endif %}
-        </article>
+        </article>{% endif %}
 
-        <article class="card card-completion">
+        {% if 'completion' not in settings.hidden_cards %}<article class="card card-completion">
           <p class="eyebrow">COMPLETION RATE</p>
           {% if success_rate.percent is not none %}
             <h2>{{ success_rate.completed }} / {{ success_rate.total }} tasks completed &mdash; {{ success_rate.percent }}%</h2>
@@ -152,9 +163,9 @@
             <h2>No tasks yet.</h2>
             <p>Add tasks to begin tracking how many you finish.</p>
           {% endif %}
-        </article>
+        </article>{% endif %}
 
-        {% if start_delay_summary %}
+        {% if start_delay_summary and 'delay' not in settings.hidden_cards %}
         <article class="card card-delay">
           <p class="eyebrow">START-DELAY SUMMARY</p>
             <table class="summary-table">
@@ -179,7 +190,7 @@
         </article>
         {% endif %}
 
-        {% if estimate_accuracy.overall or estimate_accuracy.groups %}
+        {% if (estimate_accuracy.overall or estimate_accuracy.groups) and 'estimates' not in settings.hidden_cards %}
         <article class="card card-estimates">
           <p class="eyebrow">ESTIMATE ACCURACY</p>
             {% if estimate_accuracy.overall %}
@@ -209,7 +220,7 @@
         </article>
         {% endif %}
 
-        {% if start_history %}
+        {% if start_history and 'history' not in settings.hidden_cards %}
         <article class="card card-history">
           <p class="eyebrow">RECENT START HISTORY</p>
             <table class="summary-table">
@@ -234,7 +245,9 @@
         </article>
         {% endif %}
       </section>
+      {% endif %}
     </main>
   </div>
+  <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
 </body>
 </html>

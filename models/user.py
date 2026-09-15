@@ -22,6 +22,12 @@ class User(db.Model):
         cascade="all, delete-orphan",
         uselist=False,
     )
+    settings = db.relationship(
+        "UserSettings",
+        back_populates="user",
+        cascade="all, delete-orphan",
+        uselist=False,
+    )
 
     def __repr__(self):
         return f"<User id {self.id} username {self.username!r}>"

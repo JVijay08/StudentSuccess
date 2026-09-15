@@ -10,9 +10,11 @@
   <meta property="og:type" content="website">
   <title>StudentSuccess | Plan less. Start sooner.</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
+  {% include '_accessibility_head.html' %}
 </head>
 <body>
-  <main>
+  {% include '_accessibility_body.html' %}
+  <main id="main-content">
     <nav aria-label="Primary navigation">
       <a class="brand" href="{{ url_for('main.home') }}">StudentSuccess</a>
       <div><a href="{{ url_for('auth.login') }}">Log in</a><a class="nav-cta" href="{{ url_for('auth.register') }}">Create account</a></div>
@@ -48,5 +50,6 @@
       <a href="https://github.com/JVijay08/StudentSuccess">View source on GitHub</a>
     </footer>
   </main>
+  <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
 </body>
 </html>

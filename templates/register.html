@@ -11,9 +11,11 @@
     <meta property="og:type" content="website">
     <title>Register | StudentSuccess</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/onboarding.css') }}">
+    {% include '_accessibility_head.html' %}
 </head>
 <body class="theme-dark">
-    <main class="onboarding-page">
+    {% include '_accessibility_body.html' %}
+    <main id="main-content" class="onboarding-page">
         <section class="onboarding-section">
             <div class="onboarding-heading">
                 <div>
@@ -64,6 +66,7 @@
                             required
                             autocomplete="new-password"
                         >
+                        <button class="password-toggle" type="button" data-password-toggle="password" aria-pressed="false">Show password</button>
                     </div>
                 </div>
                 <div class="form-footer">
@@ -73,5 +76,6 @@
             </form>
         </section>
     </main>
+    <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
 </body>
 </html>

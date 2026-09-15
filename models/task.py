@@ -24,6 +24,8 @@ class Task(db.Model):
     started_at = db.Column(db.DateTime(timezone=True), nullable=True)
     completed_at = db.Column(db.DateTime(timezone=True), nullable=True)
     recurrence_rule = db.Column(db.String(20), nullable=True)
+    reminder_snoozed_until = db.Column(db.DateTime(timezone=True), nullable=True)
+    reminder_enabled = db.Column(db.Boolean, nullable=False, default=True)
     prep_for_id = db.Column(db.Integer, db.ForeignKey("tasks.id"), nullable=True)
     created_at = db.Column(
         db.DateTime(timezone=True), nullable=False, default=get_current_time

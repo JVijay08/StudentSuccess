@@ -1,0 +1,9 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/accessibility.css') }}">
+<script>
+  document.documentElement.dataset.theme = {{ ui_settings.theme|tojson }};
+  document.documentElement.dataset.textScale = {{ ui_settings.text_scale|tojson }};
+  document.documentElement.dataset.spacing = {{ ('comfortable' if ui_settings.comfortable_spacing else 'standard')|tojson }};
+  document.documentElement.dataset.motion = {{ ('reduced' if ui_settings.reduce_motion else 'standard')|tojson }};
+  document.documentElement.dataset.font = {{ ui_settings.font_choice|tojson }};
+  document.documentElement.dataset.density = {{ ui_settings.card_density|tojson }};
+</script>

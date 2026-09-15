@@ -79,6 +79,7 @@ dd { margin: 0; font-weight: 700; text-align: right; }
 .flash p { margin: 0; line-height: 1.5; }
 .flash-warning { color: #8f5b00; }.flash-error { color: #a8352a; }
 .demo-banner { margin-bottom: 24px; padding: 14px 16px; border-left: 4px solid var(--amber); color: #5f4300; background: #fff7dd; line-height: 1.5; }
+.reminder-panel{margin-top:24px;padding:20px;border:1px solid var(--amber);background:#fff7dd}.reminder-panel>div{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:9px 0;border-top:1px solid var(--line)}.reminder-panel form{margin:0}.reminder-panel button{padding:8px 12px;font-size:.82rem}
 .overdue-list { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
 .overdue-item { display: grid; gap: 8px; padding: 14px 0; border-bottom: 1px solid var(--line); }
 .overdue-item:last-child { border-bottom: 0; padding-bottom: 0; }

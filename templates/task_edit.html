@@ -7,9 +7,11 @@
   <meta name="theme-color" content="#081225">
   <title>Edit task | StudentSuccess</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/tasks.css') }}">
+  {% include '_accessibility_head.html' %}
 </head>
 <body>
-  <main>
+  {% include '_accessibility_body.html' %}
+  <main id="main-content">
     <header>
       <div>
         <p class="eyebrow">STUDENTSUCCESS</p>
@@ -78,6 +80,7 @@
             <option value="biweekly" {% if form_data.get('recurrence_rule') == 'biweekly' %}selected{% endif %}>Every 2 weeks</option>
             <option value="monthly" {% if form_data.get('recurrence_rule') == 'monthly' %}selected{% endif %}>Monthly</option>
           </select>
+          <label class="inline-check"><input type="checkbox" name="reminder_enabled" {% if form_data.get('reminder_enabled', true) %}checked{% endif %}> Include this task in reminders</label>
         </div>
         <div class="actions">
           <button type="submit">Save changes</button>
@@ -86,5 +89,6 @@
       </form>
     </section>
   </main>
+  <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
 </body>
 </html>

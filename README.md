@@ -24,6 +24,9 @@ The project aims to help a student choose what to work on now, compare planned a
 - Task creation, planned/actual start tracking, completion, and explainable rule-based risk
 - Automated route, task, risk, and course-service tests
 - Public landing page and isolated one-click fictional demo workspaces
+- Account-backed accessibility settings for themes, text size and spacing, reduced motion, focus mode, dashboard density, and optional cards
+- Personalized task defaults, time zones, date formats, user-controlled in-app reminders, snoozing, and calendar export
+- Data export, completed-history clearing, password changes, and full account deletion
 
 Machine learning, AI assistance, optimization, and calendar integration are not implemented. State selection is available for all 50 states, with imported data for Alabama, Arkansas, Florida, Georgia/Forsyth, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Michigan, Minnesota, Mississippi, Missouri, Nebraska, North Carolina, North Dakota, Ohio, South Carolina, South Dakota, Tennessee, Virginia, West Virginia, and Wisconsin. Coverage varies by supplied source. The national and AP/IB catalogs are planning references, not universal graduation or placement authorities.
 
@@ -40,6 +43,15 @@ Machine learning, AI assistance, optimization, and calendar integration are not 
 - Workload, rigor, risk, and priority labels are transparent planning estimates, not official academic advice.
 - Course offerings and requirements vary by school and must be confirmed with a school counselor.
 - The project does not currently use artificial intelligence or claim to make predictive decisions.
+
+## Accessibility and personalization
+
+Signed-in users can open **Settings** from the dashboard to personalize the
+interface and planning experience. Every page includes a keyboard skip link,
+visible focus indicators, support for browser text enlargement, device-level
+reduced-motion preferences, and account-specific appearance settings. Focus
+mode reduces the dashboard to the recommended next action. Reminder settings
+are opt-in and respect quiet hours.
 
 ## Local setup
 

@@ -22,9 +22,14 @@ Task behavior can reveal habits and routines. Store only what is needed to help 
 
 StudentSuccess is not a medical service, admissions predictor, or monitoring tool.
 
-## Future beta users
+## Public prototype users
 
-Before accepting beta users, add authentication, access controls, a deletion/export path, clear consent language, and a retention policy. Use separate records per user and ensure one student cannot access another student's data. Do not reuse beta data for model training without separate, explicit consent.
+Authentication and per-user access controls isolate student workspaces. Users
+can export their profile, tasks, and course plan; clear completed-task history;
+or delete their account and associated records from Settings. A documented
+retention policy and formal consent language are still required before the
+prototype should accept real student information. Do not reuse prototype data
+for model training without separate, explicit consent.
 
 ## Security basics
 

@@ -6,9 +6,11 @@
   <meta name="theme-color" content="#18283d">
   <title>Course-load planner | StudentSuccess</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/courses.css') }}">
+  {% include '_accessibility_head.html' %}
 </head>
 <body>
-  <main class="course-page">
+  {% include '_accessibility_body.html' %}
+  <main id="main-content" class="course-page">
     <header class="page-header">
       <div>
         <p class="eyebrow">STUDENTSUCCESS / COURSE-LOAD PLANNER</p>
@@ -94,5 +96,6 @@
       </section>
     </section>
   </main>
+  <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
 </body>
 </html>
