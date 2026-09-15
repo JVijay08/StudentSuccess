@@ -20,6 +20,14 @@ def test_login_page_can_return_to_public_home(app):
     assert b"Back to home" in response.data
 
 
+def test_register_page_can_return_to_public_home(app):
+    response = app.test_client().get("/register")
+
+    assert response.status_code == 200
+    assert b'href="/"' in response.data
+    assert b"Back to home" in response.data
+
+
 def test_one_click_demo_creates_isolated_populated_workspace(app):
     client = app.test_client()
 
