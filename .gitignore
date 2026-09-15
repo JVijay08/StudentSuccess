@@ -9,5 +9,9 @@ venv/
 instance/*.db
 instance/*.bak
 
+# Local test-run artifacts
+.pytest_cache/
+.test-*/
+
 # Kiro spec / workflow files - not for version control
 .kiro/

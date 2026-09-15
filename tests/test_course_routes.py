@@ -86,3 +86,11 @@ def test_course_detail_and_comparison_render(authed_client):
     assert comparison_response.status_code == 200
     assert b"AP Chemistry" in comparison_response.data
     assert b"AP Biology" in comparison_response.data
+
+
+def test_course_comparison_requires_two_courses(authed_client):
+    complete_profile(authed_client)
+    response = authed_client.get("/courses/compare?id=SCI_AP_CHEMISTRY")
+    assert response.status_code == 200
+    assert b"Select at least two courses" in response.data
+    assert b"Select two or three courses" in response.data

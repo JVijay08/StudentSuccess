@@ -1,5 +1,6 @@
 ﻿import json
 from pathlib import Path
+from functools import lru_cache
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -162,6 +163,7 @@ def get_state_options():
     ]
 
 
+@lru_cache(maxsize=None)
 def load_courses(catalog="forsyth-ga"):
     catalog_config = CATALOGS.get(catalog)
     if catalog_config is None:

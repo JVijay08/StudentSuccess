@@ -49,12 +49,21 @@ def create_app(test_config=None):
         )
         return {"ui_settings": preferences or default_settings()}
 
+    @app.after_request
+    def add_security_headers(response):
+        response.headers.setdefault("X-Content-Type-Options", "nosniff")
+        response.headers.setdefault("X-Frame-Options", "DENY")
+        response.headers.setdefault("Referrer-Policy", "strict-origin-when-cross-origin")
+        response.headers.setdefault("Permissions-Policy", "camera=(), microphone=(), geolocation=()")
+        return response
+
     with app.app_context():
         from models import StudentProfile, Task, User
 
         db.create_all()
         _migrate_planned_course_catalog_column()
         _migrate_task_reminder_columns()
+        _migrate_task_actual_minutes_column()
         _reset_demo_accounts_for_deployment()
 
     return app
@@ -86,6 +95,16 @@ def _migrate_task_reminder_columns():
         db.session.execute(
             text("ALTER TABLE tasks ADD COLUMN reminder_snoozed_until TIMESTAMP")
         )
+        db.session.commit()
+
+
+def _migrate_task_actual_minutes_column():
+    inspector = inspect(db.engine)
+    if "tasks" not in inspector.get_table_names():
+        return
+    columns = {column["name"] for column in inspector.get_columns("tasks")}
+    if "actual_minutes" not in columns:
+        db.session.execute(text("ALTER TABLE tasks ADD COLUMN actual_minutes INTEGER"))
         db.session.commit()
     if "reminder_enabled" not in columns:
         db.session.execute(

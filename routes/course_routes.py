@@ -251,6 +251,11 @@ def course_compare():
     course_ids = request.args.getlist("id")
     if len(course_ids) == 1 and "," in course_ids[0]:
         course_ids = course_ids[0].split(",")
+    selection_message = None
+    if len(course_ids) < 2:
+        selection_message = "Select at least two courses to make a useful comparison."
+    elif len(course_ids) > 3:
+        selection_message = "Only the first three selected courses are shown."
     courses = [
         course_service.get_course_by_id(course_id, catalog_id)
         for course_id in course_ids[:3]
@@ -262,4 +267,5 @@ def course_compare():
         courses=courses,
         catalog_id=catalog_id,
         catalog=course_service.get_catalogs()[catalog_id],
+        selection_message=selection_message,
     )

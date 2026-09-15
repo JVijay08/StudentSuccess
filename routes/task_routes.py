@@ -330,6 +330,16 @@ def complete_task(task_id):
     task = db.get_or_404(Task, task_id)
     if task.student_profile.user_id != g.current_user.id:
         abort(404)
+    actual_minutes_raw = request.form.get("actual_minutes", "").strip()
+    if actual_minutes_raw:
+        try:
+            actual_minutes = int(actual_minutes_raw)
+        except ValueError:
+            actual_minutes = 0
+        if actual_minutes < 1 or actual_minutes > 1440:
+            flash("Actual time must be between 1 and 1440 minutes.", "error")
+            return redirect(url_for("tasks.tasks"))
+        task.actual_minutes = actual_minutes
     now = datetime.now(timezone.utc)
     if task.started_at is None:
         task.started_at = now
@@ -350,6 +360,26 @@ def complete_task(task_id):
         )
         db.session.add(prep)
         db.session.commit()
+    return redirect(url_for("tasks.tasks"))
+
+
+@task_bp.post("/tasks/<int:task_id>/undo-complete")
+@login_required
+def undo_complete_task(task_id):
+    task = db.get_or_404(Task, task_id)
+    if task.student_profile.user_id != g.current_user.id:
+        abort(404)
+    if task.status != "completed":
+        flash("That task is not completed.", "warning")
+        return redirect(url_for("tasks.tasks"))
+    if task.recurrence_rule is not None:
+        flash("Recurring completions cannot be undone because the next session was already created.", "warning")
+        return redirect(url_for("tasks.tasks"))
+    task.status = "in_progress" if task.started_at is not None else "not_started"
+    task.completed_at = None
+    task.actual_minutes = None
+    db.session.commit()
+    flash("Completion undone. You can correct the task and complete it again.", "success")
     return redirect(url_for("tasks.tasks"))
 
 

@@ -53,6 +53,9 @@ def actual_duration_minutes(task) -> float:
     callers (Requirement 2.5). Never calls ``datetime.utcnow()``. Computed on
     the fly.
     """
+    recorded = getattr(task, "actual_minutes", None)
+    if recorded is not None:
+        return float(recorded)
     delta = _as_utc(task.completed_at) - _as_utc(task.started_at)
     return delta.total_seconds() / 60.0
 

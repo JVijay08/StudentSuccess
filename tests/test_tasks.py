@@ -92,6 +92,67 @@ def test_task_route_creates_starts_and_completes_task(app, authed_client):
         assert task.completed_at is not None
 
 
+def test_completion_records_actual_minutes_and_can_be_undone(app, authed_client):
+    with app.app_context():
+        profile = add_profile(authed_client.user_id)
+        task = Task(
+            student_profile_id=profile.id,
+            title="Timed assignment",
+            due_at=datetime.now(timezone.utc) + timedelta(days=1),
+            estimated_minutes=60,
+            difficulty="medium",
+            interest_level="medium",
+            status="in_progress",
+            started_at=datetime.now(timezone.utc) - timedelta(minutes=45),
+        )
+        db.session.add(task)
+        db.session.commit()
+        task_id = task.id
+
+    response = authed_client.post(
+        f"/tasks/{task_id}/complete", data={"actual_minutes": "45"}
+    )
+    assert response.status_code == 302
+    with app.app_context():
+        task = db.session.get(Task, task_id)
+        assert task.status == "completed"
+        assert task.actual_minutes == 45
+
+    response = authed_client.post(f"/tasks/{task_id}/undo-complete")
+    assert response.status_code == 302
+    with app.app_context():
+        task = db.session.get(Task, task_id)
+        assert task.status == "in_progress"
+        assert task.completed_at is None
+        assert task.actual_minutes is None
+
+
+def test_completion_rejects_invalid_actual_minutes(app, authed_client):
+    with app.app_context():
+        profile = add_profile(authed_client.user_id)
+        task = Task(
+            student_profile_id=profile.id,
+            title="Bad duration",
+            due_at=datetime.now(timezone.utc) + timedelta(days=1),
+            estimated_minutes=60,
+            difficulty="medium",
+            interest_level="medium",
+        )
+        db.session.add(task)
+        db.session.commit()
+        task_id = task.id
+
+    response = authed_client.post(
+        f"/tasks/{task_id}/complete",
+        data={"actual_minutes": "0"},
+        follow_redirects=True,
+    )
+    assert response.status_code == 200
+    assert b"Actual time must be between 1 and 1440 minutes" in response.data
+    with app.app_context():
+        assert db.session.get(Task, task_id).status == "not_started"
+
+
 def test_tasks_redirects_to_onboarding_without_profile(authed_client):
     response = authed_client.get("/tasks")
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="dark">
+  <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#081225">
   <title>Tasks | StudentSuccess</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/tasks.css') }}">
@@ -116,7 +116,12 @@
               {% endif %}
               {% if task.status != "completed" %}
                 <form method="post" action="{{ url_for('tasks.complete_task', task_id=task.id) }}">
+                  <label class="actual-time">Actual minutes<input type="number" name="actual_minutes" min="1" max="1440" value="{{ task.estimated_minutes }}" required></label>
                   <button class="secondary" type="submit">Complete</button>
+                </form>
+              {% elif not task.recurrence_rule %}
+                <form method="post" action="{{ url_for('tasks.undo_complete_task', task_id=task.id) }}">
+                  <button class="secondary" type="submit">Undo completion</button>
                 </form>
               {% endif %}
               <form method="post" action="{{ url_for('tasks.delete_task', task_id=task.id) }}">
