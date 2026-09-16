@@ -44,56 +44,6 @@ The explorer offers state selection for all 50 states, national reference course
 
 Academic depth, workload, and task-priority labels are planning estimates. Confirm current offerings, prerequisites, and graduation requirements with your school counselor. This prototype is not ready to hold real student records.
 
-## Run locally
-
-Requires Python and the packages in `requirements.txt`.
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-python app.py
-```
-
-Open `http://127.0.0.1:5000`. By default, the app creates a local SQLite database at `instance/studentsuccess.db`. To use a different database, set `DATABASE_URL`.
-
-Run the automated tests:
-
-```powershell
-python -m pytest
-```
-
-## Built with
-
-Python, Flask, Flask-SQLAlchemy, Jinja templates, HTML, CSS, JavaScript, and pytest. Course reference data lives in versioned JSON files. Local development uses SQLite; the Render blueprint connects a managed PostgreSQL database.
-
-| Directory | Purpose |
-| --- | --- |
-| `models/` | Accounts, credentials, profiles, tasks, course selections, and settings |
-| `routes/` | Flask request handlers |
-| `services/` | Scoring, suggestions, timing, recurrence, account logic, and catalog access |
-| `templates/`, `static/` | Pages, styles, illustrations, and browser interactions |
-| `data/` | Course reference catalogs |
-| `tests/` | Automated route and service coverage |
-| `docs/` | Architecture, data sources, privacy notes, and screenshots |
-
-See [architecture](docs/architecture.md) for the request flow and storage boundaries.
-
-## Deploy on Render
-
-The repository includes `render.yaml`:
-
-```text
-Build: pip install -r requirements.txt
-Start: gunicorn app:app
-```
-
-Set `APP_ENV=production` and a `SECRET_KEY`. Confirm that `DATABASE_URL` points to the managed database, especially if the service predates the database configuration. Without it, the app falls back to SQLite on Render's temporary filesystem.
-
-The blueprint sets `DEMO_RESET_ON_DEPLOY=0`. Keep it disabled to preserve accounts across deployments. The `/health` endpoint returns `{"status":"ok"}`; it does not verify the database connection.
-
-The free hosting configuration is intended for prototype exploration. Review hosting limits, persistence, and backups before relying on it for long-term storage.
-
 ## Next steps
 
 Priorities include more reliable hosting, stronger public-form protections, clearer connections between planned courses and assignments, and usability testing with fictional scenarios. Adaptive scheduling and optimization remain future work. Calendar-file export is available; live calendar synchronization is not implemented.
