@@ -1,0 +1,56 @@
+/* Allow real content to wrap instead of widening the page or clipping it. */
+main, section, article, form, fieldset, label, .form-group,
+.priority-list, .priority-item, .overdue-list, .overdue-item {
+  min-inline-size: 0;
+}
+main h1, main h2, main h3, main p, main li, main dd,
+.task-card, .priority-item, .overdue-item {
+  overflow-wrap: anywhere;
+}
+.priority-item { grid-template-columns: 34px minmax(0, 1fr); }
+input:not([type="checkbox"]):not([type="radio"]), select, textarea {
+  min-inline-size: 0;
+  max-inline-size: 100%;
+  box-sizing: border-box;
+}
+.settings-form input:not([type="checkbox"]):not([type="radio"]),
+.settings-form select { width: 100%; }
+.year-heading { flex-wrap: wrap; }
+.year-heading .workload { white-space: normal; }
+
+@media (max-width: 680px) {
+  .shell main, .browser-shell main { padding: 24px 14px 40px; }
+  main > header { gap: 14px; margin-bottom: 20px; }
+  main > header h1 { font-size: 2.35rem; line-height: 1.08; }
+  .shell .sidebar { padding: 16px 14px; gap: 14px; }
+  .shell .sidebar nav, .browser-shell .sidebar nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4px;
+    margin-top: 18px;
+    overflow: visible;
+  }
+  .shell .sidebar nav a {
+    min-width: 0;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    padding: 8px 10px;
+  }
+  .shell .grid, .browser-shell .grid { gap: 12px; margin-top: 16px; }
+  .card, .panel, .task-card, .course-card, .year-card,
+  .filter-panel, .comparison-card, .settings-form section, .account-section {
+    padding: 16px;
+  }
+  .focus, .focus-card, .demo-checklist { padding: 20px 16px; }
+  .task-card { gap: 14px; }
+  .panel form, .settings-form .fields { gap: 12px; }
+  .reminder-panel > div { flex-wrap: wrap; }
+  .header-actions, .card-actions { flex-wrap: wrap; }
+  input:not([type="checkbox"]):not([type="radio"]), select, textarea {
+    font-size: max(1rem, 16px);
+  }
+  button, input, select, .actions a { min-height: 44px; }
+}
