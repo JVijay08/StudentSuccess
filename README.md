@@ -1,147 +1,103 @@
 # StudentSuccess
 
-> **Public prototype:** StudentSuccess is still under development and is not ready to store real student information. Use fictional data only when exploring the live demo.
+**Plan less. Start sooner.**
 
-StudentSuccess is a procrastination-aware workload and action planner for high-school students. It helps students choose a manageable course load, decide what to work on now, and start assignments before deadline pressure creates urgency.
+StudentSuccess helps high-school students plan a manageable course load and decide which assignment to start next. It brings together four-year course planning, explained task priorities, and feedback on planned versus actual start times.
 
-**[Open the live prototype](https://studentsuccess.onrender.com/)** and choose **Create a private planner** for a server-saved workspace with a random access code, or **Try the fictional demo** for an isolated, pre-populated workspace. No name or email is needed for a private-code planner. Save the code: anyone who has it can access the plan, and lost codes cannot be recovered. Every private-code account opens the full dashboard and course catalog. An optional browser-only workspace is linked beneath code creation and remains separate from server accounts. Free-text submissions require confirmation that they contain no personal information.
+**[Try the live demo](https://studentsuccess.onrender.com/)** · [Data sources](docs/data_sources.md) · [Privacy notes](docs/privacy_notes.md) · [Architecture](docs/architecture.md)
 
-> The free Render service can take up to a minute to wake after inactivity. The demo uses fictional data and is intended for product exploration, not real student records.
+> Public prototype: explore with fictional information only. The demo server may take about a minute to wake after inactivity.
 
-![StudentSuccess social preview](static/images/studentsuccess-social-preview.png)
+## Take a look
 
 ![StudentSuccess landing page](docs/screenshots/landing.png)
 
-![StudentSuccess fictional demo dashboard](docs/screenshots/dashboard.png)
+![StudentSuccess dashboard with a recommended next task](docs/screenshots/dashboard.png)
 
-## What problem does it address?
+[View all eight screenshots](docs/screenshots/README.md), including tasks, course comparisons, the four-year plan, settings, and a mobile dashboard detail.
 
-The project aims to help a student choose what to work on now, compare planned and actual start times, recognize repeated delay patterns, and eventually build more realistic schedules from real behavior.
+## What you can do
 
-## Implemented
+- **Choose what to start next.** See task recommendations with plain-language reasons based on deadlines, estimated effort, task ratings, and available start-history patterns.
+- **Turn deadlines into a starting plan.** Set planned start times, start and complete tasks, record actual duration, and review timing and estimation patterns. Recurring tasks and optional in-app reminders support ongoing work.
+- **Compare course options.** Search reference catalogs, inspect prerequisites, compare up to three courses, and build a four-year plan with workload estimates.
+- **Make the workspace easier to use.** Adjust themes, text size and spacing, reduced motion, focus mode, dashboard density, and visible cards.
+- **Keep control of your plan.** Export account data, download a calendar file, clear completed history, or delete your account.
 
-- Flask application factory and Blueprints
-- Student onboarding and editable profile stored in SQLite
-- A profile-aware dashboard with a real recommended next task
-- A catalog-aware course explorer with state selection, national reference courses, imported state catalogs, AP/IB program catalogs, and a Forsyth County local catalog
-- Course explorer with search, filters, details, comparison, prerequisites, and four-year planning
-- Task creation, planned/actual start tracking, completion, and explainable rule-based risk
-- Automated route, task, risk, and course-service tests
-- Public landing page and isolated one-click fictional demo workspaces
-- Account-backed accessibility settings for themes, text size and spacing, reduced motion, focus mode, dashboard density, and optional cards
-- Personalized task defaults, time zones, date formats, user-controlled in-app reminders, snoozing, and calendar export
-- Data export, completed-history clearing, password changes, and full account deletion
-- A guided fictional-demo tour, friendly error recovery pages, and social-sharing metadata
+Recommendations use explicit rules. StudentSuccess does not currently use AI or machine learning.
 
-Machine learning, AI assistance, optimization, and calendar integration are not implemented. State selection is available for all 50 states, with imported data for Alabama, Arkansas, Florida, Georgia/Forsyth, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Michigan, Minnesota, Mississippi, Missouri, Nebraska, North Carolina, North Dakota, Ohio, South Carolina, South Dakota, Tennessee, Virginia, West Virginia, and Wisconsin. Coverage varies by supplied source. The national and AP/IB catalogs are planning references, not universal graduation or placement authorities.
+## Try a workspace
 
-## Technology
+| Option | How it works |
+| --- | --- |
+| **Fictional demo** | Open an isolated workspace with sample tasks and history. A short tour introduces the main features. |
+| **Private planner** | Create a server-saved planner without a name or email. Save the generated private code to reopen it on another device. |
+| **Browser-only planner** | Use the optional browser workspace linked below planner creation. Download and restore backups to move your plan manually. |
 
-- Python and Flask
-- Flask-SQLAlchemy with SQLite locally and PostgreSQL in persistent deployments
-- HTML and CSS
-- pytest
+Anyone with a private code can access its planner. Lost codes cannot be recovered. Browser-only plans are separate from server accounts and do not sync automatically. Existing username/password accounts remain supported.
 
-## Important limitations
+Free-text submissions ask you to confirm that they contain no personal information. This is a user acknowledgment, not automatic detection. See the [privacy notes](docs/privacy_notes.md) for storage and account details.
 
-- StudentSuccess is a prototype. Do not enter real student or school-record data.
-- Workload, rigor, risk, and priority labels are transparent planning estimates, not official academic advice.
-- Course offerings and requirements vary by school and must be confirmed with a school counselor.
-- The project does not currently use artificial intelligence or claim to make predictive decisions.
+## Course references and limits
 
-## Accessibility and personalization
+The explorer offers state selection for all 50 states, national reference courses, AP and IB catalogs, and a Forsyth County local catalog. Imported state coverage varies; selecting a state does not mean a complete statewide catalog is available. The [data sources](docs/data_sources.md) document coverage and provenance.
 
-Signed-in users can open **Settings** from the dashboard to personalize the
-interface and planning experience. Every page includes a keyboard skip link,
-visible focus indicators, support for browser text enlargement, device-level
-reduced-motion preferences, and account-specific appearance settings. Focus
-mode reduces the dashboard to the recommended next action. Reminder settings
-are opt-in and respect quiet hours.
+Academic depth, workload, and task-priority labels are planning estimates. Confirm current offerings, prerequisites, and graduation requirements with your school counselor. This prototype is not ready to hold real student records.
 
-## Local setup
+## Run locally
 
-1. Create and activate a virtual environment.
-2. Install dependencies:
+Requires Python and the packages in `requirements.txt`.
 
-   ```powershell
-   pip install -r requirements.txt
-   ```
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+python app.py
+```
 
-3. Start the development server:
+Open `http://127.0.0.1:5000`. By default, the app creates a local SQLite database at `instance/studentsuccess.db`. To use a different database, set `DATABASE_URL`.
 
-   ```powershell
-   python app.py
-   ```
-
-4. Open `http://127.0.0.1:5000`.
-
-The app creates missing tables in `instance/studentsuccess.db`. This local database is ignored by Git.
-
-To run tests:
+Run the automated tests:
 
 ```powershell
 python -m pytest
 ```
 
-## Public demo launch
+## Built with
 
-The app is configured for Render with `render.yaml`. Use a Render **Web Service**
-with the Free compute plan, then confirm these commands if entering the service
-manually:
+Python, Flask, Flask-SQLAlchemy, Jinja templates, HTML, CSS, JavaScript, and pytest. Course reference data lives in versioned JSON files. Local development uses SQLite; the Render blueprint connects a managed PostgreSQL database.
+
+| Directory | Purpose |
+| --- | --- |
+| `models/` | Accounts, credentials, profiles, tasks, course selections, and settings |
+| `routes/` | Flask request handlers |
+| `services/` | Scoring, suggestions, timing, recurrence, account logic, and catalog access |
+| `templates/`, `static/` | Pages, styles, illustrations, and browser interactions |
+| `data/` | Course reference catalogs |
+| `tests/` | Automated route and service coverage |
+| `docs/` | Architecture, data sources, privacy notes, and screenshots |
+
+See [architecture](docs/architecture.md) for the request flow and storage boundaries.
+
+## Deploy on Render
+
+The repository includes `render.yaml`:
 
 ```text
 Build: pip install -r requirements.txt
 Start: gunicorn app:app
 ```
 
-Before sharing the link, set `SECRET_KEY` in the host environment and use only
-fictional demo data. The included `scripts/seed_test_login.py` creates a
-populated local test account for screenshots and walkthroughs; it is not a
-production account and should not be used with real student information.
+Set `APP_ENV=production` and a `SECRET_KEY`. Confirm that `DATABASE_URL` points to the managed database, especially if the service predates the database configuration. Without it, the app falls back to SQLite on Render's temporary filesystem.
 
-The Render blueprint disables `DEMO_RESET_ON_DEPLOY` and connects the web
-service to the managed `studentsuccess-db` PostgreSQL database, so deployments
-do not delete accounts and service restarts do not lose them. If the service was
-created before this database was added to `render.yaml`, apply the blueprint
-update in Render and confirm that `DATABASE_URL` is linked to
-`studentsuccess-db`. Without that connection, the app falls back to SQLite,
-whose filesystem is temporary on Render.
+The blueprint sets `DEMO_RESET_ON_DEPLOY=0`. Keep it disabled to preserve accounts across deployments. The `/health` endpoint returns `{"status":"ok"}`; it does not verify the database connection.
 
-The `/health` endpoint returns `{"status": "ok"}` for deployment checks.
+The free hosting configuration is intended for prototype exploration. Review hosting limits, persistence, and backups before relying on it for long-term storage.
 
-Render's free service sleeps after inactivity and its local SQLite filesystem is
-temporary, so this deployment is suitable for a portfolio demo rather than
-reliable long-term data storage.
+## Next steps
+
+Priorities include more reliable hosting, stronger public-form protections, clearer connections between planned courses and assignments, and usability testing with fictional scenarios. Adaptive scheduling and optimization remain future work. Calendar-file export is available; live calendar synchronization is not implemented.
 
 ## License
 
-StudentSuccess is available under the [MIT License](LICENSE).
-
-## Project structure
-
-```text
-StudentSuccess/
-|-- app.py
-|-- config.py
-|-- extensions.py
-|-- data/
-|   `-- courses.json
-|-- docs/
-|-- instance/
-|-- models/
-|-- routes/
-|-- services/
-|-- static/css/
-|-- templates/
-`-- tests/
-```
-
-- `models/` defines persisted application data.
-- `routes/` handles browser requests through Flask Blueprints.
-- `services/` contains reusable logic and catalog access.
-- `templates/` and `static/` provide the server-rendered interface.
-- `data/` contains the curated course catalog.
-
-## Short roadmap
-
-Near-term work includes long-term hosting, stronger public-form protections, richer links between planned courses and assignments, and broader usability testing with fictional scenarios. Adaptive scheduling, optimization, or machine learning should only be considered after useful real behavior data exists.
+[MIT](LICENSE)
