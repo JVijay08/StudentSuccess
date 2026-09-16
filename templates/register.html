@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/onboarding.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/access.css') }}">
   {% include '_accessibility_head.html' %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/nonpersonal.css') }}">
 </head>
 <body>
   {% include '_accessibility_body.html' %}
@@ -22,7 +23,8 @@
       <button class="access-primary" type="submit">Create my private planner</button>
     </form>
     <p>Already have a code? <a href="{{ url_for('auth.login') }}">Open your planner</a></p>
-    <p class="access-note">Prefer to save only on this device? <a href="{{ url_for('main.local_planner') }}">Use the browser-only planner</a>. It stays separate and won't automatically transfer here.</p>
+    <p class="access-note">Your private code opens the full dashboard: tasks, recommendations, course catalogs, comparisons, and a four-year plan. Information you add is saved on the server. Use fictional details only.</p>
+    <p class="access-note">Prefer to save only on this device? <a href="{{ url_for('main.local_planner') }}">Use the browser-only planner</a>. No code needed; browser plans stay separate from your private-code account.</p>
   </section></main>
   {% include '_welcome.html' %}
 </body>

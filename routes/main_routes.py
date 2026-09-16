@@ -113,6 +113,16 @@ def local_planner():
     return render_template("local_planner.html")
 
 
+@main_bp.get("/planner/catalogs.json")
+def browser_catalogs():
+    # One public bundle: searches and planning selections stay on the device.
+    return {"catalogs": [
+        {"id": key, "label": catalog["label"], "description": catalog["description"],
+         "courses": course_service.load_courses(key)}
+        for key, catalog in course_service.get_catalogs().items()
+    ]}
+
+
 def _date_time_format(settings, include_time=False):
     date_formats = {
         "month-first": "%b %d, %Y",

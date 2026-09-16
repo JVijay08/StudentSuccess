@@ -1,10 +1,10 @@
-﻿# StudentSuccess
+# StudentSuccess
 
 > **Public prototype:** StudentSuccess is still under development and is not ready to store real student information. Use fictional data only when exploring the live demo.
 
 StudentSuccess is a procrastination-aware workload and action planner for high-school students. It helps students choose a manageable course load, decide what to work on now, and start assignments before deadline pressure creates urgency.
 
-**[Open the live prototype](https://studentsuccess.onrender.com/)** and choose **Create a private planner** for a server-saved workspace with a random access code, or **Try the fictional demo** for an isolated, pre-populated workspace. No name or email is needed for a private-code planner. Save the code: anyone who has it can access the plan, and lost codes cannot be recovered. The optional browser-only planner remains separate.
+**[Open the live prototype](https://studentsuccess.onrender.com/)** and choose **Create a private planner** for a server-saved workspace with a random access code, or **Try the fictional demo** for an isolated, pre-populated workspace. No name or email is needed for a private-code planner. Save the code: anyone who has it can access the plan, and lost codes cannot be recovered. Every private-code account opens the full dashboard and course catalog. An optional browser-only workspace is linked beneath code creation and remains separate from server accounts. Free-text submissions require confirmation that they contain no personal information.
 
 > The free Render service can take up to a minute to wake after inactivity. The demo uses fictional data and is intended for product exploration, not real student records.
 

@@ -1,4 +1,4 @@
-﻿from extensions import db
+from extensions import db
 from models import StudentProfile, Task, User
 from services.auth_service import SESSION_TIMEOUT_MINUTES
 
@@ -116,6 +116,7 @@ def test_authenticated_session_expires_after_inactivity(app, authed_client):
 
 def test_onboarding_saves_and_updates_profile(app, authed_client):
     data = {
+        "nonpersonal_confirmed": "yes",
         "first_name": "Jayesh",
         "grade_level": "11",
         "graduation_year": "2027",
@@ -148,6 +149,7 @@ def test_onboarding_backend_limits_match_form(authed_client):
     response = authed_client.post(
         "/onboarding",
         data={
+            "nonpersonal_confirmed": "yes",
             "first_name": "Alex",
             "grade_level": "11",
             "graduation_year": "2036",

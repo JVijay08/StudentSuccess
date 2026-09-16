@@ -5,6 +5,7 @@ def complete_profile(client):
     response = client.post(
         "/onboarding",
         data={
+            "nonpersonal_confirmed": "yes",
             "first_name": "Course Demo",
             "grade_level": "11",
             "graduation_year": "2027",

@@ -1,4 +1,4 @@
-﻿# Privacy Notes
+# Privacy Notes
 
 StudentSuccess is a local academic-planning project. Its guiding rule is simple:
 
@@ -32,24 +32,38 @@ storage, and fictional demo. Dismissal is remembered in localStorage under
 `studentsuccess.welcome.v1`; the explanation can be reopened. It is not a formal
 consent mechanism. Existing username/password accounts remain usable.
 
-### Browser planner (optional)
+### Non-personal entry confirmation
 
-The public `/planner` page works without registration or a student profile.
-Its task titles, subjects, deadlines, planned/actual starts, completion status,
-course workload estimates, and weekly availability are stored in localStorage
-under `studentsuccess.local-plan.v1`. The planner does not send these fields to
-the server. It has no analytics, remote libraries, or automatic account sync.
-Ordinary page and static-asset requests still reach the host and may be logged.
+Task creation/editing, legacy profile editing, and free-text catalog searches
+require an explicit non-personal-information acknowledgment on every submission.
+The acknowledgment starts unchecked and resets when relevant entries change.
+The server rejects unconfirmed task/profile saves and does not apply unconfirmed
+search text. Catalog searches use POST so new searches do not put text in URLs.
+The warning identifies real names, school names, contact details, student IDs,
+and other identifying details as information to remove. This is a user
+confirmation, not automatic detection or a guarantee that text is non-personal.
+Authentication fields and structured catalog selections are not subject to the
+free-text acknowledgment.
 
-Browser data is accessible to anyone using the same browser profile. Clearing
-site data or using private browsing can remove it. The page supports JSON backup,
-validated replacement imports, and deletion of its own storage key. Backups are
-unencrypted and should be kept private. Storage failures are surfaced to the user;
-invalid stored data is preserved for download rather than silently overwritten.
+### Optional browser-only workspace
 
-The browser planner uses user-entered course-hour estimates and deadline/start
-ordering. The existing account prototype separately provides catalog planning,
-behavior analytics, and account settings. No existing account data is migrated.
+The browser-only planner is offered beneath private-code creation, not in the
+private-code dashboard. It keeps the existing `studentsuccess.local-plan.v1`
+storage key and reads old backups. Tasks, task ratings, four-year course plans,
+and weekly availability stay in browser storage; export/import and erase remain
+available. Anyone using the same browser profile can access the plan.
+
+The browser workspace uses the dashboard visual design with local task history,
+completion and start-delay summaries, catalog browsing, comparisons, and a
+four-year plan. A single unauthenticated public catalog-bundle request downloads
+reference data. Searches and course selections then run locally; none are sent
+back to the server. Server accounts retain their existing advanced features
+including recurring tasks, reminders, calendar export, and account preferences.
+Browser plans are separate and do not automatically sync to private-code accounts.
+
+The same non-personal text confirmation is required in browser task/custom-course
+forms and searches. Backup restoration also asks the user to confirm the file
+contains no personal information. This is acknowledgment, not automated detection.
 
 ### Account and demo workspaces
 

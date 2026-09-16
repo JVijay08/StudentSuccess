@@ -21,14 +21,21 @@
           !validNumber(t.minutes, 1, 10080) || !Number.isInteger(t.minutes) ||
           !["not_started", "in_progress", "completed"].includes(t.status)) throw new Error("Invalid task");
       ids.add(t.id);
+      if ((t.challenge !== undefined && !["low","medium","high"].includes(t.challenge)) ||
+          (t.interest !== undefined && !["low","medium","high"].includes(t.interest))) throw new Error("Invalid task rating");
       return {id:t.id, title:t.title, subject:t.subject, due:t.due, planned:t.planned, minutes:t.minutes,
-        started:t.started, completed:t.completed, status:t.status};
+        started:t.started, completed:t.completed, status:t.status, challenge:t.challenge || "medium", interest:t.interest || "medium"};
     });
     const courses = data.courses.map(c => {
-      if (!c || !validText(c.id, 100) || !c.id || ids.has(c.id) || !validText(c.title, 120) || !c.title.trim() ||
+      if (!c || !validText(c.id, 100) || !c.id || ids.has(c.id) || !validText(c.title, 2000) || !c.title.trim() ||
           !validNumber(c.hours, 0, 168)) throw new Error("Invalid course");
+      if ((c.year !== undefined && ![9,10,11,12].includes(c.year)) ||
+          (c.catalog !== undefined && !validText(c.catalog,80)) ||
+          (c.courseId !== undefined && !validText(c.courseId,200)) ||
+          (c.depth !== undefined && !validText(c.depth,80)) ||
+          (c.workload !== undefined && !["Low","Medium","High"].includes(c.workload))) throw new Error("Invalid course details");
       ids.add(c.id);
-      return {id:c.id, title:c.title, hours:c.hours};
+      return {id:c.id, title:c.title, hours:c.hours, year:c.year || 9, catalog:c.catalog || "", courseId:c.courseId || "", depth:c.depth || "Not rated", workload:c.workload || "Medium"};
     });
     return {version:1, tasks, courses, budget:data.budget};
   }
@@ -80,16 +87,23 @@
     return new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0,16);
   }
   function rank(task, now) {
-    if (Date.parse(task.due) < now) return 0;
-    if (task.status === "not_started" && task.planned && Date.parse(task.planned) < now) return 1;
-    return 2;
+    const hours = (Date.parse(task.due)-now)/3600000;
+    let score = task.started ? 0 : 2;
+    score += hours < 0 ? 4 : hours <= 24 ? 3 : hours <= 48 ? 2 : hours <= 168 ? 1 : 0;
+    score += task.minutes >= 120 ? 2 : task.minutes >= 60 ? 1 : 0;
+    score += task.challenge === "high" ? 1 : 0;
+    score += task.interest === "low" ? 1 : 0;
+    return -score;
   }
   function reason(t, now) {
     const notes = [];
     if (Date.parse(t.due) < now) notes.push("Deadline has passed");
+    else if (Date.parse(t.due)-now <= 86400000) notes.push("Due within 24 hours");
     if (t.status === "not_started" && t.planned && Date.parse(t.planned) < now) notes.push("Planned start has passed");
     if (t.status === "in_progress") notes.push("Already in progress");
-    if (!notes.length) notes.push("Earliest upcoming deadline");
+    if (t.challenge === "high") notes.push("You rated this task as challenging");
+    if (t.interest === "low") notes.push("You rated your interest as low");
+    if (!notes.length) notes.push("Based on deadline, start status, and estimated time");
     notes.push(`${t.minutes} minute estimate`);
     return notes.join(" · ");
   }
@@ -110,6 +124,8 @@
     $("task-title").value = t.title; $("task-subject").value = t.subject;
     $("task-due").value = localInput(t.due); $("task-start").value = localInput(t.planned);
     $("task-minutes").value = t.minutes; $("save-task").textContent = "Save task";
+    $("task-challenge").value = t.challenge; $("task-interest").value = t.interest;
+    $("task-form").querySelector("[name=nonpersonal_confirmed]").checked = false;
     $("task-form-heading").textContent = "Edit task"; $("cancel-edit").hidden = false; $("task-title").focus();
   }
   function render() {
@@ -119,6 +135,10 @@
     $("next-heading").textContent = active[0]?.title || (state.tasks.length ? "All caught up." : "Add a task to find your next step.");
     $("next-reason").textContent = active[0] ? reason(active[0], now) : "Start with a deadline and a small estimate of the time you need.";
     $("progress").textContent = `${active.length} active · ${completed.length} completed`;
+    $("completion-summary").textContent = state.tasks.length ? `${Math.round(completed.length/state.tasks.length*100)}% completed` : "No tasks yet";
+    const started = state.tasks.filter(t => t.started && t.planned);
+    $("delay-summary").textContent = started.length ? `Average start delay: ${Math.round(started.reduce((sum,t) => sum+(Date.parse(t.started)-Date.parse(t.planned))/60000,0)/started.length)} minutes (negative means early).` : "Start tasks to compare actual and planned start times.";
+    $("start-history").replaceChildren(...state.tasks.filter(t => t.started).sort((a,b) => Date.parse(b.started)-Date.parse(a.started)).slice(0,5).map(t => node("li", `${t.title} · ${format(t.started)}`)));
     const list = $("tasks"); list.replaceChildren();
     const visible = $("show-completed").checked ? [...active, ...completed] : active;
     if (!visible.length) list.append(node("li", "No tasks here yet. Add one when you’re ready."));
@@ -143,24 +163,38 @@
       }, "danger")); li.append(buttons); list.append(li);
     }
     const courses = $("courses"); courses.replaceChildren();
-    for (const c of state.courses) {
-      const li = document.createElement("li"); li.append(node("h3", c.title), node("p", `${c.hours} study hours / week`));
+    for (const year of [9,10,11,12]) {
+      const rows = state.courses.filter(c => c.year === year);
+      const points = rows.reduce((sum,c) => sum+({Low:1,Medium:2,High:3}[c.workload] || 0),0);
+      const highCount = rows.filter(c => c.workload === "High").length;
+      const load = rows.length >= 8 || highCount >= 4 || points >= 17 ? "Heavy" : rows.length >= 5 || highCount >= 2 || points >= 8 ? "Moderate" : "Light";
+      const hours = rows.reduce((sum,c) => sum+c.hours,0);
+      const heading = node("li", ""); heading.append(node("h3", `Year ${year} · ${rows.length} courses · ${load} workload estimate`));
+      heading.append(node("p", `${hours} estimated study hours / week` + (state.budget !== null && hours > state.budget ? ` · ${Math.round((hours-state.budget)*10)/10} hours over your availability` : "") + (rows.some(c => c.catalog && !c.hours) ? " · Some catalog courses have no hourly estimate yet." : "")));
+      courses.append(heading);
+      for (const c of rows) {
+      const li = document.createElement("li"); li.append(node("h3", c.title), node("p", c.catalog && !c.hours ? "Study hours not estimated yet" : `${c.hours} study hours / week`));
+      li.append(node("p", `${c.depth} academic depth · ${c.workload} time commitment`));
+      const yearLabel = node("label", "Move to planning year"); const yearSelect = document.createElement("select");
+      for (const value of [9,10,11,12]) { const option = node("option", String(value)); option.value = String(value); option.selected = value === c.year; yearSelect.append(option); }
+      yearSelect.addEventListener("change", () => { const next = copy(); next.courses.find(item => item.id === c.id).year = Number(yearSelect.value); commit(next); });
+      yearLabel.append(yearSelect); li.append(yearLabel);
       li.append(action("Remove course", () => {
         if (!confirm(`Remove “${c.title}”?`)) return;
         const next = copy(); next.courses = next.courses.filter(item => item.id !== c.id); commit(next);
       })); courses.append(li);
+      }
     }
-    const total = Math.round(state.courses.reduce((sum,c) => sum+c.hours,0)*10)/10;
-    const difference = state.budget === null ? null : Math.round((state.budget-total)*10)/10;
-    $("workload").textContent = `${total} estimated study hours / week` + (difference === null ? ". Add your availability to compare." : difference < 0 ? ` · ${-difference} hours over your availability. Consider reducing the load.` : ` · ${difference} hours remaining for other work.`);
+    $("workload").textContent = `Your four-year plan: ${state.courses.length} courses. ` + (state.budget === null ? "Set weekly availability to compare each year's load." : `${state.budget} study hours available each week; compare one planning year at a time.`);
   }
 
   $("task-form").addEventListener("submit", event => {
+    if (event.defaultPrevented) return;
     event.preventDefault();
     const due = new Date($("task-due").value), planned = $("task-start").value ? new Date($("task-start").value) : null;
     if (!Number.isFinite(due.getTime()) || (planned && !Number.isFinite(planned.getTime()))) { tell("Enter valid dates."); return; }
     const next = copy();
-    const fields = {title:$("task-title").value.trim(), subject:$("task-subject").value.trim(), due:due.toISOString(), planned:planned?.toISOString() || null, minutes:Number($("task-minutes").value)};
+    const fields = {title:$("task-title").value.trim(), subject:$("task-subject").value.trim(), due:due.toISOString(), planned:planned?.toISOString() || null, minutes:Number($("task-minutes").value), challenge:$("task-challenge").value, interest:$("task-interest").value};
     if (editing) Object.assign(next.tasks.find(t => t.id === editing), fields);
     else next.tasks.push({id:uid(), ...fields, status:"not_started", started:null, completed:null});
     if (commit(next)) resetForm();
@@ -171,7 +205,8 @@
     event.preventDefault(); const next = copy(); next.budget = Number($("budget").value); commit(next);
   });
   $("course-form").addEventListener("submit", event => {
-    event.preventDefault(); const next = copy(); next.courses.push({id:uid(), title:$("course-title").value.trim(), hours:Number($("course-hours").value)});
+    if (event.defaultPrevented) return;
+    event.preventDefault(); const next = copy(); next.courses.push({id:uid(), title:$("course-title").value.trim(), hours:Number($("course-hours").value), year:Number($("custom-course-year").value)});
     if (commit(next)) $("course-form").reset();
   });
   function download(raw, name) {
@@ -185,7 +220,7 @@
     try {
       if (file.size > 5 * 1024 * 1024) throw new Error("Too large");
       const next = validate(JSON.parse(await file.text()));
-      if (!confirm("Replace this browser's plan with this backup? Download your current plan first if you want to keep it.")) return;
+      if (!confirm("Confirm this backup contains no personal or identifying information. Restoring replaces this browser's plan; download your current plan first if you want to keep it.")) return;
       if (!readable) { tell("Erase the unreadable browser data first, or use a browser with storage enabled, then restore your backup."); return; }
       if (commit(next)) { resetForm(); $("budget").value = state.budget ?? ""; }
     } catch (_) { tell("That file is not a valid StudentSuccess backup (maximum 5 MB). Your plan has not changed."); }
@@ -201,6 +236,85 @@
     $("storage-state").textContent = "Saved on this browser; not uploaded to StudentSuccess.";
     $("original-download")?.remove(); tell("This browser's plan has been erased.");
   });
+
+  let catalogs = [], filteredCourses = [], shownCourses = 36;
+  const compared = new Map();
+  function currentCatalog() { return catalogs.find(c => c.id === $("catalog-choice").value); }
+  function courseCard(course, catalog, comparison = false) {
+    const card = document.createElement("article");
+    card.append(node("h3", course.course_name), node("p", `${catalog.label} ? ${course.subject} ? ${course.course_type}`));
+    card.append(node("p", `${course.rigor_level} academic depth ? ${course.workload_level} time commitment`));
+    card.append(node("p", `Planning years: ${(course.grade_levels || []).join(", ")}`));
+    card.append(node("p", `Prerequisites: ${(course.prerequisites || []).join(", ") || "None listed"}`));
+    card.append(node("p", `Pathways: ${(course.career_clusters || []).join(", ") || "Core pathway"}`));
+    card.append(node("p", `Graduation category: ${course.graduation_category || "Verify locally"}`));
+    const key = catalog.id + ":" + course.course_id;
+    card.append(action(comparison ? "Remove from comparison" : "Compare course", () => {
+      if (comparison) compared.delete(key);
+      else {
+        if (compared.size >= 3 && !compared.has(key)) { tell("Compare up to three courses at a time. Remove one to add another."); return; }
+        compared.set(key, {course,catalog});
+      }
+      $("course-comparison").replaceChildren(...[...compared.values()].map(row => courseCard(row.course,row.catalog,true)));
+      if (!comparison) tell("Course added to the comparison below the catalog.");
+    }));
+    const form = document.createElement("form");
+    const yearLabel = node("label", "Add to planning year"); const year = document.createElement("select");
+    for (const value of [9,10,11,12]) { const option = node("option",String(value)); option.value = String(value); year.append(option); }
+    year.value = String((course.grade_levels || [9])[0] || 9); yearLabel.append(year);
+    const hoursLabel = node("label", "Estimated study hours / week (optional)"); const hours = document.createElement("input");
+    hours.type = "number"; hours.min = "0"; hours.max = "168"; hours.step = "0.5"; hoursLabel.append(hours);
+    const save = node("button", "Add to four-year plan"); save.type = "submit";
+    form.append(yearLabel, hoursLabel, save);
+    form.addEventListener("submit", event => {
+      event.preventDefault();
+      if (state.courses.some(c => c.catalog === catalog.id && c.courseId === course.course_id && c.year === Number(year.value))) { tell("That course is already planned for this year."); return; }
+      const next = copy(); next.courses.push({id:uid(), title:course.course_name, hours:Number(hours.value), year:Number(year.value), catalog:catalog.id, courseId:course.course_id, depth:course.rigor_level, workload:course.workload_level});
+      if (commit(next)) tell("Course added to your four-year plan in this browser.");
+    }); card.append(form); return card;
+  }
+  function showCatalogResults() {
+    const catalog = currentCatalog(); if (!catalog) return;
+    $("catalog-results").replaceChildren(...filteredCourses.slice(0,shownCourses).map(course => courseCard(course,catalog)));
+    $("catalog-count").textContent = `${filteredCourses.length} matches ? showing ${Math.min(shownCourses,filteredCourses.length)}`;
+    $("more-courses").hidden = shownCourses >= filteredCourses.length;
+  }
+  function applyCatalogFilters() {
+    const catalog = currentCatalog(); if (!catalog) return;
+    const query = $("catalog-search").value.trim().toLowerCase();
+    filteredCourses = catalog.courses.filter(course =>
+      (!query || [course.course_name,course.subject,...(course.career_clusters || [])].join(" ").toLowerCase().includes(query)) &&
+      (!$("catalog-subject").value || course.subject === $("catalog-subject").value) &&
+      (!$("catalog-year").value || (course.grade_levels || []).includes(Number($("catalog-year").value))) &&
+      (!$("catalog-type").value || course.course_type === $("catalog-type").value) &&
+      (!$("catalog-depth").value || course.rigor_level === $("catalog-depth").value) &&
+      (!$("catalog-workload").value || course.workload_level === $("catalog-workload").value));
+    shownCourses = 36; $("catalog-description").textContent = catalog.description; showCatalogResults();
+  }
+  function updateCatalogChoices() {
+    const catalog = currentCatalog(); if (!catalog) return;
+    for (const [id,field] of [["catalog-subject","subject"],["catalog-type","course_type"],["catalog-depth","rigor_level"],["catalog-workload","workload_level"]]) {
+      const select = $(id); select.replaceChildren(); const any = node("option", "Any"); any.value = ""; select.append(any);
+      [...new Set(catalog.courses.map(c => c[field]))].filter(Boolean).sort().forEach(value => { const option = node("option",value); option.value = value; select.append(option); });
+    }
+  }
+  $("load-catalog").addEventListener("click", async () => {
+    $("load-catalog").disabled = true; $("catalog-status").textContent = "Loading the public course catalogs?";
+    try {
+      const response = await fetch("/planner/catalogs.json", {credentials:"omit"});
+      if (!response.ok) throw new Error("Catalog unavailable");
+      const data = await response.json(); catalogs = data.catalogs;
+      if (!Array.isArray(catalogs) || !catalogs.length) throw new Error("Invalid catalog");
+      $("catalog-choice").replaceChildren(...catalogs.map(c => { const option = node("option",c.label); option.value = c.id; return option; }));
+      $("catalog-choice").value = "national"; $("catalog-filter").hidden = false;
+      $("load-catalog").hidden = true; $("catalog-status").textContent = "Public catalogs loaded. Searches, comparisons, and your plan stay on this device.";
+      updateCatalogChoices(); applyCatalogFilters();
+    } catch (_) { $("catalog-status").textContent = "Could not load the catalogs. Your saved plan is unaffected. Try again when connected."; $("load-catalog").disabled = false; }
+  });
+  $("catalog-choice").addEventListener("change", updateCatalogChoices);
+  $("catalog-filter").addEventListener("submit", event => { if (event.defaultPrevented) return; event.preventDefault(); applyCatalogFilters(); });
+  $("more-courses").addEventListener("click", () => { shownCourses += 36; showCatalogResults(); });
+
   read();
   if (!readable) {
     $("storage-state").textContent = "Browser saving is unavailable. Changes are only in memory; download a backup before leaving.";
@@ -211,5 +325,5 @@
   }
   $("budget").value = state.budget ?? ""; render();
   window.addEventListener("storage", event => { if (event.key === KEY || event.key === null) tell("Browser storage changed in another tab. Reload before making more changes."); });
-  setInterval(render, 60000);
+
 })();

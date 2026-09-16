@@ -6,7 +6,8 @@
   let seen = false;
   try { seen = localStorage.getItem(key) === "seen"; } catch (_) { /* Keep the introduction available. */ }
   if (!seen) open();
-  document.getElementById("welcome-close").addEventListener("click", () => dialog.close());
+  document.getElementById("welcome-close").addEventListener("click", () => { acknowledge(); dialog.close(); });
+  dialog.addEventListener("cancel", acknowledge);
   dialog.addEventListener("close", acknowledge);
   dialog.querySelectorAll("[data-welcome-choice]").forEach(el => el.addEventListener(el.tagName === "FORM" ? "submit" : "click", acknowledge));
   document.getElementById("welcome-reopen").addEventListener("click", open);

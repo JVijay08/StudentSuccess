@@ -48,7 +48,7 @@ def test_codes_are_distinct_and_reopen_same_plan_on_another_device(app):
     assert code != other_code
     with first.session_transaction() as session:
         user_id = session["user_id"]
-    response = first.post("/tasks", data={"title":"Fictional algebra", "due_at":"2027-01-15T18:00",
+    response = first.post("/tasks", data={"nonpersonal_confirmed":"yes", "title":"Fictional algebra", "due_at":"2027-01-15T18:00",
         "estimated_minutes":"30", "difficulty":"medium", "interest_level":"medium"})
     assert response.status_code == 302
     returning = app.test_client()
@@ -149,7 +149,7 @@ def test_planning_preferences_do_not_request_or_save_identity(app):
 
 def test_public_entry_points_offer_welcome_dialog(app):
     client = app.test_client()
-    for path in ("/", "/register", "/login", "/planner"):
+    for path in ("/", "/register", "/login"):
         page = client.get(path)
         assert b'<dialog id="welcome-dialog"' in page.data
         assert b'Explore with fictional information' in page.data

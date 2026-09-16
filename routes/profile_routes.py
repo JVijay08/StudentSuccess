@@ -8,6 +8,7 @@ from models import StudentProfile
 from services.auth_service import login_required
 from services.settings_service import get_or_create_settings
 from services.access_service import verify_csrf
+from services.privacy_service import confirmation_errors
 
 
 profile_bp = Blueprint("profile", __name__)
@@ -21,6 +22,7 @@ def onboarding():
     errors = []
 
     if request.method == "POST":
+        errors.extend(confirmation_errors(request.form))
         first_name = request.form.get("first_name", "").strip()
         grade_level_text = request.form.get("grade_level", "").strip()
         graduation_year_text = request.form.get("graduation_year", "").strip()

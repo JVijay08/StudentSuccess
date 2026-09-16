@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,7 @@
     <title>Set Up Your Profile | StudentSuccess</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/onboarding.css') }}">
     {% include '_accessibility_head.html' %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/nonpersonal.css') }}">
 </head>
 <body class="theme-dark">
     {% include '_accessibility_body.html' %}
@@ -18,11 +19,11 @@
                 <div>
                     <p class="first-title">STUDENTSUCCESS</p>
                     <h1>Build Your Academic Starting Point</h1>
-                    <p class="subheading">Add a few details to personalize workload guidance and task recommendations. This prototype currently supports U.S. high-school students in grades 9–12.</p>
+                    <p class="subheading">Use fictional details to explore workload guidance and task recommendations. Do not enter actual school records. This prototype currently supports U.S. high-school students in grades 9–12.</p>
                 </div>
                 <a class="back-link" href="{{ url_for('main.dashboard') }}">Back to dashboard</a>
             </div>
-            <form class="profile-form" method="post" action="{{ url_for('profile.onboarding') }}">
+            <form class="profile-form" data-nonpersonal-form method="post" action="{{ url_for('profile.onboarding') }}">
                 {% if errors %}
     <div class="form-errors" role="alert">
         <h2>Please correct the following:</h2>
@@ -34,12 +35,12 @@
             {% endif %}
                 <div class="form-section">
                     <div class="form-group full-width">
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first_name" maxlength="80" placeholder="Enter Your First Name" value="{{ form_data.get('first_name', '') }}" required>
+                        <label for="first-name">Fictional display name</label>
+                        <input type="text" id="first-name" name="first_name" data-nonpersonal-input maxlength="80" placeholder="Sample learner (not your real name)" value="{{ form_data.get('first_name', '') }}" required>
                     </div>
                     <div class="form-group">
                         <label for="grade-level">Current Grade Level</label>
-                        <select id="grade_level" name="grade_level" required>
+                        <select id="grade_level" name="grade_level" data-nonpersonal-input required>
                             <option value="">Choose a grade</option>
 
                             <option
@@ -58,29 +59,29 @@
                     </div>
                     <div class="form-group">
                         <label for="graduation-year">Graduation Year</label>
-                        <input type="number" id="graduation-year" name="graduation_year" min="2026" max="2035" placeholder="Enter Your Graduation Year" value="{{ form_data.get('graduation_year', '') }}" required>
+                        <input type="number" id="graduation-year" name="graduation_year" data-nonpersonal-input min="2026" max="2035" placeholder="Enter Your Graduation Year" value="{{ form_data.get('graduation_year', '') }}" required>
                     </div>
                     <div class="form-group">
-                        <label for="current-gpa">Current GPA</label>
-                        <input type="number" id="current-gpa" name="current_gpa" min="0.0" max="5.0" step="0.01" placeholder="Enter Your Current GPA" value="{{ form_data.get('current_gpa', '') }}" required>
+                        <label for="current-gpa">Fictional current GPA</label>
+                        <input type="number" id="current-gpa" name="current_gpa" data-nonpersonal-input min="0.0" max="5.0" step="0.01" placeholder="Enter Your Current GPA" value="{{ form_data.get('current_gpa', '') }}" required>
                     </div>
                     <div class="form-group">
-                        <label for="target-gpa">Target GPA</label>
-                        <input type="number" id="target-gpa" name="target_gpa" min="0.0" max="5.0" step="0.01" placeholder="Enter Your Target GPA" value="{{ form_data.get('target_gpa', '') }}" required>
+                        <label for="target-gpa">Fictional target GPA</label>
+                        <input type="number" id="target-gpa" name="target_gpa" data-nonpersonal-input min="0.0" max="5.0" step="0.01" placeholder="Enter Your Target GPA" value="{{ form_data.get('target_gpa', '') }}" required>
                     </div>
                     <div class="form-group full-width">
                         <label for="study-hours-wk">Study Hours per Week</label>
-                        <input type="number" id="study-hours-wk" name="study_hours_per_week" min="0" max="80" step="0.5" placeholder="Enter Your Study Hours per Week" value="{{ form_data.get('study_hours_per_week', '') }}" required>
+                        <input type="number" id="study-hours-wk" name="study_hours_per_week" data-nonpersonal-input min="0" max="80" step="0.5" placeholder="Enter Your Study Hours per Week" value="{{ form_data.get('study_hours_per_week', '') }}" required>
                     </div>
                     <div class="form-group">
                         <label for="career-interest">Career Interest</label>
-                        <input type="text" id="career-interest" name="career_interest" maxlength="120" placeholder="Enter Your Career Interest" value="{{ form_data.get('career_interest', '') }}">
+                        <input type="text" id="career-interest" name="career_interest" data-nonpersonal-input maxlength="120" placeholder="Enter Your Career Interest" value="{{ form_data.get('career_interest', '') }}">
                     </div>
                     <div class="form-group">
-                        <label for="course-rigor-preference">Preferred Course Rigor</label>
+                        <label for="course-rigor-preference">Preferred course mix</label>
                         <select
                             id="course_rigor_preference"
-                            name="course_rigor_preference"
+                            name="course_rigor_preference" data-nonpersonal-input
                         >
                             <option value="">Choose later</option>
 
@@ -113,6 +114,7 @@
                         </select>
                     </div>
                 </div>
+                {% include '_nonpersonal_confirmation.html' %}
                 <div class="form-footer">
                     <p>You can always update your preferences later in the settings.</p>
                     <button type="submit">Submit</button>
@@ -121,6 +123,7 @@
         </section>
     </main>
     <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/nonpersonal.js') }}" defer></script>
 </body>
 
 </html>

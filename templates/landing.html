@@ -47,16 +47,16 @@
     </section>
 
     <section class="feature-grid" aria-label="StudentSuccess features">
-      <article><span>01</span><h2>Choose a realistic load</h2><p>Compare your estimated course workload with the time you have available each week.</p></article>
+      <article><span>01</span><h2>Choose a realistic load</h2><p>Explore the full course catalog, compare course rigor and workload, and build a four-year plan.</p></article>
       <article><span>02</span><h2>Turn plans into starts</h2><p>Give assignments planned start times instead of tracking deadlines alone.</p></article>
       <article><span>03</span><h2>Keep your key</h2><p>No name or email to enter. Save your private code, reopen your planner on another device, and export or delete your data in Settings.</p></article>
     </section>
 
     <section class="server-demo" aria-labelledby="demo-heading">
       <h2 id="demo-heading">Try it before creating a planner.</h2>
-      <p>The fictional demo includes sample history and a course catalog. Demo and account workspaces save information on the server and are separate from your browser plan. Use fictional data only. The free demo server may take up to a minute to wake after inactivity.</p>
+      <p>The fictional demo includes sample history and the full course catalog. Demo and account workspaces save information on the server. Use fictional data only. The free demo server may take up to a minute to wake after inactivity.</p>
       <form method="post" action="{{ url_for('auth.start_demo') }}"><button type="submit">Try the fictional demo</button></form>
-      <p>Prefer to keep a plan on this device? <a href="{{ url_for('main.local_planner') }}">Use the browser-only planner</a>. Task and course details are not uploaded in that mode; it does not sync with a private-code planner.</p>
+      <p>Create a private planner to use the same complete workspace with your own fictional examples. Before submitting free-text entries, you’ll confirm that they contain no personal information.</p>
     </section>
 
     <footer>

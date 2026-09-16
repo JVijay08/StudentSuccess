@@ -15,6 +15,7 @@
       <div><p class="eyebrow">{{ catalog.label }} / COMPARISON</p><h1>Put the tradeoffs on one page.</h1><p class="lede">Compare two or three catalog options before you add one to your plan.</p></div>
       <a class="quiet-link" href="{{ url_for('courses.course_explorer', catalog=catalog_id) }}">Back to explorer</a>
     </header>
+    <p class="catalog-note">Academic depth describes the course content level. Time commitment estimates the amount of work. These catalog estimates are separate from how challenging you find an individual task.</p>
     {% if selection_message %}<div class="catalog-note" role="status">{{ selection_message }}</div>{% endif %}
     {% if courses|length >= 2 %}
       <section class="comparison-grid">
@@ -22,7 +23,7 @@
           <article class="comparison-card">
             <span class="tag">{{ course.course_type }}</span><h2>{{ course.course_name }}</h2>
             <p>{{ course.subject }} · grades {{ course.grade_levels|join(', ') }}</p>
-            <dl><div><dt>Rigor</dt><dd>{{ course.rigor_level }}</dd></div><div><dt>Workload</dt><dd>{{ course.workload_level }}</dd></div><div><dt>Category</dt><dd>{{ course.graduation_category }}</dd></div></dl>
+            <dl><div><dt>Academic depth</dt><dd>{{ course.rigor_level }}</dd></div><div><dt>Time commitment</dt><dd>{{ course.workload_level }}</dd></div><div><dt>Category</dt><dd>{{ course.graduation_category }}</dd></div></dl>
             <a class="text-link" href="{{ url_for('courses.course_detail', course_id=course.course_id, catalog=catalog_id) }}">Open details</a>
           </article>
         {% endfor %}

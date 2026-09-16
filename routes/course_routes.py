@@ -6,6 +6,7 @@ from extensions import db
 from models import PlannedCourse, StudentProfile
 from services import course_service
 from services.auth_service import login_required
+from services.privacy_service import confirmation_errors
 
 
 course_bp = Blueprint("courses", __name__)
@@ -78,22 +79,27 @@ def _catalog_selection(args_or_form):
     return _selected_catalog(args_or_form.get("catalog", "national")), ""
 
 
-@course_bp.get("/courses")
+@course_bp.route("/courses", methods=["GET", "POST"])
 @login_required
 def course_explorer():
     profile, redirect_response = _profile_or_redirect()
     if redirect_response:
         return redirect_response
 
-    catalog_id, state_code = _catalog_selection(request.args)
+    submitted = request.form if request.method == "POST" else request.args
+    query = submitted.get("q", "").strip()
+    privacy_errors = confirmation_errors(submitted) if query else []
+    for error in privacy_errors:
+        flash(error, "error")
+    catalog_id, state_code = _catalog_selection(submitted)
     filters = {
-        "query": request.args.get("q", "").strip() or None,
-        "grade_level": request.args.get("grade", type=int),
-        "subject": request.args.get("subject") or None,
-        "course_type": request.args.get("course_type") or None,
-        "rigor_level": request.args.get("rigor") or None,
-        "workload_level": request.args.get("workload") or None,
-        "career_cluster": request.args.get("career") or None,
+        "query": query if query and not privacy_errors else None,
+        "grade_level": submitted.get("grade", type=int),
+        "subject": submitted.get("subject") or None,
+        "course_type": submitted.get("course_type") or None,
+        "rigor_level": submitted.get("rigor") or None,
+        "workload_level": submitted.get("workload") or None,
+        "career_cluster": submitted.get("career") or None,
         "catalog": catalog_id,
     }
     courses = course_service.filter_courses(**filters)
@@ -101,14 +107,14 @@ def course_explorer():
         "courses.html",
         profile=profile,
         courses=courses,
-        filters=request.args,
+        filters=submitted,
         options=course_service.get_catalog_options(catalog_id),
         catalogs=course_service.get_catalogs(),
         states=course_service.get_state_options(),
         catalog_id=catalog_id,
         state_code=state_code,
         planned_ids=_planned_ids(profile, catalog_id),
-    )
+    ), (400 if privacy_errors else 200)
 
 
 @course_bp.get("/courses/<course_id>")

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,6 +8,7 @@
   <title>StudentSuccess | Dashboard</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
   {% include '_accessibility_head.html' %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/nonpersonal.css') }}">
 </head>
 <body>
   {% include '_accessibility_body.html' %}
@@ -24,7 +25,7 @@
           <a href="{{ url_for('courses.course_plan') }}">Course Load</a>
           <a href="{{ url_for('profile.profile_view') }}">{% if g.current_user.access_credential %}Planning preferences{% else %}Student profile{% endif %}</a>
           <a href="{{ url_for('settings.settings') }}">Settings</a>
-          <a href="{{ url_for('main.local_planner') }}">Browser-only planner</a>
+          <a href="{{ url_for('courses.course_explorer') }}">Course catalog</a>
         </nav>
       </div>
       <div class="sidebar-footer">
@@ -74,7 +75,7 @@
             {% for row in prioritized_tasks[:settings.recommendation_count] %}
               <li class="priority-item">
                 <h2>{{ row.task.title }}</h2>
-                <p><span class="priority-score">Risk score {{ row.score }}</span>{% if row.reasons %}: {{ row.reasons|join(", ") }}{% endif %}.{% if settings.recommendation_tone == 'encouraging' %} You can start with one small step.{% elif settings.recommendation_tone == 'direct' %} Start this now.{% endif %}</p>
+                <p><span class="priority-score">Deadline-risk score {{ row.score }}</span>{% if row.reasons %}: {{ row.reasons|join(", ") }}{% endif %}.{% if settings.recommendation_tone == 'encouraging' %} You can start with one small step.{% elif settings.recommendation_tone == 'direct' %} Start this now.{% endif %}</p>
               </li>
             {% endfor %}
           </ol>
@@ -130,7 +131,7 @@
         <article class="card card-tasks">
           <p class="eyebrow">TASKS</p>
           <h2>{{ active_task_count }} active</h2>
-          <p>Risk is calculated from visible rules such as time until due, start status, workload, difficulty, and interest.</p>
+          <p>Deadline risk flags tasks that may be left too late. It uses the deadline, start status, estimated time, task challenge, and interest—not a grade or a measure of ability.</p>
         </article>
 
         {% if 'courses' not in settings.hidden_cards %}<article class="card card-courses">
@@ -153,7 +154,7 @@
             <dl>
               {% if not g.current_user.access_credential %}<div><dt>Graduation year</dt><dd>{{ profile.graduation_year }}</dd></div>{% endif %}
               <div><dt>Weekly study time</dt><dd>{{ profile.study_hours_per_week|round(1) }} hours</dd></div>
-              <div><dt>Course rigor</dt><dd>{{ profile.course_rigor or "Not set" }}</dd></div>
+              <div><dt>Preferred course mix</dt><dd>{{ profile.course_rigor or "Not set" }}</dd></div>
             </dl>
           {% else %}
             <h2>No profile yet</h2>

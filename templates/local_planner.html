@@ -6,41 +6,53 @@
   <meta name="description" content="Plan assignments and course workload in your browser. No account, name, or GPA needed.">
   <title>Your planner | StudentSuccess</title>
   <link rel="icon" href="{{ url_for('static', filename='images/favicon.svg') }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/local_planner.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/nonpersonal.css') }}">
+  <script src="{{ url_for('static', filename='js/nonpersonal.js') }}" defer></script>
   <script src="{{ url_for('static', filename='js/local_planner.js') }}" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
-  <div class="shell">
-    <nav aria-label="Primary navigation"><a class="brand" href="{{ url_for('main.home') }}">StudentSuccess</a><a href="#storage">Storage &amp; backups</a></nav>
+  <div class="shell browser-shell">
+    <aside class="sidebar"><div><a class="brand" href="{{ url_for('main.home') }}"><span class="brand-mark" aria-hidden="true">SS</span><span><strong>StudentSuccess</strong><small>Browser workspace</small></span></a><nav aria-label="Browser planner navigation"><a href="#overview">Dashboard</a><a href="#task-area">Tasks</a><a href="#catalog">Course catalog</a><a href="#course-area">Four-year plan</a><a href="#storage">Storage &amp; backups</a></nav></div><p>Saved on this browser. Separate from private-code accounts.</p></aside>
     <main id="main-content">
-      <header><p class="eyebrow">NO ACCOUNT NEEDED</p><h1>A little planning.<br>A clearer next step.</h1><p>Your assignments and course plan stay in this browser. No name, email, or GPA required.</p></header>
+      <header id="overview"><p class="eyebrow">YOUR BROWSER WORKSPACE</p><h1>Plan less. Start sooner.</h1><p>Tasks, course catalogs, and a four-year plan?saved on this device. No account needed. Use fictional details only.</p></header>
       <noscript><p class="notice">Enable JavaScript to use this browser-saved planner. No plan information is sent to the server.</p></noscript>
       <p id="message" role="status" aria-live="polite"></p>
-      <section class="focus" aria-labelledby="next-heading"><p class="eyebrow">WHAT TO WORK ON NOW</p><h2 id="next-heading">Add a task to find your next step.</h2><p id="next-reason">Start with a deadline and a small estimate of the time you need.</p><p id="progress"></p></section>
-      <div class="columns">
+      <section class="focus-card focus" aria-labelledby="next-heading"><p class="eyebrow">WHAT TO WORK ON NOW</p><h2 id="next-heading">Add a task to find your next step.</h2><p id="next-reason">Start with a deadline and a small estimate of the time you need.</p><p id="progress"></p></section>
+      <section class="grid" aria-label="Planning insights"><article class="card"><p class="eyebrow">COMPLETION</p><h2 id="completion-summary">No tasks yet</h2><p id="delay-summary">Start tasks to see planned-versus-actual timing.</p></article><article class="card"><p class="eyebrow">RECENT STARTS</p><ul id="start-history" class="items"></ul></article></section>
+      <div class="columns" id="task-area">
         <section class="card" aria-labelledby="task-form-heading">
           <h2 id="task-form-heading">Plan a task</h2>
-          <form id="task-form">
-            <label for="task-title">Task</label><input id="task-title" maxlength="160" required placeholder="Finish algebra practice" autocomplete="off">
-            <label for="task-subject">Subject <span>(optional)</span></label><input id="task-subject" maxlength="80" autocomplete="off">
+          <form id="task-form" data-nonpersonal-form>
+            <label for="task-title">Task</label><input id="task-title" data-nonpersonal-input maxlength="160" required placeholder="Finish algebra practice" autocomplete="off">
+            <label for="task-subject">Subject <span>(optional)</span></label><input id="task-subject" data-nonpersonal-input maxlength="80" autocomplete="off">
             <label for="task-due">Deadline</label><input id="task-due" type="datetime-local" required>
             <label for="task-start">Planned start <span>(optional)</span></label><input id="task-start" type="datetime-local">
             <label for="task-minutes">Estimated minutes</label><input id="task-minutes" type="number" min="1" max="10080" step="1" value="30" required>
+            <label for="task-challenge">How challenging is this task?</label><select id="task-challenge"><option value="low">Easy ? familiar work</option><option value="medium" selected>Moderate ? some thinking needed</option><option value="high">Challenging ? focused effort needed</option></select><p class="hint">Your estimate for one task, separate from how long it takes. Not a course level or a measure of ability.</p>
+            <label for="task-interest">Interest in this task</label><select id="task-interest"><option value="low">Low ? not very interested</option><option value="medium" selected>Medium ? neutral</option><option value="high">High ? interested</option></select>
+            <fieldset class="nonpersonal-confirmation"><legend>Keep entries non-personal</legend><p id="local-task-note" data-privacy-note>Use fictional or generic task details. No real names, schools, contact details, or student IDs.</p><label><input type="checkbox" name="nonpersonal_confirmed" value="yes" required> I confirm these entries contain no personal or identifying information.</label></fieldset>
             <div class="actions"><button type="submit" id="save-task">Add task</button><button type="button" id="cancel-edit" class="secondary" hidden>Cancel edit</button></div>
           </form>
         </section>
-        <section class="card" aria-labelledby="tasks-heading"><div class="section-heading"><h2 id="tasks-heading">Your tasks</h2><label class="compact" for="show-completed"><input id="show-completed" type="checkbox"> Show completed</label></div><p class="hint">Ordered by missed deadlines, missed starts, then earliest deadline. Dates use this device's time zone.</p><ul id="tasks" class="items"></ul></section>
+        <section class="card" aria-labelledby="tasks-heading"><div class="section-heading"><h2 id="tasks-heading">Your tasks</h2><label class="compact" for="show-completed"><input id="show-completed" type="checkbox"> Show completed</label></div><p class="hint">Ordered by explained deadline risk, then earliest deadline. Task challenge is your input; deadline risk is the calculated priority. Dates use this device's time zone.</p><ul id="tasks" class="items"></ul></section>
       </div>
-      <section class="card" aria-labelledby="courses-heading"><p class="eyebrow">MAKE ROOM FOR THE WORK</p><h2 id="courses-heading">Course workload</h2><p>List courses for the term you’re planning and estimate their weekly work outside class. No school or grade needed.</p>
+      <section class="card" id="catalog" aria-labelledby="catalog-heading"><p class="eyebrow">FULL COURSE CATALOG</p><h2 id="catalog-heading">Explore courses before you commit.</h2><p>Academic depth describes the content level of a whole course. Time commitment estimates its workload. Neither is the challenge rating you give an individual task.</p><button id="load-catalog" type="button">Load course catalog</button><p id="catalog-status" role="status">Downloads public reference catalogs only. Searches and your selections stay in this browser.</p>
+        <form id="catalog-filter" data-nonpersonal-form data-optional-confirmation hidden><div class="catalog-filters"><label>Catalog<select id="catalog-choice"></select></label><label>Search<input id="catalog-search" data-nonpersonal-input maxlength="120" placeholder="Calculus, engineering..."></label><label>Subject<select id="catalog-subject"><option value="">All subjects</option></select></label><label>Planning year<select id="catalog-year"><option value="">All years</option><option>9</option><option>10</option><option>11</option><option>12</option></select></label><label>Course type<select id="catalog-type"><option value="">All types</option></select></label><label>Academic depth<select id="catalog-depth"><option value="">Any depth</option></select></label><label>Time commitment<select id="catalog-workload"><option value="">Any workload</option></select></label></div><fieldset class="nonpersonal-confirmation"><legend>Keep search text non-personal</legend><p id="local-search-note" data-privacy-note>Search for course subjects or titles, not names, contact details, or school records.</p><label><input type="checkbox" name="nonpersonal_confirmed" value="yes" required> I confirm my search contains no personal or identifying information.</label></fieldset><button type="submit">Apply filters</button></form>
+        <p id="catalog-description"></p><p id="catalog-count" role="status"></p><div id="catalog-results" class="catalog-grid"></div><button id="more-courses" type="button" hidden>Show more courses</button>
+        <h3>Compare up to three courses</h3><div id="course-comparison" class="catalog-grid"></div>
+      </section>
+      <section class="card" id="course-area" aria-labelledby="courses-heading"><p class="eyebrow">MAKE ROOM FOR THE WORK</p><h2 id="courses-heading">Your four-year plan</h2><p>Add catalog courses or fictional custom courses. Review workload separately for each planning year below. Confirm official requirements with your school.</p>
         <form id="budget-form" class="inline-form"><div><label for="budget">Hours available to study each week</label><input id="budget" type="number" min="0" max="168" step="0.5" required></div><button type="submit">Save availability</button></form>
-        <form id="course-form" class="inline-form"><div><label for="course-title">Course</label><input id="course-title" maxlength="120" required autocomplete="off" placeholder="Algebra"></div><div><label for="course-hours">Study hours / week</label><input id="course-hours" type="number" min="0" max="168" step="0.5" required></div><button type="submit">Add course</button></form>
+        <form id="course-form" class="inline-form" data-nonpersonal-form><div><label for="course-title">Course</label><input id="course-title" data-nonpersonal-input maxlength="120" required autocomplete="off" placeholder="Algebra"></div><div><label for="course-hours">Study hours / week</label><input id="course-hours" type="number" min="0" max="168" step="0.5" required></div><div><label for="custom-course-year">Planning year</label><select id="custom-course-year"><option>9</option><option>10</option><option>11</option><option>12</option></select></div><fieldset class="nonpersonal-confirmation"><legend>Keep custom course details non-personal</legend><p id="local-course-note" data-privacy-note>Use a generic course name. Don't include real names, schools, or identifying details.</p><label><input type="checkbox" name="nonpersonal_confirmed" value="yes" required> I confirm these entries contain no personal or identifying information.</label></fieldset><button type="submit">Add course</button></form>
         <p id="workload" role="status"></p><ul id="courses" class="items"></ul><p class="hint">These are your estimates, not official course requirements. Confirm requirements with your school counselor.</p>
       </section>
       <section class="card" id="storage" aria-labelledby="storage-heading"><h2 id="storage-heading">Your browser. Your plan.</h2><p id="storage-state">Saved on this browser; not uploaded to StudentSuccess.</p><p>Anyone using this browser profile can access your plan. Clearing site data, using private browsing, or switching devices can mean losing access. Download a backup to keep a copy or move it to another device.</p><div class="actions"><button id="export" type="button">Download backup</button><label class="file-label" for="import">Restore backup<input id="import" type="file" accept=".json,application/json"></label><button id="clear" class="danger" type="button">Erase this browser's plan</button></div><p class="hint">Backups contain your task and course details. Keep them somewhere private. Restoring replaces the plan in this browser.</p>
-        <details><summary>What does the website receive?</summary><p>The server receives ordinary page and asset requests, which may appear in hosting logs. This planner does not upload task text, course details, or backups. There is no automatic sync. Existing account workspaces and the fictional demo use server storage and remain separate from this plan.</p><a href="{{ url_for('auth.login') }}">Open an existing account</a></details>
+        <details><summary>What does the website receive?</summary><p>The server receives ordinary page, asset, and public catalog-bundle requests, which may appear in hosting logs. This planner does not upload task text, course details, or backups. There is no automatic sync. Existing account workspaces and the fictional demo use server storage and remain separate from this plan.</p><a href="{{ url_for('auth.login') }}">Open an existing account</a></details>
       </section>
-    </main><footer>StudentSuccess · Plan less. Start sooner.</footer>
+    <footer>StudentSuccess · Plan less. Start sooner.</footer></main>
   </div>
   {% include '_welcome.html' %}
 </body>

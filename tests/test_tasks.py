@@ -1,4 +1,4 @@
-﻿from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta, timezone
 from types import SimpleNamespace
 
 from extensions import db
@@ -61,6 +61,7 @@ def test_task_route_creates_starts_and_completes_task(app, authed_client):
     response = authed_client.post(
         "/tasks",
         data={
+            "nonpersonal_confirmed": "yes",
             "title": "Calculus practice",
             "subject": "Math",
             "task_type": "Homework",
@@ -216,6 +217,7 @@ def test_realism_warning_flashed_on_tight_deadline(app, authed_client):
     response = authed_client.post(
         "/tasks",
         data={
+            "nonpersonal_confirmed": "yes",
             "title": "Tight calculus set",
             "subject": "Math",
             "task_type": "Homework",
@@ -247,6 +249,7 @@ def test_no_realism_warning_below_minimum_sample(app, authed_client):
     response = authed_client.post(
         "/tasks",
         data={
+            "nonpersonal_confirmed": "yes",
             "title": "History reading",
             "subject": "History",
             "task_type": "Homework",
@@ -702,6 +705,7 @@ def _future_dt_local(days=10, hour=18, minute=0):
 
 def _valid_task_payload(**overrides):
     payload = {
+        "nonpersonal_confirmed": "yes",
         "title": "SAT Math tutoring",
         "subject": "Math",
         "task_type": "Tutoring",

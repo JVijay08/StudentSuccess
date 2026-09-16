@@ -22,6 +22,7 @@ from services import (
 )
 from services.auth_service import login_required
 from services.settings_service import get_or_create_settings
+from services.privacy_service import confirmation_errors
 
 
 def _flash_realism_warning(profile, task):
@@ -61,7 +62,7 @@ def _validate_task_form(form, timezone_name="America/New_York"):
     Returns a tuple of ``(cleaned, errors)`` where ``cleaned`` is a dict of
     parsed field values (only meaningful when ``errors`` is empty).
     """
-    errors = []
+    errors = confirmation_errors(form)
 
     title = form.get("title", "").strip()
     subject = form.get("subject", "").strip()
@@ -105,7 +106,7 @@ def _validate_task_form(form, timezone_name="America/New_York"):
         errors.append("Enter a valid estimated time.")
 
     if difficulty not in {"low", "medium", "high"}:
-        errors.append("Select a valid difficulty.")
+        errors.append("Choose how challenging this task is.")
     if interest_level not in {"low", "medium", "high"}:
         errors.append("Select a valid interest level.")
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,6 +8,7 @@
   <title>Tasks | StudentSuccess</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/tasks.css') }}">
   {% include '_accessibility_head.html' %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/nonpersonal.css') }}">
 </head>
 <body>
   {% include '_accessibility_body.html' %}
@@ -40,15 +41,15 @@
           </ul>
         </div>
       {% endif %}
-      <form method="post" id="task-form" data-start-buffer-days="{{ settings.start_buffer_days }}">
+      <form method="post" id="task-form" data-nonpersonal-form data-start-buffer-days="{{ settings.start_buffer_days }}">
         <label>Title
-          <input name="title" maxlength="160" value="{{ form_data.get('title', '') }}" required>
+          <input name="title" data-nonpersonal-input maxlength="160" value="{{ form_data.get('title', '') }}" required>
         </label>
         <label>Subject
-          <input name="subject" maxlength="80" value="{{ form_data.get('subject', '') }}">
+          <input name="subject" data-nonpersonal-input maxlength="80" value="{{ form_data.get('subject', '') }}">
         </label>
         <label>Task type
-          <input name="task_type" maxlength="40" placeholder="Homework, project, exam..." value="{{ form_data.get('task_type', '') }}">
+          <input name="task_type" data-nonpersonal-input maxlength="40" placeholder="Homework, project, exam..." value="{{ form_data.get('task_type', '') }}">
         </label>
         <label>Due date and time
           <input type="datetime-local" name="due_at" value="{{ form_data.get('due_at', '') }}" required>
@@ -59,12 +60,13 @@
         <label>Estimated minutes
           <input type="number" name="estimated_minutes" min="1" max="1440" value="{{ form_data.get('estimated_minutes', '') }}" required>
         </label>
-        <label>Difficulty
-          <select name="difficulty" required>
+        <label>How challenging is this task?
+          <select name="difficulty" required aria-describedby="task-challenge-help">
             {% for option in ["low", "medium", "high"] %}
-              <option value="{{ option }}" {% if form_data.get('difficulty', 'medium') == option %}selected{% endif %}>{{ option|title }}</option>
+              <option value="{{ option }}" {% if form_data.get('difficulty', 'medium') == option %}selected{% endif %}>{{ {'low':'Easy — familiar work', 'medium':'Moderate — some thinking needed', 'high':'Challenging — focused effort needed'}[option] }}</option>
             {% endfor %}
           </select>
+          <small id="task-challenge-help">Your estimate for this one task, separate from how long it takes. Not a course level or a judgment of your ability.</small>
         </label>
         <label>Interest level
           <select name="interest_level" required>
@@ -83,6 +85,7 @@
           </select>
         </label>
         <label><span>Reminder</span><span class="inline-check"><input type="checkbox" name="reminder_enabled" {% if form_data.get('reminder_enabled', true) %}checked{% endif %}> Include this task in reminders</span></label>
+        {% include '_nonpersonal_confirmation.html' %}
         <button type="submit">Add task</button>
       </form>
     </section>
@@ -97,7 +100,7 @@
           {% set level = "HIGH" if row.score >= 7 else "MEDIUM" if row.score >= 4 else "LOW" %}
           <article class="task-card">
             <div>
-              <p class="eyebrow risk-{{ level|lower }}">{{ level }} RISK</p>
+              <p class="eyebrow risk-{{ level|lower }}">{{ level }} DEADLINE RISK</p>
               <h3>{{ task.title }}{% if task.recurrence_rule %} <small class="task-marker">(recurring)</small>{% endif %}{% if task.prep_for_id %} <small class="task-marker">(prep)</small>{% endif %}</h3>
               <p>{{ task.subject or "No subject" }} · {{ task.estimated_minutes }} minutes · due {{ row.due_at_display }}</p>
               <ul>
@@ -137,5 +140,6 @@
   </main>
   <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
   <script>const taskForm=document.getElementById('task-form');const due=taskForm.querySelector('[name=due_at]');const planned=taskForm.querySelector('[name=planned_start_at]');due.addEventListener('change',()=>{if(planned.value||!due.value)return;const date=new Date(due.value);date.setDate(date.getDate()-Number(taskForm.dataset.startBufferDays));const local=new Date(date.getTime()-date.getTimezoneOffset()*60000);planned.value=local.toISOString().slice(0,16)});</script>
+  <script src="{{ url_for('static', filename='js/nonpersonal.js') }}" defer></script>
 </body>
 </html>

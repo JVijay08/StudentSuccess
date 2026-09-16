@@ -8,6 +8,7 @@
   <title>Edit task | StudentSuccess</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/tasks.css') }}">
   {% include '_accessibility_head.html' %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/nonpersonal.css') }}">
 </head>
 <body>
   {% include '_accessibility_body.html' %}
@@ -30,18 +31,18 @@
           </ul>
         </div>
       {% endif %}
-      <form method="post" action="{{ url_for('tasks.edit_task', task_id=task.id) }}">
+      <form method="post" data-nonpersonal-form action="{{ url_for('tasks.edit_task', task_id=task.id) }}">
         <div class="form-group">
           <label for="title">Title</label>
-          <input type="text" id="title" name="title" maxlength="160" value="{{ form_data.get('title', '') }}" required>
+          <input type="text" id="title" name="title" data-nonpersonal-input maxlength="160" value="{{ form_data.get('title', '') }}" required>
         </div>
         <div class="form-group">
           <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" maxlength="80" value="{{ form_data.get('subject', '') }}">
+          <input type="text" id="subject" name="subject" data-nonpersonal-input maxlength="80" value="{{ form_data.get('subject', '') }}">
         </div>
         <div class="form-group">
           <label for="task_type">Task type</label>
-          <input type="text" id="task_type" name="task_type" maxlength="40" placeholder="Homework, project, exam..." value="{{ form_data.get('task_type', '') }}">
+          <input type="text" id="task_type" name="task_type" data-nonpersonal-input maxlength="40" placeholder="Homework, project, exam..." value="{{ form_data.get('task_type', '') }}">
         </div>
         <div class="form-group">
           <label for="due_at">Due date and time</label>
@@ -56,12 +57,13 @@
           <input type="number" id="estimated_minutes" name="estimated_minutes" min="1" max="1440" value="{{ form_data.get('estimated_minutes', '') }}" required>
         </div>
         <div class="form-group">
-          <label for="difficulty">Difficulty</label>
-          <select id="difficulty" name="difficulty" required>
+          <label for="difficulty">How challenging is this task?</label>
+          <select id="difficulty" name="difficulty" required aria-describedby="task-challenge-help">
             {% for option in ["low", "medium", "high"] %}
-              <option value="{{ option }}" {% if form_data.get('difficulty', 'medium') == option %}selected{% endif %}>{{ option|title }}</option>
+              <option value="{{ option }}" {% if form_data.get('difficulty', 'medium') == option %}selected{% endif %}>{{ {'low':'Easy — familiar work', 'medium':'Moderate — some thinking needed', 'high':'Challenging — focused effort needed'}[option] }}</option>
             {% endfor %}
           </select>
+          <p id="task-challenge-help">Your estimate for this one task, separate from its duration. Not a course level or a judgment of your ability.</p>
         </div>
         <div class="form-group">
           <label for="interest_level">Interest level</label>
@@ -82,6 +84,7 @@
           </select>
           <label class="inline-check"><input type="checkbox" name="reminder_enabled" {% if form_data.get('reminder_enabled', true) %}checked{% endif %}> Include this task in reminders</label>
         </div>
+        {% include '_nonpersonal_confirmation.html' %}
         <div class="actions">
           <button type="submit">Save changes</button>
           <a href="{{ url_for('tasks.tasks') }}">Cancel</a>
@@ -90,5 +93,6 @@
     </section>
   </main>
   <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/nonpersonal.js') }}" defer></script>
 </body>
 </html>

@@ -52,11 +52,11 @@ def explain_procrastination_risk(task, now=None):
 
     if task.difficulty == "high":
         score += 1
-        reasons.append("difficulty is high")
+        reasons.append("you rated this task as challenging")
 
     if task.interest_level == "low":
         score += 1
-        reasons.append("interest level is low")
+        reasons.append("you rated your interest in this task as low")
 
     if score >= 7:
         level = "HIGH"
