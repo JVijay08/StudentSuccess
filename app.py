@@ -1,5 +1,6 @@
 ﻿from pathlib import Path
 import os
+from datetime import datetime, timezone
 
 from flask import Flask, render_template, session, request
 from sqlalchemy import inspect, text
@@ -51,7 +52,20 @@ def create_app(test_config=None):
             if user_id is not None
             else None
         )
-        return {"ui_settings": preferences or default_settings()}
+        from services.datetime_util import format_local
+
+        settings = preferences or default_settings()
+        now = datetime.now(timezone.utc)
+        return {
+            "ui_settings": settings,
+            "clock_iso": now.isoformat(),
+            "clock_display": format_local(
+                now,
+                settings.timezone_name or "America/New_York",
+                settings.time_format or "12-hour",
+                settings.date_format or "month-first",
+            ),
+        }
 
     @app.after_request
     def add_security_headers(response):
@@ -63,6 +77,10 @@ def create_app(test_config=None):
         response.headers.setdefault("Referrer-Policy", "strict-origin-when-cross-origin")
         response.headers.setdefault("Permissions-Policy", "camera=(), microphone=(), geolocation=()")
         return response
+
+    @app.get("/time")
+    def current_time():
+        return {"utc": datetime.now(timezone.utc).isoformat()}, 200, {"Cache-Control": "no-store"}
 
     @app.errorhandler(404)
     def page_not_found(_error):

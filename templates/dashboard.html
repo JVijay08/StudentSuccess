@@ -37,6 +37,7 @@
     </aside>
 
     <main id="main-content">
+      {% include '_planner_clock.html' %}
       {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
           <div class="flash" role="status">
@@ -75,6 +76,7 @@
             {% for row in prioritized_tasks[:settings.recommendation_count] %}
               <li class="priority-item">
                 <h2>{{ row.task.title }}</h2>
+                <p class="task-deadline">Due {{ row.due_at_display }}</p>
                 <p><span class="priority-score">Deadline-risk score {{ row.score }}</span>{% if row.reasons %}: {{ row.reasons|join(", ") }}{% endif %}.{% if settings.recommendation_tone == 'encouraging' %} You can start with one small step.{% elif settings.recommendation_tone == 'direct' %} Start this now.{% endif %}</p>
               </li>
             {% endfor %}

@@ -80,6 +80,8 @@ dd { margin: 0; font-weight: 700; text-align: right; }
 .flash-warning { color: #8f5b00; }.flash-error { color: #a8352a; }
 .demo-banner { margin-bottom: 24px; padding: 14px 16px; border-left: 4px solid var(--amber); color: #5f4300; background: #fff7dd; line-height: 1.5; }
 .demo-checklist{display:grid;grid-template-columns:minmax(220px,.8fr) minmax(280px,1.2fr) auto;gap:24px;align-items:start;margin-bottom:24px;padding:22px;border:1px solid var(--line);border-top:5px solid var(--amber);background:var(--white);box-shadow:7px 7px 0 rgba(24,35,33,.08)}.demo-checklist h2{margin:0;font:400 1.35rem Georgia,serif}.demo-checklist ol{margin:0;padding-left:20px;color:var(--muted);line-height:1.6}.demo-checklist a{font-weight:700;text-decoration:underline}.demo-checklist button{width:auto;white-space:nowrap}
+/* Keep dismissal authoritative over desktop and mobile layout rules. */
+.demo-checklist[hidden] { display: none !important; }
 .reminder-panel{margin-top:24px;padding:20px;border:1px solid var(--amber);background:#fff7dd}.reminder-panel>div{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:9px 0;border-top:1px solid var(--line)}.reminder-panel form{margin:0}.reminder-panel button{padding:8px 12px;font-size:.82rem}
 .overdue-list { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
 .overdue-item { display: grid; gap: 8px; padding: 14px 0; border-bottom: 1px solid var(--line); }

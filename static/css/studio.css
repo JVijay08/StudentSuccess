@@ -11,6 +11,10 @@
   --amber: #efbd83;
   --studio-shadow: 0 4px 20px rgba(32,43,72,.045);
 }
+.planner-clock { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; margin-bottom: 20px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 10px; background: var(--white); color: var(--ink); }
+.planner-clock-label { font-weight: 700; }
+.planner-clock time { font-variant-numeric: tabular-nums; }
+.planner-clock-zone { font-size: .8rem; color: var(--muted); }
 body {
   font-family: "Segoe UI", "Trebuchet MS", sans-serif;
   --graph-line: rgba(45,63,100,.065);

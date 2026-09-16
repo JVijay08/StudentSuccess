@@ -212,6 +212,10 @@ def dashboard():
             1 for task in all_tasks if task.status != "completed"
         )
         prioritized_tasks = suggestion_service.get_suggested_tasks(all_tasks)
+        for row in prioritized_tasks:
+            row["due_at_display"] = _format_local(
+                row["task"].due_at, settings, include_time=True
+            )
         success_rate = _build_success_rate(profile)
         start_delay_summary = _build_start_delay_summary(profile)
         start_history = _build_start_history(profile, settings)
