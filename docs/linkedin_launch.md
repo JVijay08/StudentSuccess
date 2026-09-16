@@ -19,7 +19,7 @@ This is still a prototype and is **not ready for real student information**. Ple
 
 Live demo: https://studentsuccess.onrender.com/
 
-Source code: https://github.com/JVijay08/StudentSuccess
+Project overview and screenshots: https://github.com/JVijay08/StudentSuccess-showcase
 
 I would especially appreciate feedback on one question: **Does the next-action recommendation feel understandable and useful?**
 
