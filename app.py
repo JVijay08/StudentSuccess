@@ -1,6 +1,7 @@
 ﻿from pathlib import Path
 import os
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 
 from flask import Flask, render_template, session, request
 from sqlalchemy import inspect, text
@@ -52,18 +53,16 @@ def create_app(test_config=None):
             if user_id is not None
             else None
         )
-        from services.datetime_util import format_local
-
         settings = preferences or default_settings()
         now = datetime.now(timezone.utc)
+        local_now = now.astimezone(ZoneInfo(settings.timezone_name or "America/New_York"))
         return {
             "ui_settings": settings,
             "clock_iso": now.isoformat(),
-            "clock_display": format_local(
-                now,
-                settings.timezone_name or "America/New_York",
-                settings.time_format or "12-hour",
-                settings.date_format or "month-first",
+            "clock_display": (
+                f"{local_now.month}/{local_now.day}/{local_now.year} "
+                f"{local_now.hour % 12 or 12}:{local_now.minute:02d}"
+                f"{'AM' if local_now.hour < 12 else 'PM'}"
             ),
         }
 

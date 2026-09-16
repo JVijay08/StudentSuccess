@@ -7,27 +7,15 @@
   let measuredAt = performance.now();
   const zone = clock.dataset.zone;
   const dateFormatter = new Intl.DateTimeFormat('en-US', {
-    timeZone: zone, year: 'numeric', month: 'short', day: '2-digit', weekday: 'long'
-  });
-  const numericDate = new Intl.DateTimeFormat('en-US', {
-    timeZone: zone, year: 'numeric', month: '2-digit', day: '2-digit'
+    timeZone: zone, year: 'numeric', month: 'numeric', day: 'numeric'
   });
   const timeFormatter = new Intl.DateTimeFormat('en-US', {
-    timeZone: zone, hour: '2-digit', minute: '2-digit', second: '2-digit',
-    hourCycle: clock.dataset.timeFormat === '24-hour' ? 'h23' : 'h12',
-    timeZoneName: 'short'
+    timeZone: zone, hour: 'numeric', minute: '2-digit', hourCycle: 'h12'
   });
   function render() {
     const now = new Date(anchor + performance.now() - measuredAt);
-    const parts = Object.fromEntries(dateFormatter.formatToParts(now).map(p => [p.type, p.value]));
-    let date = `${parts.month} ${parts.day}, ${parts.year}`;
-    if (clock.dataset.dateFormat === 'day-first') date = `${parts.day} ${parts.month} ${parts.year}`;
-    if (clock.dataset.dateFormat === 'year-first') {
-      const digits = Object.fromEntries(numericDate.formatToParts(now).map(p => [p.type, p.value]));
-      date = `${digits.year}-${digits.month}-${digits.day}`;
-    }
     output.dateTime = now.toISOString();
-    output.textContent = `${parts.weekday}, ${date} · ${timeFormatter.format(now)}`;
+    output.textContent = `${dateFormatter.format(now)} ${timeFormatter.format(now).replace(/\s/g, '')}`;
   }
   let syncing = false;
   async function sync() {

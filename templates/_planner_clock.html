@@ -1,6 +1,4 @@
-<div class="planner-clock" data-planner-clock data-zone="{{ ui_settings.timezone_name }}" data-time-format="{{ ui_settings.time_format }}" data-date-format="{{ ui_settings.date_format }}" data-time-url="{{ url_for('current_time') }}">
-  <span class="planner-clock-label">Now</span>
-  <time datetime="{{ clock_iso }}">{{ clock_display }}</time>
-  <span class="planner-clock-zone">{{ ui_settings.timezone_name }} · same time zone as due dates</span>
+<div class="planner-clock" data-planner-clock data-zone="{{ ui_settings.timezone_name }}" data-time-url="{{ url_for('current_time') }}">
+  <time datetime="{{ clock_iso }}" title="{{ ui_settings.timezone_name }}">{{ clock_display }}</time>
 </div>
 <script src="{{ url_for('static', filename='js/planner-clock.js') }}" defer></script>

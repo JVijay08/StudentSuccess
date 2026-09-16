@@ -37,9 +37,11 @@ def main():
                 page.route("**/time", lambda route: route.fulfill(json=stamp))
                 page.goto(origin + "/dashboard")
                 clock = page.locator("[data-planner-clock] time")
-                page.wait_for_function("document.querySelector('[data-planner-clock] time').textContent.includes('02:30:')")
-                assert "Jul 16, 2026" in clock.inner_text()
-                assert "EDT" in clock.inner_text()
+                page.wait_for_function("document.querySelector('[data-planner-clock] time').textContent.includes('2:30PM')")
+                assert clock.inner_text() == "7/16/2026 2:30PM"
+                box = page.locator("[data-planner-clock]").bounding_box()
+                assert box["width"] < 220
+                assert box["x"] + box["width"] > width - 100
                 assert page.locator('.task-deadline').count() > 0
                 before = clock.get_attribute('datetime')
                 page.wait_for_function("before => document.querySelector('[data-planner-clock] time').dateTime !== before", arg=before)
@@ -58,9 +60,8 @@ def main():
                     db.session.commit()
                 stamp['utc'] = '2026-01-01T02:30:00+00:00'
                 page.reload()
-                page.wait_for_function("document.querySelector('[data-planner-clock] time').textContent.includes('2025-12-31')")
-                assert '18:30:' in clock.inner_text()
-                assert 'PST' in clock.inner_text()
+                page.wait_for_function("document.querySelector('[data-planner-clock] time').textContent.includes('12/31/2025')")
+                assert clock.inner_text() == '12/31/2025 6:30PM'
                 print(f'PASS: {width}px, live clock, server time, time-zone date rollover, formats, tour click and reload')
                 context.close()
             browser.close()
