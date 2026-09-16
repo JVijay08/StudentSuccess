@@ -16,7 +16,8 @@ document.querySelectorAll("[data-password-toggle]").forEach(button=>{
     const input=document.getElementById(button.dataset.passwordToggle);
     const showing=input.type==="text";
     input.type=showing?"password":"text";
-    button.textContent=showing?"Show password":"Hide password";
+    const label=input.name==="access_code"?"code":"password";
+    button.textContent=(showing?"Show ":"Hide ")+label;
     button.setAttribute("aria-pressed",String(!showing));
   });
 });

@@ -6,7 +6,33 @@ StudentSuccess is a local academic-planning project. Its guiding rule is simple:
 
 ## Current local data
 
-### Browser planner (default public entry point)
+### Private-code accounts (default public entry point)
+
+New visitors create a server-stored planner without a name, email, or chosen
+password. A private access code contains 32 cryptographically random bytes;
+only its SHA-256 digest is stored in the new `access_credentials` table. Codes
+are sent in POST bodies, never URLs, and are shown once in a no-store response.
+They are not retained in the session cookie or browser storage by the app.
+The user can copy or download the code and must keep that copy private.
+
+Possession of the code grants full account access. A lost code cannot be
+recovered. Replacement requires the current code and invalidates the previous
+code and other sessions. Deletion also requires the code. The code is an access
+credential, not encryption or a promise of anonymity. Hosting still receives
+ordinary request metadata. Use fictional information only.
+
+Code accounts skip personal-profile onboarding. Existing planner services use
+explicit sample defaults (year 9, 10 weekly study hours, Balanced rigor).
+Compatibility profile fields use "Planner", a placeholder graduation year, and
+zero GPA values; these are not collected or inferred personal details. Only
+planning year and weekly study budget are exposed in the preferences form.
+
+The first-visit welcome dialog explains the prototype, code handling, server
+storage, and fictional demo. Dismissal is remembered in localStorage under
+`studentsuccess.welcome.v1`; the explanation can be reopened. It is not a formal
+consent mechanism. Existing username/password accounts remain usable.
+
+### Browser planner (optional)
 
 The public `/planner` page works without registration or a student profile.
 Its task titles, subjects, deadlines, planned/actual starts, completion status,

@@ -1,11 +1,13 @@
 from flask import Blueprint, g, redirect, render_template, request, url_for
 
 from zoneinfo import ZoneInfo
+import math
 
 from extensions import db
 from models import StudentProfile
 from services.auth_service import login_required
 from services.settings_service import get_or_create_settings
+from services.access_service import verify_csrf
 
 
 profile_bp = Blueprint("profile", __name__)
@@ -14,6 +16,8 @@ profile_bp = Blueprint("profile", __name__)
 @profile_bp.route("/onboarding", methods=["GET", "POST"])
 @login_required
 def onboarding():
+    if g.current_user.access_credential is not None:
+        return _planning_preferences()
     errors = []
 
     if request.method == "POST":
@@ -159,6 +163,8 @@ def onboarding():
 @profile_bp.get("/profile")
 @login_required
 def profile_view():
+    if g.current_user.access_credential is not None:
+        return redirect(url_for("profile.onboarding"))
     profile = StudentProfile.query.filter_by(
         user_id=g.current_user.id
     ).first()
@@ -187,3 +193,23 @@ def profile_view():
         username=g.current_user.username,
         member_since=member_since,
     )
+
+
+def _planning_preferences():
+    profile = g.current_user.profile
+    errors = []
+    if request.method == "POST":
+        verify_csrf()
+        try:
+            grade = int(request.form.get("grade", ""))
+            hours = float(request.form.get("study_hours", ""))
+            if grade not in (9, 10, 11, 12) or not math.isfinite(hours) or not 0 <= hours <= 80:
+                raise ValueError
+        except ValueError:
+            errors.append("Choose a planning year from 9 to 12 and between 0 and 80 weekly study hours.")
+        if not errors:
+            profile.grade = grade
+            profile.study_hours_per_week = hours
+            db.session.commit()
+            return redirect(url_for("main.dashboard"))
+    return render_template("planning_preferences.html", profile=profile, errors=errors)

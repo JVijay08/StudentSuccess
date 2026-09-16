@@ -30,6 +30,7 @@ def main():
             errors = []
             page.on("pageerror", lambda error: errors.append(str(error)))
             page.goto(origin + "/planner")
+            page.locator("#welcome-close").click()
             requests = []
             page.on("request", lambda request: requests.append(request.url))
             page.locator("#task-title").fill("<img src=x onerror=alert(1)> Algebra")

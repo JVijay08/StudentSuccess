@@ -15,7 +15,7 @@
     <header>
       <div>
         <p class="eyebrow">STUDENTSUCCESS</p>
-        <h1>{{ profile.first_name }}'s tasks</h1>
+        <h1>{% if g.current_user.access_credential %}Your tasks{% else %}{{ profile.first_name }}'s tasks{% endif %}</h1>
         <p>Plan a start, record the real start, and keep risk explanations visible.</p>
       </div>
       <a href="{{ url_for('main.dashboard') }}">Back to dashboard</a>

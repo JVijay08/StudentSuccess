@@ -24,6 +24,9 @@ class config:
     SQLALCHEMY_DATABASE_URI = DATABASE_URL or f"sqlite:///{DATABASE_PATH.as_posix()}"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SESSION_REFRESH_EACH_REQUEST = True
+    SESSION_COOKIE_HTTPONLY = True
+    SESSION_COOKIE_SAMESITE = "Lax"
+    SESSION_COOKIE_SECURE = os.environ.get("APP_ENV") == "production"
     SECRET_KEY = os.environ.get("SECRET_KEY") or (
         "dev-only-secret"
         if os.environ.get("APP_ENV", "development") != "production"

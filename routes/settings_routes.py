@@ -19,6 +19,7 @@ from extensions import db
 from models import StudentProfile, Task
 from services.auth_service import check_password, hash_password, login_required
 from services.settings_service import get_or_create_settings
+from services.access_service import matches_code, verify_csrf
 
 
 settings_bp = Blueprint("settings", __name__)
@@ -98,6 +99,9 @@ def settings():
 @settings_bp.post("/settings/password")
 @login_required
 def change_password():
+    if g.current_user.access_credential is not None:
+        flash("Use Replace private code to change access to this planner.", "warning")
+        return redirect(url_for("settings.settings"))
     if session.get("demo_mode"):
         flash("The fictional demo account does not have a reusable password.", "warning")
         return redirect(url_for("settings.settings"))
@@ -225,7 +229,12 @@ def clear_history():
 @login_required
 def delete_account():
     password = request.form.get("password", "")
-    if not session.get("demo_mode") and not check_password(password, g.current_user.password_hash):
+    if g.current_user.access_credential is not None:
+        verify_csrf()
+        if not matches_code(request.form.get("access_code", ""), g.current_user.access_credential):
+            flash("Enter your current private code to delete this planner.", "error")
+            return redirect(url_for("settings.settings"))
+    elif not session.get("demo_mode") and not check_password(password, g.current_user.password_hash):
         flash("Enter your current password to delete the account.", "error")
         return redirect(url_for("settings.settings"))
     user = g.current_user

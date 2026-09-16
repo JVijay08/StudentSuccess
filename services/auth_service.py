@@ -49,6 +49,10 @@ def login_required(f):
             session.clear()
             return redirect(url_for("auth.login"))
 
+        if user.access_credential is not None and session.get("access_version") != user.access_credential.version:
+            session.clear()
+            return redirect(url_for("auth.login"))
+
         timeout_minutes = (
             user.settings.session_timeout_minutes
             if user.settings is not None

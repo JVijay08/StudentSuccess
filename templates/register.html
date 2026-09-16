@@ -1,82 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="dark light">
-    <meta name="theme-color" content="#071407">
-    <meta name="description" content="Create a StudentSuccess account and build a more realistic academic plan.">
-    <meta property="og:title" content="StudentSuccess | Create your academic workspace">
-    <meta property="og:description" content="Plan starts, understand delays, and make your next academic action visible.">
-    <meta property="og:type" content="website">
-    <title>Register | StudentSuccess</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/onboarding.css') }}">
-    {% include '_accessibility_head.html' %}
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create a private planner | StudentSuccess</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/onboarding.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/access.css') }}">
+  {% include '_accessibility_head.html' %}
 </head>
-<body class="theme-dark">
-    {% include '_accessibility_body.html' %}
-    <main id="main-content" class="onboarding-page">
-        <section class="onboarding-section">
-            <div class="onboarding-heading">
-                <div>
-                    <p class="first-title">STUDENTSUCCESS</p>
-                    <h1>Create Your Account</h1>
-                    <p class="subheading">An account saves information on the server. Prefer to keep your plan in your browser? <a href="{{ url_for('main.local_planner') }}">Start planning without signup</a>. Browser plans do not automatically transfer to an account.</p>
-                </div>
-                <a class="back-link" href="{{ url_for('main.home') }}">Back to home</a>
-            </div>
-
-            <aside class="prototype-notice" role="note">
-                <strong>Public prototype:</strong> StudentSuccess is still being developed and is not ready for real student data. Please create demo accounts using fictional information only.
-            </aside>
-
-            {% if errors %}
-            <div class="form-errors" role="alert">
-                <h2>Please correct the following:</h2>
-                <ul>
-                    {% for error in errors %}
-                    <li>{{ error }}</li>
-                    {% endfor %}
-                </ul>
-            </div>
-            {% endif %}
-
-            <form class="profile-form" method="post" action="{{ url_for('auth.register') }}">
-                <div class="form-section">
-                    <div class="form-group full-width">
-                        <label for="username">Username</label>
-                        <input
-                            type="text"
-                            id="username"
-                            name="username"
-                            maxlength="80"
-                            placeholder="Choose a username"
-                            value="{{ form_data.get('username', '') }}"
-                            required
-                            autocomplete="username"
-                        >
-                    </div>
-                    <div class="form-group full-width">
-                        <label for="password">Password</label>
-                        <input
-                            type="password"
-                            id="password"
-                            name="password"
-                            minlength="8"
-                            placeholder="At least 8 characters"
-                            required
-                            autocomplete="new-password"
-                        >
-                        <button class="password-toggle" type="button" data-password-toggle="password" aria-pressed="false">Show password</button>
-                    </div>
-                </div>
-                <div class="form-footer">
-                    <p>Already have an account? <a href="{{ url_for('auth.login') }}">Log in</a></p>
-                    <button type="submit">Create Account</button>
-                </div>
-            </form>
-        </section>
-    </main>
-    <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
+<body>
+  {% include '_accessibility_body.html' %}
+  <main id="main-content" class="onboarding-page"><section class="onboarding-section access-section">
+    <a class="back-link" href="{{ url_for('main.home') }}">Back to home</a>
+    <p class="first-title">NO NAME. NO EMAIL.</p><h1>Your planner.<br>One private code.</h1>
+    <p class="subheading">We'll generate a random code that opens your saved workspace on any device. No username or password to choose.</p>
+    {% if errors %}<div class="form-errors" role="alert">{% for error in errors %}<p>{{ error }}</p>{% endfor %}</div>{% endif %}
+    <ol class="access-steps"><li><strong>Create.</strong> Get a private code and an empty planner.</li><li><strong>Keep your code.</strong> Anyone with it can access your planner. We can't recover a lost code.</li><li><strong>Return.</strong> Paste it into "Open with a code" on any device.</li></ol>
+    <aside class="prototype-notice"><strong>Use fictional information only.</strong>This is a public prototype. Don't enter your real name, school, contact details, grades, or identifying assignment details. Code-based plans are saved on our server; the code does not encrypt the plan.</aside>
+    <form method="post" action="{{ url_for('access.create') }}">
+      <input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}">
+      <label class="access-check"><input type="checkbox" name="understood" value="yes" required> I'll use fictional information and keep my private code safe.</label>
+      <button class="access-primary" type="submit">Create my private planner</button>
+    </form>
+    <p>Already have a code? <a href="{{ url_for('auth.login') }}">Open your planner</a></p>
+    <p class="access-note">Prefer to save only on this device? <a href="{{ url_for('main.local_planner') }}">Use the browser-only planner</a>. It stays separate and won't automatically transfer here.</p>
+  </section></main>
+  {% include '_welcome.html' %}
 </body>
 </html>

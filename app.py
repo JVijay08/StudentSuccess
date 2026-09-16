@@ -1,12 +1,14 @@
 ﻿from pathlib import Path
 import os
 
-from flask import Flask, render_template, session
+from flask import Flask, render_template, session, request
 from sqlalchemy import inspect, text
 
 from config import config
 from extensions import db
 from routes.auth_routes import auth_bp
+from routes.access_routes import access_bp
+from services.access_service import csrf_token
 from routes.course_routes import course_bp
 from routes.main_routes import main_bp
 from routes.profile_routes import profile_bp
@@ -30,6 +32,8 @@ def create_app(test_config=None):
     db.init_app(app)
 
     app.register_blueprint(auth_bp)
+    app.register_blueprint(access_bp)
+    app.jinja_env.globals["access_csrf_token"] = csrf_token
     app.register_blueprint(course_bp)
     app.register_blueprint(main_bp)
     app.register_blueprint(profile_bp)
@@ -51,6 +55,9 @@ def create_app(test_config=None):
 
     @app.after_request
     def add_security_headers(response):
+        if request.path.startswith("/access/") or session.get("user_id") or request.path in ("/login", "/register"):
+            response.headers["Cache-Control"] = "no-store"
+            response.headers["Referrer-Policy"] = "no-referrer"
         response.headers.setdefault("X-Content-Type-Options", "nosniff")
         response.headers.setdefault("X-Frame-Options", "DENY")
         response.headers.setdefault("Referrer-Policy", "strict-origin-when-cross-origin")

@@ -29,5 +29,10 @@ class User(db.Model):
         uselist=False,
     )
 
+    access_credential = db.relationship(
+        "AccessCredential", back_populates="user",
+        cascade="all, delete-orphan", uselist=False,
+    )
+
     def __repr__(self):
         return f"<User id {self.id} username {self.username!r}>"

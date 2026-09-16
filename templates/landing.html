@@ -24,19 +24,19 @@
   <main id="main-content">
     <nav aria-label="Primary navigation">
       <a class="brand" href="{{ url_for('main.home') }}">StudentSuccess</a>
-      <div><a href="{{ url_for('auth.login') }}">Existing account</a><a class="nav-cta" href="{{ url_for('main.local_planner') }}">Open planner</a></div>
+      <div><a href="{{ url_for('auth.login') }}">Open with a code</a><a class="nav-cta" href="{{ url_for('auth.register') }}">Create a planner</a></div>
     </nav>
 
     <section class="hero">
       <div>
-        <p class="eyebrow">YOUR PLAN. NO SIGNUP REQUIRED.</p>
+        <p class="eyebrow">YOUR PLAN. ONE PRIVATE CODE.</p>
         <h1>Plan less.<br>Start sooner.</h1>
-        <p class="lede">A calmer way for high-school students to plan coursework and start assignments. Get a clear next step without sharing your name, email, or GPA. Your plan stays in your browser.</p>
+        <p class="lede">A calmer way for high-school students to plan coursework and start assignments. Create a planner without a name or email, then use your private code to return on any device.</p>
         <div class="hero-actions">
-          <a class="primary-action" href="{{ url_for('main.local_planner') }}">Start planning — no signup</a>
-          <a href="{{ url_for('main.local_planner') }}#storage">How your plan is stored</a>
+          <a class="primary-action" href="{{ url_for('auth.register') }}">Create a private planner</a>
+          <a href="{{ url_for('auth.login') }}">I already have a code</a>
         </div>
-        <p class="prototype-note"><strong>Saved on this browser.</strong> Task and course details are not uploaded. Download a backup to keep your plan when changing devices or clearing browser data. Anyone using this browser profile can access it.</p>
+        <p class="prototype-note"><strong>Explore with fictional information.</strong> Plans are saved on our server. Keep your code private: anyone with it can access your planner, and we can’t recover it if it’s lost. Don’t enter personal or identifying details.</p>
       </div>
       <aside class="next-card" aria-label="Example recommendation">
         <span>WHAT TO WORK ON NOW</span>
@@ -49,13 +49,14 @@
     <section class="feature-grid" aria-label="StudentSuccess features">
       <article><span>01</span><h2>Choose a realistic load</h2><p>Compare your estimated course workload with the time you have available each week.</p></article>
       <article><span>02</span><h2>Turn plans into starts</h2><p>Give assignments planned start times instead of tracking deadlines alone.</p></article>
-      <article><span>03</span><h2>Keep control of your plan</h2><p>No profile to fill out. Download a backup, restore it on another device, or erase your plan whenever you want.</p></article>
+      <article><span>03</span><h2>Keep your key</h2><p>No name or email to enter. Save your private code, reopen your planner on another device, and export or delete your data in Settings.</p></article>
     </section>
 
     <section class="server-demo" aria-labelledby="demo-heading">
-      <h2 id="demo-heading">Want to explore the account-based prototype?</h2>
+      <h2 id="demo-heading">Try it before creating a planner.</h2>
       <p>The fictional demo includes sample history and a course catalog. Demo and account workspaces save information on the server and are separate from your browser plan. Use fictional data only. The free demo server may take up to a minute to wake after inactivity.</p>
       <form method="post" action="{{ url_for('auth.start_demo') }}"><button type="submit">Try the fictional demo</button></form>
+      <p>Prefer to keep a plan on this device? <a href="{{ url_for('main.local_planner') }}">Use the browser-only planner</a>. Task and course details are not uploaded in that mode; it does not sync with a private-code planner.</p>
     </section>
 
     <footer>
@@ -63,5 +64,6 @@
     </footer>
   </main>
   <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
+  {% include '_welcome.html' %}
 </body>
 </html>

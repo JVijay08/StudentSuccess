@@ -3,6 +3,7 @@ import pytest
 from app import create_app
 from extensions import db
 from models import User
+from services.auth_service import hash_password
 
 
 @pytest.fixture()
@@ -38,22 +39,17 @@ TEST_PASSWORD = "password123"
 
 @pytest.fixture()
 def authed_client(app):
-    """A test client already authenticated as a freshly registered user.
-
-    Registration (``POST /register``) both creates the user and logs them in
-    by setting the session; because the test client persists the session
-    cookie, the returned client is authenticated for subsequent requests.
-
-    The registered user's id is exposed via ``client.user_id`` so tests can
-    scope profiles/tasks to that user when they set up data directly.
-    """
+    """An existing password account, retained for backward-compatibility tests."""
     client = app.test_client()
-
+    with app.app_context():
+        user = User(username=TEST_USERNAME, password_hash=hash_password(TEST_PASSWORD))
+        db.session.add(user)
+        db.session.commit()
     response = client.post(
-        "/register",
+        "/login",
         data={"username": TEST_USERNAME, "password": TEST_PASSWORD},
     )
-    # Registration succeeds and redirects to onboarding.
+    # Existing password accounts can still sign in.
     assert response.status_code == 302
 
     with app.app_context():

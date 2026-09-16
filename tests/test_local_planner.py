@@ -16,9 +16,10 @@ def test_browser_planner_needs_no_account_and_creates_no_records(app):
         assert Task.query.count() == 0
 
 
-def test_home_prioritizes_browser_planner_and_explains_server_demo(app):
+def test_home_prioritizes_private_codes_and_keeps_browser_planner(app):
     response = app.test_client().get("/")
-    assert b'Start planning' in response.data
+    assert b'Create a private planner' in response.data
+    assert b'href="/register"' in response.data
     assert b'href="/planner"' in response.data
     assert b'Task and course details are not uploaded' in response.data
     assert b'workspaces save information on the server' in response.data

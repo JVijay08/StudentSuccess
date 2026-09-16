@@ -11,17 +11,18 @@
     <meta property="og:type" content="website">
     <title>Log In | StudentSuccess</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/onboarding.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/access.css') }}">
     {% include '_accessibility_head.html' %}
 </head>
 <body class="theme-dark">
     {% include '_accessibility_body.html' %}
     <main id="main-content" class="onboarding-page">
-        <section class="onboarding-section">
+        <section class="onboarding-section access-section">
             <div class="onboarding-heading">
                 <div>
                     <p class="first-title">STUDENTSUCCESS</p>
                     <h1>Welcome Back</h1>
-                    <p class="subheading">Log in to your account to view your tasks and academic dashboard.</p>
+                    <p class="subheading">Paste your private code to reopen your saved planner. No name or email needed.</p>
                 </div>
                 <a class="back-link" href="{{ url_for('main.home') }}">Back to home</a>
             </div>
@@ -41,6 +42,15 @@
             </div>
             {% endif %}
 
+            <form method="post" action="{{ url_for('access.open_planner') }}">
+                <input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}">
+                <label for="access-code">Private access code</label>
+                <input id="access-code" type="password" name="access_code" maxlength="80" required autocomplete="current-password" spellcheck="false" autocapitalize="none" placeholder="SS-…">
+                <div class="access-actions"><button class="password-toggle" type="button" data-password-toggle="access-code" aria-pressed="false">Show code</button><button class="access-primary" type="submit">Open with a code</button></div>
+            </form>
+            <p>New here? <a href="{{ url_for('auth.register') }}">Create a private planner</a>.</p>
+            <p class="access-note">Lost your code? We can’t recover it. If you’re still signed in on another device, export your data from Settings before signing out.</p>
+            <details class="legacy-login" {% if errors and request.endpoint == 'auth.login' %}open{% endif %}><summary>Use an existing username and password</summary>
             <form class="profile-form" method="post" action="{{ url_for('auth.login') }}">
                 <div class="form-section">
                     <div class="form-group full-width">
@@ -74,8 +84,10 @@
                     <button type="submit">Log In</button>
                 </div>
             </form>
+            </details>
         </section>
     </main>
     <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
+    {% include '_welcome.html' %}
 </body>
 </html>

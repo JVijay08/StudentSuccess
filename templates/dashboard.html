@@ -22,7 +22,7 @@
           <a class="active" href="{{ url_for('main.dashboard') }}">Dashboard</a>
           <a href="{{ url_for('tasks.tasks') }}">Tasks</a>
           <a href="{{ url_for('courses.course_plan') }}">Course Load</a>
-          <a href="{{ url_for('profile.profile_view') }}">Student profile</a>
+          <a href="{{ url_for('profile.profile_view') }}">{% if g.current_user.access_credential %}Planning preferences{% else %}Student profile{% endif %}</a>
           <a href="{{ url_for('settings.settings') }}">Settings</a>
           <a href="{{ url_for('main.local_planner') }}">Browser-only planner</a>
         </nav>
@@ -55,10 +55,11 @@
         </section>
       {% endif %}
 
+      {% if g.current_user.access_credential %}<div class="demo-banner" role="note"><strong>Your private-code planner.</strong> Use fictional details only. This workspace is saved on the server. Keep your code safe to return on another device. <a href="{{ url_for('profile.onboarding') }}">Adjust sample planning preferences</a>.</div>{% endif %}
       <header>
         <p class="eyebrow">YOUR ACADEMIC WORKSPACE</p>
         {% if profile %}
-          <h1>Welcome, {{ profile.first_name }}.</h1>
+          <h1>{% if g.current_user.access_credential %}Your next step starts here.{% else %}Welcome, {{ profile.first_name }}.{% endif %}</h1>
           <p>Choose a concrete next action and start before deadline pressure takes over.</p>
         {% else %}
           <h1>Welcome to StudentSuccess.</h1>
@@ -79,7 +80,7 @@
           </ol>
           <a class="button" href="{{ url_for('tasks.tasks') }}">Open task planner</a>
         {% elif profile %}
-          <h2>Add your first real assignment.</h2>
+          <h2>Add your first {% if g.current_user.access_credential %}sample task{% else %}assignment{% endif %}.</h2>
           <p>Record its deadline and planned start so StudentSuccess can give you a transparent priority signal.</p>
           <a class="button" href="{{ url_for('tasks.tasks') }}">Add a task</a>
         {% else %}
@@ -146,11 +147,11 @@
         </article>{% endif %}
 
         {% if 'profile' not in settings.hidden_cards %}<article class="card card-profile">
-          <p class="eyebrow">PROFILE</p>
+          <p class="eyebrow">{% if g.current_user.access_credential %}PLANNING PREFERENCES{% else %}PROFILE{% endif %}</p>
           {% if profile %}
             <h2>{{ profile.grade }}th grade</h2>
             <dl>
-              <div><dt>Graduation year</dt><dd>{{ profile.graduation_year }}</dd></div>
+              {% if not g.current_user.access_credential %}<div><dt>Graduation year</dt><dd>{{ profile.graduation_year }}</dd></div>{% endif %}
               <div><dt>Weekly study time</dt><dd>{{ profile.study_hours_per_week|round(1) }} hours</dd></div>
               <div><dt>Course rigor</dt><dd>{{ profile.course_rigor or "Not set" }}</dd></div>
             </dl>

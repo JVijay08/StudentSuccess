@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Save your private code | StudentSuccess</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/onboarding.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/access.css') }}">
+  {% include '_accessibility_head.html' %}
+  <script src="{{ url_for('static', filename='js/access_code.js') }}" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <main id="main-content" class="onboarding-page"><section class="onboarding-section access-section">
+    <p class="first-title">{% if replaced %}NEW CODE READY{% else %}YOUR PLANNER IS READY{% endif %}</p>
+    <h1>Keep your key.</h1><p class="subheading">This is the only time we’ll show this code. Save it in a password manager or download a copy before continuing.</p>
+    {% if replaced %}<p class="prototype-notice">Your previous code no longer works. Other signed-in sessions will need this new code.</p>{% endif %}
+    <label for="private-code">Your private access code (case-sensitive)</label>
+    <input class="private-code" id="private-code" type="text" readonly value="{{ code }}" autocomplete="off" spellcheck="false">
+    <div class="access-actions"><button id="copy-code" type="button">Copy code</button><button id="download-code" type="button">Download code</button></div>
+    <p id="code-status" role="status" aria-live="polite"></p>
+    <p class="prototype-notice"><strong>Treat this like a password.</strong>Anyone who has it can read, change, or delete your planner. There is no email recovery. Don’t share it or put it in a link.</p>
+    <form method="get" action="{{ url_for('main.dashboard') }}"><label class="access-check"><input type="checkbox" required> I’ve saved my code somewhere safe.</label><button class="access-primary" type="submit">Continue to my planner</button></form>
+    <noscript><p>Select the code above and copy it manually before continuing.</p></noscript>
+  </section></main>
+</body>
+</html>
