@@ -23,7 +23,7 @@ def add_profile(user_id):
 def test_settings_page_and_preferences_persist(app, authed_client):
     response = authed_client.get("/settings")
     assert response.status_code == 200
-    assert b"Make the workspace work for you" in response.data
+    assert b"<h1>Settings</h1>" in response.data
 
     response = authed_client.post(
         "/settings",

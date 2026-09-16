@@ -1,4 +1,3 @@
-{% from "_illustrations.html" import illustration %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,22 +10,20 @@
 </head>
 <body>
   {% include '_accessibility_body.html' %}
-  <main id="main-content" class="onboarding-page"><section class="onboarding-section access-section">
+  <main id="main-content" class="onboarding-page"><section class="onboarding-section access-section compact-access">
     <a class="back-link" href="{{ url_for('main.home') }}">Back to home</a>
-    <div class="access-art">{{ illustration("key") }}</div>
-    <p class="first-title">NO NAME. NO EMAIL.</p><h1>Your planner.<br>One private code.</h1>
-    <p class="subheading">We'll generate a random code that opens your saved workspace on any device. No username or password to choose.</p>
+    <p class="first-title">NO NAME. NO EMAIL.</p><h1>Create your planner</h1>
+    <p class="subheading">Get a private code to open your planner on any device. No name or email.</p>
     {% if errors %}<div class="form-errors" role="alert">{% for error in errors %}<p>{{ error }}</p>{% endfor %}</div>{% endif %}
-    <ol class="access-steps"><li><strong>Create.</strong> Get a private code and an empty planner.</li><li><strong>Keep your code.</strong> Anyone with it can access your planner. We can't recover a lost code.</li><li><strong>Return.</strong> Paste it into "Open with a code" on any device.</li></ol>
-    <aside class="prototype-notice"><strong>Use fictional information only.</strong>This is a public prototype. Don't enter your real name, school, contact details, grades, or identifying assignment details. Code-based plans are saved on our server; the code does not encrypt the plan.</aside>
+    <aside class="prototype-notice"><strong>Use fictional information only.</strong>Plans are saved on our server. Keep your code safe: anyone with it can open your planner, and a lost code can't be recovered.</aside>
     <form method="post" action="{{ url_for('access.create') }}">
       <input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}">
       <label class="access-check"><input type="checkbox" name="understood" value="yes" required> I'll use fictional information and keep my private code safe.</label>
       <button class="access-primary" type="submit">Create my private planner</button>
     </form>
     <p>Already have a code? <a href="{{ url_for('auth.login') }}">Open your planner</a></p>
-    <p class="access-note">Your private code opens the full dashboard: tasks, recommendations, course catalogs, comparisons, and a four-year plan. Information you add is saved on the server. Use fictional details only.</p>
-    <p class="access-note">Prefer to save only on this device? <a href="{{ url_for('main.local_planner') }}">Use the browser-only planner</a>. No code needed; browser plans stay separate from your private-code account.</p>
+    <p class="access-note"><a href="{{ url_for('main.local_planner') }}">Use the browser-only planner</a> to save only on this device.</p>
+    <details class="access-help"><summary>How it works &amp; privacy</summary><p>Your code opens the full dashboard: tasks, course catalogs, comparisons, and a four-year plan. Code-based plans are saved on the server; the code does not encrypt the plan. Don't enter real names, school names, contact details, grades, or identifying assignment details. Browser plans stay separate from your private-code account.</p></details>
   </section></main>
   {% include '_welcome.html' %}
 </body>

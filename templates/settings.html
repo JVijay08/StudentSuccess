@@ -10,7 +10,7 @@
 <body>
   {% include '_accessibility_body.html' %}
   <main id="main-content">
-    <header><div><p class="eyebrow">STUDENTSUCCESS / SETTINGS</p><h1>Make the workspace work for you.</h1><p>Accessibility choices are saved to your account and apply across StudentSuccess.</p></div><a href="{{ url_for('main.dashboard') }}">Back to dashboard</a></header>
+    <header><div><p class="eyebrow">STUDENTSUCCESS / SETTINGS</p><h1>Settings</h1><p>Adjust your workspace, accessibility, and account.</p></div><a href="{{ url_for('main.dashboard') }}">Back to dashboard</a></header>
 
     {% with messages = get_flashed_messages(with_categories=true) %}{% if messages %}<div class="flash" role="status">{% for category,message in messages %}<p class="flash-{{ category }}">{{ message }}</p>{% endfor %}</div>{% endif %}{% endwith %}
 

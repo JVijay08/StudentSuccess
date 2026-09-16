@@ -61,6 +61,7 @@ def main():
             page.goto(origin + "/onboarding")
             assert page.locator("input[name=first_name]").count() == 0
             page.goto(origin + "/settings")
+            page.locator("summary", has_text="Replace private code").click()
             assert page.get_by_role("button", name="Replace private code").is_visible()
             # A separate browser profile reopens the same account using only the code.
             other_context = browser.new_context()

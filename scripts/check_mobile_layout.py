@@ -46,11 +46,21 @@ def main():
                         result=page.evaluate("""() => ({width:innerWidth,scroll:document.documentElement.scrollWidth, offenders:[...document.querySelectorAll('body *')].filter(e=>e.getClientRects().length && e.getBoundingClientRect().right>innerWidth+1).slice(0,12).map(e=>({tag:e.tagName,cls:e.className,width:Math.round(e.getBoundingClientRect().width)}))})""")
                         if result["scroll"] > width+1:
                             failures.append({"path":path,"scale":scale,**result})
-                        if width in (390,1440) and scale == "100" and path in ("/","/dashboard","/tasks","/courses","/planner","/settings","/register"):
+                        if width in (390,1440) and scale == "100" and path in ("/","/dashboard","/tasks","/courses","/planner","/settings","/register","/login"):
                             name = path.strip("/") or "landing"
                             page.screenshot(path=str(screenshots/(f"{name}-{width}.png")),full_page=True)
                         if path == "/dashboard":
                             assert page.locator('.sidebar nav a', has_text="Course catalog").count() == 0
+                        if path == "/login" and width <= 390 and scale == "100":
+                            assert page.locator('.access-primary').bounding_box()['y'] < 600
+                        if path == "/settings" and width == 390 and scale == "100":
+                            details = page.locator('.settings-form .mobile-disclosure').first
+                            assert not details.evaluate('(e) => e.open')
+                            details.locator('summary').click()
+                            assert page.locator('select[name="theme"]').is_visible()
+                            page.locator('select[name="theme"]').select_option('dark')
+                            details.locator('summary').click()
+                            assert page.locator('select[name="theme"]').input_value() == 'dark'
                 page.close()
             browser.close()
         print(json.dumps(failures,indent=2),flush=True)

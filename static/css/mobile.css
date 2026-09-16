@@ -1,4 +1,37 @@
 /* Allow real content to wrap instead of widening the page or clipping it. */
+.compact-access { max-width: 560px; padding: 28px; }
+.compact-access h1 { font-size: 2.5rem; }
+.compact-access .onboarding-heading { display: flex; flex-direction: column-reverse; gap: 16px; margin-bottom: 16px; }
+.compact-access .back-link { padding: 0; border: 0; margin-bottom: 12px; font-size: .9rem; }
+.compact-access .first-title { margin: 0 0 8px; }
+.compact-access .subheading { margin-top: 10px; }
+.compact-access .privacy-line { color: var(--muted); font-size: .85rem; margin: 12px 0; }
+.compact-access .prototype-notice { margin: 16px 0; padding: 12px; font-size: .9rem; }
+.compact-access .access-actions { display: grid; grid-template-columns: auto minmax(0,1fr); gap: 10px; }
+.compact-access .access-actions button { width: auto; }
+.compact-access .access-check { margin: 14px 0; font-size: .9rem; }
+.compact-access .legacy-login, .access-help { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line); }
+.access-help summary, .legacy-login summary, .mobile-disclosure > summary { cursor: pointer; font-weight: 600; min-height: 44px; padding: 10px 0; }
+.access-help p { font-size: .9rem; color: var(--muted); }
+.mobile-disclosure > summary { display: none; }
+.settings-form .disclosure-content > .secondary-link { display: inline-block; margin-top: 20px; }
+@media (max-width: 680px) {
+  .onboarding-page:has(.compact-access) { padding: 12px; }
+  .compact-access { padding: 20px 16px; }
+  .compact-access h1 { font-size: 2rem; }
+  .compact-access.access-section label[for="access-code"] { margin-top: 14px; }
+  .mobile-disclosure > summary { display: list-item; }
+  .mobile-disclosure .disclosure-content { padding-top: 12px; }
+  .settings-form section:has(.mobile-disclosure), .account article:has(.mobile-disclosure),
+  .card:has(.mobile-disclosure), .demo-checklist:has(.mobile-disclosure) { padding: 8px 16px; }
+  .demo-checklist:has(.mobile-disclosure) { display: block; }
+  main > header h1 { font-size: 2rem; }
+  .shell main > header { margin-bottom: 16px; }
+  .shell .sidebar { padding-top: 12px; padding-bottom: 12px; }
+  .shell .sidebar nav { margin-top: 10px; }
+  .focus-card .illustrated-title .planner-art { width: 64px; flex-basis: 64px; }
+}
+
 main, section, article, form, fieldset, label, .form-group,
 .priority-list, .priority-item, .overdue-list, .overdue-item {
   min-inline-size: 0;

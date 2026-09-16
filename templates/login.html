@@ -1,4 +1,3 @@
-{% from "_illustrations.html" import illustration %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,20 +17,17 @@
 <body class="theme-dark">
     {% include '_accessibility_body.html' %}
     <main id="main-content" class="onboarding-page">
-        <section class="onboarding-section access-section">
-            <div class="access-art">{{ illustration("key") }}</div>
+        <section class="onboarding-section access-section compact-access">
             <div class="onboarding-heading">
                 <div>
                     <p class="first-title">STUDENTSUCCESS</p>
-                    <h1>Welcome Back</h1>
-                    <p class="subheading">Paste your private code to reopen your saved planner. No name or email needed.</p>
+                    <h1>Open your planner</h1>
+                    <p class="subheading">Paste your private code to pick up where you left off.</p>
                 </div>
                 <a class="back-link" href="{{ url_for('main.home') }}">Back to home</a>
             </div>
 
-            <aside class="prototype-notice" role="note">
-                <strong>Public prototype:</strong> StudentSuccess is still being developed and is not ready for real student data. Please use fictional information only while exploring the demo.
-            </aside>
+            <p class="privacy-line">Use fictional information only. Plans are saved on our server.</p>
 
             {% if errors %}
             <div class="form-errors" role="alert">
@@ -51,7 +47,7 @@
                 <div class="access-actions"><button class="password-toggle" type="button" data-password-toggle="access-code" aria-pressed="false">Show code</button><button class="access-primary" type="submit">Open with a code</button></div>
             </form>
             <p>New here? <a href="{{ url_for('auth.register') }}">Create a private planner</a>.</p>
-            <p class="access-note">Lost your code? We can’t recover it. If you’re still signed in on another device, export your data from Settings before signing out.</p>
+            <details class="access-help"><summary>Lost your code?</summary><p>We can't recover it. If you're still signed in on another device, export your data from Settings before signing out.</p></details>
             <details class="legacy-login" {% if errors and request.endpoint == 'auth.login' %}open{% endif %}><summary>Use an existing username and password</summary>
             <form class="profile-form" method="post" action="{{ url_for('auth.login') }}">
                 <div class="form-section">
