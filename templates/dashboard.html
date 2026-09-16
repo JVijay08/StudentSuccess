@@ -25,7 +25,6 @@
           <a href="{{ url_for('courses.course_plan') }}">Course Load</a>
           <a href="{{ url_for('profile.profile_view') }}">{% if g.current_user.access_credential %}Planning preferences{% else %}Student profile{% endif %}</a>
           <a href="{{ url_for('settings.settings') }}">Settings</a>
-          <a href="{{ url_for('courses.course_explorer') }}">Course catalog</a>
         </nav>
       </div>
       <div class="sidebar-footer">

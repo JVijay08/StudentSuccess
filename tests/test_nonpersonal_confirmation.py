@@ -58,7 +58,10 @@ def test_full_workspace_retains_catalog_comparison_and_plan(app):
     create(client)
     dashboard = client.get("/dashboard", follow_redirects=True)
     assert b"WHAT TO WORK ON NOW" in dashboard.data
-    assert b"Course catalog" in dashboard.data
+    assert b' href="/courses/plan">Course Load</a>' in dashboard.data
+    assert b"Course catalog" not in dashboard.data
+    plan = client.get("/courses/plan")
+    assert b'href="/courses">Explore Courses</a>' in plan.data
     assert b"Browser-only planner" not in dashboard.data
     for path in ("/courses", "/courses/plan", "/courses/compare?id=SCI_AP_CHEMISTRY&id=SCI_AP_BIOLOGY", "/tasks", "/settings"):
         assert client.get(path).status_code == 200

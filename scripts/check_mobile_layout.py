@@ -20,6 +20,7 @@ def main():
     screenshots = Path(".test-mobile-layout-visual")
     screenshots.mkdir(exist_ok=True)
     failures = []
+    checked = 0
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch(channel="chrome",headless=True)
@@ -35,20 +36,25 @@ def main():
                 db.session.commit()
             for context, paths in ((public,["/","/register","/login","/planner"]),(authed,["/dashboard","/tasks",f"/tasks/{task_id}/edit","/courses","/courses/plan","/courses/SCI_AP_CHEMISTRY","/courses/compare?id=SCI_AP_CHEMISTRY&id=SCI_AP_BIOLOGY","/settings","/onboarding"])):
                 page=context.new_page()
-                for width, scale in ((320,"100"),(390,"100"),(390,"200"),(768,"100")):
+                for width, scale in ((320,"100"),(390,"100"),(390,"200"),(768,"100"),(1440,"100")):
                     page.set_viewport_size({"width":width,"height":844})
                     for path in paths:
-                        page.goto(origin+path)
+                        response = page.goto(origin+path)
+                        assert response.status == 200, f"{path}: {response.status}"
+                        checked += 1
                         page.evaluate("scale => document.documentElement.dataset.textScale=scale",scale)
                         result=page.evaluate("""() => ({width:innerWidth,scroll:document.documentElement.scrollWidth, offenders:[...document.querySelectorAll('body *')].filter(e=>e.getClientRects().length && e.getBoundingClientRect().right>innerWidth+1).slice(0,12).map(e=>({tag:e.tagName,cls:e.className,width:Math.round(e.getBoundingClientRect().width)}))})""")
                         if result["scroll"] > width+1:
                             failures.append({"path":path,"scale":scale,**result})
-                        if width == 390 and scale == "100" and path in ("/dashboard","/tasks","/courses","/planner","/settings"):
-                            page.screenshot(path=str(screenshots/(path.strip("/")+".png")),full_page=True)
+                        if width in (390,1440) and scale == "100" and path in ("/","/dashboard","/tasks","/courses","/planner","/settings","/register"):
+                            name = path.strip("/") or "landing"
+                            page.screenshot(path=str(screenshots/(f"{name}-{width}.png")),full_page=True)
+                        if path == "/dashboard":
+                            assert page.locator('.sidebar nav a', has_text="Course catalog").count() == 0
                 page.close()
             browser.close()
         print(json.dumps(failures,indent=2),flush=True)
-        print(f"Audited 52 page/width/text-scale combinations; {len(failures)} overflow failures.",flush=True)
+        print(f"Audited {checked} page/width/text-scale combinations; {len(failures)} overflow failures.",flush=True)
         if "--check" in sys.argv:
             assert not failures, "Mobile layout overflow detected"
     finally:

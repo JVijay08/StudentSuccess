@@ -30,7 +30,7 @@
     <section class="hero">
       <div>
         <p class="eyebrow">YOUR PLAN. ONE PRIVATE CODE.</p>
-        <h1>Plan less.<br>Start sooner.</h1>
+        <h1>Plan less.<br><em>Start sooner.</em></h1>
         <p class="lede">A calmer way for high-school students to plan coursework and start assignments. Create a planner without a name or email, then use your private code to return on any device.</p>
         <div class="hero-actions">
           <a class="primary-action" href="{{ url_for('auth.register') }}">Create a private planner</a>
@@ -39,9 +39,12 @@
         <p class="prototype-note"><strong>Explore with fictional information.</strong> Plans are saved on our server. Keep your code private: anyone with it can access your planner, and we can’t recover it if it’s lost. Don’t enter personal or identifying details.</p>
       </div>
       <aside class="next-card" aria-label="Example recommendation">
-        <span>WHAT TO WORK ON NOW</span>
+        <div class="example-heading"><span>A LITTLE MOMENTUM</span><span class="example-tag">Sample plan</span></div>
+        <div class="momentum-art" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><b>One step at a time.</b></div>
+        <span>YOUR NEXT STEP</span>
         <strong>Finish algebra problem set</strong>
-        <p>Planned start passed 1 hour ago · due today · 50 minute estimate</p>
+        <p>Due today · 50 minute estimate</p>
+        <ol class="example-steps"><li><span>01</span> Open your notes</li><li><span>02</span> Work through the first problem</li><li><span>03</span> Build from there</li></ol>
         <small>Every recommendation shows its reasons.</small>
       </aside>
     </section>
