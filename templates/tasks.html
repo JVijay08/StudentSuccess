@@ -1,3 +1,4 @@
+{% from "_illustrations.html" import illustration %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +34,7 @@
     {% endwith %}
 
     <section class="panel">
-      <h2>Add a task</h2>
+      <div class="illustrated-title"><h2>Add a task</h2>{{ illustration("steps") }}</div>
       {% if errors %}
         <div class="errors" role="alert">
           <ul>

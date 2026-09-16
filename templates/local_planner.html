@@ -1,3 +1,4 @@
+{% from "_illustrations.html" import illustration %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +23,7 @@
       <header id="overview"><p class="eyebrow">YOUR BROWSER WORKSPACE</p><h1>Plan less. Start sooner.</h1><p>Tasks, course catalogs, and a four-year plan?saved on this device. No account needed. Use fictional details only.</p></header>
       <noscript><p class="notice">Enable JavaScript to use this browser-saved planner. No plan information is sent to the server.</p></noscript>
       <p id="message" role="status" aria-live="polite"></p>
-      <section class="focus-card focus" aria-labelledby="next-heading"><p class="eyebrow">WHAT TO WORK ON NOW</p><h2 id="next-heading">Add a task to find your next step.</h2><p id="next-reason">Start with a deadline and a small estimate of the time you need.</p><p id="progress"></p></section>
+      <section class="focus-card focus" aria-labelledby="next-heading"><div class="illustrated-title"><p class="eyebrow">WHAT TO WORK ON NOW</p>{{ illustration("momentum") }}</div><h2 id="next-heading">Add a task to find your next step.</h2><p id="next-reason">Start with a deadline and a small estimate of the time you need.</p><p id="progress"></p></section>
       <section class="grid" aria-label="Planning insights"><article class="card"><p class="eyebrow">COMPLETION</p><h2 id="completion-summary">No tasks yet</h2><p id="delay-summary">Start tasks to see planned-versus-actual timing.</p></article><article class="card"><p class="eyebrow">RECENT STARTS</p><ul id="start-history" class="items"></ul></article></section>
       <div class="columns" id="task-area">
         <section class="card" aria-labelledby="task-form-heading">

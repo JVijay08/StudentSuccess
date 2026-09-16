@@ -1,0 +1,30 @@
+{# Decorative, reusable vector artwork. No implied progress or account data. #}
+{% macro illustration(kind) -%}
+<svg class="planner-art" viewBox="0 0 200 112" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 96H188M28 16V100M64 16V100M100 16V100M136 16V100M172 16V100M12 32H188M12 64H188" fill="none" stroke="currentColor" opacity=".09"/>
+  {% if kind == 'books' %}
+  <rect x="38" y="38" width="32" height="58" rx="5" fill="#7084b8"/>
+  <rect x="76" y="20" width="36" height="76" rx="5" fill="#a6b6df"/>
+  <path d="M119 36Q118 30 124 29L143 25Q149 24 150 30L162 89Q163 95 157 96L138 100Q132 101 131 95Z" fill="#efbd83"/>
+  <path d="M47 50H61M47 81H61M86 34H102M86 80H102M129 42L144 39" fill="none" stroke="#fffefa" stroke-width="3" stroke-linecap="round"/>
+  {% elif kind == 'key' %}
+  <rect x="31" y="18" width="138" height="78" rx="14" fill="#dce4f5"/>
+  <rect x="41" y="28" width="118" height="58" rx="8" fill="#202b48"/>
+  <circle cx="78" cy="57" r="15" fill="none" stroke="#efbd83" stroke-width="7"/>
+  <path d="M94 57H134M121 57V69M134 57V65" fill="none" stroke="#efbd83" stroke-width="7" stroke-linecap="round"/>
+  <path d="M161 13V25M155 19H167" stroke="#7084b8" stroke-width="2" stroke-linecap="round"/>
+  {% elif kind == 'steps' %}
+  <path d="M26 80H77V55H128V30H174" fill="none" stroke="#a6b6df" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="26" cy="80" r="13" fill="#7084b8"/>
+  <circle cx="77" cy="55" r="13" fill="#a6b6df"/>
+  <circle cx="128" cy="30" r="13" fill="#efbd83"/>
+  <path d="M21 80L25 84L32 76M72 55L76 59L83 51M169 24L175 30L169 36" fill="none" stroke="#fffefa" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  {% else %}
+  <rect x="25" y="74" width="24" height="22" rx="4" fill="#566ba0"/>
+  <rect x="57" y="60" width="24" height="36" rx="4" fill="#7084b8"/>
+  <rect x="89" y="46" width="24" height="50" rx="4" fill="#96a6d2"/>
+  <rect x="121" y="32" width="24" height="64" rx="4" fill="#c4cfed"/>
+  <rect x="153" y="18" width="24" height="78" rx="4" fill="#efbd83"/>
+  {% endif %}
+</svg>
+{%- endmacro %}

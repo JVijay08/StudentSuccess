@@ -1,3 +1,4 @@
+{% from "_illustrations.html" import illustration %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,9 +51,9 @@
     </section>
 
     <section class="feature-grid" aria-label="StudentSuccess features">
-      <article><span>01</span><h2>Choose a realistic load</h2><p>Explore the full course catalog, compare course rigor and workload, and build a four-year plan.</p></article>
-      <article><span>02</span><h2>Turn plans into starts</h2><p>Give assignments planned start times instead of tracking deadlines alone.</p></article>
-      <article><span>03</span><h2>Keep your key</h2><p>No name or email to enter. Save your private code, reopen your planner on another device, and export or delete your data in Settings.</p></article>
+      <article><div class="feature-art"><span>01</span>{{ illustration("books") }}</div><h2>Choose a realistic load</h2><p>Explore the full course catalog, compare course rigor and workload, and build a four-year plan.</p></article>
+      <article><div class="feature-art"><span>02</span>{{ illustration("steps") }}</div><h2>Turn plans into starts</h2><p>Give assignments planned start times instead of tracking deadlines alone.</p></article>
+      <article><div class="feature-art"><span>03</span>{{ illustration("key") }}</div><h2>Keep your key</h2><p>No name or email to enter. Save your private code, reopen your planner on another device, and export or delete your data in Settings.</p></article>
     </section>
 
     <section class="server-demo" aria-labelledby="demo-heading">

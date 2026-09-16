@@ -13,9 +13,10 @@
 }
 body {
   font-family: "Segoe UI", "Trebuchet MS", sans-serif;
-  background-image: radial-gradient(ellipse at 100% 0, rgba(239,189,131,.14), transparent 48%);
-  background-size: 100% 900px;
-  background-repeat: no-repeat;
+  --graph-line: rgba(45,63,100,.065);
+  background-image: linear-gradient(var(--graph-line) 1px, transparent 1px), linear-gradient(90deg, var(--graph-line) 1px, transparent 1px);
+  background-size: 28px 28px;
+  background-repeat: repeat;
   -webkit-font-smoothing: antialiased;
 }
 h1, h2, h3 { text-wrap: pretty; }
@@ -107,7 +108,8 @@ button.secondary, .password-toggle { color: var(--ink); }
 .example-steps li span { color: #efbd83; font-size: .7rem; }
 .server-demo { padding: 28px; margin-bottom: 40px; border: 1px solid var(--line); border-radius: 16px; background: var(--white); }
 .server-demo h2 { font: 400 1.8rem/1.2 Georgia, serif; margin-top: 0; }
-[data-theme="dark"] body, [data-theme="high-contrast"] body { background-image: none; }
+[data-theme="dark"] body { --graph-line: rgba(180,197,230,.06); }
+[data-theme="high-contrast"] body { background-image: none; }
 [data-theme="dark"] .onboarding-section, [data-theme="dark"] .feature-grid article { background: var(--white); }
 [data-theme="high-contrast"] .shell .sidebar, [data-theme="high-contrast"] .focus-card,
 [data-theme="high-contrast"] .next-card { background: #000; }
@@ -118,4 +120,23 @@ button.secondary, .password-toggle { color: var(--ink); }
   .next-card { padding: 24px; }
   .feature-grid { gap: 14px; padding-bottom: 32px; }
   .server-demo { padding: 20px; }
+}
+
+/* Compact illustrations echo the landing card without adding dashboard noise. */
+.planner-art { display: block; width: 180px; max-width: 100%; height: auto; color: var(--ink); }
+.feature-art { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+.feature-art > span { align-self: flex-start; color: var(--muted); font: .7rem "Courier New", monospace; }
+.feature-art .planner-art { width: 180px; }
+.illustrated-title { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 16px; }
+.illustrated-title > :first-child { margin: 0; min-width: 0; }
+.illustrated-title .planner-art { width: 116px; flex: 0 0 116px; }
+.focus-card .illustrated-title .planner-art { color: #dce4f5; }
+.focus-card:has(.illustrated-title)::after { content: none; }
+.access-art { margin: 8px 0 18px; }
+.access-art .planner-art { width: 150px; }
+.plan-footer .planner-art { width: 140px; flex: 0 0 140px; }
+@media (max-width: 680px) {
+  .illustrated-title .planner-art { width: 88px; flex-basis: 88px; }
+  .feature-art .planner-art { width: 145px; }
+  .plan-footer .planner-art { width: 110px; flex-basis: auto; }
 }
