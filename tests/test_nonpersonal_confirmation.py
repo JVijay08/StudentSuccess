@@ -57,7 +57,7 @@ def test_full_workspace_retains_catalog_comparison_and_plan(app):
     client = app.test_client()
     create(client)
     dashboard = client.get("/dashboard", follow_redirects=True)
-    assert b"WHAT TO WORK ON NOW" in dashboard.data
+    assert b'class="focus-card"' in dashboard.data
     assert b' href="/courses/plan">Course Load</a>' in dashboard.data
     assert b"Course catalog" not in dashboard.data
     plan = client.get("/courses/plan")

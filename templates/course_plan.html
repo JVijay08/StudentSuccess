@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/courses.css') }}">
   {% include '_accessibility_head.html' %}
 </head>
-<body>
+<body class="notebook-course-plan">
   {% include '_accessibility_body.html' %}
   <main id="main-content" class="course-page">
     <header class="page-header"><div><p class="eyebrow">STUDENTSUCCESS / MY FOUR-YEAR PLAN</p><h1>Plan only what you can follow through on.</h1><p class="lede">Balance ambition with prerequisites, weekly study time, and the assignments these high-school courses will create.</p></div><div class="header-actions"><a class="button" href="{{ url_for('courses.course_explorer') }}">Explore Courses</a><a class="quiet-link" href="{{ url_for('main.dashboard') }}">Dashboard</a></div></header>

@@ -2,7 +2,7 @@
 
 [Back to the project README](../../README.md)
 
-Captured September 16, 2026 from the public prototype using fictional demo data. Images are the original user-supplied captures. Open an image at full size to read the longer pages.
+Captured September 17, 2026 from the redesigned app running locally with isolated fictional demo data. Desktop captures are 1440 pixels wide; the mobile capture is 390 pixels wide. Open an image at full size to read the longer pages. Recreate the captures with `python scripts/capture_fieldnotes.py` (requires Playwright and Chrome).
 
 ## Landing page
 
@@ -30,9 +30,9 @@ National reference catalog with filters and course cards.
 
 ## Course comparison
 
-Three English course references shown side by side.
+AP Chemistry and AP Biology references shown side by side.
 
-[![Course comparison ? Three English course references shown side by side.](comparison.png)](comparison.png)
+[![Course comparison ? AP Chemistry and AP Biology references shown side by side.](comparison.png)](comparison.png)
 
 ## Four-year plan
 
@@ -46,8 +46,8 @@ Appearance, focus, planning, reminders, date/time, and account controls.
 
 [![Settings ? Appearance, focus, planning, reminders, date/time, and account controls.](settings.png)](settings.png)
 
-## Mobile dashboard detail
+## Mobile dashboard
 
-A close-up of the recommendations on mobile; this capture does not show the full navigation or clock.
+The full mobile dashboard, including navigation, clock, task recommendations, and expandable summaries.
 
-[![Mobile dashboard detail ? A close-up of the recommendations on mobile; this capture does not show the full navigation or clock.](mobile-dashboard.jpeg)](mobile-dashboard.jpeg)
+[![Mobile dashboard ? The full mobile dashboard, including navigation, clock, task recommendations, and expandable summaries.](mobile-dashboard.png)](mobile-dashboard.png)

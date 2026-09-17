@@ -14,7 +14,7 @@ StudentSuccess helps high-school students plan a manageable course load and deci
 
 ![StudentSuccess dashboard with a recommended next task](docs/screenshots/dashboard.png)
 
-[View all eight screenshots](docs/screenshots/README.md), including tasks, course comparisons, the four-year plan, settings, and a mobile dashboard detail.
+[View all eight screenshots](docs/screenshots/README.md), including tasks, course comparisons, the four-year plan, settings, and the full mobile dashboard.
 
 ## What you can do
 
