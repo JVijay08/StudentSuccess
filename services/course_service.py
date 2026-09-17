@@ -1,4 +1,4 @@
-﻿import json
+import json
 from pathlib import Path
 from functools import lru_cache
 
@@ -13,9 +13,9 @@ CATALOGS = {
         "kind": "reference",
         "state": None,
     },
-    "forsyth-ga": {
-        "label": "Forsyth County, Georgia",
-        "description": "Representative local catalog sourced from Forsyth County Schools.",
+    "ga": {
+        "label": "Georgia reference",
+        "description": "Selected Georgia course references; coverage is local and not a complete statewide catalog.",
         "path": COURSES_FILE,
         "kind": "state",
         "state": "GA",
@@ -164,7 +164,7 @@ def get_state_options():
 
 
 @lru_cache(maxsize=None)
-def load_courses(catalog="forsyth-ga"):
+def load_courses(catalog="ga"):
     catalog_config = CATALOGS.get(catalog)
     if catalog_config is None:
         raise ValueError(f"Unknown course catalog: {catalog}")
@@ -178,7 +178,7 @@ def load_courses(catalog="forsyth-ga"):
     return courses
 
 
-def get_course_by_id(course_id, catalog="forsyth-ga"):
+def get_course_by_id(course_id, catalog="ga"):
     for course in load_courses(catalog):
         if course["course_id"] == course_id:
             return course
@@ -186,7 +186,7 @@ def get_course_by_id(course_id, catalog="forsyth-ga"):
     return None
 
 
-def get_courses_by_subject(subject, catalog="forsyth-ga"):
+def get_courses_by_subject(subject, catalog="ga"):
     return [
         course
         for course in load_courses(catalog)
@@ -194,7 +194,7 @@ def get_courses_by_subject(subject, catalog="forsyth-ga"):
     ]
 
 
-def get_courses_by_type(course_type, catalog="forsyth-ga"):
+def get_courses_by_type(course_type, catalog="ga"):
     return [
         course
         for course in load_courses(catalog)
@@ -202,7 +202,7 @@ def get_courses_by_type(course_type, catalog="forsyth-ga"):
     ]
 
 
-def get_courses_by_grade(grade_level, catalog="forsyth-ga"):
+def get_courses_by_grade(grade_level, catalog="ga"):
     return [
         course
         for course in load_courses(catalog)
@@ -218,7 +218,7 @@ def filter_courses(
     workload_level=None,
     career_cluster=None,
     query=None,
-    catalog="forsyth-ga",
+    catalog="ga",
 ):
     matching_courses = []
 
@@ -269,7 +269,7 @@ def filter_courses(
     return matching_courses
 
 
-def get_catalog_options(catalog="forsyth-ga"):
+def get_catalog_options(catalog="ga"):
     courses = load_courses(catalog)
     return {
         "subjects": sorted({course["subject"] for course in courses}),

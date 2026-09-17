@@ -40,7 +40,7 @@ Free-text submissions ask you to confirm that they contain no personal informati
 
 ## Course references and limits
 
-The explorer offers state selection for all 50 states, national reference courses, AP and IB catalogs, and a Forsyth County local catalog. Imported state coverage varies; selecting a state does not mean a complete statewide catalog is available. The [data sources](docs/data_sources.md) document coverage and provenance.
+The explorer offers state selection for all 50 states, national reference courses, AP and IB catalogs, and selected local course references. Imported state coverage varies; selecting a state does not mean a complete statewide catalog is available. The [data sources](docs/data_sources.md) document coverage and provenance.
 
 Academic depth, workload, and task-priority labels are planning estimates. Confirm current offerings, prerequisites, and graduation requirements with your school counselor. This prototype is not ready to hold real student records.
 

@@ -96,3 +96,27 @@ def test_course_comparison_requires_two_courses(authed_client):
     assert response.status_code == 200
     assert b"Select at least two courses" in response.data
     assert b"Select two or three courses" in response.data
+def test_legacy_catalog_migration_preserves_plan(app, authed_client):
+    from app import _migrate_planned_course_catalog_column
+    from extensions import db
+    from models import PlannedCourse
+    from tests.test_main_routes import add_profile
+
+    with app.app_context():
+        profile = add_profile(authed_client.user_id)
+        planned = PlannedCourse(
+            student_profile_id=profile.id, catalog_id="forsyth-ga",
+            course_id="MATH_ALGEBRA_CC", school_year=9,
+        )
+        db.session.add(planned)
+        db.session.commit()
+        saved_id = planned.id
+        _migrate_planned_course_catalog_column()
+        _migrate_planned_course_catalog_column()
+        db.session.expire_all()
+        assert db.session.get(PlannedCourse, saved_id).catalog_id == "ga"
+        assert PlannedCourse.query.count() == 1
+    response = authed_client.get("/courses/plan")
+    assert response.status_code == 200
+    assert b"Georgia reference" in response.data
+    assert b"forsyth" not in response.data.lower()

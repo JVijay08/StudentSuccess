@@ -36,5 +36,5 @@ def test_browser_catalog_bundle_is_public_and_contains_full_catalogs(app):
     response = app.test_client().get("/planner/catalogs.json")
     assert response.status_code == 200
     catalogs = response.json["catalogs"]
-    assert {"national", "ap", "ib", "forsyth-ga"} <= {c["id"] for c in catalogs}
+    assert {"national", "ap", "ib", "ga"} <= {c["id"] for c in catalogs}
     assert sum(len(c["courses"]) for c in catalogs) > 100

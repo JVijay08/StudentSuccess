@@ -112,10 +112,17 @@ def _migrate_planned_course_catalog_column():
         db.session.execute(
             text(
                 "ALTER TABLE planned_courses "
-                "ADD COLUMN catalog_id VARCHAR(40) NOT NULL DEFAULT 'forsyth-ga'"
+                "ADD COLUMN catalog_id VARCHAR(40) NOT NULL DEFAULT 'ga'"
             )
         )
         db.session.commit()
+
+    # Preserve existing plans while retiring the location-specific public identifier.
+    db.session.execute(
+        text("UPDATE planned_courses SET catalog_id = :new WHERE catalog_id = :old"),
+        {"new": "ga", "old": "forsyth-ga"},
+    )
+    db.session.commit()
 
 
 def _migrate_task_reminder_columns():

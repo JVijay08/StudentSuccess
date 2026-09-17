@@ -1,4 +1,4 @@
-﻿from services.course_service import (
+from services.course_service import (
     filter_courses,
     get_course_by_id,
     get_courses_by_grade,
@@ -54,9 +54,9 @@ def test_filter_courses_combines_filters():
 def test_national_and_local_catalogs_are_separate():
     catalogs = get_catalogs()
     national_courses = load_courses("national")
-    local_courses = load_courses("forsyth-ga")
+    local_courses = load_courses("ga")
 
-    assert {"national", "forsyth-ga", "ap", "ib"}.issubset(catalogs)
+    assert {"national", "ga", "ap", "ib"}.issubset(catalogs)
     assert {"al", "ar", "fl", "ky", "la", "ms", "nc", "sc", "tn", "va", "wv"}.issubset(catalogs)
     assert any(course["course_name"] == "Algebra I" for course in national_courses)
     assert any(
@@ -83,7 +83,7 @@ def test_state_options_cover_all_us_states_and_mark_only_loaded_states():
     assert any(
         state["code"] == "GA"
         and state["available"]
-        and state["catalog_id"] == "forsyth-ga"
+        and state["catalog_id"] == "ga"
         for state in states
     )
     assert any(
