@@ -5,6 +5,7 @@ from flask import Blueprint, abort, flash, g, redirect, render_template, request
 from extensions import db
 from models import PlannedCourse, StudentProfile
 from services import course_service
+from services.course_comparison import build_comparison, suggested_pairs
 from services.auth_service import login_required
 from services.privacy_service import confirmation_errors
 
@@ -114,6 +115,7 @@ def course_explorer():
         catalog_id=catalog_id,
         state_code=state_code,
         planned_ids=_planned_ids(profile, catalog_id),
+        comparison_examples=suggested_pairs(courses, profile.grade),
     ), (400 if privacy_errors else 200)
 
 
@@ -138,6 +140,7 @@ def course_detail(course_id):
         course=course,
         planned_ids=_planned_ids(profile, catalog_id),
         prerequisite_status=_prerequisite_status(course, planned_rows),
+        comparison_examples=suggested_pairs(course_service.load_courses(catalog_id), profile.grade, anchor=course, limit=1),
         catalog_id=catalog_id,
         catalog=course_service.get_catalogs()[catalog_id],
     )
@@ -187,6 +190,9 @@ def add_to_plan(course_id):
     else:
         flash("That course is already planned for that grade year.", "warning")
 
+    comparison_ids = list(dict.fromkeys(request.form.getlist("comparison_id")))[:3]
+    if course_id in comparison_ids and len(comparison_ids) >= 2:
+        return redirect(url_for("courses.course_compare", catalog=catalog_id, id=comparison_ids))
     return redirect(request.referrer or url_for("courses.course_plan"))
 
 
@@ -257,6 +263,7 @@ def course_compare():
     course_ids = request.args.getlist("id")
     if len(course_ids) == 1 and "," in course_ids[0]:
         course_ids = course_ids[0].split(",")
+    course_ids = list(dict.fromkeys(value.strip() for value in course_ids if value.strip()))
     selection_message = None
     if len(course_ids) < 2:
         selection_message = "Select at least two courses to make a useful comparison."
@@ -267,6 +274,8 @@ def course_compare():
         for course_id in course_ids[:3]
     ]
     courses = [course for course in courses if course is not None]
+    if len(courses) < 2:
+        selection_message = "Select at least two courses from this catalog to make a useful comparison."
     return render_template(
         "course_compare.html",
         profile=profile,
@@ -274,4 +283,7 @@ def course_compare():
         catalog_id=catalog_id,
         catalog=course_service.get_catalogs()[catalog_id],
         selection_message=selection_message,
+        comparison=build_comparison(courses, profile.grade),
+        planned_ids=_planned_ids(profile, catalog_id),
+        comparison_examples=suggested_pairs(course_service.load_courses(catalog_id), profile.grade, anchor=courses[0] if len(courses) == 1 else None),
     )

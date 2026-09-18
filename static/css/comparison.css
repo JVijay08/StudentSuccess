@@ -1,0 +1,45 @@
+﻿.compare-invitation { padding:24px; margin-bottom:24px; background:var(--white); border:1px solid var(--line); border-left:4px solid var(--blue); border-radius:8px; }
+.compare-invitation h2 { margin:10px 0; font:400 1.8rem Georgia,serif; }
+.compare-invitation p { color:var(--muted); line-height:1.6; }
+.example-pairs { display:flex; flex-wrap:wrap; gap:10px; margin:16px 0; }
+.example-pairs a { padding:12px 16px; background:var(--paper); border:1px solid var(--line); border-radius:5px; font-size:.9rem; line-height:1.5; }
+.example-pairs a:hover { border-color:var(--blue); }
+.example-pairs span { color:var(--blue); }
+.compare-check { min-height:44px; cursor:pointer; }
+.course-card:has(.compare-check input:checked) { border:2px solid var(--blue); }
+.compare-tray { position:sticky; bottom:12px; z-index:25; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; padding:16px; margin-top:22px; background:var(--white); border:2px solid var(--ink); border-radius:8px; box-shadow:0 8px 25px #142d2430; }
+.compare-tray>div { min-width:0; flex:1 1 230px; }
+.compare-tray .compare-button { margin:0; color:#fff; background:#a83e28; }
+.compare-tray button:disabled { opacity:.65; cursor:not-allowed; }
+#compare-selection { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
+#compare-selection button { padding:6px 10px; font-size:.78rem; border:1px solid var(--line); color:var(--ink); background:var(--paper); text-align:left; }
+.comparison-names { display:flex; flex-wrap:wrap; gap:12px; margin-bottom:28px; }
+.comparison-names span { border-bottom:2px solid var(--blue); padding:12px 0; margin-right:20px; font-size:1.1rem; }
+.tradeoff-summary { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+.tradeoff-summary article { padding:25px; border:1px solid var(--line); border-radius:8px; background:var(--white); box-shadow:var(--paper-lift); }
+.tradeoff-summary h2 { font:400 1.65rem/1.2 Georgia,serif; margin:16px 0; }
+.tradeoff-summary p:not(.section-kicker) { color:var(--muted); line-height:1.7; }
+.comparison-options { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr)); gap:24px; margin:32px 0; }
+.comparison-options article { padding:24px; background:var(--white); border:1px solid var(--line); border-top:3px solid var(--blue); border-radius:5px; min-width:0; }
+.comparison-options h2 { font:400 1.7rem/1.2 Georgia,serif; }
+.comparison-options dl div { padding:12px 0; border-bottom:1px solid var(--line); }
+.comparison-options dt { color:var(--muted); font-size:.8rem; }
+.comparison-options dd { margin:8px 0 0; line-height:1.5; }
+.comparison-options form { display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-top:22px; }
+.comparison-options form label { font-size:.85rem; }
+.comparison-options select { background:var(--paper); color:var(--ink); border:1px solid var(--line); padding:8px; }
+.comparison-options button { padding:12px; background:#a83e28; color:white; }
+.evidence-heading { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; }
+.evidence-heading h2 { font:400 1.8rem Georgia,serif; }
+.evidence-heading label { display:flex; align-items:center; gap:10px; }
+.evidence-heading label[hidden] { display:none; }
+.comparison-table-wrap { max-width:100%; overflow-x:auto; border:1px solid var(--line); border-radius:6px; }
+.comparison-table { border-collapse:collapse; width:100%; background:var(--white); font-size:.9rem; }
+.comparison-table caption { text-align:left; padding:16px; color:var(--muted); }
+.comparison-table th,.comparison-table td { padding:16px; border-top:1px solid var(--line); vertical-align:top; line-height:1.5; text-align:left; min-width:150px; }
+.comparison-table th { font-weight:600; }
+.comparison-table th small { display:block; font-weight:400; color:var(--muted); margin-top:4px; }
+.comparison-table tr[data-different=true] { background:var(--paper); }
+.comparison-source { padding:24px 0; color:var(--muted); line-height:1.7; }
+@media(max-width:900px) { .tradeoff-summary { grid-template-columns:1fr; } }
+@media(max-width:680px) { .compare-tray { bottom:6px; padding:12px; } .comparison-options { grid-template-columns:1fr; } .tradeoff-summary article { padding:20px; } }

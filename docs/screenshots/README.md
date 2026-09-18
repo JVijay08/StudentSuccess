@@ -2,7 +2,7 @@
 
 [Back to the project README](../../README.md)
 
-Captured September 17, 2026 from the current application running locally with isolated fictional demo data. Desktop images are 1440 pixels wide; mobile images are 390 pixels wide. These captures show the design deployed at [StudentSuccess](https://studentsuccess.onrender.com/). Open any image at full size for detail.
+Captured September 17, 2026; course explorer and comparison refreshed September 18, 2026. Images are from the current application running locally with isolated fictional demo data. Desktop images are 1440 pixels wide; mobile images are 390 pixels wide. These captures show the design deployed at [StudentSuccess](https://studentsuccess.onrender.com/). Open any image at full size for detail.
 
 Still images do not show motion: try the landing-page example on the live site to see the paper tilt, note arrangement, and paper-plane animation.
 
@@ -32,15 +32,15 @@ Task entry and fictional assignments with planned starts, deadlines, start contr
 
 ## Course explorer
 
-National reference courses with filters, workload estimates, and comparison controls. Reference coverage varies by catalog.
+National reference courses with one-click comparison examples, selection controls, and a sticky comparison tray. Reference coverage varies by catalog.
 
-[![Course explorer: National reference courses with filters, workload estimates, and comparison controls. Reference coverage varies by catalog.](courses.png)](courses.png)
+[![Course explorer: National reference courses with one-click comparison examples, selection controls, and a sticky comparison tray. Reference coverage varies by catalog.](courses.png)](courses.png)
 
 ## Course comparison
 
-AP Chemistry and AP Biology references shown side by side. Up to three courses can be compared.
+AP Chemistry and AP Biology compared through shared and distinct prerequisites, pathway tags, workload labels, and grade listings. The evidence table can show only differences, and courses can be added directly to the plan.
 
-[![Course comparison: AP Chemistry and AP Biology references shown side by side. Up to three courses can be compared.](comparison.png)](comparison.png)
+[![Course comparison: AP Chemistry and AP Biology compared through shared and distinct prerequisites, pathway tags, workload labels, and grade listings. The evidence table can show only differences, and courses can be added directly to the plan.](comparison.png)](comparison.png)
 
 ## Four-year plan
 

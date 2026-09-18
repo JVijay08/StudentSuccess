@@ -7,6 +7,7 @@
   <title>Course-load planner | StudentSuccess</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/courses.css') }}">
   {% include '_accessibility_head.html' %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/comparison.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/nonpersonal.css') }}">
 </head>
 <body>
@@ -78,11 +79,12 @@
       <section class="results-panel">
         {% if state_code and catalog_id == 'national' %}<div class="catalog-note state-note">No verified local catalog is loaded for this state yet. Showing the national reference catalog instead.</div>{% endif %}
         <div class="results-heading"><div><span class="section-kicker">{{ courses|length }} MATCHES</span><h2>Courses to consider</h2></div><span class="micro-note">Compare up to three before planning</span></div>
+        <section class="compare-invitation" aria-labelledby="compare-invitation-title"><p class="section-kicker">BEFORE YOU COMMIT</p><h2 id="compare-invitation-title">What would choosing one change?</h2><p>Find the lighter workload, spot different prerequisites, and see which pathways overlap. Choose two or three courses, or try a comparison:</p><div class="example-pairs">{% for pair in comparison_examples %}<a href="{{ url_for('courses.course_compare', catalog=catalog_id, id=[pair[0].course_id, pair[1].course_id]) }}">{{ pair[0].course_name }} <span>vs.</span> {{ pair[1].course_name }} <span aria-hidden="true">&#8599;</span></a>{% else %}<p>Select courses below to explore their differences.</p>{% endfor %}</div></section>
         <form id="compare-form" method="get" action="{{ url_for('courses.course_compare') }}"><input type="hidden" name="catalog" value="{{ catalog_id }}"></form>
           <div class="course-grid">
             {% for course in courses %}
               <article class="course-card">
-                <div class="course-card-top"><span class="tag">{{ course.course_type }}</span><label class="compare-check"><input form="compare-form" type="checkbox" name="id" value="{{ course.course_id }}"> Compare</label></div>
+                <div class="course-card-top"><span class="tag">{{ course.course_type }}</span><label class="compare-check"><input form="compare-form" type="checkbox" name="id" value="{{ course.course_id }}" data-course-name="{{ course.course_name }}" aria-label="Compare {{ course.course_name }}"> Compare</label></div>
                 <h3><a href="{{ url_for('courses.course_detail', course_id=course.course_id, catalog=catalog_id) }}">{{ course.course_name }}</a></h3>
                 <p class="course-meta">{{ course.subject }} · grades {{ course.grade_levels|join(', ') }}</p>
                 <div class="metric-row"><span>{{ course.rigor_level }} academic depth</span><span>{{ course.workload_level }} time commitment</span></div>
@@ -95,11 +97,12 @@
               <div class="empty-state"><h3>No courses match those filters.</h3><p>Try widening the grade, subject, or workload selection.</p></div>
             {% endfor %}
           </div>
-          {% if courses %}<button class="compare-button" form="compare-form" type="submit">Compare selected courses</button>{% endif %}
+          {% if courses %}<div class="compare-tray"><div><strong id="compare-count" role="status" aria-live="polite">Choose two or three courses to compare</strong><div id="compare-selection"></div></div><button class="compare-button" form="compare-form" type="submit">Compare selected courses</button></div>{% endif %}
       </section>
     </section>
   </main>
   <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
   <script src="{{ url_for('static', filename='js/nonpersonal.js') }}" defer></script>
+  <script src="{{ url_for('static', filename='js/comparison.js') }}" defer></script>
 </body>
 </html>

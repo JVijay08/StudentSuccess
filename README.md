@@ -27,7 +27,7 @@ StudentSuccess helps high-school students plan a manageable course load and deci
 
 - **Choose what to start next.** See task recommendations with plain-language reasons based on deadlines, estimated effort, task ratings, and available start-history patterns.
 - **Turn deadlines into a starting plan.** Set planned start times, start and complete tasks, record actual duration, and review timing and estimation patterns. Recurring tasks and optional in-app reminders support ongoing work.
-- **Compare course options.** Search reference catalogs, inspect prerequisites, compare up to three courses, and build a four-year plan with workload estimates.
+- **Compare course options.** Try a suggested comparison or select up to three courses. See workload tradeoffs, shared and distinct prerequisites, pathway differences, and grade listings; filter to differences and add a choice directly to your four-year plan.
 - **Make the workspace easier to use.** Adjust themes, text size and spacing, reduced motion, focus mode, dashboard density, and visible cards.
 - **Keep control of your plan.** Export account data, download a calendar file, clear completed history, or delete your account.
 
