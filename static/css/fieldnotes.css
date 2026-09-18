@@ -147,6 +147,7 @@ main>header { padding-bottom:22px; border-bottom:1px solid var(--line); }
 .workspace-index a { padding:8px 0; border-bottom:1px solid var(--blue); color:var(--blue); font-size:.88rem; }
 .notebook-dashboard .focus-card { background:var(--white); color:var(--ink); border:1px solid var(--line); border-left:5px solid var(--blue); box-shadow:5px 5px 0 #243c340c; }
 .notebook-dashboard .focus-card .eyebrow { color:var(--blue); }
+.notebook-dashboard .focus-card > p:not(.eyebrow) { color:var(--muted); }
 .focus-annotation { font:italic 1rem Georgia,serif; color:var(--muted); }
 .notebook-dashboard .priority-list { gap:0; }
 .notebook-dashboard .priority-item { border-color:var(--line); padding:20px 0; }
