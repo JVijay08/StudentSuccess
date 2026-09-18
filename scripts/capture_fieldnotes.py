@@ -26,6 +26,9 @@ def main():
             errors = []
             page.on('pageerror', lambda error: errors.append(str(error)))
             page.goto(origin)
+            scene = page.locator('#desk-scene')
+            scene.hover(position={'x':100, 'y':100})
+            page.wait_for_function("document.querySelector('#desk-scene').style.getPropertyValue('--tilt-x') !== ''")
             assert not page.locator('#welcome-dialog').evaluate('(dialog) => dialog.open')
             page.get_by_role('button', name='How this works & privacy').click()
             assert page.locator('#welcome-dialog').evaluate('(dialog) => dialog.open')
@@ -36,6 +39,7 @@ def main():
             assert arrange.get_attribute('aria-pressed') == 'true'
             assert 'One assignment.' in page.locator('#desk-status').inner_text()
             page.emulate_media(reduced_motion='reduce')
+            page.wait_for_function("document.querySelector('#desk-scene').style.getPropertyValue('--tilt-x') === ''")
             assert float(page.locator('.note-assignment').evaluate('(el) => parseFloat(getComputedStyle(el).transitionDuration)')) < .01
             arrange.click()
             assert arrange.get_attribute('aria-pressed') == 'false'
@@ -79,6 +83,26 @@ def main():
             for theme in ['dark', 'high-contrast']:
                 page.evaluate('(theme) => document.documentElement.dataset.theme = theme', theme)
                 page.screenshot(path=str(destination/f'dashboard-{theme}.png'), full_page=True)
+            page.set_viewport_size({'width':1440,'height':1000})
+            page.goto(origin+'/settings')
+            sections = page.locator('.settings-form>section')
+            first, second = sections.nth(0).bounding_box(), sections.nth(1).bounding_box()
+            assert abs(first['y'] - second['y']) < 2 and second['x'] > first['x'] + first['width']
+            page.locator('[name="default_task_minutes"]').select_option('45')
+            page.evaluate('window.scrollTo(0, 600)')
+            save = page.get_by_role('button', name='Save all settings')
+            assert 0 <= save.bounding_box()['y'] < 1000
+            save.click()
+            page.wait_for_load_state('networkidle')
+            assert page.locator('[name="default_task_minutes"]').input_value() == '45'
+            page.goto(origin+'/dashboard')
+            logout = page.get_by_role('button', name='Log out')
+            assert logout.bounding_box()['y'] < 700
+            page.evaluate('window.scrollTo(0, document.body.scrollHeight)')
+            assert 0 <= logout.bounding_box()['y'] < 1000
+            logout.click()
+            page.wait_for_load_state('networkidle')
+            assert not page.url.endswith('/dashboard')
             assert not errors, errors
             browser.close()
         print('Desk interaction, keyboard activation, reduced motion, privacy dialog, task start persistence, and browser error checks passed. Captured 14 screenshots.')

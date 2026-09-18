@@ -27,12 +27,12 @@
           <a href="{{ url_for('profile.profile_view') }}">{% if g.current_user.access_credential %}Planning preferences{% else %}Student profile{% endif %}</a>
           <a href="{{ url_for('settings.settings') }}">Settings</a>
         </nav>
+        <form class="logout-form sidebar-logout" method="post" action="{{ url_for('auth.logout') }}">
+          <button type="submit" class="logout-button">Log out <span aria-hidden="true">&#8599;</span></button>
+        </form>
       </div>
       <div class="sidebar-footer">
         <p class="module-note">Your planned courses estimate overall workload. Your assignments determine what to work on next.</p>
-        <form class="logout-form" method="post" action="{{ url_for('auth.logout') }}">
-          <button type="submit" class="logout-button">Log out</button>
-        </form>
       </div>
     </aside>
 
