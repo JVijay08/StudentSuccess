@@ -39,6 +39,7 @@ def get_prioritized_tasks(tasks, now=None):
                 "task": task,
                 "score": risk["score"],
                 "reasons": risk["reasons"],
+                "factors": risk.get("factors", []),
             }
         )
 

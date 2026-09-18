@@ -15,6 +15,7 @@ from services import (
 )
 from services.auth_service import login_required
 from services.settings_service import get_or_create_settings
+from services.recommendation_explanations import explain_recommendations
 
 
 main_bp = Blueprint("main", __name__)
@@ -212,6 +213,7 @@ def dashboard():
             1 for task in all_tasks if task.status != "completed"
         )
         prioritized_tasks = suggestion_service.get_suggested_tasks(all_tasks)
+        explain_recommendations(prioritized_tasks, all_tasks)
         for row in prioritized_tasks:
             row["due_at_display"] = _format_local(
                 row["task"].due_at, settings, include_time=True

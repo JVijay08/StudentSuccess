@@ -94,6 +94,10 @@ def get_suggested_tasks(tasks, now=None):
                 "base_score": base_row["score"],
                 "bonus": bonus,
                 "reasons": reasons,
+                "factors": list(base_row["factors"]) + ([{
+                    "key": "history", "label": "Your start history", "points": bonus,
+                    "reason": reason, "short": "past starts suggest giving this more attention",
+                }] if bonus else []),
             }
         )
 

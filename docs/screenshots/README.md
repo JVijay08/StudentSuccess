@@ -2,7 +2,7 @@
 
 [Back to the project README](../../README.md)
 
-Captured September 17, 2026; course explorer and comparison refreshed September 18, 2026. Images are from the current application running locally with isolated fictional demo data. Desktop images are 1440 pixels wide; mobile images are 390 pixels wide. These captures show the design deployed at [StudentSuccess](https://studentsuccess.onrender.com/). Open any image at full size for detail.
+Captured September 17, 2026; course explorer, comparison, and dashboard views refreshed September 18, 2026. Images are from the current application running locally with isolated fictional demo data. Desktop images are 1440 pixels wide; mobile images are 390 pixels wide. These captures show the design deployed at [StudentSuccess](https://studentsuccess.onrender.com/). Open any image at full size for detail.
 
 Still images do not show motion: try the landing-page example on the live site to see the paper tilt, note arrangement, and paper-plane animation.
 
@@ -20,9 +20,9 @@ The example notes settle into a starting plan. Choose a problem set, essay, or e
 
 ## Dashboard
 
-One prominent next task with a direct Start button, expandable reasons, and separate summary cards. Desktop navigation and logout remain reachable while scrolling.
+A short explanation of the next task, a comparison with the runner-up, visible history context, and an expandable score breakdown. Start the task directly; desktop navigation and logout remain reachable while scrolling.
 
-[![Dashboard: One prominent next task with a direct Start button, expandable reasons, and separate summary cards. Desktop navigation and logout remain reachable while scrolling.](dashboard.png)](dashboard.png)
+[![Dashboard: A short explanation of the next task, a comparison with the runner-up, visible history context, and an expandable score breakdown. Start the task directly; desktop navigation and logout remain reachable while scrolling.](dashboard.png)](dashboard.png)
 
 ## Task planner
 

@@ -50,3 +50,13 @@
 @media(max-width:680px) { .settings-workspace main { width:calc(100% - 28px); } .settings-workspace .fields,.settings-workspace .account-grid { grid-template-columns:1fr; } .settings-toolbar { padding:10px; gap:10px; } .settings-toolbar>span { font-size:.9rem; } .settings-toolbar .primary { padding:10px; } .notebook-dashboard .grid>.card,.notebook-dashboard .grid>.card-tasks { padding:18px; } .notebook-dashboard .grid { gap:16px; } .notebook-dashboard .sidebar-logout { margin-top:12px; } }
 @media(prefers-reduced-motion:reduce) { .desk-scene .start-lab,.desk-scene.is-arranged .start-lab { transform:none; } }
 [data-motion="reduced"] .desk-scene .start-lab { transform:none; }
+/* Recommendation explanations keep the arithmetic available without leading with it. */
+.recommendation-context { grid-column:2; min-width:0; padding:12px 16px; border-left:2px solid var(--line); background:var(--paper); border-radius:0 6px 6px 0; }
+.notebook-dashboard .priority-item .recommendation-brief { color:var(--ink); line-height:1.6; }
+.notebook-dashboard .priority-item .recommendation-context p { line-height:1.6; margin:0; }
+.notebook-dashboard .priority-item .recommendation-context .history-explanation { margin-top:10px; font-size:.8rem; }
+.score-breakdown { margin:10px 0; padding:0; list-style:none; }
+.score-breakdown li { display:flex; justify-content:space-between; gap:16px; padding:8px 0; border-bottom:1px solid var(--line); font-size:.85rem; }
+.score-breakdown li strong { white-space:nowrap; }
+.priority-reasons .scoring-method { font-size:.8rem; }
+@media(max-width:680px) { .recommendation-context { padding:10px; } }

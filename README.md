@@ -19,7 +19,7 @@ StudentSuccess helps high-school students plan a manageable course load and deci
 ## The current workspace
 
 - **A notebook with depth.** Graph paper, layered paper edges, folded corners, soft shadows, and a paper-plane illustration. The landing-page example responds to pointer movement and lets you turn a large assignment into a small first step.
-- **A clearer next action.** Start the recommended task directly from the dashboard, expand its reasons, and review the rest of your workload in separate cards.
+- **A clearer next action.** See a short reason for each recommendation, why the top task comes before the next, and when recorded start history adds a priority nudge. Expand the point breakdown or start the task directly.
 - **Less scrolling.** Settings uses two columns on wide screens with a sticky Save button. Logout sits below dashboard navigation, and the desktop sidebar stays in view.
 - **Your preferred pace.** Light, dark, and high-contrast appearances; adjustable text, spacing, and focus; reduced-motion support; and expandable summaries on mobile.
 

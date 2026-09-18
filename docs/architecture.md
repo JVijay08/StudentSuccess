@@ -35,7 +35,7 @@ The optional `/planner` workspace stores its plan in browser localStorage. It do
 
 ## Recommendations
 
-Task priority starts with explicit deadline, effort, difficulty, interest, and start-status rules. History-aware suggestions can add a small bonus based on recorded starting patterns. The interface presents reasons alongside recommendations. These services do not use machine learning or an external AI service.
+Task priority starts with explicit deadline, effort, difficulty, interest, and start-status rules. History-aware suggestions can add a small bonus based on recorded starting patterns. The scorer returns the same point contributions used by the dashboard explanations. Each recommendation has a short reason; the leading task is compared with the runner-up, including explicit ties. History notes show the number of completed tasks with both start timestamps in the same group and distinguish insufficient history, no adjustment, and an applied bonus. An expandable breakdown shows all contributing points. These services do not use machine learning or an external AI service.
 
 
 ## Interface and screenshot checks
