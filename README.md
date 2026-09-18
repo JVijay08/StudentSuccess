@@ -14,7 +14,14 @@ StudentSuccess helps high-school students plan a manageable course load and deci
 
 ![StudentSuccess dashboard with a recommended next task](docs/screenshots/dashboard.png)
 
-[View all eight screenshots](docs/screenshots/README.md), including tasks, course comparisons, the four-year plan, settings, and the full mobile dashboard.
+[View all eleven screenshots](docs/screenshots/README.md), including the interactive example, tasks, course comparisons, the four-year plan, two-column settings, mobile views, and dark appearance.
+
+## The current workspace
+
+- **A notebook with depth.** Graph paper, layered paper edges, folded corners, soft shadows, and a paper-plane illustration. The landing-page example responds to pointer movement and lets you turn a large assignment into a small first step.
+- **A clearer next action.** Start the recommended task directly from the dashboard, expand its reasons, and review the rest of your workload in separate cards.
+- **Less scrolling.** Settings uses two columns on wide screens with a sticky Save button. Logout sits below dashboard navigation, and the desktop sidebar stays in view.
+- **Your preferred pace.** Light, dark, and high-contrast appearances; adjustable text, spacing, and focus; reduced-motion support; and expandable summaries on mobile.
 
 ## What you can do
 

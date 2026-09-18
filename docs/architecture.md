@@ -36,3 +36,23 @@ The optional `/planner` workspace stores its plan in browser localStorage. It do
 ## Recommendations
 
 Task priority starts with explicit deadline, effort, difficulty, interest, and start-status rules. History-aware suggestions can add a small bonus based on recorded starting patterns. The interface presents reasons alongside recommendations. These services do not use machine learning or an external AI service.
+
+
+## Interface and screenshot checks
+
+The shared template head loads the base styles, accessibility and mobile rules,
+then the notebook (`fieldnotes.css`) and paper-depth (`depth.css`) layers.
+`fieldnotes.js` handles the fictional landing-page exercise; it saves no user data.
+`depth.js` adds pointer-responsive perspective and one-time entrance effects,
+respecting operating-system and application reduced-motion preferences.
+`compact.js` keeps supporting sections expandable on small screens.
+
+The dashboard starts tasks through the existing authenticated POST route.
+Settings remains one form: its sticky Save button submits all sections, including
+those collapsed on mobile. The desktop sidebar stays within the viewport so
+navigation and logout remain reachable.
+
+`scripts/capture_fieldnotes.py` runs against an isolated in-memory database and
+captures desktop, mobile, and alternate-theme views. It also checks keyboard
+interaction, reduced motion, settings persistence, task starts, and logout.
+`scripts/check_mobile_layout.py --check` audits page widths and enlarged text.

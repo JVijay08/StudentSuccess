@@ -1,10 +1,10 @@
 # Privacy Notes
 
-StudentSuccess is a local academic-planning project. Its guiding rule is simple:
+StudentSuccess is an academic-planning prototype with a hosted demo and an optional browser-only workspace. Its guiding rule is simple:
 
 > Collect only information required by a visible, working feature.
 
-## Current local data
+## Current data handling
 
 ### Private-code accounts (default public entry point)
 
@@ -27,10 +27,11 @@ Compatibility profile fields use "Planner", a placeholder graduation year, and
 zero GPA values; these are not collected or inferred personal details. Only
 planning year and weekly study budget are exposed in the preferences form.
 
-The first-visit welcome dialog explains the prototype, code handling, server
-storage, and fictional demo. Dismissal is remembered in localStorage under
-`studentsuccess.welcome.v1`; the explanation can be reopened. It is not a formal
-consent mechanism. Existing username/password accounts remain usable.
+The on-demand **How this works & privacy** dialog explains the prototype,
+code handling, server storage, and fictional demo. It does not open automatically
+on arrival. Closing it records `studentsuccess.welcome.v1` in localStorage;
+the explanation can always be reopened. It is not a formal consent mechanism.
+Existing username/password accounts remain usable.
 
 ### Non-personal entry confirmation
 
