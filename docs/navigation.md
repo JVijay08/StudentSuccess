@@ -31,6 +31,17 @@ Course search text is kept out of navigation URLs. Up to three recent searches
 are held in the signed session, keyed by opaque IDs; expired searches invite the
 user to reapply filters. Search confirmation requirements remain in force.
 
+The browser planner's suggested task offers Start or View in progress. Saving or
+cancelling an edit returns focus to the corresponding task. Completion gives a
+nearby explanation of how to find/reopen completed work. Catalog comparison
+buttons toggle selection with visible pressed states and a comparison shortcut;
+adding a course reports its result inline and offers an explicit View my plan link.
+Comparison Back and Change selection retain the catalog and selected courses,
+including when the comparison was opened directly.
+Repeated completion of an already-completed task leaves its history and recurring
+successors intact. A stale Start button cannot silently reopen completed work.
+
 Verification: `tests/test_navigation.py`, the existing route suite,
 `scripts/check_navigation.py` (browser clicks, links, tabs, Back), and
 `scripts/check_mobile_layout.py --check` (responsive overflow).
+`scripts/check_browser_actions.py` exercises browser-only task and course actions.

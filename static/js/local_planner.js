@@ -113,7 +113,16 @@
     button.addEventListener("click", handler); return button;
   }
   function changeTask(id, changes) {
-    const next = copy(); Object.assign(next.tasks.find(t => t.id === id), changes); commit(next);
+    const next = copy(); Object.assign(next.tasks.find(t => t.id === id), changes);
+    if (commit(next)) {
+      $("task-action-status").textContent = changes.status === "completed" ? "Task completed. Turn on Show completed to find or reopen it." : "Task updated.";
+      focusTask(id);
+    }
+  }
+  function focusTask(id) {
+    const target = document.getElementById('browser-task-' + id) || $("tasks-heading");
+    target.focus();
+    target.scrollIntoView({block:"center", behavior:"instant"});
   }
   function resetForm() {
     editing = null; $("task-form").reset(); $("save-task").textContent = "Add task";
@@ -135,6 +144,15 @@
     $("next-heading").textContent = active[0]?.title || (state.tasks.length ? "All caught up." : "Add a task to find your next step.");
     $("next-reason").textContent = active[0] ? reason(active[0], now) : "Start with a deadline and a small estimate of the time you need.";
     $("progress").textContent = `${active.length} active · ${completed.length} completed`;
+    const nextTask = active[0];
+    $("next-actions").replaceChildren(action(
+      nextTask ? (nextTask.status === "not_started" ? "Start this task" : "View task in progress") : "Add a task",
+      () => {
+        if (!nextTask) { resetForm(); $("task-title").focus(); }
+        else if (nextTask.status === "not_started") changeTask(nextTask.id, {status:"in_progress", started:new Date().toISOString()});
+        else focusTask(nextTask.id);
+      }
+    ));
     $("completion-summary").textContent = state.tasks.length ? `${Math.round(completed.length/state.tasks.length*100)}% completed` : "No tasks yet";
     const started = state.tasks.filter(t => t.started && t.planned);
     $("delay-summary").textContent = started.length ? `Average start delay: ${Math.round(started.reduce((sum,t) => sum+(Date.parse(t.started)-Date.parse(t.planned))/60000,0)/started.length)} minutes (negative means early).` : "Start tasks to compare actual and planned start times.";
@@ -143,7 +161,7 @@
     const visible = $("show-completed").checked ? [...active, ...completed] : active;
     if (!visible.length) list.append(node("li", "No tasks here yet. Add one when you’re ready."));
     for (const t of visible) {
-      const li = document.createElement("li"); li.append(node("h3", t.title));
+      const li = document.createElement("li"); li.id = 'browser-task-' + t.id; li.tabIndex = -1; li.append(node("h3", t.title));
       li.append(node("p", `${t.subject ? t.subject + " · " : ""}Due ${format(t.due)} · ${t.minutes} min`));
       if (t.planned) li.append(node("p", `Planned start: ${format(t.planned)}`));
       li.append(node("p", t.status === "completed" ? "Completed" : reason(t, now)));
@@ -195,11 +213,12 @@
     if (!Number.isFinite(due.getTime()) || (planned && !Number.isFinite(planned.getTime()))) { tell("Enter valid dates."); return; }
     const next = copy();
     const fields = {title:$("task-title").value.trim(), subject:$("task-subject").value.trim(), due:due.toISOString(), planned:planned?.toISOString() || null, minutes:Number($("task-minutes").value), challenge:$("task-challenge").value, interest:$("task-interest").value};
+    const taskId = editing || uid();
     if (editing) Object.assign(next.tasks.find(t => t.id === editing), fields);
-    else next.tasks.push({id:uid(), ...fields, status:"not_started", started:null, completed:null});
-    if (commit(next)) resetForm();
+    else next.tasks.push({id:taskId, ...fields, status:"not_started", started:null, completed:null});
+    if (commit(next)) { resetForm(); focusTask(taskId); }
   });
-  $("cancel-edit").addEventListener("click", resetForm);
+  $("cancel-edit").addEventListener("click", () => { const taskId = editing; resetForm(); focusTask(taskId); });
   $("show-completed").addEventListener("change", render);
   $("budget-form").addEventListener("submit", event => {
     event.preventDefault(); const next = copy(); next.budget = Number($("budget").value); commit(next);
@@ -239,6 +258,17 @@
 
   let catalogs = [], filteredCourses = [], shownCourses = 36;
   const compared = new Map();
+  function refreshComparison() {
+    $("course-comparison").replaceChildren(...[...compared.values()].map(row => courseCard(row.course,row.catalog,true)));
+    $("comparison-status").textContent = `${compared.size} of 3 courses selected.`;
+    $("view-comparison").hidden = compared.size === 0;
+    $("view-comparison").textContent = `View comparison (${compared.size})`;
+    document.querySelectorAll('.compare-choice').forEach(button => {
+      const selected = compared.has(button.dataset.courseKey);
+      button.textContent = selected ? "Remove from comparison" : "Compare course";
+      button.setAttribute('aria-pressed', String(selected));
+    });
+  }
   function currentCatalog() { return catalogs.find(c => c.id === $("catalog-choice").value); }
   function courseCard(course, catalog, comparison = false) {
     const card = document.createElement("article");
@@ -249,15 +279,21 @@
     card.append(node("p", `Pathways: ${(course.career_clusters || []).join(", ") || "Core pathway"}`));
     card.append(node("p", `Graduation category: ${course.graduation_category || "Verify locally"}`));
     const key = catalog.id + ":" + course.course_id;
-    card.append(action(comparison ? "Remove from comparison" : "Compare course", () => {
-      if (comparison) compared.delete(key);
+    const compareButton = action(compared.has(key) ? "Remove from comparison" : "Compare course", () => {
+      if (compared.has(key)) compared.delete(key);
       else {
-        if (compared.size >= 3 && !compared.has(key)) { tell("Compare up to three courses at a time. Remove one to add another."); return; }
+        if (compared.size >= 3) { cardStatus.textContent = "Compare up to three courses. Remove one selection before adding another."; return; }
         compared.set(key, {course,catalog});
       }
-      $("course-comparison").replaceChildren(...[...compared.values()].map(row => courseCard(row.course,row.catalog,true)));
-      if (!comparison) tell("Course added to the comparison below the catalog.");
-    }));
+      refreshComparison();
+      if (comparison) $("browser-comparison").focus();
+      else cardStatus.textContent = compared.has(key) ? "Selected. Use View comparison above the results to review your choices." : "Removed from comparison.";
+    });
+    compareButton.classList.add('compare-choice');
+    compareButton.dataset.courseKey = key;
+    compareButton.setAttribute('aria-pressed', String(compared.has(key)));
+    card.append(compareButton);
+    const cardStatus = node("p", ""); cardStatus.setAttribute('role', 'status');
     const form = document.createElement("form");
     const yearLabel = node("label", "Add to planning year"); const year = document.createElement("select");
     for (const value of [9,10,11,12]) { const option = node("option",String(value)); option.value = String(value); year.append(option); }
@@ -268,10 +304,13 @@
     form.append(yearLabel, hoursLabel, save);
     form.addEventListener("submit", event => {
       event.preventDefault();
-      if (state.courses.some(c => c.catalog === catalog.id && c.courseId === course.course_id && c.year === Number(year.value))) { tell("That course is already planned for this year."); return; }
+      if (state.courses.some(c => c.catalog === catalog.id && c.courseId === course.course_id && c.year === Number(year.value))) { cardStatus.textContent = "That course is already planned for this year."; viewPlan.hidden = false; return; }
       const next = copy(); next.courses.push({id:uid(), title:course.course_name, hours:Number(hours.value), year:Number(year.value), catalog:catalog.id, courseId:course.course_id, depth:course.rigor_level, workload:course.workload_level});
-      if (commit(next)) tell("Course added to your four-year plan in this browser.");
-    }); card.append(form); return card;
+      if (commit(next)) { cardStatus.textContent = `Added to year ${year.value}. ${$("message").textContent}`; viewPlan.hidden = false; }
+      else cardStatus.textContent = $("message").textContent;
+    });
+    const viewPlan = node('a', 'View my four-year plan'); viewPlan.href = '#course-area'; viewPlan.hidden = true;
+    card.append(form, cardStatus, viewPlan); return card;
   }
   function showCatalogResults() {
     const catalog = currentCatalog(); if (!catalog) return;

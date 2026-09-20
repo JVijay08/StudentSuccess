@@ -117,7 +117,7 @@
                 {% include '_nonpersonal_confirmation.html' %}
                 <div class="form-footer">
                     <p>You can always update your preferences later in the settings.</p>
-                    <button type="submit">Save profile</button>
+                    <button type="submit">Save profile</button><a class="back-link" href="{{ nav_back_url() if g.current_user.profile else url_for('main.dashboard') }}">Cancel</a>
                 </div>
             </form>
         </section>

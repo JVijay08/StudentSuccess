@@ -280,6 +280,11 @@ def start_task(task_id):
     task = db.get_or_404(Task, task_id)
     if task.student_profile.user_id != g.current_user.id:
         abort(404)
+    if task.status == "completed":
+        message = "This task is already completed."
+        message += " Find the next recurring session in the task queue." if task.recurrence_rule else " Use Undo completion in the task queue if you need to reopen it."
+        flash(message, "warning")
+        return redirect(return_url("main.dashboard" if request.form.get("redirect_to") == "dashboard" else "tasks.tasks"))
     if task.started_at is None:
         task.started_at = datetime.now(timezone.utc)
     task.status = "in_progress"
@@ -336,6 +341,9 @@ def complete_task(task_id):
     task = db.get_or_404(Task, task_id)
     if task.student_profile.user_id != g.current_user.id:
         abort(404)
+    if task.status == "completed":
+        flash("This task is already completed.", "success")
+        return redirect(return_url("tasks.tasks"))
     actual_minutes_raw = request.form.get("actual_minutes", "").strip()
     if actual_minutes_raw:
         try:

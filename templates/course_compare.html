@@ -10,7 +10,8 @@
 <body>
   {% include '_accessibility_body.html' %}
   <main id="main-content" class="course-page comparison-page">
-    <header class="page-header"><div><p class="eyebrow">{{ catalog.label }} / THE TRADEOFFS</p><h1>What changes<br>with your choice?</h1><p class="lede">Actual differences in the catalog, explained before you add a course to your plan.</p></div><div class="header-actions"><a class="quiet-link" href="{{ nav_back_url('courses.course_explorer', catalog=catalog_id) }}">{{ nav_back_label('courses.course_explorer') }}</a><a class="quiet-link" href="{{ nav_ancestor('courses.course_explorer', selected=courses|map(attribute='course_id')|list) }}">Change selection</a><a class="button" href="{{ nav_url('courses.course_plan') }}">My plan</a></div></header>
+    {% set selection_url = nav_ancestor('courses.course_explorer', catalog=catalog_id, selected=courses|map(attribute='course_id')|list) %}
+    <header class="page-header"><div><p class="eyebrow">{{ catalog.label }} / THE TRADEOFFS</p><h1>What changes<br>with your choice?</h1><p class="lede">Actual differences in the catalog, explained before you add a course to your plan.</p></div><div class="header-actions"><a class="quiet-link" href="{{ selection_url if nav_back_label('courses.course_explorer') == 'Back to course explorer' else nav_back_url('courses.course_explorer', catalog=catalog_id) }}">{{ nav_back_label('courses.course_explorer') }}</a><a class="quiet-link" href="{{ selection_url }}">Change selection</a><a class="button" href="{{ nav_url('courses.course_plan') }}">My plan</a></div></header>
     {% with messages = get_flashed_messages(with_categories=true) %}{% if messages %}<div class="flash" role="status">{% for category,message in messages %}<p>{{ message }}</p>{% endfor %}</div>{% endif %}{% endwith %}
     {% if selection_message %}<p class="catalog-note" role="status">{{ selection_message }}</p>{% endif %}
     {% if comparison %}

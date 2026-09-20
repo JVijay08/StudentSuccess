@@ -50,7 +50,7 @@ def test_search_comparison_detail_and_add_preserve_context(authed_client):
     detail_url = link(comparison, "Full course details")
     detail = authed_client.get(detail_url)
     assert link(detail, "Back to comparison") == comparison_url
-    assert link(comparison, "Back to course explorer") == explorer_url
+    assert parse_qs(urlsplit(link(comparison, "Back to course explorer")).query)["view"] == parse_qs(urlsplit(explorer_url).query)["view"]
     form = fields(detail)
     form["school_year"] = "11"
     course_id = urlsplit(detail_url).path.split("/")[-1]
@@ -132,3 +132,34 @@ def test_settings_and_updates_are_secondary_workspace_controls(authed_client):
     assert 'class="utility-panel"' in dashboard
     assert 'href="/settings' in dashboard
     assert 'href="/updates' in dashboard
+
+
+def test_direct_comparison_change_selection_retains_catalog(authed_client):
+    complete_profile(authed_client)
+    response = authed_client.get('/courses/compare?catalog=ap&id=AP_CALCULUS_AB&id=AP_STATISTICS')
+    for label in ('Change selection', 'Back to course explorer'):
+        target = link(response, label)
+        assert parse_qs(urlsplit(target).query)['catalog'] == ['ap']
+
+
+def test_profile_cancel_returns_to_profile(authed_client):
+    complete_profile(authed_client)
+    profile = authed_client.get('/profile')
+    edit = authed_client.get(link(profile, 'Edit profile'))
+    assert link(edit, 'Cancel') == '/profile'
+
+
+def test_repeated_complete_and_stale_start_do_not_repeat_recurring_work(app, authed_client):
+    from models import Task
+    complete_profile(authed_client)
+    authed_client.post('/tasks', data=task_data(nonpersonal_confirmed='yes', recurrence_rule='daily'))
+    with app.app_context():
+        task_id = Task.query.filter_by(prep_for_id=None).one().id
+    assert authed_client.post(f'/tasks/{task_id}/complete', data={'actual_minutes': '35'}).status_code == 302
+    with app.app_context():
+        count = Task.query.count()
+    authed_client.post(f'/tasks/{task_id}/complete', data={'actual_minutes': '35'})
+    authed_client.post(f'/tasks/{task_id}/start')
+    with app.app_context():
+        assert Task.query.count() == count
+        assert app.extensions['sqlalchemy'].session.get(Task, task_id).status == 'completed'
