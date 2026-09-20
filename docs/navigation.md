@@ -6,6 +6,8 @@ remain explicit shortcuts. Direct/bookmarked pages have useful parent defaults.
 Settings and Updates live in a small gear menu in the upper-right corner of
 authenticated pages, outside the main sidebar links. The menu also offers logout
 and supports keyboard activation, Escape, and dismissal by clicking outside.
+Private-code planners reach Planning preferences through Settings, rather than
+the main sidebar. Back, Cancel, and Save return to Settings after editing.
 
 | Area | Expected action / return |
 | --- | --- |

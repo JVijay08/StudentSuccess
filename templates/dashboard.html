@@ -24,7 +24,7 @@
           <a class="active" href="{{ nav_url('main.dashboard') }}">Dashboard</a>
           <a href="{{ nav_url('tasks.tasks') }}">Tasks</a>
           <a href="{{ nav_url('courses.course_plan') }}">Course Load</a>
-          <a href="{{ nav_url('profile.profile_view') }}">{% if g.current_user.access_credential %}Planning preferences{% else %}Student profile{% endif %}</a>
+          {% if not g.current_user.access_credential %}<a href="{{ nav_url('profile.profile_view') }}">Student profile</a>{% endif %}
         </nav>
         <form class="logout-form sidebar-logout" method="post" action="{{ url_for('auth.logout') }}">{% include '_navigation_fields.html' %}
           <button type="submit" class="logout-button">Log out <span aria-hidden="true">&#8599;</span></button>
@@ -56,7 +56,7 @@
         </section>
       {% endif %}
 
-      {% if g.current_user.access_credential %}<div class="demo-banner" role="note"><strong>Your private-code planner.</strong> Use fictional details only. This workspace is saved on the server. Keep your code safe to return on another device. <a href="{{ nav_url('profile.onboarding') }}">Adjust sample planning preferences</a>.</div>{% endif %}
+      {% if g.current_user.access_credential %}<div class="demo-banner" role="note"><strong>Your private-code planner.</strong> Use fictional details only. This workspace is saved on the server. Keep your code safe to return on another device. Your planning year and study budget are in Settings.</div>{% endif %}
       <header>
         <p class="eyebrow">YOUR WORKING NOTEBOOK / TODAY</p>
         {% if profile %}
