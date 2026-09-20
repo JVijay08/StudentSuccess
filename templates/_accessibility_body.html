@@ -1,5 +1,18 @@
 <a class="skip-link" href="#main-content">Skip to main content</a>
 {% if session.get('user_id') %}
+<div class="workspace-tools">
+  <details id="workspace-tools">
+    <summary aria-label="Settings menu" title="Settings menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m9 3 1-1h4l1 1 .5 2 2 1 2-.5 1 1 2 3-.5 1.5-1.5 1v2l1.5 1 .5 1.5-2 3-1 1-2-.5-2 1-.5 2-1 1h-4l-1-1-.5-2-2-1-2 .5-1-1-2-3 .5-1.5 1.5-1v-2l-1.5-1L1 9.5l2-3 1-1 2 .5 2-1Z" transform="translate(1 0) scale(.9)"/><circle cx="12" cy="12" r="3.2"/></svg>
+    </summary>
+    <div class="utility-panel" role="group" aria-label="Workspace options">
+      <p>Workspace options</p>
+      <a href="{{ nav_url('settings.settings') }}">Settings <span>Appearance, preferences &amp; account</span></a>
+      <a href="{{ nav_url('main.updates') }}">Updates <span>What&apos;s changed</span></a>
+      <form method="post" action="{{ url_for('auth.logout') }}"><button type="submit">Log out</button></form>
+    </div>
+  </details>
+</div>
 <div class="session-warning" id="session-warning" role="alertdialog" aria-modal="true" aria-labelledby="session-warning-title" hidden>
   <strong id="session-warning-title">Your session will expire soon.</strong>
   <p>Extend it to keep working. Saved information will not be deleted.</p>

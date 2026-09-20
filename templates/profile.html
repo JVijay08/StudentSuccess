@@ -18,7 +18,7 @@
         <h1>{{ profile.first_name }}'s profile</h1>
         <p class="subheading">A read-only view of your academic and account details.</p>
       </div>
-      <a class="back-link" href="{{ url_for('main.dashboard') }}">Back to dashboard</a>
+      <a class="back-link" href="{{ nav_back_url('main.dashboard') }}">{{ nav_back_label('main.dashboard') }}</a>
     </header>
 
     <section class="card">
@@ -44,8 +44,8 @@
     </section>
 
     <div class="actions">
-      <a class="button" href="{{ url_for('profile.onboarding') }}">Edit profile</a>
-      <a class="button" href="{{ url_for('settings.settings') }}">Accessibility and settings</a>
+      <a class="button" href="{{ nav_url('profile.onboarding') }}">Edit profile</a>
+      <a class="button" href="{{ nav_url('settings.settings') }}">Accessibility and settings</a>
     </div>
   </main>
   <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>

@@ -9,6 +9,9 @@ from services.access_service import code_digest, create_code, matches_code, norm
 from services.auth_service import hash_password, login_required
 
 
+from services.navigation import return_url, safe_page
+
+
 access_bp = Blueprint("access", __name__)
 
 
@@ -49,7 +52,7 @@ def open_planner():
     if credential is None:
         return render_template("login.html", errors=["That private code was not recognized. Check your saved copy; codes are case-sensitive."], form_data={}), 400
     _sign_in(credential.user)
-    return redirect(url_for("main.dashboard"))
+    return redirect(safe_page(request.form.get("next")) or url_for("main.dashboard"))
 
 
 @access_bp.post("/access/replace")
@@ -59,7 +62,7 @@ def replace():
     credential = g.current_user.access_credential
     if not matches_code(request.form.get("access_code", ""), credential):
         flash("Enter your current private code to replace it.", "error")
-        return redirect(url_for("settings.settings"))
+        return redirect(return_url("settings.settings"))
     code = create_code()
     changed = AccessCredential.query.filter_by(
         id=credential.id, digest=credential.digest, version=credential.version,

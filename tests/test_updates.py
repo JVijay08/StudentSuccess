@@ -1,3 +1,4 @@
+import re
 import json
 import subprocess
 
@@ -34,4 +35,4 @@ def test_updates_public_and_titles_escaped(app, monkeypatch):
     assert response.status_code == 200
     assert b"&lt;script&gt;alert(1)&lt;/script&gt;" in response.data
     assert b"Revision aaaaaaa" in response.data
-    assert b'href="/updates"' in client.get("/").data
+    assert re.search(rb'href="/updates(?:\?[^"]*)?"', client.get('/').data)

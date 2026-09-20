@@ -1,3 +1,4 @@
+import re
 from unittest.mock import patch
 
 from extensions import db
@@ -35,13 +36,13 @@ def test_task_create_and_edit_require_fresh_confirmation(app):
 def test_catalog_keeps_filters_and_blocks_unconfirmed_free_text(app):
     client = app.test_client()
     create(client)
-    assert client.post("/courses", data={"subject":"Math", "course_type":"AP"}).status_code == 200
+    assert client.post("/courses", data={"subject":"Math", "course_type":"AP"}, follow_redirects=True).status_code == 200
     with patch("routes.course_routes.course_service.filter_courses", return_value=[]) as search:
         response = client.post("/courses", data={"q":"sample identifying text"})
         assert response.status_code == 400
         assert search.call_args.kwargs["query"] is None
         assert b"Confirm that these entries" in response.data
-    response = client.post("/courses", data={"q":"Calculus", "nonpersonal_confirmed":"yes"})
+    response = client.post("/courses", data={"q":"Calculus", "nonpersonal_confirmed":"yes"}, follow_redirects=True)
     assert response.status_code == 200
     assert b"Calculus" in response.data
     assert b"Biology" not in response.data
@@ -58,10 +59,10 @@ def test_full_workspace_retains_catalog_comparison_and_plan(app):
     create(client)
     dashboard = client.get("/dashboard", follow_redirects=True)
     assert b'class="focus-card"' in dashboard.data
-    assert b' href="/courses/plan">Course Load</a>' in dashboard.data
+    assert re.search(rb'href="/courses/plan(?:\?[^"]*)?">Course Load</a>', dashboard.data)
     assert b"Course catalog" not in dashboard.data
     plan = client.get("/courses/plan")
-    assert b'href="/courses">Explore Courses</a>' in plan.data
+    assert re.search(rb'href="/courses(?:\?[^"]*)?">Explore Courses</a>', plan.data)
     assert b"Browser-only planner" not in dashboard.data
     for path in ("/courses", "/courses/plan", "/courses/compare?id=SCI_AP_CHEMISTRY&id=SCI_AP_BIOLOGY", "/tasks", "/settings"):
         assert client.get(path).status_code == 200

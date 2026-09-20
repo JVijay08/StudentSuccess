@@ -18,8 +18,9 @@
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="shell browser-shell">
-    <aside class="sidebar"><div><a class="brand" href="{{ url_for('main.home') }}"><span class="brand-mark" aria-hidden="true">SS</span><span><strong>StudentSuccess</strong><small>Browser workspace</small></span></a><nav aria-label="Browser planner navigation"><a href="#overview">Dashboard</a><a href="#task-area">Tasks</a><a href="#catalog">Course catalog</a><a href="#course-area">Four-year plan</a><a href="#storage">Storage &amp; backups</a></nav></div><p>Saved on this browser. Separate from private-code accounts.</p></aside>
+    <aside class="sidebar"><div><a class="brand" href="{{ nav_url('main.home') }}"><span class="brand-mark" aria-hidden="true">SS</span><span><strong>StudentSuccess</strong><small>Browser workspace</small></span></a><nav aria-label="Browser planner navigation"><a href="#overview">Dashboard</a><a href="#task-area">Tasks</a><a href="#catalog">Course catalog</a><a href="#course-area">Four-year plan</a><a href="#storage">Storage &amp; backups</a></nav></div><p>Saved on this browser. Separate from private-code accounts.</p></aside>
     <main id="main-content">
+      <a class="back-link" href="{{ nav_back_url('auth.register') }}">{{ nav_back_label('auth.register') }}</a>
       <header id="overview"><p class="eyebrow">YOUR BROWSER WORKSPACE</p><h1>Plan less. Start sooner.</h1><p>Tasks, course catalogs, and a four-year plan?saved on this device. No account needed. Use fictional details only.</p></header>
       <noscript><p class="notice">Enable JavaScript to use this browser-saved planner. No plan information is sent to the server.</p></noscript>
       <p id="message" role="status" aria-live="polite"></p>
@@ -53,7 +54,7 @@
         <p id="workload" role="status"></p><ul id="courses" class="items"></ul><p class="hint">These are your estimates, not official course requirements. Confirm requirements with your school counselor.</p>
       </section>
       <section class="card" id="storage" aria-labelledby="storage-heading"><h2 id="storage-heading">Your browser. Your plan.</h2><p id="storage-state">Saved on this browser; not uploaded to StudentSuccess.</p><p>Anyone using this browser profile can access your plan. Clearing site data, using private browsing, or switching devices can mean losing access. Download a backup to keep a copy or move it to another device.</p><div class="actions"><button id="export" type="button">Download backup</button><label class="file-label" for="import">Restore backup<input id="import" type="file" accept=".json,application/json"></label><button id="clear" class="danger" type="button">Erase this browser's plan</button></div><p class="hint">Backups contain your task and course details. Keep them somewhere private. Restoring replaces the plan in this browser.</p>
-        <details><summary>What does the website receive?</summary><p>The server receives ordinary page, asset, and public catalog-bundle requests, which may appear in hosting logs. This planner does not upload task text, course details, or backups. There is no automatic sync. Existing account workspaces and the fictional demo use server storage and remain separate from this plan.</p><a href="{{ url_for('auth.login') }}">Open an existing account</a></details>
+        <details><summary>What does the website receive?</summary><p>The server receives ordinary page, asset, and public catalog-bundle requests, which may appear in hosting logs. This planner does not upload task text, course details, or backups. There is no automatic sync. Existing account workspaces and the fictional demo use server storage and remain separate from this plan.</p><a href="{{ nav_url('auth.login') }}">Open an existing account</a></details>
       </section>
     <footer>StudentSuccess · Plan less. Start sooner.</footer></main>
   </div>

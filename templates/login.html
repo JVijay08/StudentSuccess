@@ -24,7 +24,7 @@
                     <h1>Open your planner</h1>
                     <p class="subheading">Paste your private code to pick up where you left off.</p>
                 </div>
-                <a class="back-link" href="{{ url_for('main.home') }}">Back to home</a>
+                <a class="back-link" href="{{ nav_back_url('main.home') }}">{{ nav_back_label('main.home') }}</a>
             </div>
 
             <p class="privacy-line">Use fictional information only. Plans are saved on our server.</p>
@@ -40,16 +40,16 @@
             </div>
             {% endif %}
 
-            <form method="post" action="{{ url_for('access.open_planner') }}">
+            <form method="post" action="{{ url_for('access.open_planner') }}">{% include '_navigation_fields.html' %}<input type="hidden" name="next" value="{{ navigation_resume }}">
                 <input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}">
                 <label for="access-code">Private access code</label>
                 <input id="access-code" type="password" name="access_code" maxlength="80" required autocomplete="current-password" spellcheck="false" autocapitalize="none" placeholder="SS-…">
                 <div class="access-actions"><button class="password-toggle" type="button" data-password-toggle="access-code" aria-pressed="false">Show code</button><button class="access-primary" type="submit">Open with a code</button></div>
             </form>
-            <p>New here? <a href="{{ url_for('auth.register') }}">Create a private planner</a>.</p>
+            <p>New here? <a href="{{ nav_url('auth.register') }}">Create a private planner</a>.</p>
             <details class="access-help"><summary>Lost your code?</summary><p>We can't recover it. If you're still signed in on another device, export your data from Settings before signing out.</p></details>
             <details class="legacy-login" {% if errors and request.endpoint == 'auth.login' %}open{% endif %}><summary>Use an existing username and password</summary>
-            <form class="profile-form" method="post" action="{{ url_for('auth.login') }}">
+            <form class="profile-form" method="post" action="{{ url_for('auth.login') }}">{% include '_navigation_fields.html' %}<input type="hidden" name="next" value="{{ navigation_resume }}">
                 <div class="form-section">
                     <div class="form-group full-width">
                         <label for="username">Username</label>
@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <div class="form-footer">
-                    <p>Don't have an account? <a href="{{ url_for('auth.register') }}">Sign up</a></p>
+                    <p>Don't have an account? <a href="{{ nav_url('auth.register') }}">Sign up</a></p>
                     <button type="submit">Log In</button>
                 </div>
             </form>

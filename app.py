@@ -41,6 +41,8 @@ def create_app(test_config=None):
     app.register_blueprint(profile_bp)
     app.register_blueprint(settings_bp)
     app.register_blueprint(task_bp)
+    from services.navigation import template_context
+    app.context_processor(template_context)
 
     @app.context_processor
     def inject_ui_settings():

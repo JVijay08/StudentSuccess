@@ -19,7 +19,7 @@
         <h1>Edit task</h1>
         <p>Update the details below and save your changes.</p>
       </div>
-      <a href="{{ url_for('tasks.tasks') }}">Back to tasks</a>
+      <a href="{{ nav_back_url('tasks.tasks') }}">{{ nav_back_label('tasks.tasks') }}</a>
     </header>
 
     <section class="panel">
@@ -31,7 +31,7 @@
           </ul>
         </div>
       {% endif %}
-      <form method="post" data-nonpersonal-form action="{{ url_for('tasks.edit_task', task_id=task.id) }}">
+      <form method="post" data-nonpersonal-form action="{{ url_for('tasks.edit_task', task_id=task.id) }}">{% include '_navigation_fields.html' %}
         <div class="form-group">
           <label for="title">Title</label>
           <input type="text" id="title" name="title" data-nonpersonal-input maxlength="160" value="{{ form_data.get('title', '') }}" required>
@@ -87,7 +87,7 @@
         {% include '_nonpersonal_confirmation.html' %}
         <div class="actions">
           <button type="submit">Save changes</button>
-          <a href="{{ url_for('tasks.tasks') }}">Cancel</a>
+          <a href="{{ nav_back_url('tasks.tasks') }}">Cancel</a>
         </div>
       </form>
     </section>

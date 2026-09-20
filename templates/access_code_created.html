@@ -20,7 +20,7 @@
     <div class="access-actions"><button id="copy-code" type="button">Copy code</button><button id="download-code" type="button">Download code</button></div>
     <p id="code-status" role="status" aria-live="polite"></p>
     <p class="prototype-notice"><strong>Treat this like a password.</strong>Anyone who has it can read, change, or delete your planner. There is no email recovery. Don’t share it or put it in a link.</p>
-    <form method="get" action="{{ url_for('main.dashboard') }}"><label class="access-check"><input type="checkbox" required> I’ve saved my code somewhere safe.</label><button class="access-primary" type="submit">Continue to my planner</button></form>
+    <form method="get" action="{{ url_for('settings.settings') if replaced else url_for('main.dashboard') }}">{% if replaced %}<input type="hidden" name="nav" value="{{ navigation_token }}">{% endif %}<label class="access-check"><input type="checkbox" required> I’ve saved my code somewhere safe.</label><button class="access-primary" type="submit">{{ 'Return to settings' if replaced else 'Continue to my planner' }}</button></form>
     <noscript><p>Select the code above and copy it manually before continuing.</p></noscript>
   </section></main>
 </body>

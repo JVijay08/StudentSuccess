@@ -21,7 +21,7 @@
         <h1>{% if g.current_user.access_credential %}Your tasks{% else %}{{ profile.first_name }}'s tasks{% endif %}</h1>
         <p>Plan a start, record the real start, and keep risk explanations visible.</p>
       </div>
-      <a href="{{ url_for('main.dashboard') }}">Back to dashboard</a>
+      <a href="{{ nav_back_url('main.dashboard') }}">{{ nav_back_label('main.dashboard') }}</a>
     </header>
 
     {% with messages = get_flashed_messages(with_categories=true) %}
@@ -43,7 +43,7 @@
           </ul>
         </div>
       {% endif %}
-      <form method="post" id="task-form" data-nonpersonal-form data-start-buffer-days="{{ settings.start_buffer_days }}">
+      <form method="post" id="task-form" data-nonpersonal-form data-start-buffer-days="{{ settings.start_buffer_days }}">{% include '_navigation_fields.html' %}
         <label>Title
           <input name="title" data-nonpersonal-input maxlength="160" value="{{ form_data.get('title', '') }}" required>
         </label>
@@ -92,15 +92,16 @@
       </form>
     </section>
 
-    {% if settings.calendar_export_enabled %}<p><a href="{{ url_for('settings.export_calendar') }}">Download active tasks as a calendar</a></p>{% endif %}
+    {% if settings.calendar_export_enabled %}<p><a href="{{ nav_url('settings.export_calendar') }}">Download active tasks as a calendar</a></p>{% endif %}
 
-    <section class="task-list">
+    <section class="task-list" id="task-queue">
       <h2>Task queue</h2>
       {% if task_rows %}
         {% for row in task_rows %}
           {% set task = row.task %}
+          {% set navigation_anchor = 'task-' ~ task.id %}
           {% set level = "HIGH" if row.score >= 7 else "MEDIUM" if row.score >= 4 else "LOW" %}
-          <article class="task-card">
+          <article class="task-card" id="task-{{ task.id }}">
             <div>
               <p class="eyebrow risk-{{ level|lower }}">{{ level }} DEADLINE RISK</p>
               <h3>{{ task.title }}{% if task.recurrence_rule %} <small class="task-marker">(recurring)</small>{% endif %}{% if task.prep_for_id %} <small class="task-marker">(prep)</small>{% endif %}</h3>
@@ -112,24 +113,24 @@
             <div class="actions">
               <span>{{ task.status|replace("_", " ")|title }}</span>
               {% if task.status != "completed" %}
-                <a href="{{ url_for('tasks.edit_task', task_id=task.id) }}">Edit</a>
+                <a href="{{ nav_url('tasks.edit_task', task_id=task.id) }}">Edit</a>
               {% endif %}
               {% if task.status == "not_started" %}
-                <form method="post" action="{{ url_for('tasks.start_task', task_id=task.id) }}">
+                <form method="post" action="{{ url_for('tasks.start_task', task_id=task.id) }}">{% include '_navigation_fields.html' %}
                   <button type="submit">Start now</button>
                 </form>
               {% endif %}
               {% if task.status != "completed" %}
-                <form method="post" action="{{ url_for('tasks.complete_task', task_id=task.id) }}">
+                <form method="post" action="{{ url_for('tasks.complete_task', task_id=task.id) }}">{% include '_navigation_fields.html' %}
                   <label class="actual-time">Actual minutes<input type="number" name="actual_minutes" min="1" max="1440" value="{{ task.estimated_minutes }}" required></label>
                   <button class="secondary" type="submit">Complete</button>
                 </form>
               {% elif not task.recurrence_rule %}
-                <form method="post" action="{{ url_for('tasks.undo_complete_task', task_id=task.id) }}">
+                <form method="post" action="{{ url_for('tasks.undo_complete_task', task_id=task.id) }}">{% include '_navigation_fields.html' %}
                   <button class="secondary" type="submit">Undo completion</button>
                 </form>
               {% endif %}
-              <form method="post" action="{{ url_for('tasks.delete_task', task_id=task.id) }}">
+              <form method="post" action="{{ url_for('tasks.delete_task', task_id=task.id) }}">{% include '_navigation_fields.html' %}
                 <button class="secondary" type="submit" onclick="return confirm('Delete this task?')" aria-label="Delete {{ task.title }}">Delete</button>
               </form>
             </div>

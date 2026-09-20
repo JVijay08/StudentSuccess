@@ -1,3 +1,4 @@
+import re
 from models import StudentProfile, Task, User
 
 
@@ -18,7 +19,7 @@ def test_optional_browser_planner_works_without_creating_records(app):
 def test_home_offers_full_workspace_and_no_reduced_planner(app):
     response = app.test_client().get("/")
     assert b'Create a private planner' in response.data
-    assert b'href="/register"' in response.data
+    assert re.search(rb'href="/register(?:\?[^"]*)?"', response.data)
     assert b'href="/planner"' not in response.data
     assert b'full course catalog' in response.data
     assert b'workspaces save information on the server' in response.data
@@ -28,7 +29,7 @@ def test_home_offers_full_workspace_and_no_reduced_planner(app):
 def test_browser_option_is_only_offered_beneath_code_creation(app, authed_client):
     response = app.test_client().get("/register")
     assert b'Use the browser-only planner' in response.data
-    assert b'href="/planner"' in response.data
+    assert re.search(rb'href="/planner(?:\?[^"]*)?"', response.data)
     assert b'href="/planner"' not in authed_client.get("/dashboard").data
 
 

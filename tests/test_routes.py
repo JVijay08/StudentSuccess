@@ -1,3 +1,4 @@
+from urllib.parse import urlsplit
 from extensions import db
 from models import StudentProfile, Task, User
 from services.auth_service import SESSION_TIMEOUT_MINUTES
@@ -111,7 +112,7 @@ def test_authenticated_session_expires_after_inactivity(app, authed_client):
     response = authed_client.get("/dashboard")
 
     assert response.status_code == 302
-    assert response.headers["Location"].endswith("/login")
+    assert urlsplit(response.headers["Location"]).path == "/login"
 
 
 def test_onboarding_saves_and_updates_profile(app, authed_client):

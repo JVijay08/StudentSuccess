@@ -10,12 +10,12 @@
 <body class="settings-workspace">
   {% include '_accessibility_body.html' %}
   <main id="main-content">
-    <header><div><p class="eyebrow">STUDENTSUCCESS / SETTINGS</p><h1>Settings</h1><p>Adjust your workspace, accessibility, and account.</p></div><a href="{{ url_for('main.dashboard') }}">Back to dashboard</a></header>
+    <header><div><p class="eyebrow">STUDENTSUCCESS / SETTINGS</p><h1>Settings</h1><p>Adjust your workspace, accessibility, and account.</p></div><a href="{{ nav_back_url('main.dashboard') }}">{{ nav_back_label('main.dashboard') }}</a></header>
 
     {% with messages = get_flashed_messages(with_categories=true) %}{% if messages %}<div class="flash" role="status">{% for category,message in messages %}<p class="flash-{{ category }}">{{ message }}</p>{% endfor %}</div>{% endif %}{% endwith %}
 
     <div class="settings-toolbar"><span>Your workspace, your way.</span><button class="primary" type="submit" form="workspace-settings">Save all settings</button></div>
-    <form method="post" class="settings-form" id="workspace-settings">
+    <form method="post" class="settings-form" id="workspace-settings">{% include '_navigation_fields.html' %}
       <section><h2>Appearance</h2><p>Browser zoom and assistive technology continue to work with these preferences.</p><div class="fields">
         <label>Theme<select name="theme"><option value="light" {% if settings.theme in ('light', 'system') %}selected{% endif %}>Light</option><option value="dark" {% if settings.theme=='dark' %}selected{% endif %}>Dark</option><option value="high-contrast" {% if settings.theme=='high-contrast' %}selected{% endif %}>High contrast</option></select></label>
         <label>Text size<select name="text_scale">{% for size in [100,125,150,200] %}<option value="{{ size }}" {% if settings.text_scale==size %}selected{% endif %}>{{ size }}%</option>{% endfor %}</select></label>
@@ -44,7 +44,7 @@
         <label>Quiet hours start<input type="time" name="quiet_start" value="{{ settings.quiet_start }}"></label><label>Quiet hours end<input type="time" name="quiet_end" value="{{ settings.quiet_end }}"></label>
         <label>Snooze duration<select name="snooze_minutes">{% for minutes in [10,15,30,60,120,1440] %}<option value="{{ minutes }}" {% if settings.snooze_minutes==minutes %}selected{% endif %}>{% if minutes==1440 %}1 day{% else %}{{ minutes }} minutes{% endif %}</option>{% endfor %}</select></label>
         <label class="check"><input type="checkbox" name="calendar_export_enabled" {% if settings.calendar_export_enabled %}checked{% endif %}> Allow calendar export</label>
-      </div>{% if settings.calendar_export_enabled %}<a class="secondary-link" href="{{ url_for('settings.export_calendar') }}">Download active tasks as calendar</a>{% endif %}</section>
+      </div>{% if settings.calendar_export_enabled %}<a class="secondary-link" href="{{ nav_url('settings.export_calendar') }}">Download active tasks as calendar</a>{% endif %}</section>
 
       <section><h2>Date, time, and session</h2><div class="fields">
         <label>Time zone<select name="timezone_name">{% for zone in timezones %}<option value="{{ zone }}" {% if settings.timezone_name==zone %}selected{% endif %}>{{ zone }}</option>{% endfor %}</select></label>
@@ -58,14 +58,14 @@
     </form>
 
     <section class="account"><h2>Account and privacy</h2><div class="account-grid">
-      <article><h3>Export your data</h3><p>Download your profile, tasks, and course plan as JSON.</p><a class="secondary-link" href="{{ url_for('settings.export_data') }}">Download my data</a></article>
+      <article><h3>Export your data</h3><p>Download your profile, tasks, and course plan as JSON.</p><a class="secondary-link" href="{{ nav_url('settings.export_data') }}">Download my data</a></article>
       {% if g.current_user.access_credential %}
-      <article><h3>Replace private code</h3><p>Generate a new code if you think someone else has yours. The old code and other signed-in sessions will stop working. Save the new code before leaving.</p><form method="post" action="{{ url_for('access.replace') }}"><input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><label>Current private code<input type="password" name="access_code" maxlength="80" autocomplete="current-password" required></label><button type="submit">Replace private code</button></form></article>
+      <article><h3>Replace private code</h3><p>Generate a new code if you think someone else has yours. The old code and other signed-in sessions will stop working. Save the new code before leaving.</p><form method="post" action="{{ url_for('access.replace') }}">{% include '_navigation_fields.html' %}<input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><label>Current private code<input type="password" name="access_code" maxlength="80" autocomplete="current-password" required></label><button type="submit">Replace private code</button></form></article>
       {% else %}
-      <article><h3>Change password</h3><form method="post" action="{{ url_for('settings.change_password') }}"><label>Current password<input type="password" name="current_password" autocomplete="current-password"></label><label>New password<input type="password" name="new_password" minlength="8" autocomplete="new-password"></label><label class="check"><input type="checkbox" data-show-password> Show passwords</label><button type="submit">Change password</button></form></article>
+      <article><h3>Change password</h3><form method="post" action="{{ url_for('settings.change_password') }}">{% include '_navigation_fields.html' %}<label>Current password<input type="password" name="current_password" autocomplete="current-password"></label><label>New password<input type="password" name="new_password" minlength="8" autocomplete="new-password"></label><label class="check"><input type="checkbox" data-show-password> Show passwords</label><button type="submit">Change password</button></form></article>
       {% endif %}
-      <article><h3>Clear completed-task history</h3><p>Deletes completed tasks and their timing history. Active tasks remain.</p><form method="post" action="{{ url_for('settings.clear_history') }}" onsubmit="return confirm('Delete all completed-task history?')"><button class="danger" type="submit">Clear history</button></form></article>
-      <article><h3>Delete account</h3><p>Permanently deletes your account, profile, tasks, settings, and course plan.</p><form method="post" action="{{ url_for('settings.delete_account') }}" onsubmit="return confirm('Permanently delete this account and all of its data?')">{% if g.current_user.access_credential %}<input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><label>Current private code<input type="password" name="access_code" maxlength="80" autocomplete="current-password" required></label>{% elif not session.get('demo_mode') %}<label>Current password<input type="password" name="password" autocomplete="current-password" required></label>{% endif %}<button class="danger" type="submit">Delete account</button></form></article>
+      <article><h3>Clear completed-task history</h3><p>Deletes completed tasks and their timing history. Active tasks remain.</p><form method="post" action="{{ url_for('settings.clear_history') }}" onsubmit="return confirm('Delete all completed-task history?')">{% include '_navigation_fields.html' %}<button class="danger" type="submit">Clear history</button></form></article>
+      <article><h3>Delete account</h3><p>Permanently deletes your account, profile, tasks, settings, and course plan.</p><form method="post" action="{{ url_for('settings.delete_account') }}" onsubmit="return confirm('Permanently delete this account and all of its data?')">{% include '_navigation_fields.html' %}{% if g.current_user.access_credential %}<input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><label>Current private code<input type="password" name="access_code" maxlength="80" autocomplete="current-password" required></label>{% elif not session.get('demo_mode') %}<label>Current password<input type="password" name="password" autocomplete="current-password" required></label>{% endif %}<button class="danger" type="submit">Delete account</button></form></article>
     </div></section>
   </main>
   <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>

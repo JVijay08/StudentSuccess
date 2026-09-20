@@ -9,6 +9,7 @@ from services.auth_service import login_required
 from services.settings_service import get_or_create_settings
 from services.access_service import verify_csrf
 from services.privacy_service import confirmation_errors
+from services.navigation import back_url, same_page
 
 
 profile_bp = Blueprint("profile", __name__)
@@ -133,7 +134,7 @@ def onboarding():
 
         db.session.commit()
 
-        return redirect(url_for("main.dashboard"))
+        return redirect(back_url("main.dashboard"))
 
     existing_profile = StudentProfile.query.filter_by(user_id=g.current_user.id).first()
 
@@ -166,13 +167,13 @@ def onboarding():
 @login_required
 def profile_view():
     if g.current_user.access_credential is not None:
-        return redirect(url_for("profile.onboarding"))
+        return redirect(same_page("profile.onboarding"))
     profile = StudentProfile.query.filter_by(
         user_id=g.current_user.id
     ).first()
 
     if profile is None:
-        return redirect(url_for("profile.onboarding"))
+        return redirect(same_page("profile.onboarding"))
     settings = get_or_create_settings(g.current_user)
 
     created_at = g.current_user.created_at
@@ -213,5 +214,5 @@ def _planning_preferences():
             profile.grade = grade
             profile.study_hours_per_week = hours
             db.session.commit()
-            return redirect(url_for("main.dashboard"))
+            return redirect(back_url("main.dashboard"))
     return render_template("planning_preferences.html", profile=profile, errors=errors)

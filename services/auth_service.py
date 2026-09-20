@@ -1,7 +1,7 @@
 from datetime import datetime, timezone, timedelta
 from functools import wraps
 
-from flask import session, g, redirect, url_for
+from flask import request, session, g, redirect, url_for
 from werkzeug.security import generate_password_hash, check_password_hash as _check_hash
 
 from extensions import db
@@ -41,17 +41,17 @@ def login_required(f):
         # No user_id in session — not logged in
         if user_id is None:
             session.clear()
-            return redirect(url_for("auth.login"))
+            return redirect(url_for("auth.login", next=request.full_path.rstrip("?")))
 
         # Validate the user_id corresponds to a real user before loading preferences.
         user = db.session.get(User, user_id)
         if user is None:
             session.clear()
-            return redirect(url_for("auth.login"))
+            return redirect(url_for("auth.login", next=request.full_path.rstrip("?")))
 
         if user.access_credential is not None and session.get("access_version") != user.access_credential.version:
             session.clear()
-            return redirect(url_for("auth.login"))
+            return redirect(url_for("auth.login", next=request.full_path.rstrip("?")))
 
         timeout_minutes = (
             user.settings.session_timeout_minutes
@@ -70,11 +70,11 @@ def login_required(f):
                 elapsed = datetime.now(timezone.utc) - last_active
                 if elapsed > timedelta(minutes=timeout_minutes):
                     session.clear()
-                    return redirect(url_for("auth.login"))
+                    return redirect(url_for("auth.login", next=request.full_path.rstrip("?")))
             except (ValueError, TypeError):
                 # Malformed timestamp — treat as expired
                 session.clear()
-                return redirect(url_for("auth.login"))
+                return redirect(url_for("auth.login", next=request.full_path.rstrip("?")))
 
         # All checks passed — attach user to request context and refresh timestamp
         g.current_user = user

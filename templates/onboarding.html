@@ -21,9 +21,9 @@
                     <h1>Build Your Academic Starting Point</h1>
                     <p class="subheading">Use fictional details to explore workload guidance and task recommendations. Do not enter actual school records. This prototype currently supports U.S. high-school students in grades 9–12.</p>
                 </div>
-                <a class="back-link" href="{{ url_for('main.dashboard') }}">Back to dashboard</a>
+                <a class="back-link" href="{{ nav_back_url('main.dashboard') if g.current_user.profile else url_for('main.dashboard') }}">{{ nav_back_label('main.dashboard') if g.current_user.profile else 'Back to dashboard' }}</a>
             </div>
-            <form class="profile-form" data-nonpersonal-form method="post" action="{{ url_for('profile.onboarding') }}">
+            <form class="profile-form" data-nonpersonal-form method="post" action="{{ url_for('profile.onboarding') }}">{% include '_navigation_fields.html' %}
                 {% if errors %}
     <div class="form-errors" role="alert">
         <h2>Please correct the following:</h2>
@@ -117,7 +117,7 @@
                 {% include '_nonpersonal_confirmation.html' %}
                 <div class="form-footer">
                     <p>You can always update your preferences later in the settings.</p>
-                    <button type="submit">Submit</button>
+                    <button type="submit">Save profile</button>
                 </div>
             </form>
         </section>

@@ -22,6 +22,9 @@ from services.settings_service import get_or_create_settings
 from services.access_service import matches_code, verify_csrf
 
 
+from services.navigation import return_url
+
+
 settings_bp = Blueprint("settings", __name__)
 
 THEMES = {"system", "light", "dark", "high-contrast"}
@@ -86,7 +89,7 @@ def settings():
         preferences.session_timeout_minutes = _integer_choice(request.form, "session_timeout_minutes", SESSION_TIMEOUTS, preferences.session_timeout_minutes)
         db.session.commit()
         flash("Settings saved.", "success")
-        return redirect(url_for("settings.settings"))
+        return redirect(return_url("settings.settings"))
 
     return render_template(
         "settings.html",
@@ -101,10 +104,10 @@ def settings():
 def change_password():
     if g.current_user.access_credential is not None:
         flash("Use Replace private code to change access to this planner.", "warning")
-        return redirect(url_for("settings.settings"))
+        return redirect(return_url("settings.settings"))
     if session.get("demo_mode"):
         flash("The fictional demo account does not have a reusable password.", "warning")
-        return redirect(url_for("settings.settings"))
+        return redirect(return_url("settings.settings"))
     current = request.form.get("current_password", "")
     new = request.form.get("new_password", "")
     if not check_password(current, g.current_user.password_hash):
@@ -115,7 +118,7 @@ def change_password():
         g.current_user.password_hash = hash_password(new)
         db.session.commit()
         flash("Password changed.", "success")
-    return redirect(url_for("settings.settings"))
+    return redirect(return_url("settings.settings"))
 
 
 @settings_bp.post("/session/extend")
@@ -222,7 +225,7 @@ def clear_history():
             db.session.delete(task)
         db.session.commit()
     flash("Completed-task history cleared.", "success")
-    return redirect(url_for("settings.settings"))
+    return redirect(return_url("settings.settings"))
 
 
 @settings_bp.post("/settings/delete-account")
@@ -233,10 +236,10 @@ def delete_account():
         verify_csrf()
         if not matches_code(request.form.get("access_code", ""), g.current_user.access_credential):
             flash("Enter your current private code to delete this planner.", "error")
-            return redirect(url_for("settings.settings"))
+            return redirect(return_url("settings.settings"))
     elif not session.get("demo_mode") and not check_password(password, g.current_user.password_hash):
         flash("Enter your current password to delete the account.", "error")
-        return redirect(url_for("settings.settings"))
+        return redirect(return_url("settings.settings"))
     user = g.current_user
     session.clear()
     db.session.delete(user)

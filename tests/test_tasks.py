@@ -1,3 +1,4 @@
+from urllib.parse import urlsplit
 from datetime import datetime, timedelta, timezone
 from types import SimpleNamespace
 
@@ -158,7 +159,7 @@ def test_tasks_redirects_to_onboarding_without_profile(authed_client):
     response = authed_client.get("/tasks")
 
     assert response.status_code == 302
-    assert response.headers["Location"].endswith("/onboarding")
+    assert urlsplit(response.headers["Location"]).path == "/onboarding"
 
 
 def test_rule_based_risk_is_high_and_explainable():

@@ -1,3 +1,4 @@
+from urllib.parse import urlsplit
 from datetime import datetime, timedelta, timezone
 
 from extensions import db
@@ -471,5 +472,5 @@ def test_dashboard_estimate_accuracy_unauthenticated_redirects(app):
     response = client.get("/dashboard")
 
     assert response.status_code == 302
-    assert response.headers["Location"].endswith("/login")
+    assert urlsplit(response.headers["Location"]).path == "/login"
     assert b"ESTIMATE ACCURACY" not in response.data

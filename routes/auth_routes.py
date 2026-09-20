@@ -1,3 +1,4 @@
+from services.navigation import safe_page
 from datetime import datetime, timedelta, timezone
 import secrets
 
@@ -152,7 +153,7 @@ def login():
             session.permanent = True
             session["_last_active"] = datetime.now(timezone.utc).isoformat()
 
-            return redirect(url_for("main.dashboard"))
+            return redirect(safe_page(request.form.get("next")) or url_for("main.dashboard"))
 
     return render_template(
         "login.html",

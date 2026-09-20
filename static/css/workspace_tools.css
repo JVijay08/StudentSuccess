@@ -1,0 +1,16 @@
+/* Secondary controls stay separate from the planning navigation. */
+.workspace-tools { position:fixed; top:12px; right:16px; z-index:40; color:var(--ink); }
+.workspace-tools summary { display:flex; align-items:center; justify-content:center; box-sizing:border-box; width:44px; height:44px; padding:0; border:1px solid var(--line); border-radius:50%; background:var(--white); color:var(--ink); cursor:pointer; list-style:none; box-shadow:0 2px 5px #00000012; }
+.workspace-tools summary::-webkit-details-marker { display:none; }
+.workspace-tools summary:hover,.workspace-tools details[open]>summary { border-color:var(--ink); }
+.workspace-tools svg { flex:none; }
+.workspace-tools .utility-panel { position:absolute; right:0; top:54px; box-sizing:border-box; width:min(19rem,calc(100vw - 32px)); max-height:calc(100dvh - 90px); overflow:auto; padding:16px; background:var(--white); border:1px solid var(--line); border-radius:8px; box-shadow:4px 6px 0 var(--line); }
+.workspace-tools .utility-panel>p { margin:0 0 10px; color:var(--muted); font-size:.8rem; }
+.workspace-tools .utility-panel a { display:block; padding:12px 4px; border-bottom:1px solid var(--line); color:var(--ink); text-decoration:none; font-size:1rem; font-weight:700; overflow-wrap:anywhere; }
+.workspace-tools .utility-panel a:hover { text-decoration:underline; text-underline-offset:4px; }
+.workspace-tools .utility-panel a span { display:block; margin-top:5px; color:var(--muted); font-size:.8rem; font-weight:400; line-height:1.4; }
+.workspace-tools form { margin:12px 0 0; }
+.workspace-tools button { width:100%; padding:10px; color:var(--ink); background:var(--paper); border:1px solid var(--line); border-radius:4px; font:inherit; cursor:pointer; }
+body:has(.workspace-tools) main>header { padding-right:56px; }
+body:has(.workspace-tools) .planner-clock { margin-right:56px; }
+@media(max-width:680px) { .workspace-tools { right:12px; } }

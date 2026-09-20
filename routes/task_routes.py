@@ -1,4 +1,4 @@
-﻿from datetime import datetime, timezone
+from datetime import datetime, timezone
 
 from flask import (
     Blueprint,
@@ -23,6 +23,7 @@ from services import (
 from services.auth_service import login_required
 from services.settings_service import get_or_create_settings
 from services.privacy_service import confirmation_errors
+from services.navigation import return_url, back_url, nav_url
 
 
 def _flash_realism_warning(profile, task):
@@ -142,7 +143,7 @@ task_bp = Blueprint("tasks", __name__)
 def tasks():
     profile = StudentProfile.query.filter_by(user_id=g.current_user.id).first()
     if profile is None:
-        return redirect(url_for("profile.onboarding"))
+        return redirect(nav_url("profile.onboarding"))
     settings = get_or_create_settings(g.current_user)
 
     errors = []
@@ -177,7 +178,10 @@ def tasks():
             if settings.suggest_breakdown and task.estimated_minutes > settings.work_session_minutes:
                 sessions = (task.estimated_minutes + settings.work_session_minutes - 1) // settings.work_session_minutes
                 flash(f"Consider splitting this into {sessions} sessions of about {settings.work_session_minutes} minutes.", "warning")
-            return redirect(url_for("tasks.tasks"))
+            if request.form.get("_return_to"):
+                flash("Task added to your queue.", "success")
+                return redirect(return_url("tasks.tasks").split("#", 1)[0] + f"#task-{task.id}")
+            return redirect(return_url("tasks.tasks"))
 
     task_list = Task.query.filter_by(student_profile_id=profile.id).order_by(
         Task.due_at
@@ -227,7 +231,8 @@ def edit_task(task_id):
             task.reminder_enabled = cleaned["reminder_enabled"]
             db.session.commit()
             _flash_realism_warning(task.student_profile, task)
-            return redirect(url_for("tasks.tasks"))
+            flash("Task changes saved.", "success")
+            return redirect(back_url("tasks.tasks"))
 
     if request.method == "POST":
         # Preserve the user's submitted edits when re-rendering with errors.
@@ -280,8 +285,8 @@ def start_task(task_id):
     task.status = "in_progress"
     db.session.commit()
     if request.form.get("redirect_to") == "dashboard":
-        return redirect(url_for("main.dashboard"))
-    return redirect(url_for("tasks.tasks"))
+        return redirect(return_url("main.dashboard"))
+    return redirect(return_url("tasks.tasks"))
 
 
 @task_bp.post("/tasks/<int:task_id>/reschedule")
@@ -293,19 +298,19 @@ def reschedule_task(task_id):
     raw = request.form.get("planned_start_at", "").strip()
     if not raw:
         flash("Enter a new planned start date and time to reschedule.", "error")
-        return redirect(url_for("main.dashboard"))
+        return redirect(return_url("main.dashboard"))
     try:
         settings = get_or_create_settings(g.current_user)
         new_planned = datetime_util.to_utc(raw, settings.timezone_name)
     except ValueError:
         flash("Enter a valid planned start date and time.", "error")
-        return redirect(url_for("main.dashboard"))
+        return redirect(return_url("main.dashboard"))
     if new_planned <= datetime.now(timezone.utc):
         flash("Pick a planned start in the future.", "warning")
-        return redirect(url_for("main.dashboard"))
+        return redirect(return_url("main.dashboard"))
     task.planned_start_at = new_planned
     db.session.commit()
-    return redirect(url_for("main.dashboard"))
+    return redirect(return_url("main.dashboard"))
 
 
 @task_bp.post("/tasks/<int:task_id>/snooze-reminder")
@@ -322,7 +327,7 @@ def snooze_reminder(task_id):
     )
     db.session.commit()
     flash(f"Reminder snoozed for {settings.snooze_minutes} minutes.", "success")
-    return redirect(url_for("main.dashboard"))
+    return redirect(return_url("main.dashboard"))
 
 
 @task_bp.post("/tasks/<int:task_id>/complete")
@@ -339,7 +344,7 @@ def complete_task(task_id):
             actual_minutes = 0
         if actual_minutes < 1 or actual_minutes > 1440:
             flash("Actual time must be between 1 and 1440 minutes.", "error")
-            return redirect(url_for("tasks.tasks"))
+            return redirect(return_url("tasks.tasks"))
         task.actual_minutes = actual_minutes
     now = datetime.now(timezone.utc)
     if task.started_at is None:
@@ -361,7 +366,7 @@ def complete_task(task_id):
         )
         db.session.add(prep)
         db.session.commit()
-    return redirect(url_for("tasks.tasks"))
+    return redirect(return_url("tasks.tasks"))
 
 
 @task_bp.post("/tasks/<int:task_id>/undo-complete")
@@ -372,16 +377,16 @@ def undo_complete_task(task_id):
         abort(404)
     if task.status != "completed":
         flash("That task is not completed.", "warning")
-        return redirect(url_for("tasks.tasks"))
+        return redirect(return_url("tasks.tasks"))
     if task.recurrence_rule is not None:
         flash("Recurring completions cannot be undone because the next session was already created.", "warning")
-        return redirect(url_for("tasks.tasks"))
+        return redirect(return_url("tasks.tasks"))
     task.status = "in_progress" if task.started_at is not None else "not_started"
     task.completed_at = None
     task.actual_minutes = None
     db.session.commit()
     flash("Completion undone. You can correct the task and complete it again.", "success")
-    return redirect(url_for("tasks.tasks"))
+    return redirect(return_url("tasks.tasks"))
 
 
 @task_bp.post("/tasks/<int:task_id>/delete")
@@ -398,4 +403,7 @@ def delete_task(task_id):
             db.session.delete(prep)
     db.session.delete(task)
     db.session.commit()
-    return redirect(url_for("tasks.tasks"))
+    if request.form.get("_return_to"):
+        flash("Task deleted.", "success")
+        return redirect(return_url("tasks.tasks").split("#", 1)[0] + "#task-queue")
+    return redirect(return_url("tasks.tasks"))

@@ -1,6 +1,9 @@
 from collections import defaultdict
 
-from flask import Blueprint, abort, flash, g, redirect, render_template, request, url_for
+from flask import Blueprint, abort, flash, g, redirect, render_template, request, session, url_for
+from secrets import token_hex
+from werkzeug.datastructures import MultiDict
+from services.navigation import nav_url, same_page, return_url, safe_page
 
 from extensions import db
 from models import PlannedCourse, StudentProfile
@@ -16,7 +19,7 @@ course_bp = Blueprint("courses", __name__)
 def _profile_or_redirect():
     profile = StudentProfile.query.filter_by(user_id=g.current_user.id).first()
     if profile is None:
-        return None, redirect(url_for("profile.onboarding"))
+        return None, redirect(nav_url("profile.onboarding"))
     return profile, None
 
 
@@ -92,6 +95,22 @@ def course_explorer():
     privacy_errors = confirmation_errors(submitted) if query else []
     for error in privacy_errors:
         flash(error, "error")
+    if request.method == "POST" and not privacy_errors:
+        # Restore searches through an opaque key, without putting free text in URLs.
+        keys = ("q", "state", "catalog", "grade", "subject", "course_type", "rigor", "workload", "career")
+        snapshots = session.get("course_searches", [])[-2:]
+        key = token_hex(8)
+        snapshots.append({"key": key, "filters": {name: submitted.get(name, "")[:120 if name == "q" else 60] for name in keys if submitted.get(name)}})
+        session["course_searches"] = snapshots
+        return redirect(same_page("courses.course_explorer", view=key))
+    if request.method == "GET" and request.args.get("view"):
+        saved = next((item["filters"] for item in session.get("course_searches", []) if item["key"] == request.args["view"]), None)
+        if saved is not None:
+            submitted = MultiDict(saved)
+            query = submitted.get("q", "")
+            privacy_errors = []
+        else:
+            flash("This saved search has expired. Apply your filters again.", "warning")
     catalog_id, state_code = _catalog_selection(submitted)
     filters = {
         "query": query if query and not privacy_errors else None,
@@ -161,7 +180,7 @@ def add_to_plan(course_id):
     school_year = request.form.get("school_year", type=int)
     if school_year not in {9, 10, 11, 12}:
         flash("Choose a grade year from 9th through 12th.", "error")
-        return redirect(request.referrer or url_for("courses.course_explorer"))
+        return redirect(return_url("courses.course_explorer", catalog=catalog_id))
 
     term = request.form.get("term", "Full year").strip() or "Full year"
     status = request.form.get("status", "considering").strip().lower()
@@ -191,9 +210,11 @@ def add_to_plan(course_id):
         flash("That course is already planned for that grade year.", "warning")
 
     comparison_ids = list(dict.fromkeys(request.form.getlist("comparison_id")))[:3]
+    if safe_page(request.form.get("_return_to")):
+        return redirect(return_url("courses.course_plan"))
     if course_id in comparison_ids and len(comparison_ids) >= 2:
         return redirect(url_for("courses.course_compare", catalog=catalog_id, id=comparison_ids))
-    return redirect(request.referrer or url_for("courses.course_plan"))
+    return redirect(return_url("courses.course_plan"))
 
 
 @course_bp.post("/courses/plan/<int:planned_course_id>/delete")
@@ -206,7 +227,7 @@ def remove_from_plan(planned_course_id):
     planned = db.session.get(PlannedCourse, planned_course_id)
     if planned is None:
         flash("That course was already removed from your plan.", "warning")
-        return redirect(url_for("courses.course_plan"))
+        return redirect(return_url("courses.course_plan"))
 
     if planned.student_profile_id != profile.id:
         abort(404)
@@ -214,7 +235,7 @@ def remove_from_plan(planned_course_id):
     db.session.delete(planned)
     db.session.commit()
     flash("Course removed from your plan.", "success")
-    return redirect(url_for("courses.course_plan"))
+    return redirect(return_url("courses.course_plan"))
 
 
 @course_bp.get("/courses/plan")
