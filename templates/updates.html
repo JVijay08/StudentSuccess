@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentSuccess | Updates</title>
+  {% include '_accessibility_head.html' %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/updates.css') }}">
+</head>
+<body class="updates-page">
+  {% include '_accessibility_body.html' %}
+  <main id="main-content" class="updates-notebook">
+    <nav aria-label="Return navigation"><a href="{{ url_for('main.home') }}">&larr; {{ 'Back to dashboard' if session.get('user_id') else 'StudentSuccess' }}</a></nav>
+    <header>
+      <p class="eyebrow">THE NOTEBOOK / CHANGELOG</p>
+      <h1>A little better,<br>one update at a time.</h1>
+      <p>Features, fixes, and the work behind them. The complete project history, newest first, using the original commit titles.</p>
+    </header>
+    <div class="update-search" hidden>
+      <label for="update-query">Find an update</label>
+      <input id="update-query" type="search" placeholder="Try tasks, courses, or settings" autocomplete="off">
+      <p id="update-count" role="status" aria-live="polite">{{ updates|length }} updates</p>
+    </div>
+    <div id="update-history">
+      {% for day in updates|groupby('date')|reverse %}
+      <section class="update-day" aria-labelledby="day-{{ day.grouper }}">
+        <h2 id="day-{{ day.grouper }}"><time datetime="{{ day.grouper }}">{{ day.grouper }}</time></h2>
+        <ol>
+          {% for update in day.list %}
+          <li class="update-entry"><p>{{ update.title }}</p><small>Revision {{ update.hash[:7] }}</small></li>
+          {% endfor %}
+        </ol>
+      </section>
+      {% else %}<p>No updates have been recorded yet.</p>{% endfor %}
+    </div>
+    <p id="no-updates" hidden>No matching updates. Try a different word or clear the search.</p>
+    <footer><a href="#main-content">Back to top &uarr;</a></footer>
+  </main>
+  <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/updates.js') }}" defer></script>
+</body>
+</html>

@@ -1,0 +1,356 @@
+[
+  {
+    "hash": "affd98bab5101ebfcb204e5317734ff7cb6409d3",
+    "timestamp": 1789765207,
+    "date": "2026-09-18",
+    "title": "Fix dashboard empty-state text contrast on paper backgrounds"
+  },
+  {
+    "hash": "1bd6fdc37d4cc377aee76c50766f9a05f76b8b56",
+    "timestamp": 1789764734,
+    "date": "2026-09-18",
+    "title": "Explain task recommendations with comparisons and visible history context"
+  },
+  {
+    "hash": "acb6ac92d7ca7a812b5b92b7cd3810db8717753f",
+    "timestamp": 1789706860,
+    "date": "2026-09-18",
+    "title": "Explain course tradeoffs and make comparisons easy to discover and act on"
+  },
+  {
+    "hash": "a943c29ca4c510d14113d5e96d1ad2844e28695e",
+    "timestamp": 1789690423,
+    "date": "2026-09-17",
+    "title": "Refresh product documentation and screenshot gallery for the current UI"
+  },
+  {
+    "hash": "4083b5193c4e7247fd697a89497d45620022fda9",
+    "timestamp": 1789689966,
+    "date": "2026-09-17",
+    "title": "Add paper depth and motion, restore cards, and streamline settings and logout"
+  },
+  {
+    "hash": "42b45886a6c65f433500027d0c8088811de5fa7b",
+    "timestamp": 1789688489,
+    "date": "2026-09-17",
+    "title": "Build an interactive sketchbook experience and refresh product screenshots"
+  },
+  {
+    "hash": "e88084d3b0abdb92487669ff4a030e7447c2601b",
+    "timestamp": 1789624987,
+    "date": "2026-09-17",
+    "title": "Remove county name from public course catalog and preserve saved plans"
+  },
+  {
+    "hash": "c1ac4f819816b4a67211903347ae172616c90438",
+    "timestamp": 1789601333,
+    "date": "2026-09-16",
+    "title": "Link public showcase while keeping application source private"
+  },
+  {
+    "hash": "fb358b9fc66e7239a6f3314d91f7c2cb81fb8996",
+    "timestamp": 1789601138,
+    "date": "2026-09-16",
+    "title": "Focus README on product and remove setup and deployment instructions"
+  },
+  {
+    "hash": "0727c0eb822856b987b76c788e530237b3bef881",
+    "timestamp": 1789600984,
+    "date": "2026-09-16",
+    "title": "Refresh project presentation and add current screenshot gallery"
+  },
+  {
+    "hash": "2cf251932ef396ad14fec3d2b09ecca605b1812e",
+    "timestamp": 1789600354,
+    "date": "2026-09-16",
+    "title": "Make planner clock a compact top-right timestamp"
+  },
+  {
+    "hash": "1e84f3a5673f3a9e5482af31e51f59723d881a8f",
+    "timestamp": 1789600030,
+    "date": "2026-09-16",
+    "title": "Fix demo tour dismissal and show live planner date and time"
+  },
+  {
+    "hash": "a612753be0397b2ed57b0caab65940d13e96bf74",
+    "timestamp": 1789537415,
+    "date": "2026-09-16",
+    "title": "Simplify login and collapse secondary mobile content"
+  },
+  {
+    "hash": "4e13ce36d6d300402f3768f4078b7d76dbdf928b",
+    "timestamp": 1789536802,
+    "date": "2026-09-16",
+    "title": "Restore graph paper and add shared planner illustrations"
+  },
+  {
+    "hash": "15c0ea25f89e009a4587e79bbb9e4400447988bf",
+    "timestamp": 1789520291,
+    "date": "2026-09-15",
+    "title": "Refresh site design and simplify course navigation"
+  },
+  {
+    "hash": "a769be0148b845d0fc050696c7d03fe582eb2453",
+    "timestamp": 1789519699,
+    "date": "2026-09-15",
+    "title": "Fix mobile overflow and tighten responsive layouts"
+  },
+  {
+    "hash": "afea3b70839754cced89cea1be28d273220a39b8",
+    "timestamp": 1789519132,
+    "date": "2026-09-15",
+    "title": "Restore full browser planning and clarify task challenge with privacy confirmations"
+  },
+  {
+    "hash": "3d22fcfeb441f7de599ff9c503d154aa364dec8f",
+    "timestamp": 1789517101,
+    "date": "2026-09-15",
+    "title": "Make private access codes the main account flow and introduce first-visit guide"
+  },
+  {
+    "hash": "dc7ae53f14e829b1ec2f60fade64a000ae5dfa51",
+    "timestamp": 1789515983,
+    "date": "2026-09-15",
+    "title": "Improve spacing above settings calendar download"
+  },
+  {
+    "hash": "0abb581f802c0a27c725e793d36e6a116cf888f5",
+    "timestamp": 1789515907,
+    "date": "2026-09-15",
+    "title": "Make browser-saved planning the default without signup"
+  },
+  {
+    "hash": "b463d1ffb931547b8e85c34724690c6bcd90e483",
+    "timestamp": 1789438111,
+    "date": "2026-09-14",
+    "title": "Polish LinkedIn demo release"
+  },
+  {
+    "hash": "b3addc1c043784da2adea03271baa2c059dcbaf7",
+    "timestamp": 1789437068,
+    "date": "2026-09-14",
+    "title": "Fix dark mode sidebar contrast"
+  },
+  {
+    "hash": "e7f7323d6d9825465940944ba047f591a3c7a03e",
+    "timestamp": 1789436286,
+    "date": "2026-09-14",
+    "title": "Clarify high school product focus"
+  },
+  {
+    "hash": "f657a7973791a10671c944c0def1f0b2a5823df0",
+    "timestamp": 1789435658,
+    "date": "2026-09-14",
+    "title": "Add registration return navigation"
+  },
+  {
+    "hash": "71120bba8f3cb4215c9e5c512f85fd036cb47147",
+    "timestamp": 1789435459,
+    "date": "2026-09-14",
+    "title": "Add login return navigation"
+  },
+  {
+    "hash": "3eb63d71c973024751fff59acb2dd154d3507e0d",
+    "timestamp": 1789435059,
+    "date": "2026-09-14",
+    "title": "Keep task migrations independent"
+  },
+  {
+    "hash": "ecde91429a8be9a2cd98375de9c617d908ca7e6f",
+    "timestamp": 1789434986,
+    "date": "2026-09-14",
+    "title": "Harden public student workflows"
+  },
+  {
+    "hash": "af76744482799c3327e82cfd93f6b160a3a5b788",
+    "timestamp": 1789433687,
+    "date": "2026-09-14",
+    "title": "Restore original default color theme"
+  },
+  {
+    "hash": "d9760180ba70a3aae56fc55f19deceaa8495253c",
+    "timestamp": 1789432947,
+    "date": "2026-09-14",
+    "title": "Add accessible personalization settings"
+  },
+  {
+    "hash": "77349876caf4474d461debd318e6881f48ca5d5c",
+    "timestamp": 1789430744,
+    "date": "2026-09-14",
+    "title": "Polish public demo release"
+  },
+  {
+    "hash": "855c30441a22ea167151b62d8c533769528b6483",
+    "timestamp": 1789428575,
+    "date": "2026-09-14",
+    "title": "Focus courses on manageable workload"
+  },
+  {
+    "hash": "76150b6aca7b7aee17cefc364bf42f11decf9f04",
+    "timestamp": 1789345428,
+    "date": "2026-09-13",
+    "title": "Prepare public prototype release"
+  },
+  {
+    "hash": "f62dbc5f67ecdfa46b8d9e2e69484ead7b0ad3d3",
+    "timestamp": 1789344588,
+    "date": "2026-09-13",
+    "title": "Research remaining course planning details"
+  },
+  {
+    "hash": "c3dc7693d328b84b1c872daa5cb2d6b209eb4000",
+    "timestamp": 1789343994,
+    "date": "2026-09-13",
+    "title": "Correct state course planning labels"
+  },
+  {
+    "hash": "c0a8c48e022a93f20e7fa5329c974af29ab4f036",
+    "timestamp": 1789343446,
+    "date": "2026-09-13",
+    "title": "Verify PostgreSQL account persistence"
+  },
+  {
+    "hash": "e8d11ef8d77544d0e056bb5864bb2f68bbd38e58",
+    "timestamp": 1789343241,
+    "date": "2026-09-13",
+    "title": "Fix Render PostgreSQL driver selection"
+  },
+  {
+    "hash": "bb1a3709820ebba7e6dfb3a2323282ac75d6815b",
+    "timestamp": 1789339366,
+    "date": "2026-09-13",
+    "title": "Trigger Render persistence verification"
+  },
+  {
+    "hash": "ebf939958b3b506b4c16ddc27e284e4db7a498b8",
+    "timestamp": 1789338868,
+    "date": "2026-09-13",
+    "title": "Harden course deletion and sessions"
+  },
+  {
+    "hash": "fe2468c7eba2e7a160901404a1ff4cbe6887944f",
+    "timestamp": 1789337315,
+    "date": "2026-09-13",
+    "title": "Attach persistent Render database"
+  },
+  {
+    "hash": "b7b63637d0001bba4d7cacd09d892c65a88eee79",
+    "timestamp": 1789337207,
+    "date": "2026-09-13",
+    "title": "Honor program catalog selections"
+  },
+  {
+    "hash": "c43074eadc0ab134fa15752732190b7c2d13d2c8",
+    "timestamp": 1789337113,
+    "date": "2026-09-13",
+    "title": "Simplify state dropdown labels"
+  },
+  {
+    "hash": "218d5f308bfc0037157d1338a9d766d61830a406",
+    "timestamp": 1789336451,
+    "date": "2026-09-13",
+    "title": "Preserve accounts across deployments"
+  },
+  {
+    "hash": "58bcc744581812c95a8aabcee4b62d17b60e2af6",
+    "timestamp": 1789335947,
+    "date": "2026-09-13",
+    "title": "Add Midwest course catalogs"
+  },
+  {
+    "hash": "88673d9f790cfc9e31acf4c110883a682eef7f6b",
+    "timestamp": 1789281308,
+    "date": "2026-09-13",
+    "title": "Add regional course catalogs"
+  },
+  {
+    "hash": "dd6a9e12af127f01149c90047e8e8c9b5a87bb0c",
+    "timestamp": 1789274946,
+    "date": "2026-09-13",
+    "title": "Polish demo reset and course navigation"
+  },
+  {
+    "hash": "d794d541a7e15dcbb3853c631dfe5c86553e96ec",
+    "timestamp": 1789274367,
+    "date": "2026-09-13",
+    "title": "Add national course catalog support"
+  },
+  {
+    "hash": "935672eb77cb8db6ce8da628f46d8bf9e161a8b2",
+    "timestamp": 1789273807,
+    "date": "2026-09-13",
+    "title": "Add course planning experience"
+  },
+  {
+    "hash": "20d53414f1e21e980c78271e58c565f5effcf00c",
+    "timestamp": 1789273216,
+    "date": "2026-09-13",
+    "title": "Prepare app for public demo deployment"
+  },
+  {
+    "hash": "d0b696de77b357211d2b59c6332a6da89d5c84d5",
+    "timestamp": 1789267216,
+    "date": "2026-09-12",
+    "title": "New Changes"
+  },
+  {
+    "hash": "ace0a94b83dd689820a8c660831f05c5dca0acdf",
+    "timestamp": 1789263487,
+    "date": "2026-09-12",
+    "title": "Add GitHub Actions workflow for Python package"
+  },
+  {
+    "hash": "6ab91615529401d61166b88e2866aa97b147536e",
+    "timestamp": 1789252517,
+    "date": "2026-09-12",
+    "title": "Add procrastination-aware planning features: auth, priority, history-driven suggestions, overdue nudge, recurring sessions, estimate accuracy"
+  },
+  {
+    "hash": "40ac4a7e9def3470d46185357b08b1f7a634db1f",
+    "timestamp": 1789221979,
+    "date": "2026-09-12",
+    "title": "Add procrastination task foundation"
+  },
+  {
+    "hash": "9a525ac77a2df1ca661539a6a804c23dfed74d69",
+    "timestamp": 1789221635,
+    "date": "2026-09-12",
+    "title": "Clean obsolete StudentSuccess scaffolding"
+  },
+  {
+    "hash": "e3141401f01ee383c9e01fb5823c49abdeffae06",
+    "timestamp": 1787444204,
+    "date": "2026-08-22",
+    "title": "Complete course service before procrastination pivot"
+  },
+  {
+    "hash": "028bc23be41c545446caa79ee9292f8b423031e2",
+    "timestamp": 1786586816,
+    "date": "2026-08-12",
+    "title": "Add course catalog service"
+  },
+  {
+    "hash": "05c2e64ee67bc46c9c34dd1fb27ff34a447ca83d",
+    "timestamp": 1786503781,
+    "date": "2026-08-11",
+    "title": "Add structured Forsyth course catalog"
+  },
+  {
+    "hash": "9011652fda22658f6fb55a919c6139fc5cb59387",
+    "timestamp": 1786416015,
+    "date": "2026-08-10",
+    "title": "Clean up ignored generated files"
+  },
+  {
+    "hash": "bdee58a85478e3372a5c2ed001961c316996eae7",
+    "timestamp": 1786415250,
+    "date": "2026-08-10",
+    "title": "Restart checkpoint before course pathway"
+  },
+  {
+    "hash": "54cfb08c3bc9a2a199e537f34adb1acdda0480dd",
+    "timestamp": 1786233818,
+    "date": "2026-08-08",
+    "title": "restart checkpoint"
+  }
+]

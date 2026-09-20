@@ -16,9 +16,15 @@ from services import (
 from services.auth_service import login_required
 from services.settings_service import get_or_create_settings
 from services.recommendation_explanations import explain_recommendations
+from services.update_history import get_updates
 
 
 main_bp = Blueprint("main", __name__)
+
+
+@main_bp.get("/updates")
+def updates():
+    return render_template("updates.html", updates=get_updates())
 
 
 def _build_course_load_summary(profile):

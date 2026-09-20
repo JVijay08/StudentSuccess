@@ -26,6 +26,7 @@
           <a href="{{ url_for('courses.course_plan') }}">Course Load</a>
           <a href="{{ url_for('profile.profile_view') }}">{% if g.current_user.access_credential %}Planning preferences{% else %}Student profile{% endif %}</a>
           <a href="{{ url_for('settings.settings') }}">Settings</a>
+          <a href="{{ url_for('main.updates') }}">Updates</a>
         </nav>
         <form class="logout-form sidebar-logout" method="post" action="{{ url_for('auth.logout') }}">
           <button type="submit" class="logout-button">Log out <span aria-hidden="true">&#8599;</span></button>

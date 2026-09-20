@@ -2,7 +2,7 @@ services:
   - type: web
     name: studentsuccess
     runtime: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install -r requirements.txt && python scripts/build_updates.py
     startCommand: gunicorn app:app
     envVars:
       - key: APP_ENV
