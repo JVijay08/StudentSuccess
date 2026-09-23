@@ -13,7 +13,7 @@
   <main id="main-content" class="onboarding-page"><section class="onboarding-section access-section compact-access">
     <a class="back-link" href="{{ nav_back_url('main.home') }}">{{ nav_back_label('main.home') }}</a>
     <p class="first-title">NO NAME. NO EMAIL.</p><h1>Create your planner</h1>
-    <p class="subheading">Get a private code to open your planner on any device. No name or email.</p>
+    <p class="subheading">Your private code is the key to this planner. No name or email is required.</p>
     {% if errors %}<div class="form-errors" role="alert">{% for error in errors %}<p>{{ error }}</p>{% endfor %}</div>{% endif %}
     <aside class="prototype-notice"><strong>Use fictional information only.</strong>Plans are saved on our server. Keep your code safe: anyone with it can open your planner, and a lost code can't be recovered.</aside>
     <form method="post" action="{{ url_for('access.create') }}">{% include '_navigation_fields.html' %}<input type="hidden" name="next" value="{{ navigation_resume }}">
@@ -21,7 +21,7 @@
       <label class="access-check"><input type="checkbox" name="understood" value="yes" required> I'll use fictional information and keep my private code safe.</label>
       <button class="access-primary" type="submit">Create my private planner</button>
     </form>
-    <p>Already have a code? <a href="{{ nav_url('auth.login') }}">Open your planner</a></p>
+    <p><a href="{{ nav_url('auth.login') }}">I already have a code</a></p>
     <p class="access-note"><a href="{{ nav_url('main.local_planner') }}">Use the browser-only planner</a> to save only on this device.</p>
     <details class="access-help"><summary>How it works &amp; privacy</summary><p>Your code opens the full dashboard: tasks, course catalogs, comparisons, and a four-year plan. Code-based plans are saved on the server; the code does not encrypt the plan. Don't enter real names, school names, contact details, grades, or identifying assignment details. Browser plans stay separate from your private-code account.</p></details>
   </section></main>

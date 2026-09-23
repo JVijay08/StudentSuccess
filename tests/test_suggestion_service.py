@@ -415,13 +415,12 @@ def test_bonus_threshold_correct(avg):
 def test_suggested_sort_invariant(tasks):
     rows = get_suggested_tasks(tasks, now=_NOW)
     for earlier, later in zip(rows, rows[1:]):
-        # Non-increasing combined score.
-        assert earlier["score"] >= later["score"]
-        # Ties broken by earlier due_at first.
-        if earlier["score"] == later["score"]:
-            e_due = delay_service._as_utc(earlier["task"].due_at)
-            l_due = delay_service._as_utc(later["task"].due_at)
-            assert e_due <= l_due
+        # Urgency tiers precede score; score and deadline still order each tier.
+        assert earlier["tier"] <= later["tier"]
+        if earlier["tier"] == later["tier"]:
+            assert earlier["score"] >= later["score"]
+            if earlier["score"] == later["score"]:
+                assert delay_service._as_utc(earlier["task"].due_at) <= delay_service._as_utc(later["task"].due_at)
 
 
 # Feature: history-driven-suggestions, Property 5: Realism warning iff

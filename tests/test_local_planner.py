@@ -18,11 +18,11 @@ def test_optional_browser_planner_works_without_creating_records(app):
 
 def test_home_offers_full_workspace_and_no_reduced_planner(app):
     response = app.test_client().get("/")
-    assert b'Create a private planner' in response.data
+    assert b'Create Private Planner' in response.data
     assert re.search(rb'href="/register(?:\?[^"]*)?"', response.data)
     assert b'href="/planner"' not in response.data
-    assert b'full course catalog' in response.data
-    assert b'workspaces save information on the server' in response.data
+    assert b'course plans' in response.data
+    assert b'server-saved planner' in response.data
     assert b'View source on GitHub' not in response.data
 
 

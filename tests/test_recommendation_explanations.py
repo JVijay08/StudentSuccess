@@ -31,10 +31,10 @@ def test_factor_totals_and_existing_score_rules():
     assert [f["reason"] for f in result["factors"]] == result["reasons"]
 
 
-def test_first_task_can_be_later_due_and_explanation_does_not_claim_earlier():
+def test_imminent_deadline_precedes_harder_later_task_with_tier_explanation():
     rows = explain([task("Soon", subject="English"), task("Long", due_at=NOW+timedelta(hours=30), estimated_minutes=120, difficulty="high")])
-    assert rows[0]["task"].title == "Long"
-    assert "estimated more time" in rows[0]["comparison_note"]
+    assert rows[0]["task"].title == "Soon"
+    assert "urgency tier" in rows[0]["comparison_note"]
     assert "earlier" not in rows[0]["comparison_note"]
 
 
@@ -47,7 +47,7 @@ def test_equal_score_uses_deadline_and_exact_tie_does_not_invent_a_winner():
 
 def test_history_nudge_names_qualifying_sample_and_can_change_order():
     history = [task(status="completed", planned_start_at=NOW-timedelta(hours=8), started_at=NOW-timedelta(hours=2)) for _ in range(2)]
-    rows = explain(history+[task("English", subject="English"), task("Math", due_at=NOW+timedelta(hours=30))])
+    rows = explain(history+[task("English", subject="English"), task("Math", due_at=NOW+timedelta(hours=20))])
     assert rows[0]["task"].title == "Math"
     assert "2 completed Math tasks" in rows[0]["history_note"]
     assert "6.0 hours late" in rows[0]["history_note"]

@@ -18,7 +18,7 @@ profile_bp = Blueprint("profile", __name__)
 @profile_bp.route("/onboarding", methods=["GET", "POST"])
 @login_required
 def onboarding():
-    if g.current_user.access_credential is not None:
+    if g.current_user.access_credential is not None or (g.current_user.profile and get_or_create_settings(g.current_user).academic_context == "college"):
         return _planning_preferences()
     errors = []
 
@@ -166,7 +166,7 @@ def onboarding():
 @profile_bp.get("/profile")
 @login_required
 def profile_view():
-    if g.current_user.access_credential is not None:
+    if g.current_user.access_credential is not None or get_or_create_settings(g.current_user).academic_context == "college":
         return redirect(same_page("profile.onboarding"))
     profile = StudentProfile.query.filter_by(
         user_id=g.current_user.id
@@ -200,11 +200,12 @@ def profile_view():
 
 def _planning_preferences():
     profile = g.current_user.profile
+    preferences = get_or_create_settings(g.current_user)
     errors = []
     if request.method == "POST":
         verify_csrf()
         try:
-            grade = int(request.form.get("grade", ""))
+            grade = profile.grade if preferences.academic_context == "college" else int(request.form.get("grade", ""))
             hours = float(request.form.get("study_hours", ""))
             if grade not in (9, 10, 11, 12) or not math.isfinite(hours) or not 0 <= hours <= 80:
                 raise ValueError

@@ -1,0 +1,17 @@
+<section class="panel timing-panel" aria-labelledby="timing-heading">
+  <h2 id="timing-heading">Behavior / Timing</h2>
+  <dl class="timing-metrics"><div><dt>Average start delay</dt><dd>{{ timing.average }}</dd></div><div><dt>Median start delay</dt><dd>{{ timing.median }}</dd></div><div><dt>On-time starts</dt><dd>{{ (timing.on_time|string ~ '%') if timing.on_time is not none else '—' }}</dd></div><div><dt>Tasks with start data</dt><dd>{{ timing.count }}</dd></div></dl>
+  <p>Early starts count as on time. Projects are excluded when their subtasks supply the history.</p>
+  <details><summary>Timing graphs and history</summary>
+  {% for title, rows in [('Start delay over time', timing.delays), ('Start delay by subject', timing.subjects)] %}
+  <h3>{{ title }}</h3>
+  {% if (rows|length >= 2) or (title == 'Start delay by subject' and rows) %}
+  <p>Early ← zero → late. Subject patterns require at least two recorded starts.</p>
+  {% for row in rows %}<div class="chart-row"><span>{{ row.title }}{% if row.date %} · {{ row.date.strftime('%b %d') }}{% endif %}</span><div class="delay-track" aria-hidden="true"><i style="width:{{ row.width }}%;left:{{ 50 - row.width if row.value < 0 else 50 }}%"></i></div><span>{{ row.label }}</span></div>{% endfor %}
+  {% else %}<p>Complete a few tasks with planned and actual starts to see a pattern.</p>{% endif %}{% endfor %}
+  <h3>Estimated vs. actual duration</h3>
+  {% if timing.durations|length >= 2 %}{% for row in timing.durations %}<div class="chart-row"><span>{{ row.title }}</span><div class="duration-track" aria-hidden="true"><i style="width:{{ row.estimated_width }}%"></i><i class="actual" style="width:{{ row.actual_width }}%"></i></div><span>{{ row.label }}</span></div>{% endfor %}{% else %}<p>Complete two tasks with actual durations to compare estimates with time spent.</p>{% endif %}
+  {% if start_history %}<h3>Recent start history</h3><table><caption>Most recent completed tasks</caption><thead><tr><th>Task</th><th>Start delay</th><th>Completed</th></tr></thead><tbody>{% for entry in start_history %}<tr><td>{{ entry.title }} <small>({{ entry.group_label }})</small></td><td>{{ entry.delay_display }}</td><td>{{ entry.completed_at_display }}</td></tr>{% endfor %}</tbody></table>{% endif %}
+  {% if estimate_accuracy.overall %}<details><summary>Estimate accuracy details</summary><p>{{ estimate_accuracy.overall.rate }} times estimated duration ? {{ estimate_accuracy.overall.label }}</p><ul>{% for row in estimate_accuracy.groups %}<li>{{ row.group }} ? {{ row.rate }} ? {{ row.label }}</li>{% endfor %}</ul></details>{% endif %}
+  </details>
+</section>

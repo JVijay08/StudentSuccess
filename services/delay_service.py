@@ -47,10 +47,10 @@ def group_key(task) -> str:
     """
     subject = task.subject
     if isinstance(subject, str) and subject.strip():
-        return subject
+        return " ".join(subject.split()).title()
     task_type = task.task_type
     if isinstance(task_type, str) and task_type.strip():
-        return task_type
+        return " ".join(task_type.split())
     return "ungrouped"
 
 
@@ -64,7 +64,7 @@ def average_start_delay_by_group(tasks) -> "dict[str, float]":
     """
     delays_by_group: "dict[str, list[float]]" = {}
     for task in tasks:
-        if task.status != "completed":
+        if task.status != "completed" or getattr(task, "children", []):
             continue
         delay = start_delay(task)
         if delay is None:

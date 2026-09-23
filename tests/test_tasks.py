@@ -150,7 +150,7 @@ def test_completion_rejects_invalid_actual_minutes(app, authed_client):
         follow_redirects=True,
     )
     assert response.status_code == 200
-    assert b"Actual time must be between 1 and 1440 minutes" in response.data
+    assert b"Actual time must be between 1 and 10080 minutes" in response.data
     with app.app_context():
         assert db.session.get(Task, task_id).status == "not_started"
 

@@ -368,9 +368,9 @@ def test_dashboard_estimate_accuracy_card_qualifying_history(app, authed_client)
     assert response.status_code == 200
     body = response.data.decode()
 
-    assert "ESTIMATE ACCURACY" in body
+    assert "Estimated vs. actual duration" in body
     # Overall line present with a plain-language label.
-    assert "Overall:" in body
+    assert "Estimate accuracy details" in body
     assert "runs ~" in body
 
     # Both qualifying groups appear.
@@ -379,7 +379,8 @@ def test_dashboard_estimate_accuracy_card_qualifying_history(app, authed_client)
 
     # Ordered rate DESC: the over-estimate group (Chemistry) precedes the
     # lower-rate group (Reading).
-    assert body.index("Chemistry") < body.index("Reading")
+    details = body.split("Estimate accuracy details", 1)[1]
+    assert details.index("Chemistry") < details.index("Reading")
 
 
 def test_dashboard_estimate_accuracy_scoped_to_current_user(app, authed_client):

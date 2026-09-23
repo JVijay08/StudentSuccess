@@ -35,3 +35,16 @@
     }
   }, true);
 })();
+
+// Deep links into task entry must reveal the form before scrolling or validation.
+(() => {
+  function reveal() {
+    const target = document.getElementById(location.hash.slice(1));
+    if (!target) return;
+    for (let node = target; node; node = node.parentElement) if (node.tagName === 'DETAILS') node.open = true;
+    target.scrollIntoView({block: 'start'});
+  }
+  window.addEventListener('hashchange', reveal);
+  document.addEventListener('click', event => { if (event.target.closest('a[href="#task-form"]')) setTimeout(reveal, 0); });
+  if (location.hash) reveal();
+})();

@@ -1,5 +1,6 @@
 <a class="skip-link" href="#main-content">Skip to main content</a>
 {% if session.get('user_id') %}
+<div class="app-bar"><a class="brand" href="{{ nav_url('main.dashboard') }}">StudentSuccess<span>{{ 'College planning' if ui_settings.academic_context == 'college' else 'High-school planning' }}</span></a><nav aria-label="Workspace navigation">{% for endpoint, label in [('main.dashboard','Today'),('tasks.tasks','Tasks'),('courses.course_plan','Course load')] %}<a href="{{ nav_url(endpoint) }}"{% if request.endpoint == endpoint or (endpoint == 'courses.course_plan' and request.blueprint in ['courses', 'terms']) or (endpoint == 'tasks.tasks' and request.blueprint == 'tasks') %} aria-current="page"{% endif %}>{{ label }}</a>{% endfor %}{% if not g.current_user.access_credential %}<a href="{{ nav_url('profile.profile_view') }}">Profile</a>{% endif %}</nav></div>
 <div class="workspace-tools">
   <details id="workspace-tools">
     <summary aria-label="Settings menu" title="Settings menu">

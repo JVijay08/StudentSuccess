@@ -6,8 +6,8 @@
   <meta name="theme-color" content="#18283d">
   <title>Course-load planner | StudentSuccess</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/courses.css') }}">
-  {% include '_accessibility_head.html' %}
   <link rel="stylesheet" href="{{ url_for('static', filename='css/comparison.css') }}">
+  {% include '_accessibility_head.html' %}
   <link rel="stylesheet" href="{{ url_for('static', filename='css/nonpersonal.css') }}">
 </head>
 <body>
@@ -79,7 +79,7 @@
       <section class="results-panel">
         {% if state_code and catalog_id == 'national' %}<div class="catalog-note state-note">No verified local catalog is loaded for this state yet. Showing the national reference catalog instead.</div>{% endif %}
         <div class="results-heading"><div><span class="section-kicker">{{ courses|length }} MATCHES</span><h2>Courses to consider</h2></div><span class="micro-note">Compare up to three before planning</span></div>
-        <section class="compare-invitation" aria-labelledby="compare-invitation-title"><p class="section-kicker">BEFORE YOU COMMIT</p><h2 id="compare-invitation-title">What would choosing one change?</h2><p>Find the lighter workload, spot different prerequisites, and see which pathways overlap. Choose two or three courses, or try a comparison:</p><div class="example-pairs">{% for pair in comparison_examples %}<a href="{{ nav_url('courses.course_compare', catalog=catalog_id, id=[pair[0].course_id, pair[1].course_id]) }}">{{ pair[0].course_name }} <span>vs.</span> {{ pair[1].course_name }} <span aria-hidden="true">&#8599;</span></a>{% else %}<p>Select courses below to explore their differences.</p>{% endfor %}</div></section>
+        <section class="compare-invitation" aria-labelledby="compare-invitation-title"><h2 id="compare-invitation-title">What would choosing one change?</h2><p>Select two or three courses to compare workload, prerequisites, and pathways.</p><details><summary>Try an example comparison</summary><div class="example-pairs">{% for pair in comparison_examples %}<a href="{{ nav_url('courses.course_compare', catalog=catalog_id, id=[pair[0].course_id, pair[1].course_id]) }}">{{ pair[0].course_name }} <span>vs.</span> {{ pair[1].course_name }} <span aria-hidden="true">&#8599;</span></a>{% else %}<p>Select courses below to explore their differences.</p>{% endfor %}</div></details></section>
         <form id="compare-form" method="get" action="{{ url_for('courses.course_compare') }}"><input type="hidden" name="nav" value="{{ navigation_child_token }}"><input type="hidden" name="catalog" value="{{ catalog_id }}"></form>
           <div class="course-grid">
             {% for course in courses %}

@@ -9,9 +9,9 @@ def test_public_home_explains_prototype_and_offers_fictional_demo(app):
 
     assert response.status_code == 200
     assert b"Plan less." in response.data
-    assert b"Try the fictional demo" in response.data
+    assert b"Explore Demo" in response.data
     assert b"Use fictional data only" in response.data
-    assert b"high-school students" in response.data
+    assert b"high-school and college students" in response.data
     assert b'property="og:image"' in response.data
     assert b'name="twitter:card" content="summary_large_image"' in response.data
     assert b"may take up to a minute to wake" in response.data
@@ -40,7 +40,7 @@ def test_one_click_demo_creates_isolated_populated_workspace(app):
 
     assert response.status_code == 200
     assert b"Fictional demo workspace" in response.data
-    assert b"QUICK DEMO TOUR" in response.data
+    assert b"Start with one assignment" in response.data
     assert b"Finish algebra problem set" in response.data
     assert b"Moderate estimate" in response.data
     with app.app_context():

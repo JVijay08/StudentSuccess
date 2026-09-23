@@ -1,4 +1,3 @@
-:root{--paper:#f2efe8;--white:#fffdf8;--ink:#182321;--muted:#64706b;--line:#c9c4ba;--night:#18283d;--blue:#4d7dff;--amber:#e7b35f}
 *{box-sizing:border-box}
 body{margin:0;color:var(--ink);font-family:"Trebuchet MS","Segoe UI",sans-serif;background-color:var(--paper);background-image:linear-gradient(rgba(24,35,33,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(24,35,33,.035) 1px,transparent 1px);background-size:28px 28px}
 a{color:inherit}main{width:min(1180px,calc(100% - 40px));margin:auto}nav{display:flex;align-items:center;justify-content:space-between;padding:24px 0}nav div{display:flex;align-items:center;gap:20px}.brand{font:700 1.2rem Georgia,serif;text-decoration:none}.nav-cta{padding:10px 14px;color:var(--white);background:var(--night);text-decoration:none}

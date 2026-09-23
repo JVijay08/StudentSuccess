@@ -3,7 +3,7 @@
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
-from flask import Blueprint, g, redirect, render_template, session, url_for
+from flask import Blueprint, g, redirect, render_template, session, url_for, request
 
 from models import StudentProfile, Task
 from services import (
@@ -17,6 +17,7 @@ from services.auth_service import login_required
 from services.settings_service import get_or_create_settings
 from services.recommendation_explanations import explain_recommendations
 from services.update_history import get_updates
+from services.timing_service import timing_summary
 
 
 main_bp = Blueprint("main", __name__)
@@ -84,7 +85,7 @@ def _build_start_delay_summary(profile):
 
     grouped = {}
     for task in eligible_tasks:
-        subject = task.subject if task.subject else "No subject"
+        subject = delay_service.group_key(task) if task.subject else "No subject"
         delta = _as_utc(task.started_at) - _as_utc(task.planned_start_at)
         grouped.setdefault(subject, []).append(delta.total_seconds() / 3600)
 
@@ -200,6 +201,8 @@ def _build_start_history(profile, settings):
 def dashboard():
     profile = StudentProfile.query.filter_by(user_id=g.current_user.id).first()
     settings = get_or_create_settings(g.current_user)
+    all_tasks = []
+    focus_view = request.args.get("view") == "today" or (request.args.get("view") != "full" and settings.dashboard_mode == "focus")
     active_task_count = 0
     prioritized_tasks = []
     success_rate = {"completed": 0, "total": 0, "percent": None}
@@ -211,12 +214,12 @@ def dashboard():
     reminder_tasks = []
 
     if profile is not None:
-        course_load = _build_course_load_summary(profile)
+        course_load = _build_course_load_summary(profile) if settings.academic_context != "college" else None
         all_tasks = Task.query.filter_by(
             student_profile_id=profile.id
         ).all()
         active_task_count = sum(
-            1 for task in all_tasks if task.status != "completed"
+            1 for task in all_tasks if task.status != "completed" and not task.children
         )
         prioritized_tasks = suggestion_service.get_suggested_tasks(all_tasks)
         explain_recommendations(prioritized_tasks, all_tasks)
@@ -234,6 +237,8 @@ def dashboard():
 
         for row in nudge_service.overdue_to_start(all_tasks):
             task = row["task"]
+            if task.children:
+                continue
             overdue_tasks.append(
                 {
                     "task_id": task.id,
@@ -287,4 +292,6 @@ def dashboard():
         course_load=course_load,
         reminder_tasks=reminder_tasks,
         settings=settings,
+        timing=timing_summary(all_tasks),
+        focus_view=focus_view,
     )

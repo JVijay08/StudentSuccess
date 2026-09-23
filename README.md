@@ -2,7 +2,7 @@
 
 **Plan less. Start sooner.**
 
-StudentSuccess helps high-school students plan a manageable course load and decide which assignment to start next. It brings together four-year course planning, explained task priorities, and feedback on planned versus actual start times.
+StudentSuccess helps high-school and college students plan a manageable course load and decide which assignment to start next. It brings together four-year course planning, explained task priorities, and feedback on planned versus actual start times.
 
 **[Try the live demo](https://studentsuccess.onrender.com/)** · [Data sources](docs/data_sources.md) · [Privacy notes](docs/privacy_notes.md) · [Architecture](docs/architecture.md) | [Project updates](https://studentsuccess.onrender.com/updates)
 
@@ -18,10 +18,13 @@ StudentSuccess helps high-school students plan a manageable course load and deci
 
 ## The current workspace
 
-- **A notebook with depth.** Graph paper, layered paper edges, folded corners, soft shadows, and a paper-plane illustration. The landing-page example responds to pointer movement and lets you turn a large assignment into a small first step.
-- **A clearer next action.** See a short reason for each recommendation, why the top task comes before the next, and when recorded start history adds a priority nudge. Expand the point breakdown or start the task directly.
-- **Less scrolling.** Settings uses two columns on wide screens with a sticky Save button. Logout sits below dashboard navigation, and the desktop sidebar stays in view.
+- **A consistent interface.** A shared blue-and-neutral palette, clear typography, and predictable navigation across tasks, courses, and settings.
+- **A clearer next action.** The task queue comes first. Start and Complete stay visible; recommendation calculations and timing history expand when needed.
+- **Manageable projects.** Break assignments into subtasks or timed work blocks, track project progress, and keep completed work separate. Estimates support up to 10,080 minutes.
+- **Planning for your context.** Compare high-school courses or organize college courses by term. Import assignments from calendar files and review planned versus actual timing.
 - **Your preferred pace.** Light, dark, and high-contrast appearances; adjustable text, spacing, and focus; reduced-motion support; and expandable summaries on mobile.
+
+See the [September UI overhaul notes](docs/ui-overhaul-2026-09-22.md) for implementation and verification details. The screenshot gallery below retains dated captures of earlier releases.
 
 ## What you can do
 
@@ -53,7 +56,7 @@ Academic depth, workload, and task-priority labels are planning estimates. Confi
 
 ## Next steps
 
-Priorities include more reliable hosting, stronger public-form protections, clearer connections between planned courses and assignments, and usability testing with fictional scenarios. Adaptive scheduling and optimization remain future work. Calendar-file export is available; live calendar synchronization is not implemented.
+Priorities include more reliable hosting, stronger public-form protections, clearer connections between planned courses and assignments, and usability testing with fictional scenarios. Adaptive scheduling and optimization remain future work. Calendar-file import and export are available; live calendar synchronization is not implemented.
 
 ## License
 

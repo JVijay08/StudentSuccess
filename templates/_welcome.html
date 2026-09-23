@@ -6,7 +6,7 @@
     <p id="welcome-intro">Plan courses and tasks with a private code, or try the fictional demo.</p>
     <div class="welcome-warning"><strong>Explore with fictional information.</strong><p>This is a public prototype. Don’t enter real names, school names, contact details, grades, or anything that identifies you or someone else.</p></div>
     <details class="welcome-more"><summary>How codes, saved plans, and the demo work</summary><ul><li><strong>A private code replaces signup details.</strong> Keep it safe: anyone with it can open your planner, and a lost code can’t be recovered.</li><li><strong>Code-based plans are saved on our server.</strong> They are not anonymous or encrypted by the code. You can export or delete them in Settings.</li><li><strong>Just looking?</strong> The fictional demo comes with sample tasks and courses. You don’t need to enter anything.</li></ul></details>
-    <div class="welcome-actions"><form method="post" action="{{ url_for('auth.start_demo') }}" data-welcome-choice><button type="submit" class="welcome-primary">Try the fictional demo</button></form><a href="{{ nav_url('auth.register') }}" data-welcome-choice>Create a private planner</a><a href="{{ nav_url('auth.login') }}" data-welcome-choice>I have a code</a></div>
+    <div class="welcome-actions"><form method="post" action="{{ url_for('auth.start_demo') }}" data-welcome-choice><button type="submit" class="welcome-primary">Explore Demo</button></form><a href="{{ nav_url('auth.register') }}" data-welcome-choice>Create Private Planner</a><a href="{{ nav_url('auth.login') }}" data-welcome-choice>I already have a code</a></div>
     <button id="welcome-close" type="button">Continue browsing</button>
   </div>
 </dialog>

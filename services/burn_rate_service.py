@@ -63,7 +63,7 @@ def actual_duration_minutes(task) -> float:
 def task_burn_rate(task) -> float:
     """Per-task Burn_Rate: ``actual_duration_minutes(task) / estimated_minutes``.
 
-    ``estimated_minutes`` is a validated positive integer (1-1440), so the
+    ``estimated_minutes`` is a validated positive integer (1 through MAX_TASK_MINUTES), so the
     denominator is always positive. Returned unrounded (Requirement 3.3).
     """
     return actual_duration_minutes(task) / task.estimated_minutes
@@ -93,7 +93,7 @@ def _is_eligible(task) -> bool:
     display aggregates while remaining measurable and signed at the primitive
     level.
     """
-    return is_measurable(task) and actual_duration_minutes(task) > 0
+    return not getattr(task, "children", []) and is_measurable(task) and actual_duration_minutes(task) > 0
 
 
 def group_burn_rates(tasks) -> "list[dict]":

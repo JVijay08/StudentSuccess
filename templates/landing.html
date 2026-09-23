@@ -5,16 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#18283d">
-  <meta name="description" content="StudentSuccess helps high-school students choose a manageable course load and start assignments before deadline pressure takes over.">
+  <meta name="description" content="StudentSuccess helps high-school and college students choose a manageable course load and start assignments before deadline pressure takes over.">
   <meta property="og:title" content="StudentSuccess | Plan less. Start sooner.">
-  <meta property="og:description" content="A procrastination-aware academic planning prototype for high-school students.">
+  <meta property="og:description" content="A procrastination-aware academic planning prototype for high-school and college students.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ url_for('main.home', _external=True) }}">
   <meta property="og:image" content="{{ url_for('static', filename='images/studentsuccess-social-preview.png', _external=True) }}">
   <meta property="og:image:alt" content="StudentSuccess — Plan less. Start sooner.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="StudentSuccess | Plan less. Start sooner.">
-  <meta name="twitter:description" content="A procrastination-aware planning prototype for high-school students.">
+  <meta name="twitter:description" content="A procrastination-aware planning prototype for high-school and college students.">
   <meta name="twitter:image" content="{{ url_for('static', filename='images/studentsuccess-social-preview.png', _external=True) }}">
   <title>StudentSuccess | Plan less. Start sooner.</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
@@ -30,63 +30,21 @@
 
     <section class="hero">
       <div>
-        <p class="eyebrow">STUDENTSUCCESS / A WORKING NOTEBOOK</p>
+        <p class="eyebrow">FOR HIGH SCHOOL &amp; COLLEGE</p>
         <h1>Plan less.<br><em>Start sooner.</em></h1>
-        <p class="lede">The assignment is big. Your first step doesn&#8217;t have to be. Make room for your courses, find what needs your attention, and give yourself somewhere to begin.</p>
-        <div class="hero-actions">
-          <a class="primary-action" href="{{ nav_url('auth.register') }}">Create a private planner</a>
+        <p class="lede">StudentSuccess is an academic planner that recommends which assignment to start next, tracks planned versus actual work, and helps you plan your course load.</p>
+        <div class="hero-actions"><form method="post" action="{{ url_for('auth.start_demo') }}">{% include '_navigation_fields.html' %}<button class="primary-action">Explore Demo</button></form>
+          <a class="secondary-action" href="{{ nav_url('auth.register') }}">Create Private Planner</a>
           <a href="{{ nav_url('auth.login') }}">I already have a code</a>
         </div>
-        <p class="prototype-note"><strong>Explore with fictional information.</strong> Plans are saved on our server. Keep your code private: anyone with it can access your planner, and we can’t recover it if it’s lost. Don’t enter personal or identifying details.</p>
+        <p class="prototype-note">Public prototype. Use fictional data only. Private-code plans are saved on the server; keep your code safe.</p>
       </div>
-      <div class="desk-scene" id="desk-scene">
-        <div class="paper-flight" aria-hidden="true"><svg viewBox="0 0 180 140" focusable="false"><path class="flight-trail" d="M8 120C65 125 7 48 70 64"/><g class="folded-plane"><path d="M30 58L160 18L111 116L85 78Z" fill="#f9f5df"/><path d="M30 58L160 18L85 78Z" fill="#fffdf6"/><path d="M85 78L160 18L99 85L111 116Z" fill="#d2c596"/><path d="M85 78L84 101L99 85L160 18Z" fill="#a89968"/><path d="M30 58L160 18L111 116L99 85L84 101L85 78Z" fill="none" stroke="#736946" stroke-width="1.2"/></g></svg></div>
-        <div class="desk-caption"><span>01 / MAKE A LITTLE ROOM</span><span>Less looming. More doing.</span></div>
-        <div class="loose-notes" aria-label="A sample assignment becoming a starting plan">
-          <div class="loose-note note-assignment"><span class="note-label">ON YOUR MIND</span><strong id="desk-assignment">The whole problem set.</strong><span class="pencil-note">Where do I even begin?</span></div>
-          <div class="loose-note note-time"><span class="note-label">A SMALL WINDOW</span><strong>5<span>minutes</span></strong><p>Enough to make a beginning.</p></div>
-          <div class="desk-thread" aria-hidden="true"><svg viewBox="0 0 280 110"><path d="M8 15C90 5 45 100 145 75S235 35 263 83M247 75L265 85L265 65"/></svg></div>
-          <button type="button" class="arrange-desk" id="arrange-desk" aria-pressed="false" hidden>Find a starting point <span aria-hidden="true">&#8599;</span></button>
-          <p class="desk-status" id="desk-status" role="status">A plan can start smaller than you think.</p>
-        </div>
-      <aside class="start-lab" aria-labelledby="start-lab-title">
-        <div class="lab-topline"><span>FIELD NOTE / 001</span><span>Try a small start</span></div>
-        <h2 id="start-lab-title">Big task.<br><em>Small beginning.</em></h2>
-        <p>Pick what&#8217;s on your mind.</p>
-        <div class="lab-tabs" role="group" aria-label="Sample assignment">
-          <button type="button" aria-pressed="true" data-example="math">Problem set</button>
-          <button type="button" aria-pressed="false" data-example="essay">Essay</button>
-          <button type="button" aria-pressed="false" data-example="exam">Exam</button>
-        </div>
-        <div class="lab-sheet" aria-live="polite" aria-atomic="true">
-          <span class="eyebrow">YOUR FIRST FIVE MINUTES</span>
-          <strong id="lab-task">Open your notes.<br>Try problem one.</strong>
-          <p id="lab-detail">You don&#8217;t need to finish the whole set to get started.</p>
-        </div>
-        <label class="lab-check"><input type="checkbox" id="lab-done"><span>I can start with that.</span></label>
-        <div class="lab-bottom"><span id="lab-feedback" role="status">A beginning counts.</span><span aria-hidden="true">&#8599;</span></div>
-        <small>Interactive example &middot; nothing is saved</small>
-      </aside>
-      </div>
+    <section class="product-preview" aria-label="Example of the task planner"><div class="preview-top"><strong>Today</strong><span>Fictional example</span></div><p class="eyebrow">Recommended next task</p><h2>Draft your introduction</h2><p>Composition &middot; 45 minutes &middot; Due tonight</p><p class="recommendation-brief">This deadline is within 24 hours. A short first draft makes the rest of the paper easier to start.</p><p class="preview-action">Start this task &rarr;</p><div class="preview-queue"><h3>Up next</h3><p><strong>Review biology notes</strong><span>30 min &middot; Tomorrow</span></p><p><strong>Research paper</strong><span>2 of 5 subtasks complete</span></p><progress value="40" max="100">40%</progress></div><p class="preview-caption">Deadlines, subtasks, and a clear place to start.</p></section>
     </section>
 
-    <div class="notebook-divider" aria-hidden="true"><span>LESS OVERTHINKING</span><span class="divider-arrow">&#10230;</span><span>ONE REAL START</span><span class="edition">YOUR PACE. YOUR PAGE.</span></div>
 
-    <section class="notebook-story" aria-labelledby="story-title">
-      <div class="story-intro"><p class="eyebrow">FROM &ldquo;I SHOULD&rdquo; TO &ldquo;I STARTED&rdquo;</p><h2 id="story-title">A plan for school.<br><em>Space for life.</em></h2><p>Not every hour needs filling.<br>Just give the important things a place.</p><span class="margin-note">Make it manageable. &#8600;</span></div>
-      <div class="story-entries">
-        <article><span class="entry-number">01 /</span><div><h3>See the semester, not just Monday.</h3><p>Compare course workload and build a four-year plan that leaves you room to breathe.</p></div>{{ illustration("books") }}</article>
-        <article><span class="entry-number">02 /</span><div><h3>A due date isn&#8217;t a starting plan.</h3><p>Choose when to begin. See which assignment needs attention next, with the reasons spelled out.</p></div>{{ illustration("steps") }}</article>
-        <article><span class="entry-number">03 /</span><div><h3>Your planner. Your little key.</h3><p>No name or email needed. Save your private code to return on another device. Export or delete your data in Settings.</p></div>{{ illustration("key") }}</article>
-      </div>
-    </section>
-
-    <section class="server-demo" aria-labelledby="demo-heading">
-      <p class="eyebrow">TAKE A LOOK AROUND</p><h2 id="demo-heading">Borrow a plan.<br>Find your footing.</h2>
-      <p>The fictional demo includes sample history and the full course catalog. Demo and account workspaces save information on the server. Use fictional data only. The free demo server may take up to a minute to wake after inactivity.</p>
-      <form method="post" action="{{ url_for('auth.start_demo') }}">{% include '_navigation_fields.html' %}<button type="submit">Try the fictional demo</button></form>
-      <p>Create a private planner to use the same complete workspace with your own fictional examples. Before submitting free-text entries, you’ll confirm that they contain no personal information.</p>
-    </section>
+    <section class="feature-grid" aria-label="What you can do"><article><h2>Know what comes next</h2><p>A task queue ordered around deadlines and planned starts, with an explanation for every recommendation.</p></article><article><h2>Make large tasks manageable</h2><p>Break projects into subtasks or timed work blocks. Keep completed work and progress together.</p></article><article><h2>Plan a realistic course load</h2><p>Compare high-school courses or build a college term plan around your weekly study time.</p></article></section>
+    <section class="storage-choice"><h2>A planner you can return to</h2><p>A private code opens your server-saved planner on another device. Keep it safe; no name or email is needed.</p><p>The demo contains fictional assignments and course plans. The free server may take up to a minute to wake.</p></section>
 
     <footer>
       <p><a href="{{ nav_url('main.updates') }}">What&apos;s new &rarr;</a></p>
@@ -95,7 +53,7 @@
     </footer>
   </main>
   <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
-  <script src="{{ url_for('static', filename='js/fieldnotes.js') }}" defer></script>
+
   {% include '_welcome.html' %}
 </body>
 </html>

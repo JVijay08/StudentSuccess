@@ -58,6 +58,7 @@ def _integer_choice(form, name, allowed, current):
 def settings():
     preferences = get_or_create_settings(g.current_user)
     if request.method == "POST":
+        preferences.academic_context = _choice(request.form, "academic_context", {"high_school", "college"}, preferences.academic_context)
         preferences.theme = _choice(request.form, "theme", THEMES, preferences.theme)
         preferences.text_scale = _integer_choice(request.form, "text_scale", TEXT_SCALES, preferences.text_scale)
         preferences.comfortable_spacing = "comfortable_spacing" in request.form
@@ -138,6 +139,8 @@ def export_data():
         "profile": None,
         "tasks": [],
         "planned_courses": [],
+        "academic_context": get_or_create_settings(g.current_user).academic_context,
+        "term_courses": [{"title": c.title, "term": c.term, "weekly_hours": c.weekly_hours} for c in g.current_user.term_courses],
     }
     if profile is not None:
         payload["profile"] = {
@@ -152,6 +155,11 @@ def export_data():
         }
         payload["tasks"] = [
             {
+                "id": task.id,
+                "parent_task_id": task.parent_task_id,
+                "actual_minutes": task.actual_minutes,
+                "started_at": task.started_at.isoformat() if task.started_at else None,
+                "completed_at": task.completed_at.isoformat() if task.completed_at else None,
                 "title": task.title,
                 "subject": task.subject,
                 "task_type": task.task_type,

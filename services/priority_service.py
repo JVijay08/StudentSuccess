@@ -1,5 +1,6 @@
 from datetime import datetime, timezone
 
+from services.task_policy import ranking_key, tier
 from services.procrastination_service import explain_procrastination_risk
 
 
@@ -15,12 +16,11 @@ def _as_utc(value):
 
 
 def get_prioritized_tasks(tasks, now=None):
-    """Return tasks ordered by procrastination risk.
+    """Return tasks ordered by work-status / urgency tier, then explained risk.
 
     For each task the procrastination service computes a risk score and the
-    plain-language reasons behind it. Results are sorted by score descending,
-    then by earliest ``due_at`` on ties. Completed tasks score 0 and therefore
-    fall to the end naturally, so no special-case handling is needed.
+    plain-language reasons behind it. Within each tier, score descends, then deadline, planned start, and stable
+    ID/title break ties. Completed tasks occupy a separate final tier.
 
     Args:
         tasks: iterable of Task objects.
@@ -31,12 +31,14 @@ def get_prioritized_tasks(tasks, now=None):
         ``[{"task": task, "score": int, "reasons": list[str]}, ...]``.
         An empty input yields an empty list.
     """
+    now = now or datetime.now(timezone.utc)
     prioritized = []
     for task in tasks:
         risk = explain_procrastination_risk(task, now=now)
         prioritized.append(
             {
                 "task": task,
+                "tier": tier(task, now),
                 "score": risk["score"],
                 "reasons": risk["reasons"],
                 "factors": risk.get("factors", []),
@@ -44,7 +46,7 @@ def get_prioritized_tasks(tasks, now=None):
         )
 
     prioritized.sort(
-        key=lambda row: (-row["score"], _as_utc(row["task"].due_at))
+        key=lambda row: ranking_key(row, now)
     )
 
     return prioritized

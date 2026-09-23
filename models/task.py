@@ -6,6 +6,14 @@ class Task(db.Model):
     __tablename__ = "tasks"
 
     id = db.Column(db.Integer, primary_key=True)
+    parent_task_id = db.Column(db.Integer, db.ForeignKey("tasks.id"), nullable=True, index=True)
+    external_uid = db.Column(db.String(255), nullable=True)
+    parent = db.relationship("Task", remote_side=[id], foreign_keys=[parent_task_id], back_populates="children")
+    children = db.relationship("Task", foreign_keys=[parent_task_id], back_populates="parent")
+
+    @property
+    def progress(self):
+        return round(100 * sum(t.status == "completed" for t in self.children) / len(self.children)) if self.children else (100 if self.status == "completed" else 0)
     student_profile_id = db.Column(
         db.Integer,
         db.ForeignKey("student_profiles.id"),

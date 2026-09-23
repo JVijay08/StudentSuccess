@@ -1,4 +1,3 @@
-:root { color-scheme:light; --paper:#f2efe8; --white:#fffdf8; --ink:#182321; --muted:#64706b; --line:#c9c4ba; --blue:#4d7dff; --amber:#e7b35f; --danger:#bd4d45; }
 * { box-sizing:border-box; }
 body { min-height:100vh; margin:0; color:var(--ink); font-family:"Trebuchet MS","Segoe UI",sans-serif; background-color:var(--paper); background-image:linear-gradient(rgba(24,35,33,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(24,35,33,.035) 1px,transparent 1px); background-size:28px 28px; }
 a { color:inherit; }

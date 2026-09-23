@@ -6,6 +6,8 @@ from itsdangerous import BadData, URLSafeSerializer
 from werkzeug.exceptions import HTTPException
 
 PAGES = {
+    "tasks.import_calendar": "calendar import",
+    "terms.plan": "term plan",
     "main.home": "home", "main.dashboard": "dashboard",
     "main.local_planner": "browser planner", "main.updates": "updates",
     "courses.course_explorer": "course explorer", "courses.course_plan": "four-year plan",
@@ -68,6 +70,9 @@ def current_url():
 
 
 def nav_url(endpoint, **values):
+    if endpoint in {"courses.course_plan", "courses.course_explorer"} and getattr(g, "current_user", None) and g.current_user.settings and g.current_user.settings.academic_context == "college":
+        endpoint = "terms.plan"
+        values = {}
     destination = url_for(endpoint, **values)
     if endpoint not in PAGES or endpoint in {"main.dashboard", "main.home"}:
         return destination

@@ -1,8 +1,9 @@
 (() => {
   "use strict";
+  const MAX_TASK_MINUTES = Number(document.body.dataset.maxTaskMinutes);
   const KEY = "studentsuccess.local-plan.v1";
   const $ = id => document.getElementById(id);
-  const empty = () => ({version: 1, tasks: [], courses: [], budget: null});
+  const empty = () => ({version: 1, tasks: [], courses: [], budget: null, context:"high_school"});
   let state = empty(), lastSaved = null, editing = null, readable = true;
   const tell = message => { $("message").textContent = message; };
   const validText = (value, max) => typeof value === "string" && value.length <= max;
@@ -18,14 +19,18 @@
       if (!t || !validText(t.id, 100) || !t.id || ids.has(t.id) || !validText(t.title, 160) || !t.title.trim() ||
           !validText(t.subject, 80) || !validDate(t.due) || !(t.planned === null || validDate(t.planned)) ||
           !(t.started === null || validDate(t.started)) || !(t.completed === null || validDate(t.completed)) ||
-          !validNumber(t.minutes, 1, 10080) || !Number.isInteger(t.minutes) ||
+          !validNumber(t.minutes, 1, MAX_TASK_MINUTES) || !Number.isInteger(t.minutes) ||
           !["not_started", "in_progress", "completed"].includes(t.status)) throw new Error("Invalid task");
       ids.add(t.id);
       if ((t.challenge !== undefined && !["low","medium","high"].includes(t.challenge)) ||
           (t.interest !== undefined && !["low","medium","high"].includes(t.interest))) throw new Error("Invalid task rating");
       return {id:t.id, title:t.title, subject:t.subject, due:t.due, planned:t.planned, minutes:t.minutes,
-        started:t.started, completed:t.completed, status:t.status, challenge:t.challenge || "medium", interest:t.interest || "medium"};
+        started:t.started, completed:t.completed, status:t.status, parent:t.parent || null, actual:t.actual ?? null, challenge:t.challenge || "medium", interest:t.interest || "medium"};
     });
+    for (const t of tasks) {
+      if (t.parent && (!tasks.some(p => p.id === t.parent && !p.parent) || t.parent === t.id)) throw new Error("Invalid parent");
+      if (t.actual !== null && (!Number.isInteger(t.actual) || !validNumber(t.actual,1,MAX_TASK_MINUTES))) throw new Error("Invalid actual duration");
+    }
     const courses = data.courses.map(c => {
       if (!c || !validText(c.id, 100) || !c.id || ids.has(c.id) || !validText(c.title, 2000) || !c.title.trim() ||
           !validNumber(c.hours, 0, 168)) throw new Error("Invalid course");
@@ -35,9 +40,10 @@
           (c.depth !== undefined && !validText(c.depth,80)) ||
           (c.workload !== undefined && !["Low","Medium","High"].includes(c.workload))) throw new Error("Invalid course details");
       ids.add(c.id);
-      return {id:c.id, title:c.title, hours:c.hours, year:c.year || 9, catalog:c.catalog || "", courseId:c.courseId || "", depth:c.depth || "Not rated", workload:c.workload || "Medium"};
+      if (c.term !== undefined && !validText(c.term,60)) throw new Error("Invalid term");
+      return {id:c.id, title:c.title, hours:c.hours, term:c.term || "Unassigned term", year:c.year || 9, catalog:c.catalog || "", courseId:c.courseId || "", depth:c.depth || "Not rated", workload:c.workload || "Medium"};
     });
-    return {version:1, tasks, courses, budget:data.budget};
+    return {version:1, tasks, courses, budget:data.budget, context:data.context === "college" ? "college" : "high_school"};
   }
 
   function read() {
@@ -93,7 +99,8 @@
     score += task.minutes >= 120 ? 2 : task.minutes >= 60 ? 1 : 0;
     score += task.challenge === "high" ? 1 : 0;
     score += task.interest === "low" ? 1 : 0;
-    return -score;
+    const tier = task.status === "in_progress" ? 0 : hours < 0 ? 1 : task.planned && Date.parse(task.planned) <= now ? 2 : hours <= 24 ? 3 : 4;
+    return tier * 100 - score;
   }
   function reason(t, now) {
     const notes = [];
@@ -114,6 +121,7 @@
   }
   function changeTask(id, changes) {
     const next = copy(); Object.assign(next.tasks.find(t => t.id === id), changes);
+    syncProjects(next);
     if (commit(next)) {
       $("task-action-status").textContent = changes.status === "completed" ? "Task completed. Turn on Show completed to find or reopen it." : "Task updated.";
       focusTask(id);
@@ -131,20 +139,60 @@
   function editTask(t) {
     editing = t.id;
     $("task-title").value = t.title; $("task-subject").value = t.subject;
-    $("task-due").value = localInput(t.due); $("task-start").value = localInput(t.planned);
+    $("task-due").value = localInput(t.due).slice(0,10); $("task-due-time").value = localInput(t.due).slice(11); $("task-parent").value = t.parent || ""; $("local-more").open = true; $("task-start").value = localInput(t.planned);
     $("task-minutes").value = t.minutes; $("save-task").textContent = "Save task";
     $("task-challenge").value = t.challenge; $("task-interest").value = t.interest;
     $("task-form").querySelector("[name=nonpersonal_confirmed]").checked = false;
     $("task-form-heading").textContent = "Edit task"; $("cancel-edit").hidden = false; $("task-title").focus();
   }
+  function syncProjects(next) {
+    for(const parent of next.tasks) {
+      const children = next.tasks.filter(t => t.parent === parent.id);
+      if(!children.length) continue;
+      parent.status = children.every(t=>t.status === "completed") ? "completed" : children.some(t=>t.started) ? "in_progress" : "not_started";
+      parent.completed = parent.status === "completed" ? children.map(t=>t.completed).sort().at(-1) : null;
+      parent.actual = parent.status === "completed" ? children.reduce((n,t)=>n+(t.actual||0),0) : null;
+      if(!parent.actual || parent.actual > MAX_TASK_MINUTES) parent.actual = null;
+    }
+  }
+
+  function renderTiming() {
+    const rows=state.tasks.filter(t=>t.status === "completed" && !state.tasks.some(c=>c.parent === t.id));
+    const timed=rows.filter(t=>t.started && t.planned).sort((a,b)=>Date.parse(a.completed)-Date.parse(b.completed));
+    const values=timed.map(t=>(Date.parse(t.started)-Date.parse(t.planned))/60000).sort((a,b)=>a-b);
+    const box=$("local-timing-content");box.replaceChildren();
+    const label=n=>n===0 ? "On time" : `${Math.abs(n)>=60 ? (Math.abs(n)/60).toFixed(1)+" hr" : Math.abs(n).toFixed(0)+" min"} ${n<0 ? "early" : "late"}`;
+    if(values.length) {const middle=Math.floor(values.length/2);const median=values.length%2 ? values[middle] : (values[middle-1]+values[middle])/2;box.append(node("p",`Average: ${label(values.reduce((a,b)=>a+b,0)/values.length)} | Median: ${label(median)} | On-time starts: ${Math.round(values.filter(v=>v<=0).length/values.length*100)}% | ${values.length} tasks`));}
+    const detail=node("details", "");detail.append(node("summary","Timing graphs and history"));box.append(detail);
+    if(timed.length<2) detail.append(node("p","Complete a few tasks with planned and actual starts to see a pattern."));
+    else {
+      const scale=Math.max(1,...values.map(Math.abs));
+      detail.append(node("h3","Start delay over time"));
+      function bar(title,value){const row=node("div","");row.className="chart-row";const track=node("div","");track.className="delay-track";track.setAttribute("aria-hidden","true");const fill=node("i","");const width=Math.abs(value)/scale*48;fill.style.width=width+"%";fill.style.left=(value<0 ? 50-width : 50)+"%";track.append(fill);row.append(node("span",title),track,node("span",label(value)));detail.append(row);}
+      timed.slice(-20).forEach(t=>bar(t.title,(Date.parse(t.started)-Date.parse(t.planned))/60000));
+      detail.append(node("h3","Start delay by subject"));const groups=new Map();timed.forEach(t=>{const key=t.subject.trim().toLowerCase()||"No subject";groups.set(key,[...(groups.get(key)||[]),(Date.parse(t.started)-Date.parse(t.planned))/60000]);});
+      for(const [subject,delays] of groups) if(delays.length>=2) bar(subject,delays.reduce((a,b)=>a+b,0)/delays.length);
+    }
+    detail.append(node("h3","Estimated vs. actual duration"));const measured=rows.filter(t=>t.actual);if(measured.length<2)detail.append(node("p","Complete two tasks with actual minutes to compare estimates."));
+    else {const max=Math.max(...measured.map(t=>Math.max(t.minutes,t.actual)));for(const t of measured.slice(-20)){const row=node("div","");row.className="chart-row";const bars=node("div","");bars.className="duration-track";bars.setAttribute("aria-hidden","true");for(const [value,cls] of [[t.minutes,""],[t.actual,"actual"]]){const i=node("i","");i.className=cls;i.style.width=(value/max*100)+"%";bars.append(i);}row.append(node("span",t.title),bars,node("span",`Estimated ${t.minutes} min; actual ${t.actual} min`));detail.append(row);}}
+  }
+
   function render() {
     const now = Date.now();
-    const active = state.tasks.filter(t => t.status !== "completed").sort((a,b) => rank(a,now)-rank(b,now) || Date.parse(a.due)-Date.parse(b.due));
-    const completed = state.tasks.filter(t => t.status === "completed");
+    const parentValue = $("task-parent").value;
+    $("task-parent").replaceChildren(node("option", "None")); $("task-parent").firstChild.value="";
+    for(const p of state.tasks.filter(t=>!t.parent)) {const opt=node("option",p.title);opt.value=p.id;$("task-parent").append(opt);}
+    $("task-parent").value=parentValue;
+    $("local-subjects").replaceChildren(...[...new Set(["Math","Science","English",...state.tasks.map(t=>t.subject)])].filter(Boolean).map(value=>{const o=node("option",value);o.value=value;return o;}));
+    renderTiming();
+    const active = state.tasks.filter(t => t.status !== "completed").sort((a,b) => rank(a,now)-rank(b,now) || Date.parse(a.due)-Date.parse(b.due) || a.id.localeCompare(b.id));
+    const completed = state.tasks.filter(t => t.status === "completed").sort((a,b) => Date.parse(b.completed)-Date.parse(a.completed) || a.id.localeCompare(b.id));
     $("next-heading").textContent = active[0]?.title || (state.tasks.length ? "All caught up." : "Add a task to find your next step.");
     $("next-reason").textContent = active[0] ? reason(active[0], now) : "Start with a deadline and a small estimate of the time you need.";
     $("progress").textContent = `${active.length} active · ${completed.length} completed`;
-    const nextTask = active[0];
+    const nextTask = active.find(t => !state.tasks.some(c => c.parent === t.id));
+    $("next-heading").textContent = nextTask ? nextTask.title : "All caught up.";
+    $("next-reason").textContent = nextTask ? reason(nextTask, now) : "Add a task to begin.";
     $("next-actions").replaceChildren(action(
       nextTask ? (nextTask.status === "not_started" ? "Start this task" : "View task in progress") : "Add a task",
       () => {
@@ -158,7 +206,10 @@
     $("delay-summary").textContent = started.length ? `Average start delay: ${Math.round(started.reduce((sum,t) => sum+(Date.parse(t.started)-Date.parse(t.planned))/60000,0)/started.length)} minutes (negative means early).` : "Start tasks to compare actual and planned start times.";
     $("start-history").replaceChildren(...state.tasks.filter(t => t.started).sort((a,b) => Date.parse(b.started)-Date.parse(a.started)).slice(0,5).map(t => node("li", `${t.title} · ${format(t.started)}`)));
     const list = $("tasks"); list.replaceChildren();
-    const visible = $("show-completed").checked ? [...active, ...completed] : active;
+    const mode = $("local-sort").value;
+    if (mode !== "recommended") active.sort((a,b) => (mode === "due" ? Date.parse(a.due)-Date.parse(b.due) : mode === "planned" ? (Date.parse(a.planned)||Infinity)-(Date.parse(b.planned)||Infinity) : String(a[mode]||"").trim().toLowerCase().localeCompare(String(b[mode]||"").trim().toLowerCase())) || a.id.localeCompare(b.id));
+    $("completed-list").replaceChildren();
+    const visible = [...active, ...completed];
     if (!visible.length) list.append(node("li", "No tasks here yet. Add one when you’re ready."));
     for (const t of visible) {
       const li = document.createElement("li"); li.id = 'browser-task-' + t.id; li.tabIndex = -1; li.append(node("h3", t.title));
@@ -169,25 +220,47 @@
         const delay = Math.round((Date.parse(t.started)-Date.parse(t.planned))/60000);
         li.append(node("p", `Started ${Math.abs(delay)} minutes ${delay < 0 ? "early" : "after the planned start"}.`));
       }
+      const children = state.tasks.filter(c => c.parent === t.id);
+      if (t.parent) li.prepend(node("p", "Part of " + (state.tasks.find(p => p.id === t.parent)?.title || "assignment")));
+      if (children.length) {const progress = node("progress", ""); progress.max=children.length; progress.value=children.filter(c=>c.status === "completed").length; li.append(node("p", `${progress.value} / ${children.length} subtasks completed`), progress);}
       const buttons = document.createElement("div"); buttons.className = "actions";
-      if (t.status === "not_started") buttons.append(action("Start", () => changeTask(t.id, {status:"in_progress", started:new Date().toISOString()})));
-      if (t.status !== "completed") buttons.append(action("Complete", () => changeTask(t.id, {status:"completed", completed:new Date().toISOString()})));
-      else buttons.append(action("Reopen", () => changeTask(t.id, {status:t.started ? "in_progress" : "not_started", completed:null})));
+      if (t.status === "not_started" && !children.length) buttons.append(action("Start", () => changeTask(t.id, {status:"in_progress", started:new Date().toISOString()})));
+      if (t.status !== "completed" && !children.length) buttons.append(action("Complete", () => {
+        const value = prompt(`Actual minutes spent (1-${MAX_TASK_MINUTES})`, String(t.minutes)); if(value === null) return;
+        const actual = Number(value); if(!Number.isInteger(actual) || actual < 1 || actual > MAX_TASK_MINUTES) {tell(`Enter actual minutes from 1 to ${MAX_TASK_MINUTES}.`);return;}
+        changeTask(t.id,{status:"completed",actual,started:t.started || new Date().toISOString(),completed:new Date().toISOString()});
+      }));
+      else if (t.status === "completed" && !children.length) buttons.append(action("Reopen", () => changeTask(t.id, {status:t.started ? "in_progress" : "not_started", completed:null,actual:null})));
+      if (!t.parent && !children.length && t.status === "not_started" && t.minutes > 25) buttons.append(action("Create work blocks", () => {
+        const next=copy();let remaining=t.minutes,index=1;
+        while(remaining>0){const minutes=Math.min(25,remaining);next.tasks.push({id:uid(),title:`Work block ${index++}`,subject:t.subject,parent:t.id,due:t.due,planned:null,minutes,status:"not_started",started:null,completed:null,challenge:t.challenge,interest:t.interest});remaining-=minutes;}
+        commit(next);
+      }));
       buttons.append(action("Edit", () => editTask(t)));
       buttons.append(action("Delete", () => {
+        if(children.length) {tell("Remove subtasks individually before deleting the project."); return;}
         if (!confirm(`Delete “${t.title}”?`)) return;
         const next = copy(); next.tasks = next.tasks.filter(item => item.id !== t.id);
+        syncProjects(next);
         if (commit(next) && editing === t.id) resetForm();
-      }, "danger")); li.append(buttons); list.append(li);
+      }, "danger")); li.append(buttons); (t.status === "completed" ? $("completed-list") : list).append(li);
     }
     const courses = $("courses"); courses.replaceChildren();
-    for (const year of [9,10,11,12]) {
-      const rows = state.courses.filter(c => c.year === year);
+    const college = state.context === "college";
+    $("local-context").value = state.context;
+    $("catalog").hidden = college;
+    $("local-catalog-link").hidden = college;
+    $("local-plan-link").textContent = college ? "Term plan" : "Four-year plan";
+    $("custom-course-year").parentElement.hidden = college;
+    $("local-term-label").hidden = !college;
+    $("courses-heading").textContent = college ? "Your term plan" : "Your four-year plan";
+    for (const year of college ? [...new Set(state.courses.map(c => c.term))].sort() : [9,10,11,12]) {
+      const rows = state.courses.filter(c => college ? c.term === year : c.year === year);
       const points = rows.reduce((sum,c) => sum+({Low:1,Medium:2,High:3}[c.workload] || 0),0);
       const highCount = rows.filter(c => c.workload === "High").length;
       const load = rows.length >= 8 || highCount >= 4 || points >= 17 ? "Heavy" : rows.length >= 5 || highCount >= 2 || points >= 8 ? "Moderate" : "Light";
       const hours = rows.reduce((sum,c) => sum+c.hours,0);
-      const heading = node("li", ""); heading.append(node("h3", `Year ${year} · ${rows.length} courses · ${load} workload estimate`));
+      const heading = node("li", ""); heading.append(node("h3", `${college ? "Term" : "Year"} ${year} · ${rows.length} courses · ${load} workload estimate`));
       heading.append(node("p", `${hours} estimated study hours / week` + (state.budget !== null && hours > state.budget ? ` · ${Math.round((hours-state.budget)*10)/10} hours over your availability` : "") + (rows.some(c => c.catalog && !c.hours) ? " · Some catalog courses have no hourly estimate yet." : "")));
       courses.append(heading);
       for (const c of rows) {
@@ -196,36 +269,41 @@
       const yearLabel = node("label", "Move to planning year"); const yearSelect = document.createElement("select");
       for (const value of [9,10,11,12]) { const option = node("option", String(value)); option.value = String(value); option.selected = value === c.year; yearSelect.append(option); }
       yearSelect.addEventListener("change", () => { const next = copy(); next.courses.find(item => item.id === c.id).year = Number(yearSelect.value); commit(next); });
-      yearLabel.append(yearSelect); li.append(yearLabel);
+      yearLabel.append(yearSelect); if (!college) li.append(yearLabel);
       li.append(action("Remove course", () => {
         if (!confirm(`Remove “${c.title}”?`)) return;
         const next = copy(); next.courses = next.courses.filter(item => item.id !== c.id); commit(next);
       })); courses.append(li);
       }
     }
-    $("workload").textContent = `Your four-year plan: ${state.courses.length} courses. ` + (state.budget === null ? "Set weekly availability to compare each year's load." : `${state.budget} study hours available each week; compare one planning year at a time.`);
+    $("workload").textContent = `Your ${college ? "term" : "four-year"} plan: ${state.courses.length} courses. ` + (state.budget === null ? "Set weekly availability to compare each year's load." : `${state.budget} study hours available each week; compare one planning year at a time.`);
   }
 
   $("task-form").addEventListener("submit", event => {
     if (event.defaultPrevented) return;
     event.preventDefault();
-    const due = new Date($("task-due").value), planned = $("task-start").value ? new Date($("task-start").value) : null;
+    const due = new Date($("task-due").value + "T" + ($("task-due-time").value || "23:59")), planned = $("task-start").value ? new Date($("task-start").value) : null;
     if (!Number.isFinite(due.getTime()) || (planned && !Number.isFinite(planned.getTime()))) { tell("Enter valid dates."); return; }
     const next = copy();
-    const fields = {title:$("task-title").value.trim(), subject:$("task-subject").value.trim(), due:due.toISOString(), planned:planned?.toISOString() || null, minutes:Number($("task-minutes").value), challenge:$("task-challenge").value, interest:$("task-interest").value};
+    const fields = {parent:$("task-parent").value || null, title:$("task-title").value.trim(), subject:$("task-subject").value.trim(), due:due.toISOString(), planned:planned?.toISOString() || null, minutes:Number($("task-minutes").value), challenge:$("task-challenge").value, interest:$("task-interest").value};
     const taskId = editing || uid();
+    if(fields.parent && !editing && state.tasks.find(t=>t.id === fields.parent)?.status === "completed") {tell("Reopen a subtask before adding work to a completed project.");return;}
+    if(fields.parent === taskId || (fields.parent && state.tasks.some(c => c.parent === taskId))) {tell("Only one level of subtasks is supported.");return;}
     if (editing) Object.assign(next.tasks.find(t => t.id === editing), fields);
     else next.tasks.push({id:taskId, ...fields, status:"not_started", started:null, completed:null});
+    syncProjects(next);
     if (commit(next)) { resetForm(); focusTask(taskId); }
   });
   $("cancel-edit").addEventListener("click", () => { const taskId = editing; resetForm(); focusTask(taskId); });
-  $("show-completed").addEventListener("change", render);
+  $("show-completed").addEventListener("change", () => {$("local-completed").open = $("show-completed").checked;});
+  $("local-sort").addEventListener("change", render);
+  $("local-context").addEventListener("change", () => {const next=copy();next.context=$("local-context").value;commit(next);});
   $("budget-form").addEventListener("submit", event => {
     event.preventDefault(); const next = copy(); next.budget = Number($("budget").value); commit(next);
   });
   $("course-form").addEventListener("submit", event => {
     if (event.defaultPrevented) return;
-    event.preventDefault(); const next = copy(); next.courses.push({id:uid(), title:$("course-title").value.trim(), hours:Number($("course-hours").value), year:Number($("custom-course-year").value)});
+    event.preventDefault(); const next = copy(); next.courses.push({id:uid(), title:$("course-title").value.trim(), hours:Number($("course-hours").value), year:Number($("custom-course-year").value), term:$("local-term").value.trim() || "Unassigned term"});
     if (commit(next)) $("course-form").reset();
   });
   function download(raw, name) {

@@ -15,3 +15,5 @@ __all__ = [
     "User",
     "UserSettings",
 ]
+
+from .term_course import TermCourse

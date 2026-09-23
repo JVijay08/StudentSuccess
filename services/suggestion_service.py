@@ -7,9 +7,10 @@ either — the History_Bonus is a small additive integer laid on top of the
 existing Risk_Score. It is importable without a Flask app context.
 """
 
-from datetime import timedelta
+from datetime import datetime, timedelta, timezone
 
 from services import delay_service, priority_service
+from services.task_policy import ranking_key
 
 
 def history_bonus(task, averages_by_group):
@@ -68,14 +69,16 @@ def get_suggested_tasks(tasks, now=None):
       3. For each base row, add the per-task History_Bonus to the base score
          and append the bonus reason (when present) to a COPY of the base
          reasons — the priority_service output is never mutated in place.
-      4. Re-sort by combined score DESC, then earliest ``due_at`` ASC on ties.
+      4. Preserve urgency tiers, then combined score, deadline, planned start, and stable ID.
 
     Returns a list of dicts shaped as
     ``[{"task", "score" (combined), "base_score", "bonus", "reasons"}, ...]``.
     """
+    now = now or datetime.now(timezone.utc)
+    tasks = list(tasks)
     averages = delay_service.average_start_delay_by_group(tasks)
 
-    active = [task for task in tasks if task.status != "completed"]
+    active = [task for task in tasks if task.status != "completed" and not getattr(task, "children", [])]
     base_rows = priority_service.get_prioritized_tasks(active, now=now)
 
     rows = []
@@ -90,6 +93,7 @@ def get_suggested_tasks(tasks, now=None):
         rows.append(
             {
                 "task": task,
+                "tier": base_row["tier"],
                 "score": combined,
                 "base_score": base_row["score"],
                 "bonus": bonus,
@@ -102,7 +106,7 @@ def get_suggested_tasks(tasks, now=None):
         )
 
     rows.sort(
-        key=lambda row: (-row["score"], delay_service._as_utc(row["task"].due_at))
+        key=lambda row: ranking_key(row, now)
     )
     return rows
 

@@ -16,6 +16,15 @@ from services.privacy_service import confirmation_errors
 course_bp = Blueprint("courses", __name__)
 
 
+@course_bp.before_request
+@login_required
+def college_term_navigation():
+    from services.settings_service import get_or_create_settings
+    if getattr(g, "current_user", None) and get_or_create_settings(g.current_user).academic_context == "college":
+        return redirect(url_for("terms.plan"))
+
+
+
 def _profile_or_redirect():
     profile = StudentProfile.query.filter_by(user_id=g.current_user.id).first()
     if profile is None:

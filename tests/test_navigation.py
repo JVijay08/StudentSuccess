@@ -31,7 +31,7 @@ def test_returns_reject_external_or_non_page_destinations(app, target):
 def test_plan_detail_returns_to_plan_with_no_referrer(authed_client):
     complete_profile(authed_client)
     authed_client.post("/courses/plan/add/MATH_AP_STATISTICS", data={"school_year": "11"})
-    plan_url = link(authed_client.get("/dashboard"), "Course Load")
+    plan_url = link(authed_client.get("/dashboard"), "Course load")
     detail_url = link(authed_client.get(plan_url), "AP Statistics")
     detail = authed_client.get(detail_url)
     assert link(detail, "Back to four-year plan") == plan_url
@@ -65,7 +65,7 @@ def test_search_comparison_detail_and_add_preserve_context(authed_client):
 
 def test_settings_save_keeps_profile_parent(authed_client):
     complete_profile(authed_client)
-    profile_url = link(authed_client.get("/dashboard"), "Student profile")
+    profile_url = link(authed_client.get("/dashboard"), "Profile")
     profile = authed_client.get(profile_url)
     settings_url = link(profile, "Accessibility and settings")
     settings = authed_client.get(settings_url)
@@ -125,7 +125,7 @@ def test_sign_in_resumes_requested_page(app):
 def test_settings_and_updates_are_secondary_workspace_controls(authed_client):
     complete_profile(authed_client)
     dashboard = authed_client.get("/dashboard").get_data(as_text=True)
-    sidebar = dashboard.split('<aside class="sidebar">', 1)[1].split('</aside>', 1)[0]
+    sidebar = dashboard.split('<nav aria-label="Workspace navigation">', 1)[1].split('</nav>', 1)[0]
     assert 'href="/settings' not in sidebar
     assert 'href="/updates' not in sidebar
     assert 'aria-label="Settings menu"' in dashboard

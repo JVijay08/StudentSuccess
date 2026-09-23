@@ -1,6 +1,7 @@
 """Student-facing explanations of existing scores, with no changes to ranking."""
 from collections import Counter
 from services import delay_service
+from services.task_policy import tier
 
 
 def explain_recommendations(rows, tasks):
@@ -12,6 +13,11 @@ def explain_recommendations(rows, tasks):
         factors = sorted(row["factors"], key=lambda f: (-f["points"], f["key"] != "deadline"))
         words = [factor["short"] for factor in factors[:3]]
         row["short_reason"] = ("; ".join(words).capitalize() + ".") if words else "No extra priority signals apply to this task right now."
+        task = row["task"]
+        state = row.get("tier", tier(task))
+        leading = {0: "it is already in progress", 1: "its deadline has passed", 2: "its planned start has passed", 3: "it is due within 24 hours"}.get(state)
+        if leading:
+            row["short_reason"] = f"Start here because {leading}, and you estimated {task.estimated_minutes} minutes."
         group = delay_service.group_key(row["task"])
         count = counts[group]
         label = "tasks without a subject or type" if group == "ungrouped" else f"{group} tasks"
@@ -29,6 +35,9 @@ def explain_recommendations(rows, tasks):
             continue
         other = rows[index + 1]
         title = other["task"].title
+        if row.get("tier") != other.get("tier"):
+            row["comparison_note"] = f'It comes before "{title}" because its work-status / urgency tier takes precedence over score.'
+            continue
         if row["score"] == other["score"]:
             if delay_service._as_utc(row["task"].due_at) < delay_service._as_utc(other["task"].due_at):
                 row["comparison_note"] = f'Tied in priority with "{title}". This comes first because its deadline is earlier.'

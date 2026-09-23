@@ -40,7 +40,22 @@ def create_app(test_config=None):
     app.register_blueprint(main_bp)
     app.register_blueprint(profile_bp)
     app.register_blueprint(settings_bp)
+    from routes.term_routes import term_bp
+    app.register_blueprint(term_bp)
     app.register_blueprint(task_bp)
+    from services.task_policy import MAX_TASK_MINUTES
+    app.jinja_env.globals["MAX_TASK_MINUTES"] = MAX_TASK_MINUTES
+
+    @app.template_filter("planner_time")
+    def planner_time(value):
+        if value is None:
+            return "Not recorded"
+        from models import UserSettings
+        from services.datetime_util import format_local
+        preferences = UserSettings.query.filter_by(user_id=session.get("user_id")).first()
+        return format_local(value, preferences.timezone_name if preferences else "America/New_York",
+                            preferences.time_format if preferences else "12-hour",
+                            preferences.date_format if preferences else "month-first")
     from services.navigation import template_context
     app.context_processor(template_context)
 
@@ -96,12 +111,27 @@ def create_app(test_config=None):
         from models import StudentProfile, Task, User
 
         db.create_all()
+        _migrate_feedback_columns()
         _migrate_planned_course_catalog_column()
         _migrate_task_reminder_columns()
         _migrate_task_actual_minutes_column()
         _reset_demo_accounts_for_deployment()
 
     return app
+
+
+def _migrate_feedback_columns():
+    """Additive migration; existing tasks, history, and preferences are retained."""
+    additions = {
+        "tasks": {"parent_task_id": "INTEGER REFERENCES tasks(id)", "external_uid": "VARCHAR(255)"},
+        "user_settings": {"academic_context": "VARCHAR(20) NOT NULL DEFAULT 'high_school'"},
+    }
+    for table, fields in additions.items():
+        columns = {c["name"] for c in inspect(db.engine).get_columns(table)}
+        for name, definition in fields.items():
+            if name not in columns:
+                db.session.execute(text(f"ALTER TABLE {table} ADD COLUMN {name} {definition}"))
+    db.session.commit()
 
 
 def _migrate_planned_course_catalog_column():
