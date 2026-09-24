@@ -2,9 +2,9 @@
 (() => {
   const mobile = window.matchMedia('(max-width: 680px)');
   const groups = [];
-  const selectors = '.settings-form > section, .account-grid > article, .filter-panel, .demo-checklist, .card-profile, .card-completion, .card-delay, .card-estimates, .card-history';
+  const selectors = '.demo-banner, .queue-options, .catalog-note, .settings-form > section, .account-grid > article, .filter-panel, .demo-checklist, .card-profile, .card-completion, .card-delay, .card-estimates, .card-history';
   document.querySelectorAll(selectors).forEach(section => {
-    const title = section.querySelector('h2, h3');
+    const title = section.querySelector('h2, h3, strong');
     const eyebrow = section.querySelector('.eyebrow, .section-kicker');
     const label = section.classList.contains('card') && eyebrow ? eyebrow : title || eyebrow;
     if (!label) return;

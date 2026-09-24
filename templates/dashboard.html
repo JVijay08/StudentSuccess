@@ -35,7 +35,7 @@
       {% endif %}
 
       {% if g.current_user.access_credential %}<div class="demo-banner" role="note"><strong>Your private-code planner.</strong> Use your actual courses and tasks; leave out full names, student IDs, contact details, and sensitive records. This workspace is saved on the server. Keep your code safe to return on another device. Your planning year and study budget are in Settings.</div>{% endif %}
-      <header>
+      <header class="dashboard-header">
         <p class="eyebrow">TODAY</p>
         {% if profile %}
           <h1>{% if g.current_user.access_credential %}Your day, in focus.{% else %}Welcome, {{ profile.first_name }}.{% endif %}</h1>
@@ -125,7 +125,8 @@
 
         {% if 'courses' not in settings.hidden_cards %}<article class="card card-courses">
           <p class="eyebrow">CURRENT COURSE LOAD</p>
-          {% if course_load and course_load.course_count %}
+          {% if settings.academic_context == 'college' %}<h2>{{ college_summary.term or 'Choose a term' }}</h2><p>{{ college_summary.course_count }} planned courses &middot; {{ college_summary.credits }} credits entered{% if college_summary.goal is not none %} / {{ college_summary.goal }} target{% endif %}</p><p>{{ college_summary.weekly_hours }} study hours / week{% if college_summary.unknown_credits %} &middot; {{ college_summary.unknown_credits }} course(s) missing credits{% endif %}</p><a class="text-link" href="{{ nav_url('terms.plan') }}">Review term plan</a>
+          {% elif course_load and course_load.course_count %}
             <h2>{{ course_load.label }} estimate &mdash; {{ course_load.course_count }} planned course{% if course_load.course_count != 1 %}s{% endif %}</h2>
             <p>{% if course_load.high_workload_count %}{{ course_load.high_workload_count }} high-workload course{% if course_load.high_workload_count != 1 %}s{% endif %} will need consistent weekly task planning.{% else %}Your current selections leave room to build a realistic weekly task plan.{% endif %}</p>
             <a class="text-link" href="{{ nav_url('courses.course_plan') }}">Review course load</a>
@@ -143,7 +144,7 @@
             <dl>
               {% if not g.current_user.access_credential and settings.academic_context != 'college' %}<div><dt>Graduation year</dt><dd>{{ profile.graduation_year }}</dd></div>{% endif %}
               <div><dt>Weekly study time</dt><dd>{{ profile.study_hours_per_week|round(1) }} hours</dd></div>
-              <div><dt>Preferred course mix</dt><dd>{{ profile.course_rigor or "Not set" }}</dd></div>
+              {% if settings.academic_context=='college' %}<div><dt>Program / major</dt><dd>{{ settings.college_program or 'Not set' }}</dd></div>{% else %}<div><dt>Preferred course mix</dt><dd>{{ profile.course_rigor or "Not set" }}</dd></div>{% endif %}
             </dl>
           {% else %}
             <h2>No profile yet</h2>

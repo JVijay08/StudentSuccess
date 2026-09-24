@@ -16,4 +16,5 @@ class TermCourse(db.Model):
     credits = db.Column(db.Float, nullable=True)
     description = db.Column(db.Text, nullable=False, default='')
     catalog_url = db.Column(db.String(500), nullable=False, default='')
+    requirement_area = db.Column(db.String(20), nullable=False, default='unspecified')
     user = db.relationship("User", backref=db.backref("term_courses", cascade="all, delete-orphan"))

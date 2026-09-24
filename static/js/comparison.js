@@ -9,6 +9,7 @@
       const selected = boxes.filter(box => box.checked);
       count.textContent = message || (selected.length < 2 ? `${selected.length} selected. Choose ${2 - selected.length} more to compare.` : `${selected.length} selected. See the tradeoffs.`);
       submit.disabled = selected.length < 2;
+      submit.closest('.compare-tray').classList.toggle('has-selection', selected.length > 0);
       selection.replaceChildren();
       selected.forEach(box => {
         const remove = document.createElement('button');

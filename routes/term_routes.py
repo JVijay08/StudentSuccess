@@ -6,6 +6,7 @@ from services.auth_service import login_required
 from services.privacy_service import confirmation_errors
 from services.college_directory import institution, valid_catalog_url
 from services.settings_service import get_or_create_settings
+from services.college_planning import entry_context, term_summary, REQUIREMENT_AREAS
 
 
 def course_values(form):
@@ -31,6 +32,9 @@ def course_values(form):
     if values['enrollment_type'] not in {'college', 'dual'}:
         errors.append('Choose college or dual enrollment.')
     values['status'] = form.get('status', 'planned')
+    values['requirement_area'] = form.get('requirement_area','unspecified')
+    if values['requirement_area'] not in REQUIREMENT_AREAS:
+        errors.append('Choose a valid course requirement category.')
     if values['status'] not in {'considering', 'planned', 'completed'}:
         errors.append('Choose considering, planned, or completed.')
     values['school_year'] = None
@@ -47,23 +51,18 @@ def course_values(form):
 
 
 def render_plan(errors=None, editing=None):
-    courses = TermCourse.query.filter_by(user_id=g.current_user.id).order_by(TermCourse.term, TermCourse.title, TermCourse.id).all()
-    preferences = get_or_create_settings(g.current_user)
-    selected = institution(preferences.institution_id)
-    ids = {course.institution_id for course in courses if course.institution_id}
-    if selected:
-        ids.add(selected['id'])
-    choices = sorted((institution(i) for i in ids if institution(i)), key=lambda row: row['name'])
-    if request.method == 'POST':
-        values = request.form
-    elif editing:
-        values = {key: getattr(editing, key) for key in ('title', 'term', 'weekly_hours', 'institution_id',
-            'enrollment_type', 'school_year', 'status', 'course_code', 'credits', 'description', 'catalog_url')}
-    else:
-        values = dict(institution_id=preferences.institution_id, weekly_hours=3, status='considering',
-            enrollment_type='dual' if preferences.academic_context == 'high_school' else 'college')
-    return render_template('term_plan.html', courses=courses, errors=errors or [], editing=editing,
-        values=values, college_choices=choices, selected_college=selected)
+    if get_or_create_settings(g.current_user).academic_context == 'high_school':
+        from routes.course_routes import course_explorer
+        return course_explorer(course_errors=errors, editing=editing)
+    context=entry_context(editing)
+    return render_template('term_plan.html', courses=context['term_courses'], errors=errors or [],
+        college_summary=term_summary(g.current_user), **context)
+
+
+def plan_destination():
+    if get_or_create_settings(g.current_user).academic_context == 'high_school':
+        return url_for('courses.course_explorer', course_source='dual', _anchor='college-entry')
+    return url_for('terms.plan')
 
 term_bp = Blueprint("terms", __name__)
 
@@ -77,7 +76,9 @@ def plan():
         if not errors:
             db.session.add(TermCourse(user_id=g.current_user.id, **values))
             db.session.commit()
-            return redirect(url_for("terms.plan"))
+            return redirect(plan_destination())
+    elif get_or_create_settings(g.current_user).academic_context == 'high_school':
+        return redirect(plan_destination())
     return render_plan(errors)
 
 
@@ -95,7 +96,7 @@ def edit(course_id):
                 setattr(course, key, value)
             db.session.commit()
             flash('Course updated. Existing assignments keep their current subject name.', 'success')
-            return redirect(url_for('terms.plan'))
+            return redirect(plan_destination())
     return render_plan(errors, editing=course)
 
 
@@ -108,4 +109,4 @@ def delete(course_id):
     db.session.delete(course)
     db.session.commit()
     flash("Course removed from this term.", "success")
-    return redirect(url_for("terms.plan"))
+    return redirect(plan_destination())

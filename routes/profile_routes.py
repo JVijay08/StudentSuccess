@@ -18,7 +18,7 @@ profile_bp = Blueprint("profile", __name__)
 @profile_bp.route("/onboarding", methods=["GET", "POST"])
 @login_required
 def onboarding():
-    if g.current_user.access_credential is not None or (g.current_user.profile and get_or_create_settings(g.current_user).academic_context == "college"):
+    if g.current_user.access_credential is not None or get_or_create_settings(g.current_user).academic_context == "college":
         return _planning_preferences()
     errors = []
 
@@ -200,10 +200,29 @@ def profile_view():
 
 def _planning_preferences():
     profile = g.current_user.profile
+    if profile is None:
+        from datetime import datetime
+        profile=StudentProfile(user_id=g.current_user.id, first_name='Planner', grade=9,
+            graduation_year=datetime.now().year+4, current_gpa=0, target_gpa=0, study_hours_per_week=10)
+        db.session.add(profile)
+        db.session.commit()
     preferences = get_or_create_settings(g.current_user)
     errors = []
     if request.method == "POST":
         verify_csrf()
+        if preferences.academic_context == 'college':
+            program=request.form.get('college_program', preferences.college_program).strip()
+            term=request.form.get('college_term', preferences.college_term).strip()
+            if len(program)>120 or len(term)>60:
+                errors.append('Use up to 120 characters for your program and 60 for your term.')
+            if ('college_program' in request.form or 'college_term' in request.form) and (program or term):
+                errors.extend(confirmation_errors(request.form))
+            raw_goal=request.form.get('term_credit_goal', preferences.term_credit_goal)
+            try:
+                goal=None if raw_goal in ('',None) else float(raw_goal)
+                if goal is not None and (not math.isfinite(goal) or not 0 <= goal <= 60): raise ValueError
+            except (ValueError,TypeError):
+                errors.append('Enter a personal term credit target between 0 and 60, or leave it blank.')
         try:
             grade = profile.grade if preferences.academic_context == "college" else int(request.form.get("grade", ""))
             hours = float(request.form.get("study_hours", ""))
@@ -214,6 +233,10 @@ def _planning_preferences():
         if not errors:
             profile.grade = grade
             profile.study_hours_per_week = hours
+            if preferences.academic_context == 'college':
+                preferences.college_program=program
+                preferences.college_term=term
+                preferences.term_credit_goal=goal
             db.session.commit()
             return redirect(back_url("main.dashboard"))
     return render_template("planning_preferences.html", profile=profile, errors=errors)

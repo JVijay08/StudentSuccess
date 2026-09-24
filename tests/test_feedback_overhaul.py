@@ -197,6 +197,8 @@ def test_additive_migration_preserves_legacy_rows(app):
         assert db.session.execute(text("SELECT title FROM tasks WHERE id=1")).scalar() == "Existing history"
         assert db.session.execute(text("SELECT academic_context FROM user_settings WHERE id=1")).scalar() == "high_school"
         assert db.session.execute(text("SELECT title, weekly_hours, enrollment_type, status, institution_id FROM term_courses WHERE id=1")).one() == ('Existing college course', 4, 'college', 'planned', None)
+        assert db.session.execute(text("SELECT college_program, college_term, term_credit_goal FROM user_settings WHERE id=1")).one() == ('', '', None)
+        assert db.session.execute(text("SELECT requirement_area FROM term_courses WHERE id=1")).scalar() == 'unspecified'
         assert {"parent_task_id", "external_uid"} <= {c["name"] for c in inspect(db.engine).get_columns("tasks")}
 
 

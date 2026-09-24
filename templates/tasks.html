@@ -40,8 +40,8 @@
       {% if task_view == 'courses' %}
         {% include '_course_tasks.html' %}
       {% else %}
-      <form method="get"><label>Sort tasks<select name="sort" onchange="this.form.submit()">{% for value, label in [('recommended','Recommended'),('due','Due date'),('planned','Planned start'),('subject','Subject'),('status','Status')] %}<option value="{{ value }}" {% if sort == value %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label><noscript><button>Sort</button></noscript></form>
-      <details class="queue-help"><summary>How tasks are ordered</summary><p>In progress, overdue, missed planned starts, then due within 24 hours. Other tasks use priority and deadline.</p></details>
+      <div class="queue-options"><h3>Queue options</h3><form method="get"><label>Sort tasks<select name="sort" onchange="this.form.submit()">{% for value, label in [('recommended','Recommended'),('due','Due date'),('planned','Planned start'),('subject','Subject'),('status','Status')] %}<option value="{{ value }}" {% if sort == value %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label><noscript><button>Sort</button></noscript></form>
+      <details class="queue-help"><summary>How tasks are ordered</summary><p>In progress, overdue, missed planned starts, then due within 24 hours. Other tasks use priority and deadline.</p></details></div>
       {% if task_rows %}
         {% for row in task_rows %}
           {% include '_task_row.html' %}

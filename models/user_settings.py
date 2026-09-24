@@ -8,6 +8,9 @@ class UserSettings(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     academic_context = db.Column(db.String(20), nullable=False, default="high_school")
     institution_id = db.Column(db.String(12), nullable=True)
+    college_program = db.Column(db.String(120), nullable=False, default='')
+    college_term = db.Column(db.String(60), nullable=False, default='')
+    term_credit_goal = db.Column(db.Float, nullable=True)
     user_id = db.Column(
         db.Integer, db.ForeignKey("users.id"), unique=True, nullable=False
     )

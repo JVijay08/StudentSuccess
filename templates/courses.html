@@ -16,18 +16,15 @@
     <header class="page-header">
       <div>
         <p class="eyebrow">STUDENTSUCCESS / COURSE-LOAD PLANNER</p>
-        <h1>Explore high-school courses.</h1>
-        <p class="lede">Compare only the courses you are seriously considering, check prerequisites, and use the workload estimate to shape a realistic task plan.</p>
+        <h1>Choose your courses.</h1>
+        <p class="lede">Choose high-school courses and add college courses for dual enrollment in one place.</p>
       </div>
       <div class="header-actions"><a class="quiet-link" href="{{ nav_back_url() }}">{{ nav_back_label() }}</a>
 
         <a class="button" href="{{ nav_url('courses.course_plan') }}">My Four-Year Plan</a>
       </div>
     </header>
-    <p class="catalog-note">Academic depth describes the course content level. Time commitment estimates the amount of work. These catalog estimates are separate from how challenging you find an individual task.</p>
-
-    <div class="catalog-note">Designed for U.S. high-school planning. Workload and rigor labels are estimates, and offerings vary by school. Confirm requirements and availability with your counselor.</div>
-
+    <details class="catalog-guidance"><summary>About course estimates and credit</summary><p>U.S. high-school planning with optional college courses. Academic depth describes content level; time commitment is a planning estimate. Check course availability, prerequisites, and dual-enrollment credit with your school and college.</p></details>
     {% with messages = get_flashed_messages(with_categories=true) %}
       {% if messages %}
         <div class="flash" role="status">
@@ -39,7 +36,8 @@
     <section class="explorer-layout">
       <aside class="filter-panel">
         <div class="section-kicker">FIND A COURSE OPTION</div>
-        <form method="post" data-nonpersonal-form data-optional-confirmation>{% include '_navigation_fields.html' %}
+        <form action="{{ url_for('courses.course_explorer') }}" method="post" data-nonpersonal-form data-optional-confirmation>{% include '_navigation_fields.html' %}
+          <label>Show courses<select name="course_source">{% for key,label in [('all','High school + college'),('high_school','High school'),('dual','College / dual enrollment')] %}<option value="{{ key }}" {% if course_source==key %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label>
           <label>State
             <select name="state"><option value="">Choose a state</option>{% for state in states %}<option value="{{ state.code }}" {% if state_code == state.code %}selected{% endif %}>{{ state.name }}</option>{% endfor %}</select>
           </label>
@@ -55,6 +53,7 @@
               {% for grade in [9, 10, 11, 12] %}<option value="{{ grade }}" {% if filters.get('grade') == grade|string %}selected{% endif %}>{{ grade }}th grade</option>{% endfor %}
             </select>
           </label>
+          <p class="muted">Subject, type, depth, time commitment, and career filters apply to the high-school catalog.</p>
           <label>Subject
             <select name="subject"><option value="">All subjects</option>{% for option in options.subjects %}<option value="{{ option }}" {% if filters.get('subject') == option %}selected{% endif %}>{{ option }}</option>{% endfor %}</select>
           </label>
@@ -78,15 +77,16 @@
 
       <section class="results-panel">
         {% if state_code and catalog_id == 'national' %}<div class="catalog-note state-note">No verified local catalog is loaded for this state yet. Showing the national reference catalog instead.</div>{% endif %}
-        <div class="results-heading"><div><span class="section-kicker">{{ courses|length }} MATCHES</span><h2>Courses to consider</h2></div><span class="micro-note">Compare up to three before planning</span></div>
-        <section class="compare-invitation" aria-labelledby="compare-invitation-title"><h2 id="compare-invitation-title">What would choosing one change?</h2><p>Select two or three courses to compare workload, prerequisites, and pathways.</p><details><summary>Try an example comparison</summary><div class="example-pairs">{% for pair in comparison_examples %}<a href="{{ nav_url('courses.course_compare', catalog=catalog_id, id=[pair[0].course_id, pair[1].course_id]) }}">{{ pair[0].course_name }} <span>vs.</span> {{ pair[1].course_name }} <span aria-hidden="true">&#8599;</span></a>{% else %}<p>Select courses below to explore their differences.</p>{% endfor %}</div></details></section>
+        <details class="panel integrated-college-entry" id="college-entry" {% if errors or editing or college_query or college_state or course_source=='dual' %}open{% endif %}><summary>{{ 'Edit college course' if editing else 'Add a college course for dual enrollment' }}</summary><p>Choose a college, then enter a course from its catalog. We have institution listings, not a verified catalog of every college course.</p>{% if errors %}<div class="errors" role="alert">{% for error in errors %}<p>{{ error }}</p>{% endfor %}</div>{% endif %}{% include '_college_finder.html' %}{% include '_college_course_form.html' %}</details>
+        <div class="results-heading"><div><span class="section-kicker">{{ courses|length + dual_courses|length }} MATCHES</span><h2>Courses to consider</h2></div>{% if courses %}<span class="micro-note">Compare up to three before planning</span>{% endif %}</div>
+        {% if courses %}<section class="compare-invitation" aria-labelledby="compare-invitation-title"><h2 id="compare-invitation-title">What would choosing one change?</h2><p>Select two or three courses to compare workload, prerequisites, and pathways.</p><details><summary>Try an example comparison</summary><div class="example-pairs">{% for pair in comparison_examples %}<a href="{{ nav_url('courses.course_compare', catalog=catalog_id, id=[pair[0].course_id, pair[1].course_id]) }}">{{ pair[0].course_name }} <span>vs.</span> {{ pair[1].course_name }} <span aria-hidden="true">&#8599;</span></a>{% else %}<p>Select courses below to explore their differences.</p>{% endfor %}</div></details></section>{% endif %}
         <form id="compare-form" method="get" action="{{ url_for('courses.course_compare') }}"><input type="hidden" name="nav" value="{{ navigation_child_token }}"><input type="hidden" name="catalog" value="{{ catalog_id }}"></form>
-          <div class="course-grid">
+          <div class="course-grid">{% include '_dual_course_cards.html' %}
             {% for course in courses %}
               <article class="course-card">
                 <div class="course-card-top"><span class="tag">{{ course.course_type }}</span><label class="compare-check"><input form="compare-form" type="checkbox" name="id" value="{{ course.course_id }}" {% if course.course_id in request.args.getlist('selected') %}checked{% endif %} data-course-name="{{ course.course_name }}" aria-label="Compare {{ course.course_name }}"> Compare</label></div>
                 <h3><a href="{{ nav_url('courses.course_detail', course_id=course.course_id, catalog=catalog_id) }}">{{ course.course_name }}</a></h3>
-                <p class="course-meta">{{ course.subject }} · grades {{ course.grade_levels|join(', ') }}</p>
+                <p class="course-meta">{{ course.subject }} Ã‚Â· grades {{ course.grade_levels|join(', ') }}</p>
                 <div class="metric-row"><span>{{ course.rigor_level }} academic depth</span><span>{{ course.workload_level }} time commitment</span></div>
                 <div class="cluster-row">{% for cluster in course.career_clusters %}<span>{{ cluster }}</span>{% else %}<span>Core pathway</span>{% endfor %}</div>
                 {% if course.course_id in planned_ids %}<p class="saved-label">Already in your plan</p>{% endif %}
@@ -94,13 +94,13 @@
                 <div class="quick-add" hidden><form method="post" action="{{ url_for('courses.add_to_plan', course_id=course.course_id) }}">{% include '_navigation_fields.html' %}<input type="hidden" name="catalog" value="{{ catalog_id }}"><label>Grade year<select name="school_year">{% for grade in [9,10,11,12] %}<option value="{{ grade }}" {% if grade == profile.grade %}selected{% endif %}>{{ grade }}th</option>{% endfor %}</select></label><button type="submit" class="small-button">Add course</button><button type="button" class="small-button" onclick="this.closest('.quick-add').hidden = true; this.closest('.course-card').querySelector('[data-course-id]').hidden = false; this.closest('.course-card').querySelector('[data-course-id]').focus();">Cancel</button></form></div>
               </article>
             {% else %}
-              <div class="empty-state"><h3>No courses match those filters.</h3><p>Try widening the grade, subject, or workload selection.</p></div>
+              {% if not dual_courses %}<div class="empty-state"><h3>{{ "No college courses added yet." if course_source=="dual" and not dual_courses else "No high-school courses match those filters." }}</h3><p>{{ "Use the form above to add a course you are considering." if course_source=="dual" else "Try widening the grade, subject, or workload selection." }}</p></div>{% endif %}
             {% endfor %}
           </div>
           {% if courses %}<div class="compare-tray"><div><strong id="compare-count" role="status" aria-live="polite">Choose two or three courses to compare</strong><div id="compare-selection"></div></div><button class="compare-button" form="compare-form" type="submit">Compare selected courses</button></div>{% endif %}
       </section>
     </section>
-  </main>
+  </main><script src="{{ url_for('static',filename='js/college_courses.js') }}" defer></script>
   <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
   <script src="{{ url_for('static', filename='js/nonpersonal.js') }}" defer></script>
   <script src="{{ url_for('static', filename='js/comparison.js') }}" defer></script>

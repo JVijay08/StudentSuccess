@@ -128,12 +128,14 @@ def _migrate_feedback_columns():
     """Additive migration; existing tasks, history, and preferences are retained."""
     additions = {
         "tasks": {"parent_task_id": "INTEGER REFERENCES tasks(id)", "external_uid": "VARCHAR(255)"},
-        "user_settings": {"academic_context": "VARCHAR(20) NOT NULL DEFAULT 'high_school'", "institution_id": "VARCHAR(12)"},
+        "user_settings": {"academic_context": "VARCHAR(20) NOT NULL DEFAULT 'high_school'", "institution_id": "VARCHAR(12)",
+            "college_program": "VARCHAR(120) NOT NULL DEFAULT ''", "college_term": "VARCHAR(60) NOT NULL DEFAULT ''", "term_credit_goal": "FLOAT"},
         "term_courses": {
             "institution_id": "VARCHAR(12)", "enrollment_type": "VARCHAR(20) NOT NULL DEFAULT 'college'",
             "school_year": "INTEGER", "status": "VARCHAR(20) NOT NULL DEFAULT 'planned'",
             "course_code": "VARCHAR(32) NOT NULL DEFAULT ''", "credits": "FLOAT",
             "description": "TEXT NOT NULL DEFAULT ''", "catalog_url": "VARCHAR(500) NOT NULL DEFAULT ''",
+            "requirement_area": "VARCHAR(20) NOT NULL DEFAULT 'unspecified'",
         },
     }
     for table, fields in additions.items():

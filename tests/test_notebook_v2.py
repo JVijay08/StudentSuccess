@@ -61,8 +61,8 @@ def test_course_grouping_normalizes_names_and_excludes_other_accounts(app, authe
 def test_empty_college_course_links_to_prefilled_assignment(app, authed_client):
     complete_profile(authed_client)
     authed_client.post('/terms', data={'title':'BIO 101', 'term':'Fall 2026', 'weekly_hours':'4', 'nonpersonal_confirmed':'yes'})
-    plan = authed_client.get('/terms').get_data(as_text=True)
-    assert 'Assignments &amp; subtasks' in plan
+    plan = authed_client.get('/terms',follow_redirects=True).get_data(as_text=True)
+    assert '>Assignments</a>' in plan
     body = authed_client.get('/tasks?view=courses&course=BIO+101').get_data(as_text=True)
     assert 'No assignments yet' in body
     assert 'value="BIO 101"' in body

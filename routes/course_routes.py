@@ -95,19 +95,24 @@ def _catalog_selection(args_or_form):
 
 @course_bp.route("/courses", methods=["GET", "POST"])
 @login_required
-def course_explorer():
+def course_explorer(course_errors=None, editing=None):
     profile, redirect_response = _profile_or_redirect()
-    if redirect_response:
+    if redirect_response and (course_errors or editing):
+        # Keep invalid legacy submissions reviewable without writing a profile.
+        from types import SimpleNamespace
+        profile=SimpleNamespace(grade=9,planned_courses=[])
+    elif redirect_response:
         return redirect_response
 
-    submitted = request.form if request.method == "POST" else request.args
+    filter_post = request.method == 'POST' and request.endpoint == 'courses.course_explorer'
+    submitted = request.form if filter_post else request.args
     query = submitted.get("q", "").strip()
     privacy_errors = confirmation_errors(submitted) if query else []
     for error in privacy_errors:
         flash(error, "error")
-    if request.method == "POST" and not privacy_errors:
+    if filter_post and not privacy_errors:
         # Restore searches through an opaque key, without putting free text in URLs.
-        keys = ("q", "state", "catalog", "grade", "subject", "course_type", "rigor", "workload", "career")
+        keys = ("q", "state", "catalog", "grade", "subject", "course_type", "rigor", "workload", "career", "course_source")
         snapshots = session.get("course_searches", [])[-2:]
         key = token_hex(8)
         snapshots.append({"key": key, "filters": {name: submitted.get(name, "")[:120 if name == "q" else 60] for name in keys if submitted.get(name)}})
@@ -133,6 +138,14 @@ def course_explorer():
         "catalog": catalog_id,
     }
     courses = course_service.filter_courses(**filters)
+    from services.college_planning import entry_context
+    context=entry_context(editing)
+    source=submitted.get('course_source','all')
+    if source not in {'all','high_school','dual'}: source='all'
+    dual_courses=[c for c in context['term_courses'] if (not query or query.casefold() in (c.title+' '+c.course_code).casefold())
+        and (not filters['grade_level'] or c.school_year==filters['grade_level'])]
+    if source=='dual': courses=[]
+    if source=='high_school': dual_courses=[]
     return render_template(
         "courses.html",
         profile=profile,
@@ -145,6 +158,7 @@ def course_explorer():
         state_code=state_code,
         planned_ids=_planned_ids(profile, catalog_id),
         comparison_examples=suggested_pairs(courses, profile.grade),
+        course_source=source, dual_courses=dual_courses, errors=course_errors or [], **context,
     ), (400 if privacy_errors else 200)
 
 

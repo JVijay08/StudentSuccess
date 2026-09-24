@@ -321,6 +321,13 @@ body #term-form details .fields {margin-top:18px;}
 body #term-form .nonpersonal-confirmation {border:1px solid var(--line);border-radius:8px;padding:16px;margin:20px 0;}
 body a.skip-link {top:-100vh;transform:none;}
 body a.skip-link:focus {top:8px;}
+.queue-options>h3 {display:none;}
+body .integrated-college-entry {margin-bottom:24px;}
+body .college-finder {margin:16px 0;padding:12px 0;border-bottom:1px solid var(--line);}
+body .college-finder .college-search {display:grid;}
+.college-search-status {grid-column:1/-1;margin:4px 0;}
+.catalog-guidance {margin:0 0 20px;}
+.term-overview .timing-metrics {margin-bottom:12px;}
 @media(max-width:650px) {
   body .college-search,body #term-form .fields {grid-template-columns:minmax(0,1fr);}
   body .college-results .term-course {align-items:stretch;flex-direction:column;gap:12px;}

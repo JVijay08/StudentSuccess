@@ -7,6 +7,17 @@ from services.settings_service import get_or_create_settings
 college_bp = Blueprint('colleges', __name__)
 
 
+@college_bp.get('/colleges/search')
+@login_required
+def search():
+    query=request.args.get('q','').strip()[:120]
+    state=request.args.get('state','').upper()
+    if state and state not in college_directory.states():
+        return {'results':[], 'total':0}
+    matches=college_directory.search(query,state)
+    return {'results':[{'id':r['id'],'name':r['name'],'state':r['state'],'city':r['city']} for r in matches[:40]],'total':len(matches)}
+
+
 @college_bp.get('/colleges')
 @login_required
 def browse():

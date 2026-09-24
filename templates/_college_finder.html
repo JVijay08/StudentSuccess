@@ -1,0 +1,7 @@
+<details class="college-finder" {% if college_query or college_state %}open{% endif %}><summary>Find a college by state or name</summary>
+<form method="get" action="{{ url_for('courses.course_explorer' if ui_settings.academic_context == 'high_school' else 'terms.plan', _anchor='college-entry') }}" class="college-search" data-college-finder data-search-url="{{ url_for('colleges.search') }}">
+{% if ui_settings.academic_context == 'high_school' %}<input type="hidden" name="course_source" value="dual">{% endif %}
+<label>College name or city<input name="college_q" maxlength="120" value="{{ college_query }}" placeholder="Public college name"></label>
+<label>College state / territory<select name="college_state"><option value="">All locations</option>{% for code in college_states %}<option value="{{ code }}" {% if college_state==code %}selected{% endif %}>{{ college_state_names.get(code,code) }}</option>{% endfor %}</select></label><button type="submit" class="secondary">Find colleges</button>
+<p class="college-search-status" role="status">{% if college_query or college_state %}{{ college_matches }} matches. Choose a college in the course form below.{% else %}Search here, then choose a result in the College field. Course details stay on this page.{% endif %}</p>
+</form></details>

@@ -9,7 +9,7 @@ Clearing/changing the default does not rewrite old courses. Switching presets pr
 
 The term planner supports course name/code, credits, weekly study hours, term, planning
 status, optional description and public catalog URL. Dual-enrollment courses also require
-a grade (9–12) and appear in the corresponding year of the high-school plan. College
+a grade (9â€“12) and appear in the corresponding year of the high-school plan. College
 study hours are shown separately from the high-school reference workload rating.
 Only planned courses contribute to the term's planned weekly-hours total; considering
 and completed courses remain visible. Credits are user-entered college credits, not
@@ -77,3 +77,17 @@ editing, mobile/desktop reflow and the no-JavaScript directory fallback.
 Release checks: 303 Python tests passed. Both the college workflow browser audit and
 the existing notebook browser regression audit reported no JavaScript errors or visual
 issues at their tested viewports (320, 390, 768, 1440 pixels; dark/high-contrast at 200%).
+
+## Integrated preset update
+
+High-school students add and edit college courses directly inside `/courses`, alongside
+high-school choices. The existing `/terms` URL redirects there in high-school mode.
+Inline state/name lookup keeps an unfinished course draft intact; GET search also works
+without JavaScript. Saved courses retain institutions, grade placement and task links.
+
+College mode retains term planning and adds an optional program, explicitly selected
+current term, personal credit target and course categories (major, general education,
+elective or prerequisite). Only planned courses in the selected term count toward its
+summary; missing credits are identified. With no selected term, a single existing term
+is used; multiple terms require choosing one. Preset switches preserve both plans.
+The new settings and category columns migrate additively and appear in account exports.

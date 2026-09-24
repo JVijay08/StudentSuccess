@@ -15,22 +15,7 @@
 .access-help p { font-size: .9rem; color: var(--muted); }
 .mobile-disclosure > summary { display: none; }
 .settings-form .disclosure-content > .secondary-link { display: inline-block; margin-top: 20px; }
-@media (max-width: 680px) {
-  .onboarding-page:has(.compact-access) { padding: 12px; }
-  .compact-access { padding: 20px 16px; }
-  .compact-access h1 { font-size: 2rem; }
-  .compact-access.access-section label[for="access-code"] { margin-top: 14px; }
-  .mobile-disclosure > summary { display: list-item; }
-  .mobile-disclosure .disclosure-content { padding-top: 12px; }
-  .settings-form section:has(.mobile-disclosure), .account article:has(.mobile-disclosure),
-  .card:has(.mobile-disclosure), .demo-checklist:has(.mobile-disclosure) { padding: 8px 16px; }
-  .demo-checklist:has(.mobile-disclosure) { display: block; }
-  main > header h1 { font-size: 2rem; }
-  .shell main > header { margin-bottom: 16px; }
-  .shell .sidebar { padding-top: 12px; padding-bottom: 12px; }
-  .shell .sidebar nav { margin-top: 10px; }
-  .focus-card .illustrated-title .planner-art { width: 64px; flex-basis: 64px; }
-}
+
 
 main, section, article, form, fieldset, label, .form-group,
 .priority-list, .priority-item, .overdue-list, .overdue-item {
@@ -52,6 +37,22 @@ input:not([type="checkbox"]):not([type="radio"]), select, textarea {
 .year-heading .workload { white-space: normal; }
 
 @media (max-width: 680px) {
+
+  .onboarding-page:has(.compact-access) { padding: 12px; }
+  .compact-access { padding: 20px 16px; }
+  .compact-access h1 { font-size: 2rem; }
+  .compact-access.access-section label[for="access-code"] { margin-top: 14px; }
+  .mobile-disclosure > summary { display: list-item; }
+  .mobile-disclosure .disclosure-content { padding-top: 12px; }
+  .settings-form section:has(.mobile-disclosure), .account article:has(.mobile-disclosure),
+  .card:has(.mobile-disclosure), .demo-checklist:has(.mobile-disclosure) { padding: 8px 16px; }
+  .demo-checklist:has(.mobile-disclosure) { display: block; }
+  main > header h1 { font-size: 2rem; }
+  .shell main > header { margin-bottom: 16px; }
+  .shell .sidebar { padding-top: 12px; padding-bottom: 12px; }
+  .shell .sidebar nav { margin-top: 10px; }
+  .focus-card .illustrated-title .planner-art { width: 64px; flex-basis: 64px; }
+
   .shell main, .browser-shell main { padding: 24px 14px 40px; }
   main > header { gap: 14px; margin-bottom: 20px; }
   main > header h1 { font-size: 2.35rem; line-height: 1.08; }
@@ -86,4 +87,56 @@ input:not([type="checkbox"]):not([type="radio"]), select, textarea {
     font-size: max(1rem, 16px);
   }
   button, input, select, .actions a { min-height: 44px; }
+
+  /* Phone hierarchy and gutters; desktop layouts remain owned by page styles. */
+  body:not(.fieldnotes-landing) main {width:100%;padding:20px 16px 40px;}
+  body .app-bar {padding:12px 16px;gap:8px;}
+  body .app-bar nav {display:grid;grid-template-columns:repeat(auto-fit,minmax(64px,1fr));width:100%;gap:4px;}
+  body .app-bar nav a {padding:8px 4px;min-height:44px;white-space:normal;text-align:center;display:flex;align-items:center;justify-content:center;}
+  body .app-bar .brand {margin-right:44px;}
+  body .workspace-tools {position:absolute;top:12px;right:14px;}
+  body main>header {padding-bottom:12px;margin-bottom:16px;gap:10px;}
+  body main>header h1 {font-size:1.8rem;line-height:1.15;}
+  body main>header p {margin:4px 0;}
+  body .dashboard-header {gap:8px;}
+  body .dashboard-header>div>p:not(.eyebrow) {font-size:.9rem;}
+  body :is(.card,.panel,.task-card,.focus-card,.course-card,.year-card,.comparison-card,.detail-main,.action-panel,.settings-form section,.account-grid article,.notice-panel) {padding:16px;}
+  body .demo-banner {padding:0 12px;margin:0 0 12px;}
+  .demo-banner .mobile-disclosure>summary {font-size:.8rem;}
+  body .demo-banner .disclosure-content {padding:0 0 12px;font-size:.85rem;}
+  body .focus-card .priority-item {padding:12px 0;}
+  body .focus-card .priority-item:first-child h2 {font-size:1.35rem;}
+  body .focus-card .recommendation-brief {font-size:.9rem;}
+  body .planner-clock {margin-bottom:8px;font-size:.72rem;}
+  body .queue-options {margin:8px 0;}
+  .queue-options .disclosure-content>h3 {display:none;}
+  body .queue-heading {margin-bottom:8px;}
+  body .task-card .task-tier {margin-top:0;}
+  body .course-card-top,body .metric-row {flex-wrap:wrap;}
+  body .quick-add form {display:grid;grid-template-columns:minmax(0,1fr);align-items:stretch;}
+  body .quick-add .small-button {width:100%;}
+  body .compare-invitation {padding:16px;margin-bottom:16px;}
+  body .compare-invitation h2 {font-size:1.15rem;}
+  body .compare-tray {position:static;box-shadow:none;}
+  body .compare-tray:not(.has-selection):has(button:disabled) {display:none;}
+  body .compare-tray.has-selection {position:sticky;bottom:8px;gap:8px;padding:12px;}
+  body .compare-tray #compare-selection {display:none;}
+  body .compare-tray .compare-button {width:100%;}
+  body .comparison-table-wrap {overflow:visible;border:0;}
+  body .comparison-table,body .comparison-table tbody,body .comparison-table tr {display:block;width:100%;}
+  body .comparison-table thead {position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden;}
+  body .comparison-table tbody tr {margin:16px 0;border:1px solid var(--line);border-radius:8px;}
+  body .comparison-table tbody th,body .comparison-table td {display:block;min-width:0;width:100%;padding:12px 16px;}
+  body .comparison-table td::before {content:attr(data-course);display:block;color:var(--muted);font-weight:600;font-size:.85em;margin-bottom:4px;}
+  body .comparison-table caption {display:block;}
+  body .comparison-options {margin:20px 0;gap:16px;}
+  body .comparison-options article {padding:16px;}
+  body .comparison-names {gap:8px;margin-bottom:16px;}
+  body .term-grid,body .plan-grid {grid-template-columns:minmax(0,1fr);gap:16px;}
+  body .college-context {gap:12px;}
+  body .integrated-college-entry>summary {font-size:.95rem;}
+  body .college-finder .college-search {grid-template-columns:minmax(0,1fr);}
+  body .year-card {min-height:0;}
+  body .plan-footer .planner-art {width:80px;height:80px;}
+  body .welcome-card {padding:20px;}
 }

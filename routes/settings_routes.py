@@ -141,8 +141,9 @@ def export_data():
         "planned_courses": [],
         "academic_context": get_or_create_settings(g.current_user).academic_context,
         "institution_id": get_or_create_settings(g.current_user).institution_id,
+        "college_planning": {key:getattr(get_or_create_settings(g.current_user),key) for key in ('college_program','college_term','term_credit_goal')},
         "term_courses": [{key: getattr(c, key) for key in ('title', 'term', 'weekly_hours', 'institution_id',
-            'enrollment_type', 'school_year', 'status', 'course_code', 'credits', 'description', 'catalog_url')}
+            'enrollment_type', 'school_year', 'status', 'course_code', 'credits', 'description', 'catalog_url', 'requirement_area')}
             for c in g.current_user.term_courses],
     }
     if profile is not None:

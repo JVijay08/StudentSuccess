@@ -219,6 +219,8 @@ def dashboard():
     overdue_tasks = []
     estimate_accuracy = {"groups": [], "overall": None}
     course_load = None
+    from services.college_planning import term_summary
+    college_summary = term_summary(g.current_user) if settings.academic_context == 'college' else None
     reminder_tasks = []
 
     if profile is not None:
@@ -298,6 +300,7 @@ def dashboard():
         overdue_tasks=overdue_tasks,
         estimate_accuracy=estimate_accuracy,
         course_load=course_load,
+        college_summary=college_summary,
         reminder_tasks=reminder_tasks,
         settings=settings,
         timing=timing_summary(all_tasks),

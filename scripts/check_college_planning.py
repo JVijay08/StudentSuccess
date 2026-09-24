@@ -32,12 +32,16 @@ def main():
             assert page.locator('.skip-link').bounding_box()['y'] < 0
             page.locator('.skip-link').focus()
             assert page.locator('.skip-link').bounding_box()['y'] >= 0
-            page.get_by_role('link', name='College / dual enrollment', exact=True).click()
-            page.get_by_role('link', name='Find a college', exact=True).click()
+            page.get_by_role('link', name='Choose courses', exact=True).click()
+            page.locator('#college-entry > summary').click()
+            page.locator('#term-form [name=title]').fill('Draft preserved')
+            page.get_by_text('Find a college by state or name', exact=True).click()
             page.get_by_label('College name or city').fill('Alabama A & M')
-            page.get_by_label('State / territory').select_option('AL')
+            page.get_by_label('College state / territory').select_option('AL')
             page.get_by_role('button', name='Find colleges', exact=True).click()
-            page.get_by_role('button', name='Use Alabama A & M University for planning', exact=True).click()
+            expect(page.locator('#term-form [name=institution_id] option[value="100654"]')).to_have_count(1)
+            expect(page.locator('#term-form [name=title]')).to_have_value('Draft preserved')
+            page.locator('#term-form [name=institution_id]').select_option('100654')
             form = page.locator('#term-form')
             expect(form.locator('[name=institution_id]')).to_have_value('100654')
             expect(form.locator('[name=enrollment_type]')).to_have_value('dual')
@@ -58,14 +62,14 @@ def main():
             form.locator('[name=status]').select_option('completed')
             form.locator('[name=nonpersonal_confirmed]').check()
             form.get_by_role('button',name='Save course',exact=True).click()
-            expect(page.locator('.term-course .eyebrow')).to_contain_text('COMPLETED')
+            expect(page.locator('.dual-course-card .saved-label')).to_contain_text('Completed')
             paths=['/colleges?state=AL','/terms','/courses/plan','/settings','/profile']
             for width in [320,390,768,1440]:
                 page.set_viewport_size({'width':width,'height':1000})
                 for i,path in enumerate(paths):
                     assert page.goto(origin+path).status == 200
                     if path == '/terms':
-                        page.locator('.task-entry>summary').click()
+                        page.locator('#college-entry').evaluate('(el)=>el.open=true')
                     if page.evaluate('document.documentElement.scrollWidth>innerWidth+1'):
                         issues.append([width,path,'overflow'])
                     issues.extend([width,path,issue] for issue in page.evaluate(CONTROL_AUDIT))
@@ -75,7 +79,7 @@ def main():
                 page.set_viewport_size({'width':390,'height':844})
                 for path in ['/colleges?state=AL','/terms']:
                     page.goto(origin+path)
-                    if path == '/terms': page.locator('.task-entry>summary').click()
+                    if path == '/terms': page.locator('#college-entry').evaluate('(el)=>el.open=true')
                     page.evaluate("theme=>Object.assign(document.documentElement.dataset,{theme,textScale:'200'})",theme)
                     page.wait_for_timeout(250)  # Let existing color transitions finish.
                     if page.evaluate('document.documentElement.scrollWidth>innerWidth+1'):
@@ -85,8 +89,8 @@ def main():
             context=browser.new_context(java_script_enabled=False)
             context.request.post(origin+'/demo')
             nojs=context.new_page()
-            nojs.goto(origin+'/colleges?q=Alabama+A+%26+M&state=AL')
-            nojs.get_by_role('button',name='Use Alabama A & M University for planning',exact=True).click()
+            nojs.goto(origin+'/courses?course_source=dual&college_q=Alabama+A+%26+M&college_state=AL')
+            nojs.locator('#term-form [name=institution_id]').select_option('100654')
             expect(nojs.locator('#term-form [name=institution_id]')).to_have_value('100654')
             browser.close()
         result = {'javascript_errors':errors,'visual_issues':issues}

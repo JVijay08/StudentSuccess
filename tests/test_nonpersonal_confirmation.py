@@ -45,7 +45,7 @@ def test_catalog_keeps_filters_and_blocks_unconfirmed_free_text(app):
     response = client.post("/courses", data={"q":"Calculus", "nonpersonal_confirmed":"yes"}, follow_redirects=True)
     assert response.status_code == 200
     assert b"Calculus" in response.data
-    assert b"Biology" not in response.data
+    assert not re.search(rb"<h3>.*?Biology.*?</h3>", response.data)
     assert client.get("/courses?q=unconfirmed").status_code == 400
 
 
@@ -62,7 +62,7 @@ def test_full_workspace_retains_catalog_comparison_and_plan(app):
     assert re.search(rb'href="/courses/plan(?:\?[^"]*)?">Course load</a>', dashboard.data)
     assert b"Course catalog" not in dashboard.data
     plan = client.get("/courses/plan")
-    assert re.search(rb'href="/courses(?:\?[^"]*)?">Explore Courses</a>', plan.data)
+    assert re.search(rb'href="/courses(?:\?[^"]*)?">Choose courses</a>', plan.data)
     assert b"Browser-only planner" not in dashboard.data
     for path in ("/courses", "/courses/plan", "/courses/compare?id=SCI_AP_CHEMISTRY&id=SCI_AP_BIOLOGY", "/tasks", "/settings"):
         assert client.get(path).status_code == 200
