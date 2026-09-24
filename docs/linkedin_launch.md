@@ -8,14 +8,14 @@ StudentSuccess combines planned start times, deadlines, task difficulty, interes
 
 The prototype includes:
 
-- a one-click fictional demo workspace;
+- a one-click demo workspace with sample courses and tasks;
 - explainable next-action recommendations;
 - planned-versus-actual task timing;
 - course workload, prerequisite, AP, and IB reference data;
 - accessibility and focus settings; and
 - data export and account controls.
 
-This is still a prototype and is **not ready for real student information**. Please use fictional data only. The free demo server may also take up to a minute to wake after inactivity.
+Students can use their actual courses, deadlines, and everyday tasks. Leave out full names, student IDs, contact details, passwords, and private records. The free demo server may also take up to a minute to wake after inactivity.
 
 Live demo: https://studentsuccess.onrender.com/
 

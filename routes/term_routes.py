@@ -10,8 +10,6 @@ from services.settings_service import get_or_create_settings
 
 def course_values(form):
     errors = confirmation_errors(form)
-    if errors:
-        errors = ['Confirm that your free-text entries contain no personal or identifying information. Public college selections and catalog details are allowed.']
     values = {key: form.get(key, '').strip() for key in
               ('title', 'term', 'course_code', 'description', 'catalog_url')}
     for key, limit in [('title', 120), ('term', 60), ('course_code', 32), ('description', 1000)]:

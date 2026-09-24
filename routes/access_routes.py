@@ -29,11 +29,11 @@ def create():
     if session.get("user_id") and not session.get("demo_mode"):
         return redirect(url_for("main.dashboard"))
     if request.form.get("understood") != "yes":
-        return render_template("register.html", errors=["Confirm that you understand how private codes and fictional data work."]), 400
+        return render_template("register.html", errors=["Confirm that you will keep your private code safe and leave personal identifiers and sensitive details out of your plan."]), 400
     code = create_code()
     user = User(username="private-" + secrets.token_hex(16), password_hash=hash_password(secrets.token_urlsafe(32)))
     user.access_credential = AccessCredential(digest=code_digest(code), version=1)
-    # Existing planning services require a profile. These are explicit fictional
+    # Existing planning services require a profile. These are initial
     # planning defaults, not inferred personal attributes; GPA is unused here.
     user.profile = StudentProfile(first_name="Planner", grade=9,
         graduation_year=datetime.now().year + 4, current_gpa=0, target_gpa=0,

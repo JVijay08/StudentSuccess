@@ -4,13 +4,13 @@ from models import StudentProfile, Task, User
 from services.auth_service import SESSION_TIMEOUT_MINUTES
 
 
-def test_public_home_explains_prototype_and_offers_fictional_demo(app):
+def test_public_home_explains_real_use_and_offers_demo(app):
     response = app.test_client().get("/")
 
     assert response.status_code == 200
     assert b"Plan less." in response.data
     assert b"Explore Demo" in response.data
-    assert b"Use fictional data only" in response.data
+    assert b"Plan your actual courses and tasks" in response.data
     assert b"high-school and college students" in response.data
     assert b'property="og:image"' in response.data
     assert b'name="twitter:card" content="summary_large_image"' in response.data
@@ -39,7 +39,7 @@ def test_one_click_demo_creates_isolated_populated_workspace(app):
     response = client.post("/demo", follow_redirects=True)
 
     assert response.status_code == 200
-    assert b"Fictional demo workspace" in response.data
+    assert b"Demo workspace" in response.data
     assert b"Start with one assignment" in response.data
     assert b"Finish algebra problem set" in response.data
     assert b"Moderate estimate" in response.data

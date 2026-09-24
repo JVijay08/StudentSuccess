@@ -19,30 +19,34 @@ Possession of the code grants full account access. A lost code cannot be
 recovered. Replacement requires the current code and invalidates the previous
 code and other sessions. Deletion also requires the code. The code is an access
 credential, not encryption or a promise of anonymity. Hosting still receives
-ordinary request metadata. Use fictional information only.
+ordinary request metadata. Students may plan their actual courses, deadlines, and
+everyday tasks. Leave out full names, student IDs, contact details, passwords,
+private records, and other sensitive details.
 
 Code accounts skip personal-profile onboarding. Existing planner services use
-explicit sample defaults (year 9, 10 weekly study hours, Balanced rigor).
+initial planning defaults (year 9, 10 weekly study hours, Balanced rigor).
 Compatibility profile fields use "Planner", a placeholder graduation year, and
 zero GPA values; these are not collected or inferred personal details. Only
 planning year and weekly study budget are exposed in the preferences form.
 
 The on-demand **How this works & privacy** dialog explains the prototype,
-code handling, server storage, and fictional demo. It does not open automatically
+code handling, server storage, and sample demo. It does not open automatically
 on arrival. Closing it records `studentsuccess.welcome.v1` in localStorage;
 the explanation can always be reopened. It is not a formal consent mechanism.
 Existing username/password accounts remain usable.
 
-### Non-personal entry confirmation
+### Entry confirmation
 
 Task creation/editing, legacy profile editing, and free-text catalog searches
-require an explicit non-personal-information acknowledgment on every submission.
+require an acknowledgment that personal identifiers and sensitive details are excluded
+on every submission. Actual course names, institution selections, assignments, deadlines,
+and everyday tasks are allowed.
 The acknowledgment starts unchecked and resets when relevant entries change.
 The server rejects unconfirmed task/profile saves and does not apply unconfirmed
 search text. Catalog searches use POST so new searches do not put text in URLs.
-The warning identifies real names, school names, contact details, student IDs,
-and other identifying details as information to remove. This is a user
-confirmation, not automatic detection or a guarantee that text is non-personal.
+The guidance identifies full names, student IDs, contact details, home addresses,
+passwords, and private records as information to remove. Public institution and course
+names are allowed. This is a user confirmation, not automatic detection or redaction.
 Authentication fields and structured catalog selections are not subject to the
 free-text acknowledgment.
 
@@ -51,7 +55,7 @@ so those public search terms can appear in browser history and ordinary hosting 
 Do not enter personal information in directory search. Optional institution selections
 are stored as public IPEDS IDs for planning, not as a verified attendance claim.
 College-course forms allow public catalog details and URLs while requiring acknowledgment
-that free-text notes contain no personal information. These student-entered details are
+that personal identifiers and sensitive details are excluded. These student-entered details are
 included in account export/deletion and are separate from the public institution dataset.
 
 ### Optional browser-only workspace
@@ -70,9 +74,9 @@ back to the server. Server accounts retain their existing advanced features
 including recurring tasks, reminders, calendar export, and account preferences.
 Browser plans are separate and do not automatically sync to private-code accounts.
 
-The same non-personal text confirmation is required in browser task/custom-course
+The same entry confirmation is required in browser task/custom-course
 forms and searches. Backup restoration also asks the user to confirm the file
-contains no personal information. This is acknowledgment, not automated detection.
+excludes personal identifiers and sensitive details. This is acknowledgment, not automated detection.
 
 ### Account and demo workspaces
 
@@ -96,10 +100,12 @@ StudentSuccess is not a medical service, admissions predictor, or monitoring too
 
 Authentication and per-user access controls isolate student workspaces. Users
 can export their profile, tasks, and course plan; clear completed-task history;
-or delete their account and associated records from Settings. A documented
-retention policy and formal consent language are still required before the
-prototype should accept real student information. Do not reuse prototype data
-for model training without separate, explicit consent.
+or delete their account and associated records from Settings. Actual course/task
+planning is supported; sensitive records and personal identifiers are outside the
+intended use. This wording change does not alter storage, authentication, or access
+controls. Retention documentation and ongoing privacy/security reviews remain
+operational work. Do not reuse student plans for model training without separate,
+explicit consent.
 
 ## Security basics
 

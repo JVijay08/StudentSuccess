@@ -107,7 +107,7 @@ def change_password():
         flash("Use Replace private code to change access to this planner.", "warning")
         return redirect(return_url("settings.settings"))
     if session.get("demo_mode"):
-        flash("The fictional demo account does not have a reusable password.", "warning")
+        flash("The demo account does not have a reusable password.", "warning")
         return redirect(return_url("settings.settings"))
     current = request.form.get("current_password", "")
     new = request.form.get("new_password", "")

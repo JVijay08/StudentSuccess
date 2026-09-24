@@ -581,5 +581,5 @@ def import_calendar():
             events = parse_calendar(upload.read(1024 * 1024 + 1), get_or_create_settings(g.current_user).timezone_name)
             preview = signer.dumps({"user": g.current_user.id, "events": events})
         except (ValueError, UnicodeError, BadData):
-            error = "Could not import this calendar. Confirm fictional data, use valid dates and durations, and keep the file below 1 MB and 200 events. Expired previews must be uploaded again."
+            error = "Could not import this calendar. Confirm that personal identifiers and sensitive details have been removed, use valid dates and durations, and keep the file below 1 MB and 200 events. Expired previews must be uploaded again."
     return render_template("calendar_import.html", events=events, preview=preview, error=error)

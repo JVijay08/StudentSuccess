@@ -152,5 +152,5 @@ def test_public_entry_points_offer_welcome_dialog(app):
     for path in ("/", "/register", "/login"):
         page = client.get(path)
         assert b'<dialog id="welcome-dialog"' in page.data
-        assert b'Explore with fictional information' in page.data
+        assert b'Plan your actual courses and tasks' in page.data
         assert b'filename=' not in page.data

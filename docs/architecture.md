@@ -29,7 +29,7 @@ Browser request
 
 ## Account and browser workspaces
 
-Private-code planners and fictional demo workspaces use the server database. Legacy username/password accounts remain supported. Private-code users receive sample planning defaults rather than personal-profile onboarding. See [privacy notes](privacy_notes.md) for credential handling and account controls.
+Private-code planners and sample demo workspaces use the server database. Legacy username/password accounts remain supported. Private-code users receive initial planning defaults rather than personal-profile onboarding. See [privacy notes](privacy_notes.md) for credential handling and account controls.
 
 The optional `/planner` workspace stores its plan in browser localStorage. It downloads a public catalog bundle from `/planner/catalogs.json`, then performs catalog searches and selections locally. Browser plans and server accounts do not automatically synchronize.
 

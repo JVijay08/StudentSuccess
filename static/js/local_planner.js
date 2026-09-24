@@ -360,7 +360,7 @@
     try {
       if (file.size > 5 * 1024 * 1024) throw new Error("Too large");
       const next = validate(JSON.parse(await file.text()));
-      if (!confirm("Confirm this backup contains no personal or identifying information. Restoring replaces this browser's plan; download your current plan first if you want to keep it.")) return;
+      if (!confirm("Confirm this backup excludes personal identifiers and sensitive details. Your actual courses and tasks are welcome. Restoring replaces this browser's plan; download your current plan first if you want to keep it.")) return;
       if (!readable) { tell("Erase the unreadable browser data first, or use a browser with storage enabled, then restore your backup."); return; }
       if (commit(next)) { resetForm(); $("budget").value = state.budget ?? ""; }
     } catch (_) { tell("That file is not a valid StudentSuccess backup (maximum 5 MB). Your plan has not changed."); }

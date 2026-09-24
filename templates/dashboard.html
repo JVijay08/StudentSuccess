@@ -30,11 +30,11 @@
       {% endwith %}
 
       {% if session.get('demo_mode') %}
-        <div class="demo-banner" role="status"><strong>Fictional demo workspace.</strong> Explore freely—this sample account contains no real student information.</div>
+        <div class="demo-banner" role="status"><strong>Demo workspace.</strong> Explore freely—this sample account contains no real student information.</div>
 
       {% endif %}
 
-      {% if g.current_user.access_credential %}<div class="demo-banner" role="note"><strong>Your private-code planner.</strong> Use fictional details only. This workspace is saved on the server. Keep your code safe to return on another device. Your planning year and study budget are in Settings.</div>{% endif %}
+      {% if g.current_user.access_credential %}<div class="demo-banner" role="note"><strong>Your private-code planner.</strong> Use your actual courses and tasks; leave out full names, student IDs, contact details, and sensitive records. This workspace is saved on the server. Keep your code safe to return on another device. Your planning year and study budget are in Settings.</div>{% endif %}
       <header>
         <p class="eyebrow">TODAY</p>
         {% if profile %}
@@ -68,7 +68,7 @@
           </ol>
           <a class="text-link" href="{{ nav_url('tasks.tasks', _anchor='task-queue') }}">View all {{ active_task_count }} active tasks &rarr;</a>
         {% elif profile %}
-          <h2>Add your first {% if g.current_user.access_credential %}sample task{% else %}assignment{% endif %}.</h2>
+          <h2>Add your first assignment.</h2>
           <p>Record its deadline and planned start so StudentSuccess can give you a transparent priority signal.</p>
           <a class="button" href="{{ nav_url('tasks.tasks', _anchor='task-form') }}">Add a task</a>
         {% else %}

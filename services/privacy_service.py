@@ -1,6 +1,7 @@
 CONFIRMATION_ERROR = (
-    "Confirm that these entries contain no personal or identifying information before continuing. "
-    "Use fictional details; remove real names, school names, contact details, and student IDs."
+    "Confirm that these entries exclude personal identifiers and sensitive details before continuing. "
+    "Your actual courses and tasks are welcome. Leave out full names, student IDs, contact details, "
+    "passwords, and private records."
 )
 
 

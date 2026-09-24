@@ -6,7 +6,7 @@ StudentSuccess helps high-school and college students plan a manageable course l
 
 **[Try the live demo](https://studentsuccess.onrender.com/)** · [Data sources](docs/data_sources.md) · [Privacy notes](docs/privacy_notes.md) · [Architecture](docs/architecture.md) | [Project updates](https://studentsuccess.onrender.com/updates)
 
-> Public prototype: explore with fictional information only. The demo server may take about a minute to wake after inactivity.
+> Early release: plan your actual courses and tasks. Leave out full names, student IDs, contact details, passwords, and private records. The demo server may take about a minute to wake after inactivity.
 
 ## Take a look
 
@@ -42,13 +42,13 @@ Recommendations use explicit rules. StudentSuccess does not currently use AI or 
 
 | Option | How it works |
 | --- | --- |
-| **Fictional demo** | Open an isolated workspace with sample tasks and history. A short tour introduces the main features. |
+| **Demo workspace** | Open an isolated workspace with sample tasks and history. A short tour introduces the main features. |
 | **Private planner** | Create a server-saved planner without a name or email. Save the generated private code to reopen it on another device. |
 | **Browser-only planner** | Use the optional browser workspace linked below planner creation. Download and restore backups to move your plan manually. |
 
 Anyone with a private code can access its planner. Lost codes cannot be recovered. Browser-only plans are separate from server accounts and do not sync automatically. Existing username/password accounts remain supported.
 
-Free-text submissions ask you to confirm that they contain no personal information. This is a user acknowledgment, not automatic detection. See the [privacy notes](docs/privacy_notes.md) for storage and account details.
+Free-text submissions welcome actual course and task details and ask you to confirm that personal identifiers and sensitive details are excluded. This is a user acknowledgment, not automatic detection. See the [privacy notes](docs/privacy_notes.md) for storage and account details.
 
 ## Course references and limits
 
@@ -58,7 +58,7 @@ Academic depth, workload, and task-priority labels are planning estimates. Confi
 
 ## Next steps
 
-Priorities include more reliable hosting, stronger public-form protections, clearer connections between planned courses and assignments, and usability testing with fictional scenarios. Adaptive scheduling and optimization remain future work. Calendar-file import and export are available; live calendar synchronization is not implemented.
+Priorities include more reliable hosting, stronger public-form protections, clearer connections between planned courses and assignments, and continued usability testing. Adaptive scheduling and optimization remain future work. Calendar-file import and export are available; live calendar synchronization is not implemented.
 
 ## License
 
