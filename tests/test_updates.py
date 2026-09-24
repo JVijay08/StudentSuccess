@@ -5,6 +5,17 @@ import subprocess
 from services import update_history
 
 
+def test_updates_from_signed_in_workspace(authed_client):
+    dashboard = authed_client.get('/dashboard')
+    link = re.search(rb'href="(/updates[^\"]*)"', dashboard.data)
+    assert link
+    from html import unescape
+    response = authed_client.get(unescape(link.group(1).decode()))
+    assert response.status_code == 200
+    assert b'Workspace navigation' in response.data
+    assert b'Back to dashboard' in response.data
+
+
 def test_history_preserves_snapshot_with_shallow_checkout(tmp_path, monkeypatch):
     snapshot = tmp_path / "updates.json"
     old = {"hash": "a" * 40, "timestamp": 1, "date": "2026-09-18", "title": "Older update"}

@@ -25,6 +25,14 @@ main_bp = Blueprint("main", __name__)
 
 @main_bp.get("/updates")
 def updates():
+    # Public history stays available anonymously; workspace navigation needs
+    # the same validated user context as other signed-in pages.
+    if session.get("user_id") is not None:
+        return login_required(_render_updates)()
+    return _render_updates()
+
+
+def _render_updates():
     return render_template("updates.html", updates=get_updates())
 
 
