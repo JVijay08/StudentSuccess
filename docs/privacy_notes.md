@@ -46,6 +46,14 @@ confirmation, not automatic detection or a guarantee that text is non-personal.
 Authentication fields and structured catalog selections are not subject to the
 free-text acknowledgment.
 
+The college directory searches public institution names and cities using GET filters,
+so those public search terms can appear in browser history and ordinary hosting logs.
+Do not enter personal information in directory search. Optional institution selections
+are stored as public IPEDS IDs for planning, not as a verified attendance claim.
+College-course forms allow public catalog details and URLs while requiring acknowledgment
+that free-text notes contain no personal information. These student-entered details are
+included in account export/deletion and are separate from the public institution dataset.
+
 ### Optional browser-only workspace
 
 The browser-only planner is offered beneath private-code creation, not in the

@@ -23,6 +23,8 @@
 
     <section class="card">
       <h2>Academic profile</h2>
+      {% set selected_college = college_by_id(ui_settings.institution_id) %}
+      <p>College for planning: <strong>{{ selected_college.name if selected_college else 'Not selected' }}</strong>. <a href="{{ nav_url('colleges.browse') }}">Choose or change college</a></p>
       <dl class="detail-list">
         <div><dt>First name</dt><dd>{{ profile.first_name }}</dd></div>
         <div><dt>Grade level</dt><dd>{{ profile.grade }}th grade</dd></div>

@@ -18,6 +18,8 @@ StudentSuccess helps high-school and college students plan a manageable course l
 
 ## The current workspace
 
+- **College and dual-enrollment planning.** Search 5,994 institutions in the IPEDS 2024 directory by state/name, save a college for either preset, and add college courses alongside high-school courses. Track grade, term, credits and planning status. [Coverage and catalog roadmap](docs/college-planning.md).
+
 - **A dimensional notebook.** Restrained graph paper, layered paper surfaces, raised controls, and purposeful motion, with consistent navigation and readable content.
 - **A clearer next action.** The task queue comes first. Start and Complete stay visible; recommendation calculations and timing history expand when needed.
 - **Manageable projects.** Organize courses, assignments, and subtasks in the By course view. Split long assignments into timed work blocks, track progress, and keep completed work separate. Estimates support up to 10,080 minutes.

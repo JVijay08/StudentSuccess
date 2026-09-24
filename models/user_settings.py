@@ -7,6 +7,7 @@ class UserSettings(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     academic_context = db.Column(db.String(20), nullable=False, default="high_school")
+    institution_id = db.Column(db.String(12), nullable=True)
     user_id = db.Column(
         db.Integer, db.ForeignKey("users.id"), unique=True, nullable=False
     )

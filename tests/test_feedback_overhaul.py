@@ -187,6 +187,8 @@ def test_additive_migration_preserves_legacy_rows(app):
         db.drop_all()
         db.session.execute(text("CREATE TABLE tasks (id INTEGER PRIMARY KEY, title VARCHAR(160))"))
         db.session.execute(text("CREATE TABLE user_settings (id INTEGER PRIMARY KEY)"))
+        db.session.execute(text("CREATE TABLE term_courses (id INTEGER PRIMARY KEY, title VARCHAR(120), weekly_hours FLOAT)"))
+        db.session.execute(text("INSERT INTO term_courses (id,title,weekly_hours) VALUES (1,'Existing college course',4)"))
         db.session.execute(text("INSERT INTO tasks (id,title) VALUES (1,'Existing history')"))
         db.session.execute(text("INSERT INTO user_settings (id) VALUES (1)"))
         db.session.commit()
@@ -194,6 +196,7 @@ def test_additive_migration_preserves_legacy_rows(app):
         _migrate_feedback_columns()
         assert db.session.execute(text("SELECT title FROM tasks WHERE id=1")).scalar() == "Existing history"
         assert db.session.execute(text("SELECT academic_context FROM user_settings WHERE id=1")).scalar() == "high_school"
+        assert db.session.execute(text("SELECT title, weekly_hours, enrollment_type, status, institution_id FROM term_courses WHERE id=1")).one() == ('Existing college course', 4, 'college', 'planned', None)
         assert {"parent_task_id", "external_uid"} <= {c["name"] for c in inspect(db.engine).get_columns("tasks")}
 
 

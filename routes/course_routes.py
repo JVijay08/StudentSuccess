@@ -7,6 +7,7 @@ from services.navigation import nav_url, same_page, return_url, safe_page
 
 from extensions import db
 from models import PlannedCourse, StudentProfile
+from models.term_course import TermCourse
 from services import course_service
 from services.course_comparison import build_comparison, suggested_pairs
 from services.auth_service import login_required
@@ -260,6 +261,7 @@ def course_plan():
         by_year[row["planned"].school_year].append(row)
 
     year_summaries = []
+    dual_courses = TermCourse.query.filter_by(user_id=g.current_user.id, enrollment_type='dual').order_by(TermCourse.term, TermCourse.title).all()
     for school_year in range(9, 13):
         year_rows = by_year.get(school_year, [])
         summary = course_service.summarize_course_load(
@@ -268,6 +270,7 @@ def course_plan():
         year_summaries.append({
             "school_year": school_year,
             "rows": year_rows,
+            "dual_courses": [course for course in dual_courses if course.school_year == school_year],
             "workload_points": summary["points"],
             "workload_label": summary["label"],
             "high_workload_count": summary["high_workload_count"],

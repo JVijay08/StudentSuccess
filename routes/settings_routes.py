@@ -140,7 +140,10 @@ def export_data():
         "tasks": [],
         "planned_courses": [],
         "academic_context": get_or_create_settings(g.current_user).academic_context,
-        "term_courses": [{"title": c.title, "term": c.term, "weekly_hours": c.weekly_hours} for c in g.current_user.term_courses],
+        "institution_id": get_or_create_settings(g.current_user).institution_id,
+        "term_courses": [{key: getattr(c, key) for key in ('title', 'term', 'weekly_hours', 'institution_id',
+            'enrollment_type', 'school_year', 'status', 'course_code', 'credits', 'description', 'catalog_url')}
+            for c in g.current_user.term_courses],
     }
     if profile is not None:
         payload["profile"] = {

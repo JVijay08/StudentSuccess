@@ -298,3 +298,31 @@ body .inactive-courses {margin:24px 0;}
 .inactive-courses li {display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:14px 0;border-top:1px solid var(--line);}
 body .browser-shell .actions details {flex-basis:100%;}
 body .browser-shell .actions details button {margin:8px 10px 8px 0;}
+body .college-context {display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;}
+body .college-context h2 {margin:0 0 8px;}
+body .college-search {display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr) auto;gap:16px;align-items:end;}
+body .college-search label {margin:0;}
+body .college-search button {margin:0 0 2px;}
+body .college-results .term-course {display:flex;justify-content:space-between;align-items:center;gap:24px;}
+body .college-results .term-course>div {min-width:0;}
+body .college-results .term-course h3 {overflow-wrap:anywhere;}
+body .college-results form {flex-shrink:0;}
+body .dual-course-list {border-top:2px solid var(--line);margin-top:20px;padding-top:12px;}
+body #term-form .fields {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+body #term-form {display:block;}
+body .course-actions {display:flex;align-items:center;gap:12px 20px;flex-wrap:wrap;}
+body .course-actions>details {flex-basis:100%;}
+body .header-actions a:not(.button):not(.secondary-action) {border:0;background:none;color:var(--blue);text-decoration:underline;box-shadow:none;padding:8px 0;}
+body main>header>a:not(.button):hover,body .header-actions a:not(.button):not(.secondary-action):hover {background:none;color:var(--blue);transform:none;}
+body #term-form .fields label {margin:0;min-width:0;}
+body #term-form select {max-width:100%;text-overflow:ellipsis;}
+body #term-form details {margin:24px 0;}
+body #term-form details .fields {margin-top:18px;}
+body #term-form .nonpersonal-confirmation {border:1px solid var(--line);border-radius:8px;padding:16px;margin:20px 0;}
+body a.skip-link {top:-100vh;transform:none;}
+body a.skip-link:focus {top:8px;}
+@media(max-width:650px) {
+  body .college-search,body #term-form .fields {grid-template-columns:minmax(0,1fr);}
+  body .college-results .term-course {align-items:stretch;flex-direction:column;gap:12px;}
+  body .college-results form,body .college-results button {width:100%;}
+}

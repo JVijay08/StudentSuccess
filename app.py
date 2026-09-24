@@ -42,6 +42,10 @@ def create_app(test_config=None):
     app.register_blueprint(settings_bp)
     from routes.term_routes import term_bp
     app.register_blueprint(term_bp)
+    from routes.college_routes import college_bp
+    app.register_blueprint(college_bp)
+    from services.college_directory import institution
+    app.jinja_env.globals['college_by_id'] = institution
     app.register_blueprint(task_bp)
     from services.task_policy import MAX_TASK_MINUTES
     app.jinja_env.globals["MAX_TASK_MINUTES"] = MAX_TASK_MINUTES
@@ -124,9 +128,17 @@ def _migrate_feedback_columns():
     """Additive migration; existing tasks, history, and preferences are retained."""
     additions = {
         "tasks": {"parent_task_id": "INTEGER REFERENCES tasks(id)", "external_uid": "VARCHAR(255)"},
-        "user_settings": {"academic_context": "VARCHAR(20) NOT NULL DEFAULT 'high_school'"},
+        "user_settings": {"academic_context": "VARCHAR(20) NOT NULL DEFAULT 'high_school'", "institution_id": "VARCHAR(12)"},
+        "term_courses": {
+            "institution_id": "VARCHAR(12)", "enrollment_type": "VARCHAR(20) NOT NULL DEFAULT 'college'",
+            "school_year": "INTEGER", "status": "VARCHAR(20) NOT NULL DEFAULT 'planned'",
+            "course_code": "VARCHAR(32) NOT NULL DEFAULT ''", "credits": "FLOAT",
+            "description": "TEXT NOT NULL DEFAULT ''", "catalog_url": "VARCHAR(500) NOT NULL DEFAULT ''",
+        },
     }
     for table, fields in additions.items():
+        if table not in inspect(db.engine).get_table_names():
+            continue
         columns = {c["name"] for c in inspect(db.engine).get_columns(table)}
         for name, definition in fields.items():
             if name not in columns:

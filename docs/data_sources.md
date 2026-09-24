@@ -2,6 +2,13 @@
 
 ## Source-Use Rules
 
+The shared [college directory](college-planning.md) uses the official
+[NCES IPEDS HD2024 directory](https://nces.ed.gov/ipeds/datacenter/data/HD2024.zip):
+5,994 institutions marked active in that release. Source/retrieval metadata and a source
+checksum are included in `data/colleges.json`. This supplies institution identity and
+location, **not** individual course descriptions, current offerings, or dual-enrollment
+eligibility. College courses currently entered by students remain unverified plan records.
+
 StudentSuccess uses public reference information only when it supports a visible feature.
 
 The project records where curated data came from and distinguishes source facts from project-created estimates.
