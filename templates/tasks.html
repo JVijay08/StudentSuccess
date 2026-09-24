@@ -36,38 +36,19 @@
 
     <datalist id="subject-suggestions">{% for subject in subject_suggestions %}<option value="{{ subject }}">{% endfor %}</datalist>
     <section class="task-list" id="task-queue">
-      <h2>Task queue</h2>
+      <div class="queue-heading"><h2>Task queue <span class="count-badge">{{ task_rows|length }}</span></h2><nav class="view-tabs" aria-label="Task views"><a href="{{ nav_url('tasks.tasks') }}" {% if task_view == 'queue' %}aria-current="page"{% endif %}>Recommended order</a><a href="{{ nav_url('tasks.tasks', view='courses') }}" {% if task_view == 'courses' %}aria-current="page"{% endif %}>By course</a></nav></div>
+      {% if task_view == 'courses' %}
+        {% include '_course_tasks.html' %}
+      {% else %}
       <form method="get"><label>Sort tasks<select name="sort" onchange="this.form.submit()">{% for value, label in [('recommended','Recommended'),('due','Due date'),('planned','Planned start'),('subject','Subject'),('status','Status')] %}<option value="{{ value }}" {% if sort == value %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label><noscript><button>Sort</button></noscript></form>
       <details class="queue-help"><summary>How tasks are ordered</summary><p>In progress, overdue, missed planned starts, then due within 24 hours. Other tasks use priority and deadline.</p></details>
-      {% if projects %}<details><summary>Projects and progress ({{ projects|length }})</summary>{% for task in projects %}<article class="task-card"><h3>{% if task.parent %}{{ task.parent.title }} / {% endif %}{{ task.title }}</h3><p>{{ task.children|length }} subtasks &middot; {{ task.progress }}% complete &middot; {{ task.estimated_minutes }} estimated minutes</p><progress max="100" value="{{ task.progress }}">{{ task.progress }}%</progress><a href="{{ nav_url('tasks.edit_task', task_id=task.id) }}">Manage project</a></article>{% endfor %}</details>{% endif %}
       {% if task_rows %}
         {% for row in task_rows %}
-          {% set task = row.task %}
-          {% set navigation_anchor = 'task-' ~ task.id %}
-          {% set level = "HIGH" if row.score >= 7 else "MEDIUM" if row.score >= 4 else "LOW" %}
-          <article class="task-card" id="task-{{ task.id }}">
-            <div>
-              <p class="eyebrow risk-{{ level|lower }}">{{ level }} DEADLINE RISK</p>
-              <h3>{% if task.parent %}{{ task.parent.title }} / {% endif %}{{ task.title }}{% if task.recurrence_rule %} <small class="task-marker">(recurring)</small>{% endif %}{% if task.prep_for_id %} <small class="task-marker">(prep)</small>{% endif %}</h3>
-              {% if task.planned_start_at %}<p>Planned start: {{ task.planned_start_at|planner_time }}</p>{% endif %}
-              <p>{{ task.subject or "No subject" }} · {{ task.estimated_minutes }} minutes · due {{ row.due_at_display }}</p>
-              <details><summary>Why this ranking?</summary><ul>
-                {% for reason in row.reasons %}<li>{{ reason }}</li>{% endfor %}
-              </ul></details>
-            </div>
-            <div class="actions"><span>{{ task.status|replace('_', ' ')|title }}</span>
-              {% if task.status == 'not_started' %}<form method="post" action="{{ url_for('tasks.start_task',task_id=task.id) }}">{% include '_navigation_fields.html' %}<button>Start now</button></form>{% endif %}
-              {% if task.status == 'in_progress' %}<form method="post" action="{{ url_for('tasks.complete_task',task_id=task.id) }}">{% include '_navigation_fields.html' %}<label>Actual minutes<input type="number" name="actual_minutes" min="1" max="{{ MAX_TASK_MINUTES }}" value="{{ task.estimated_minutes }}" required></label><button>Complete</button></form>{% endif %}
-              <details><summary>Task actions</summary>
-                <a href="{{ nav_url('tasks.edit_task',task_id=task.id) }}">Edit</a>
-                {% if task.status != 'in_progress' %}<form method="post" action="{{ url_for('tasks.complete_task',task_id=task.id) }}">{% include '_navigation_fields.html' %}<label>Actual minutes<input type="number" name="actual_minutes" min="1" max="{{ MAX_TASK_MINUTES }}" value="{{ task.estimated_minutes }}" required></label><button>Complete</button></form>{% endif %}
-                <form method="post" action="{{ url_for('tasks.delete_task',task_id=task.id) }}">{% include '_navigation_fields.html' %}<button class="secondary" onclick="return confirm('Delete this task?')" aria-label="Delete {{ task.title }}">Delete</button></form>
-              </details>
-            </div>
-          </article>
+          {% include '_task_row.html' %}
         {% endfor %}
       {% else %}
         <p class="empty">Your queue is clear. Add a task below to plan your next start.</p>
+      {% endif %}
       {% endif %}
     </section>
     <details class="panel" id="completed-tasks"><summary>Completed ({{ completed_tasks|length }})</summary>
@@ -85,7 +66,7 @@
         <label>Title
           <input name="title" placeholder="Research paper: first draft" data-nonpersonal-input maxlength="160" value="{{ form_data.get('title', '') }}" required>
         </label>
-        <label>Subject
+        <label>Course / subject
           <input name="subject" list="subject-suggestions" data-nonpersonal-input maxlength="80" value="{{ form_data.get('subject', '') }}">
         </label>
         <label>Due date

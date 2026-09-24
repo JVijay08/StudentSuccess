@@ -21,6 +21,8 @@ from services import (
     suggestion_service,
 )
 from services.task_policy import MAX_TASK_MINUTES, split_minutes, subject_key, utc
+from services.task_workspace import course_outline
+from models.term_course import TermCourse
 from services.auth_service import login_required
 from services.settings_service import get_or_create_settings
 from services.privacy_service import confirmation_errors
@@ -206,16 +208,31 @@ def tasks():
             settings.date_format,
             settings.relative_dates,
         )
+    course_names = [course.title[:80] for course in TermCourse.query.filter_by(user_id=g.current_user.id).all()]
+    from services.course_service import load_courses
+    catalogs = {planned.catalog_id: {course["course_id"]: course for course in load_courses(planned.catalog_id)}
+                for planned in profile.planned_courses}
+    for planned in profile.planned_courses:
+        course = catalogs.get(planned.catalog_id, {}).get(planned.course_id)
+        if course:
+            course_names.append(course["course_name"][:80])
+    outline = course_outline(all_tasks, task_rows, course_names)
+    selected_course = request.args.get("course", "")[:80].strip()
+    if selected_course:
+        outline = [group for group in outline if subject_key(group["name"]) == subject_key(selected_course)]
     return render_template(
         "tasks.html",
+        course_groups=outline,
+        selected_course=selected_course,
+        task_view="courses" if request.args.get("view") == "courses" else "queue",
         profile=profile,
         task_rows=task_rows,
         completed_tasks=completed_tasks,
         projects=[t for t in all_tasks if t.children and t.status != "completed"],
-        subject_suggestions=sorted({t.subject for t in all_tasks if t.subject} | {"Math", "Science", "English", "History", "Computer Science"}),
+        subject_suggestions=sorted(set(course_names) | {t.subject for t in all_tasks if t.subject} | {"Math", "Science", "English", "History", "Computer Science"}),
         sort=sort,
         errors=errors,
-        form_data=request.form or {"estimated_minutes": settings.default_task_minutes},
+        form_data=request.form or {"estimated_minutes": settings.default_task_minutes, "subject": request.args.get("subject", selected_course)[:80]},
         settings=settings,
     )
 

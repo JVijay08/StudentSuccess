@@ -1,8 +1,9 @@
 <section class="panel timing-panel" aria-labelledby="timing-heading">
-  <h2 id="timing-heading">Behavior / Timing</h2>
-  <dl class="timing-metrics"><div><dt>Average start delay</dt><dd>{{ timing.average }}</dd></div><div><dt>Median start delay</dt><dd>{{ timing.median }}</dd></div><div><dt>On-time starts</dt><dd>{{ (timing.on_time|string ~ '%') if timing.on_time is not none else '—' }}</dd></div><div><dt>Tasks with start data</dt><dd>{{ timing.count }}</dd></div></dl>
-  <p>Early starts count as on time. Projects are excluded when their subtasks supply the history.</p>
-  <details><summary>Timing graphs and history</summary>
+  <div class="section-heading"><div><p class="eyebrow">Your working rhythm</p><h2 id="timing-heading">Starting on time</h2></div><span class="note-tag">Progress, not a grade</span></div>
+  <dl class="timing-metrics"><div><dt>On-time starts</dt><dd>{{ (timing.on_time|string ~ '%') if timing.on_time is not none else '&mdash;'|safe }}</dd></div><div><dt>Average lateness</dt><dd>{{ timing.average_lateness }}</dd></div><div><dt>Starts recorded</dt><dd>{{ timing.count }}</dd></div></dl>
+  <p class="timing-explainer">{{ timing.on_time_count }} of {{ timing.count }} recorded starts were on time. Starting early counts as on time; it never cancels out a late start in average lateness.</p>
+  <details><summary>Explore timing graphs and history</summary>
+  <p>Median lateness: {{ timing.median_lateness }}. Charts show actual early and late starts around zero. Only completed tasks with recorded planned and actual starts contribute; projects do not double-count subtasks.</p>
   {% for title, rows in [('Start delay over time', timing.delays), ('Start delay by subject', timing.subjects)] %}
   <h3>{{ title }}</h3>
   {% if (rows|length >= 2) or (title == 'Start delay by subject' and rows) %}
@@ -12,6 +13,6 @@
   <h3>Estimated vs. actual duration</h3>
   {% if timing.durations|length >= 2 %}{% for row in timing.durations %}<div class="chart-row"><span>{{ row.title }}</span><div class="duration-track" aria-hidden="true"><i style="width:{{ row.estimated_width }}%"></i><i class="actual" style="width:{{ row.actual_width }}%"></i></div><span>{{ row.label }}</span></div>{% endfor %}{% else %}<p>Complete two tasks with actual durations to compare estimates with time spent.</p>{% endif %}
   {% if start_history %}<h3>Recent start history</h3><table><caption>Most recent completed tasks</caption><thead><tr><th>Task</th><th>Start delay</th><th>Completed</th></tr></thead><tbody>{% for entry in start_history %}<tr><td>{{ entry.title }} <small>({{ entry.group_label }})</small></td><td>{{ entry.delay_display }}</td><td>{{ entry.completed_at_display }}</td></tr>{% endfor %}</tbody></table>{% endif %}
-  {% if estimate_accuracy.overall %}<details><summary>Estimate accuracy details</summary><p>{{ estimate_accuracy.overall.rate }} times estimated duration ? {{ estimate_accuracy.overall.label }}</p><ul>{% for row in estimate_accuracy.groups %}<li>{{ row.group }} ? {{ row.rate }} ? {{ row.label }}</li>{% endfor %}</ul></details>{% endif %}
+  {% if estimate_accuracy.overall %}<details><summary>Estimate accuracy details</summary><p>{{ estimate_accuracy.overall.rate }} times estimated duration &middot; {{ estimate_accuracy.overall.label }}</p><ul>{% for row in estimate_accuracy.groups %}<li>{{ row.group }} &middot; {{ row.rate }} &middot; {{ row.label }}</li>{% endfor %}</ul></details>{% endif %}
   </details>
 </section>

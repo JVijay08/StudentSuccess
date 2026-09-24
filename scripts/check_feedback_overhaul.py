@@ -40,6 +40,7 @@ def main():
                 return (Math.max(foreground,background)+.05)/(Math.min(foreground,background)+.05);
             }""")
             assert contrast >= 4.5
+            expect(page.locator("#orientation-reopen")).not_to_be_visible()
             page.locator("#orientation-dismiss").click()
             page.reload()
             assert page.locator("#planner-orientation").is_hidden()
@@ -59,11 +60,14 @@ def main():
             page.locator("#task-form [name=nonpersonal_confirmed]").check()
             page.locator("#save-task").click()
             assert page.locator("#next-heading").inner_text() == "Example outline"
+            page.locator("#local-view").select_option("courses")
+            assert page.locator("#tasks .subtask-branch h3").inner_text() == "Example outline"
+            page.locator("#local-view").select_option("queue")
             page.get_by_role("button", name="Start this task", exact=True).click()
             page.once("dialog", lambda dialog: dialog.accept("35"))
             page.locator("#tasks").get_by_role("button", name="Complete", exact=True).click()
             assert page.locator("#completed-list h3").count() == 2
-            page.locator("#local-completed summary").click()
+            page.locator("#local-completed > summary").click()
             page.locator("#completed-list").get_by_role("button", name="Reopen", exact=True).click()
             assert page.locator("#tasks h3").count() == 2
             page.locator("#local-context").select_option("college")

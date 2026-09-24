@@ -147,7 +147,7 @@ def test_college_settings_and_manual_terms(app, authed_client):
     assert 'href="/terms' in body
     response = authed_client.post("/terms", data=dict(title="BIO 101", term="Fall 2027", weekly_hours="4", nonpersonal_confirmed="yes"), follow_redirects=True)
     assert b"BIO 101" in response.data
-    assert b"4.0 estimated study hours" in response.data
+    assert b"4.0</strong> estimated study hours" in response.data
     assert authed_client.get("/settings/export").json["term_courses"][0]["term"] == "Fall 2027"
 
 

@@ -123,7 +123,7 @@
     const next = copy(); Object.assign(next.tasks.find(t => t.id === id), changes);
     syncProjects(next);
     if (commit(next)) {
-      $("task-action-status").textContent = changes.status === "completed" ? "Task completed. Turn on Show completed to find or reopen it." : "Task updated.";
+      $("task-action-status").textContent = changes.status === "completed" ? "Task completed. Open Completed tasks to find or reopen it." : "Task updated.";
       focusTask(id);
     }
   }
@@ -162,7 +162,13 @@
     const values=timed.map(t=>(Date.parse(t.started)-Date.parse(t.planned))/60000).sort((a,b)=>a-b);
     const box=$("local-timing-content");box.replaceChildren();
     const label=n=>n===0 ? "On time" : `${Math.abs(n)>=60 ? (Math.abs(n)/60).toFixed(1)+" hr" : Math.abs(n).toFixed(0)+" min"} ${n<0 ? "early" : "late"}`;
-    if(values.length) {const middle=Math.floor(values.length/2);const median=values.length%2 ? values[middle] : (values[middle-1]+values[middle])/2;box.append(node("p",`Average: ${label(values.reduce((a,b)=>a+b,0)/values.length)} | Median: ${label(median)} | On-time starts: ${Math.round(values.filter(v=>v<=0).length/values.length*100)}% | ${values.length} tasks`));}
+    const metrics=node("dl", ""); metrics.className="timing-metrics";
+    const onTime=values.filter(v=>v<=0).length;
+    const average=values.length ? values.reduce((sum,v)=>sum+Math.max(0,v),0)/values.length : null;
+    for(const [title,value] of [["On-time starts",values.length ? Math.round(onTime/values.length*100)+"%" : "No data yet"],["Average lateness",average === null ? "No data yet" : label(average)],["Starts recorded",String(values.length)]]) {
+      const item=node("div", "");item.append(node("dt",title),node("dd",value));metrics.append(item);
+    }
+    box.append(metrics,node("p","Early starts count as on time and never cancel out late starts in average lateness."));
     const detail=node("details", "");detail.append(node("summary","Timing graphs and history"));box.append(detail);
     if(timed.length<2) detail.append(node("p","Complete a few tasks with planned and actual starts to see a pattern."));
     else {
@@ -183,7 +189,7 @@
     $("task-parent").replaceChildren(node("option", "None")); $("task-parent").firstChild.value="";
     for(const p of state.tasks.filter(t=>!t.parent)) {const opt=node("option",p.title);opt.value=p.id;$("task-parent").append(opt);}
     $("task-parent").value=parentValue;
-    $("local-subjects").replaceChildren(...[...new Set(["Math","Science","English",...state.tasks.map(t=>t.subject)])].filter(Boolean).map(value=>{const o=node("option",value);o.value=value;return o;}));
+    $("local-subjects").replaceChildren(...[...new Set(["Math","Science","English",...state.courses.map(c=>c.title.slice(0,80)),...state.tasks.map(t=>t.subject)])].filter(Boolean).map(value=>{const o=node("option",value);o.value=value;return o;}));
     renderTiming();
     const active = state.tasks.filter(t => t.status !== "completed").sort((a,b) => rank(a,now)-rank(b,now) || Date.parse(a.due)-Date.parse(b.due) || a.id.localeCompare(b.id));
     const completed = state.tasks.filter(t => t.status === "completed").sort((a,b) => Date.parse(b.completed)-Date.parse(a.completed) || a.id.localeCompare(b.id));
@@ -201,9 +207,10 @@
         else focusTask(nextTask.id);
       }
     ));
+    $("next-actions").querySelector("button")?.classList.remove("secondary");
     $("completion-summary").textContent = state.tasks.length ? `${Math.round(completed.length/state.tasks.length*100)}% completed` : "No tasks yet";
     const started = state.tasks.filter(t => t.started && t.planned);
-    $("delay-summary").textContent = started.length ? `Average start delay: ${Math.round(started.reduce((sum,t) => sum+(Date.parse(t.started)-Date.parse(t.planned))/60000,0)/started.length)} minutes (negative means early).` : "Start tasks to compare actual and planned start times.";
+    $("delay-summary").textContent = started.length ? `${Math.round(started.filter(t=>Date.parse(t.started)<=Date.parse(t.planned)).length/started.length*100)}% of recorded starts were on time. Early starts count as on time.` : "Start tasks to compare actual and planned start times.";
     $("start-history").replaceChildren(...state.tasks.filter(t => t.started).sort((a,b) => Date.parse(b.started)-Date.parse(a.started)).slice(0,5).map(t => node("li", `${t.title} · ${format(t.started)}`)));
     const list = $("tasks"); list.replaceChildren();
     const mode = $("local-sort").value;
@@ -243,7 +250,42 @@
         const next = copy(); next.tasks = next.tasks.filter(item => item.id !== t.id);
         syncProjects(next);
         if (commit(next) && editing === t.id) resetForm();
-      }, "danger")); li.append(buttons); (t.status === "completed" ? $("completed-list") : list).append(li);
+      }, "danger"));
+      const primaryLabel = t.status === "in_progress" ? "Complete" : "Start";
+      [...buttons.children].find(button=>button.textContent===primaryLabel)?.classList.remove("secondary");
+      const options=node("details", "");options.append(node("summary","Task actions"));
+      for(const button of [...buttons.children]) if(["Edit","Delete","Break into 25-minute blocks"].includes(button.textContent)) options.append(button);
+      if(options.children.length>1) buttons.append(options);
+      li.append(buttons); (t.status === "completed" ? $("completed-list") : list).append(li);
+    }
+    if ($("local-view").value === "courses") {
+      const key = text => (text || "Unassigned").trim().replace(/\s+/g," ").toLowerCase();
+      const nodes = new Map(active.map(t => [t.id, $("browser-task-"+t.id)]));
+      const groups = new Map(state.courses.map(c => [key(c.title.slice(0,80)), {name:c.title.slice(0,80), tasks:[]} ]));
+      for (const task of active.filter(t => !t.parent)) {
+        const name = task.subject.trim() || "Unassigned";
+        if (!groups.has(key(name))) groups.set(key(name), {name, tasks:[]});
+        groups.get(key(name)).tasks.push(task);
+      }
+      list.replaceChildren();
+      for (const group of [...groups.values()].sort((a,b)=>a.name.localeCompare(b.name))) {
+        const section=node("li", ""); section.className="local-course-group";
+        section.append(node("h3", group.name));
+        const assignments=node("ul", ""); assignments.className="items";
+        for (const task of group.tasks) {
+          const entry=nodes.get(task.id); const children=active.filter(t=>t.parent===task.id);
+          if (children.length) {
+            const detail=node("details", "");detail.open=true;detail.append(node("summary",`Subtasks (${children.length} active)`));
+            const branch=node("ul", "");branch.className="items subtask-branch";
+            children.forEach(child=>branch.append(nodes.get(child.id)));detail.append(branch);entry.append(detail);
+          }
+          assignments.append(entry);
+        }
+        if (!group.tasks.length) assignments.append(node("li", "No active assignments for this course."));
+        section.append(assignments,action("Add assignment",()=>{resetForm();$("task-subject").value=group.name === "Unassigned" ? "" : group.name;$("task-title").focus();}));
+        list.append(section);
+      }
+      if (!groups.size) list.append(node("li","Add a course or a task with a subject to start your notebook."));
     }
     const courses = $("courses"); courses.replaceChildren();
     const college = state.context === "college";
@@ -297,6 +339,7 @@
   $("cancel-edit").addEventListener("click", () => { const taskId = editing; resetForm(); focusTask(taskId); });
   $("show-completed").addEventListener("change", () => {$("local-completed").open = $("show-completed").checked;});
   $("local-sort").addEventListener("change", render);
+  $("local-view").addEventListener("change", render);
   $("local-context").addEventListener("change", () => {const next=copy();next.context=$("local-context").value;commit(next);});
   $("budget-form").addEventListener("submit", event => {
     event.preventDefault(); const next = copy(); next.budget = Number($("budget").value); commit(next);
@@ -350,7 +393,7 @@
   function currentCatalog() { return catalogs.find(c => c.id === $("catalog-choice").value); }
   function courseCard(course, catalog, comparison = false) {
     const card = document.createElement("article");
-    card.append(node("h3", course.course_name), node("p", `${catalog.label} ? ${course.subject} ? ${course.course_type}`));
+    card.append(node("h3", course.course_name), node("p", `${catalog.label} \u00b7 ${course.subject} \u00b7 ${course.course_type}`));
     card.append(node("p", `${course.rigor_level} academic depth ? ${course.workload_level} time commitment`));
     card.append(node("p", `Planning years: ${(course.grade_levels || []).join(", ")}`));
     card.append(node("p", `Prerequisites: ${(course.prerequisites || []).join(", ") || "None listed"}`));

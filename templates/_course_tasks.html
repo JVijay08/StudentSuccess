@@ -1,0 +1,21 @@
+<p class="view-description">Courses hold assignments. Expand an assignment to see its next steps.</p>
+{% if selected_course %}<p>Showing {{ selected_course }}. <a href="{{ nav_url('tasks.tasks', view='courses') }}">Show all courses</a></p>{% endif %}
+{% set visible_groups = course_groups if selected_course else course_groups|selectattr('active')|list %}
+{% for group in visible_groups %}
+<section class="course-task-group" aria-labelledby="course-group-{{ loop.index }}">
+  <header class="course-group-heading"><div><p class="eyebrow">Course / subject</p><h3 id="course-group-{{ loop.index }}">{{ group.name }}</h3><p>{{ group.active }} active step{{ '' if group.active == 1 else 's' }}</p></div><a class="button secondary" href="{{ nav_url('tasks.tasks', view='courses', subject=('' if group.name == 'Unassigned' else group.name), _anchor='task-form') }}">Add assignment</a></header>
+  {% for assignment in group.assignments %}
+    {% if assignment.task.children %}
+    <details class="assignment-tree" open>
+      <summary><span>{{ assignment.task.title }}</span><small>{{ assignment.task.progress }}% complete &middot; {{ assignment.task.children|length }} subtasks</small></summary>
+      <progress max="100" value="{{ assignment.task.progress }}" aria-label="{{ assignment.task.title }} progress">{{ assignment.task.progress }}%</progress>
+      <p><a href="{{ nav_url('tasks.edit_task', task_id=assignment.task.id) }}">Manage assignment and subtasks</a></p>
+      <div class="subtask-branch">{% for row in assignment.children %}{% with within_assignment=true %}{% include '_task_row.html' %}{% endwith %}{% endfor %}</div>
+    </details>
+    {% elif assignment.row %}{% with row=assignment.row %}{% include '_task_row.html' %}{% endwith %}{% endif %}
+  {% else %}<p class="empty">No assignments yet. Add one for this course when you have a deadline.</p>{% endfor %}
+</section>
+{% else %}<div class="empty-state"><h3>A place for each course.</h3><p>Add a course or subject when creating a task. Your assignments and their subtasks will appear together here.</p><a href="#task-form">Add your first assignment</a></div>{% endfor %}
+
+{% set empty_courses = course_groups|rejectattr('active')|list %}
+{% if empty_courses and not selected_course %}<details class="panel inactive-courses"><summary>Courses with no active assignments ({{ empty_courses|length }})</summary><ul>{% for group in empty_courses %}<li><strong>{{ group.name }}</strong><a href="{{ nav_url('tasks.tasks', view='courses', subject=group.name, _anchor='task-form') }}">Add assignment<span class="visually-hidden"> for {{ group.name }}</span></a></li>{% endfor %}</ul></details>{% endif %}

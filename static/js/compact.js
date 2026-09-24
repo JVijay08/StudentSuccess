@@ -43,8 +43,12 @@
     if (!target) return;
     for (let node = target; node; node = node.parentElement) if (node.tagName === 'DETAILS') node.open = true;
     target.scrollIntoView({block: 'start'});
+    if (target.tagName === 'FORM') target.querySelector('input:not([type=hidden]),select,textarea')?.focus({preventScroll:true});
   }
   window.addEventListener('hashchange', reveal);
-  document.addEventListener('click', event => { if (event.target.closest('a[href="#task-form"]')) setTimeout(reveal, 0); });
-  if (location.hash) reveal();
+  document.addEventListener('click', event => { if (event.target.closest('a[href^="#"]')) setTimeout(reveal, 0); });
+  if (location.hash) {
+    reveal();
+    window.addEventListener('load', () => requestAnimationFrame(reveal), {once:true});
+  }
 })();

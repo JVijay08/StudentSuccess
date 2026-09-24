@@ -36,7 +36,10 @@ def timing_summary(tasks):
     for row in durations:
         row["estimated_width"] = round(row["estimated"] / scale * 100, 2)
         row["actual_width"] = round(row["actual"] / scale * 100, 2)
-    return dict(count=len(values), average=format_start_delay(timedelta(minutes=mean(values))) if values else "—",
+    return dict(on_time_count=sum(v <= 0 for v in values),
+                average_lateness=format_start_delay(timedelta(minutes=mean(max(0, v) for v in values))) if values else "No data yet",
+                median_lateness=format_start_delay(timedelta(minutes=median(max(0, v) for v in values))) if values else "No data yet",
+                count=len(values), average=format_start_delay(timedelta(minutes=mean(values))) if values else "—",
                 median=format_start_delay(timedelta(minutes=median(values))) if values else "—",
                 on_time=round(sum(v <= 0 for v in values) / len(values) * 100) if values else None,
                 delays=delays[-20:], subjects=subjects, durations=durations[-20:])

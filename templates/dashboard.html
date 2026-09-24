@@ -50,12 +50,12 @@
       <div class="workspace-index"><span>A little progress is still progress.</span><a href="{{ nav_url('tasks.tasks', _anchor='task-form') }}">Write down a task <span aria-hidden="true">&#8599;</span></a></div>
 
       <section class="focus-card">
-        <p><a href="{{ url_for('main.dashboard', view='today') }}">Today view</a> &middot; <a href="{{ url_for('main.dashboard', view='full') }}">Full dashboard</a></p>
+        <nav class="view-tabs dashboard-views" aria-label="Dashboard view"><a href="{{ url_for('main.dashboard', view='today') }}" {% if focus_view %}aria-current="page"{% endif %}>Today view</a><a href="{{ url_for('main.dashboard', view='full') }}" {% if not focus_view %}aria-current="page"{% endif %}>Full dashboard</a></nav>
         <div class="illustrated-title"><p class="eyebrow accent">Recommended next task</p><span class="focus-annotation">One thing at a time. &#8600;</span></div>
         {% if prioritized_tasks %}
           <ol class="priority-list">
             {% for row in prioritized_tasks[:(1 if focus_view else settings.recommendation_count)] %}
-              <li class="priority-item">
+              <li class="priority-item">{% if loop.index == 2 %}<p class="eyebrow">Up next</p>{% endif %}
                 <h2>{% if row.task.parent %}{{ row.task.parent.title }} / {% endif %}{{ row.task.title }}</h2><p>{{ row.task.estimated_minutes }} estimated minutes</p>
                 <p class="task-deadline">Due {{ row.due_at_display }}</p>
                 <p class="recommendation-brief"><strong>Why this task:</strong> {{ row.short_reason }}{% if settings.recommendation_tone == 'encouraging' %} You can start with one small step.{% elif settings.recommendation_tone == 'direct' %} Start this now.{% endif %}</p>

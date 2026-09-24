@@ -18,13 +18,13 @@ StudentSuccess helps high-school and college students plan a manageable course l
 
 ## The current workspace
 
-- **A consistent interface.** A shared blue-and-neutral palette, clear typography, and predictable navigation across tasks, courses, and settings.
+- **A dimensional notebook.** Restrained graph paper, layered paper surfaces, raised controls, and purposeful motion, with consistent navigation and readable content.
 - **A clearer next action.** The task queue comes first. Start and Complete stay visible; recommendation calculations and timing history expand when needed.
-- **Manageable projects.** Break assignments into subtasks or timed work blocks, track project progress, and keep completed work separate. Estimates support up to 10,080 minutes.
+- **Manageable projects.** Organize courses, assignments, and subtasks in the By course view. Split long assignments into timed work blocks, track progress, and keep completed work separate. Estimates support up to 10,080 minutes.
 - **Planning for your context.** Compare high-school courses or organize college courses by term. Import assignments from calendar files and review planned versus actual timing.
 - **Your preferred pace.** Light, dark, and high-contrast appearances; adjustable text, spacing, and focus; reduced-motion support; and expandable summaries on mobile.
 
-See the [September UI overhaul notes](docs/ui-overhaul-2026-09-22.md) for implementation and verification details. The screenshot gallery below retains dated captures of earlier releases.
+See the [overhaul 2.0 notes](docs/overhaul-2-notebook.md) for implementation and verification details. The screenshot gallery below retains dated captures of earlier releases.
 
 ## What you can do
 
