@@ -9,18 +9,18 @@ Database table: `student_profiles`
 | Field | Type | Required | Purpose |
 |---|---|---:|---|
 | id | Integer | Yes | Primary key |
-| first_name | String(100) | Yes | Dashboard greeting and profile identification |
+| first_name | String(100) | Yes | Legacy field; new accounts use Planner |
 | grade | Integer | Yes | Current grade, validated from 9 through 12 |
-| graduation_year | Integer | Yes | Planning context, validated from 2026 through 2035 |
-| current_gpa | Float | Yes | Current academic context, from 0 through 5 |
-| target_gpa | Float | Yes | Student goal, from 0 through 5 |
+| graduation_year | Integer | Yes | Legacy field; new accounts use a placeholder |
+| current_gpa | Float | Yes | Legacy field; new accounts use zero |
+| target_gpa | Float | Yes | Legacy field; new accounts use zero |
 | study_hours_per_week | Float | Yes | Available weekly study context, from 0 through 80 |
 | career_goals | String(120) | No | Optional career interest |
 | course_rigor | String(60) | No | Optional rigor preference |
 | created_at | DateTime | Yes | UTC creation time |
 | updated_at | DateTime | Yes | UTC last-update time |
 
-The onboarding form uses `career_interest` as its request key and maps it to the model's `career_goals` field.
+Onboarding updates grade and weekly study budget. Identity/GPA/career fields are retained for compatibility but are no longer collected. New profiles use neutral placeholders for those required legacy columns.
 
 ## Course catalogs (implemented)
 
@@ -92,3 +92,13 @@ Task risk is calculated at display time and is not stored as a prediction. The r
 ## Future behavioral history
 
 Planned-versus-actual start times can later support personal summaries such as typical delay windows by subject or task type. Collection should begin only through a visible task feature, remain minimal, and use transparent calculations before any machine-learning work is considered.
+
+## Account setup
+
+`users.onboarding_completed` is a non-null boolean, default false. It becomes true
+only after validated preference submission. The additive migration defaults existing
+rows to false without removing planner data. `users.username` is unique and normalized
+to lowercase for new credentials; `password_hash` holds a Werkzeug password hash.
+`auth_version` revokes stale sessions after credential changes. Retained nullable email,
+access credential, and account-request columns/tables exist for legacy migration and
+cascade deletion only; there are no active email or private-code login routes.

@@ -176,7 +176,7 @@ def test_onboarding_and_mobile_entry(authed_client):
     body = authed_client.get("/dashboard").get_data(as_text=True)
     assert 'id="orientation-dismiss"' in body and 'id="orientation-reopen"' in body
     public = authed_client.application.test_client().get("/").get_data(as_text=True)
-    for label in ("Explore Demo", "Create Private Planner", "I already have a code"):
+    for label in ("Explore Demo", "Create an account", "Sign in"):
         assert label in public
 
 
@@ -196,7 +196,7 @@ def test_additive_migration_preserves_legacy_rows(app):
         db.session.commit()
         _migrate_feedback_columns()
         _migrate_feedback_columns()
-        assert db.session.execute(text("SELECT username,email,auth_version FROM users WHERE id=1")).one() == ('existing-account', None, 0)
+        assert db.session.execute(text("SELECT username,email,auth_version,onboarding_completed FROM users WHERE id=1")).one() == ('existing-account', None, 0, False)
         assert db.session.execute(text("SELECT title FROM tasks WHERE id=1")).scalar() == "Existing history"
         assert db.session.execute(text("SELECT academic_context FROM user_settings WHERE id=1")).scalar() == "high_school"
         assert db.session.execute(text("SELECT title, weekly_hours, enrollment_type, status, institution_id FROM term_courses WHERE id=1")).one() == ('Existing college course', 4, 'college', 'planned', None)

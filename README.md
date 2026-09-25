@@ -43,10 +43,10 @@ Recommendations use explicit rules. StudentSuccess does not currently use AI or 
 | Option | How it works |
 | --- | --- |
 | **Demo workspace** | Open an isolated workspace with sample tasks and history. A short tour introduces the main features. |
-| **Private planner** | Create a server-saved planner without a name or email. Save the generated private code to reopen it on another device. |
-| **Browser-only planner** | Use the optional browser workspace linked below planner creation. Download and restore backups to move your plan manually. |
+| **Your planner** | Choose a nickname-style username and password, then personalize your planner. No email, full name, or student ID needed. |
+| **Browser-only planner** | The existing `/planner` workspace keeps plans on your device. Backups move them manually. |
 
-Anyone with a private code can access its planner. Lost codes cannot be recovered. Browser-only plans are separate from server accounts and do not sync automatically. Existing username/password accounts remain supported.
+Save your username and password in a password manager: there is no email reset. Existing private-code planners can be transferred once from the account creation page; transfer replaces the old credential while preserving the plan. Every server account must complete personalization before using the workspace, even after logging out and back in. Browser-only plans remain separate and do not sync automatically.
 
 Free-text submissions welcome actual course and task details and ask you to confirm that personal identifiers and sensitive details are excluded. This is a user acknowledgment, not automatic detection. See the [privacy notes](docs/privacy_notes.md) for storage and account details.
 
@@ -64,11 +64,10 @@ Priorities include more reliable hosting, stronger public-form protections, clea
 
 [MIT](LICENSE)
 
-## Email accounts and streamlined planning
+## Accounts and streamlined planning
 
-Email verification, password recovery, and in-place private-code upgrades are ready
-behind mail configuration. See [email account setup](docs/email-account-setup.md).
-Until a sender is configured, private-code access remains available.
+Username/password is the sole daily sign-in method. [Account setup](docs/account-setup.md)
+explains the onboarding gate, one-time planner transfer, and account limitations.
 
 Tasks offer direct completion, inline rescheduling with timezone-aware shortcuts, and
 a ten-minute undo window that preserves newer edits. Rescheduling never changes the

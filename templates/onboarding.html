@@ -1,129 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="dark light">
-    <meta name="supported-color-schemes" content="dark light">
-    <meta name="theme-color" content="#071407">
-    <title>Set Up Your Profile | StudentSuccess</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/onboarding.css') }}">
-    {% include '_accessibility_head.html' %}
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/nonpersonal.css') }}">
-</head>
-<body class="theme-dark">
-    {% include '_accessibility_body.html' %}
-    <main id="main-content" class="onboarding-page">
-        <section class="onboarding-section">
-            <div class="onboarding-heading">
-                <div>
-                    <p class="first-title">STUDENTSUCCESS</p>
-                    <h1>Build Your Academic Starting Point</h1>
-                    <p class="subheading">Set your planning year, workload, and goals to personalize recommendations. Use a nickname and approximate GPA values for planning; do not enter full names, student IDs, contact details, or private school records. Choose high-school or college planning in Settings.</p>
-                </div>
-                <a class="back-link" href="{{ nav_back_url('main.dashboard') if g.current_user.profile else url_for('main.dashboard') }}">{{ nav_back_label('main.dashboard') if g.current_user.profile else 'Back to dashboard' }}</a>
-            </div>
-            <form class="profile-form" data-nonpersonal-form method="post" action="{{ url_for('profile.onboarding') }}">{% include '_navigation_fields.html' %}
-                {% if errors %}
-    <div class="form-errors" role="alert">
-        <h2>Please correct the following:</h2>
-        <ul>{% for error in errors %}
-            <li>{{ error }}</li>
-            {% endfor %}
-        </ul>
-    </div>
-            {% endif %}
-                <div class="form-section">
-                    <div class="form-group full-width">
-                        <label for="first-name">Nickname (not your full name)</label>
-                        <input type="text" id="first-name" name="first_name" data-nonpersonal-input maxlength="80" placeholder="Planner" value="{{ form_data.get('first_name', '') }}" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="grade-level">Current Grade Level</label>
-                        <select id="grade_level" name="grade_level" data-nonpersonal-input required>
-                            <option value="">Choose a grade</option>
-
-                            <option
-                                value="9"
-                                {% if form_data.get('grade_level') == '9' %}selected{% endif %}
-                            >
-                                9th Grade
-                            </option>
-
-                            <option value="10" {% if form_data.get('grade_level') == '10' %}selected{% endif %}>10th Grade</option>
-
-                            <option value="11" {% if form_data.get('grade_level') == '11' %}selected{% endif %}>11th Grade</option>
-
-                            <option value="12" {% if form_data.get('grade_level') == '12' %}selected{% endif %}>12th Grade</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="graduation-year">Graduation Year</label>
-                        <input type="number" id="graduation-year" name="graduation_year" data-nonpersonal-input min="2026" max="2035" placeholder="Enter Your Graduation Year" value="{{ form_data.get('graduation_year', '') }}" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="current-gpa">Starting GPA for planning</label>
-                        <input type="number" id="current-gpa" name="current_gpa" data-nonpersonal-input min="0.0" max="5.0" step="0.01" placeholder="Enter an approximate planning value" value="{{ form_data.get('current_gpa', '') }}" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="target-gpa">Target GPA</label>
-                        <input type="number" id="target-gpa" name="target_gpa" data-nonpersonal-input min="0.0" max="5.0" step="0.01" placeholder="Enter Your Target GPA" value="{{ form_data.get('target_gpa', '') }}" required>
-                    </div>
-                    <div class="form-group full-width">
-                        <label for="study-hours-wk">Study Hours per Week</label>
-                        <input type="number" id="study-hours-wk" name="study_hours_per_week" data-nonpersonal-input min="0" max="80" step="0.5" placeholder="Enter Your Study Hours per Week" value="{{ form_data.get('study_hours_per_week', '') }}" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="career-interest">Career Interest</label>
-                        <input type="text" id="career-interest" name="career_interest" data-nonpersonal-input maxlength="120" placeholder="Enter Your Career Interest" value="{{ form_data.get('career_interest', '') }}">
-                    </div>
-                    <div class="form-group">
-                        <label for="course-rigor-preference">Preferred course mix</label>
-                        <select
-                            id="course_rigor_preference"
-                            name="course_rigor_preference" data-nonpersonal-input
-                        >
-                            <option value="">Choose later</option>
-
-                            <option
-                                value="Balanced"
-                                {% if form_data.get('course_rigor_preference') == 'Balanced' %}
-                                    selected
-                                {% endif %}
-                            >
-                                Balanced
-                            </option>
-
-                            <option
-                                value="Challenging"
-                                {% if form_data.get('course_rigor_preference') == 'Challenging' %}
-                                    selected
-                                {% endif %}
-                            >
-                                Challenging
-                            </option>
-
-                            <option
-                                value="Highly Challenging"
-                                {% if form_data.get('course_rigor_preference') == 'Highly Challenging' %}
-                                    selected
-                                {% endif %}
-                            >
-                                Highly Challenging
-                            </option>
-                        </select>
-                    </div>
-                </div>
-                {% include '_nonpersonal_confirmation.html' %}
-                <div class="form-footer">
-                    <p>You can always update your preferences later in the settings.</p>
-                    <button type="submit">Save profile</button><a class="back-link" href="{{ nav_back_url() if g.current_user.profile else url_for('main.dashboard') }}">Cancel</a>
-                </div>
-            </form>
-        </section>
-    </main>
-    <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
-  <script src="{{ url_for('static', filename='js/nonpersonal.js') }}" defer></script>
-</body>
-
-</html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Personalize your planner | StudentSuccess</title><link rel="stylesheet" href="{{ url_for('static',filename='css/onboarding.css') }}">{% include '_accessibility_head.html' %}<link rel="stylesheet" href="{{ url_for('static',filename='css/account.css') }}"></head>
+<body>{% include '_accessibility_body.html' %}<main id="main-content"><section class="account-sheet onboarding-sheet">
+<p class="eyebrow">{{ 'WELCOME, ' ~ g.current_user.username if first_setup else 'PLANNING PREFERENCES' }}</p><h1>{{ 'A planner that fits you.' if first_setup else 'Personalize your planner.' }}</h1>
+<p>{{ 'Finish this setup to open your planner. Your choices stay saved when you sign out.' if first_setup else 'Adjust your study preferences whenever your plans change.' }} No full name, GPA, or contact information needed.</p>
+{% if errors %}<div class="form-errors" role="alert"><h2>Check these choices</h2>{% for error in errors %}<p>{{ error }}</p>{% endfor %}</div>{% endif %}
+<form method="post" data-nonpersonal-form><input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><input type="hidden" name="preferences_submitted" value="yes">
+<fieldset><legend>1. Your studies</legend><div class="setup-fields">
+<label>I'm planning for<select id="setup-context" name="academic_context" required><option value="high_school" {% if values.academic_context=='high_school' %}selected{% endif %}>High school</option><option value="college" {% if values.academic_context=='college' %}selected{% endif %}>College / university</option></select></label>
+<label>Planner timezone<select name="timezone_name" required>{% for zone in timezones %}<option value="{{ zone }}" {% if values.timezone_name==zone %}selected{% endif %}>{{ zone|replace('_',' ') }}</option>{% endfor %}</select></label>
+<div data-setup-context="high_school"><label>High-school grade<select name="grade">{% for grade in [9,10,11,12] %}<option value="{{ grade }}" {% if values.grade|string==grade|string %}selected{% endif %}>Grade {{ grade }}</option>{% endfor %}</select></label><p class="muted">High-school mode includes college courses for dual enrollment. Choose your courses after setup.</p></div>
+<div data-setup-context="college"><label>Program / major (optional)<input name="college_program" maxlength="120" value="{{ values.college_program }}" data-nonpersonal-input placeholder="Biology, engineering, undecided..."></label><label>Current term (optional)<input name="college_term" maxlength="60" value="{{ values.college_term }}" data-nonpersonal-input placeholder="Fall 2026"></label><label>Personal term credit target (optional)<input name="term_credit_goal" type="number" min="0" max="60" step="0.25" value="{{ values.term_credit_goal }}"></label><p class="muted">Plan courses from one or more colleges. This is your planning target, not an official degree requirement.</p></div>
+<label>Weekly study budget (hours)<input name="study_hours" type="number" min="0" max="80" step="0.5" value="{{ values.study_hours }}" required><small>Time outside class you can realistically set aside.</small></label>
+</div></fieldset>
+<fieldset><legend>2. How you like to work</legend><div class="setup-fields">
+<label>Usual task estimate<select name="default_task_minutes">{% for minutes in [15,25,30,45,60,90,120] %}<option value="{{ minutes }}" {% if values.default_task_minutes|string==minutes|string %}selected{% endif %}>{{ minutes }} minutes</option>{% endfor %}</select><small>A starting value. Every task can have a different estimate.</small></label>
+<label>Work-block length<select name="work_session_minutes">{% for minutes in [15,20,25,30,45,50,60] %}<option value="{{ minutes }}" {% if values.work_session_minutes|string==minutes|string %}selected{% endif %}>{{ minutes }} minutes</option>{% endfor %}</select><small>Used when you break a large task into smaller sessions.</small></label>
+<label>Home screen<select name="dashboard_mode"><option value="focus" {% if values.dashboard_mode=='focus' %}selected{% endif %}>Focus: one recommended task</option><option value="standard" {% if values.dashboard_mode=='standard' %}selected{% endif %}>Overview: tasks and progress</option></select></label>
+<label class="account-check"><input type="checkbox" name="reminders_enabled" {% if values.reminders_enabled %}checked{% endif %}> Show reminders inside my planner</label>
+</div></fieldset>
+<fieldset><legend>3. Make it comfortable</legend><div class="setup-fields">
+<label>Appearance<select name="theme">{% for key,label in [('light','Light notebook'),('dark','Dark notebook'),('high-contrast','High contrast')] %}<option value="{{ key }}" {% if values.theme==key %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label>
+<label>Text size<select name="text_scale">{% for scale in [100,125,150,200] %}<option value="{{ scale }}" {% if values.text_scale|string==scale|string %}selected{% endif %}>{{ scale }}%</option>{% endfor %}</select></label>
+<label class="account-check"><input type="checkbox" name="reduce_motion" {% if values.reduce_motion %}checked{% endif %}> Reduce animation</label>
+</div></fieldset>
+{% include '_nonpersonal_confirmation.html' %}
+<div class="setup-actions"><button>{{ 'Finish setup & open my planner' if first_setup else 'Save planning preferences' }}</button>{% if not first_setup %}<a href="{{ url_for('settings.settings') }}">Cancel</a>{% endif %}</div>
+</form></section></main><script src="{{ url_for('static',filename='js/onboarding.js') }}" defer></script><script src="{{ url_for('static',filename='js/nonpersonal.js') }}" defer></script></body></html>

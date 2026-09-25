@@ -9,7 +9,6 @@ from sqlalchemy import inspect, text
 from config import config
 from extensions import db
 from routes.auth_routes import auth_bp
-from routes.access_routes import access_bp
 from services.access_service import csrf_token
 from routes.course_routes import course_bp
 from routes.main_routes import main_bp
@@ -34,11 +33,6 @@ def create_app(test_config=None):
     db.init_app(app)
 
     app.register_blueprint(auth_bp)
-    app.register_blueprint(access_bp)
-    from routes.account_routes import account_bp
-    from services.email_accounts import ready
-    app.register_blueprint(account_bp)
-    app.jinja_env.globals['email_accounts_ready'] = ready
     app.jinja_env.globals["access_csrf_token"] = csrf_token
     app.register_blueprint(course_bp)
     app.register_blueprint(main_bp)
@@ -53,6 +47,24 @@ def create_app(test_config=None):
     app.register_blueprint(task_bp)
     from services.task_policy import MAX_TASK_MINUTES
     app.jinja_env.globals["MAX_TASK_MINUTES"] = MAX_TASK_MINUTES
+
+    @app.before_request
+    def require_account_setup():
+        if request.endpoint == 'static' or not session.get('user_id'):
+            return None
+        from flask import g, redirect, url_for
+        from services.auth_service import login_required
+        response = login_required(lambda: None)()
+        if response is not None:
+            return None if request.endpoint in {'auth.login', 'auth.register'} else response
+        user = g.current_user
+        if request.endpoint == 'auth.logout':
+            return None
+        if user.access_credential is not None or user.email is not None:
+            if request.endpoint != 'auth.transfer':
+                return redirect(url_for('auth.transfer'))
+        elif not user.onboarding_completed and request.endpoint != 'profile.onboarding':
+            return redirect(url_for('profile.onboarding'))
 
     @app.template_filter("planner_time")
     def planner_time(value):
@@ -93,7 +105,7 @@ def create_app(test_config=None):
 
     @app.after_request
     def add_security_headers(response):
-        if request.path.startswith(("/access/", "/account/")) or session.get("user_id") or request.path in ("/login", "/register"):
+        if request.path.startswith(("/access/", "/account/", "/transfer-planner")) or session.get("user_id") or request.path in ("/login", "/register"):
             response.headers["Cache-Control"] = "no-store"
             response.headers["Referrer-Policy"] = "no-referrer"
         response.headers.setdefault("X-Content-Type-Options", "nosniff")
@@ -133,7 +145,7 @@ def create_app(test_config=None):
 def _migrate_feedback_columns():
     """Additive migration; existing tasks, history, and preferences are retained."""
     additions = {
-        "users": {"email": "VARCHAR(254)", "auth_version": "INTEGER NOT NULL DEFAULT 0"},
+        "users": {"email": "VARCHAR(254)", "auth_version": "INTEGER NOT NULL DEFAULT 0", "onboarding_completed": "BOOLEAN NOT NULL DEFAULT FALSE"},
         "tasks": {"parent_task_id": "INTEGER REFERENCES tasks(id)", "external_uid": "VARCHAR(255)"},
         "user_settings": {"academic_context": "VARCHAR(20) NOT NULL DEFAULT 'high_school'", "institution_id": "VARCHAR(12)",
             "college_program": "VARCHAR(120) NOT NULL DEFAULT ''", "college_term": "VARCHAR(60) NOT NULL DEFAULT ''", "term_credit_goal": "FLOAT"},

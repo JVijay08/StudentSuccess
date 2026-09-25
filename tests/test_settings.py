@@ -1,3 +1,4 @@
+from tests.account_helpers import csrf
 from datetime import datetime, timedelta, timezone
 import json
 
@@ -135,7 +136,7 @@ def test_delete_account_removes_owned_data(app, authed_client):
     authed_client.get("/settings")
 
     response = authed_client.post(
-        "/settings/delete-account", data={"password": "password123"}
+        "/settings/delete-account", data={"password": "password123", "csrf_token": csrf(authed_client)}
     )
 
     assert response.status_code == 302

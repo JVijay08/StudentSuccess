@@ -34,15 +34,14 @@
 
       {% endif %}
 
-      {% if g.current_user.access_credential %}<div class="demo-banner" role="note"><strong>Your private-code planner.</strong> Use your actual courses and tasks; leave out full names, student IDs, contact details, and sensitive records. This workspace is saved on the server. Keep your code safe to return on another device. Your planning year and study budget are in Settings.</div>{% endif %}
       <header class="dashboard-header">
         <p class="eyebrow">TODAY</p>
         {% if profile %}
-          <h1>{% if g.current_user.access_credential or g.current_user.email %}Your day, in focus.{% else %}Welcome, {{ profile.first_name }}.{% endif %}</h1>
+          <h1>Your day, in focus.</h1>
           <p>One assignment at a time. Start here, then work through your queue.</p>
         {% else %}
           <h1>Welcome to StudentSuccess.</h1>
-          <p>Set up your student profile, then begin planning work around real deadlines.</p>
+          <p>Personalize your planner, then begin planning work around real deadlines.</p>
         {% endif %}
         <a class="button secondary" href="{{ nav_url('tasks.tasks', _anchor='task-form') }}">Add a task</a>
       </header>
@@ -72,9 +71,9 @@
           <p>Record its deadline and planned start so StudentSuccess can give you a transparent priority signal.</p>
           <a class="button" href="{{ nav_url('tasks.tasks', _anchor='task-form') }}">Add a task</a>
         {% else %}
-          <h2>Start with your profile.</h2>
+          <h2>Set up your planner.</h2>
           <p>A small amount of academic context is enough to begin. StudentSuccess does not need unrelated personal information.</p>
-          <a class="button" href="{{ nav_url('profile.onboarding') }}">Set up profile</a>
+          <a class="button" href="{{ nav_url('profile.onboarding') }}">Personalize planner</a>
         {% endif %}
       </section>
 
@@ -134,17 +133,17 @@
         </article>{% endif %}
 
         {% if 'profile' not in settings.hidden_cards %}<article class="card card-profile">
-          <p class="eyebrow">{% if g.current_user.access_credential or g.current_user.email %}PLANNING PREFERENCES{% else %}PROFILE{% endif %}</p>
+          <p class="eyebrow">PLANNING PREFERENCES</p>
           {% if profile %}
             <h2>{{ 'College / university' if settings.academic_context == 'college' else profile.grade ~ 'th grade' }}</h2>
             <dl>
-              {% if not g.current_user.access_credential and not g.current_user.email and settings.academic_context != 'college' %}<div><dt>Graduation year</dt><dd>{{ profile.graduation_year }}</dd></div>{% endif %}
+
               <div><dt>Weekly study time</dt><dd>{{ profile.study_hours_per_week|round(1) }} hours</dd></div>
               {% if settings.academic_context=='college' %}<div><dt>Program / major</dt><dd>{{ settings.college_program or 'Not set' }}</dd></div>{% else %}<div><dt>Preferred course mix</dt><dd>{{ profile.course_rigor or "Not set" }}</dd></div>{% endif %}
             </dl>
           {% else %}
-            <h2>No profile yet</h2>
-            <p>Add basic academic details to establish your planning context.</p>
+            <h2>Choose your preferences</h2>
+            <p>Choose your study budget and how you like to work.</p>
           {% endif %}
         </article>{% endif %}
 

@@ -42,12 +42,14 @@ def authed_client(app):
     """An existing password account, retained for backward-compatibility tests."""
     client = app.test_client()
     with app.app_context():
-        user = User(username=TEST_USERNAME, password_hash=hash_password(TEST_PASSWORD))
+        user = User(username=TEST_USERNAME, password_hash=hash_password(TEST_PASSWORD), onboarding_completed=True)
         db.session.add(user)
         db.session.commit()
+    from tests.account_helpers import csrf
+    token = csrf(client)
     response = client.post(
         "/login",
-        data={"username": TEST_USERNAME, "password": TEST_PASSWORD},
+        data={"username": TEST_USERNAME, "password": TEST_PASSWORD, "csrf_token": token},
     )
     # Existing password accounts can still sign in.
     assert response.status_code == 302

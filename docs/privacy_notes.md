@@ -6,43 +6,37 @@ StudentSuccess is an academic-planning prototype with a hosted demo and an optio
 
 ## Current data handling
 
-### Private-code accounts (default public entry point)
+### Username/password accounts
 
-New visitors create a server-stored planner without a name, email, or chosen
-password. A private access code contains 32 cryptographically random bytes;
-only its SHA-256 digest is stored in the new `access_credentials` table. Codes
-are sent in POST bodies, never URLs, and are shown once in a no-store response.
-They are not retained in the session cookie or browser storage by the app.
-The user can copy or download the code and must keep that copy private.
+Create a server-stored planner with a nickname-style username and a password of
+15?128 characters. No email address, full name, or student ID is requested.
+Werkzeug hashes passwords; plaintext passwords are not stored in the database,
+session, or browser storage by the app. Save credentials in a password manager.
+There is no email-based recovery or security-question fallback.
 
-Possession of the code grants full account access. A lost code cannot be
-recovered. Replacement requires the current code and invalidates the previous
-code and other sessions. Deletion also requires the code. The code is an access
-credential, not encryption or a promise of anonymity. Hosting still receives
-ordinary request metadata. Students may plan their actual courses, deadlines, and
-everyday tasks. Leave out full names, student IDs, contact details, passwords,
-private records, and other sensitive details.
+New accounts must complete planning preferences: education context, study budget,
+timezone, task defaults, and display choices. College program/term and credit target
+are optional. The server enforces completion across all workspace routes and new
+sessions. Compatibility profile fields use "Planner", a placeholder graduation year,
+and zero GPA values. Previously saved profile values are preserved, not newly collected.
 
-Code accounts skip personal-profile onboarding. Existing planner services use
-initial planning defaults (year 9, 10 weekly study hours, Balanced rigor).
-Compatibility profile fields use "Planner", a placeholder graduation year, and
-zero GPA values; these are not collected or inferred personal details. Only
-planning year and weekly study budget are exposed in the preferences form.
+Old code and email login routes are removed. A separate one-time transfer requires
+an existing private code plus new credentials; it preserves the user ID and planner,
+deletes the old code digest, and invalidates other sessions. No new codes are issued.
+Retired email request tables remain for migration/deletion safety, with no active mail flow.
 
-The on-demand **How this works & privacy** dialog explains the prototype,
-code handling, server storage, and sample demo. It does not open automatically
-on arrival. Closing it records `studentsuccess.welcome.v1` in localStorage;
-the explanation can always be reopened. It is not a formal consent mechanism.
-Existing username/password accounts remain usable.
+The privacy dialog remains available on demand. Dismissing it is not a substitute
+for onboarding or a formal consent mechanism. Hosting still receives ordinary
+request metadata; nickname accounts do not promise anonymity or encrypted storage.
 
 ### Entry confirmation
 
-Task creation/editing, legacy profile editing, and free-text catalog searches
+Task creation/editing, planning preference editing, and free-text catalog searches
 require an acknowledgment that personal identifiers and sensitive details are excluded
 on every submission. Actual course names, institution selections, assignments, deadlines,
 and everyday tasks are allowed.
 The acknowledgment starts unchecked and resets when relevant entries change.
-The server rejects unconfirmed task/profile saves and does not apply unconfirmed
+The server rejects unconfirmed task/preference saves and does not apply unconfirmed
 search text. Catalog searches use POST so new searches do not put text in URLs.
 The guidance identifies full names, student IDs, contact details, home addresses,
 passwords, and private records as information to remove. Public institution and course
@@ -60,8 +54,7 @@ included in account export/deletion and are separate from the public institution
 
 ### Optional browser-only workspace
 
-The browser-only planner is offered beneath private-code creation, not in the
-private-code dashboard. It keeps the existing `studentsuccess.local-plan.v1`
+The separate browser-only planner remains at `/planner`. It keeps the existing `studentsuccess.local-plan.v1`
 storage key and reads old backups. Tasks, task ratings, four-year course plans,
 and weekly availability stay in browser storage; export/import and erase remain
 available. Anyone using the same browser profile can access the plan.
@@ -72,7 +65,7 @@ four-year plan. A single unauthenticated public catalog-bundle request downloads
 reference data. Searches and course selections then run locally; none are sent
 back to the server. Server accounts retain their existing advanced features
 including recurring tasks, reminders, calendar export, and account preferences.
-Browser plans are separate and do not automatically sync to private-code accounts.
+Browser plans are separate and do not automatically sync to server accounts.
 
 The same entry confirmation is required in browser task/custom-course
 forms and searches. Backup restoration also asks the user to confirm the file

@@ -21,9 +21,6 @@ DATABASE_URL = normalize_database_url(os.environ.get("DATABASE_URL"))
 
 
 class config:
-    RESEND_API_KEY = os.environ.get('RESEND_API_KEY', '')
-    EMAIL_FROM = os.environ.get('EMAIL_FROM', '')
-    PUBLIC_BASE_URL = os.environ.get('PUBLIC_BASE_URL', '')
     SQLALCHEMY_DATABASE_URI = DATABASE_URL or f"sqlite:///{DATABASE_PATH.as_posix()}"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SESSION_REFRESH_EACH_REQUEST = True

@@ -63,16 +63,11 @@ def test_search_comparison_detail_and_add_preserve_context(authed_client):
     assert restored.data.count(b'checked data-course-name') >= 2
 
 
-def test_settings_save_keeps_profile_parent(authed_client):
+def test_settings_links_to_planning_preferences(authed_client):
     complete_profile(authed_client)
-    profile_url = link(authed_client.get("/dashboard"), "Profile")
-    profile = authed_client.get(profile_url)
-    settings_url = link(profile, "Accessibility and settings")
-    settings = authed_client.get(settings_url)
-    assert link(settings, "Back to profile") == profile_url
-    response = authed_client.post(settings_url, data={**fields(settings), "theme": "dark"})
-    assert response.location == settings_url
-    assert link(authed_client.get(response.location), "Back to profile") == profile_url
+    settings = authed_client.get('/settings')
+    assert b'/onboarding' in settings.data
+    assert link(authed_client.get('/onboarding'), 'Cancel') == '/settings'
 
 
 def test_task_edit_validation_save_and_cancel_keep_task_parent(app, authed_client):
@@ -111,14 +106,14 @@ def test_return_does_not_trust_external_referrer(authed_client):
 
 
 def test_sign_in_resumes_requested_page(app):
-    from tests.test_access_codes import create, csrf
+    from tests.account_helpers import create, csrf
     client = app.test_client()
-    code, _ = create(client)
+    credentials, _ = create(client)
     client.post("/logout")
     response = client.get("/courses/plan")
     assert parse_qs(urlsplit(response.location).query)["next"] == ["/courses/plan"]
     login = client.get(response.location)
-    response = client.post("/access/open", data={**fields(login), "csrf_token": csrf(client), "access_code": code})
+    response = client.post("/login", data={**fields(login), "csrf_token": csrf(client), **credentials})
     assert response.location == "/courses/plan"
 
 
@@ -142,11 +137,10 @@ def test_direct_comparison_change_selection_retains_catalog(authed_client):
         assert parse_qs(urlsplit(target).query)['catalog'] == ['ap']
 
 
-def test_profile_cancel_returns_to_profile(authed_client):
+def test_old_profile_redirects_to_preferences(authed_client):
     complete_profile(authed_client)
-    profile = authed_client.get('/profile')
-    edit = authed_client.get(link(profile, 'Edit profile'))
-    assert link(edit, 'Cancel') == '/profile'
+    assert authed_client.get('/profile').location == '/onboarding'
+    assert link(authed_client.get('/onboarding'), 'Cancel') == '/settings'
 
 
 def test_repeated_complete_and_stale_start_do_not_repeat_recurring_work(app, authed_client):

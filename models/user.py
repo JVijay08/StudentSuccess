@@ -9,6 +9,7 @@ class User(db.Model):
     username = db.Column(db.String(80), unique=True, nullable=False)
     password_hash = db.Column(db.String(256), nullable=False)
     email = db.Column(db.String(254), unique=True, nullable=True)
+    onboarding_completed = db.Column(db.Boolean, nullable=False, default=False)
     auth_version = db.Column(db.Integer, nullable=False, default=0)
     account_requests = db.relationship('AccountRequest', cascade='all, delete-orphan')
     created_at = db.Column(

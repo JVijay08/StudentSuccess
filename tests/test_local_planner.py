@@ -18,19 +18,20 @@ def test_optional_browser_planner_works_without_creating_records(app):
 
 def test_home_offers_full_workspace_and_no_reduced_planner(app):
     response = app.test_client().get("/")
-    assert b'Create Private Planner' in response.data
+    assert b'Create an account' in response.data
     assert re.search(rb'href="/register(?:\?[^"]*)?"', response.data)
     assert b'href="/planner"' not in response.data
     assert b'course plans' in response.data
-    assert b'server-saved planner' in response.data
     assert b'View source on GitHub' not in response.data
 
 
-def test_browser_option_is_only_offered_beneath_code_creation(app, authed_client):
-    response = app.test_client().get("/register")
-    assert b'Use the browser-only planner' in response.data
-    assert re.search(rb'href="/planner(?:\?[^"]*)?"', response.data)
-    assert b'href="/planner"' not in authed_client.get("/dashboard").data
+def test_registration_has_one_account_method(app, authed_client):
+    response = app.test_client().get('/register')
+    assert b'name="username"' in response.data
+    assert b'name="email"' not in response.data
+    assert b'name="access_code"' not in response.data
+    assert b'href="/planner"' not in response.data
+    assert b'href="/planner"' not in authed_client.get('/dashboard').data
 
 
 def test_browser_catalog_bundle_is_public_and_contains_full_catalogs(app):

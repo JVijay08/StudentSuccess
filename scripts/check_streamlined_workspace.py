@@ -1,4 +1,4 @@
-"""Exercise tasks and email UI using an isolated DB and a fake email transport."""
+"""Exercise streamlined tasks using an isolated database."""
 import json
 import logging
 import re
@@ -15,9 +15,7 @@ from audit_responsive import BOUNDS
 
 def main():
     logging.getLogger('werkzeug').setLevel(logging.ERROR)
-    messages = []
-    app = create_app({'TESTING':True, 'SQLALCHEMY_DATABASE_URI':'sqlite://',
-                      'EMAIL_TEST_DELIVERY':messages.append, 'PUBLIC_BASE_URL':'https://example.test'})
+    app = create_app({'TESTING':True, 'SQLALCHEMY_DATABASE_URI':'sqlite://'})
     server = make_server('127.0.0.1', 0, app, threaded=True)
     threading.Thread(target=server.serve_forever, daemon=True).start()
     origin = f'http://127.0.0.1:{server.server_port}'
@@ -59,32 +57,6 @@ def main():
                         page.screenshot(path=str(destination/f'tasks-{width}.png'),full_page=True)
                     page.evaluate("document.querySelectorAll('details').forEach(e=>e.open=true)")
                     issues.extend([width,path,'expanded',item] for item in page.evaluate(BOUNDS))
-            public=browser.new_page(viewport={'width':390,'height':844})
-            public.on('pageerror',lambda error:errors.append(str(error)))
-            for width in [320,390,430,1440]:
-                public.set_viewport_size({'width':width,'height':844})
-                for path in ['/register','/login','/account/forgot-password']:
-                    assert public.goto(origin+path).status==200
-                    issues.extend([width,path,item] for item in public.evaluate(BOUNDS))
-            public.set_viewport_size({'width':390,'height':844})
-            for theme in ['dark','high-contrast']:
-                for path in ['/register','/account/login','/account/forgot-password']:
-                    public.goto(origin+path)
-                    public.evaluate("theme=>{Object.assign(document.documentElement.dataset,{theme,textScale:'200'});document.querySelectorAll('details').forEach(e=>e.open=true)}",theme)
-                    issues.extend([theme,path,'200%',item] for item in public.evaluate(BOUNDS))
-            public.goto(origin+'/register')
-            public.get_by_label('Email',exact=True).fill('browser@example.org')
-            public.get_by_label('New password',exact=True).fill('quiet notebook study hours')
-            public.get_by_label('Confirm password',exact=True).fill('quiet notebook study hours')
-            public.locator('[name=understood]').check()
-            public.get_by_role('button',name='Send verification email').click()
-            expect(public.get_by_role('heading',name='Check your inbox')).to_be_visible()
-            link=re.search(r'/account/confirm/[^\s]+',messages[-1]['text'])[0]
-            public.goto(origin+link)
-            public.get_by_role('button',name='Confirm email & continue').click()
-            expect(public.locator('.focus-card')).to_be_visible()
-            public.goto(origin+'/onboarding')
-            expect(public.get_by_role('heading',name='Set up your plan.')).to_be_visible()
             browser.close()
         result=dict(javascript_errors=errors,layout_issues=issues)
         (destination/'results.json').write_text(json.dumps(result,indent=2),encoding='utf-8')

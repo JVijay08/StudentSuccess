@@ -2,21 +2,8 @@ from models import PlannedCourse
 
 
 def complete_profile(client):
-    response = client.post(
-        "/onboarding",
-        data={
-            "nonpersonal_confirmed": "yes",
-            "first_name": "Course Demo",
-            "grade_level": "11",
-            "graduation_year": "2027",
-            "current_gpa": "4.0",
-            "target_gpa": "4.5",
-            "study_hours_per_week": "15",
-            "career_interest": "Engineering",
-            "course_rigor_preference": "Challenging",
-        },
-    )
-    assert response.status_code == 302
+    from tests.account_helpers import setup
+    assert setup(client, grade='11', study_hours='15').status_code == 302
 
 
 def test_course_explorer_filters_catalog(authed_client):

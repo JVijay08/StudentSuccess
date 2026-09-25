@@ -1,242 +1,97 @@
-from flask import Blueprint, g, redirect, render_template, request, url_for
-
-from zoneinfo import ZoneInfo
+from datetime import datetime
 import math
+from zoneinfo import available_timezones
 
+from flask import Blueprint, g, redirect, render_template, request, url_for
 from extensions import db
 from models import StudentProfile
 from services.auth_service import login_required
-from services.settings_service import get_or_create_settings
 from services.access_service import verify_csrf
+from services.settings_service import get_or_create_settings
 from services.privacy_service import confirmation_errors
-from services.navigation import back_url, same_page
+
+profile_bp = Blueprint('profile', __name__)
 
 
-profile_bp = Blueprint("profile", __name__)
-
-
-@profile_bp.route("/onboarding", methods=["GET", "POST"])
+@profile_bp.route('/onboarding', methods=['GET', 'POST'])
 @login_required
 def onboarding():
-    if g.current_user.access_credential is not None or g.current_user.email is not None or get_or_create_settings(g.current_user).academic_context == "college":
-        return _planning_preferences()
+    user = g.current_user
+    preferences = get_or_create_settings(user)
+    profile = user.profile
+    first_setup = not user.onboarding_completed
     errors = []
-
-    if request.method == "POST":
-        errors.extend(confirmation_errors(request.form))
-        first_name = request.form.get("first_name", "").strip()
-        grade_level_text = request.form.get("grade_level", "").strip()
-        graduation_year_text = request.form.get("graduation_year", "").strip()
-        current_gpa_text = request.form.get("current_gpa", "").strip()
-        target_gpa_text = request.form.get("target_gpa", "").strip()
-        study_hours_text = request.form.get(
-            "study_hours_per_week",
-            "",
-        ).strip()
-        career_interest = request.form.get("career_interest", "").strip()
-        course_rigor_preference = request.form.get(
-            "course_rigor_preference",
-            "",
-        ).strip()
-
-        if not first_name:
-            errors.append("First name is required.")
-
-        if len(first_name) > 80:
-            errors.append("First name must be 80 characters or fewer.")
-
-        try:
-            grade_level = int(grade_level_text)
-
-            if grade_level not in [9, 10, 11, 12]:
-                errors.append("Grade level must be between 9 and 12.")
-        except ValueError:
-            grade_level = None
-            errors.append("Please select a valid grade level.")
-
-        try:
-            graduation_year = int(graduation_year_text)
-
-            if graduation_year < 2026 or graduation_year > 2035:
-                errors.append(
-                    "Graduation year must be between 2026 and 2035."
-                )
-        except ValueError:
-            graduation_year = None
-            errors.append("Please enter a valid graduation year.")
-
-        try:
-            current_gpa = float(current_gpa_text)
-
-            if current_gpa < 0 or current_gpa > 5:
-                errors.append("Current GPA must be between 0 and 5.")
-        except ValueError:
-            current_gpa = None
-            errors.append("Please enter a valid current GPA.")
-
-        try:
-            target_gpa = float(target_gpa_text)
-
-            if target_gpa < 0 or target_gpa > 5:
-                errors.append("Target GPA must be between 0 and 5.")
-        except ValueError:
-            target_gpa = None
-            errors.append("Please enter a valid target GPA.")
-
-        try:
-            study_hours_per_week = float(study_hours_text)
-
-            if study_hours_per_week < 0 or study_hours_per_week > 80:
-                errors.append(
-                    "Study hours must be between 0 and 80 per week."
-                )
-        except ValueError:
-            study_hours_per_week = None
-            errors.append("Please enter valid weekly study hours.")
-
-        if len(career_interest) > 120:
-            errors.append(
-                "Career interest must be 120 characters or fewer."
-            )
-
-        valid_rigor_options = [
-            "",
-            "Balanced",
-            "Challenging",
-            "Highly Challenging",
-        ]
-
-        if course_rigor_preference not in valid_rigor_options:
-            errors.append("Please select a valid course rigor preference.")
-
-        if errors:
-            return render_template(
-                "onboarding.html",
-                errors=errors,
-                form_data=request.form,
-            )
-
-        profile = StudentProfile.query.filter_by(user_id=g.current_user.id).first()
-
-        if profile is None:
-            profile = StudentProfile()
-            profile.user_id = g.current_user.id
-            db.session.add(profile)
-
-        profile.first_name = first_name
-        profile.grade = grade_level
-        profile.graduation_year = graduation_year
-        profile.current_gpa = current_gpa
-        profile.target_gpa = target_gpa
-        profile.study_hours_per_week = study_hours_per_week
-        profile.career_goals = career_interest or None
-        profile.course_rigor = course_rigor_preference or None
-
-        db.session.commit()
-
-        return redirect(back_url("main.dashboard"))
-
-    existing_profile = StudentProfile.query.filter_by(user_id=g.current_user.id).first()
-
-    if existing_profile is not None:
-        form_data = {
-            "first_name": existing_profile.first_name,
-            "grade_level": str(existing_profile.grade),
-            "graduation_year": str(existing_profile.graduation_year),
-            "current_gpa": str(existing_profile.current_gpa),
-            "target_gpa": str(existing_profile.target_gpa),
-            "study_hours_per_week": str(
-                existing_profile.study_hours_per_week
-            ),
-            "career_interest": existing_profile.career_goals or "",
-            "course_rigor_preference": (
-                existing_profile.course_rigor or ""
-            ),
-        }
-    else:
-        form_data = {}
-
-    return render_template(
-        "onboarding.html",
-        errors=[],
-        form_data=form_data,
-    )
-
-
-@profile_bp.get("/profile")
-@login_required
-def profile_view():
-    if g.current_user.access_credential is not None or g.current_user.email is not None or get_or_create_settings(g.current_user).academic_context == "college":
-        return redirect(same_page("profile.onboarding"))
-    profile = StudentProfile.query.filter_by(
-        user_id=g.current_user.id
-    ).first()
-
-    if profile is None:
-        return redirect(same_page("profile.onboarding"))
-    settings = get_or_create_settings(g.current_user)
-
-    created_at = g.current_user.created_at
-    if created_at.tzinfo is None:
-        from datetime import timezone
-
-        created_at = created_at.replace(tzinfo=timezone.utc)
-    date_format = {
-        "month-first": "%B %d, %Y",
-        "day-first": "%d %B %Y",
-        "year-first": "%Y-%m-%d",
-    }.get(settings.date_format, "%B %d, %Y")
-    member_since = created_at.astimezone(
-        ZoneInfo(settings.timezone_name)
-    ).strftime(date_format)
-
-    return render_template(
-        "profile.html",
-        profile=profile,
-        username=g.current_user.username,
-        member_since=member_since,
-    )
-
-
-def _planning_preferences():
-    profile = g.current_user.profile
-    if profile is None:
-        from datetime import datetime
-        profile=StudentProfile(user_id=g.current_user.id, first_name='Planner', grade=9,
-            graduation_year=datetime.now().year+4, current_gpa=0, target_gpa=0, study_hours_per_week=10)
-        db.session.add(profile)
-        db.session.commit()
-    preferences = get_or_create_settings(g.current_user)
-    errors = []
-    if request.method == "POST":
+    defaults = dict(academic_context=preferences.academic_context,
+        grade=profile.grade if profile else 9, study_hours=profile.study_hours_per_week if profile else 10,
+        timezone_name=preferences.timezone_name, college_program=preferences.college_program,
+        college_term=preferences.college_term, term_credit_goal=preferences.term_credit_goal if preferences.term_credit_goal is not None else '',
+        default_task_minutes=preferences.default_task_minutes, work_session_minutes=preferences.work_session_minutes,
+        dashboard_mode=preferences.dashboard_mode, theme='light' if preferences.theme == 'system' else preferences.theme, text_scale=preferences.text_scale,
+        reduce_motion=preferences.reduce_motion, reminders_enabled=preferences.reminders_enabled)
+    values = {**defaults, **request.form} if request.method == 'POST' else defaults
+    if request.method == 'POST':
         verify_csrf()
-        if preferences.academic_context == 'college':
-            program=request.form.get('college_program', preferences.college_program).strip()
-            term=request.form.get('college_term', preferences.college_term).strip()
+        errors.extend(confirmation_errors(request.form))
+        if 'preferences_submitted' in request.form:
+            values['reduce_motion'] = 'reduce_motion' in request.form
+            values['reminders_enabled'] = 'reminders_enabled' in request.form
+        context = values['academic_context']
+        if context not in {'high_school','college'}:
+            errors.append('Choose high school or college / university.')
+        if values['timezone_name'] not in available_timezones():
+            errors.append('Choose a valid planner timezone.')
+        try:
+            hours = float(values['study_hours'])
+            if not math.isfinite(hours) or not 0 <= hours <= 80:
+                raise ValueError
+        except (ValueError,TypeError):
+            errors.append('Study hours must be between 0 and 80 per week.')
+        try:
+            grade = int(values['grade']) if context == 'high_school' else (profile.grade if profile else 9)
+            if grade not in {9,10,11,12}: raise ValueError
+        except (ValueError,TypeError):
+            errors.append('Choose a high-school grade from 9 to 12.')
+        choices = dict(default_task_minutes={15,25,30,45,60,90,120}, work_session_minutes={15,20,25,30,45,50,60},
+            text_scale={100,125,150,200}, dashboard_mode={'standard','focus'}, theme={'light','dark','high-contrast','system'})
+        parsed = {}
+        for key, allowed in choices.items():
+            try:
+                value = int(values[key]) if key in {'default_task_minutes','work_session_minutes','text_scale'} else values[key]
+                if value not in allowed: raise ValueError
+                parsed[key] = value
+            except (ValueError,TypeError):
+                errors.append('Choose a valid '+key.replace('_',' ')+'.')
+        program, term, goal = preferences.college_program, preferences.college_term, preferences.term_credit_goal
+        if context == 'college':
+            program, term = str(values['college_program']).strip(), str(values['college_term']).strip()
             if len(program)>120 or len(term)>60:
                 errors.append('Use up to 120 characters for your program and 60 for your term.')
-            if ('college_program' in request.form or 'college_term' in request.form) and (program or term):
-                errors.extend(confirmation_errors(request.form))
-            raw_goal=request.form.get('term_credit_goal', preferences.term_credit_goal)
             try:
-                goal=None if raw_goal in ('',None) else float(raw_goal)
+                goal = None if values['term_credit_goal'] in ('',None) else float(values['term_credit_goal'])
                 if goal is not None and (not math.isfinite(goal) or not 0 <= goal <= 60): raise ValueError
             except (ValueError,TypeError):
                 errors.append('Enter a personal term credit target between 0 and 60, or leave it blank.')
-        try:
-            grade = profile.grade if preferences.academic_context == "college" else int(request.form.get("grade", ""))
-            hours = float(request.form.get("study_hours", ""))
-            if grade not in (9, 10, 11, 12) or not math.isfinite(hours) or not 0 <= hours <= 80:
-                raise ValueError
-        except ValueError:
-            errors.append("Choose a planning year from 9 to 12 and between 0 and 80 weekly study hours.")
         if not errors:
-            profile.grade = grade
-            profile.study_hours_per_week = hours
-            if preferences.academic_context == 'college':
-                preferences.college_program=program
-                preferences.college_term=term
-                preferences.term_credit_goal=goal
+            if profile is None:
+                profile = StudentProfile(user_id=user.id, first_name='Planner',grade=grade,
+                    graduation_year=datetime.now().year+4,current_gpa=0,target_gpa=0,study_hours_per_week=hours)
+                db.session.add(profile)
+            profile.grade, profile.study_hours_per_week = grade, hours
+            preferences.academic_context = context
+            preferences.timezone_name = values['timezone_name']
+            preferences.college_program, preferences.college_term, preferences.term_credit_goal = program, term, goal
+            for key, value in parsed.items(): setattr(preferences,key,value)
+            if 'preferences_submitted' in request.form:
+                preferences.reduce_motion = 'reduce_motion' in request.form
+                preferences.reminders_enabled = 'reminders_enabled' in request.form
+            user.onboarding_completed = True
             db.session.commit()
-            return redirect(back_url("main.dashboard"))
-    return render_template("planning_preferences.html", profile=profile, errors=errors)
+            return redirect(url_for('main.dashboard') if first_setup else url_for('settings.settings'))
+    return render_template('onboarding.html',errors=errors,values=values,first_setup=first_setup,
+                           timezones=sorted(available_timezones()))
+
+
+@profile_bp.get('/profile')
+@login_required
+def profile_view():
+    return redirect(url_for('profile.onboarding'))

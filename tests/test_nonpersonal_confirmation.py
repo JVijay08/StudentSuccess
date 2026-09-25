@@ -1,9 +1,10 @@
+from tests.account_helpers import csrf
 import re
 from unittest.mock import patch
 
 from extensions import db
 from models import Task
-from tests.test_access_codes import create
+from tests.account_helpers import create
 
 
 def task_data(**extra):
@@ -50,7 +51,7 @@ def test_catalog_keeps_filters_and_blocks_unconfirmed_free_text(app):
 
 
 def test_legacy_profile_requires_nonpersonal_confirmation(authed_client):
-    response = authed_client.post("/onboarding", data={"first_name":"Sample learner"})
+    response = authed_client.post("/onboarding", data={"csrf_token": csrf(authed_client)})
     assert b"Confirm that these entries" in response.data
 
 

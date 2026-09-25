@@ -18,7 +18,7 @@
     <header>
       <div>
         <p class="eyebrow">STUDENTSUCCESS</p>
-        <h1>{% if g.current_user.access_credential or g.current_user.email %}Your tasks{% else %}{{ profile.first_name }}'s tasks{% endif %}</h1>
+        <h1>Your tasks</h1>
         <p>Your next actions, in order. Completed work stays in its own section.</p>
       </div>
       <div class="header-actions"><a class="back-link quiet-back" href="{{ nav_back_url('main.dashboard') }}">{{ nav_back_label('main.dashboard') }}</a></div>

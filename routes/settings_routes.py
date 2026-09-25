@@ -19,7 +19,7 @@ from extensions import db
 from models import StudentProfile, Task
 from services.auth_service import check_password, hash_password, login_required
 from services.settings_service import get_or_create_settings
-from services.access_service import matches_code, verify_csrf
+from services.access_service import verify_csrf
 
 
 from services.navigation import return_url
@@ -103,21 +103,16 @@ def settings():
 @settings_bp.post("/settings/password")
 @login_required
 def change_password():
-    if g.current_user.access_credential is not None:
-        flash("Use Replace private code to change access to this planner.", "warning")
-        return redirect(return_url("settings.settings"))
+    verify_csrf()
     if session.get("demo_mode"):
         flash("The demo account does not have a reusable password.", "warning")
         return redirect(return_url("settings.settings"))
-    if g.current_user.email:
-        from services.access_service import verify_csrf
-        verify_csrf()
     current = request.form.get("current_password", "")
     new = request.form.get("new_password", "")
     if not check_password(current, g.current_user.password_hash):
         flash("Current password is incorrect.", "error")
-    elif not (12 if g.current_user.email else 8) <= len(new) <= 128:
-        flash("Use 12 to 128 characters for your new password." if g.current_user.email else "New password must be at least 8 characters (up to 128).", "error")
+    elif not 15 <= len(new) <= 128:
+        flash("Use 15 to 128 characters for your new password.", "error")
     else:
         g.current_user.password_hash = hash_password(new)
         g.current_user.auth_version += 1
@@ -140,7 +135,6 @@ def export_data():
     profile = StudentProfile.query.filter_by(user_id=g.current_user.id).first()
     payload = {
         "username": g.current_user.username,
-        "email": g.current_user.email,
         "exported_at": datetime.now(timezone.utc).isoformat(),
         "profile": None,
         "tasks": [],
@@ -250,12 +244,8 @@ def clear_history():
 @login_required
 def delete_account():
     password = request.form.get("password", "")
-    if g.current_user.access_credential is not None:
-        verify_csrf()
-        if not matches_code(request.form.get("access_code", ""), g.current_user.access_credential):
-            flash("Enter your current private code to delete this planner.", "error")
-            return redirect(return_url("settings.settings"))
-    elif not session.get("demo_mode") and not check_password(password, g.current_user.password_hash):
+    verify_csrf()
+    if not session.get("demo_mode") and not check_password(password, g.current_user.password_hash):
         flash("Enter your current password to delete the account.", "error")
         return redirect(return_url("settings.settings"))
     user = g.current_user

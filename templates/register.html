@@ -1,30 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Create a private planner | StudentSuccess</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/onboarding.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/access.css') }}">
-  {% include '_accessibility_head.html' %}
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/nonpersonal.css') }}">
-</head>
-<body>
-  {% include '_accessibility_body.html' %}
-  <main id="main-content" class="onboarding-page"><section class="onboarding-section access-section compact-access">
-    <a class="back-link" href="{{ nav_back_url('main.home') }}">{{ nav_back_label('main.home') }}</a>
-    <p class="first-title">NO NAME. NO EMAIL.</p><h1>Create your planner</h1>
-    <p class="subheading">Your private code is the key to this planner. No name or email is required.</p>
-    {% if errors %}<div class="form-errors" role="alert">{% for error in errors %}<p>{{ error }}</p>{% endfor %}</div>{% endif %}
-    <aside class="prototype-notice"><strong>Plan your actual courses and tasks.</strong> Leave out full names, student IDs, contact details, passwords, and private records. Plans are saved on our server. Keep your code safe: anyone with it can open your planner, and a lost code can't be recovered.</aside>
-    <form method="post" action="{{ url_for('access.create') }}">{% include '_navigation_fields.html' %}<input type="hidden" name="next" value="{{ navigation_resume }}">
-      <input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}">
-      <label class="access-check"><input type="checkbox" name="understood" value="yes" required> I'll keep my private code safe and leave personal identifiers and sensitive details out of my plan.</label>
-      <button class="access-primary" type="submit">Create my private planner</button>
-    </form>
-    <p><a href="{{ nav_url('auth.login') }}">I already have a code</a></p>
-    <p class="access-note"><a href="{{ nav_url('main.local_planner') }}">Use the browser-only planner</a> to save only on this device.</p>
-    <details class="access-help"><summary>How it works &amp; privacy</summary><p>Your code opens the full dashboard: tasks, course catalogs, comparisons, and a four-year plan. Code-based plans are saved on the server; the code does not encrypt the plan. Your actual courses, college selections, deadlines, and everyday tasks are welcome. Do not include full names, student IDs, contact details, passwords, or private records. Browser plans stay separate from your private-code account.</p></details>
-  </section></main>
-  {% include '_welcome.html' %}
-</body>
-</html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Create account | StudentSuccess</title><link rel="stylesheet" href="{{ url_for('static',filename='css/onboarding.css') }}">{% include '_accessibility_head.html' %}<link rel="stylesheet" href="{{ url_for('static',filename='css/account.css') }}"></head>
+<body>{% include '_accessibility_body.html' %}<main id="main-content" class="account-page"><section class="account-sheet">
+<a class="back-link" href="/">Back to home</a><p class="eyebrow">A PLACE FOR YOUR NEXT STEP</p><h1>Make it yours.</h1><p>Choose a username and password. No email, real name, or student ID.</p>
+{% if errors %}<div class="form-errors" role="alert">{% for error in errors %}<p>{{ error }}</p>{% endfor %}</div>{% endif %}
+<form method="post"><input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}">{% include '_username_password_fields.html' %}
+<label class="account-check"><input type="checkbox" name="understood" value="yes" required> I will keep personal identifiers and sensitive details out of my tasks and course notes.</label>
+<button>Create account &amp; personalize</button></form>
+<p class="muted">Save your username and password in a password manager. There is no email reset.</p>
+<p>Already registered? <a href="{{ url_for('auth.login') }}">Sign in</a>.</p><p class="muted">Moving an existing planner? <a href="{{ url_for('auth.transfer') }}">Transfer it once</a>.</p>
+</section></main></body></html>

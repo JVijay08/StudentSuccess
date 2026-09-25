@@ -1,92 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="dark light">
-    <meta name="theme-color" content="#071407">
-    <meta name="description" content="StudentSuccess helps students turn deadline pressure into a clear next action.">
-    <meta property="og:title" content="StudentSuccess | Start with less friction">
-    <meta property="og:description" content="A procrastination-aware academic planner for choosing what to work on now.">
-    <meta property="og:type" content="website">
-    <title>Log In | StudentSuccess</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/onboarding.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/access.css') }}">
-    {% include '_accessibility_head.html' %}
-</head>
-<body class="theme-dark">
-    {% include '_accessibility_body.html' %}
-    <main id="main-content" class="onboarding-page">
-        <section class="onboarding-section access-section compact-access">
-            <div class="onboarding-heading">
-                <div>
-                    <p class="first-title">STUDENTSUCCESS</p>
-                    <h1>Open your planner</h1>
-                    <p class="subheading">Paste your private code to pick up where you left off.</p>
-                </div>
-                <a class="back-link" href="{{ nav_back_url('main.home') }}">{{ nav_back_label('main.home') }}</a>
-            </div>
-
-            <p class="privacy-line">Use your actual courses and tasks without personal identifiers or sensitive details. Plans are saved on our server.</p>
-
-            {% if errors %}
-            <div class="form-errors" role="alert">
-                <h2>Please correct the following:</h2>
-                <ul>
-                    {% for error in errors %}
-                    <li>{{ error }}</li>
-                    {% endfor %}
-                </ul>
-            </div>
-            {% endif %}
-
-            <form method="post" action="{{ url_for('access.open_planner') }}">{% include '_navigation_fields.html' %}<input type="hidden" name="next" value="{{ navigation_resume }}">
-                <input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}">
-                <label for="access-code">Private access code</label>
-                <input id="access-code" type="password" name="access_code" maxlength="80" required autocomplete="current-password" spellcheck="false" autocapitalize="none" placeholder="SS-…">
-                <div class="access-actions"><button class="password-toggle" type="button" data-password-toggle="access-code" aria-pressed="false">Show code</button><button class="access-primary" type="submit">Open with a code</button></div>
-            </form>
-            <p><a href="{{ url_for('account.login') }}">Sign in with email</a></p>
-            <p>New here? <a href="{{ nav_url('auth.register') }}">Create a private planner</a>.</p>
-            <details class="access-help"><summary>Lost your code?</summary><p>We can't recover it. If you're still signed in on another device, export your data from Settings before signing out.</p></details>
-            <details class="legacy-login" {% if errors and request.endpoint == 'auth.login' %}open{% endif %}><summary>Use an existing username and password</summary>
-            <form class="profile-form" method="post" action="{{ url_for('auth.login') }}">{% include '_navigation_fields.html' %}<input type="hidden" name="next" value="{{ navigation_resume }}">
-                <div class="form-section">
-                    <div class="form-group full-width">
-                        <label for="username">Username</label>
-                        <input
-                            type="text"
-                            id="username"
-                            name="username"
-                            maxlength="80"
-                            placeholder="Enter your username"
-                            value="{{ form_data.get('username', '') }}"
-                            required
-                            autocomplete="username"
-                        >
-                    </div>
-                    <div class="form-group full-width">
-                        <label for="password">Password</label>
-                        <input
-                            type="password"
-                            id="password"
-                            name="password"
-                            placeholder="Enter your password"
-                            required
-                            autocomplete="current-password"
-                        >
-                        <button class="password-toggle" type="button" data-password-toggle="password" aria-pressed="false">Show password</button>
-                    </div>
-                </div>
-                <div class="form-footer">
-                    <p>Don't have an account? <a href="{{ nav_url('auth.register') }}">Sign up</a></p>
-                    <button type="submit">Log In</button>
-                </div>
-            </form>
-            </details>
-        </section>
-    </main>
-    <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
-    {% include '_welcome.html' %}
-</body>
-</html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sign in | StudentSuccess</title><link rel="stylesheet" href="{{ url_for('static',filename='css/onboarding.css') }}">{% include '_accessibility_head.html' %}<link rel="stylesheet" href="{{ url_for('static',filename='css/account.css') }}"></head>
+<body>{% include '_accessibility_body.html' %}<main id="main-content" class="account-page"><section class="account-sheet">
+<a class="back-link" href="/">Back to home</a><p class="eyebrow">YOUR STUDY NOTEBOOK</p><h1>Welcome back.</h1><p>One sign-in. Your courses, tasks, and plans.</p>
+{% if errors %}<div class="form-errors" role="alert">{% for error in errors %}<p>{{ error }}</p>{% endfor %}</div>{% endif %}
+<form method="post"><input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><input type="hidden" name="next" value="{{ navigation_resume }}">
+<label for="username">Username</label><input id="username" name="username" maxlength="80" autocomplete="username" autocapitalize="none" spellcheck="false" value="{{ request.form.get('username','') }}" required>
+<label for="password">Password</label><input id="password" name="password" type="password" maxlength="128" autocomplete="current-password" required>
+<button type="button" class="password-toggle" data-password-toggle="password" aria-pressed="false">Show password</button><button type="submit">Sign in</button>
+</form><p>New here? <a href="{{ url_for('auth.register') }}">Create an account</a>.</p>
+<details><summary>Forgot your sign-in?</summary><p>Check your password manager or saved copy. We do not collect an email address, so there is no email reset. If you are signed in elsewhere, export your plan before signing out.</p></details>
+</section></main></body></html>

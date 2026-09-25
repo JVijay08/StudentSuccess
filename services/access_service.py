@@ -5,11 +5,6 @@ import secrets
 from flask import abort, request, session
 
 
-def create_code():
-    # 32 cryptographically random bytes (256 bits); never put this in a URL or cookie.
-    return "SS-" + secrets.token_urlsafe(32)
-
-
 def code_digest(code):
     return hashlib.sha256(code.encode("ascii")).hexdigest()
 

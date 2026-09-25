@@ -115,53 +115,19 @@ def test_authenticated_session_expires_after_inactivity(app, authed_client):
     assert urlsplit(response.headers["Location"]).path == "/login"
 
 
-def test_onboarding_saves_and_updates_profile(app, authed_client):
-    data = {
-        "nonpersonal_confirmed": "yes",
-        "first_name": "Jayesh",
-        "grade_level": "11",
-        "graduation_year": "2027",
-        "current_gpa": "4.16",
-        "target_gpa": "5.0",
-        "study_hours_per_week": "42",
-        "career_interest": "Engineering",
-        "course_rigor_preference": "Challenging",
-    }
-
-    response = authed_client.post("/onboarding", data=data)
-    assert response.status_code == 302
-
-    data["first_name"] = "J"
-    data["career_interest"] = "Computer Science"
-    response = authed_client.post("/onboarding", data=data)
-    assert response.status_code == 302
-
+def test_onboarding_saves_preferences_without_identity(app, authed_client):
+    from tests.account_helpers import setup
+    assert setup(authed_client, grade='11', study_hours='42').status_code == 302
+    assert setup(authed_client, grade='12', study_hours='20').status_code == 302
     with app.app_context():
-        profiles = StudentProfile.query.all()
-
-    assert len(profiles) == 1
-    assert profiles[0].first_name == "J"
-    assert profiles[0].grade == 11
-    assert profiles[0].career_goals == "Computer Science"
-    assert profiles[0].course_rigor == "Challenging"
+        profile = StudentProfile.query.one()
+        assert profile.first_name == 'Planner'
+        assert profile.grade == 12
+        assert profile.study_hours_per_week == 20
 
 
 def test_onboarding_backend_limits_match_form(authed_client):
-    response = authed_client.post(
-        "/onboarding",
-        data={
-            "nonpersonal_confirmed": "yes",
-            "first_name": "Alex",
-            "grade_level": "11",
-            "graduation_year": "2036",
-            "current_gpa": "3.5",
-            "target_gpa": "4.0",
-            "study_hours_per_week": "81",
-            "career_interest": "",
-            "course_rigor_preference": "Balanced",
-        },
-    )
-
+    from tests.account_helpers import setup
+    response = setup(authed_client, study_hours='81')
     assert response.status_code == 200
-    assert b"Graduation year must be between 2026 and 2035." in response.data
-    assert b"Study hours must be between 0 and 80 per week." in response.data
+    assert b'Study hours must be between 0 and 80 per week.' in response.data
