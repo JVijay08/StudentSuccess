@@ -109,15 +109,20 @@ def change_password():
     if session.get("demo_mode"):
         flash("The demo account does not have a reusable password.", "warning")
         return redirect(return_url("settings.settings"))
+    if g.current_user.email:
+        from services.access_service import verify_csrf
+        verify_csrf()
     current = request.form.get("current_password", "")
     new = request.form.get("new_password", "")
     if not check_password(current, g.current_user.password_hash):
         flash("Current password is incorrect.", "error")
-    elif len(new) < 8:
-        flash("New password must be at least 8 characters.", "error")
+    elif not (12 if g.current_user.email else 8) <= len(new) <= 128:
+        flash("Use 12 to 128 characters for your new password." if g.current_user.email else "New password must be at least 8 characters (up to 128).", "error")
     else:
         g.current_user.password_hash = hash_password(new)
+        g.current_user.auth_version += 1
         db.session.commit()
+        session["auth_version"] = g.current_user.auth_version
         flash("Password changed.", "success")
     return redirect(return_url("settings.settings"))
 
@@ -135,6 +140,7 @@ def export_data():
     profile = StudentProfile.query.filter_by(user_id=g.current_user.id).first()
     payload = {
         "username": g.current_user.username,
+        "email": g.current_user.email,
         "exported_at": datetime.now(timezone.utc).isoformat(),
         "profile": None,
         "tasks": [],

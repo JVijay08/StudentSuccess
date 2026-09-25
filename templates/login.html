@@ -46,6 +46,7 @@
                 <input id="access-code" type="password" name="access_code" maxlength="80" required autocomplete="current-password" spellcheck="false" autocapitalize="none" placeholder="SS-…">
                 <div class="access-actions"><button class="password-toggle" type="button" data-password-toggle="access-code" aria-pressed="false">Show code</button><button class="access-primary" type="submit">Open with a code</button></div>
             </form>
+            <p><a href="{{ url_for('account.login') }}">Sign in with email</a></p>
             <p>New here? <a href="{{ nav_url('auth.register') }}">Create a private planner</a>.</p>
             <details class="access-help"><summary>Lost your code?</summary><p>We can't recover it. If you're still signed in on another device, export your data from Settings before signing out.</p></details>
             <details class="legacy-login" {% if errors and request.endpoint == 'auth.login' %}open{% endif %}><summary>Use an existing username and password</summary>

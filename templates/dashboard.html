@@ -18,7 +18,7 @@
 
     <main id="main-content">
 
-      {% include '_planner_clock.html' %}
+      {% include '_planner_clock.html' %}{% include '_schedule_undo.html' %}
       {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
           <div class="flash" role="status">
@@ -38,7 +38,7 @@
       <header class="dashboard-header">
         <p class="eyebrow">TODAY</p>
         {% if profile %}
-          <h1>{% if g.current_user.access_credential %}Your day, in focus.{% else %}Welcome, {{ profile.first_name }}.{% endif %}</h1>
+          <h1>{% if g.current_user.access_credential or g.current_user.email %}Your day, in focus.{% else %}Welcome, {{ profile.first_name }}.{% endif %}</h1>
           <p>One assignment at a time. Start here, then work through your queue.</p>
         {% else %}
           <h1>Welcome to StudentSuccess.</h1>
@@ -103,11 +103,7 @@
                     <button type="submit" class="button">Start now</button>
                   </form>
 
-                  <form method="post" action="{{ url_for('tasks.reschedule_task', task_id=row.task_id) }}" class="reschedule-form">{% include '_navigation_fields.html' %}
-                    <label for="reschedule-{{ row.task_id }}">New planned start</label>
-                    <input id="reschedule-{{ row.task_id }}" type="datetime-local" name="planned_start_at" required>
-                    <button type="submit" class="button secondary">Reschedule</button>
-                  </form>
+                  {% with schedule_task_id=row.task_id %}{% include '_reschedule.html' %}{% endwith %}
                 </li>
               {% endfor %}
             </ul>
@@ -138,11 +134,11 @@
         </article>{% endif %}
 
         {% if 'profile' not in settings.hidden_cards %}<article class="card card-profile">
-          <p class="eyebrow">{% if g.current_user.access_credential %}PLANNING PREFERENCES{% else %}PROFILE{% endif %}</p>
+          <p class="eyebrow">{% if g.current_user.access_credential or g.current_user.email %}PLANNING PREFERENCES{% else %}PROFILE{% endif %}</p>
           {% if profile %}
             <h2>{{ 'College / university' if settings.academic_context == 'college' else profile.grade ~ 'th grade' }}</h2>
             <dl>
-              {% if not g.current_user.access_credential and settings.academic_context != 'college' %}<div><dt>Graduation year</dt><dd>{{ profile.graduation_year }}</dd></div>{% endif %}
+              {% if not g.current_user.access_credential and not g.current_user.email and settings.academic_context != 'college' %}<div><dt>Graduation year</dt><dd>{{ profile.graduation_year }}</dd></div>{% endif %}
               <div><dt>Weekly study time</dt><dd>{{ profile.study_hours_per_week|round(1) }} hours</dd></div>
               {% if settings.academic_context=='college' %}<div><dt>Program / major</dt><dd>{{ settings.college_program or 'Not set' }}</dd></div>{% else %}<div><dt>Preferred course mix</dt><dd>{{ profile.course_rigor or "Not set" }}</dd></div>{% endif %}
             </dl>

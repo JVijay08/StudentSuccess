@@ -8,6 +8,9 @@ class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
     password_hash = db.Column(db.String(256), nullable=False)
+    email = db.Column(db.String(254), unique=True, nullable=True)
+    auth_version = db.Column(db.Integer, nullable=False, default=0)
+    account_requests = db.relationship('AccountRequest', cascade='all, delete-orphan')
     created_at = db.Column(
         db.DateTime(timezone=True), nullable=False, default=get_current_time
     )

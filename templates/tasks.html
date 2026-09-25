@@ -13,15 +13,15 @@
 </head>
 <body>
   {% include '_accessibility_body.html' %}
-  <main id="main-content">
-    {% include '_planner_clock.html' %}
+  <main id="main-content" class="task-workspace">
+    {% include '_schedule_undo.html' %}
     <header>
       <div>
         <p class="eyebrow">STUDENTSUCCESS</p>
-        <h1>{% if g.current_user.access_credential %}Your tasks{% else %}{{ profile.first_name }}'s tasks{% endif %}</h1>
+        <h1>{% if g.current_user.access_credential or g.current_user.email %}Your tasks{% else %}{{ profile.first_name }}'s tasks{% endif %}</h1>
         <p>Your next actions, in order. Completed work stays in its own section.</p>
       </div>
-      <div class="header-actions"><a class="button" href="#task-form">Add a task</a><a class="back-link quiet-back" href="{{ nav_back_url('main.dashboard') }}">{{ nav_back_label('main.dashboard') }}</a></div>
+      <div class="header-actions"><a class="back-link quiet-back" href="{{ nav_back_url('main.dashboard') }}">{{ nav_back_label('main.dashboard') }}</a></div>
     </header>
 
     {% with messages = get_flashed_messages(with_categories=true) %}
@@ -35,26 +35,8 @@
     {% endwith %}
 
     <datalist id="subject-suggestions">{% for subject in subject_suggestions %}<option value="{{ subject }}">{% endfor %}</datalist>
-    <section class="task-list" id="task-queue">
-      <div class="queue-heading"><h2>Task queue <span class="count-badge">{{ task_rows|length }}</span></h2><nav class="view-tabs" aria-label="Task views"><a href="{{ nav_url('tasks.tasks') }}" {% if task_view == 'queue' %}aria-current="page"{% endif %}>Recommended order</a><a href="{{ nav_url('tasks.tasks', view='courses') }}" {% if task_view == 'courses' %}aria-current="page"{% endif %}>By course</a></nav></div>
-      {% if task_view == 'courses' %}
-        {% include '_course_tasks.html' %}
-      {% else %}
-      <div class="queue-options"><h3>Queue options</h3><form method="get"><label>Sort tasks<select name="sort" onchange="this.form.submit()">{% for value, label in [('recommended','Recommended'),('due','Due date'),('planned','Planned start'),('subject','Subject'),('status','Status')] %}<option value="{{ value }}" {% if sort == value %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label><noscript><button>Sort</button></noscript></form>
-      <details class="queue-help"><summary>How tasks are ordered</summary><p>In progress, overdue, missed planned starts, then due within 24 hours. Other tasks use priority and deadline.</p></details></div>
-      {% if task_rows %}
-        {% for row in task_rows %}
-          {% include '_task_row.html' %}
-        {% endfor %}
-      {% else %}
-        <p class="empty">Your queue is clear. Add a task below to plan your next start.</p>
-      {% endif %}
-      {% endif %}
-    </section>
-    <details class="panel" id="completed-tasks"><summary>Completed ({{ completed_tasks|length }})</summary>
-    {% for task in completed_tasks %}<article id="task-{{ task.id }}"><h3>{{ task.title }}</h3><p>Completed {{ task.completed_at|planner_time }} &middot; Estimated {{ task.estimated_minutes }} min &middot; Actual {{ task.actual_minutes or 'Not recorded' }} min</p><details><summary>Start history and actions</summary><p>Planned {{ task.planned_start_at|planner_time }} &middot; Started {{ task.started_at|planner_time }}</p>{% if not task.recurrence_rule %}<form method="post" action="{{ url_for('tasks.undo_complete_task', task_id=task.id) }}">{% include '_navigation_fields.html' %}<button>Undo completion</button></form>{% endif %}<form method="post" action="{{ url_for('tasks.delete_task', task_id=task.id) }}">{% include '_navigation_fields.html' %}<button onclick="return confirm('Delete this completed task and its history?')">Delete</button></form></details></article>{% else %}<p>No completed tasks yet.</p>{% endfor %}</details>
     <details class="panel task-entry" {% if errors or not task_rows %}open{% endif %}><summary>Add a task</summary>
-      <p>Start with a title, deadline, and time estimate. You can add subtasks after saving.</p>
+      <p>What needs doing, when is it due, and about how long will it take? Add smaller steps after saving.</p>
       {% if errors %}
         <div class="errors" role="alert">
           <ul>
@@ -72,11 +54,11 @@
         <label>Due date
           <input type="date" name="due_at" value="{{ form_data.get('due_at', '') }}" required>
         </label>
-        <label>Exact due time (optional)<input type="time" name="due_time" value="{{ form_data.get('due_time', '') }}"><small>Defaults to 11:59 PM in your planner timezone.</small></label>
+
         <label>Estimated minutes
           <input type="number" name="estimated_minutes" min="1" max="{{ MAX_TASK_MINUTES }}" value="{{ form_data.get('estimated_minutes', '') }}" required>
         </label>
-<details class="more-options"><summary>More options</summary>        <label>Task type
+<details class="more-options"><summary>Schedule, repeat &amp; other details</summary><label>Exact due time (optional)<input type="time" name="due_time" value="{{ form_data.get('due_time', '') }}"><small>Defaults to 11:59 PM in your planner timezone.</small></label>        <label>Task type
           <input name="task_type" data-nonpersonal-input maxlength="40" placeholder="Homework, project, exam..." value="{{ form_data.get('task_type', '') }}">
         </label>
         <label>Planned start
@@ -113,6 +95,26 @@
       </form>
     </details>
 
+    <section class="task-list" id="task-queue">
+      <div class="queue-heading"><h2>Your next actions <span class="count-badge">{{ task_rows|length }}</span></h2><nav class="view-tabs" aria-label="Task views"><a href="{{ nav_url('tasks.tasks') }}" {% if task_view == 'queue' %}aria-current="page"{% endif %}>Next up</a><a href="{{ nav_url('tasks.tasks', view='courses') }}" {% if task_view == 'courses' %}aria-current="page"{% endif %}>By course</a></nav></div>
+      {% if task_view == 'courses' %}
+        {% include '_course_tasks.html' %}
+      {% else %}
+      <div class="queue-options"><h3>Queue options</h3><form method="get"><label>Sort tasks<select name="sort" onchange="this.form.submit()">{% for value, label in [('recommended','Recommended'),('due','Due date'),('planned','Planned start'),('subject','Subject'),('status','Status')] %}<option value="{{ value }}" {% if sort == value %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label><noscript><button>Sort</button></noscript></form>
+      <details class="queue-help"><summary>How tasks are ordered</summary><p>In progress, overdue, missed planned starts, then due within 24 hours. Other tasks use priority and deadline.</p></details></div>
+      {% if task_rows|length > 4 %}<details class="task-search" data-task-search hidden><summary>Find a task</summary><label>Find a task<input type="search" placeholder="Search title or course" autocomplete="off" data-task-query></label><p aria-live="polite" data-task-search-status></p></details>{% endif %}
+      {% if task_rows %}
+        {% for row in task_rows %}
+          {% include '_task_row.html' %}
+        {% endfor %}
+      {% else %}
+        <p class="empty">Your queue is clear. Add a task below to plan your next start.</p>
+      {% endif %}
+      {% endif %}
+    </section>
+    <details class="panel" id="completed-tasks"><summary>Completed ({{ completed_tasks|length }})</summary>
+    {% for task in completed_tasks %}<article id="task-{{ task.id }}"><h3>{{ task.title }}</h3><p>Completed {{ task.completed_at|planner_time }} &middot; Estimated {{ task.estimated_minutes }} min &middot; Actual {{ task.actual_minutes or 'Not recorded' }} min</p><details><summary>Start history and actions</summary><p>Planned {{ task.planned_start_at|planner_time }} &middot; Started {{ task.started_at|planner_time }}</p>{% if not task.recurrence_rule %}<form method="post" action="{{ url_for('tasks.undo_complete_task', task_id=task.id) }}">{% include '_navigation_fields.html' %}<button>Undo completion</button></form>{% endif %}<form method="post" action="{{ url_for('tasks.delete_task', task_id=task.id) }}">{% include '_navigation_fields.html' %}<button onclick="return confirm('Delete this completed task and its history?')">Delete</button></form></details></article>{% else %}<p>No completed tasks yet.</p>{% endfor %}</details>
+
     <details class="transfer-tools"><summary>Import or export assignments</summary>    {% if settings.calendar_export_enabled %}<p><a href="{{ nav_url('settings.export_calendar') }}">Download active tasks as a calendar</a></p>{% endif %}
 
     <p><a href="{{ nav_url('tasks.import_calendar') }}">Import assignments from .ics</a></p>
@@ -121,5 +123,6 @@
   <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
 
   <script src="{{ url_for('static', filename='js/nonpersonal.js') }}" defer></script>
+  <script src="{{ url_for('static', filename='js/task_workspace.js') }}" defer></script>
 </body>
 </html>

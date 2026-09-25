@@ -191,7 +191,7 @@ def test_dashboard_shows_overdue_to_start_task(app, authed_client):
     assert "(Chemistry)" in body
     assert "planned" in body and "ago" in body
     assert "Start now" in body
-    assert "New planned start" in body
+    assert "Choose a time" in body
 
 
 def test_dashboard_overdue_empty_state(app, authed_client):

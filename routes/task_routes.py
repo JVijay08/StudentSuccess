@@ -8,6 +8,7 @@ from flask import (
     redirect,
     render_template,
     request,
+    session,
     url_for,
 )
 
@@ -340,22 +341,51 @@ def reschedule_task(task_id):
     task = db.get_or_404(Task, task_id)
     if task.student_profile.user_id != g.current_user.id:
         abort(404)
-    raw = request.form.get("planned_start_at", "").strip()
-    if not raw:
-        flash("Enter a new planned start date and time to reschedule.", "error")
-        return redirect(return_url("main.dashboard"))
+    from services.access_service import verify_csrf
+    from services.scheduling import planned_time
+    verify_csrf()
+    if task.status != 'not_started' or task.children:
+        flash('Reschedule an unstarted task or subtask. Work already started keeps its start history.', 'warning')
+        return redirect(return_url('tasks.tasks'))
     try:
         settings = get_or_create_settings(g.current_user)
-        new_planned = datetime_util.to_utc(raw, settings.timezone_name)
-    except ValueError:
-        flash("Enter a valid planned start date and time.", "error")
-        return redirect(return_url("main.dashboard"))
-    if new_planned <= datetime.now(timezone.utc):
-        flash("Pick a planned start in the future.", "warning")
-        return redirect(return_url("main.dashboard"))
+        new_planned = planned_time(request.form, settings.timezone_name)
+    except ValueError as error:
+        flash(str(error), 'error')
+        return redirect(return_url('main.dashboard'))
+    previous = utc(task.planned_start_at).isoformat() if task.planned_start_at else None
     task.planned_start_at = new_planned
+    # Explicit timestamp also makes clearing an already-empty schedule reversible.
+    task.updated_at = datetime.now(timezone.utc)
     db.session.commit()
-    return redirect(return_url("main.dashboard"))
+    session['schedule_undo'] = dict(user_id=g.current_user.id, task_id=task.id,
+        previous=previous, updated=utc(task.updated_at).isoformat(),
+        saved_at=datetime.now(timezone.utc).timestamp())
+    if new_planned and new_planned >= utc(task.due_at):
+        flash('This work time is after the deadline. Edit the deadline only if it actually changed.', 'warning')
+    return redirect(return_url('main.dashboard'))
+
+
+@task_bp.post('/tasks/undo-schedule')
+@login_required
+def undo_schedule():
+    from services.access_service import verify_csrf
+    verify_csrf()
+    change = session.pop('schedule_undo', None)
+    if not change or change['user_id'] != g.current_user.id or datetime.now(timezone.utc).timestamp()-change['saved_at'] > 600:
+        flash('The undo window expired. You can reschedule the task again.', 'warning')
+        return redirect(return_url('tasks.tasks'))
+    task = db.session.get(Task, change['task_id'])
+    if (not task or task.student_profile.user_id != g.current_user.id or
+            task.status != 'not_started' or utc(task.updated_at).isoformat() != change['updated']):
+        flash('This task changed since rescheduling. Its latest changes have been kept.', 'warning')
+        return redirect(return_url('tasks.tasks'))
+    previous = datetime.fromisoformat(change['previous']) if change['previous'] else None
+    changed = Task.query.filter_by(id=task.id, updated_at=task.updated_at, status='not_started').update(
+        {'planned_start_at': previous, 'updated_at': datetime.now(timezone.utc)}, synchronize_session=False)
+    db.session.commit()
+    flash('Previous planned start restored.' if changed else 'The task changed; its latest schedule was kept.', 'success')
+    return redirect(return_url('tasks.tasks'))
 
 
 @task_bp.post("/tasks/<int:task_id>/snooze-reminder")

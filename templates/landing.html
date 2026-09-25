@@ -37,14 +37,14 @@
           <a class="secondary-action" href="{{ nav_url('auth.register') }}">Create Private Planner</a>
           <a href="{{ nav_url('auth.login') }}">I already have a code</a>
         </div>
-        <p class="prototype-note">Plan your actual courses and tasks. Leave out personal identifiers and sensitive details. Private-code plans are saved on the server; keep your code safe.</p>
+        <p class="prototype-note">Plan your actual courses and tasks. Leave out personal identifiers and sensitive details. {{ 'Your account saves your planner on the server.' if email_accounts_ready() else 'Private-code plans are saved on the server; keep your code safe.' }}</p>
       </div>
     <section class="product-preview" aria-label="Example of the task planner"><div class="notebook-tab" aria-hidden="true">ONE STEP AT A TIME</div><div class="preview-top"><strong>Today</strong><span>Example planner</span></div><p class="eyebrow">Recommended next task</p><h2>Draft your introduction</h2><p>Composition &middot; 45 minutes &middot; Due tonight</p><p class="recommendation-brief">This deadline is within 24 hours. A short first draft makes the rest of the paper easier to start.</p><form method="post" action="{{ url_for('auth.start_demo') }}">{% include '_navigation_fields.html' %}<button class="secondary">Open demo planner &rarr;</button></form><div class="preview-queue"><h3>Up next</h3><p><strong>Review biology notes</strong><span>30 min &middot; Tomorrow</span></p><p><strong>Research paper</strong><span>2 of 5 subtasks complete</span></p><progress value="40" max="100">40%</progress></div><p class="preview-caption">Deadlines, subtasks, and a clear place to start.</p></section>
     </section>
 
 
     <section class="feature-grid" aria-label="What you can do"><article><div class="feature-art">{{ illustration("steps") }}</div><h2>Know what comes next</h2><p>A task queue ordered around deadlines and planned starts, with an explanation for every recommendation.</p></article><article><div class="feature-art">{{ illustration("momentum") }}</div><h2>Make large tasks manageable</h2><p>Break projects into subtasks or timed work blocks. Keep completed work and progress together.</p></article><article><div class="feature-art">{{ illustration("books") }}</div><h2>Plan a realistic course load</h2><p>Compare high-school courses or build a college term plan around your weekly study time.</p></article></section>
-    <section class="storage-choice"><p class="eyebrow">KEEP YOUR PLACE</p><h2>A planner you can return to</h2><p>A private code opens your server-saved planner on another device. Keep it safe; no name or email is needed.</p><p>The demo contains sample assignments and course plans. The free server may take up to a minute to wake.</p></section>
+    <section class="storage-choice"><p class="eyebrow">KEEP YOUR PLACE</p><h2>A planner you can return to</h2><p>{{ 'Sign in with your verified email and password to pick up your plan on another device. No full name or student ID is needed.' if email_accounts_ready() else 'A private code opens your server-saved planner on another device. Keep it safe; no name or email is needed.' }}</p><p>The demo contains sample assignments and course plans. The free server may take up to a minute to wake.</p></section>
 
     <footer>
       <p><a href="{{ nav_url('main.updates') }}">What&apos;s new &rarr;</a></p>

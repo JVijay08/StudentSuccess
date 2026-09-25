@@ -132,11 +132,17 @@ def start_demo():
 
 @auth_bp.get("/register")
 def register():
+    from services.email_accounts import ready
+    if ready():
+        return render_template('email_account.html', mode='signup', errors=[], sent=False)
     return render_template("register.html", errors=[])
 
 
 @auth_bp.route("/login", methods=["GET", "POST"])
 def login():
+    from services.email_accounts import ready
+    if request.method == 'GET' and ready():
+        return render_template('email_account.html', mode='login', errors=[], sent=False)
     errors = []
 
     if request.method == "POST":
@@ -145,11 +151,12 @@ def login():
 
         user = User.query.filter_by(username=username.lower()).first()
 
-        if user is None or user.access_credential is not None or not check_password(password, user.password_hash):
+        if user is None or user.email is not None or user.access_credential is not None or not check_password(password, user.password_hash):
             errors.append("Invalid username or password.")
         else:
             session.clear()
             session["user_id"] = user.id
+            session["auth_version"] = user.auth_version
             session.permanent = True
             session["_last_active"] = datetime.now(timezone.utc).isoformat()
 

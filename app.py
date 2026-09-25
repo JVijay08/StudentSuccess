@@ -35,6 +35,10 @@ def create_app(test_config=None):
 
     app.register_blueprint(auth_bp)
     app.register_blueprint(access_bp)
+    from routes.account_routes import account_bp
+    from services.email_accounts import ready
+    app.register_blueprint(account_bp)
+    app.jinja_env.globals['email_accounts_ready'] = ready
     app.jinja_env.globals["access_csrf_token"] = csrf_token
     app.register_blueprint(course_bp)
     app.register_blueprint(main_bp)
@@ -89,7 +93,7 @@ def create_app(test_config=None):
 
     @app.after_request
     def add_security_headers(response):
-        if request.path.startswith("/access/") or session.get("user_id") or request.path in ("/login", "/register"):
+        if request.path.startswith(("/access/", "/account/")) or session.get("user_id") or request.path in ("/login", "/register"):
             response.headers["Cache-Control"] = "no-store"
             response.headers["Referrer-Policy"] = "no-referrer"
         response.headers.setdefault("X-Content-Type-Options", "nosniff")
@@ -116,6 +120,8 @@ def create_app(test_config=None):
 
         db.create_all()
         _migrate_feedback_columns()
+        db.session.execute(text("CREATE UNIQUE INDEX IF NOT EXISTS ix_users_verified_email ON users(email)"))
+        db.session.commit()
         _migrate_planned_course_catalog_column()
         _migrate_task_reminder_columns()
         _migrate_task_actual_minutes_column()
@@ -127,6 +133,7 @@ def create_app(test_config=None):
 def _migrate_feedback_columns():
     """Additive migration; existing tasks, history, and preferences are retained."""
     additions = {
+        "users": {"email": "VARCHAR(254)", "auth_version": "INTEGER NOT NULL DEFAULT 0"},
         "tasks": {"parent_task_id": "INTEGER REFERENCES tasks(id)", "external_uid": "VARCHAR(255)"},
         "user_settings": {"academic_context": "VARCHAR(20) NOT NULL DEFAULT 'high_school'", "institution_id": "VARCHAR(12)",
             "college_program": "VARCHAR(120) NOT NULL DEFAULT ''", "college_term": "VARCHAR(60) NOT NULL DEFAULT ''", "term_credit_goal": "FLOAT"},

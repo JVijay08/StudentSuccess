@@ -43,5 +43,5 @@ def select():
         abort(400)
     get_or_create_settings(g.current_user).institution_id = identifier or None
     db.session.commit()
-    flash('College selected for new course plans.' if identifier else 'College preference cleared. Existing courses keep their college.', 'success')
+    flash('Default college updated. Existing courses keep their college.' if identifier else 'College preference cleared. Existing courses keep their college.', 'success')
     return redirect(url_for('terms.plan', _anchor='term-form'))

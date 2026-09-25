@@ -1,0 +1,9 @@
+<details class="reschedule-control"><summary>Reschedule</summary>
+  <p>Move your work time. The deadline stays the same.</p>
+  <form method="post" action="{{ url_for('tasks.reschedule_task', task_id=schedule_task_id) }}">
+    {% include '_navigation_fields.html' %}<input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}">
+    <div class="schedule-shortcuts"><button class="secondary" name="schedule_choice" value="hour">In 1 hour</button><button class="secondary" name="schedule_choice" value="tomorrow">Tomorrow, 9 AM</button><button class="secondary" name="schedule_choice" value="next_week">Next week, 9 AM</button></div>
+    <label>Choose a time<input type="datetime-local" name="planned_start_at"></label>
+    <div class="schedule-shortcuts"><button name="schedule_choice" value="custom">Save time</button><button class="quiet-button" name="schedule_choice" value="clear">Clear planned start</button></div>
+  </form>
+</details>

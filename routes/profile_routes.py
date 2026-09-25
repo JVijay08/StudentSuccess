@@ -18,7 +18,7 @@ profile_bp = Blueprint("profile", __name__)
 @profile_bp.route("/onboarding", methods=["GET", "POST"])
 @login_required
 def onboarding():
-    if g.current_user.access_credential is not None or get_or_create_settings(g.current_user).academic_context == "college":
+    if g.current_user.access_credential is not None or g.current_user.email is not None or get_or_create_settings(g.current_user).academic_context == "college":
         return _planning_preferences()
     errors = []
 
@@ -166,7 +166,7 @@ def onboarding():
 @profile_bp.get("/profile")
 @login_required
 def profile_view():
-    if g.current_user.access_credential is not None or get_or_create_settings(g.current_user).academic_context == "college":
+    if g.current_user.access_credential is not None or g.current_user.email is not None or get_or_create_settings(g.current_user).academic_context == "college":
         return redirect(same_page("profile.onboarding"))
     profile = StudentProfile.query.filter_by(
         user_id=g.current_user.id

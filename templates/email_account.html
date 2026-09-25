@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Account | StudentSuccess</title><link rel="stylesheet" href="{{ url_for('static',filename='css/onboarding.css') }}"><link rel="stylesheet" href="{{ url_for('static',filename='css/access.css') }}">{% include '_accessibility_head.html' %}</head>
+<body>{% include '_accessibility_body.html' %}<main id="main-content" class="onboarding-page"><section class="onboarding-section access-section compact-access">
+<a href="{{ url_for('main.home') }}">StudentSuccess</a>
+{% set titles={'signup':'Create your planner','login':'Welcome back','forgot':'Reset your password','upgrade':'Keep your plan. Upgrade your sign-in.','confirm':'Confirm your account','expired':'This link is no longer available','reset_done':'Password updated'} %}
+<h1>{{ 'Check your inbox' if sent else titles.get(mode,'Your account') }}</h1>
+{% if errors %}<div class="form-errors" role="alert">{% for error in errors %}<p>{{ error }}</p>{% endfor %}</div>{% endif %}
+{% if sent %}<p>If this address is eligible, an account link is on its way. It expires in 30 minutes. Check spam too.</p><p>Already registered? Sign in or reset your password. Your existing planner remains unchanged until you confirm an upgrade.</p><a href="{{ url_for('auth.login') }}">Back to sign in</a>
+{% elif mode=='expired' %}<p>The link expired, was already used, or your account changed. Request a new link from signup, recovery, or your account settings.</p><a href="{{ url_for('auth.login') }}">Back to sign in</a>
+{% elif mode=='reset_done' %}<p>Your old password and previous sessions no longer work.</p><a class="button" href="{{ url_for('auth.login') }}">Sign in</a>
+{% elif mode=='confirm' %}
+<p>{{ 'Choose a new password.' if purpose=='reset' else 'Continue only if you requested this email. Confirming an upgrade replaces your private code and signs out other devices. Your tasks and courses stay saved.' }}</p>
+<form method="post"><input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}">{% if purpose=='reset' %}{% include '_new_password_fields.html' %}{% endif %}<button class="access-primary">{{ 'Reset password' if purpose=='reset' else 'Confirm email & continue' }}</button></form>
+{% else %}
+{% if mode=='upgrade' %}<p>Your tasks, courses, and preferences stay in this account. Confirm your email before your current sign-in is replaced.</p>{% endif %}
+{% if mode in ['signup','upgrade','forgot'] and not email_accounts_ready() %}<p>Email accounts are being prepared. Your existing sign-in continues to work.</p><a href="{{ url_for('auth.login') }}">Back to sign in</a>
+{% else %}
+<form method="post" action="{{ url_for({'signup':'account.signup','login':'account.login','forgot':'account.forgot','upgrade':'account.upgrade'}[mode]) }}"><input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><input type="hidden" name="next" value="{{ navigation_resume }}">
+<label>Email<input name="email" type="email" maxlength="254" autocomplete="email" required value="{{ request.form.get('email','') }}"></label>
+{% if mode=='login' %}<label>Password<input name="password" type="password" maxlength="128" autocomplete="current-password" required></label><p><a href="{{ url_for('account.forgot') }}">Forgot password?</a></p>{% endif %}
+{% if mode=='upgrade' %}<label>Current {{ 'private code' if g.current_user.access_credential else 'password' }}<input type="password" name="current_access" autocomplete="current-password" required></label>{% endif %}
+{% if mode in ['signup','upgrade'] %}{% include '_new_password_fields.html' %}<p>Your email is used for sign-in and account recovery. Keep personal identifiers and sensitive details out of tasks and course notes.</p>{% endif %}
+{% if mode=='signup' %}<label class="access-check"><input type="checkbox" name="understood" value="yes" required> I will leave personal identifiers and sensitive details out of my plan.</label>{% endif %}
+<button class="access-primary">{{ {'signup':'Send verification email','login':'Sign in','forgot':'Send reset link','upgrade':'Verify email & upgrade'}[mode] }}</button></form>
+{% endif %}
+{% if mode=='login' %}<p>New here? <a href="{{ url_for('auth.register') }}">Create a planner</a>.</p><details class="access-help" {% if request.endpoint=='access.open_planner' %}open{% endif %}><summary>Use an existing private code</summary><form method="post" action="{{ url_for('access.open_planner') }}"><input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><label>Private code<input type="password" name="access_code" autocomplete="current-password" required></label><button>Open existing planner</button></form><p>After signing in, upgrade to email from Settings to keep your saved work.</p></details><details class="access-help"><summary>Use an older username account</summary><form method="post" action="{{ url_for('auth.login') }}"><label>Username<input name="username" autocomplete="username" required></label><label>Password<input type="password" name="password" autocomplete="current-password" required></label><button>Sign in with username</button></form></details>{% elif mode=='signup' %}<p>Have an account? <a href="{{ url_for('auth.login') }}">Sign in</a>.</p>{% endif %}
+{% endif %}
+</section></main></body></html>

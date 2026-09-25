@@ -78,7 +78,7 @@ def main():
                     if width in [390,1440]: page.screenshot(path=str(destination/f'page-{index}-{width}.png'),full_page=path in ['/dashboard','/terms','/tasks?view=courses'])
             # Pointer and keyboard states must remain readable, not just defaults.
             page.goto(origin+'/tasks')
-            for selector in ['button:visible:not(:disabled)', 'main a.button:visible', 'main summary:visible']:
+            for selector in ['button:visible:not(:disabled)', 'main header a:visible', 'main summary:visible']:
                 control=page.locator(selector).first
                 control.hover()
                 for issue in page.evaluate(CONTROL_AUDIT): issues.append(['hover',selector,issue])

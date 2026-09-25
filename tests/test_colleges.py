@@ -142,3 +142,28 @@ def test_college_preferences_and_summary(app,authed_client):
     assert 'Planned' in authed_client.get('/courses?course_source=dual').text
     with app.app_context():
         assert UserSettings.query.filter_by(user_id=authed_client.user_id).one().college_program=='Biology'
+
+
+@pytest.mark.parametrize('preset,enrollment', [('high_school','dual'),('college','college')])
+def test_multiple_colleges_survive_default_changes(app,authed_client,preset,enrollment):
+    complete_profile(authed_client)
+    authed_client.post('/settings',data={'academic_context':preset})
+    colleges=search('', 'AL')[:2]
+    assert len(colleges)==2
+    for index,college in enumerate(colleges):
+        response=authed_client.post('/terms',data=course_data(title=f'Course {index}',
+            institution_id=college['id'],enrollment_type=enrollment,status='planned'))
+        assert response.status_code==302
+    for default in [colleges[0]['id'],colleges[1]['id'],'']:
+        authed_client.post('/colleges/select',data={'institution_id':default})
+        exported=authed_client.get('/settings/export').json
+        assert {c['institution_id'] for c in exported['term_courses']}=={c['id'] for c in colleges}
+    page=authed_client.get('/terms',follow_redirects=True).text
+    assert 'Course 0' in page and 'Course 1' in page
+    with app.app_context():
+        courses=TermCourse.query.order_by(TermCourse.id).all()
+        first,second=courses[0].id,courses[1].id
+    authed_client.post(f'/terms/{first}/edit',data=course_data(title='Edited first',
+        institution_id=colleges[0]['id'],enrollment_type=enrollment))
+    with app.app_context():
+        assert db.session.get(TermCourse,second).institution_id==colleges[1]['id']

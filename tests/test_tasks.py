@@ -428,6 +428,12 @@ def _future_local_string(days=3):
     return future.strftime("%Y-%m-%dT%H:%M")
 
 
+def schedule_csrf(client):
+    client.get('/login')
+    with client.session_transaction() as session:
+        return session['access_csrf']
+
+
 def test_reschedule_valid_future_sets_planned_start(app, authed_client):
     now = datetime.now(timezone.utc)
     with app.app_context():
@@ -439,7 +445,7 @@ def test_reschedule_valid_future_sets_planned_start(app, authed_client):
 
     response = authed_client.post(
         f"/tasks/{task_id}/reschedule",
-        data={"planned_start_at": _future_local_string()},
+        data={"csrf_token": schedule_csrf(authed_client), "planned_start_at": _future_local_string()},
     )
     assert response.status_code == 302
     assert response.headers["Location"].endswith("/dashboard")
@@ -465,7 +471,7 @@ def test_reschedule_missing_value_flashes_error(app, authed_client):
 
     response = authed_client.post(
         f"/tasks/{task_id}/reschedule",
-        data={"planned_start_at": ""},
+        data={"csrf_token": schedule_csrf(authed_client), "planned_start_at": ""},
         follow_redirects=True,
     )
     assert response.status_code == 200
@@ -490,7 +496,7 @@ def test_reschedule_unparseable_flashes_error(app, authed_client):
 
     response = authed_client.post(
         f"/tasks/{task_id}/reschedule",
-        data={"planned_start_at": "not-a-date"},
+        data={"csrf_token": schedule_csrf(authed_client), "planned_start_at": "not-a-date"},
         follow_redirects=True,
     )
     assert response.status_code == 200
@@ -512,7 +518,7 @@ def test_reschedule_past_value_flashes_warning_and_no_change(app, authed_client)
     )
     response = authed_client.post(
         f"/tasks/{task_id}/reschedule",
-        data={"planned_start_at": past_local},
+        data={"csrf_token": schedule_csrf(authed_client), "planned_start_at": past_local},
         follow_redirects=True,
     )
     assert response.status_code == 200
@@ -555,7 +561,7 @@ def test_reschedule_other_users_task_returns_404(app, authed_client):
 
     response = authed_client.post(
         f"/tasks/{task_id}/reschedule",
-        data={"planned_start_at": _future_local_string()},
+        data={"csrf_token": schedule_csrf(authed_client), "planned_start_at": _future_local_string()},
     )
     assert response.status_code == 404
 
@@ -617,7 +623,7 @@ def test_reschedule_future_only_boundary(app, authed_client, offset_seconds):
 
     response = authed_client.post(
         f"/tasks/{task_id}/reschedule",
-        data={"planned_start_at": _eastern_local_string(candidate_utc)},
+        data={"csrf_token": schedule_csrf(authed_client), "planned_start_at": _eastern_local_string(candidate_utc)},
     )
     assert response.status_code == 302
 

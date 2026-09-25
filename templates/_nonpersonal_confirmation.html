@@ -1,6 +1,6 @@
 <fieldset class="nonpersonal-confirmation">
   <legend>Keep sensitive details out</legend>
-  <p id="nonpersonal-note">Use your actual courses and tasks, such as “Finish biology lab report.” Leave out full names, student IDs, email addresses, phone numbers, home addresses, passwords, and private records.</p>
+  <details><summary>What to leave out</summary><p id="nonpersonal-note">Use your actual courses and tasks, such as “Finish biology lab report.” Leave out full names, student IDs, email addresses, phone numbers, home addresses, passwords, and private records.</p></details>
   <label><input type="checkbox" name="nonpersonal_confirmed" value="yes" required autocomplete="off"> <span>I have left out personal identifiers and sensitive details.</span></label>
   {% for error in errors|default([]) %}{% if 'Confirm that these entries' in error %}<p class="errors" role="alert">{{ error }}</p>{% endif %}{% endfor %}
 </fieldset>

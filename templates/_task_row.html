@@ -1,22 +1,23 @@
           {% set task = row.task %}
           {% set navigation_anchor = 'task-' ~ task.id %}
           {% set level = "HIGH" if row.score >= 7 else "MEDIUM" if row.score >= 4 else "LOW" %}
-          <article class="task-card" id="task-{{ task.id }}">
+          <article class="task-card streamlined-task" id="task-{{ task.id }}" data-task-search-text="{{ task.title }} {{ task.subject or '' }}">
             <div>
               <p class="task-tier tier-{{ row.tier|default(4) }}">{{ {0:'In progress',1:'Deadline passed',2:'Planned start missed',3:'Due within 24 hours',4:'Upcoming'}.get(row.tier|default(4), 'Upcoming') }}</p>
               <h3>{% if task.parent and not within_assignment|default(false) %}{{ task.parent.title }} / {% endif %}{{ task.title }}{% if task.recurrence_rule %} <small class="task-marker">(recurring)</small>{% endif %}{% if task.prep_for_id %} <small class="task-marker">(prep)</small>{% endif %}</h3>
-              {% if task.planned_start_at %}<p>Planned start: {{ task.planned_start_at|planner_time }}</p>{% endif %}
+
               <p>{{ task.subject or "No subject" }} · {{ task.estimated_minutes }} minutes · due {{ row.due_at_display }}</p>
-              <details><summary>Why this ranking?</summary><ul>
-                {% for reason in row.reasons %}<li>{{ reason }}</li>{% endfor %}
-              </ul></details>
+              {% if task.planned_start_at %}<p>Start {{ task.planned_start_at|planner_time }}</p>{% endif %}
+
             </div>
-            <div class="actions"><span>{{ task.status|replace('_', ' ')|title }}</span>
+            <div class="actions">
               {% if task.status == 'not_started' %}<form method="post" action="{{ url_for('tasks.start_task',task_id=task.id) }}">{% include '_navigation_fields.html' %}<button>Start now</button></form>{% endif %}
-              {% if task.status == 'in_progress' %}<form method="post" action="{{ url_for('tasks.complete_task',task_id=task.id) }}">{% include '_navigation_fields.html' %}<label>Actual minutes<input type="number" name="actual_minutes" min="1" max="{{ MAX_TASK_MINUTES }}" value="{{ task.estimated_minutes }}" required></label><button>Complete</button></form>{% endif %}
-              <details><summary>Task actions</summary>
-                <a href="{{ nav_url('tasks.edit_task',task_id=task.id) }}">Edit</a>
-                {% if task.status != 'in_progress' %}<form method="post" action="{{ url_for('tasks.complete_task',task_id=task.id) }}">{% include '_navigation_fields.html' %}<label>Actual minutes<input type="number" name="actual_minutes" min="1" max="{{ MAX_TASK_MINUTES }}" value="{{ task.estimated_minutes }}" required></label><button>Complete</button></form>{% endif %}
+              <form method="post" action="{{ url_for('tasks.complete_task',task_id=task.id) }}">{% include '_navigation_fields.html' %}<button class="{{ 'secondary' if task.status == 'not_started' else '' }}">Complete</button></form>
+              {% if task.status == 'not_started' %}{% with schedule_task_id=task.id %}{% include '_reschedule.html' %}{% endwith %}{% endif %}
+              <details><summary>Details &amp; more</summary>
+                <p>Why this ranking?</p><ul>{% for reason in row.reasons %}<li>{{ reason }}</li>{% endfor %}</ul>
+                <a href="{{ nav_url('tasks.edit_task',task_id=task.id) }}">Edit task &amp; subtasks</a>
+                {% if task.status != 'completed' %}<form method="post" action="{{ url_for('tasks.complete_task',task_id=task.id) }}">{% include '_navigation_fields.html' %}<label>Actual minutes<input type="number" name="actual_minutes" min="1" max="{{ MAX_TASK_MINUTES }}" value="{{ task.estimated_minutes }}" required></label><button>Complete with time recorded</button></form>{% endif %}
                 <form method="post" action="{{ url_for('tasks.delete_task',task_id=task.id) }}">{% include '_navigation_fields.html' %}<button class="danger secondary" onclick="return confirm('Delete this task?')" aria-label="Delete {{ task.title }}">Delete</button></form>
               </details>
             </div>

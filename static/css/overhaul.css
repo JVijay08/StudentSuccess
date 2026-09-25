@@ -333,3 +333,20 @@ body .college-finder .college-search {display:grid;}
   body .college-results .term-course {align-items:stretch;flex-direction:column;gap:12px;}
   body .college-results form,body .college-results button {width:100%;}
 }
+
+/* A work list with one clear action row and optional details. */
+.task-workspace .queue-heading {align-items:center;gap:16px;flex-wrap:wrap;}
+.task-workspace .queue-intro {color:var(--muted);max-width:65ch;}
+body .task-card.streamlined-task {display:grid;grid-template-columns:minmax(0,1fr);gap:12px;}
+.streamlined-task .task-tier {margin-bottom:6px;font-size:.75rem;}
+.streamlined-task h3 {margin:0 0 8px;font-size:1.15rem;}
+body .task-card.streamlined-task .actions {display:flex;flex-direction:row;align-items:flex-start;flex-wrap:wrap;gap:10px;}
+body .task-card.streamlined-task .actions>form {margin:0;}
+body .task-card.streamlined-task .actions>details {flex:1 1 180px;min-width:0;}
+.reschedule-control p {font-size:.88rem;color:var(--muted);}
+.reschedule-control form {display:grid;gap:12px;}
+.schedule-shortcuts {display:flex;flex-wrap:wrap;gap:8px;}
+.schedule-shortcuts button {min-height:44px;white-space:normal;}
+.schedule-feedback {display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:16px;border:1px solid var(--line);border-left:4px solid var(--blue);background:var(--white);margin:16px 0;}
+.schedule-feedback form {margin:0;}
+@media(max-width:680px) {body .task-card.streamlined-task .actions>details {flex-basis:100%;}.task-workspace .view-tabs {width:100%;}.schedule-shortcuts button {flex:1 1 120px;}}

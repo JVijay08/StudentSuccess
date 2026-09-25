@@ -63,3 +63,14 @@ Priorities include more reliable hosting, stronger public-form protections, clea
 ## License
 
 [MIT](LICENSE)
+
+## Email accounts and streamlined planning
+
+Email verification, password recovery, and in-place private-code upgrades are ready
+behind mail configuration. See [email account setup](docs/email-account-setup.md).
+Until a sender is configured, private-code access remains available.
+
+Tasks offer direct completion, inline rescheduling with timezone-aware shortcuts, and
+a ten-minute undo window that preserves newer edits. Rescheduling never changes the
+deadline. Actual minutes remain optional; task search stays in the browser. Each course
+can belong to a different college in either academic preset.

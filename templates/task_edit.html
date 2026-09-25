@@ -41,20 +41,21 @@
           <input type="text" id="subject" name="subject" data-nonpersonal-input maxlength="80" value="{{ form_data.get('subject', '') }}">
         </div>
         <div class="form-group">
-          <label for="task_type">Task type</label>
-          <input type="text" id="task_type" name="task_type" data-nonpersonal-input maxlength="40" placeholder="Homework, project, exam..." value="{{ form_data.get('task_type', '') }}">
-        </div>
-        <div class="form-group">
           <label for="due_at">Due date and time</label>
           <input type="datetime-local" id="due_at" name="due_at" value="{{ form_data.get('due_at', '') }}" required>
         </div>
         <div class="form-group">
-          <label for="planned_start_at">Planned start</label>
-          <input type="datetime-local" id="planned_start_at" name="planned_start_at" value="{{ form_data.get('planned_start_at', '') }}">
-        </div>
-        <div class="form-group">
           <label for="estimated_minutes">Estimated minutes</label>
           <input type="number" id="estimated_minutes" name="estimated_minutes" min="1" max="{{ MAX_TASK_MINUTES }}" value="{{ form_data.get('estimated_minutes', '') }}" required>
+        </div>
+        <details class="more-options"><summary>Schedule, challenge &amp; other details</summary>
+        <div class="form-group">
+          <label for="task_type">Task type</label>
+          <input type="text" id="task_type" name="task_type" data-nonpersonal-input maxlength="40" placeholder="Homework, project, exam..." value="{{ form_data.get('task_type', '') }}">
+        </div>
+        <div class="form-group">
+          <label for="planned_start_at">Planned start</label>
+          <input type="datetime-local" id="planned_start_at" name="planned_start_at" value="{{ form_data.get('planned_start_at', '') }}">
         </div>
         <div class="form-group">
           <label for="difficulty">How challenging is this task?</label>
@@ -84,6 +85,7 @@
           </select>
           <label class="inline-check"><input type="checkbox" name="reminder_enabled" {% if form_data.get('reminder_enabled', true) %}checked{% endif %}> Include this task in reminders</label>
         </div>
+        </details>
         {% include '_nonpersonal_confirmation.html' %}
         <div class="actions">
           <button type="submit">Save changes</button>

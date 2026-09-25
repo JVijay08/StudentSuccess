@@ -185,6 +185,8 @@ def test_additive_migration_preserves_legacy_rows(app):
     from sqlalchemy import text, inspect
     with app.app_context():
         db.drop_all()
+        db.session.execute(text("CREATE TABLE users (id INTEGER PRIMARY KEY, username VARCHAR(80))"))
+        db.session.execute(text("INSERT INTO users (id,username) VALUES (1,'existing-account')"))
         db.session.execute(text("CREATE TABLE tasks (id INTEGER PRIMARY KEY, title VARCHAR(160))"))
         db.session.execute(text("CREATE TABLE user_settings (id INTEGER PRIMARY KEY)"))
         db.session.execute(text("CREATE TABLE term_courses (id INTEGER PRIMARY KEY, title VARCHAR(120), weekly_hours FLOAT)"))
@@ -194,6 +196,7 @@ def test_additive_migration_preserves_legacy_rows(app):
         db.session.commit()
         _migrate_feedback_columns()
         _migrate_feedback_columns()
+        assert db.session.execute(text("SELECT username,email,auth_version FROM users WHERE id=1")).one() == ('existing-account', None, 0)
         assert db.session.execute(text("SELECT title FROM tasks WHERE id=1")).scalar() == "Existing history"
         assert db.session.execute(text("SELECT academic_context FROM user_settings WHERE id=1")).scalar() == "high_school"
         assert db.session.execute(text("SELECT title, weekly_hours, enrollment_type, status, institution_id FROM term_courses WHERE id=1")).one() == ('Existing college course', 4, 'college', 'planned', None)

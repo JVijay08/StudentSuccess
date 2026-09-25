@@ -18,6 +18,7 @@ access_bp = Blueprint("access", __name__)
 def _sign_in(user):
     session.clear()
     session["user_id"] = user.id
+    session["auth_version"] = user.auth_version
     session["access_version"] = user.access_credential.version
     session["_last_active"] = datetime.now(timezone.utc).isoformat()
     session.permanent = True
@@ -26,6 +27,9 @@ def _sign_in(user):
 @access_bp.post("/access/create")
 def create():
     verify_csrf()
+    from services.email_accounts import ready
+    if ready():
+        return redirect(url_for('auth.register'))
     if session.get("user_id") and not session.get("demo_mode"):
         return redirect(url_for("main.dashboard"))
     if request.form.get("understood") != "yes":
@@ -71,6 +75,7 @@ def replace():
         db.session.rollback()
         flash("The code changed in another session. Sign in with the latest code before replacing it.", "error")
         return redirect(url_for("auth.login"))
+    g.current_user.auth_version += 1
     db.session.commit()
     _sign_in(g.current_user)
     return render_template("access_code_created.html", code=code, replaced=True)
