@@ -1,0 +1,12 @@
+{# Native form adaptation of the BellToggle interaction; the checkbox is the state. #}
+{% macro reminder_toggle(enabled, help_id, save_hint, disabled=false) %}
+<div class="reminder-preference">
+  <label class="bell-toggle">
+    <input type="checkbox" name="reminders_enabled" aria-describedby="{{ help_id }}" {% if enabled %}checked{% endif %} {% if disabled %}disabled{% endif %}>
+    <svg class="bell-toggle__icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 20a3 3 0 0 0 6 0M5 17h14l-2-3V9a5 5 0 0 0-10 0v5l-2 3ZM11 3h2"/></svg>
+    <span class="bell-toggle__label">In-app reminders</span>
+    <span class="bell-toggle__state" aria-hidden="true"><span class="bell-toggle__off">Off</span><span class="bell-toggle__on">On</span></span>
+  </label>
+  <p id="{{ help_id }}" class="reminder-preference__help">Only inside your planner, not email or push alerts. {{ save_hint }}</p>
+</div>
+{% endmacro %}

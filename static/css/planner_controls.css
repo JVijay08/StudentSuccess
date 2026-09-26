@@ -1,0 +1,43 @@
+/* Purposeful controls adapted for the existing notebook UI; no React runtime. */
+body .bell-toggle {
+  display:flex;align-items:center;gap:10px;min-height:52px;margin:0;
+  padding:12px;border:1px solid var(--neutral-400);border-radius:12px;
+  color:var(--ink);background:var(--white);cursor:pointer;box-shadow:var(--shadow);
+  font-size:.9rem;line-height:1.5;transition:background-color 160ms,border-color 160ms;
+}
+.bell-toggle:has(input:checked) {background:var(--primary-50);border-color:var(--blue);}
+.bell-toggle:has(input:focus-visible) {outline:3px solid var(--amber);outline-offset:3px;}
+.bell-toggle:has(input:disabled) {cursor:default;opacity:.6;box-shadow:none;}
+.bell-toggle input[type=checkbox] {flex:none;width:20px;height:20px;min-height:20px;margin:0;}
+.bell-toggle__icon {flex:none;transform-origin:50% 18%;color:var(--blue);}
+.bell-toggle__label {flex:1;min-width:0;font-weight:600;}
+.bell-toggle__state {flex:none;font-size:.8rem;font-weight:600;color:var(--muted);}
+.bell-toggle__on,.bell-toggle:has(input:checked) .bell-toggle__off {display:none;}
+.bell-toggle:has(input:checked) .bell-toggle__on {display:inline;}
+body .reminder-preference__help {margin:8px 0 0;font-size:.8rem;line-height:1.5;color:var(--muted);}
+.college-search-feedback {grid-column:1/-1;min-width:0;}
+body .college-search-feedback .operation-status {
+  display:flex;align-items:flex-start;gap:10px;min-height:44px;margin:0;
+  padding:10px 12px;border:1px solid var(--line);border-radius:10px;
+  background:var(--paper);color:var(--ink);font-size:.88rem;line-height:1.5;
+}
+.operation-status__icon {flex:none;width:20px;height:20px;margin-top:1px;}
+.operation-status__icon>g {display:none;}
+[data-state=idle] .operation-status__idle,[data-state=running] .operation-status__running,
+[data-state=done] .operation-status__done,[data-state=error] .operation-status__error {display:inline;}
+[data-state=running] .operation-status__icon {animation:college-search-spin 1s linear infinite;}
+[data-state=done] .operation-status__icon {color:var(--success);}
+[data-state=error] .operation-status__icon {color:var(--danger);}
+.college-search-feedback [data-college-retry] {margin-top:8px;}
+.college-search-feedback [hidden] {display:none!important;}
+[data-theme=dark] .bell-toggle:has(input:checked) {background:var(--night-soft);}
+[data-theme=high-contrast] .bell-toggle:has(input:checked) {background:var(--white);border-color:var(--amber);}
+[data-theme=dark] [data-state=done] .operation-status__icon,
+[data-theme=high-contrast] [data-state=done] .operation-status__icon,
+[data-theme=dark] [data-state=error] .operation-status__icon,
+[data-theme=high-contrast] [data-state=error] .operation-status__icon {color:var(--ink);}
+@keyframes college-search-spin {to {transform:rotate(360deg);}}
+@media(prefers-reduced-motion:reduce) {body .bell-toggle {transition:none;}[data-state=running] .operation-status__icon {animation:none;}}
+[data-motion=reduced] .bell-toggle {transition:none;}
+[data-motion=reduced] [data-state=running] .operation-status__icon {animation:none;}
+@media(forced-colors:active) {.bell-toggle:has(input:checked) {border-color:Highlight;}.bell-toggle__icon,.operation-status__icon {color:CanvasText;}}
