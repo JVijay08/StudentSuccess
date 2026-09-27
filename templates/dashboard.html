@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
   {% include '_accessibility_head.html' %}
   <link rel="stylesheet" href="{{ url_for('static', filename='css/nonpersonal.css') }}">
-</head>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/task_cards.css') }}"><script src="{{ url_for('static',filename='js/task_cards.js') }}" defer></script></head>
 <body class="notebook-dashboard">
   {% include '_accessibility_body.html' %}
   <div class="shell">
@@ -43,7 +43,7 @@
           <h1>Welcome to StudentSuccess.</h1>
           <p>Personalize your planner, then begin planning work around real deadlines.</p>
         {% endif %}
-        <a class="button secondary" href="{{ nav_url('tasks.tasks', _anchor='task-form') }}">Add a task</a>
+        {% if prioritized_tasks %}<a class="button secondary" href="{{ nav_url('tasks.tasks', _anchor='task-form') }}">Add a task</a>{% endif %}
       </header>
 
       <div class="workspace-index"><span>A little progress is still progress.</span><a href="{{ nav_url('tasks.tasks', _anchor='task-form') }}">Write down a task <span aria-hidden="true">&#8599;</span></a></div>
@@ -54,18 +54,17 @@
         {% if prioritized_tasks %}
           <ol class="priority-list">
             {% for row in prioritized_tasks[:(1 if focus_view else settings.recommendation_count)] %}
-              <li class="priority-item">{% if loop.index == 2 %}<p class="eyebrow">Up next</p>{% endif %}
-                <h2>{% if row.task.parent %}{{ row.task.parent.title }} / {% endif %}{{ row.task.title }}</h2><p>{{ row.task.estimated_minutes }} estimated minutes</p>
+              {% set task = row.task %}
+              <li class="priority-item task-overview">
+                <div class="task-overview-heading"><div><p class="task-state">{{ 'In progress' if task.status == 'in_progress' else 'Ready to start' if loop.first else 'Up next' }}</p><h2>{% if task.parent %}{{ task.parent.title }} / {% endif %}{{ task.title }}</h2></div>{% include '_task_menu.html' %}</div>
+                <p class="task-overview-meta">{% if task.subject %}{{ task.subject }} &middot; {% endif %}{% if task.estimated_minutes >= 60 %}{{ task.estimated_minutes // 60 }} hr{% if task.estimated_minutes % 60 %} {{ task.estimated_minutes % 60 }} min{% endif %}{% else %}{{ task.estimated_minutes }} min{% endif %} estimated</p>
                 <p class="task-deadline">Due {{ row.due_at_display }}</p>
-                <p class="recommendation-brief"><strong>Why this task:</strong> {{ row.short_reason }}{% if settings.recommendation_tone == 'encouraging' %} You can start with one small step.{% elif settings.recommendation_tone == 'direct' %} Start this now.{% endif %}</p>
-                {% if loop.first and row.task.status == 'not_started' %}<form class="start-next-task" method="post" action="{{ url_for('tasks.start_task', task_id=row.task.id) }}">{% include '_navigation_fields.html' %}<input type="hidden" name="redirect_to" value="dashboard"><button type="submit" class="button">Start this task <span aria-hidden="true">&#8599;</span></button></form>{% elif loop.first and row.task.status == 'in_progress' %}<form class="complete-next-task" method="post" action="{{ url_for('tasks.complete_task', task_id=row.task.id) }}">{% include '_navigation_fields.html' %}<label>Actual minutes<input type="number" name="actual_minutes" min="1" max="{{ MAX_TASK_MINUTES }}" value="{{ row.task.estimated_minutes }}" required></label><button>Complete task</button></form>{% endif %}
-                {% if loop.first %}<details class="recommendation-context"><summary>Compare with the next task</summary>{% if row.comparison_note %}<p>{{ row.comparison_note }}</p>{% endif %}<p class="history-explanation">{{ row.history_note }}</p></details>{% endif %}
-                <details class="priority-reasons"><summary>How this recommendation was calculated</summary><p>Deadline-risk score: <strong>{{ row.score }}</strong> = {{ row.base_score }} from this task + {{ row.bonus }} from start history. In-progress work comes first, followed by overdue deadlines, missed planned starts, and deadlines within 24 hours. Within each tier, higher totals come first; deadline, planned start, and a stable task ID break ties. This is a planning signal, not a grade or a prediction.</p><ul class="score-breakdown">{% for factor in row.factors %}<li><span>{{ factor.reason }}</span><strong>+{{ factor.points }}</strong></li>{% else %}<li>No added priority points.</li>{% endfor %}</ul>{% if not loop.first %}<p>{{ row.history_note }}</p>{% endif %}<p class="scoring-method">History adds 1 point when average starting delay exceeds 1 hour, or 2 when it exceeds 4 hours, after at least 2 completed tasks with both start times in the same subject or task type. These are fixed rules using your recorded history, not AI learning.</p></details>
-
+                {% if task.planned_start_at and task.status == 'not_started' %}<p class="task-overview-meta">Planned start {{ task.planned_start_at|planner_time }}</p>{% endif %}
+                <div class="task-primary-actions">{% if task.status == 'not_started' %}<form class="start-next-task" method="post" action="{{ url_for('tasks.start_task', task_id=task.id) }}">{% include '_navigation_fields.html' %}<input type="hidden" name="redirect_to" value="dashboard"><button>Start this task</button></form>{% else %}<form class="complete-next-task" method="post" action="{{ url_for('tasks.complete_task', task_id=task.id) }}">{% include '_navigation_fields.html' %}<button>Complete task</button></form>{% endif %}</div>
               </li>
             {% endfor %}
           </ol>
-          <a class="text-link" href="{{ nav_url('tasks.tasks', _anchor='task-queue') }}">View all {{ active_task_count }} active tasks &rarr;</a>
+          <a class="text-link" href="{{ nav_url('tasks.tasks', _anchor='task-queue') }}">View {{ active_task_count }} active task{{ "s" if active_task_count != 1 else "" }} &rarr;</a>
         {% elif profile %}
           <h2>Add your first assignment.</h2>
           <p>Record its deadline and planned start so StudentSuccess can give you a transparent priority signal.</p>

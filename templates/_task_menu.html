@@ -1,0 +1,11 @@
+<details class="task-menu">
+  <summary aria-label="Options for {{ task.title }}" title="Task options"><span aria-hidden="true">&#8943;</span></summary>
+  <div class="task-menu-panel">
+    <p class="eyebrow">Task options</p>
+    {% if task.status == 'not_started' and not task.children %}{% with schedule_task_id=task.id %}{% include '_reschedule.html' %}{% endwith %}{% endif %}
+    <a href="{{ nav_url('tasks.edit_task',task_id=task.id) }}">Edit task, deadline &amp; subtasks</a>
+    <details><summary>Record time &amp; complete</summary><p>Optional: record how long you worked. This does not reschedule the task.</p><form method="post" action="{{ url_for('tasks.complete_task',task_id=task.id) }}">{% include '_navigation_fields.html' %}<label>Time spent (minutes)<input type="number" name="actual_minutes" min="1" max="{{ MAX_TASK_MINUTES }}" placeholder="e.g. 45" required></label><button>Save time &amp; complete</button></form></details>
+    <details><summary>Why this task?</summary><p>{{ row.short_reason|default('') }}</p><ul>{% for reason in row.reasons|default([]) %}<li>{{ reason }}</li>{% endfor %}{% for factor in row.factors|default([]) %}<li>{{ factor.reason }}</li>{% endfor %}</ul>{% if row.comparison_note %}<p>{{ row.comparison_note }}</p>{% endif %}{% if row.base_score is defined %}<p>Deadline-risk score: {{ row.score }} = {{ row.base_score }} from this task + {{ row.bonus }} from start history. This is a planning signal, not a grade or prediction.</p>{% endif %}{% if row.history_note %}<p>{{ row.history_note }}</p>{% endif %}</details>
+    <form method="post" action="{{ url_for('tasks.delete_task',task_id=task.id) }}">{% include '_navigation_fields.html' %}<button class="danger secondary" onclick="return confirm('Delete this task and its history?')">Delete task</button></form>
+  </div>
+</details>

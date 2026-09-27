@@ -13,12 +13,6 @@
             <div class="actions">
               {% if task.status == 'not_started' %}<form method="post" action="{{ url_for('tasks.start_task',task_id=task.id) }}">{% include '_navigation_fields.html' %}<button>Start now</button></form>{% endif %}
               <form method="post" action="{{ url_for('tasks.complete_task',task_id=task.id) }}">{% include '_navigation_fields.html' %}<button class="{{ 'secondary' if task.status == 'not_started' else '' }}">Complete</button></form>
-              {% if task.status == 'not_started' %}{% with schedule_task_id=task.id %}{% include '_reschedule.html' %}{% endwith %}{% endif %}
-              <details><summary>Details &amp; more</summary>
-                <p>Why this ranking?</p><ul>{% for reason in row.reasons %}<li>{{ reason }}</li>{% endfor %}</ul>
-                <a href="{{ nav_url('tasks.edit_task',task_id=task.id) }}">Edit task &amp; subtasks</a>
-                {% if task.status != 'completed' %}<form method="post" action="{{ url_for('tasks.complete_task',task_id=task.id) }}">{% include '_navigation_fields.html' %}<label>Actual minutes<input type="number" name="actual_minutes" min="1" max="{{ MAX_TASK_MINUTES }}" value="{{ task.estimated_minutes }}" required></label><button>Complete with time recorded</button></form>{% endif %}
-                <form method="post" action="{{ url_for('tasks.delete_task',task_id=task.id) }}">{% include '_navigation_fields.html' %}<button class="danger secondary" onclick="return confirm('Delete this task?')" aria-label="Delete {{ task.title }}">Delete</button></form>
-              </details>
             </div>
+            {% include '_task_menu.html' %}
           </article>
