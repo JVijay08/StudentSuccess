@@ -49,12 +49,21 @@ try:
     menu.locator('[name=actual_minutes]').focus()
     page.keyboard.press('Escape')
     expect(menu).not_to_have_attribute('open','')
+  for theme in ['dark','high-contrast']:
+   page.set_viewport_size({'width':320,'height':844})
+   for path in ['/dashboard','/tasks']:
+    page.goto(base+path)
+    page.evaluate("theme=>Object.assign(document.documentElement.dataset,{theme,textScale:'200'})",theme)
+    page.locator('.task-menu>summary').first.click()
+    page.locator('.task-menu').first.get_by_text('Record time & complete',exact=True).click()
+    issues.extend([theme,path,'200%',i] for i in page.evaluate(BOUNDS))
   page.goto(base+'/dashboard')
   page.get_by_role('button',name='Complete task',exact=True).click()
   with app.app_context():
    task=Task.query.one();assert task.status=='completed' and task.actual_minutes is None
   page.goto(base+'/dashboard')
   expect(page.get_by_role('link',name='Add a task',exact=True)).to_have_count(1)
+  expect(page.get_by_role('heading',name='You are caught up.',exact=True)).to_be_visible()
   browser.close()
  print(json.dumps({'issues':issues,'javascript_errors':errors}))
  assert not issues and not errors

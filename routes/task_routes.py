@@ -260,7 +260,9 @@ def edit_task(task_id):
             task.subject = cleaned["subject"]
             task.task_type = cleaned["task_type"]
             task.due_at = cleaned["due_at"]
-            task.planned_start_at = cleaned["planned_start_at"]
+            # Starting work freezes the original plan for honest start-delay history.
+            if task.started_at is None:
+                task.planned_start_at = cleaned["planned_start_at"]
             task.estimated_minutes = cleaned["estimated_minutes"]
             task.difficulty = cleaned["difficulty"]
             task.interest_level = cleaned["interest_level"]

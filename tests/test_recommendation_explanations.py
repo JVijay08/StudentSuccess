@@ -77,7 +77,8 @@ def test_dashboard_brief_and_score_disclosure(authed_client):
         'difficulty':'high', 'interest_level':'medium', 'nonpersonal_confirmed':'yes',
     })
     response = authed_client.get('/dashboard')
-    assert b'Why this task:' in response.data
+    assert b'<details class="task-menu">' in response.data
+    assert b'<summary>Why this task?</summary>' in response.data
     assert b'<details class="priority-reasons">' in response.data
     assert b'No history adjustment yet' in response.data
     assert b'not AI learning' in response.data

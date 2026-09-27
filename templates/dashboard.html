@@ -66,8 +66,8 @@
           </ol>
           <a class="text-link" href="{{ nav_url('tasks.tasks', _anchor='task-queue') }}">View {{ active_task_count }} active task{{ "s" if active_task_count != 1 else "" }} &rarr;</a>
         {% elif profile %}
-          <h2>Add your first assignment.</h2>
-          <p>Record its deadline and planned start so StudentSuccess can give you a transparent priority signal.</p>
+          <h2>{{ "You are caught up." if success_rate.completed else "Add your first assignment." }}</h2>
+          <p>{{ "Your completed tasks are saved in task history. Add another assignment when you are ready." if success_rate.completed else "Add a deadline and an estimate. You can choose a planned start later." }}</p>
           <a class="button" href="{{ nav_url('tasks.tasks', _anchor='task-form') }}">Add a task</a>
         {% else %}
           <h2>Set up your planner.</h2>

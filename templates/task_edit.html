@@ -55,7 +55,8 @@
         </div>
         <div class="form-group">
           <label for="planned_start_at">Planned start</label>
-          <input type="datetime-local" id="planned_start_at" name="planned_start_at" value="{{ form_data.get('planned_start_at', '') }}">
+          <input type="datetime-local" id="planned_start_at" name="planned_start_at" {% if task.started_at %}readonly aria-describedby="started-plan-note"{% endif %} value="{{ form_data.get('planned_start_at', '') }}">
+          {% if task.started_at %}<small id="started-plan-note">Original planned start is kept once work begins so your timing history stays accurate. You can still edit the deadline.</small>{% endif %}
         </div>
         <div class="form-group">
           <label for="difficulty">How challenging is this task?</label>

@@ -40,6 +40,7 @@ def main():
             def saved():
                 return next(t for t in page.context.request.get(origin+'/settings/export').json()['tasks'] if t['id']==identifier)
             before=saved()
+            row.locator('.task-menu>summary').click()
             row.locator('.reschedule-control>summary').click()
             row.get_by_role('button',name='Tomorrow, 9 AM',exact=True).click()
             after=saved()

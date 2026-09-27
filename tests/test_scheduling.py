@@ -61,3 +61,26 @@ def test_completed_tasks_cannot_be_rescheduled(app,authed_client):
     authed_client.post(f'/tasks/{identifier}/complete')
     authed_client.post(f'/tasks/{identifier}/reschedule',data={'csrf_token':csrf(authed_client),'schedule_choice':'tomorrow'})
     with app.app_context(): assert db.session.get(Task,identifier).planned_start_at is None
+
+
+def test_edit_started_task_preserves_original_plan_but_allows_new_deadline(app, authed_client):
+    add_task(authed_client)
+    with app.app_context():
+        task = Task.query.one()
+        identifier = task.id
+        task.planned_start_at = datetime(2026,9,20,14,tzinfo=timezone.utc)
+        db.session.commit()
+    authed_client.post(f'/tasks/{identifier}/start')
+    with app.app_context():
+        task = db.session.get(Task,identifier)
+        original_plan, original_start = task.planned_start_at, task.started_at
+    response = authed_client.post(f'/tasks/{identifier}/edit',data=dict(
+        title='Updated title',due_at='2027-12-15',planned_start_at='2027-12-14T09:00',
+        estimated_minutes='30',difficulty='medium',interest_level='medium',nonpersonal_confirmed='yes'))
+    assert response.status_code == 302
+    with app.app_context():
+        task = db.session.get(Task,identifier)
+        assert task.title == 'Updated title' and utc(task.due_at).astimezone(ZoneInfo('America/New_York')).day == 15
+        assert task.planned_start_at == original_plan and task.started_at == original_start
+    html = authed_client.get(f'/tasks/{identifier}/edit').data
+    assert b'readonly aria-describedby="started-plan-note"' in html

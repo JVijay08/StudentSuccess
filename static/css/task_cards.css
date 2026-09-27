@@ -8,7 +8,7 @@ body .task-overview .task-deadline {margin:8px 0 20px;font-weight:600;}
 .task-primary-actions {display:flex;gap:12px;}
 .task-primary-actions form {margin:0;}
 .task-menu {position:relative;flex:none;align-self:start;}
-body .task-menu>summary {display:flex;align-items:center;justify-content:center;width:44px;height:44px;min-height:44px;padding:0;border:1px solid var(--line);border-radius:8px;background:var(--white);color:var(--ink);list-style:none;cursor:pointer;font-size:1.6rem;}
+body .task-menu>summary {display:flex;align-items:center;justify-content:center;width:44px;height:44px;min-height:44px;padding:0;border:1px solid var(--line);border-radius:8px;background:var(--white);color:var(--ink);list-style:none;cursor:pointer;line-height:1;}
 .task-menu>summary::-webkit-details-marker {display:none;}
 .task-menu-panel {position:absolute;right:0;top:50px;z-index:30;width:min(340px,calc(100vw - 64px));max-height:65vh;overflow:auto;padding:16px;background:var(--white);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow-raised);}
 .task-menu-panel>a {display:block;padding:12px 0;}
