@@ -9,7 +9,7 @@ def test_public_home_explains_real_use_and_offers_demo(app):
 
     assert response.status_code == 200
     assert b"Plan less." in response.data
-    assert b"Explore Demo" in response.data
+    assert b"Start tutorial" in response.data
     assert b"Plan your actual courses and tasks" in response.data
     assert b"high-school and college students" in response.data
     assert b'property="og:image"' in response.data

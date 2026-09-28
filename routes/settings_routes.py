@@ -105,7 +105,7 @@ def settings():
 def change_password():
     verify_csrf()
     if session.get("demo_mode"):
-        flash("The demo account does not have a reusable password.", "warning")
+        flash("Practice accounts do not have a reusable password.", "warning")
         return redirect(return_url("settings.settings"))
     current = request.form.get("current_password", "")
     new = request.form.get("new_password", "")
@@ -244,6 +244,9 @@ def clear_history():
 @settings_bp.post("/settings/delete-account")
 @login_required
 def delete_account():
+    if session.get('tutorial_mode'):
+        from routes.tutorial_routes import finish
+        return finish()
     password = request.form.get("password", "")
     verify_csrf()
     if not session.get("demo_mode") and not check_password(password, g.current_user.password_hash):

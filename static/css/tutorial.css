@@ -1,0 +1,17 @@
+.tutorial-guide{max-width:1160px;margin:20px auto;padding:0 16px;box-sizing:border-box;color:var(--ink);}
+.tutorial-guide>details{border:2px solid var(--blue);border-radius:12px;background:var(--white);box-shadow:0 3px 0 var(--line);overflow-wrap:anywhere;}
+.tutorial-guide>details>summary{padding:14px 18px;font-weight:700;cursor:pointer;}
+.tutorial-guide>details>summary span{font-size:.85rem;font-weight:400;margin-left:8px;}
+.tutorial-content{padding:0 18px 16px;}
+.tutorial-content h2{font-size:1.3rem;margin:4px 0 8px;}
+.tutorial-content p{max-width:78ch;margin:8px 0;}
+.tutorial-actions,.tutorial-actions form,.tutorial-exit{display:flex;align-items:center;flex-wrap:wrap;gap:10px;}
+.tutorial-guide button{width:auto;min-height:44px;margin:0;}
+.tutorial-guide a{text-decoration:underline;}
+.tutorial-sections{margin:12px 0;}
+.tutorial-sections form{display:flex;align-items:end;gap:10px;flex-wrap:wrap;margin-top:10px;}
+.tutorial-sections label{flex:1 1 230px;min-width:0;}
+.tutorial-sections select{width:100%;max-width:100%;}
+.tutorial-exit span,.tutorial-hint{font-size:.9rem;}
+.tutorial-target{outline:3px solid var(--blue)!important;outline-offset:5px!important;scroll-margin-block:120px;}
+@media(max-width:600px){.tutorial-guide{padding:0 12px;margin:12px auto;}.tutorial-content{padding:0 12px 12px;}.tutorial-guide>details>summary span{display:block;margin:4px 0 0;}.tutorial-actions{align-items:stretch;}.tutorial-actions form{width:100%;}.tutorial-actions form button{flex:1;}.tutorial-content h2{font-size:1.15rem;}}

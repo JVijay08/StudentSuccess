@@ -33,23 +33,22 @@
         <p class="eyebrow notebook-kicker"><span aria-hidden="true">&#10022;</span> YOUR NEXT CHAPTER / HIGH SCHOOL &amp; COLLEGE</p>
         <h1>Plan less.<br><em>Start sooner.</em></h1>
         <p class="lede">StudentSuccess is an academic planner that recommends which assignment to start next, tracks planned versus actual work, and helps you plan your course load.</p>
-        <div class="hero-actions"><form method="post" action="{{ url_for('auth.start_demo') }}">{% include '_navigation_fields.html' %}<button class="primary-action">Explore Demo</button></form>
+        <div class="hero-actions"><form method="post" action="{{ url_for('tutorial.start') }}">{% include '_navigation_fields.html' %}<input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><button class="primary-action">Start tutorial</button></form>
           <a class="secondary-action" href="{{ nav_url('auth.register') }}">Create an account</a>
           <a href="{{ nav_url('auth.login') }}">Sign in</a>
         </div>
         <p class="prototype-note">Plan your actual courses and tasks. Leave out personal identifiers and sensitive details. Your account saves your planner on the server.</p>
       </div>
-    <section class="product-preview" aria-label="Example of the task planner"><div class="notebook-tab" aria-hidden="true">ONE STEP AT A TIME</div><div class="preview-top"><strong>Today</strong><span>Example planner</span></div><p class="eyebrow">Recommended next task</p><h2>Draft your introduction</h2><p>Composition &middot; 45 minutes &middot; Due tonight</p><p class="recommendation-brief">This deadline is within 24 hours. A short first draft makes the rest of the paper easier to start.</p><form method="post" action="{{ url_for('auth.start_demo') }}">{% include '_navigation_fields.html' %}<button class="secondary">Open demo planner &rarr;</button></form><div class="preview-queue"><h3>Up next</h3><p><strong>Review biology notes</strong><span>30 min &middot; Tomorrow</span></p><p><strong>Research paper</strong><span>2 of 5 subtasks complete</span></p><progress value="40" max="100">40%</progress></div><p class="preview-caption">Deadlines, subtasks, and a clear place to start.</p></section>
+    <section class="product-preview" aria-label="Example of the task planner"><div class="notebook-tab" aria-hidden="true">ONE STEP AT A TIME</div><div class="preview-top"><strong>Today</strong><span>Example planner</span></div><p class="eyebrow">Recommended next task</p><h2>Draft your introduction</h2><p>Composition &middot; 45 minutes &middot; Due tonight</p><p class="recommendation-brief">This deadline is within 24 hours. A short first draft makes the rest of the paper easier to start.</p><form method="post" action="{{ url_for('tutorial.start') }}">{% include '_navigation_fields.html' %}<input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><button class="secondary">Try the interactive tutorial &rarr;</button></form><div class="preview-queue"><h3>Up next</h3><p><strong>Review biology notes</strong><span>30 min &middot; Tomorrow</span></p><p><strong>Research paper</strong><span>2 of 5 subtasks complete</span></p><progress value="40" max="100">40%</progress></div><p class="preview-caption">Deadlines, subtasks, and a clear place to start.</p></section>
     </section>
 
 
     <section class="feature-grid" aria-label="What you can do"><article><div class="feature-art">{{ illustration("steps") }}</div><h2>Know what comes next</h2><p>A task queue ordered around deadlines and planned starts, with an explanation for every recommendation.</p></article><article><div class="feature-art">{{ illustration("momentum") }}</div><h2>Make large tasks manageable</h2><p>Break projects into subtasks or timed work blocks. Keep completed work and progress together.</p></article><article><div class="feature-art">{{ illustration("books") }}</div><h2>Plan a realistic course load</h2><p>Compare high-school courses or build a college term plan around your weekly study time.</p></article></section>
-    <section class="storage-choice"><p class="eyebrow">KEEP YOUR PLACE</p><h2>A planner you can return to</h2><p>A username and password let you pick up your planner on another device. No email address or real name is needed.</p><p>The demo contains sample assignments and course plans. The free server may take up to a minute to wake.</p></section>
+    <section class="storage-choice"><p class="eyebrow">KEEP YOUR PLACE</p><h2>A planner you can return to</h2><p>A username and password let you pick up your planner on another device. No email address or real name is needed.</p><p>The tutorial contains sample assignments and course plans. The free server may take up to a minute to wake.</p></section>
 
     <footer>
       <p><a href="{{ nav_url('main.updates') }}">What&apos;s new &rarr;</a></p>
       <p>Planning estimates are informational. Confirm course requirements and availability with your school counselor.</p>
-      <p><a href="https://github.com/JVijay08/StudentSuccess-showcase">Project overview and screenshots</a></p>
     </footer>
   </main>
   <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>

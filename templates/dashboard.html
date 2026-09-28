@@ -29,7 +29,7 @@
         {% endif %}
       {% endwith %}
 
-      {% if session.get('demo_mode') %}
+      {% if session.get('demo_mode') and not session.get('tutorial_mode') %}
         <div class="demo-banner" role="status"><strong>Demo workspace.</strong> Explore freely—this sample account contains no real student information.</div>
 
       {% endif %}

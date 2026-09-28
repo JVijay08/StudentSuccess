@@ -5,8 +5,8 @@
     <h2 id="welcome-title" tabindex="-1">Welcome to StudentSuccess</h2>
     <p id="welcome-intro">Create an account with a username and password, personalize your planner, and start with one task.</p>
     <div class="welcome-warning"><strong>Plan your actual courses and tasks.</strong><p>Course names, college selections, deadlines, and everyday tasks are welcome. Leave out full names, student IDs, email addresses, phone numbers, home addresses, passwords, and private records.</p></div>
-    <details class="welcome-more"><summary>Accounts, saved plans, and the demo</summary><p>No email address or real name is needed. Save your username and password in a password manager. Plans are stored on our server and can be exported or deleted in Settings. The demo uses sample data.</p></details>
-    <div class="welcome-actions"><form method="post" action="{{ url_for('auth.start_demo') }}" data-welcome-choice><button type="submit" class="welcome-primary">Explore Demo</button></form><a href="{{ nav_url('auth.register') }}" data-welcome-choice>Create an account</a><a href="{{ nav_url('auth.login') }}" data-welcome-choice>Sign in</a></div>
+    <details class="welcome-more"><summary>Accounts, saved plans, and the tutorial</summary><p>No email address or real name is needed. Save your username and password in a password manager. Plans are stored on our server and can be exported or deleted in Settings. The tutorial uses sample data.</p></details>
+    <div class="welcome-actions"><form method="post" action="{{ url_for('tutorial.start') }}" data-welcome-choice><input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><button type="submit" class="welcome-primary">Start tutorial</button></form><a href="{{ nav_url('auth.register') }}" data-welcome-choice>Create an account</a><a href="{{ nav_url('auth.login') }}" data-welcome-choice>Sign in</a></div>
     <button id="welcome-close" type="button">Continue browsing</button>
   </div>
 </dialog>

@@ -10,6 +10,7 @@
       <p>Workspace options</p>
       <a href="{{ nav_url('settings.settings') }}">Settings <span>Appearance, preferences &amp; account</span></a>
       <a href="{{ nav_url('main.updates') }}">Updates <span>What&apos;s changed</span></a>
+      {% if not session.get('tutorial_mode') %}<form method="post" action="{{ url_for('tutorial.start') }}"><input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><button type="submit">Interactive tutorial</button></form>{% endif %}
       <form method="post" action="{{ url_for('auth.logout') }}"><button type="submit">Log out</button></form>
     </div>
   </details>
@@ -24,3 +25,5 @@
 {% endif %}
 
 {% if session.get('user_id') and g.current_user is defined and not g.current_user.onboarding_completed %}<div class="setup-top"><strong>StudentSuccess</strong><form method="post" action="{{ url_for('auth.logout') }}"><button class="secondary">Sign out</button></form></div>{% endif %}
+
+{% include '_tutorial.html' %}

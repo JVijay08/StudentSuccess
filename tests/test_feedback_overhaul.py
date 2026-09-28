@@ -176,7 +176,7 @@ def test_onboarding_and_mobile_entry(authed_client):
     body = authed_client.get("/dashboard").get_data(as_text=True)
     assert 'id="orientation-dismiss"' in body and 'id="orientation-reopen"' in body
     public = authed_client.application.test_client().get("/").get_data(as_text=True)
-    for label in ("Explore Demo", "Create an account", "Sign in"):
+    for label in ("Start tutorial", "Create an account", "Sign in"):
         assert label in public
 
 

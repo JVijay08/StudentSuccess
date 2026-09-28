@@ -33,6 +33,8 @@ def create_app(test_config=None):
     db.init_app(app)
 
     app.register_blueprint(auth_bp)
+    from routes.tutorial_routes import tutorial_bp
+    app.register_blueprint(tutorial_bp)
     app.jinja_env.globals["access_csrf_token"] = csrf_token
     app.register_blueprint(course_bp)
     app.register_blueprint(main_bp)
