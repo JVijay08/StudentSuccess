@@ -1,6 +1,6 @@
 {# Decorative, reusable vector artwork. No implied progress or account data. #}
 {% macro illustration(kind) -%}
-<svg class="planner-art" viewBox="0 0 200 112" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+<svg class="planner-art" data-paper-art="{{ kind }}" viewBox="0 0 200 112" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
   <path d="M12 96H188M28 16V100M64 16V100M100 16V100M136 16V100M172 16V100M12 32H188M12 64H188" fill="none" stroke="currentColor" opacity=".09"/>
   {% if kind == 'books' %}
   <rect x="38" y="38" width="32" height="58" rx="5" fill="#6c8260"/>

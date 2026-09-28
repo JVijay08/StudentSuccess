@@ -55,7 +55,7 @@
           <ol class="priority-list">
             {% for row in prioritized_tasks[:(1 if focus_view else settings.recommendation_count)] %}
               {% set task = row.task %}
-              <li class="priority-item task-overview">
+              <li class="priority-item task-overview" data-paper-key="task-{{ task.id }}" data-paper-status="{{ task.status }}">
                 <div class="task-overview-heading"><div><p class="task-state">{{ 'In progress' if task.status == 'in_progress' else 'Ready to start' if loop.first else 'Up next' }}</p><h2>{% if task.parent %}{{ task.parent.title }} / {% endif %}<a href="{{ nav_url('tasks.task_detail',task_id=task.id) }}">{{ task.title }}</a></h2></div>{% include '_task_menu.html' %}</div>
                 <p class="task-overview-meta">{% if task.subject %}{{ task.subject }} &middot; {% endif %}{% if task.estimated_minutes >= 60 %}{{ task.estimated_minutes // 60 }} hr{% if task.estimated_minutes % 60 %} {{ task.estimated_minutes % 60 }} min{% endif %}{% else %}{{ task.estimated_minutes }} min{% endif %} estimated</p>
                 <p class="task-deadline">Due {{ row.due_at_display }}</p>

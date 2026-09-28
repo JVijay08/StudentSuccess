@@ -1,0 +1,30 @@
+/* Functional motion only. Content is readable before, during and without effects. */
+@view-transition { navigation:auto; }
+::view-transition-group(*) {animation-duration:180ms;animation-timing-function:ease-out;}
+::view-transition-old(root) {display:none;}
+::view-transition-new(root) {animation:none;}
+::view-transition {pointer-events:none;}
+::view-transition-old(*):only-child {animation:paper-leave 160ms ease-out both;}
+::view-transition-new(*):only-child {animation:paper-arrive-small 180ms ease-out both;}
+::view-transition-new(root):only-child {animation:none;}
+@keyframes paper-leave {to {opacity:0;transform:translateY(-3px);}}
+@keyframes paper-arrive-small {from {opacity:.7;transform:translateY(3px);}to {opacity:1;transform:none;}}
+@keyframes paper-pen {from {transform:scaleX(0);}to {transform:scaleX(1);}}
+.paper-ink {position:relative;}
+.paper-ink::after {content:"";position:absolute;bottom:-3px;left:0;width:100%;height:2px;background:var(--blue);transform-origin:left;animation:paper-pen 100ms ease-out;pointer-events:none;}
+.paper-status {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:clip;clip-path:inset(50%);white-space:nowrap;}
+@media (hover:hover) and (pointer:fine) {
+  html:not([data-motion=reduced]) .app-bar nav a[aria-current=page] {background-image:linear-gradient(var(--blue),var(--blue));background-repeat:no-repeat;background-position:left bottom;background-size:100% 2px;animation:paper-nav 180ms ease-out;}
+  @keyframes paper-nav {from {background-size:0 2px;}to {background-size:100% 2px;}}
+}
+@media (hover:none), (pointer:coarse) {
+  body :is(button,.button,.primary-action,.access-primary,.small-button,.compare-button):hover:not(:active) {transform:none;}
+}
+@media (prefers-reduced-motion:reduce) {
+  *,*::before,*::after {animation:none!important;transition:none!important;scroll-behavior:auto!important;}
+  @view-transition {navigation:none;}
+  ::view-transition-group(*),::view-transition-old(*),::view-transition-new(*) {animation:none!important;}
+  .paper-ink::after {display:none;}
+}
+html[data-motion=reduced]::view-transition-group(*),html[data-motion=reduced]::view-transition-old(*),html[data-motion=reduced]::view-transition-new(*) {animation:none!important;}
+html[data-motion=reduced] .paper-ink::after {display:none;}

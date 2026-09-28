@@ -18,3 +18,15 @@
 <script src="{{ url_for('static', filename='js/notebook.js') }}" defer></script>
 
 <script src="{{ url_for('static',filename='js/account_password.js') }}" defer></script>
+
+<link rel="stylesheet" href="{{ url_for('static',filename='css/notebook_motion.css') }}">
+<script>
+// Register early without blocking rendering on an extra script download.
+for (const phase of ['pageswap','pagereveal']) window.addEventListener(phase, event => {
+  if (!event.viewTransition) return;
+  // Skipping is an expected fallback, not an unhandled animation failure.
+  event.viewTransition.ready.catch(() => {});
+  if (window.notebookMotion) window.notebookMotion[phase](event);
+  else event.viewTransition.skipTransition();
+});
+</script>

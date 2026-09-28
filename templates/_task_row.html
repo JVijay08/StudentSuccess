@@ -1,7 +1,7 @@
           {% set task = row.task %}
           {% set navigation_anchor = 'task-' ~ task.id %}
           {% set level = "HIGH" if row.score >= 7 else "MEDIUM" if row.score >= 4 else "LOW" %}
-          <article class="task-card streamlined-task" id="task-{{ task.id }}" data-task-search-text="{{ task.title }} {{ task.subject or '' }}">
+          <article class="task-card streamlined-task" data-paper-key="task-{{ task.id }}" data-paper-status="{{ task.status }}" id="task-{{ task.id }}" data-task-search-text="{{ task.title }} {{ task.subject or '' }}">
             <div>
               <p class="task-tier tier-{{ row.tier|default(4) }}">{{ {0:'In progress',1:'Deadline passed',2:'Planned start missed',3:'Due within 24 hours',4:'Upcoming'}.get(row.tier|default(4), 'Upcoming') }}</p>
               <h3>{% if task.parent and not within_assignment|default(false) %}{{ task.parent.title }} / {% endif %}<a href="{{ nav_url('tasks.task_detail',task_id=task.id) }}">{{ task.title }}</a>{% if task.recurrence_rule %} <small class="task-marker">(recurring)</small>{% endif %}{% if task.prep_for_id %} <small class="task-marker">(prep)</small>{% endif %}</h3>
