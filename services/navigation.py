@@ -13,7 +13,7 @@ PAGES = {
     "main.local_planner": "browser planner", "main.updates": "updates",
     "courses.course_explorer": "course explorer", "courses.course_plan": "four-year plan",
     "courses.course_compare": "comparison", "courses.course_detail": "course details",
-    "tasks.tasks": "tasks", "tasks.edit_task": "task editor",
+    "tasks.task_detail": "task details", "tasks.tasks": "tasks", "tasks.edit_task": "task editor",
     "profile.profile_view": "profile", "profile.onboarding": "planning preferences",
     "settings.settings": "settings", "auth.login": "sign in", "auth.register": "planner creation",
 }

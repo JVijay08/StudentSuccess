@@ -1,4 +1,5 @@
 import json
+import re
 from pathlib import Path
 from functools import lru_cache
 
@@ -175,7 +176,45 @@ def load_courses(catalog="ga"):
     if not isinstance(courses, list):
         raise ValueError("Course dataset must contain a list of courses.")
 
+    for course in courses:
+        course['quality_review'] = course_title_needs_review(course)
+        course['display_name'] = (f"Imported course {course['course_id']} (needs verification)"
+                                  if course['quality_review'] else course['course_name'])
     return courses
+
+
+
+def course_title_needs_review(course):
+    title = course['course_name']
+    return len(title) > 180 or bool(re.search(r'prerequisite|descrip(?:tion|:on)\s*:|credit fulfills', title, re.I))
+
+
+def course_name_key(name):
+    name = name.casefold().replace('&', 'and').replace('®', '')
+    name = re.sub(r'\b(comp|lang|lit|gov)\b', lambda m: {'comp':'composition','lang':'language','lit':'literature','gov':'government'}[m[0]], name)
+    name = re.sub(r'\bu\.?s\.?\b', 'united states', name)
+    return re.sub(r'[^a-z0-9]', '', name)
+
+
+def _group_courses(courses, catalog):
+    """Group display names without discarding source variants or legacy IDs."""
+    groups = {}
+    for course in courses:
+        if course_title_needs_review(course):
+            continue
+        key = course_name_key(course['course_name'])
+        if key not in groups:
+            groups[key] = dict(course, alternate_ids=[], source_labels=[], variants=[])
+        row = groups[key]
+        row['alternate_ids'].append(course['course_id'])
+        row['variants'].append(course)
+        source = ' / '.join(dict.fromkeys(filter(None, [course.get('source_state'), course.get('source')]))) or CATALOGS[catalog]['label']
+        if source not in row['source_labels']:
+            row['source_labels'].append(source)
+    return list(groups.values())
+
+def browse_courses(catalog='ga'):
+    return _group_courses(load_courses(catalog), catalog)
 
 
 def get_course_by_id(course_id, catalog="ga"):
@@ -223,6 +262,8 @@ def filter_courses(
     matching_courses = []
 
     for course in load_courses(catalog):
+        if course_title_needs_review(course):
+            continue
         if grade_level is not None and grade_level not in course["grade_levels"]:
             continue
 
@@ -266,11 +307,11 @@ def filter_courses(
 
         matching_courses.append(course)
 
-    return matching_courses
+    return _group_courses(matching_courses, catalog)
 
 
 def get_catalog_options(catalog="ga"):
-    courses = load_courses(catalog)
+    courses = browse_courses(catalog)
     return {
         "subjects": sorted({course["subject"] for course in courses}),
         "course_types": sorted({course["course_type"] for course in courses}),

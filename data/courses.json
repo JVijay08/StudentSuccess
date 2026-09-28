@@ -1009,5 +1009,185 @@
     "career_clusters": [
       "Arts and Entertainment"
     ]
+  },
+  {
+    "course_id": "GA_FCS_ELA9",
+    "course_name": "9th Grade Literature and Composition",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      9
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source": "Forsyth County Schools",
+    "source_url": "https://www.forsyth.k12.ga.us/district-services/teaching-learning/high-school-course-digest/english",
+    "source_checked": "2026-09-27",
+    "source_note": "District course digest; confirm placement and prerequisites with your school.",
+    "estimate_note": "Workload and academic depth are planner estimates, not district ratings."
+  },
+  {
+    "course_id": "GA_FCS_ELA9H",
+    "course_name": "9th Grade Literature and Composition Honors",
+    "subject": "English",
+    "course_type": "Honors",
+    "grade_levels": [
+      9
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source": "Forsyth County Schools",
+    "source_url": "https://www.forsyth.k12.ga.us/district-services/teaching-learning/high-school-course-digest/english",
+    "source_checked": "2026-09-27",
+    "source_note": "District course digest; confirm placement and prerequisites with your school.",
+    "estimate_note": "Workload and academic depth are planner estimates, not district ratings."
+  },
+  {
+    "course_id": "GA_FCS_ELA10",
+    "course_name": "10th Grade Literature and Composition",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      10
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source": "Forsyth County Schools",
+    "source_url": "https://www.forsyth.k12.ga.us/district-services/teaching-learning/high-school-course-digest/english",
+    "source_checked": "2026-09-27",
+    "source_note": "District course digest; confirm placement and prerequisites with your school.",
+    "estimate_note": "Workload and academic depth are planner estimates, not district ratings."
+  },
+  {
+    "course_id": "GA_FCS_ELA10H",
+    "course_name": "10th Grade Literature and Composition Honors",
+    "subject": "English",
+    "course_type": "Honors",
+    "grade_levels": [
+      10
+    ],
+    "rigor_level": "Advanced",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source": "Forsyth County Schools",
+    "source_url": "https://www.forsyth.k12.ga.us/district-services/teaching-learning/high-school-course-digest/english",
+    "source_checked": "2026-09-27",
+    "source_note": "District course digest; confirm placement and prerequisites with your school.",
+    "estimate_note": "Workload and academic depth are planner estimates, not district ratings."
+  },
+  {
+    "course_id": "GA_FCS_ELA11",
+    "course_name": "American Literature and Composition",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      11
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source": "Forsyth County Schools",
+    "source_url": "https://www.forsyth.k12.ga.us/district-services/teaching-learning/high-school-course-digest/english",
+    "source_checked": "2026-09-27",
+    "source_note": "District course digest; confirm placement and prerequisites with your school.",
+    "estimate_note": "Workload and academic depth are planner estimates, not district ratings."
+  },
+  {
+    "course_id": "GA_FCS_ADVCOMP",
+    "course_name": "Advanced Composition",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source": "Forsyth County Schools",
+    "source_url": "https://www.forsyth.k12.ga.us/district-services/teaching-learning/high-school-course-digest/english",
+    "source_checked": "2026-09-27",
+    "source_note": "District course digest; confirm placement and prerequisites with your school.",
+    "estimate_note": "Workload and academic depth are planner estimates, not district ratings."
+  },
+  {
+    "course_id": "GA_FCS_BRITLIT",
+    "course_name": "British Literature",
+    "subject": "English",
+    "course_type": "Standard",
+    "grade_levels": [
+      12
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "English",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source": "Forsyth County Schools",
+    "source_url": "https://www.forsyth.k12.ga.us/district-services/teaching-learning/high-school-course-digest/english",
+    "source_checked": "2026-09-27",
+    "source_note": "District course digest; confirm placement and prerequisites with your school.",
+    "estimate_note": "Workload and academic depth are planner estimates, not district ratings."
+  },
+  {
+    "course_id": "GA_FCS_HEALTH",
+    "course_name": "Health",
+    "subject": "PE and Health",
+    "course_type": "Standard",
+    "grade_levels": [
+      9
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "PE and Health",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source": "Forsyth County Schools",
+    "source_url": "https://alliance.forsyth.k12.ga.us/academics/course-offerings",
+    "source_checked": "2026-09-27",
+    "source_note": "Alliance Academy 2027-2028 offerings; confirm your school and year.",
+    "estimate_note": "Workload and academic depth are planner estimates, not district ratings."
+  },
+  {
+    "course_id": "GA_FCS_FITNESS",
+    "course_name": "Personal Fitness",
+    "subject": "PE and Health",
+    "course_type": "Standard",
+    "grade_levels": [
+      9
+    ],
+    "rigor_level": "Standard",
+    "workload_level": "Medium",
+    "prerequisites": [],
+    "graduation_category": "PE and Health",
+    "career_clusters": [],
+    "source_state": "Georgia",
+    "source": "Forsyth County Schools",
+    "source_url": "https://alliance.forsyth.k12.ga.us/academics/course-offerings",
+    "source_checked": "2026-09-27",
+    "source_note": "Alliance Academy 2027-2028 offerings; confirm your school and year.",
+    "estimate_note": "Workload and academic depth are planner estimates, not district ratings."
   }
 ]

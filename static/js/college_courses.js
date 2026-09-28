@@ -52,7 +52,7 @@ document.querySelectorAll('[data-college-finder]').forEach(form => {
       // Build everything before touching the current selection; failures keep it intact.
       const options = data.results.map(college => new Option(`${college.name} (${college.city}, ${college.state})`, college.id));
       const previous = select.selectedOptions[0]?.cloneNode(true);
-      select.replaceChildren(new Option('Not selected / not listed', ''), ...options);
+      select.replaceChildren(new Option('No college selected (optional)', ''), ...options);
       if (previous?.value && !options.some(option => option.value === previous.value)) select.add(previous);
       select.value = previous?.value || '';
       const focusInSearch = searchHadFocus &&

@@ -9,7 +9,7 @@
     <details class="assignment-tree" open>
       <summary><span>{{ assignment.task.title }}</span><small>{{ assignment.task.progress }}% complete &middot; {{ assignment.task.children|length }} subtasks</small></summary>
       <progress max="100" value="{{ assignment.task.progress }}" aria-label="{{ assignment.task.title }} progress">{{ assignment.task.progress }}%</progress>
-      <p><a href="{{ nav_url('tasks.edit_task', task_id=assignment.task.id) }}">Manage assignment and subtasks</a></p>
+      <p><a href="{{ nav_url('tasks.task_detail', task_id=assignment.task.id) }}">Open assignment steps</a></p>
       <div class="subtask-branch">{% for row in assignment.children %}{% with within_assignment=true %}{% include '_task_row.html' %}{% endwith %}{% endfor %}</div>
     </details>
     {% elif assignment.row %}{% with row=assignment.row %}{% include '_task_row.html' %}{% endwith %}{% endif %}

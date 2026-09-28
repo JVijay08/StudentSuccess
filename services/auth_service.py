@@ -41,13 +41,13 @@ def login_required(f):
         # No user_id in session — not logged in
         if user_id is None:
             session.clear()
-            return redirect(url_for("auth.login", next=request.full_path.rstrip("?")))
+            return redirect(url_for("auth.login", next=request.full_path.rstrip("?"), reason="session"))
 
         # Validate the user_id corresponds to a real user before loading preferences.
         user = db.session.get(User, user_id)
         if user is None:
             session.clear()
-            return redirect(url_for("auth.login", next=request.full_path.rstrip("?")))
+            return redirect(url_for("auth.login", next=request.full_path.rstrip("?"), reason="session"))
 
         if session.get('auth_version', 0) != user.auth_version:
             session.clear()
@@ -55,7 +55,7 @@ def login_required(f):
 
         if user.access_credential is not None and session.get("access_version") != user.access_credential.version:
             session.clear()
-            return redirect(url_for("auth.login", next=request.full_path.rstrip("?")))
+            return redirect(url_for("auth.login", next=request.full_path.rstrip("?"), reason="session"))
 
         timeout_minutes = (
             user.settings.session_timeout_minutes
@@ -74,11 +74,11 @@ def login_required(f):
                 elapsed = datetime.now(timezone.utc) - last_active
                 if elapsed > timedelta(minutes=timeout_minutes):
                     session.clear()
-                    return redirect(url_for("auth.login", next=request.full_path.rstrip("?")))
+                    return redirect(url_for("auth.login", next=request.full_path.rstrip("?"), reason="session"))
             except (ValueError, TypeError):
                 # Malformed timestamp — treat as expired
                 session.clear()
-                return redirect(url_for("auth.login", next=request.full_path.rstrip("?")))
+                return redirect(url_for("auth.login", next=request.full_path.rstrip("?"), reason="session"))
 
         # All checks passed — attach user to request context and refresh timestamp
         g.current_user = user

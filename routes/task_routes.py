@@ -70,7 +70,7 @@ def _validate_task_form(form, timezone_name="America/New_York"):
     errors = confirmation_errors(form)
 
     title = form.get("title", "").strip()
-    subject = form.get("subject", "").strip()
+    subject = (form.get("saved_course") or form.get("subject", "")).strip()
     task_type = form.get("task_type", "").strip()
     due_at_text = form.get("due_at", "").strip()
     if len(due_at_text) == 10:
@@ -129,6 +129,12 @@ def _validate_task_form(form, timezone_name="America/New_York"):
         errors.append("Select a valid recurrence option.")
         recurrence_rule = None
 
+    try:
+        break_minutes = int(form.get('break_minutes', '0') or '0')
+        if not 0 <= break_minutes <= MAX_TASK_MINUTES: raise ValueError
+    except ValueError:
+        break_minutes = 0
+        errors.append(f"Break allowance must be between 0 and {MAX_TASK_MINUTES} minutes.")
     cleaned = {
         "title": title,
         "subject": subject or None,
@@ -136,6 +142,7 @@ def _validate_task_form(form, timezone_name="America/New_York"):
         "due_at": due_at,
         "planned_start_at": planned_start_at,
         "estimated_minutes": estimated_minutes,
+        "break_minutes": break_minutes,
         "difficulty": difficulty,
         "interest_level": interest_level,
         "recurrence_rule": recurrence_rule,
@@ -168,6 +175,7 @@ def tasks():
                 due_at=cleaned["due_at"],
                 planned_start_at=cleaned["planned_start_at"],
                 estimated_minutes=cleaned["estimated_minutes"],
+                break_minutes=cleaned["break_minutes"],
                 difficulty=cleaned["difficulty"],
                 interest_level=cleaned["interest_level"],
                 recurrence_rule=cleaned["recurrence_rule"],
@@ -216,7 +224,7 @@ def tasks():
     for planned in profile.planned_courses:
         course = catalogs.get(planned.catalog_id, {}).get(planned.course_id)
         if course:
-            course_names.append(course["course_name"][:80])
+            course_names.append(course["display_name"][:80])
     outline = course_outline(all_tasks, task_rows, course_names)
     selected_course = request.args.get("course", "")[:80].strip()
     if selected_course:
@@ -230,12 +238,23 @@ def tasks():
         task_rows=task_rows,
         completed_tasks=completed_tasks,
         projects=[t for t in all_tasks if t.children and t.status != "completed"],
+        saved_courses=sorted(set(course_names)),
         subject_suggestions=sorted(set(course_names) | {t.subject for t in all_tasks if t.subject} | {"Math", "Science", "English", "History", "Computer Science"}),
         sort=sort,
         errors=errors,
         form_data=request.form or {"estimated_minutes": settings.default_task_minutes, "subject": request.args.get("subject", selected_course)[:80]},
         settings=settings,
     )
+
+
+@task_bp.get('/tasks/<int:task_id>')
+@login_required
+def task_detail(task_id):
+    task = db.get_or_404(Task, task_id)
+    if task.student_profile.user_id != g.current_user.id:
+        abort(404)
+    return render_template('task_detail.html', task=task,
+        settings=get_or_create_settings(g.current_user))
 
 
 @task_bp.route("/tasks/<int:task_id>/edit", methods=["GET", "POST"])
@@ -264,6 +283,7 @@ def edit_task(task_id):
             if task.started_at is None:
                 task.planned_start_at = cleaned["planned_start_at"]
             task.estimated_minutes = cleaned["estimated_minutes"]
+            task.break_minutes = cleaned["break_minutes"]
             task.difficulty = cleaned["difficulty"]
             task.interest_level = cleaned["interest_level"]
             task.recurrence_rule = cleaned["recurrence_rule"]
@@ -276,6 +296,7 @@ def edit_task(task_id):
     if request.method == "POST":
         # Preserve the user's submitted edits when re-rendering with errors.
         form_data = {
+            "break_minutes": request.form.get("break_minutes", "0"),
             "title": request.form.get("title", ""),
             "subject": request.form.get("subject", ""),
             "task_type": request.form.get("task_type", ""),
@@ -291,6 +312,7 @@ def edit_task(task_id):
         }
     else:
         form_data = {
+            "break_minutes": task.break_minutes,
             "title": task.title,
             "subject": task.subject or "",
             "task_type": task.task_type or "",
@@ -525,7 +547,7 @@ def add_subtask(task_id):
         abort(404)
     if parent.parent_task_id or parent.status == "completed" or parent.recurrence_rule:
         flash("Subtasks need an unfinished, non-recurring top-level task.", "error")
-        return redirect(url_for("tasks.edit_task", task_id=task_id))
+        return redirect(return_url("tasks.task_detail", task_id=task_id))
     settings = get_or_create_settings(g.current_user)
     values = request.form.to_dict()
     for key in ("subject", "task_type", "difficulty", "interest_level"):
@@ -547,7 +569,7 @@ def add_subtask(task_id):
         _sync_parent(child)
         db.session.commit()
         flash("Subtask added.", "success")
-    return redirect(url_for("tasks.edit_task", task_id=task_id))
+    return redirect(return_url("tasks.task_detail", task_id=task_id))
 
 
 @task_bp.post("/tasks/<int:task_id>/split")
@@ -567,7 +589,7 @@ def split_task(task_id):
                 interest_level=parent.interest_level, reminder_enabled=parent.reminder_enabled))
         db.session.commit()
         flash("Work blocks created. Their minutes exactly match the project estimate.", "success")
-    return redirect(url_for("tasks.edit_task", task_id=task_id))
+    return redirect(return_url("tasks.task_detail", task_id=task_id))
 
 
 @task_bp.route("/tasks/import", methods=["GET", "POST"])

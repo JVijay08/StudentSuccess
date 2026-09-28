@@ -1,4 +1,4 @@
-<details class="college-finder" {% if college_query or college_state %}open{% endif %}><summary>Find a college by state or name</summary>
+<section class="college-finder" aria-labelledby="college-search-heading"><h3 id="college-search-heading">1. Find your college</h3>
 <form method="get" action="{{ url_for('courses.course_explorer' if ui_settings.academic_context == 'high_school' else 'terms.plan', _anchor='college-entry') }}" class="college-search" data-college-finder data-search-url="{{ url_for('colleges.search') }}">
 {% if ui_settings.academic_context == 'high_school' %}<input type="hidden" name="course_source" value="dual">{% endif %}
 <label>College name or city<input name="college_q" maxlength="120" value="{{ college_query }}" placeholder="Public college name"></label>
@@ -15,4 +15,4 @@
   </p>
   <button type="button" class="secondary" data-college-retry hidden>Retry college search</button>
 </div>
-</form></details>
+</form></section>

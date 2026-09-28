@@ -16,3 +16,5 @@
     status.textContent = query ? `${count} matching task${count === 1 ? '' : 's'}. ${count ? '' : 'Try another title or course.'}` : '';
   });
 })();
+
+(() => {const form=document.getElementById('task-form');const saved=form?.elements.saved_course;const custom=form?.elements.subject;if(!saved||!custom)return;const update=()=>{custom.disabled=Boolean(saved.value);custom.closest('label').hidden=Boolean(saved.value);};saved.addEventListener('change',update);update();})();

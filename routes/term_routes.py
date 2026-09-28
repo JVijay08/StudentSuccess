@@ -35,8 +35,8 @@ def course_values(form):
     values['requirement_area'] = form.get('requirement_area','unspecified')
     if values['requirement_area'] not in REQUIREMENT_AREAS:
         errors.append('Choose a valid course requirement category.')
-    if values['status'] not in {'considering', 'planned', 'completed'}:
-        errors.append('Choose considering, planned, or completed.')
+    if values['status'] not in {'considering', 'planned', 'in_progress', 'completed'}:
+        errors.append('Choose considering, planned, in progress, or completed.')
     values['school_year'] = None
     if values['enrollment_type'] == 'dual':
         try:

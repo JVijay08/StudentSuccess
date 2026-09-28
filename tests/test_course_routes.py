@@ -20,7 +20,7 @@ def test_course_explorer_filters_catalog(authed_client):
 def test_program_catalog_selection_overrides_stale_state_selection(authed_client):
     complete_profile(authed_client)
 
-    response = authed_client.get("/courses?state=GA&catalog=ap")
+    response = authed_client.get("/courses?state=GA&catalog=ap&q=AP+Cybersecurity&nonpersonal_confirmed=yes")
 
     assert response.status_code == 200
     assert b"AP Cybersecurity" in response.data

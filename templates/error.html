@@ -19,7 +19,7 @@
       <p class="lede">{{ message }}</p>
       <div class="error-actions">
         {% if session.get('user_id') %}<a class="error-primary" href="{{ url_for('main.dashboard') }}">Return to Dashboard</a>{% else %}<a class="error-primary" href="{{ url_for('main.home') }}">Return home</a>{% endif %}
-        <button type="button" onclick="window.location.reload()">Try again</button>
+        <a href="{{ url_for('auth.login') }}">Sign in again</a>{% if request.method == 'GET' and status_code == 500 %}<button type="button" onclick="window.location.reload()">Try again</button>{% endif %}
       </div>
     </section>
   </main>

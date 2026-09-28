@@ -78,6 +78,9 @@ def _selected_catalog(value):
 
 
 def _catalog_selection(args_or_form):
+    scope = args_or_form.get("scope", "")
+    if scope in course_service.get_catalogs():
+        return scope, course_service.get_catalogs()[scope].get('state') or ''
     state_code = args_or_form.get("state", "").strip().upper()
     requested_catalog = args_or_form.get("catalog", "").strip()
     catalogs = course_service.get_catalogs()
@@ -112,7 +115,7 @@ def course_explorer(course_errors=None, editing=None):
         flash(error, "error")
     if filter_post and not privacy_errors:
         # Restore searches through an opaque key, without putting free text in URLs.
-        keys = ("q", "state", "catalog", "grade", "subject", "course_type", "rigor", "workload", "career", "course_source")
+        keys = ("scope", "q", "state", "catalog", "grade", "subject", "course_type", "rigor", "workload", "career", "course_source")
         snapshots = session.get("course_searches", [])[-2:]
         key = token_hex(8)
         snapshots.append({"key": key, "filters": {name: submitted.get(name, "")[:120 if name == "q" else 60] for name in keys if submitted.get(name)}})
@@ -146,10 +149,18 @@ def course_explorer(course_errors=None, editing=None):
         and (not filters['grade_level'] or c.school_year==filters['grade_level'])]
     if source=='dual': courses=[]
     if source=='high_school': dual_courses=[]
+    total_courses = len(courses)
+    page_count = max(1, (total_courses + 29) // 30)
+    page = max(1, min(request.args.get('page', 1, type=int) or 1, page_count))
+    page_args = {key: value for key, value in request.args.items() if key not in {'page', 'nav'}}
+    previous_page = same_page('courses.course_explorer', page=page-1, **page_args) if page > 1 else None
+    next_page = same_page('courses.course_explorer', page=page+1, **page_args) if page < page_count else None
+    courses = courses[(page-1)*30:page*30]
     return render_template(
         "courses.html",
         profile=profile,
         courses=courses,
+        total_courses=total_courses, page=page, page_count=page_count, previous_page=previous_page, next_page=next_page,
         filters=submitted,
         options=course_service.get_catalog_options(catalog_id),
         catalogs=course_service.get_catalogs(),
@@ -158,6 +169,8 @@ def course_explorer(course_errors=None, editing=None):
         state_code=state_code,
         planned_ids=_planned_ids(profile, catalog_id),
         comparison_examples=suggested_pairs(courses, profile.grade),
+        catalog_note=course_service.get_catalogs()[catalog_id]["description"],
+        excluded_count=sum(course_service.course_title_needs_review(c) for c in course_service.load_courses(catalog_id)),
         course_source=source, dual_courses=dual_courses, errors=course_errors or [], **context,
     ), (400 if privacy_errors else 200)
 
@@ -201,6 +214,10 @@ def add_to_plan(course_id):
     if course is None:
         abort(404)
 
+    if course.get('quality_review'):
+        flash("This imported course needs source verification before it can be added. Your existing plan is unchanged.", "warning")
+        return redirect(return_url("courses.course_explorer", catalog=catalog_id))
+
     school_year = request.form.get("school_year", type=int)
     if school_year not in {9, 10, 11, 12}:
         flash("Choose a grade year from 9th through 12th.", "error")
@@ -208,7 +225,7 @@ def add_to_plan(course_id):
 
     term = request.form.get("term", "Full year").strip() or "Full year"
     status = request.form.get("status", "considering").strip().lower()
-    if status not in {"considering", "planned", "completed"}:
+    if status not in {"considering", "planned", "in_progress", "completed"}:
         status = "considering"
 
     existing = PlannedCourse.query.filter_by(

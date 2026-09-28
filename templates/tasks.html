@@ -48,6 +48,7 @@
         <label>Title
           <input name="title" placeholder="Research paper: first draft" data-nonpersonal-input maxlength="160" value="{{ form_data.get('title', '') }}" required>
         </label>
+        {% if saved_courses %}<label>Choose a saved course<select name="saved_course"><option value="">Other subject / personal task</option>{% for course in saved_courses %}<option value="{{ course }}" {% if form_data.get('saved_course', form_data.get('subject')) == course %}selected{% endif %}>{{ course }}</option>{% endfor %}</select></label>{% endif %}
         <label>Course / subject
           <input name="subject" list="subject-suggestions" data-nonpersonal-input maxlength="80" value="{{ form_data.get('subject', '') }}">
         </label>
@@ -58,7 +59,7 @@
         <label>Estimated minutes
           <input type="number" name="estimated_minutes" min="1" max="{{ MAX_TASK_MINUTES }}" value="{{ form_data.get('estimated_minutes', '') }}" required>
         </label>
-<details class="more-options"><summary>Schedule, repeat &amp; other details</summary><label>Exact due time (optional)<input type="time" name="due_time" value="{{ form_data.get('due_time', '') }}"><small>Defaults to 11:59 PM in your planner timezone.</small></label>        <label>Task type
+<details class="more-options"><summary>Schedule, repeat &amp; other details</summary>{% include '_break_allowance.html' %}<label>Exact due time (optional)<input type="time" name="due_time" value="{{ form_data.get('due_time', '') }}"><small>Defaults to 11:59 PM in your planner timezone.</small></label>        <label>Task type
           <input name="task_type" data-nonpersonal-input maxlength="40" placeholder="Homework, project, exam..." value="{{ form_data.get('task_type', '') }}">
         </label>
         <label>Planned start

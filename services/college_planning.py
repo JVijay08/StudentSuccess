@@ -43,7 +43,7 @@ def term_summary(user):
     courses=TermCourse.query.filter_by(user_id=user.id).all()
     terms=sorted({c.term for c in courses})
     term=preferences.college_term or (terms[0] if len(terms)==1 else '')
-    planned=[c for c in courses if c.term==term and c.status=='planned']
+    planned=[c for c in courses if c.term==term and c.status in {'planned','in_progress'}]
     return dict(term=term,terms=terms,course_count=len(planned),
         credits=sum(c.credits or 0 for c in planned),unknown_credits=sum(c.credits is None for c in planned),
         weekly_hours=sum(c.weekly_hours for c in planned),goal=preferences.term_credit_goal,

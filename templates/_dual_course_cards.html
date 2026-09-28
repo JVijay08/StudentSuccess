@@ -1,5 +1,5 @@
 {% for course in dual_courses %}{% set college=college_by_id(course.institution_id) %}<article class="course-card dual-course-card">
-<div class="course-card-top"><span class="tag">College / dual enrollment</span><span class="saved-label">{{ course.status|title }}</span></div>
+<div class="course-card-top"><span class="tag">College / dual enrollment</span><span class="saved-label">{{ course.status|replace('_',' ')|title }}</span></div>
 <h3>{{ course.course_code ~ ': ' if course.course_code else '' }}{{ course.title }}</h3><p class="course-meta">{{ college.name if college else 'College not selected' }} &middot; {{ ('Grade ' ~ course.school_year) if course.school_year else 'Choose a grade when editing' }} &middot; {{ course.term }}</p>
 <p>{{ course.weekly_hours }} study hours / week{% if course.credits is not none %} &middot; {{ course.credits }} college credits{% endif %}</p>
 <details><summary>Course details</summary><p>{{ course.description or 'No description added.' }}</p><p>Student-entered course; check eligibility and credit with your school and college.</p></details>

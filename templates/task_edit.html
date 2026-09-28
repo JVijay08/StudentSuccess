@@ -48,7 +48,7 @@
           <label for="estimated_minutes">Estimated minutes</label>
           <input type="number" id="estimated_minutes" name="estimated_minutes" min="1" max="{{ MAX_TASK_MINUTES }}" value="{{ form_data.get('estimated_minutes', '') }}" required>
         </div>
-        <details class="more-options"><summary>Schedule, challenge &amp; other details</summary>
+        <details class="more-options"><summary>Schedule, challenge &amp; other details</summary>{% include '_break_allowance.html' %}
         <div class="form-group">
           <label for="task_type">Task type</label>
           <input type="text" id="task_type" name="task_type" data-nonpersonal-input maxlength="40" placeholder="Homework, project, exam..." value="{{ form_data.get('task_type', '') }}">
@@ -94,9 +94,7 @@
         </div>
       </form>
     </section>
-    {% if not task.parent_task_id %}<section class="panel"><h2>Subtasks and work blocks</h2><p>{{ task.progress }}% complete &middot; {{ task.children|length }} subtasks. Complete each subtask to complete the project.</p><progress value="{{ task.progress }}" max="100">{{ task.progress }}%</progress><ul>{% for child in task.children %}<li><a href="{{ nav_url('tasks.edit_task', task_id=child.id) }}">{{ child.title }}</a> &middot; {{ child.estimated_minutes }} min &middot; {{ child.status|replace('_', ' ') }}</li>{% endfor %}</ul>
-    {% if task.status != 'completed' and not task.recurrence_rule %}<form method="post" action="{{ url_for('tasks.add_subtask', task_id=task.id) }}" data-nonpersonal-form>{% include '_navigation_fields.html' %}<label>Subtask title<input name="title" maxlength="160" placeholder="Find sources, outline, draft, revise?" data-nonpersonal-input required></label><label>Estimated minutes<input name="estimated_minutes" type="number" min="1" max="{{ MAX_TASK_MINUTES }}" required></label><details><summary>Override dates</summary><label>Due date and time<input type="datetime-local" name="due_at"></label><label>Planned start<input type="datetime-local" name="planned_start_at"></label></details>{% include '_nonpersonal_confirmation.html' %}<button>Add subtask</button></form>
-    {% if not task.children and task.status == 'not_started' %}<form method="post" action="{{ url_for('tasks.split_task', task_id=task.id) }}">{% include '_navigation_fields.html' %}<button>Create {{ settings.work_session_minutes }}-minute work blocks</button></form>{% endif %}{% endif %}</section>{% endif %}
+    <p><a href="{{ nav_url('tasks.task_detail',task_id=task.id) }}">Open task steps and progress</a></p>
   </main>
   <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
   <script src="{{ url_for('static', filename='js/nonpersonal.js') }}" defer></script>

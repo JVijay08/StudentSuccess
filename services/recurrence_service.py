@@ -89,6 +89,7 @@ def next_occurrence_fields(session_task) -> dict:
         "subject": session_task.subject,
         "task_type": session_task.task_type,
         "estimated_minutes": session_task.estimated_minutes,
+        "break_minutes": getattr(session_task, 'break_minutes', 0) or 0,
         "difficulty": session_task.difficulty,
         "interest_level": session_task.interest_level,
         "recurrence_rule": rule,  # copied forward

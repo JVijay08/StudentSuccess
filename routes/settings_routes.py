@@ -162,6 +162,7 @@ def export_data():
                 "id": task.id,
                 "parent_task_id": task.parent_task_id,
                 "actual_minutes": task.actual_minutes,
+                "break_minutes": task.break_minutes,
                 "started_at": task.started_at.isoformat() if task.started_at else None,
                 "completed_at": task.completed_at.isoformat() if task.completed_at else None,
                 "title": task.title,

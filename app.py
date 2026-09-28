@@ -118,6 +118,10 @@ def create_app(test_config=None):
     def current_time():
         return {"utc": datetime.now(timezone.utc).isoformat()}, 200, {"Cache-Control": "no-store"}
 
+    @app.errorhandler(400)
+    def expired_or_invalid_form(_error):
+        return render_template("error.html", status_code=400, heading="This action could not be saved.", message="The form may have expired or contained invalid information. Return to your dashboard or sign in again, then retry. Previously saved work is unchanged."), 400
+
     @app.errorhandler(404)
     def page_not_found(_error):
         return render_template("error.html", status_code=404, heading="That page is not here.", message="The link may be outdated, or the item may have been removed."), 404
@@ -146,7 +150,7 @@ def _migrate_feedback_columns():
     """Additive migration; existing tasks, history, and preferences are retained."""
     additions = {
         "users": {"email": "VARCHAR(254)", "auth_version": "INTEGER NOT NULL DEFAULT 0", "onboarding_completed": "BOOLEAN NOT NULL DEFAULT FALSE"},
-        "tasks": {"parent_task_id": "INTEGER REFERENCES tasks(id)", "external_uid": "VARCHAR(255)"},
+        "tasks": {"break_minutes": "INTEGER NOT NULL DEFAULT 0", "parent_task_id": "INTEGER REFERENCES tasks(id)", "external_uid": "VARCHAR(255)"},
         "user_settings": {"academic_context": "VARCHAR(20) NOT NULL DEFAULT 'high_school'", "institution_id": "VARCHAR(12)",
             "college_program": "VARCHAR(120) NOT NULL DEFAULT ''", "college_term": "VARCHAR(60) NOT NULL DEFAULT ''", "term_credit_goal": "FLOAT"},
         "term_courses": {
