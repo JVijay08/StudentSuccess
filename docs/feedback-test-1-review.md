@@ -14,7 +14,7 @@ Reviewed September 26, 2026 against commit `4b6bfc4` and all three pages, includ
 
 Release validation: 346 tests passed, 213 responsive views without detected layout issues or JavaScript errors, and live start/complete/empty-state checks passed. These checks do not establish that the remaining feedback below is resolved.
 
-## Remaining checklist
+## Original remaining checklist (superseded by implementation status)
 
 | Priority | Feedback | Finding and next action |
 | --- | --- | --- |
@@ -43,4 +43,8 @@ Release validation: 346 tests passed, 213 responsive views without detected layo
 4. Consistent mobile deadlines and discoverable task/subtask detail flow.
 5. Evaluate break flexibility after testing the simpler task flow.
 
-This is a review and backlog, not a claim that these remaining items have shipped.
+This table preserves the original findings. The application fixes were subsequently
+implemented and verified; consult the linked implementation status rather than
+treating this historical table as an active backlog. The September 28 recheck found
+no additional unimplemented application item in this table. Further catalog/source
+data additions are excluded from the current request.

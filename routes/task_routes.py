@@ -129,6 +129,16 @@ def _validate_task_form(form, timezone_name="America/New_York"):
         errors.append("Select a valid recurrence option.")
         recurrence_rule = None
 
+    occurrences = []
+    if form.get('repeat_mode') == 'bounded' and recurrence_rule and due_at:
+        from zoneinfo import ZoneInfo
+        try:
+            start_text = form.get('repeat_start', '').strip()
+            start = datetime.strptime(start_text, '%Y-%m-%d').date() if start_text else datetime.now(ZoneInfo(timezone_name)).date()
+            occurrences = recurrence_service.bounded_dates(start, due_at, recurrence_rule, timezone_name)
+        except (ValueError, OverflowError) as exc:
+            errors.append(str(exc) if str(exc).startswith(('Repeat start', 'Choose a range')) else 'Enter a valid repeat start date and range.')
+
     try:
         break_minutes = int(form.get('break_minutes', '0') or '0')
         if not 0 <= break_minutes <= MAX_TASK_MINUTES: raise ValueError
@@ -147,6 +157,7 @@ def _validate_task_form(form, timezone_name="America/New_York"):
         "interest_level": interest_level,
         "recurrence_rule": recurrence_rule,
         "reminder_enabled": reminder_enabled,
+        "occurrences": occurrences,
     }
     return cleaned, errors
 
@@ -172,16 +183,27 @@ def tasks():
                 title=cleaned["title"],
                 subject=cleaned["subject"],
                 task_type=cleaned["task_type"],
-                due_at=cleaned["due_at"],
+                due_at=cleaned['occurrences'][0] if cleaned['occurrences'] else cleaned["due_at"],
                 planned_start_at=cleaned["planned_start_at"],
                 estimated_minutes=cleaned["estimated_minutes"],
                 break_minutes=cleaned["break_minutes"],
                 difficulty=cleaned["difficulty"],
                 interest_level=cleaned["interest_level"],
-                recurrence_rule=cleaned["recurrence_rule"],
+                recurrence_rule=None if cleaned['occurrences'] else cleaned["recurrence_rule"],
                 reminder_enabled=cleaned["reminder_enabled"],
             )
             db.session.add(task)
+            if cleaned['occurrences']:
+                planned = cleaned['planned_start_at']
+                for deadline in cleaned['occurrences'][1:]:
+                    if planned:
+                        planned = recurrence_service.advance(planned, cleaned['recurrence_rule'], settings.timezone_name)
+                    db.session.add(Task(student_profile_id=profile.id, title=task.title, subject=task.subject,
+                        task_type=task.task_type, due_at=deadline, planned_start_at=planned,
+                        estimated_minutes=task.estimated_minutes, break_minutes=task.break_minutes,
+                        difficulty=task.difficulty, interest_level=task.interest_level,
+                        reminder_enabled=task.reminder_enabled))
+                flash(f"Added {len(cleaned['occurrences'])} occurrences through {_to_local_input(cleaned['due_at'], settings.timezone_name)[:10]}. Each date can be edited or completed independently.", 'success')
             db.session.commit()
             if task.recurrence_rule is not None:
                 prep = Task(
@@ -243,6 +265,7 @@ def tasks():
         sort=sort,
         errors=errors,
         form_data=request.form or {"estimated_minutes": settings.default_task_minutes, "subject": request.args.get("subject", selected_course)[:80]},
+        repeat_today=_to_local_input(datetime.now(timezone.utc), settings.timezone_name)[:10],
         settings=settings,
     )
 
@@ -564,6 +587,7 @@ def add_subtask(task_id):
     elif sum(c.estimated_minutes for c in parent.children) + cleaned["estimated_minutes"] > parent.estimated_minutes:
         flash("Subtask estimates exceed the project total. Increase the project estimate first.", "error")
     else:
+        cleaned.pop('occurrences', None)
         child = Task(student_profile_id=parent.student_profile_id, parent=parent, **cleaned)
         db.session.add(child)
         _sync_parent(child)

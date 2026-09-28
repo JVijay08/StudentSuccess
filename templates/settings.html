@@ -47,7 +47,7 @@
         <label>Quiet hours start<input type="time" name="quiet_start" value="{{ settings.quiet_start }}"></label><label>Quiet hours end<input type="time" name="quiet_end" value="{{ settings.quiet_end }}"></label>
         <label>Snooze duration<select name="snooze_minutes">{% for minutes in [10,15,30,60,120,1440] %}<option value="{{ minutes }}" {% if settings.snooze_minutes==minutes %}selected{% endif %}>{% if minutes==1440 %}1 day{% else %}{{ minutes }} minutes{% endif %}</option>{% endfor %}</select></label>
         <label class="check"><input type="checkbox" name="calendar_export_enabled" {% if settings.calendar_export_enabled %}checked{% endif %}> Allow calendar export</label>
-      </div>{% if settings.calendar_export_enabled %}<a class="secondary-link" href="{{ nav_url('settings.export_calendar') }}">Download active tasks as calendar</a>{% endif %}</section>
+      </div>{% if settings.calendar_export_enabled %}<a class="secondary-link" href="{{ nav_url('settings.calendar_help') }}">Google Calendar &amp; calendar export</a>{% endif %}</section>
 
       <section><h2>Date, time, and session</h2><div class="fields">
         <label>Time zone<select name="timezone_name">{% for zone in timezones %}<option value="{{ zone }}" {% if settings.timezone_name==zone %}selected{% endif %}>{{ zone }}</option>{% endfor %}</select></label>

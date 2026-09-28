@@ -12,6 +12,7 @@ from calendar import monthrange
 from datetime import datetime, timedelta, timezone
 
 from services.datetime_util import EASTERN
+from zoneinfo import ZoneInfo
 
 
 ALLOWED_RULES = {"daily", "weekly", "biweekly", "monthly"}
@@ -37,7 +38,7 @@ def _as_utc(value: datetime) -> datetime:
     return value.astimezone(timezone.utc)
 
 
-def advance(dt: datetime, rule: str) -> datetime:
+def advance(dt: datetime, rule: str, timezone_name: str = 'America/New_York') -> datetime:
     """Advance a tz-aware UTC datetime by one Recurrence_Interval, DST-safe.
 
     Strategy: convert to Eastern local wall-clock, perform the calendar step in
@@ -61,7 +62,7 @@ def advance(dt: datetime, rule: str) -> datetime:
     if rule not in ALLOWED_RULES:
         raise ValueError(f"Unknown recurrence rule: {rule!r}")
 
-    local = _as_utc(dt).astimezone(EASTERN)
+    local = _as_utc(dt).astimezone(ZoneInfo(timezone_name))
 
     if rule in _DAY_DELTAS:
         advanced_local = local + _DAY_DELTAS[rule]
@@ -73,6 +74,21 @@ def advance(dt: datetime, rule: str) -> datetime:
         advanced_local = local.replace(year=year, month=month, day=day)
 
     return advanced_local.astimezone(timezone.utc)
+
+
+def bounded_dates(start_date, end, rule, timezone_name='America/New_York'):
+    """Create inclusive local-calendar deadlines, bounded to one year's daily work."""
+    local_end = _as_utc(end).astimezone(ZoneInfo(timezone_name))
+    if start_date > local_end.date():
+        raise ValueError('Repeat start must be on or before the repeat-through date.')
+    current = local_end.replace(year=start_date.year, month=start_date.month, day=start_date.day).astimezone(timezone.utc)
+    dates = []
+    while current <= _as_utc(end):
+        dates.append(current)
+        if len(dates) > 366:
+            raise ValueError('Choose a range with at most 366 occurrences.')
+        current = advance(current, rule, timezone_name)
+    return dates
 
 
 def next_occurrence_fields(session_task) -> dict:

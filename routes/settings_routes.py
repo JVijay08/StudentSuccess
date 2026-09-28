@@ -204,21 +204,14 @@ def export_calendar():
         abort(404)
     profile = StudentProfile.query.filter_by(user_id=g.current_user.id).first()
     tasks = [] if profile is None else Task.query.filter(Task.student_profile_id == profile.id, Task.status != "completed").order_by(Task.due_at).all()
-    lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//StudentSuccess//Task Calendar//EN", "CALSCALE:GREGORIAN"]
-    for task in tasks:
-        due = task.due_at
-        if due.tzinfo is None:
-            due = due.replace(tzinfo=timezone.utc)
-        lines.extend([
-            "BEGIN:VEVENT",
-            f"UID:task-{task.id}@studentsuccess",
-            f"DTSTAMP:{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}",
-            f"DTSTART:{due.astimezone(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}",
-            f"SUMMARY:{_ics_escape(task.title)} due",
-            "END:VEVENT",
-        ])
-    lines.append("END:VCALENDAR")
-    return Response("\r\n".join(lines) + "\r\n", mimetype="text/calendar", headers={"Content-Disposition": "attachment; filename=studentsuccess-tasks.ics"})
+    from services.calendar_export import calendar_file
+    return Response(calendar_file(tasks), mimetype="text/calendar", headers={"Content-Disposition": "attachment; filename=studentsuccess-tasks.ics", 'Cache-Control':'no-store'})
+
+
+@settings_bp.get('/calendar')
+@login_required
+def calendar_help():
+    return render_template('calendar.html', settings=get_or_create_settings(g.current_user))
 
 
 @settings_bp.post("/settings/clear-history")

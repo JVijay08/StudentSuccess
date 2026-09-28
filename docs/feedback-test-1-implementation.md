@@ -24,6 +24,20 @@ Updated September 27, 2026. Reviewed all three PDF pages and their embedded scre
 
 ## Source limitation
 
+### September 28 recheck
+
+Reviewed this document and every row of the original review against the current
+routes, templates, services, and regression tests. All application items above are
+implemented. The course picker now uses one saved-course dropdown; the optional
+custom-subject field no longer opens a second browser suggestion dropdown.
+Further catalog database additions and source-record corrections are deferred per
+the user's instruction. Existing quarantine and coverage notes remain in place.
+
+Related follow-up changes: an interactive practice tutorial replaces the public
+demo entry; new task repeats use explicit start/end dates and create individual
+occurrences through the end date; Google Calendar supports a reviewed one-event
+handoff and bulk ICS copies. These changes require no new database columns.
+
 Quarantined imports have not been guessed or silently reassigned. Their original sources must be checked before those individual records return to search. Catalogs remain partial where their sources are partial. [Catalog quality notes](course-catalog-quality.md) document verified additions and the audit command for affected IDs.
 
 ## Verification

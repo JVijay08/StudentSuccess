@@ -999,7 +999,7 @@ def test_create_form_renders_recurrence_select(app, authed_client):
     assert response.status_code == 200
     body = response.data
     assert b'name="recurrence_rule"' in body
-    assert b">None<" in body
+    assert b">Does not repeat<" in body
     assert b">Daily<" in body
     assert b">Weekly<" in body
     assert b">Every 2 weeks<" in body

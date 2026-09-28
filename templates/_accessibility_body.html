@@ -7,7 +7,7 @@
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m9 3 1-1h4l1 1 .5 2 2 1 2-.5 1 1 2 3-.5 1.5-1.5 1v2l1.5 1 .5 1.5-2 3-1 1-2-.5-2 1-.5 2-1 1h-4l-1-1-.5-2-2-1-2 .5-1-1-2-3 .5-1.5 1.5-1v-2l-1.5-1L1 9.5l2-3 1-1 2 .5 2-1Z" transform="translate(1 0) scale(.9)"/><circle cx="12" cy="12" r="3.2"/></svg>
     </summary>
     <div class="utility-panel" role="group" aria-label="Workspace options">
-      <p>Workspace options</p>
+      <p>Workspace options</p><a href="{{ nav_url('settings.calendar_help') }}">Google Calendar <span>Add task deadlines</span></a>
       <a href="{{ nav_url('settings.settings') }}">Settings <span>Appearance, preferences &amp; account</span></a>
       <a href="{{ nav_url('main.updates') }}">Updates <span>What&apos;s changed</span></a>
       {% if not session.get('tutorial_mode') %}<form method="post" action="{{ url_for('tutorial.start') }}"><input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><button type="submit">Interactive tutorial</button></form>{% endif %}
