@@ -33,6 +33,8 @@ def create_app(test_config=None):
     db.init_app(app)
 
     app.register_blueprint(auth_bp)
+    from routes.task_bulk_routes import task_bulk_bp
+    app.register_blueprint(task_bulk_bp)
     from services.calendar_export import google_deadline_url
     app.jinja_env.globals['google_deadline_url'] = google_deadline_url
     from routes.tutorial_routes import tutorial_bp

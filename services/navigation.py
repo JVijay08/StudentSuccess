@@ -6,6 +6,7 @@ from itsdangerous import BadData, URLSafeSerializer
 from werkzeug.exceptions import HTTPException
 
 PAGES = {
+    "task_bulk.select": "task selection",
     "colleges.browse": "college directory", "terms.edit": "college course editor",
     "tasks.import_calendar": "calendar import",
     "terms.plan": "term plan",
