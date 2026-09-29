@@ -21,6 +21,8 @@ DATABASE_URL = normalize_database_url(os.environ.get("DATABASE_URL"))
 
 
 class config:
+    PUBLIC_SITE_URL = os.environ.get('PUBLIC_SITE_URL', 'https://studentsuccess.onrender.com').rstrip('/')
+    GOOGLE_SITE_VERIFICATION = os.environ.get('GOOGLE_SITE_VERIFICATION', '')
     SQLALCHEMY_DATABASE_URI = DATABASE_URL or f"sqlite:///{DATABASE_PATH.as_posix()}"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SESSION_REFRESH_EACH_REQUEST = True

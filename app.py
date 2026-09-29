@@ -33,6 +33,8 @@ def create_app(test_config=None):
     db.init_app(app)
 
     app.register_blueprint(auth_bp)
+    from routes.seo_routes import seo_bp
+    app.register_blueprint(seo_bp)
     from routes.task_bulk_routes import task_bulk_bp
     app.register_blueprint(task_bulk_bp)
     from services.calendar_export import google_deadline_url
@@ -56,7 +58,7 @@ def create_app(test_config=None):
 
     @app.before_request
     def require_account_setup():
-        if request.endpoint == 'static' or not session.get('user_id'):
+        if request.endpoint in {'static', 'seo.robots', 'seo.sitemap'} or not session.get('user_id'):
             return None
         from flask import g, redirect, url_for
         from services.auth_service import login_required

@@ -5,18 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#18283d">
-  <meta name="description" content="StudentSuccess helps high-school and college students choose a manageable course load and start assignments before deadline pressure takes over.">
-  <meta property="og:title" content="StudentSuccess | Plan less. Start sooner.">
-  <meta property="og:description" content="A procrastination-aware academic planning prototype for high-school and college students.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ url_for('main.home', _external=True) }}">
-  <meta property="og:image" content="{{ url_for('static', filename='images/studentsuccess-social-preview.png', _external=True) }}">
-  <meta property="og:image:alt" content="StudentSuccess — Plan less. Start sooner.">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="StudentSuccess | Plan less. Start sooner.">
-  <meta name="twitter:description" content="A procrastination-aware planning prototype for high-school and college students.">
-  <meta name="twitter:image" content="{{ url_for('static', filename='images/studentsuccess-social-preview.png', _external=True) }}">
-  <title>StudentSuccess | Plan less. Start sooner.</title>
+  <title>{{ seo.title }}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
   {% include '_accessibility_head.html' %}
 </head>
@@ -32,7 +21,7 @@
       <div>
         <p class="eyebrow notebook-kicker"><span aria-hidden="true">&#10022;</span> YOUR NEXT CHAPTER / HIGH SCHOOL &amp; COLLEGE</p>
         <h1>Plan less.<br><em>Start sooner.</em></h1>
-        <p class="lede">StudentSuccess is an academic planner that recommends which assignment to start next, tracks planned versus actual work, and helps you plan your course load.</p>
+        <p class="lede">StudentSuccess is an academic planner for high-school and college students. Organize assignments, find your next task, and plan a manageable course load.</p>
         <div class="hero-actions"><form method="post" action="{{ url_for('tutorial.start') }}">{% include '_navigation_fields.html' %}<input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><button class="primary-action">Start tutorial</button></form>
           <a class="secondary-action" href="{{ nav_url('auth.register') }}">Create an account</a>
           <a href="{{ nav_url('auth.login') }}">Sign in</a>
@@ -47,6 +36,7 @@
     <section class="storage-choice"><p class="eyebrow">KEEP YOUR PLACE</p><h2>A planner you can return to</h2><p>A username and password let you pick up your planner on another device. No email address or real name is needed.</p><p>The tutorial contains sample assignments and course plans. The free server may take up to a minute to wake.</p></section>
 
     <footer>
+      <p><a href="{{ url_for('seo.features') }}">Student planner features &amp; FAQ</a></p>
       <p><a href="{{ nav_url('main.updates') }}">What&apos;s new &rarr;</a></p>
       <p>Planning estimates are informational. Confirm course requirements and availability with your school counselor.</p>
     </footer>
