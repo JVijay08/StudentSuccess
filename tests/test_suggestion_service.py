@@ -47,6 +47,20 @@ def _task(
 # history_bonus thresholds
 # ---------------------------------------------------------------------------
 
+def test_recently_missed_start_precedes_nearer_deadline_pending_user_research():
+    """Record current policy, not evidence that students prefer this ordering."""
+    now = datetime(2026, 9, 29, 12, tzinfo=timezone.utc)
+    missed = _task(due_at=now + timedelta(days=4),
+                   planned_start_at=now - timedelta(minutes=5))
+    urgent = _task(due_at=now + timedelta(hours=12),
+                   planned_start_at=now + timedelta(hours=1),
+                   estimated_minutes=120, difficulty='high', interest_level='low')
+    for inputs in ([urgent, missed], [missed, urgent]):
+        rows = get_suggested_tasks(inputs, now=now)
+        assert rows[0]['task'] is missed
+        assert rows[0]['score'] < rows[1]['score']
+
+
 def test_history_bonus_zero_when_avg_at_or_below_one_hour():
     task = _task(subject="Math")
     assert history_bonus(task, {"Math": 1.0}) == 0

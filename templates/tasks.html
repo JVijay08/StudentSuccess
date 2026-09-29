@@ -35,7 +35,8 @@
     {% endwith %}
 
 
-    <details class="panel task-entry" {% if errors or not task_rows %}open{% endif %}><summary>Add a task</summary>
+    <details class="panel task-entry" {% if errors or not task_rows or using_template %}open{% endif %}><summary>Add a task</summary>
+      {% if using_template %}<p role="status">Template ready. Choose a new due date, then add your task. The original stays unchanged.</p>{% endif %}
       <p>What needs doing, when is it due, and about how long will it take? Add smaller steps after saving.</p>
       {% if errors %}
         <div class="errors" role="alert">
@@ -56,6 +57,7 @@
           <input type="date" name="due_at" value="{{ form_data.get('due_at', '') }}" required>
         </label>
 
+        <div class="due-shortcuts" data-planner-today="{{ repeat_today }}" hidden><button type="button" class="secondary" data-due-offset="0">Today</button><button type="button" class="secondary" data-due-offset="1">Tomorrow</button><button type="button" class="secondary" data-due-offset="7">In a week</button></div>
         <label>Due time (optional)<input type="time" name="due_time" value="{{ form_data.get('due_time', '') }}"><small>11:59 PM by default, in {{ settings.timezone_name }}.</small></label>
         <input type="hidden" name="repeat_mode" value="bounded">
         <label>Repeat
@@ -119,7 +121,7 @@
       {% endif %}
     </section>
     <details class="panel" id="completed-tasks"><summary>Completed ({{ completed_tasks|length }})</summary>
-    {% for task in completed_tasks %}<article id="task-{{ task.id }}" data-paper-key="task-{{ task.id }}" data-paper-status="completed"><h3>{{ task.title }}</h3><p>Completed {{ task.completed_at|planner_time }} &middot; Estimated {{ task.estimated_minutes }} min &middot; Actual {{ task.actual_minutes or 'Not recorded' }} min</p><details><summary>Start history and actions</summary><p>Planned {{ task.planned_start_at|planner_time }} &middot; Started {{ task.started_at|planner_time }}</p>{% if not task.recurrence_rule %}<form method="post" action="{{ url_for('tasks.undo_complete_task', task_id=task.id) }}">{% include '_navigation_fields.html' %}<button>Undo completion</button></form>{% endif %}<form method="post" action="{{ url_for('tasks.delete_task', task_id=task.id) }}">{% include '_navigation_fields.html' %}<button onclick="return confirm('Delete this completed task and its history?')">Delete</button></form></details></article>{% else %}<p>No completed tasks yet.</p>{% endfor %}</details>
+    {% for task in completed_tasks %}<article id="task-{{ task.id }}" data-paper-key="task-{{ task.id }}" data-paper-status="completed"><h3>{{ task.title }}</h3><p>Completed {{ task.completed_at|planner_time }} &middot; Estimated {{ task.estimated_minutes }} min &middot; Actual {{ task.actual_minutes or 'Not recorded' }} min</p><details><summary>Start history and actions</summary><p><a href="{{ nav_url('tasks.tasks', template=task.id, _anchor='task-form') }}">Use as template</a></p><p>Planned {{ task.planned_start_at|planner_time }} &middot; Started {{ task.started_at|planner_time }}</p>{% if not task.recurrence_rule %}<form method="post" action="{{ url_for('tasks.undo_complete_task', task_id=task.id) }}">{% include '_navigation_fields.html' %}<button>Undo completion</button></form>{% endif %}<form method="post" action="{{ url_for('tasks.delete_task', task_id=task.id) }}">{% include '_navigation_fields.html' %}<button onclick="return confirm('Delete this completed task and its history?')">Delete</button></form></details></article>{% else %}<p>No completed tasks yet.</p>{% endfor %}</details>
 
     <details class="transfer-tools"><summary>Import or export assignments</summary>    {% if settings.calendar_export_enabled %}<p><a href="{{ nav_url('settings.calendar_help') }}">Google Calendar &amp; calendar export</a></p>{% endif %}
 

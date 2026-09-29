@@ -4,8 +4,12 @@
   if (!guide) return;
   const show=document.getElementById('tutorial-show');
   const hint=document.getElementById('tutorial-hint');
+  const back=document.createElement('button');
+  back.type='button';back.textContent='Back to tutorial';back.className='tutorial-return';back.hidden=true;
+  document.body.append(back);
+  back.addEventListener('click',()=>{clear();document.getElementById('tutorial-panel').open=true;show.focus();guide.scrollIntoView({block:'start',behavior:'instant'});});
   let highlighted;
-  const clear=()=>{highlighted?.classList.remove('tutorial-target');highlighted=null;};
+  const clear=()=>{highlighted?.classList.remove('tutorial-target');highlighted=null;back.hidden=true;};
   show.hidden=false;
   show.addEventListener('click',()=>{
     clear();
@@ -16,6 +20,7 @@
     }
     for(let parent=target.parentElement;parent;parent=parent.parentElement) if(parent.tagName==='DETAILS') parent.open=true;
     highlighted=target;
+    back.hidden=false;
     target.classList.add('tutorial-target');
     if (!target.matches('a,button,input,select,textarea,summary,[tabindex]')) target.setAttribute('tabindex','-1');
     target.focus({preventScroll:true});

@@ -18,3 +18,4 @@ body .task-menu>summary {display:flex;align-items:center;justify-content:center;
 body .streamlined-task {position:relative;padding-right:84px;}
 .streamlined-task>.task-menu {position:absolute;right:20px;top:20px;}
 @media(max-width:680px) {body .streamlined-task {padding-right:72px;}.streamlined-task>.task-menu {right:12px;top:16px;}.task-menu-panel {width:min(300px,calc(100vw - 80px));}.task-menu-panel .schedule-shortcuts {display:grid;grid-template-columns:1fr;}}
+.due-shortcuts{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 12px;}.due-shortcuts[hidden]{display:none;}.due-shortcuts button{width:auto;min-height:44px;padding:8px 12px;}

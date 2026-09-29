@@ -23,6 +23,18 @@
   const form=document.getElementById('task-form');
   if(!form)return;
   const rule=form.elements.recurrence_rule;
+  const shortcuts=form.querySelector('.due-shortcuts');
+  if(shortcuts){
+    shortcuts.hidden=false;
+    shortcuts.addEventListener('click',event=>{
+      const button=event.target.closest('[data-due-offset]');
+      if(!button)return;
+      const day=new Date(shortcuts.dataset.plannerToday+'T12:00:00Z');
+      day.setUTCDate(day.getUTCDate()+Number(button.dataset.dueOffset));
+      form.elements.due_at.value=day.toISOString().slice(0,10);
+      form.elements.due_at.dispatchEvent(new Event('change',{bubbles:true}));
+    });
+  }
   const update=()=>{
     const repeating=Boolean(rule.value);
     form.querySelector('[data-repeat-options]').hidden=!repeating;

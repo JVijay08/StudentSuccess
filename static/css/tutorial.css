@@ -15,3 +15,4 @@
 .tutorial-exit span,.tutorial-hint{font-size:.9rem;}
 .tutorial-target{outline:3px solid var(--blue)!important;outline-offset:5px!important;scroll-margin-block:120px;}
 @media(max-width:600px){.tutorial-guide{padding:0 12px;margin:12px auto;}.tutorial-content{padding:0 12px 12px;}.tutorial-guide>details>summary span{display:block;margin:4px 0 0;}.tutorial-actions{align-items:stretch;}.tutorial-actions form{width:100%;}.tutorial-actions form button{flex:1;}.tutorial-content h2{font-size:1.15rem;}}
+.tutorial-return{position:fixed;right:16px;bottom:16px;z-index:1000;width:auto;max-width:calc(100vw - 32px);min-height:44px;box-shadow:0 3px 8px #0003;}

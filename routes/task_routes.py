@@ -251,6 +251,15 @@ def tasks():
     selected_course = request.args.get("course", "")[:80].strip()
     if selected_course:
         outline = [group for group in outline if subject_key(group["name"]) == subject_key(selected_course)]
+    initial = {"estimated_minutes": settings.default_task_minutes, "subject": request.args.get("subject", selected_course)[:80]}
+    using_template = False
+    if request.method == 'GET' and request.args.get('template'):
+        original = db.get_or_404(Task, request.args.get('template', type=int))
+        if original.student_profile_id != profile.id:
+            abort(404)
+        initial = {name: getattr(original, name) or '' for name in ('title', 'subject', 'task_type', 'estimated_minutes', 'break_minutes', 'difficulty', 'interest_level')}
+        initial['reminder_enabled'] = original.reminder_enabled
+        using_template = True
     return render_template(
         "tasks.html",
         course_groups=outline,
@@ -264,7 +273,8 @@ def tasks():
         subject_suggestions=sorted(set(course_names) | {t.subject for t in all_tasks if t.subject} | {"Math", "Science", "English", "History", "Computer Science"}),
         sort=sort,
         errors=errors,
-        form_data=request.form or {"estimated_minutes": settings.default_task_minutes, "subject": request.args.get("subject", selected_course)[:80]},
+        form_data=request.form or initial,
+        using_template=using_template,
         repeat_today=_to_local_input(datetime.now(timezone.utc), settings.timezone_name)[:10],
         settings=settings,
     )
