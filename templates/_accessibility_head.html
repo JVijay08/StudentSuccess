@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/workspace_tools.css') }}">
 <script src="{{ url_for('static', filename='js/workspace_tools.js') }}" defer></script>
 <script src="{{ url_for('static', filename='js/compact.js') }}" defer></script>
-<link rel="icon" href="{{ url_for('static', filename='images/favicon.svg') }}" type="image/svg+xml">
+<link rel="icon" href="{{ url_for('static', filename='images/favicon.svg', v='notebook-2') }}" type="image/svg+xml">
 <script>
   {# Older accounts may have saved "system" before automatic dark mode was ready. #}
   document.documentElement.dataset.theme = {{ ('light' if ui_settings.theme == 'system' else ui_settings.theme)|tojson }};
