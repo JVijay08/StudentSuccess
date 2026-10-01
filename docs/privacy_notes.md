@@ -1,6 +1,6 @@
 # Privacy Notes
 
-StudentSuccess is an academic-planning prototype with a hosted demo and an optional browser-only workspace. Its guiding rule is simple:
+StudentSuccess is an academic-planning prototype with an interactive practice tutorial and an optional browser-only workspace. Its guiding rule is simple:
 
 > Collect only information required by a visible, working feature.
 
@@ -9,7 +9,7 @@ StudentSuccess is an academic-planning prototype with a hosted demo and an optio
 ### Username/password accounts
 
 Create a server-stored planner with a nickname-style username and a password of
-15?128 characters. No email address, full name, or student ID is requested.
+15 to 128 characters. No email address, full name, or student ID is requested.
 Werkzeug hashes passwords; plaintext passwords are not stored in the database,
 session, or browser storage by the app. Save credentials in a password manager.
 There is no email-based recovery or security-question fallback.
@@ -71,9 +71,9 @@ The same entry confirmation is required in browser task/custom-course
 forms and searches. Backup restoration also asks the user to confirm the file
 excludes personal identifiers and sensitive details. This is acknowledgment, not automated detection.
 
-### Account and demo workspaces
+### Account and tutorial workspaces
 
-The SQLite database may contain a student's first name, grade, graduation year, GPA goals, weekly study-time estimate, career interest, and course-rigor preference. The task planner also stores assignment details and planned-versus-actual start times.
+The account database stores planning preferences, courses, assignment details, and planned-versus-actual start times. Legacy profile columns may contain previously supplied first-name, graduation-year, GPA, career-interest, and rigor values; new onboarding does not collect those fields. Local development uses SQLite and the hosted deployment uses PostgreSQL.
 
 The development database is stored locally in `instance/studentsuccess.db` and is ignored by Git. It should not be shared or committed.
 

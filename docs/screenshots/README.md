@@ -1,77 +1,105 @@
-# StudentSuccess screenshots
+# StudentSuccess screenshot gallery
 
 [Back to the project README](../../README.md)
 
-Captured September 17, 2026; course explorer, comparison, and dashboard views refreshed September 18, 2026. Images are from the current application running locally with isolated fictional demo data. Desktop images are 1440 pixels wide; mobile images are 390 pixels wide. These captures show the design deployed at [StudentSuccess](https://studentsuccess.onrender.com/). Open any image at full size for detail.
-
-Still images do not show motion: try the landing-page example on the live site to see the paper tilt, note arrangement, and paper-plane animation.
+Refreshed **September 30, 2026** from the current application running locally. All courses, tasks, and history shown are synthetic demonstration data; no production account or private credentials are included. Desktop images are **1440 x 960 (3:2)**, and phone images are **390 x 844**. These are viewport captures, so content below the fold remains available in the application.
 
 ## Landing page
 
-Graph paper, layered notes, a folded-paper plane, and entry points for the demo and private planners.
+The notebook-style entry point with account creation and the interactive tutorial.
 
-[![Landing page: Graph paper, layered notes, a folded-paper plane, and entry points for the demo and private planners.](landing.png)](landing.png)
-
-## Interactive starting plan
-
-The example notes settle into a starting plan. Choose a problem set, essay, or exam, then check the first-step box to see the paper-plane animation. Pointer tilt and motion respect reduced-motion preferences.
-
-[![Interactive starting plan: The example notes settle into a starting plan. Choose a problem set, essay, or exam, then check the first-step box to see the paper-plane animation. Pointer tilt and motion respect reduced-motion preferences.](landing-arranged.png)](landing-arranged.png)
+[![Landing page](landing.png)](landing.png)
 
 ## Dashboard
 
-A short explanation of the next task, a comparison with the runner-up, visible history context, and an expandable score breakdown. Start the task directly; desktop navigation and logout remain reachable while scrolling.
+The recommended next task, clear actions, and supporting planning summaries.
 
-[![Dashboard: A short explanation of the next task, a comparison with the runner-up, visible history context, and an expandable score breakdown. Start the task directly; desktop navigation and logout remain reachable while scrolling.](dashboard.png)](dashboard.png)
+[![Dashboard](dashboard.png)](dashboard.png)
 
-## Task planner
+## Task queue
 
-Task entry and fictional assignments with planned starts, deadlines, start controls, and completion controls.
+Prioritized assignments with task menus and links from subtasks to their parent project.
 
-[![Task planner: Task entry and fictional assignments with planned starts, deadlines, start controls, and completion controls.](tasks.png)](tasks.png)
+[![Task queue](tasks.png)](tasks.png)
 
-## Course explorer
+## Project steps
 
-National reference courses with one-click comparison examples, selection controls, and a sticky comparison tray. Reference coverage varies by catalog.
+A larger chemistry assignment broken into smaller steps with progress.
 
-[![Course explorer: National reference courses with one-click comparison examples, selection controls, and a sticky comparison tray. Reference coverage varies by catalog.](courses.png)](courses.png)
+[![Project steps](subtasks.png)](subtasks.png)
+
+## High school course explorer
+
+Reference courses and comparison controls; coverage varies by catalog.
+
+[![High school course explorer](courses.png)](courses.png)
+
+## Integrated dual enrollment
+
+College courses from two institutions within the high school course workspace.
+
+[![Integrated dual enrollment](dual-enrollment.png)](dual-enrollment.png)
 
 ## Course comparison
 
-AP Chemistry and AP Biology compared through shared and distinct prerequisites, pathway tags, workload labels, and grade listings. The evidence table can show only differences, and courses can be added directly to the plan.
+Compare prerequisites, workload labels, and course characteristics.
 
-[![Course comparison: AP Chemistry and AP Biology compared through shared and distinct prerequisites, pathway tags, workload labels, and grade listings. The evidence table can show only differences, and courses can be added directly to the plan.](comparison.png)](comparison.png)
+[![Course comparison](comparison.png)](comparison.png)
 
 ## Four-year plan
 
-A timeline for grades 9 through 12. This fictional demo has five courses in grade 11; the other years are empty.
+High school planning across grades 9-12.
 
-[![Four-year plan: A timeline for grades 9 through 12. This fictional demo has five courses in grade 11; the other years are empty.](four-year-plan.png)](four-year-plan.png)
+[![Four-year plan](four-year-plan.png)](four-year-plan.png)
 
-## Settings
+## College term planning
 
-Two columns on wide screens, a sticky Save all settings button, and appearance, focus, task-planning, reminder, date/time, and account controls.
+Term courses, credits, and study workload across institutions.
 
-[![Settings: Two columns on wide screens, a sticky Save all settings button, and appearance, focus, task-planning, reminder, date/time, and account controls.](settings.png)](settings.png)
+[![College term planning](college.png)](college.png)
 
-## Mobile landing page
+## Calendar tools
 
-The interactive notebook adapts to a narrow screen with stacked content and touch-friendly controls.
+One-way Google Calendar deadline links and calendar-file export/import guidance.
 
-[![Mobile landing page: The interactive notebook adapts to a narrow screen with stacked content and touch-friendly controls.](landing-mobile.png)](landing-mobile.png)
+[![Calendar tools](calendar.png)](calendar.png)
 
-## Mobile dashboard
+## Personalization
 
-Full mobile navigation, logout, clock, task recommendations, summary cards, and expandable supporting information.
+Academic, display, accessibility, and planning preferences.
 
-[![Mobile dashboard: Full mobile navigation, logout, clock, task recommendations, summary cards, and expandable supporting information.](mobile-dashboard.png)](mobile-dashboard.png)
+[![Personalization](settings.png)](settings.png)
+
+## Interactive tutorial
+
+A guided practice workspace using real site controls.
+
+[![Interactive tutorial](tutorial.png)](tutorial.png)
 
 ## Dark appearance
 
-The same interactive example in dark appearance. High-contrast appearance and reduced motion are also available.
+The landing page using the dark theme.
 
-[![Dark appearance: The same interactive example in dark appearance. High-contrast appearance and reduced motion are also available.](landing-dark.png)](landing-dark.png)
+[![Dark appearance](landing-dark.png)](landing-dark.png)
 
-## Recreate the captures
+## Mobile landing page
 
-Run `python scripts/capture_fieldnotes.py` with Playwright and Chrome installed. The script uses an in-memory database, writes to `output/fieldnotes-screenshots/`, and checks the example interaction, reduced motion, settings persistence, task starts, and logout. It does not modify production accounts.
+The public entry point at a phone viewport.
+
+[![Mobile landing page](landing-mobile.png)](landing-mobile.png)
+
+## Mobile dashboard
+
+The planning workspace at a phone viewport.
+
+[![Mobile dashboard](mobile-dashboard.png)](mobile-dashboard.png)
+
+## Recreate the gallery
+
+Install project dependencies, Playwright, and Google Chrome, then run:
+
+~~~bash
+python scripts/capture_project_media.py
+~~~
+
+The script creates a disposable in-memory database and writes these images. It never accesses the production database. Generated sample history illustrates features; it is not evidence of measured student outcomes.

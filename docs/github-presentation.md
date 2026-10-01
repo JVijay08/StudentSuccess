@@ -1,21 +1,23 @@
-# GitHub profile copy and screenshot checklist
+# Main repository presentation
+
+Updated September 30, 2026 for the public source repository, **JVijay08/StudentSuccess**. The separate showcase repository is not part of this refresh.
 
 ## Repository About
 
 Description:
 
-> A high-school planning prototype with explained task priorities, start-time tracking, and four-year course planning. Built with Flask.
+> Academic planner for high school, college, and dual enrollment: explained task priorities, project steps, course planning, and Google Calendar deadline export. Built with Flask.
 
-Website:
+Website: https://studentsuccess.onrender.com/
 
-https://studentsuccess.onrender.com/
+Repository description, website, and topics were updated on September 30, 2026.
 
-Repository topics:
+Topics: flask, python, student-planner, task-management, course-planning, education, sqlalchemy, dual-enrollment.
 
-`flask`, `python`, `student-planner`, `task-management`, `course-planning`, `education`, `sqlalchemy`
+## Current media
 
-Applied to the GitHub repository settings on September 16, 2026.
+The [gallery](screenshots/README.md) contains 15 application screenshots made with synthetic data. Desktop captures are 3:2; mobile captures retain their phone viewport. The README features the dashboard, task queue, project steps, dual enrollment, and college planning.
 
-## Screenshots
+Regenerate with python scripts/capture_project_media.py after installing Playwright and Google Chrome. No production account, credential, or personal data is used.
 
-All eight supplied captures are saved in `docs/screenshots/` and described in the [gallery](screenshots/README.md). The README features the landing page and dashboard. The mobile image is a dashboard detail, not a complete page capture. Originals were copied without image edits.
+The dated overhaul and feedback documents record earlier implementation decisions. Use the root README and current source for present-day behavior.

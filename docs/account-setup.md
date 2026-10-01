@@ -1,14 +1,14 @@
 # Account setup
 
 Daily sign-in uses one nickname-style username and password. No email-sending service
-or sender domain is needed. Passwords must contain 15?128 characters; username rules
+or sender domain is needed. Passwords must contain 15 to 128 characters; username rules
 are shown on the form. Save credentials in a password manager: lost passwords cannot
 be reset through email or security questions.
 
 After registration, the server requires `/onboarding` before any workspace route.
 It stores education context, study budget, timezone, task defaults, and display choices.
 Students can later edit these in Settings. Logging out, opening a direct URL, or using
-another device cannot bypass the database completion flag. Demo workspaces are preconfigured.
+another device cannot bypass the database completion flag. Tutorial practice workspaces are preconfigured.
 
 Existing private-code users choose **Transfer it once** on the creation page, enter
 the old code, and choose new credentials. Transfer preserves their user ID and all

@@ -18,7 +18,7 @@ Browser request
 
 ## Responsibilities
 
-- `models/` stores users, access-code digests, profiles, tasks, planned courses, preferences, and deployment state.
+- `models/` stores users, profiles, tasks and subtasks, high-school plans, college term courses, preferences, and deployment state. Legacy credential tables remain for transfer compatibility.
 - `routes/` validates browser requests and coordinates authentication, planner access, dashboard data, tasks, courses, profiles, and settings.
 - `services/` implements reusable account logic, rule-based scoring, history-aware suggestions, timing summaries, recurrence, settings, and catalog access.
 - `templates/` contains Jinja pages and shared fragments.
@@ -29,7 +29,7 @@ Browser request
 
 ## Account and browser workspaces
 
-Private-code planners and sample demo workspaces use the server database. Legacy username/password accounts remain supported. Private-code users receive initial planning defaults rather than personal-profile onboarding. See [privacy notes](privacy_notes.md) for credential handling and account controls.
+Nickname-style username/password accounts use the server database and must complete onboarding. Private codes are retired from daily sign-in; a one-time transfer preserves legacy plans. The interactive tutorial creates an isolated sample account and removes it on exit. See [privacy notes](privacy_notes.md) for credential handling and account controls.
 
 The optional `/planner` workspace stores its plan in browser localStorage. It downloads a public catalog bundle from `/planner/catalogs.json`, then performs catalog searches and selections locally. Browser plans and server accounts do not automatically synchronize.
 
@@ -40,19 +40,22 @@ Task priority starts with explicit deadline, effort, difficulty, interest, and s
 
 ## Interface and screenshot checks
 
-The shared template head loads the base styles, accessibility and mobile rules,
-then the notebook (`fieldnotes.css`) and paper-depth (`depth.css`) layers.
-`fieldnotes.js` handles the fictional landing-page exercise; it saves no user data.
-`depth.js` adds pointer-responsive perspective and one-time entrance effects,
-respecting operating-system and application reduced-motion preferences.
-`compact.js` keeps supporting sections expandable on small screens.
+Shared templates load the notebook styles, responsive layout, accessibility controls,
+and purposeful motion. JavaScript enhances server-rendered forms and navigation;
+motion respects system and application reduced-motion preferences.
 
-The dashboard starts tasks through the existing authenticated POST route.
-Settings remains one form: its sticky Save button submits all sections, including
-those collapsed on mobile. The desktop sidebar stays within the viewport so
-navigation and logout remain reachable.
+scripts/capture_project_media.py refreshes the repository gallery from an isolated
+in-memory database with synthetic tasks, courses, and history. Dedicated
+scripts/check_*.py scripts validate interactions and responsive layouts.
 
-`scripts/capture_fieldnotes.py` runs against an isolated in-memory database and
-captures desktop, mobile, and alternate-theme views. It also checks keyboard
-interaction, reduced motion, settings persistence, task starts, and logout.
-`scripts/check_mobile_layout.py --check` audits page widths and enlarged text.
+## Scheduling, Calendar, and tutorial
+
+Task rescheduling is a task-menu action with a bounded undo window. New recurring
+tasks create a finite set of occurrences through an inclusive end date. Bulk deletion
+requires a reviewed selection, including project descendants. Calendar links and ICS
+files copy deadlines; no OAuth tokens or automatic synchronization are used.
+
+The tutorial maintains an isolated practice session, persists guide progress, and
+restores the original account on exit when its session remains valid. Public SEO
+metadata and sitemap entries cover public pages; account pages are marked noindex.
+See [tutorial and Calendar details](tutorial-and-calendar.md) and [SEO](seo.md).
