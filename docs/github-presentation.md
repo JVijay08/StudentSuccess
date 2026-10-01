@@ -16,7 +16,7 @@ Topics: flask, python, student-planner, task-management, course-planning, educat
 
 ## Current media
 
-The [gallery](screenshots/README.md) contains 15 application screenshots made with synthetic data. Desktop captures are 3:2; mobile captures retain their phone viewport. The README features the dashboard, task queue, project steps, dual enrollment, and college planning.
+The [gallery](screenshots/README.md) contains 20 application screenshots made with synthetic data. Desktop captures are 3:2; mobile captures retain their phone viewport. The README features the dashboard, task queue, project steps, dual enrollment, and college planning.
 
 Regenerate with python scripts/capture_project_media.py after installing Playwright and Google Chrome. No production account, credential, or personal data is used.
 

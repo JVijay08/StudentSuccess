@@ -100,7 +100,7 @@ def main():
                 if name == "college":
                     page.locator(".term-grid").evaluate("(el) => window.scrollTo(0, el.offsetTop - 110)")
                 page.evaluate("document.fonts.ready")
-                page.screenshot(path=str(destination/(name+".png")),animations="disabled")
+                page.screenshot(path=str(destination/(("dashboard-current-2026-09-30" if name=="dashboard" else name)+".png")),animations="disabled")
                 print("Captured "+name,flush=True)
             shot("landing","/")
             page.evaluate("document.documentElement.dataset.theme='dark'")
@@ -121,6 +121,19 @@ def main():
                 ("four-year-plan","/courses/plan"),("settings","/settings"),
                 ("calendar","/calendar")]:
                 shot(name,route)
+            shot("tasks-by-course","/tasks?view=courses")
+            shot("bulk-selection","/tasks/select")
+            shot("onboarding","/onboarding")
+            page.goto(origin+"/tasks")
+            menu=page.locator(".task-menu").filter(has=page.locator(".reschedule-control")).first
+            menu.locator(":scope > summary").click()
+            menu.locator(".reschedule-control > summary").click()
+            menu.scroll_into_view_if_needed()
+            shot("rescheduling")
+            page.goto(origin+"/tasks")
+            page.locator("#completed-tasks > summary").click()
+            page.locator("#completed-tasks").evaluate("(el) => window.scrollTo(0, el.offsetTop - 100)")
+            shot("completed-tasks")
             page.set_viewport_size({"width":390,"height":844})
             shot("mobile-dashboard","/dashboard")
             page.set_viewport_size({"width":1440,"height":960})
@@ -151,7 +164,7 @@ def main():
             browser.close()
     finally:
         server.shutdown()
-    print("Saved 15 current screenshots; no JavaScript errors.")
+    print("Saved 20 current screenshots; no JavaScript errors.")
 
 
 if __name__=="__main__":

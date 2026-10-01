@@ -8,7 +8,7 @@ StudentSuccess is an academic planner for high school and college students. It c
 
 Choose **Start tutorial** on the live site for a guided, interactive practice workspace. No registration is required for the tutorial.
 
-![StudentSuccess dashboard with a recommended next task](docs/screenshots/dashboard.png)
+![StudentSuccess dashboard with a recommended next task](docs/screenshots/dashboard-current-2026-09-30.png)
 
 ## What it does
 
@@ -23,6 +23,8 @@ Choose **Start tutorial** on the live site for a guided, interactive practice wo
 - **Personalization and accessibility.** Required onboarding sets education context, timezone, study budget, and preferences. Light, dark, and high-contrast themes, adjustable text and spacing, focus settings, and reduced-motion support adapt the notebook interface.
 - **Control over account data.** Export your data, clear completed history, or delete your account from Settings.
 
+For an image-led walkthrough, visit the **[product showcase](https://github.com/JVijay08/StudentSuccess-showcase)**. This repository contains the application source, setup instructions, and technical documentation.
+
 ## See the current site
 
 Screenshots refreshed **September 30, 2026**, using isolated synthetic sample data. Desktop captures are 1440 x 960 (3:2); mobile captures are 390 x 844. These are actual application renders, not mockups.
@@ -35,7 +37,7 @@ Screenshots refreshed **September 30, 2026**, using isolated synthetic sample da
 | --- | --- |
 | ![Assignment with subtasks](docs/screenshots/subtasks.png) | ![College term courses across institutions](docs/screenshots/college.png) |
 
-[Browse all 15 screenshots](docs/screenshots/README.md), including the landing page, comparisons, four-year plan, Calendar tools, personalization, tutorial, and mobile views.
+[Browse all 20 screenshots](docs/screenshots/README.md), including the landing page, comparisons, four-year plan, Calendar tools, personalization, tutorial, and mobile views.
 
 ## Try it
 
