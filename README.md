@@ -12,6 +12,8 @@ Choose **Start tutorial** on the live site for a guided, interactive practice wo
 
 ## What it does
 
+- **AI step drafts (beta).** Ask Groq to break an existing assignment into steps, edit the draft, and explicitly add selected steps. Requires server configuration; task ranking remains deterministic. [Setup and data handling](docs/ai-planning.md).
+
 - **Explained task priorities.** Recommendations combine urgency tiers with explicit scoring rules for deadlines, effort, challenge, interest, and available start history. Students can inspect the reasoning; no AI or machine learning is involved.
 - **An organized task workspace.** Search tasks, switch between a prioritized queue and course groups, open parent assignments from subtasks, and keep completed work separate.
 - **Manageable projects.** Add subtasks or split an assignment into timed work blocks. Track progress and optional actual minutes; estimates support up to 10,080 minutes.
@@ -109,7 +111,7 @@ The screenshot script requires installed Google Chrome, creates a disposable in-
 
 Course catalogs include national references, AP/IB, and selected state/local sources. Coverage varies; a state filter does not promise a complete statewide catalog. Some imported entries are held out pending source verification. The institution directory is not a complete database of every college's courses; students can enter their own course details.
 
-Workload labels and recommendations are planning aids, not official academic advice, graduation audits, or admissions predictions. Verify offerings and requirements with your institution. Future work includes catalog verification, continued usability testing, and evaluating scheduling tradeoffs. AI assistance and automatic Calendar synchronization are not implemented.
+Workload labels and recommendations are planning aids, not official academic advice, graduation audits, or admissions predictions. Verify offerings and requirements with your institution. Future work includes catalog verification, continued usability testing, and evaluating scheduling tradeoffs. AI step drafting is available when configured; automatic Calendar synchronization is not implemented.
 
 ## Technical details
 

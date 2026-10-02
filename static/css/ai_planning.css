@@ -1,0 +1,8 @@
+.ai-planner{max-width:880px;margin:0 auto;padding:24px;overflow-wrap:anywhere}
+.ai-planner textarea,.ai-planner input:not([type=checkbox]){display:block;width:100%;box-sizing:border-box;margin:8px 0 20px;font:inherit}
+.ai-planner textarea{min-height:150px;padding:12px;border:1px solid var(--border,#8ca9c2);border-radius:8px;color:inherit;background:var(--surface,#fffdf8)}
+.ai-confirm{display:flex;align-items:flex-start;gap:10px;margin:20px 0}
+.ai-confirm input{flex:0 0 auto;margin-top:5px}
+.ai-steps{padding-left:24px}.ai-steps li{padding:16px 0;border-bottom:1px solid var(--border,#d6e1eb)}
+.ai-planner button{margin:8px 8px 8px 0}.ai-planner .panel{min-width:0}
+@media(max-width:480px){.ai-planner{padding:16px}.ai-planner .panel{padding:16px}}

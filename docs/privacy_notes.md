@@ -110,3 +110,7 @@ Local development uses SQLite in `instance/studentsuccess.db`. Render
 deployments must provide a persistent `DATABASE_URL`, preferably a managed
 PostgreSQL database. The Render blueprint disables `DEMO_RESET_ON_DEPLOY`; the
 reset remains available only when explicitly enabled for a disposable demo.
+
+## Optional AI step drafts
+
+Students may explicitly send the reviewed assignment description and its minute budget to Groq for suggested steps. Other profile and planner data are not automatically sent. Drafts require review before saving and expire after 30 minutes. See [AI data handling and retention](ai-planning.md) for provider disclosure, age acknowledgment, limits, and deletion behavior.

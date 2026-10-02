@@ -32,6 +32,8 @@ def create_app(test_config=None):
 
     db.init_app(app)
 
+    from routes.ai_routes import ai_bp
+    app.register_blueprint(ai_bp)
     app.register_blueprint(auth_bp)
     from routes.seo_routes import seo_bp
     app.register_blueprint(seo_bp)

@@ -21,6 +21,11 @@ DATABASE_URL = normalize_database_url(os.environ.get("DATABASE_URL"))
 
 
 class config:
+    GROQ_API_KEY = os.environ.get("GROQ_API_KEY") or os.environ.get("API_KEY", "")
+    GROQ_MODEL = os.environ.get("GROQ_MODEL", "openai/gpt-oss-20b")
+    AI_ENABLED = os.environ.get("AI_ENABLED", "1") == "1"
+    AI_USER_DAILY_LIMIT = 5
+    AI_SITE_DAILY_LIMIT = 100
     PUBLIC_SITE_URL = os.environ.get('PUBLIC_SITE_URL', 'https://studentsuccess.onrender.com').rstrip('/')
     GOOGLE_SITE_VERIFICATION = os.environ.get('GOOGLE_SITE_VERIFICATION', '')
     SQLALCHEMY_DATABASE_URI = DATABASE_URL or f"sqlite:///{DATABASE_PATH.as_posix()}"

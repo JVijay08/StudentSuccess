@@ -1,6 +1,6 @@
 <details class="task-menu">
   <summary aria-label="Options for {{ task.title }}" title="Task options"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg></summary>
-  <div class="task-menu-panel">
+  <div class="task-menu-panel">{% if task.status == "not_started" and not task.children and not task.parent_task_id and not task.recurrence_rule %}<a href="{{ nav_url('ai.plan', task_id=task.id) }}">Suggest steps with AI</a>{% endif %}
     <a href="{{ nav_url('tasks.tasks', template=task.id, _anchor='task-form') }}">Use as template</a>
     <p class="eyebrow">Task options</p><a href="{{ nav_url('tasks.task_detail',task_id=task.id) }}">Task details &amp; steps</a>
     {% if task.status == 'not_started' and not task.children %}{% with schedule_task_id=task.id %}{% include '_reschedule.html' %}{% endwith %}{% endif %}
