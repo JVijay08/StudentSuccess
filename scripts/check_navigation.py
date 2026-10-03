@@ -1,4 +1,5 @@
 """Exercise actual clicks and form returns in an isolated fictional workspace."""
+from browser_test_support import start_demo
 import sys
 import threading
 from pathlib import Path
@@ -25,7 +26,7 @@ def main():
             browser = p.chromium.launch(channel="chrome", headless=True)
             context = browser.new_context(viewport={"width": 1440, "height": 1000})
             context.add_init_script("localStorage.setItem('studentsuccess.welcome.v1','seen')")
-            context.request.post(origin + "/demo")
+            start_demo(context.request, origin)
             page = context.new_page()
             errors = []
             page.on("pageerror", lambda error: errors.append(str(error)))

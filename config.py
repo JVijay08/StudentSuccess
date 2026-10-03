@@ -25,6 +25,7 @@ class config:
     MAX_CONTENT_LENGTH = 2 * 1024 * 1024
     MAX_FORM_MEMORY_SIZE = 1024 * 1024
     PRACTICE_START_LIMIT = 30
+    AUTO_MIGRATE = os.environ.get("AUTO_MIGRATE", "1") == "1"
     GROQ_API_KEY = os.environ.get("GROQ_API_KEY") or os.environ.get("API_KEY", "")
     GROQ_MODEL = os.environ.get("GROQ_MODEL", "openai/gpt-oss-20b")
     AI_ENABLED = os.environ.get("AI_ENABLED", "1") == "1"
@@ -43,7 +44,7 @@ class config:
     )
     SECRET_KEY = os.environ.get("SECRET_KEY") or (
         "dev-only-secret"
-        if os.environ.get("APP_ENV", "development") != "production"
+        if os.environ.get("APP_ENV", "development") != "production" and not os.environ.get("RENDER_EXTERNAL_HOSTNAME")
         else None
     )
     PERMANENT_SESSION_LIFETIME = timedelta(minutes=30)

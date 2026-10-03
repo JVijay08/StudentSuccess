@@ -30,6 +30,8 @@ def allow_attempt(identifier, action, limit=10):
         key = hmac.new(secret, raw.encode(), hashlib.sha256).hexdigest()
         if AuthAttempt.query.filter(AuthAttempt.key == key, AuthAttempt.created_at >= cutoff).count() >= maximum:
             db.session.commit()
+            from services.security_events import security_event
+            security_event('account_rate_limit')
             return False
     for raw, _ in keys:
         key = hmac.new(secret, raw.encode(), hashlib.sha256).hexdigest()

@@ -1,4 +1,5 @@
-﻿"""Check comparison selection, evidence filtering, and planning with fictional data."""
+"""Check comparison selection, evidence filtering, and planning with fictional data."""
+from browser_test_support import start_demo
 import sys
 import threading
 from pathlib import Path
@@ -21,7 +22,7 @@ def main():
         with sync_playwright() as p:
             browser = p.chromium.launch(channel='chrome', headless=True)
             context = browser.new_context(viewport={'width':1440,'height':1000})
-            context.request.post(origin+'/demo')
+            start_demo(context.request, origin)
             page = context.new_page()
             errors=[]
             page.on('pageerror',lambda e: errors.append(str(e)))

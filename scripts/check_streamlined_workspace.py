@@ -1,4 +1,5 @@
 """Exercise streamlined tasks using an isolated database."""
+from browser_test_support import start_demo
 import json
 import logging
 import re
@@ -26,7 +27,7 @@ def main():
             browser = pw.chromium.launch(channel='chrome', headless=True)
             page = browser.new_page(viewport={'width':390,'height':844})
             page.on('pageerror',lambda error:errors.append(str(error)))
-            page.context.request.post(origin+'/demo')
+            start_demo(page.context.request, origin)
             for number in range(3):
                 page.context.request.post(origin+'/tasks',form=dict(title=f'Extra task {number}',
                     due_at='2027-12-01',estimated_minutes='30',nonpersonal_confirmed='yes'))

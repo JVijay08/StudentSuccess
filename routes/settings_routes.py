@@ -104,6 +104,11 @@ def settings():
 @login_required
 def change_password():
     verify_csrf()
+    from services.account_policy import allow_attempt
+    if not allow_attempt(str(g.current_user.id), 'password-change', limit=5):
+        return render_template('error.html', status_code=429,
+            heading='Please wait before changing your password again.',
+            message='Too many password-change attempts. Try again in 15 minutes.'), 429, {'Retry-After': '900'}
     if session.get("demo_mode"):
         flash("Practice accounts do not have a reusable password.", "warning")
         return redirect(return_url("settings.settings"))
@@ -118,6 +123,11 @@ def change_password():
         g.current_user.auth_version += 1
         db.session.commit()
         session["auth_version"] = g.current_user.auth_version
+        # Refresh the current session too; other sessions fail auth_version checks.
+        from secrets import token_urlsafe
+        session['access_csrf'] = token_urlsafe(32)
+        from services.security_events import security_event
+        security_event('password_changed', 'success', g.current_user.id)
         flash("Password changed.", "success")
     return redirect(return_url("settings.settings"))
 

@@ -90,7 +90,12 @@ def create_app(test_config=None):
             if request.headers.get('Sec-Fetch-Site') == 'cross-site' or (
                 origin and (urlsplit(origin).scheme not in {'http', 'https'} or urlsplit(origin).netloc not in allowed)
             ):
+                from services.security_events import security_event
+                security_event('cross_site_write')
                 abort(400)
+            if request.endpoint is not None:
+                from services.access_service import verify_csrf
+                verify_csrf()
 
     @app.template_filter("planner_time")
     def planner_time(value):
@@ -170,17 +175,18 @@ def create_app(test_config=None):
         db.session.rollback()
         return render_template("error.html", status_code=500, heading="StudentSuccess hit a snag.", message="Your saved information is still safe. Try the page again in a moment."), 500
 
-    with app.app_context():
-        from models import StudentProfile, Task, User
+    if app.config.get('AUTO_MIGRATE', True):
+        with app.app_context():
+            from models import StudentProfile, Task, User
 
-        db.create_all()
-        _migrate_feedback_columns()
-        db.session.execute(text("CREATE UNIQUE INDEX IF NOT EXISTS ix_users_verified_email ON users(email)"))
-        db.session.commit()
-        _migrate_planned_course_catalog_column()
-        _migrate_task_reminder_columns()
-        _migrate_task_actual_minutes_column()
-        _reset_demo_accounts_for_deployment()
+            db.create_all()
+            _migrate_feedback_columns()
+            db.session.execute(text("CREATE UNIQUE INDEX IF NOT EXISTS ix_users_verified_email ON users(email)"))
+            db.session.commit()
+            _migrate_planned_course_catalog_column()
+            _migrate_task_reminder_columns()
+            _migrate_task_actual_minutes_column()
+            _reset_demo_accounts_for_deployment()
 
     return app
 

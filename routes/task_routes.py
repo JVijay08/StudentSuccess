@@ -88,6 +88,8 @@ def _validate_task_form(form, timezone_name="America/New_York"):
 
     if len(subject) > 80 or len(task_type) > 40:
         errors.append("Subject must be at most 80 characters and task type at most 40.")
+    if any(ord(c) < 32 for value in (title, subject, task_type) for c in value):
+        errors.append('Task names and subjects must be plain single-line text.')
 
     try:
         due_at = datetime_util.to_utc(due_at_text, timezone_name)
@@ -666,6 +668,12 @@ def import_calendar():
             upload = request.files.get("calendar")
             if not upload:
                 raise ValueError("Choose an .ics file.")
+            if not (upload.filename or '').lower().endswith('.ics') or upload.mimetype not in {
+                'text/calendar', 'application/ics', 'text/plain', 'application/octet-stream'
+            }:
+                from services.security_events import security_event
+                security_event('upload_type_rejected', user_id=g.current_user.id)
+                raise ValueError('Choose an .ics calendar file.')
             events = parse_calendar(upload.read(1024 * 1024 + 1), get_or_create_settings(g.current_user).timezone_name)
             preview = signer.dumps({"user": g.current_user.id, "events": events})
         except (ValueError, UnicodeError, BadData):

@@ -1,4 +1,5 @@
 """Motion must remain optional, honest about saves, and keyboard/mobile usable."""
+from browser_test_support import start_demo
 import logging
 import sys
 import threading
@@ -24,7 +25,7 @@ try:
         context=browser.new_context(viewport={'width':1440,'height':900})
         page=context.new_page()
         page.on('pageerror',lambda e:errors.append(str(e)))
-        context.request.post(base+'/demo')
+        start_demo(context.request, base)
         page.goto(base+'/dashboard')
         page.locator('.start-next-task button').first.click()
         expect(page.locator('html')).to_have_attribute('data-paper-confirmed','start')
@@ -96,7 +97,7 @@ try:
         # JavaScript animation/storage support must not be required for task actions.
         fallback=browser.new_context(viewport={'width':390,'height':844},has_touch=True)
         fallback.add_init_script("Object.defineProperty(window,'sessionStorage',{get(){throw new Error('blocked')}});Element.prototype.animate=undefined;")
-        fallback.request.post(base+'/demo')
+        start_demo(fallback.request, base)
         other=fallback.new_page();other.on('pageerror',lambda e:errors.append(str(e)))
         other.goto(base+'/dashboard')
         other.locator('.start-next-task button').first.click()

@@ -14,7 +14,8 @@
     const controller=new AbortController();
     const timeout=window.setTimeout(()=>controller.abort(),20000);
     try {
-      const response=await fetch("/session/extend",{method:"POST",credentials:"same-origin",signal:controller.signal});
+      const response=await fetch("/session/extend",{method:"POST",credentials:"same-origin",signal:controller.signal,
+        headers:{'X-CSRF-Token':document.querySelector('meta[name="csrf-token"]').content}});
       if(response.redirected||response.status===401||response.status===403){
         title.textContent="Your session has ended.";
         message.textContent="Your session has ended. Sign in again to continue. Saved information is still there; unsaved changes on this page may need to be entered again.";

@@ -60,7 +60,7 @@
                 <p class="task-overview-meta">{% if task.subject %}{{ task.subject }} &middot; {% endif %}{% if task.estimated_minutes >= 60 %}{{ task.estimated_minutes // 60 }} hr{% if task.estimated_minutes % 60 %} {{ task.estimated_minutes % 60 }} min{% endif %}{% else %}{{ task.estimated_minutes }} min{% endif %} estimated</p>
                 <p class="task-deadline">Due {{ row.due_at_display }}</p>
                 {% if task.planned_start_at and task.status == 'not_started' %}<p class="task-overview-meta">Planned start {{ task.planned_start_at|planner_time }}</p>{% endif %}
-                <div class="task-primary-actions">{% if task.status == 'not_started' %}<form class="start-next-task" method="post" action="{{ url_for('tasks.start_task', task_id=task.id) }}">{% include '_navigation_fields.html' %}<input type="hidden" name="redirect_to" value="dashboard"><button>Start this task</button></form>{% else %}<form class="complete-next-task" method="post" action="{{ url_for('tasks.complete_task', task_id=task.id) }}">{% include '_navigation_fields.html' %}<button>Complete task</button></form>{% endif %}</div>
+                <div class="task-primary-actions">{% if task.status == 'not_started' %}<form class="start-next-task" method="post" action="{{ url_for('tasks.start_task', task_id=task.id) }}">{% include '_csrf_field.html' %}{% include '_navigation_fields.html' %}<input type="hidden" name="redirect_to" value="dashboard"><button>Start this task</button></form>{% else %}<form class="complete-next-task" method="post" action="{{ url_for('tasks.complete_task', task_id=task.id) }}">{% include '_csrf_field.html' %}{% include '_navigation_fields.html' %}<button>Complete task</button></form>{% endif %}</div>
               </li>
             {% endfor %}
           </ol>
@@ -79,7 +79,7 @@
       {% if reminder_tasks %}
       <section class="reminder-panel" aria-labelledby="reminder-title">
         <p class="eyebrow" id="reminder-title">REMINDERS YOU REQUESTED</p>
-        {% for task in reminder_tasks %}<div><strong>{{ task.title }}</strong><form method="post" action="{{ url_for('tasks.snooze_reminder', task_id=task.id) }}">{% include '_navigation_fields.html' %}<button type="submit">Snooze {{ settings.snooze_minutes }} minutes</button></form></div>{% endfor %}
+        {% for task in reminder_tasks %}<div><strong>{{ task.title }}</strong><form method="post" action="{{ url_for('tasks.snooze_reminder', task_id=task.id) }}">{% include '_csrf_field.html' %}{% include '_navigation_fields.html' %}<button type="submit">Snooze {{ settings.snooze_minutes }} minutes</button></form></div>{% endfor %}
       </section>
       {% endif %}
 
@@ -96,7 +96,7 @@
                   <h2>{{ row.title }} <small>({{ row.group_label }})</small></h2>
                   <p>Due {{ row.due_at_display }} &mdash; {{ row.overdue_display }}.</p>
 
-                  <form method="post" action="{{ url_for('tasks.start_task', task_id=row.task_id) }}">{% include '_navigation_fields.html' %}
+                  <form method="post" action="{{ url_for('tasks.start_task', task_id=row.task_id) }}">{% include '_csrf_field.html' %}{% include '_navigation_fields.html' %}
                     <input type="hidden" name="redirect_to" value="dashboard">
                     <button type="submit" class="button">Start now</button>
                   </form>

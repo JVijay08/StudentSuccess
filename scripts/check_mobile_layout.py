@@ -1,4 +1,5 @@
 """Audit mobile page overflow in Chrome; --check fails on regressions."""
+from browser_test_support import start_demo
 import json
 import sys
 import threading
@@ -27,7 +28,7 @@ def main():
             public = browser.new_context()
             public.add_init_script("localStorage.setItem('studentsuccess.welcome.v1','seen')")
             authed = browser.new_context()
-            authed.request.post(origin + "/demo")
+            start_demo(authed.request, origin)
             with app.app_context():
                 task = Task.query.first()
                 task.title = "Assignment" * 16

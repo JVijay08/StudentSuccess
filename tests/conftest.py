@@ -1,4 +1,11 @@
 import pytest
+from flask import Flask
+from tests.browser_form_client import BrowserFormClient
+
+
+@pytest.fixture(autouse=True)
+def browser_form_tokens(monkeypatch):
+    monkeypatch.setattr(Flask, 'test_client_class', BrowserFormClient)
 
 from app import create_app
 from extensions import db

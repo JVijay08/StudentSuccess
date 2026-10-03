@@ -1,3 +1,4 @@
+from browser_test_support import start_demo
 import logging, sys, threading
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
@@ -16,7 +17,7 @@ try:
         browser=pw.chromium.launch(channel='chrome',headless=True)
         page=browser.new_page(viewport={'width':390,'height':844})
         page.on('pageerror',lambda error:errors.append(str(error)))
-        page.context.request.post(base+'/demo')
+        start_demo(page.context.request, base)
         page.goto(base+'/tasks')
         page.get_by_role('link',name='Select tasks',exact=True).click()
         page.locator('#selection-status').select_option('completed')

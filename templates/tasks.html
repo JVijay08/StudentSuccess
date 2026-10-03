@@ -45,7 +45,7 @@
           </ul>
         </div>
       {% endif %}
-      <form method="post" id="task-form" data-nonpersonal-form data-start-buffer-days="{{ settings.start_buffer_days }}">{% include '_navigation_fields.html' %}
+      <form method="post" id="task-form" data-nonpersonal-form data-start-buffer-days="{{ settings.start_buffer_days }}">{% include '_csrf_field.html' %}{% include '_navigation_fields.html' %}
         <label>Title
           <input name="title" placeholder="Research paper: first draft" data-nonpersonal-input maxlength="160" value="{{ form_data.get('title', '') }}" required>
         </label>
@@ -123,7 +123,7 @@
       {% endif %}
     </section>
     <details class="panel" id="completed-tasks"><summary>Completed ({{ completed_tasks|length }})</summary>
-    {% for task in completed_tasks %}<article id="task-{{ task.id }}" data-paper-key="task-{{ task.id }}" data-paper-status="completed"><h3>{{ task.title }}</h3><p>Completed {{ task.completed_at|planner_time }} &middot; Estimated {{ task.estimated_minutes }} min &middot; Actual {{ task.actual_minutes or 'Not recorded' }} min</p><details><summary>Start history and actions</summary><p><a href="{{ nav_url('tasks.tasks', template=task.id, _anchor='task-form') }}">Use as template</a></p><p>Planned {{ task.planned_start_at|planner_time }} &middot; Started {{ task.started_at|planner_time }}</p>{% if not task.recurrence_rule %}<form method="post" action="{{ url_for('tasks.undo_complete_task', task_id=task.id) }}">{% include '_navigation_fields.html' %}<button>Undo completion</button></form>{% endif %}<form method="post" action="{{ url_for('tasks.delete_task', task_id=task.id) }}">{% include '_navigation_fields.html' %}<button onclick="return confirm('Delete this completed task and its history?')">Delete</button></form></details></article>{% else %}<p>No completed tasks yet.</p>{% endfor %}</details>
+    {% for task in completed_tasks %}<article id="task-{{ task.id }}" data-paper-key="task-{{ task.id }}" data-paper-status="completed"><h3>{{ task.title }}</h3><p>Completed {{ task.completed_at|planner_time }} &middot; Estimated {{ task.estimated_minutes }} min &middot; Actual {{ task.actual_minutes or 'Not recorded' }} min</p><details><summary>Start history and actions</summary><p><a href="{{ nav_url('tasks.tasks', template=task.id, _anchor='task-form') }}">Use as template</a></p><p>Planned {{ task.planned_start_at|planner_time }} &middot; Started {{ task.started_at|planner_time }}</p>{% if not task.recurrence_rule %}<form method="post" action="{{ url_for('tasks.undo_complete_task', task_id=task.id) }}">{% include '_csrf_field.html' %}{% include '_navigation_fields.html' %}<button>Undo completion</button></form>{% endif %}<form method="post" action="{{ url_for('tasks.delete_task', task_id=task.id) }}">{% include '_csrf_field.html' %}{% include '_navigation_fields.html' %}<button onclick="return confirm('Delete this completed task and its history?')">Delete</button></form></details></article>{% else %}<p>No completed tasks yet.</p>{% endfor %}</details>
 
     <details class="transfer-tools"><summary>Import or export assignments</summary>    {% if settings.calendar_export_enabled %}<p><a href="{{ nav_url('settings.calendar_help') }}">Google Calendar &amp; calendar export</a></p>{% endif %}
 

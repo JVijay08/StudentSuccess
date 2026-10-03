@@ -1,4 +1,5 @@
 """Cross-page UI and new AI intake checks with isolated sample data."""
+from browser_test_support import start_demo
 import sys,threading,logging
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
@@ -12,7 +13,7 @@ from playwright.sync_api import sync_playwright,expect
 from audit_responsive import BOUNDS
 app=create_app({"TESTING":True,"SQLALCHEMY_DATABASE_URI":"sqlite://","SECRET_KEY":"ui-check",
                "GROQ_API_KEY":"stub","AI_ENABLED":True})
-client=app.test_client();client.post("/demo")
+client=app.test_client();start_demo(client)
 with app.app_context():
  user=User.query.one();user.username="refresh-preview";user.password_hash=hash_password("sample-refresh-password")
  tid=Task.query.filter_by(status="not_started").first().id

@@ -1,4 +1,5 @@
 """Exercise new planner flows in desktop/mobile Chrome against an isolated database."""
+from browser_test_support import start_demo
 import json
 import logging
 import sys
@@ -81,7 +82,7 @@ def main():
             assert "Fall 2027" in page.locator("#courses").inner_text()
             page.reload()
             assert page.locator("#local-context").input_value() == "college"
-            context.request.post(origin + "/demo")
+            start_demo(context.request, origin)
             page.goto(origin + "/tasks#task-form")
             page.locator('[name="title"]').fill("Example long assignment")
             page.locator('[name="due_at"]').fill("2027-02-01")

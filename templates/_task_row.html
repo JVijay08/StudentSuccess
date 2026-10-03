@@ -12,8 +12,8 @@
 
             </div>
             <div class="actions">
-              {% if task.status == 'not_started' %}<form method="post" action="{{ url_for('tasks.start_task',task_id=task.id) }}">{% include '_navigation_fields.html' %}<button>Start now</button></form>{% endif %}
-              <form method="post" action="{{ url_for('tasks.complete_task',task_id=task.id) }}">{% include '_navigation_fields.html' %}<button class="{{ 'secondary' if task.status == 'not_started' else '' }}">Complete</button></form>
+              {% if task.status == 'not_started' %}<form method="post" action="{{ url_for('tasks.start_task',task_id=task.id) }}">{% include '_csrf_field.html' %}{% include '_navigation_fields.html' %}<button>Start now</button></form>{% endif %}
+              <form method="post" action="{{ url_for('tasks.complete_task',task_id=task.id) }}">{% include '_csrf_field.html' %}{% include '_navigation_fields.html' %}<button class="{{ 'secondary' if task.status == 'not_started' else '' }}">Complete</button></form>
             </div>
             {% include '_task_menu.html' %}
           </article>

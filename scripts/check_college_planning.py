@@ -1,4 +1,5 @@
 """Exercise college/dual planning in an isolated in-memory demo database."""
+from browser_test_support import start_demo
 import json
 import logging
 import sys
@@ -26,7 +27,7 @@ def main():
             browser = pw.chromium.launch(channel='chrome', headless=True)
             page = browser.new_page(viewport={'width':1440,'height':1000})
             page.on('pageerror', lambda error: errors.append(str(error)))
-            page.context.request.post(origin+'/demo')
+            start_demo(page.context.request, origin)
             page.goto(origin+'/courses/plan')
             page.evaluate("document.documentElement.dataset.motion='reduced'")
             assert page.locator('.skip-link').bounding_box()['y'] < 0
@@ -87,7 +88,7 @@ def main():
                     issues.extend([theme,path,issue] for issue in page.evaluate(CONTROL_AUDIT))
             # Search and selection work without JavaScript or an external API.
             context=browser.new_context(java_script_enabled=False)
-            context.request.post(origin+'/demo')
+            start_demo(context.request, origin)
             nojs=context.new_page()
             nojs.goto(origin+'/courses?course_source=dual&college_q=Alabama+A+%26+M&college_state=AL')
             nojs.locator('#term-form [name=institution_id]').select_option('100654')

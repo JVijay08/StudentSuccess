@@ -1,4 +1,5 @@
 """Local, synthetic-data audit. Supply a local axe-core JS file; never shipped to visitors."""
+from browser_test_support import start_demo
 import json, logging, sys, threading
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
@@ -18,7 +19,7 @@ def main():
     from models import User
     from services.auth_service import hash_password
     client = app.test_client()
-    client.post('/demo')
+    start_demo(client)
     with app.app_context():
         user = User.query.one()
         user.username = 'policy-preview'

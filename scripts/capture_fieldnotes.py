@@ -1,4 +1,5 @@
-﻿"""Capture the Fieldnotes UI with isolated fictional data; verify its interaction."""
+"""Capture the Fieldnotes UI with isolated fictional data; verify its interaction."""
+from browser_test_support import start_demo
 import sys
 import threading
 from pathlib import Path
@@ -65,7 +66,7 @@ def main():
             page.set_viewport_size({'width':390,'height':844})
             page.goto(origin)
             page.screenshot(path=str(destination/'landing-mobile.png'), full_page=True)
-            context.request.post(origin+'/demo')
+            start_demo(context.request, origin)
             page.set_viewport_size({'width':1440,'height':1000})
             for name, route in [('dashboard','/dashboard'),('tasks','/tasks'),('courses','/courses'),('comparison','/courses/compare?id=SCI_AP_CHEMISTRY&id=SCI_AP_BIOLOGY'),('four-year-plan','/courses/plan'),('settings','/settings')]:
                 assert page.goto(origin+route).status == 200

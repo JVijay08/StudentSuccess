@@ -548,7 +548,7 @@ def test_reschedule_unauthenticated_redirects_to_login(app):
     client = app.test_client()
     response = client.post(
         f"/tasks/{task_id}/reschedule",
-        data={"planned_start_at": _future_local_string()},
+        data={"csrf_token": schedule_csrf(client), "planned_start_at": _future_local_string()},
     )
     assert response.status_code == 302
     assert "/login" in response.headers["Location"]

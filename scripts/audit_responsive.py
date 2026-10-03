@@ -1,4 +1,5 @@
 """Read layout bounds across real pages of an isolated demo, including open controls."""
+from browser_test_support import start_demo
 import argparse
 import json
 import logging
@@ -38,7 +39,7 @@ def main():
             browser=pw.chromium.launch(channel='chrome',headless=True)
             page=browser.new_page(viewport={'width':390,'height':844})
             page.on('pageerror',lambda e:errors.append(str(e)))
-            page.context.request.post(origin+'/demo')
+            start_demo(page.context.request, origin)
             tasks=page.context.request.get(origin+'/settings/export').json()['tasks']
             task_id=next(t['id'] for t in tasks if t['status']!='completed')
             paths=['/dashboard','/dashboard?view=today','/tasks','/tasks?view=courses',f'/tasks/{task_id}/edit',

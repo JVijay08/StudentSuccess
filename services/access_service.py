@@ -26,7 +26,9 @@ def csrf_token():
 
 
 def verify_csrf():
-    submitted = request.form.get("csrf_token", "")
+    submitted = request.form.get("csrf_token") or request.headers.get('X-CSRF-Token', '')
     expected = session.get("access_csrf", "")
     if not expected or not secrets.compare_digest(submitted.encode("utf-8"), expected.encode("utf-8")):
+        from services.security_events import security_event
+        security_event('csrf_rejected')
         abort(400, "This form expired. Reload the page and try again.")

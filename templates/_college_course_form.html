@@ -1,4 +1,4 @@
-<form id="term-form" method="post" action="{{ url_for('terms.edit', course_id=editing.id) if editing else url_for('terms.plan') }}" data-nonpersonal-form>
+<form id="term-form" method="post" action="{{ url_for('terms.edit', course_id=editing.id) if editing else url_for('terms.plan') }}" data-nonpersonal-form>{% include '_csrf_field.html' %}
 {% include '_navigation_fields.html' %}
 <h3>2. Add your course</h3><div class="fields">
 <label>Course name<input name="title" maxlength="120" placeholder="Introduction to Biology" value="{{ values.get('title','') }}" data-nonpersonal-input required></label>

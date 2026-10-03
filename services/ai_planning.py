@@ -1,6 +1,7 @@
 """Bounded Groq task breakdown. No tools, profile export, or automatic task writes."""
 import hashlib
 import json
+import re
 import urllib.error
 import urllib.request
 from datetime import datetime, timedelta, timezone
@@ -50,6 +51,8 @@ def reserve(user_id):
             AIQuota.key == key, AIQuota.used < limit).values(used=AIQuota.used + 1))
         if result.rowcount != 1:
             db.session.rollback()
+            from services.security_events import security_event
+            security_event('ai_rate_limit', user_id=user_id)
             raise AIUnavailable("AI request limit reached. Wait a minute or try tomorrow; you can still add steps manually.")
     db.session.commit()
 
@@ -64,6 +67,8 @@ def validate_steps(value, budget):
         title, minutes = row.get("title"), row.get("minutes")
         if not isinstance(title, str) or not 1 <= len(title.strip()) <= 160 or any(ord(c) < 32 for c in title):
             raise ValueError("Each step needs a title of 1 to 160 characters.")
+        if re.search(r'https?://|www\.|javascript:|data:text/html|<[/!a-z]', title, re.I):
+            raise ValueError('AI steps must be plain task descriptions, without links or markup.')
         if type(minutes) is not int or not 1 <= minutes <= budget:
             raise ValueError("Step minutes must be positive whole numbers within the assignment estimate.")
         clean.append({"title": title.strip(), "minutes": minutes})

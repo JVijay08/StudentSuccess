@@ -1,4 +1,5 @@
 """Browser check for finite repeats, one course picker and calendar handoff."""
+from browser_test_support import start_demo
 import logging
 import sys
 import threading
@@ -21,7 +22,7 @@ try:
         browser=pw.chromium.launch(channel='chrome',headless=True)
         page=browser.new_page(viewport={'width':390,'height':844})
         page.on('pageerror',lambda error:errors.append(str(error)))
-        page.context.request.post(base+'/demo')
+        start_demo(page.context.request, base)
         page.goto(base+'/tasks')
         page.locator('.task-entry>summary').click()
         form=page.locator('#task-form')
@@ -30,6 +31,7 @@ try:
         expect(form.locator('[name=subject]')).to_be_hidden()
         form.locator('[name=title]').fill('Practice daily reading')
         form.locator('[name=due_at]').fill('2026-10-04')
+        form.locator('.schedule-options > summary').click()
         form.locator('[name=due_time]').fill('18:15')
         form.locator('[name=recurrence_rule]').select_option('daily')
         form.locator('[name=repeat_start]').fill('2026-09-28')

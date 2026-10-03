@@ -1,4 +1,5 @@
 """Exercise AI review with a stub provider; no external requests or credentials."""
+from browser_test_support import start_demo
 import logging
 import sys
 import threading
@@ -15,7 +16,7 @@ from audit_responsive import BOUNDS
 
 app=create_app({"TESTING":True,"SQLALCHEMY_DATABASE_URI":"sqlite://",
                 "SECRET_KEY":"isolated-browser-check","GROQ_API_KEY":"stub-only","AI_ENABLED":True})
-client=app.test_client();client.post("/demo")
+client=app.test_client();start_demo(client)
 with app.app_context():
     user=User.query.one();user.username="ai-browser";user.password_hash=hash_password("sample-browser-password")
     task=Task.query.filter_by(status="not_started").first();task_id=task.id;db.session.commit()

@@ -1,4 +1,5 @@
 """Exercise reminder state and real college lookup feedback in an isolated database."""
+from browser_test_support import start_demo
 import json
 import logging
 import sys
@@ -24,7 +25,7 @@ def main():
             browser = pw.chromium.launch(channel='chrome',headless=True)
             page = browser.new_page(viewport={'width':390,'height':844})
             page.on('pageerror',lambda error:errors.append(str(error)))
-            page.context.request.post(origin+'/demo')
+            start_demo(page.context.request, origin)
             def audit(name):
                 issues.extend([name,issue] for issue in page.evaluate(BOUNDS))
                 coverage.append(name)
@@ -144,7 +145,7 @@ def main():
                     audit(f'{path} {theme} timeout 200%')
             # Native controls and GET lookup still work without JavaScript.
             context = browser.new_context(java_script_enabled=False)
-            context.request.post(origin+'/demo')
+            start_demo(context.request, origin)
             plain = context.new_page()
             plain.goto(origin+'/settings')
             plain.get_by_role('checkbox',name='In-app reminders',exact=True).check()

@@ -4,4 +4,4 @@
 <p>{{ course.weekly_hours }} study hours / week{% if course.credits is not none %} &middot; {{ course.credits }} college credits{% endif %}</p>
 <details><summary>Course details</summary><p>{{ course.description or 'No description added.' }}</p><p>Student-entered course; check eligibility and credit with your school and college.</p></details>
 <div class="card-actions"><a href="{{ nav_url('terms.edit',course_id=course.id,_anchor='college-entry') }}">Edit course</a><a href="{{ nav_url('tasks.tasks',view='courses',course=course.title[:80]) }}">Assignments</a></div>
-<details><summary>Remove from plan</summary><form method="post" action="{{ url_for('terms.delete',course_id=course.id) }}"><button class="secondary danger">Remove course</button></form></details></article>{% endfor %}
+<details><summary>Remove from plan</summary><form method="post" action="{{ url_for('terms.delete',course_id=course.id) }}">{% include '_csrf_field.html' %}<button class="secondary danger">Remove course</button></form></details></article>{% endfor %}

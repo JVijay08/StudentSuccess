@@ -13,6 +13,8 @@ def course_values(form):
     errors = confirmation_errors(form)
     values = {key: form.get(key, '').strip() for key in
               ('title', 'term', 'course_code', 'description', 'catalog_url')}
+    if any(ord(c) < 32 and c not in '\n\t' for value in values.values() for c in value):
+        errors.append('Course details contain unsupported control characters.')
     for key, limit in [('title', 120), ('term', 60), ('course_code', 32), ('description', 1000)]:
         if len(values[key]) > limit or (key in {'title', 'term'} and not values[key]):
             errors.append(f"Enter {key.replace('_', ' ')} (up to {limit} characters).")

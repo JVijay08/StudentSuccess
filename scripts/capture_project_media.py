@@ -2,6 +2,7 @@
 
 Requires Playwright and installed Chrome. Never connects to the hosted database.
 """
+from browser_test_support import start_demo
 import logging
 import secrets
 import sys
@@ -29,7 +30,7 @@ def main():
                       "SQLALCHEMY_DATABASE_URI": "sqlite://"})
     # Reuse the sample fixture, then make it a normal local account without a tour.
     client = app.test_client()
-    client.post("/demo")
+    start_demo(client)
     password = secrets.token_urlsafe(24)
     now = datetime.now(timezone.utc)
     with app.app_context():

@@ -1,4 +1,5 @@
 """Browser regression checks for planner time and demo-tour dismissal."""
+from browser_test_support import start_demo
 import os
 import sys
 import threading
@@ -30,7 +31,7 @@ def main():
                 assert response.headers['cache-control'] == 'no-store'
                 server_now = datetime.fromisoformat(response.json()['utc'])
                 assert abs((datetime.now(timezone.utc) - server_now).total_seconds()) < 5
-                context.request.post(origin + "/demo")
+                start_demo(context.request, origin)
                 page = context.new_page()
                 page.add_init_script("Date.now = () => 0")
                 stamp = {"utc": "2026-07-16T18:30:00+00:00"}

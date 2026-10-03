@@ -1,4 +1,5 @@
 """Isolated browser regression checks for Test 1 feedback."""
+from browser_test_support import start_demo
 import sys
 import threading
 import logging
@@ -22,7 +23,7 @@ try:
         browser = pw.chromium.launch(channel='chrome', headless=True)
         page = browser.new_page(viewport={'width':390,'height':844})
         page.on('pageerror', lambda e: errors.append(str(e)))
-        page.context.request.post(base+'/demo')
+        start_demo(page.context.request, base)
         with app.app_context():
             user = User.query.first()
             db.session.add(TermCourse(user_id=user.id, title='Dual biology', term='Fall', weekly_hours=3, enrollment_type='dual', school_year=11, status='in_progress'))

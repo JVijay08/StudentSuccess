@@ -1,4 +1,5 @@
 """Visual and interaction checks against an isolated local app, never production."""
+from browser_test_support import start_demo
 import json
 import logging
 import sys
@@ -50,7 +51,7 @@ def main():
             browser=playwright.chromium.launch(channel='chrome', headless=True)
             page=browser.new_page(viewport={'width':1440,'height':1000})
             page.on('pageerror', lambda error: errors.append(str(error)))
-            page.context.request.post(origin+'/demo')
+            start_demo(page.context.request, origin)
             page.context.request.post(origin+'/terms', form={'title':'Biology','term':'Fall 2026','weekly_hours':'4','nonpersonal_confirmed':'yes'})
             page.context.request.post(origin+'/tasks', form={'title':'Lab report','subject':'Biology','due_at':'2027-02-01','estimated_minutes':'40','nonpersonal_confirmed':'yes'})
             page.goto(origin+'/tasks')

@@ -208,8 +208,12 @@ def login():
         user = User.query.filter_by(username=supplied_username).first() or User.query.filter_by(username=username).first()
         valid = len(password) <= 128 and check_password(password, user.password_hash if user else _DUMMY_HASH)
         if not user or user.access_credential is not None or user.email is not None or not valid or user.username.startswith('demo-'):
+            from services.security_events import security_event
+            security_event('login_failed')
             errors.append('Username or password was not recognized.')
         else:
+            from services.security_events import security_event
+            security_event('login', 'success', user.id)
             destination = safe_page(request.form.get('next')) or url_for('main.dashboard')
             _sign_in(user)
             return redirect(destination if user.onboarding_completed else url_for('profile.onboarding'))
