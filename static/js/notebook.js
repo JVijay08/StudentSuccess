@@ -44,12 +44,7 @@
     if (!node || reduced()) return;
     const rect=node.getBoundingClientRect();
     if (rect.top < innerHeight && rect.bottom > 0) { callback(); return; }
-    if (!('IntersectionObserver' in window)) return;
-    const observer=new IntersectionObserver(entries=>{
-      if (entries.some(entry=>entry.isIntersecting)) { observer.disconnect(); callback(); }
-    });
-    observer.observe(node);
-    window.addEventListener('pagehide',()=>observer.disconnect(),{once:true});
+
   }
   function mark(node) {
     if (!node || reduced()) return;
@@ -243,15 +238,6 @@
     root.dataset.motion=event.target.checked?'reduced':'standard'; stopMotion();
   });
   new MutationObserver(stopMotion).observe(root,{attributes:true,attributeFilter:['data-motion']});
-  if (desktop.matches && !reduced() && 'IntersectionObserver' in window) {
-    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
-      if (!entry.isIntersecting) return;
-      observer.unobserve(entry.target);
-      if (entry.target.matches('[data-paper-art=books]')) animate(entry.target,[{transform:'translateY(3px) rotate(-1deg)',opacity:.85},{transform:'none',opacity:1}],280);
-      else settle(entry.target,4);
-    }),{threshold:.1});
-    document.querySelectorAll('.update-day,[data-paper-art=books]').forEach(node=>observer.observe(node));
-  }
   let comparisons=0;
   document.addEventListener('paper:comparison',event=>{
     const count=event.detail.count;

@@ -86,7 +86,7 @@
         <label>How challenging is this task?
           <select name="difficulty" required aria-describedby="task-challenge-help">
             {% for option in ["low", "medium", "high"] %}
-              <option value="{{ option }}" {% if form_data.get('difficulty', 'medium') == option %}selected{% endif %}>{{ {'low':'Easy — familiar work', 'medium':'Moderate — some thinking needed', 'high':'Challenging — focused effort needed'}[option] }}</option>
+              <option value="{{ option }}" {% if form_data.get('difficulty', 'medium') == option %}selected{% endif %}>{{ {'low':'Easy: familiar work', 'medium':'Moderate: some thinking needed', 'high':'Challenging: focused effort needed'}[option] }}</option>
             {% endfor %}
           </select>
           <small id="task-challenge-help">Your estimate for this one task, separate from how long it takes. Not a course level or a judgment of your ability.</small>

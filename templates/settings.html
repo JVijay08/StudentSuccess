@@ -28,7 +28,7 @@
       </div></div></details>
 
       <details class="settings-group"><summary>Focus and dashboard</summary><div class="settings-group-body"><p>Reduce visual overload without hiding the primary next action.</p><div class="fields">
-        <label>Dashboard mode<select name="dashboard_mode"><option value="standard" {% if settings.dashboard_mode=='standard' %}selected{% endif %}>Standard</option><option value="focus" {% if settings.dashboard_mode=='focus' %}selected{% endif %}>Focus—one next task</option></select></label>
+        <label>Dashboard mode<select name="dashboard_mode"><option value="standard" {% if settings.dashboard_mode=='standard' %}selected{% endif %}>Standard</option><option value="focus" {% if settings.dashboard_mode=='focus' %}selected{% endif %}>Focus: one next task</option></select></label>
         <label>Card spacing<select name="card_density"><option value="comfortable" {% if settings.card_density=='comfortable' %}selected{% endif %}>Comfortable</option><option value="compact" {% if settings.card_density=='compact' %}selected{% endif %}>Compact</option></select></label>
         <label>Recommendations shown<select name="recommendation_count">{% for count in [1,2,3,5] %}<option value="{{ count }}" {% if settings.recommendation_count==count %}selected{% endif %}>{{ count }}</option>{% endfor %}</select></label>
         <label>Recommendation wording<select name="recommendation_tone"><option value="neutral" {% if settings.recommendation_tone=='neutral' %}selected{% endif %}>Neutral</option><option value="direct" {% if settings.recommendation_tone=='direct' %}selected{% endif %}>Direct</option><option value="encouraging" {% if settings.recommendation_tone=='encouraging' %}selected{% endif %}>Encouraging</option></select></label>

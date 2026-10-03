@@ -20,7 +20,7 @@ def test_public_metadata_and_canonical_host(app):
     assert len(set(titles))==3
     image = re.search(r'property="og:image" content="([^"]+)"', html).group(1)
     assert image == 'https://studentsuccess.onrender.com/static/images/studentsuccess-social-preview.png'
-    assert 'property="og:image:alt" content="StudentSuccess — Plan less. Start sooner."' in html
+    assert 'property="og:image:alt" content="StudentSuccess: Plan less. Start sooner."' in html
     preview = client.get('/static/images/studentsuccess-social-preview.png')
     assert preview.status_code == 200
     assert preview.mimetype == 'image/png'

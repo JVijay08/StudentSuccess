@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Create account | StudentSuccess</title><link rel="stylesheet" href="{{ url_for('static',filename='css/onboarding.css') }}">{% include '_accessibility_head.html' %}<link rel="stylesheet" href="{{ url_for('static',filename='css/account.css') }}"></head>
 <body>{% include '_accessibility_body.html' %}<main id="main-content" class="account-page"><section class="account-sheet">
-<a class="back-link" href="/">Back to home</a><p class="eyebrow">A PLACE FOR YOUR NEXT STEP</p><h1>Make it yours.</h1><p>Choose a username and password. No email, real name, or student ID.</p>
+<a class="back-link" href="/">Back to home</a><h1>Create your planner.</h1><p>Choose a username and password. No email, real name, or student ID.</p>
 {% if errors %}<div class="form-errors" role="alert">{% for error in errors %}<p>{{ error }}</p>{% endfor %}</div>{% endif %}
 <form method="post"><input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}">{% include '_username_password_fields.html' %}
 <label class="account-check"><input type="checkbox" name="understood" value="yes" required> <span>I am at least 13 and agree to the <a href="/terms-of-service">Terms of service</a>.</span></label>

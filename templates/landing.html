@@ -1,4 +1,3 @@
-{% from "_illustrations.html" import illustration %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,20 +18,26 @@
 
     <section class="hero">
       <div>
-        <p class="eyebrow notebook-kicker"><span aria-hidden="true">&#10022;</span> YOUR NEXT CHAPTER / HIGH SCHOOL &amp; COLLEGE</p>
-        <h1>Plan less.<br><em>Start sooner.</em></h1>
+        <h1>Plan less.<br>Start sooner.</h1>
         <p class="lede">StudentSuccess is an academic planner for high-school and college students. Organize assignments, find your next task, and plan a manageable course load.</p>
         <div class="hero-actions"><form method="post" action="{{ url_for('tutorial.start') }}">{% include '_navigation_fields.html' %}<input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><button class="primary-action">Start tutorial</button></form>
           <a class="secondary-action" href="{{ nav_url('auth.register') }}">Create an account</a>
         </div>
         <p class="prototype-note">No signup needed for the tutorial. Explore real controls in a separate sample planner.</p>
       </div>
-    <section class="product-preview" aria-label="Example of the task planner"><div class="notebook-tab" aria-hidden="true">ONE STEP AT A TIME</div><div class="preview-top"><strong>Today</strong><span>Example planner</span></div><p class="eyebrow">Recommended next task</p><h2>Draft your introduction</h2><p>Composition &middot; 45 minutes &middot; Due tonight</p><p class="recommendation-brief">This deadline is within 24 hours. A short first draft makes the rest of the paper easier to start.</p><div class="preview-queue"><h3>Up next</h3><p><strong>Review biology notes</strong><span>30 min &middot; Tomorrow</span></p><p><strong>Research paper</strong><span>2 of 5 subtasks complete</span></p><progress value="40" max="100">40%</progress></div><p class="preview-caption">Deadlines, subtasks, and a clear place to start.</p></section>
+    <section class="product-preview" aria-label="Example of the task planner"><div class="preview-top"><strong>Today</strong><span>Example planner</span></div><p class="eyebrow">Recommended next task</p><h2>Draft your introduction</h2><p>Composition &middot; 45 minutes &middot; Due tonight</p><p class="recommendation-brief">This deadline is within 24 hours. A short first draft makes the rest of the paper easier to start.</p><div class="preview-queue"><h3>Up next</h3><p><strong>Review biology notes</strong><span>30 min &middot; Tomorrow</span></p><p><strong>Research paper</strong><span>2 of 5 subtasks complete</span></p><progress value="40" max="100">40%</progress></div><p class="preview-caption">Deadlines, subtasks, and a clear place to start.</p></section>
     </section>
 
 
-    <section class="feature-grid" aria-label="What you can do"><article><div class="feature-art">{{ illustration("steps") }}</div><h2>Know what comes next</h2><p>A task queue ordered around deadlines and planned starts, with an explanation for every recommendation.</p></article><article><div class="feature-art">{{ illustration("momentum") }}</div><h2>Make large tasks manageable</h2><p>Break projects into subtasks or timed work blocks. Keep completed work and progress together.</p></article><article><div class="feature-art">{{ illustration("books") }}</div><h2>Plan a realistic course load</h2><p>Compare high-school courses or build a college term plan around your weekly study time.</p></article></section>
-    <section class="storage-choice"><p class="eyebrow">KEEP YOUR PLACE</p><h2>A planner you can return to</h2><p>A username and password let you pick up your planner on another device. No email address or real name is needed.</p><p>The tutorial contains sample assignments and course plans. The free server may take up to a minute to wake.</p></section>
+    <section class="planning-overview" aria-labelledby="planning-overview-title">
+      <h2 id="planning-overview-title">Courses, assignments, and time to do the work.</h2>
+      <dl>
+        <div><dt>Plan your courses</dt><dd>Compare high-school courses, add dual enrollment, or organize college courses by term and institution.</dd></div>
+        <div><dt>Break down the assignment</dt><dd>Add a deadline and work estimate. Divide a project into steps yourself, or review an optional AI draft.</dd></div>
+        <div><dt>Choose what to start</dt><dd>See your next task and why it comes first. Reschedule from its menu, then keep completed work in your history.</dd></div>
+      </dl>
+    </section>
+    <section class="storage-choice"><h2>A planner you can return to</h2><p>A username and password let you pick up your planner on another device. No email address or real name is needed.</p><p>The tutorial contains sample assignments and course plans. The free server may take up to a minute to wake.</p></section>
 
     <footer>
       <p><a href="{{ url_for('seo.features') }}">Student planner features &amp; FAQ</a></p>

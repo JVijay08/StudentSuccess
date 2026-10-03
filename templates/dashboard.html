@@ -30,7 +30,7 @@
       {% endwith %}
 
       {% if session.get('demo_mode') and not session.get('tutorial_mode') %}
-        <div class="demo-banner" role="status"><strong>Demo workspace.</strong> Explore freely—this sample account contains no real student information.</div>
+        <div class="demo-banner" role="status"><strong>Demo workspace.</strong> Explore freely. This sample account contains no real student information.</div>
 
       {% endif %}
 
@@ -114,7 +114,7 @@
         <article class="card card-tasks">
           <p class="eyebrow">TASKS</p>
           <h2>{{ active_task_count }} active</h2>
-          <p>Deadline risk flags tasks that may be left too late. It uses the deadline, start status, estimated time, task challenge, and interest—not a grade or a measure of ability.</p>
+          <p>Deadline risk flags tasks that may be left too late. It uses the deadline, start status, estimated time, task challenge, and interest. It is not a grade or a measure of ability.</p>
         </article>
 
         {% if 'courses' not in settings.hidden_cards %}<article class="card card-courses">
