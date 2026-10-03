@@ -12,7 +12,7 @@ Choose **Start tutorial** on the live site for a guided, interactive practice wo
 
 ## What it does
 
-- **AI step drafts (beta).** Ask Groq to break an existing assignment into steps, edit the draft, and explicitly add selected steps. Requires server configuration; task ranking remains deterministic. [Setup and data handling](docs/ai-planning.md).
+- **AI step drafts (beta).** Turn assignment instructions into a reviewed task and steps, or break down an existing assignment with Groq. Edit the draft and explicitly save the steps you choose. Requires server configuration; task ranking remains deterministic. [Setup and data handling](docs/ai-planning.md).
 
 - **Explained task priorities.** Recommendations combine urgency tiers with explicit scoring rules for deadlines, effort, challenge, interest, and available start history. Students can inspect the reasoning; no AI or machine learning is involved.
 - **An organized task workspace.** Search tasks, switch between a prioritized queue and course groups, open parent assignments from subtasks, and keep completed work separate.
@@ -127,3 +127,5 @@ Built with **Flask, Jinja, SQLAlchemy, PostgreSQL/SQLite, and vanilla JavaScript
 ## License
 
 [MIT](LICENSE)
+
+Public notices: [Privacy](https://studentsuccess.onrender.com/privacy), [Terms](https://studentsuccess.onrender.com/terms-of-service), [Cookies](https://studentsuccess.onrender.com/cookies), [Data deletion](https://studentsuccess.onrender.com/data-deletion), and [Accessibility](https://studentsuccess.onrender.com/accessibility). See the [privacy/accessibility audit](docs/privacy-accessibility-audit.md) for implementation details and outstanding owner setup, including the inactive contact placeholder.

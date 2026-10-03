@@ -1,0 +1,11 @@
+<p>The current site uses storage for sign-in and features you choose. It has no advertising or analytics cookies and no tracking SDKs. There is no optional tracking to accept or reject, so we do not display a cookie-consent banner.</p>
+<h2>What is stored in your browser</h2>
+<dl>
+<dt>Session cookie (<code>session</code>)</dt><dd>Keeps you signed in, protects forms, and remembers session/tutorial state. It is signed, HTTP-only, and SameSite=Lax; production uses HTTPS-only cookies. Its lifetime is refreshed by activity and the planner also enforces your inactivity setting. Signing out clears the authenticated session. Blocking cookies prevents account features from working.</dd>
+<dt>Browser-only planner (<code>studentsuccess.local-plan.v1</code>)</dt><dd>Stores the plan you choose to keep on this browser. It is not automatically synced to a server account. It remains until you use the planner's erase control or clear this site's browser data.</dd>
+<dt>Guide preferences (<code>studentsuccess.planner-guide.v1</code>, <code>studentsuccess.welcome.v1</code>)</dt><dd>Remember dismissed guide messages on this browser until site storage is cleared.</dd>
+<dt>Recent interface actions (<code>studentsuccess-paper-action-v1</code>, <code>studentsuccess-paper-course-v1</code>)</dt><dd>Temporary per-tab state used for visual feedback after actions. Old action markers are ignored after two minutes; tab storage is cleared when the browsing session ends.</dd>
+</dl>
+<h2>Control storage</h2>
+<p>Use your browser's site settings to clear cookies and local storage for this domain. Clearing them signs you out and may permanently remove a browser-only plan. Export that plan first if you want to keep it. Clearing browser storage does not delete your server account; use <a href="{{ url_for('legal.notice', page='data-deletion') }}">account deletion</a> for that.</p>
+<p>If optional tracking is introduced later, this policy and the relevant controls must change before it is enabled.</p>

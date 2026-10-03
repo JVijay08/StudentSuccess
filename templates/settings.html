@@ -60,16 +60,16 @@
 
     </form>
 
-    <section class="account"><h2>Account and privacy</h2><div class="account-grid">
+    <section class="account" id="account-privacy"><h2>Account and privacy</h2><p><a href="/privacy">How your data is used</a> &middot; <a href="/data-deletion">Export and deletion help</a></p><div class="account-grid">
       {% if not session.get('demo_mode') %}<article><h3>Your account</h3><p>Username: <strong>{{ g.current_user.username }}</strong></p><p>Keep your sign-in in a password manager. No email address is collected.</p></article>{% endif %}
       <article><h3>Export your data</h3><p>Download your preferences, tasks, and course plan as JSON.</p><a class="secondary-link" href="{{ nav_url('settings.export_data') }}">Download my data</a></article>
       {% if not session.get('demo_mode') %}<article><h3>Change password</h3><form method="post" action="{{ url_for('settings.change_password') }}">{% include '_navigation_fields.html' %}<input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><label>Current password<input type="password" name="current_password" maxlength="128" autocomplete="current-password" required></label><label>New password<input type="password" name="new_password" minlength="15" maxlength="128" autocomplete="new-password" required></label><button>Change password</button></form></article>{% endif %}
-      <article><h3>Clear completed-task history</h3><p>Deletes completed tasks and their timing history. Active tasks remain.</p><form method="post" action="{{ url_for('settings.clear_history') }}" onsubmit="return confirm('Delete all completed-task history?')">{% include '_navigation_fields.html' %}<button class="danger" type="submit">Clear history</button></form></article>
+      <article><h3>Clear completed-task history</h3><p>Deletes completed tasks and their timing history. Active tasks remain.</p><form method="post" action="{{ url_for('settings.clear_history') }}" onsubmit="return confirm('Delete all completed-task history?')">{% include '_navigation_fields.html' %}<input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><button class="danger" type="submit">Clear history</button></form></article>
       <article><h3>Delete account</h3><p>Permanently deletes your account, profile, tasks, settings, and course plan.</p><form method="post" action="{{ url_for('settings.delete_account') }}" onsubmit="return confirm('Permanently delete this account and all of its data?')">{% include '_navigation_fields.html' %}<input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}">{% if not session.get('demo_mode') %}<label>Current password<input type="password" name="password" autocomplete="current-password" required></label>{% endif %}<button class="danger" type="submit">Delete account</button></form></article>
     </div></section>
   </main>
   <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
   <script>document.querySelectorAll('[data-show-password]').forEach(control=>control.addEventListener('change',()=>control.closest('form').querySelectorAll('input[type=password],input[type=text]').forEach(input=>{if(input.hasAttribute('data-show-password'))return;input.type=control.checked?'text':'password'})));</script>
 <script src="{{ url_for('static',filename='js/reminder_toggle.js') }}" defer></script>
-</body>
+{% include '_legal_footer.html' %}</body>
 </html>

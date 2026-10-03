@@ -9,4 +9,4 @@
 <button type="button" class="password-toggle" data-password-toggle="password" aria-pressed="false">Show password</button><button type="submit">Sign in</button>
 </form><p>New here? <a href="{{ url_for('auth.register') }}">Create an account</a>.</p>
 <details><summary>Forgot your sign-in?</summary><p>Check your password manager or saved copy. We do not collect an email address, so there is no email reset. If you are signed in elsewhere, export your plan before signing out.</p></details>
-</section></main></body></html>
+</section></main>{% include '_legal_footer.html' %}</body></html>

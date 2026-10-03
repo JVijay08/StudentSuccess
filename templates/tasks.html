@@ -110,7 +110,7 @@
       {% if task_view == 'courses' %}
         {% include '_course_tasks.html' %}
       {% else %}
-      <div class="queue-options"><form method="get"><label>Sort tasks<select name="sort" onchange="this.form.submit()">{% for value, label in [('recommended','Recommended'),('due','Due date'),('planned','Planned start'),('subject','Subject'),('status','Status')] %}<option value="{{ value }}" {% if sort == value %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label><noscript><button>Sort</button></noscript></form>
+      <div class="queue-options"><form method="get"><label>Sort tasks<select name="sort">{% for value, label in [('recommended','Recommended'),('due','Due date'),('planned','Planned start'),('subject','Subject'),('status','Status')] %}<option value="{{ value }}" {% if sort == value %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label><button type="submit" class="secondary">Sort</button></form>
       <details class="queue-help"><summary>How tasks are ordered</summary><p>In progress, overdue, missed planned starts, then due within 24 hours. Other tasks use priority and deadline.</p></details></div>
       {% if task_rows|length > 4 %}<details class="task-search" data-task-search hidden><summary>Find a task</summary><label>Find a task<input type="search" placeholder="Search title or course" autocomplete="off" data-task-query></label><p aria-live="polite" data-task-search-status></p></details>{% endif %}
       {% if task_rows %}
@@ -134,5 +134,5 @@
 
   <script src="{{ url_for('static', filename='js/nonpersonal.js') }}" defer></script>
   <script src="{{ url_for('static', filename='js/task_workspace.js') }}" defer></script>
-</body>
+{% include '_legal_footer.html' %}</body>
 </html>

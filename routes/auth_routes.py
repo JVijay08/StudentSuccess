@@ -163,13 +163,15 @@ def register():
         password = request.form.get('password', '')
         errors = credential_errors(username, password, request.form.get('confirm_password', ''))
         if request.form.get('understood') != 'yes':
-            errors.append('Confirm that you will keep personal identifiers and sensitive details out of your plan.')
+            errors.append('Confirm that you are at least 13 and agree to the Terms of service.')
         if not errors:
             user = User(username=username, password_hash=hash_password(password))
             user.profile = StudentProfile(first_name='Planner', grade=9,
                 graduation_year=datetime.now().year+4, current_gpa=0, target_gpa=0,
                 study_hours_per_week=10, course_rigor='Balanced')
             db.session.add(user)
+            from models.account_agreement import AccountAgreement
+            db.session.add(AccountAgreement(user=user, version="2026-10-03"))
             try:
                 db.session.commit()
             except IntegrityError:

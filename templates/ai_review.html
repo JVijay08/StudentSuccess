@@ -14,4 +14,4 @@
 <button type="submit" name="action" value="apply">{{ "Create assignment & steps" if is_new else "Add selected steps" }}</button>
 </form>
 <form method="post"><input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><button class="secondary" name="action" value="discard">Discard draft</button></form>
-</section></main></body></html>
+</section></main>{% include '_legal_footer.html' %}</body></html>

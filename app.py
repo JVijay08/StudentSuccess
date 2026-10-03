@@ -35,6 +35,8 @@ def create_app(test_config=None):
     from routes.ai_routes import ai_bp
     app.register_blueprint(ai_bp)
     app.register_blueprint(auth_bp)
+    from routes.legal_routes import legal_bp
+    app.register_blueprint(legal_bp)
     from routes.seo_routes import seo_bp
     app.register_blueprint(seo_bp)
     from routes.task_bulk_routes import task_bulk_bp
@@ -60,7 +62,7 @@ def create_app(test_config=None):
 
     @app.before_request
     def require_account_setup():
-        if request.endpoint in {'static', 'seo.robots', 'seo.sitemap'} or not session.get('user_id'):
+        if request.blueprint == 'legal' or request.endpoint in {'static', 'seo.robots', 'seo.sitemap'} or not session.get('user_id'):
             return None
         from flask import g, redirect, url_for
         from services.auth_service import login_required

@@ -1,0 +1,25 @@
+<p>StudentSuccess is an independent academic planning project operated from Georgia, United States. This notice describes the current website, including optional AI planning.</p>
+<h2>What we store and why</h2>
+<ul>
+<li><strong>Your account:</strong> a username, a one-way password hash, account timestamps, and security settings. New accounts do not require an email address, legal name, student ID, or date of birth. We record the version and time of your signup acknowledgment.</li>
+<li><strong>Your plan:</strong> tasks, deadlines, work estimates and timing history, subtasks, courses, institutions, and the planning preferences you enter. Academic profile fields and free text can be personal information even when you use a nickname. Enter only what you need for planning.</li>
+<li><strong>Operation and security:</strong> session information, limited request counters, and hosting logs that may contain IP addresses, request paths, and device/browser information. These support sign-in, troubleshooting, and abuse prevention.</li>
+</ul>
+<p>Leave full names, student numbers, addresses, contact details, credentials, health information, and private school records out of tasks, imports, and AI prompts. Do not enter someone else's personal information.</p>
+<h2>Who receives information</h2>
+<ul>
+<li><strong>Render</strong> hosts the application and database and processes service traffic. See <a href="https://render.com/privacy">Render's privacy policy</a>.</li>
+<li><strong>Groq, only when you request AI:</strong> the assignment text you submit and its minute estimate are sent to the AI provider. Your account password, full planner, profile, and course directory are not included in that request. You must confirm the sharing before generation; you can use the planner without AI. Review <a href="https://groq.com/privacy-policy/">Groq's privacy policy</a> for its processing and retention. Deleting a local draft does not retract a request already sent to Groq.</li>
+<li><strong>Google Calendar, only when you choose it:</strong> an add-event link passes the task details shown in the calendar flow to Google. This is not automatic syncing. Deleting a StudentSuccess task does not delete a copy in Google Calendar.</li>
+</ul>
+<p>We do not sell planner data or use advertising, analytics, or third-party tracking SDKs in the current application. External links take you to services with their own policies. Information may be processed in the United States and other locations used by these providers. We may disclose information when required by law or to address abuse and protect the service.</p>
+<h2>How long information stays</h2>
+<p>Saved planner data remains until you remove it or delete your account. AI drafts expire after 30 minutes and expired drafts are removed during a subsequent AI request; discarding a draft removes it immediately. Applying a draft clears its generated preview steps, while the tasks you approve remain in your plan. Short-lived security counters are periodically cleaned during relevant requests.</p>
+<p>Account deletion removes the active account and its associated planner records. Hosting logs, provider records, and any infrastructure backups have separate retention controls; deletion from the active application is not a promise of immediate erasure from every provider or backup. The project has not yet published a verified infrastructure backup retention period.</p>
+<h2>Your controls</h2>
+<p>You can edit your plan, export your account data, clear completed-task history, or delete your account in Settings. The browser-only planner is stored separately on your device. See <a href="{{ url_for('legal.notice', page='data-deletion') }}">Your data &amp; deletion</a> and the <a href="{{ url_for('legal.notice', page='cookies') }}">storage policy</a> for instructions.</p>
+<h2>Age and school use</h2>
+<p>Accounts are intended for students aged 13 or older. Do not create an account if you are under 13. We do not offer verified parental consent or a service designed for children under 13. If we learn that an under-13 child has provided account data, we will take steps to remove it. StudentSuccess is not a school information system; do not upload protected education records.</p>
+<h2>Contact and changes</h2>
+{% include 'legal/_contact.html' %}
+<p>This page will be updated when practices change. Check the effective date above. These notices describe this project; they do not certify compliance with every law or replace rights you have under applicable law.</p>

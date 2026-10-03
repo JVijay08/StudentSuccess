@@ -13,8 +13,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile.css') }}">
   <script src="{{ url_for('static', filename='js/nonpersonal.js') }}" defer></script>
   <script src="{{ url_for('static', filename='js/local_planner.js') }}" defer></script>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/overhaul.css') }}">
-<script src="{{ url_for('static', filename='js/notebook.js') }}" defer></script>
+{% include '_accessibility_head.html' %}
 </head>
 <body data-max-task-minutes="{{ MAX_TASK_MINUTES }}">
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -61,5 +60,5 @@
     <footer>StudentSuccess · Plan less. Start sooner.</footer></main>
   </div>
   {% include '_welcome.html' %}
-</body>
+{% include '_legal_footer.html' %}</body>
 </html>

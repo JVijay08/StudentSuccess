@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ title }} | StudentSuccess</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/onboarding.css') }}">
+{% include '_accessibility_head.html' %}</head>
+<body>{% include '_accessibility_body.html' %}
+<main id="main-content" class="legal-page">
+<a href="{{ url_for('main.home') }}">StudentSuccess home</a>
+<header><p class="eyebrow">YOUR PLANNER, YOUR CHOICES</p><h1>{{ title }}</h1><p>Effective October 3, 2026</p></header>
+<article class="legal-sheet">{% include 'legal/' ~ content ~ '.html' %}</article>
+</main>{% include '_legal_footer.html' %}</body></html>

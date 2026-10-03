@@ -22,5 +22,5 @@
     {% if course.source_url %}<p class="catalog-note"><a href="{{ course.source_url }}" target="_blank" rel="noopener noreferrer">Official course reference</a> &middot; {{ course.source_note }} {{ course.estimate_note }}</p>{% endif %}<section class="notice-panel"><span class="section-kicker">PREREQUISITE CHECK</span>{% if prerequisite_status.has_prerequisites %}{% if prerequisite_status.missing %}<p>These prerequisites are not marked completed in your plan:</p><ul class="plain-list inline-list">{% for missing in prerequisite_status.missing %}<li>{{ missing }}</li>{% endfor %}</ul>{% else %}<p class="good-news">Your completed plan covers the listed prerequisites.</p>{% endif %}{% else %}<p>No prerequisite is listed for this course.</p>{% endif %}</section>
   </main>
   <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
-</body>
+{% include '_legal_footer.html' %}</body>
 </html>

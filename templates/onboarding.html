@@ -25,4 +25,4 @@
 </div></fieldset>
 {% include '_nonpersonal_confirmation.html' %}
 <div class="setup-actions"><button>{{ 'Finish setup & open my planner' if first_setup else 'Save planning preferences' }}</button>{% if not first_setup %}<a href="{{ url_for('settings.settings') }}">Cancel</a>{% endif %}</div>
-</form></section></main><script src="{{ url_for('static',filename='js/onboarding.js') }}" defer></script><script src="{{ url_for('static',filename='js/nonpersonal.js') }}" defer></script><script src="{{ url_for('static',filename='js/reminder_toggle.js') }}" defer></script></body></html>
+</form></section></main><script src="{{ url_for('static',filename='js/onboarding.js') }}" defer></script><script src="{{ url_for('static',filename='js/nonpersonal.js') }}" defer></script><script src="{{ url_for('static',filename='js/reminder_toggle.js') }}" defer></script>{% include '_legal_footer.html' %}</body></html>

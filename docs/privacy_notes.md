@@ -107,3 +107,7 @@ reset remains available only when explicitly enabled for a disposable demo.
 ## Optional AI step drafts
 
 Students may explicitly send the reviewed assignment description and its minute budget to Groq for suggested steps. Other profile and planner data are not automatically sent. Drafts require review before saving and expire after 30 minutes. See [AI data handling and retention](ai-planning.md) for provider disclosure, age acknowledgment, limits, and deletion behavior.
+
+## Public notices and signup acknowledgment (October 3, 2026)
+
+The site now links public privacy, terms, cookie/storage, deletion, and accessibility pages. Signup records a minimal age-13+/terms acknowledgment version and time, without collecting a birth date. The contact email is explicitly an inactive placeholder at the operator's request. See [audit and outstanding owner setup](privacy-accessibility-audit.md).

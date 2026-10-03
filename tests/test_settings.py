@@ -124,7 +124,8 @@ def test_clear_history_keeps_active_tasks(app, authed_client):
             )
         db.session.commit()
 
-    response = authed_client.post("/settings/clear-history")
+    from tests.account_helpers import csrf
+    response = authed_client.post("/settings/clear-history", data={"csrf_token":csrf(authed_client)})
     assert response.status_code == 302
     with app.app_context():
         assert [task.status for task in Task.query.all()] == ["not_started"]

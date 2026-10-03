@@ -16,5 +16,5 @@
     <section class="plan-footer">{{ illustration("books") }}<div><span class="section-kicker">TURN THE PLAN INTO ACTION</span><h2>Make the workload concrete.</h2><p>Confirm requirements with your counselor, then add upcoming assignments to see what deserves attention now.</p></div><a class="button" href="{{ nav_url('tasks.tasks', _anchor='task-queue') }}">Open task planner</a></section>
   </main>
   <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
-</body>
+{% include '_legal_footer.html' %}</body>
 </html>

@@ -1,0 +1,9 @@
+<p>You can remove your saved account data directly. You do not need to submit a separate request or wait for someone to approve it.</p>
+<h2>Delete your account</h2>
+<ol><li><a href="{{ url_for('auth.login') }}">Sign in</a> to your account.</li><li>Open <a href="{{ url_for('settings.settings') }}#account-privacy">Settings → Account and privacy</a>. Export your data first if you want a copy.</li><li>Under Delete account, enter your current password and confirm deletion.</li></ol>
+<p>This removes the account, profile, tasks and subtasks, course plans, preferences, AI drafts, and signup acknowledgment from the active application database. It signs you out and cannot be undone through the app. Infrastructure logs and backups have separate retention controls, as explained in the <a href="{{ url_for('legal.notice', page='privacy') }}">privacy policy</a>.</p>
+<h2>Other copies of your plan</h2>
+<p>For a <a href="{{ url_for('main.local_planner') }}">browser-only plan</a>, use its erase control or clear this site's local storage. Delete downloaded exports and any Google Calendar events separately if you no longer want those copies. Account deletion cannot retract text already sent to an AI provider.</p>
+<h2>Cannot sign in, or asking about a child's data?</h2>
+<p>Check your password manager or an existing signed-in browser. Do not share your password or student ID in a public issue. Automated password recovery and an off-account privacy request channel are not available yet.</p>
+{% include 'legal/_contact.html' %}

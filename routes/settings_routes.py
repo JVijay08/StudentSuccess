@@ -217,6 +217,7 @@ def calendar_help():
 @settings_bp.post("/settings/clear-history")
 @login_required
 def clear_history():
+    verify_csrf()
     profile = StudentProfile.query.filter_by(user_id=g.current_user.id).first()
     if profile is not None:
         completed = Task.query.filter_by(
@@ -246,6 +247,8 @@ def delete_account():
         flash("Enter your current password to delete the account.", "error")
         return redirect(return_url("settings.settings"))
     user = g.current_user
+    from models.ai_planning import AIQuota
+    AIQuota.query.filter(AIQuota.key.like(f"%:user:{user.id}")).delete(synchronize_session=False)
     session.clear()
     db.session.delete(user)
     db.session.commit()
