@@ -41,7 +41,6 @@
           <label>Browse catalog
             <select name="scope" id="catalog-scope"><optgroup label="General and program references">{% for key, catalog in catalogs.items() if not catalog.state %}<option value="{{ key }}" {% if catalog_id==key %}selected{% endif %}>{{ catalog.label }}</option>{% endfor %}</optgroup><optgroup label="State and local references">{% for key, catalog in catalogs.items() if catalog.state %}<option value="{{ key }}" {% if catalog_id==key %}selected{% endif %}>{{ catalog.label }}</option>{% endfor %}</optgroup></select>
           </label>
-          <div class="filter-submit"><button type="submit">Apply filters</button><a href="{{ nav_same('courses.course_explorer') }}">Reset</a></div>
           <label>Search
             <input name="q" maxlength="120" data-nonpersonal-input value="{{ filters.get('q', '') }}" placeholder="Calculus, engineering...">
           </label>
@@ -51,7 +50,7 @@
               {% for grade in [9, 10, 11, 12] %}<option value="{{ grade }}" {% if filters.get('grade') == grade|string %}selected{% endif %}>{{ grade }}th grade</option>{% endfor %}
             </select>
           </label>
-          <p class="muted">Subject, type, depth, time commitment, and career filters apply to the high-school catalog.</p>
+
           <label>Subject
             <select name="subject"><option value="">All subjects</option>{% for option in options.subjects %}<option value="{{ option }}" {% if filters.get('subject') == option %}selected{% endif %}>{{ option }}</option>{% endfor %}</select>
           </label>

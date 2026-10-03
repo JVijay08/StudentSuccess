@@ -43,7 +43,7 @@ def main():
             page.goto(origin+'/onboarding')
             expect(toggle).to_be_checked()
             toggle.uncheck()
-            page.locator('[name=nonpersonal_confirmed]').check()
+            if page.locator('[name=nonpersonal_confirmed]').count(): page.locator('[name=nonpersonal_confirmed]').check()
             with page.expect_navigation(wait_until='load'):
                 page.get_by_role('button',name='Save planning preferences',exact=True).click()
             page.evaluate("document.querySelectorAll('.mobile-disclosure').forEach(e=>e.open=true)")

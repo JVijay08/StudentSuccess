@@ -29,27 +29,20 @@ The privacy dialog remains available on demand. Dismissing it is not a substitut
 for onboarding or a formal consent mechanism. Hosting still receives ordinary
 request metadata; nickname accounts do not promise anonymity or encrypted storage.
 
-### Entry confirmation
+### Privacy guidance and focused confirmation
 
-Task creation/editing, planning preference editing, and free-text catalog searches
-require an acknowledgment that personal identifiers and sensitive details are excluded
-on every submission. Actual course names, institution selections, assignments, deadlines,
-and everyday tasks are allowed.
-The acknowledgment starts unchecked and resets when relevant entries change.
-The server rejects unconfirmed task/preference saves and does not apply unconfirmed
-search text. Catalog searches use POST so new searches do not put text in URLs.
-The guidance identifies full names, student IDs, contact details, home addresses,
-passwords, and private records as information to remove. Public institution and course
-names are allowed. This is a user confirmation, not automatic detection or redaction.
-Authentication fields and structured catalog selections are not subject to the
-free-text acknowledgment.
+Actual courses and everyday tasks are welcome. Registration explains which sensitive
+details to leave out. Routine task entry, edits, course search, course planning,
+and preferences do not repeatedly require a personal-information checkbox.
+Calendar-file import and browser backup restoration retain explicit review.
+Sending assignment text to Groq always requires its separate sharing acknowledgment.
+This guidance is not automatic personal-data detection or redaction.
 
 The college directory searches public institution names and cities using GET filters,
 so those public search terms can appear in browser history and ordinary hosting logs.
 Do not enter personal information in directory search. Optional institution selections
 are stored as public IPEDS IDs for planning, not as a verified attendance claim.
-College-course forms allow public catalog details and URLs while requiring acknowledgment
-that personal identifiers and sensitive details are excluded. These student-entered details are
+College-course forms allow public catalog details and URLs. These student-entered details are
 included in account export/deletion and are separate from the public institution dataset.
 
 ### Optional browser-only workspace
@@ -67,9 +60,9 @@ back to the server. Server accounts retain their existing advanced features
 including recurring tasks, reminders, calendar export, and account preferences.
 Browser plans are separate and do not automatically sync to server accounts.
 
-The same entry confirmation is required in browser task/custom-course
-forms and searches. Backup restoration also asks the user to confirm the file
-excludes personal identifiers and sensitive details. This is acknowledgment, not automated detection.
+Routine browser-only task, course, and search forms do not require repeated
+privacy checkboxes. Backup restoration still asks for confirmation before replacing
+the plan.
 
 ### Account and tutorial workspaces
 

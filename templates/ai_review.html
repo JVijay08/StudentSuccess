@@ -1,17 +1,17 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI step planner | StudentSuccess</title>{% include '_accessibility_head.html' %}<link rel="stylesheet" href="{{ url_for('static',filename='css/ai_planning.css') }}"></head><body>{% include '_accessibility_body.html' %}<main id="main-content" class="ai-planner"><p><a href="{{ url_for('tasks.task_detail',task_id=task.id) }}">Back to assignment</a></p>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI step planner | StudentSuccess</title>{% include '_accessibility_head.html' %}<link rel="stylesheet" href="{{ url_for('static',filename='css/ai_planning.css') }}"></head><body>{% include '_accessibility_body.html' %}<main id="main-content" class="ai-planner"><p><a href="{{ url_for('tasks.tasks') if is_new else url_for('tasks.task_detail',task_id=task.id) }}">{{ "Back to tasks" if is_new else "Back to assignment" }}</a></p>
 {% if errors %}<div class="errors" role="alert"><h2>Check your draft</h2><ul>{% for error in errors %}<li>{{ error }}</li>{% endfor %}</ul></div>{% endif %}
 
 <header><p class="eyebrow">AI DRAFT / REVIEW BEFORE SAVING</p><h1>Make these steps your own.</h1><p>{{ task.title }} &middot; Up to {{ task.estimated_minutes }} minutes total</p></header>
 <section class="panel"><p>Check the instructions for your assignment. Edit titles and estimates, and uncheck any steps you do not want. Selected steps inherit the assignment deadline; planned starts stay unset.</p>
 <form method="post"><input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}">
-<ol class="ai-steps">{% for step in rows %}{% set i=loop.index0 %}<li>
+{% if is_new %}<label for="parent-title">Assignment title</label><input id="parent-title" name="parent_title" maxlength="160" value="{{ task.title }}" required><p>Due {{ task.due_at|planner_time }}. The assignment and selected steps will be created together.</p>{% endif %}<ol class="ai-steps">{% for step in rows %}{% set i=loop.index0 %}<li>
 <label class="ai-confirm"><input type="checkbox" name="selected" value="{{ i }}" {% if i|string in selected %}checked{% endif %}> Include step {{ loop.index }}</label>
 <label for="title-{{ i }}">Step {{ loop.index }} title</label><input id="title-{{ i }}" name="title_{{ i }}" maxlength="160" value="{{ step.title }}">
 <label for="minutes-{{ i }}">Focused minutes</label><input id="minutes-{{ i }}" name="minutes_{{ i }}" type="number" min="1" max="{{ task.estimated_minutes }}" value="{{ step.minutes }}">
 </li>{% endfor %}</ol>
-<label class="ai-confirm"><input type="checkbox" name="nonpersonal_confirmed" value="yes" required> These steps exclude personal identifiers and sensitive details.</label>
+
 <p>Drafts expire after 30 minutes. Discarding leaves your assignment unchanged.</p>
-<button type="submit" name="action" value="apply">Add selected steps</button>
+<button type="submit" name="action" value="apply">{{ "Create assignment & steps" if is_new else "Add selected steps" }}</button>
 </form>
 <form method="post"><input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><button class="secondary" name="action" value="discard">Discard draft</button></form>
 </section></main></body></html>

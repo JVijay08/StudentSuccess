@@ -19,7 +19,7 @@
       <div>
         <p class="eyebrow">STUDENTSUCCESS</p>
         <h1>Your tasks</h1>
-        <p>Your next actions, in order. Completed work stays in its own section.</p>
+        <p>A clear queue, with room for the bigger projects.</p>
       </div>
       <div class="header-actions"><a class="back-link quiet-back" href="{{ nav_back_url('main.dashboard') }}">{{ nav_back_label('main.dashboard') }}</a></div>
     </header>
@@ -37,7 +37,7 @@
 
     <details class="panel task-entry" {% if errors or not task_rows or using_template %}open{% endif %}><summary>Add a task</summary>
       {% if using_template %}<p role="status">Template ready. Choose a new due date, then add your task. The original stays unchanged.</p>{% endif %}
-      <p>What needs doing, when is it due, and about how long will it take? Add smaller steps after saving.</p>
+      <p class="entry-intro">Start with a title, deadline, and estimate. <a href="{{ nav_url('ai.new_assignment') }}">Draft from assignment text with AI &rarr;</a></p>
       {% if errors %}
         <div class="errors" role="alert">
           <ul>
@@ -50,15 +50,19 @@
           <input name="title" placeholder="Research paper: first draft" data-nonpersonal-input maxlength="160" value="{{ form_data.get('title', '') }}" required>
         </label>
         {% if saved_courses %}<label>Course or subject<select name="saved_course"><option value="">Personal task / another subject</option>{% for course in saved_courses %}<option value="{{ course }}" {% if form_data.get('saved_course', form_data.get('subject')) == course %}selected{% endif %}>{{ course }}</option>{% endfor %}</select></label>{% endif %}
-        <label>Custom subject (optional)
+        <details class="custom-subject"><summary>Another subject (optional)</summary>        <label>Custom subject (optional)
           <input name="subject" data-nonpersonal-input maxlength="80" value="{{ form_data.get('subject', '') }}">
         </label>
+</details>
         <label><span data-due-label>Due date (last date if repeating)</span>
           <input type="date" name="due_at" value="{{ form_data.get('due_at', '') }}" required>
         </label>
 
+        <label>Estimated minutes
+          <input type="number" name="estimated_minutes" min="1" max="{{ MAX_TASK_MINUTES }}" value="{{ form_data.get('estimated_minutes', '') }}" required>
+        </label>
         <div class="due-shortcuts" data-planner-today="{{ repeat_today }}" hidden><button type="button" class="secondary" data-due-offset="0">Today</button><button type="button" class="secondary" data-due-offset="1">Tomorrow</button><button type="button" class="secondary" data-due-offset="7">In a week</button></div>
-        <label>Due time (optional)<input type="time" name="due_time" value="{{ form_data.get('due_time', '') }}"><small>11:59 PM by default, in {{ settings.timezone_name }}.</small></label>
+        <details class="schedule-options" {% if form_data.get('recurrence_rule') %}open{% endif %}><summary>Time &amp; repeating schedule</summary>        <label>Due time (optional)<input type="time" name="due_time" value="{{ form_data.get('due_time', '') }}"><small>11:59 PM by default, in {{ settings.timezone_name }}.</small></label>
         <input type="hidden" name="repeat_mode" value="bounded">
         <label>Repeat
           <select name="recurrence_rule">
@@ -71,9 +75,8 @@
         </label>
         <div data-repeat-options><label>Repeat starts<input type="date" name="repeat_start" value="{{ form_data.get('repeat_start', repeat_today) }}"></label><p>Repeats through the due date above, at the same due time. Each occurrence is a separate task. Up to 366 occurrences; no extra prep tasks.</p></div>
         <p data-repeat-preview role="status"></p>
-        <label>Estimated minutes
-          <input type="number" name="estimated_minutes" min="1" max="{{ MAX_TASK_MINUTES }}" value="{{ form_data.get('estimated_minutes', '') }}" required>
-        </label>
+</details>
+
 <details class="more-options"><summary>Planning &amp; other details</summary>{% include '_break_allowance.html' %}<label>Task type
           <input name="task_type" data-nonpersonal-input maxlength="40" placeholder="Homework, project, exam..." value="{{ form_data.get('task_type', '') }}">
         </label>
@@ -102,13 +105,12 @@
       </form>
     </details>
 
-    <p><a class="button secondary" href="{{ nav_url('task_bulk.select') }}">Select tasks</a></p>
     <section class="task-list" id="task-queue">
-      <div class="queue-heading"><h2>Your next actions <span class="count-badge">{{ task_rows|length }}</span></h2><nav class="view-tabs" aria-label="Task views"><a href="{{ nav_url('tasks.tasks') }}" {% if task_view == 'queue' %}aria-current="page"{% endif %}>Next up</a><a href="{{ nav_url('tasks.tasks', view='courses') }}" {% if task_view == 'courses' %}aria-current="page"{% endif %}>By course</a></nav></div>
+      <div class="queue-heading"><h2>Your next actions <span class="count-badge">{{ task_rows|length }}</span></h2><div class="queue-tools"><a class="text-link" href="{{ nav_url('task_bulk.select') }}">Select tasks</a><nav class="view-tabs" aria-label="Task views"><a href="{{ nav_url('tasks.tasks') }}" {% if task_view == 'queue' %}aria-current="page"{% endif %}>Next up</a><a href="{{ nav_url('tasks.tasks', view='courses') }}" {% if task_view == 'courses' %}aria-current="page"{% endif %}>By course</a></nav></div></div>
       {% if task_view == 'courses' %}
         {% include '_course_tasks.html' %}
       {% else %}
-      <div class="queue-options"><h3>Queue options</h3><form method="get"><label>Sort tasks<select name="sort" onchange="this.form.submit()">{% for value, label in [('recommended','Recommended'),('due','Due date'),('planned','Planned start'),('subject','Subject'),('status','Status')] %}<option value="{{ value }}" {% if sort == value %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label><noscript><button>Sort</button></noscript></form>
+      <div class="queue-options"><form method="get"><label>Sort tasks<select name="sort" onchange="this.form.submit()">{% for value, label in [('recommended','Recommended'),('due','Due date'),('planned','Planned start'),('subject','Subject'),('status','Status')] %}<option value="{{ value }}" {% if sort == value %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label><noscript><button>Sort</button></noscript></form>
       <details class="queue-help"><summary>How tasks are ordered</summary><p>In progress, overdue, missed planned starts, then due within 24 hours. Other tasks use priority and deadline.</p></details></div>
       {% if task_rows|length > 4 %}<details class="task-search" data-task-search hidden><summary>Find a task</summary><label>Find a task<input type="search" placeholder="Search title or course" autocomplete="off" data-task-query></label><p aria-live="polite" data-task-search-status></p></details>{% endif %}
       {% if task_rows %}

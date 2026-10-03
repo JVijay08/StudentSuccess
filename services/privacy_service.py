@@ -5,5 +5,5 @@ CONFIRMATION_ERROR = (
 )
 
 
-def confirmation_errors(form):
-    return [] if form.get("nonpersonal_confirmed") == "yes" else [CONFIRMATION_ERROR]
+def confirmation_errors(form, required=False):
+    return [] if not required or form.get("nonpersonal_confirmed") == "yes" else [CONFIRMATION_ERROR]

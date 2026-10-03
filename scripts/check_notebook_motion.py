@@ -39,7 +39,7 @@ try:
         page.locator('#task-form [name=title]').fill('Motion regression task')
         page.locator('#task-form [name=due_at]').fill('2027-12-10')
         page.locator('#task-form [name=estimated_minutes]').fill('30')
-        page.locator('#task-form [name=nonpersonal_confirmed]').check()
+        if page.locator('#task-form [name=nonpersonal_confirmed]').count(): page.locator('#task-form [name=nonpersonal_confirmed]').check()
         page.locator('#task-form button[type=submit]').click()
         expect(page.locator('html')).to_have_attribute('data-paper-confirmed','add-task')
         with app.app_context():

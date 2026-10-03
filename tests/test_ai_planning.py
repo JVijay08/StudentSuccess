@@ -169,3 +169,36 @@ def test_provider_errors_do_not_leak(app,monkeypatch):
     monkeypatch.setattr(ai.urllib.request,"urlopen",fail)
     with app.app_context(),pytest.raises(ai.AIUnavailable) as err:ai.generate("private task",10)
     assert "private" not in str(err.value) and "secret" not in str(err.value)
+
+
+def test_new_assignment_draft_creates_only_after_review(app,ready):
+    client,_=ready
+    response=client.post("/tasks/ai/new",data={
+        "csrf_token":token(client),"description":"Prepare a science presentation",
+        "due_at":"2027-06-01","estimated_minutes":"60","subject":"Science","consent":"yes"})
+    assert response.status_code==302
+    with app.app_context():assert Task.query.count()==1
+    url=response.location
+    assert b"Create assignment" in client.get(url).data
+    result=apply(client,url,parent_title="Renewable energy presentation",nonpersonal_confirmed="")
+    assert result.status_code==302
+    with app.app_context():
+        parent=Task.query.filter_by(title="Renewable energy presentation").one()
+        assert parent.subject=="Science"
+        assert len(parent.children)==2
+        assert all(c.due_at==parent.due_at for c in parent.children)
+        assert sum(c.estimated_minutes for c in parent.children)==60
+    apply(client,url,parent_title="Duplicate")
+    with app.app_context():assert Task.query.count()==4
+
+
+def test_new_assignment_invalid_or_unconsented_never_calls_provider(app,ready,monkeypatch):
+    client,_=ready
+    monkeypatch.setattr(ai,"generate",lambda *args:pytest.fail("Must not call provider"))
+    response=client.post("/tasks/ai/new",data={"csrf_token":token(client),
+        "description":"Essay","due_at":"bad","estimated_minutes":"60","consent":"yes"})
+    assert b"valid due date" in response.data
+    response=client.post("/tasks/ai/new",data={"csrf_token":token(client),
+        "description":"Essay","due_at":"2027-06-01","estimated_minutes":"60"})
+    assert b"sharing notice" in response.data
+    with app.app_context():assert Task.query.count()==1

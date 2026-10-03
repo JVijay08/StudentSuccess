@@ -73,7 +73,7 @@ def test_gate_survives_logout_and_other_devices(app):
     assert login(first, credentials).location == '/dashboard'
 
 
-@pytest.mark.parametrize('extra', [dict(nonpersonal_confirmed=''), dict(study_hours='nan'),
+@pytest.mark.parametrize('extra', [dict(study_hours='nan'),
     dict(study_hours='81'), dict(grade='13'), dict(timezone_name='fake/zone'),
     dict(academic_context='unknown'), dict(theme='purple'), dict(default_task_minutes='999'),
     dict(academic_context='college',term_credit_goal='inf')])

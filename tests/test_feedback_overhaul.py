@@ -211,8 +211,8 @@ def test_import_token_and_term_ownership(app, authed_client):
     assert b"Could not import" in response.data
     with app.app_context():
         assert Task.query.count() == 0
-    # Privacy is required on editable free-text content, not queue sorting.
-    assert b"confirm" in authed_client.post("/terms", data={"title":"Example", "term":"Fall", "weekly_hours":"3"}).data.lower()
+    # Routine course entry does not require a redundant privacy checkbox.
+    assert authed_client.post("/terms", data={"title":"Example", "term":"Fall", "weekly_hours":"3"}).status_code == 302
     assert authed_client.get("/tasks?sort=subject").status_code == 200
 
 

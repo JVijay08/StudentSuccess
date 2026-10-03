@@ -142,7 +142,7 @@
     $("task-due").value = localInput(t.due).slice(0,10); $("task-due-time").value = localInput(t.due).slice(11); $("task-parent").value = t.parent || ""; $("local-more").open = true; $("task-start").value = localInput(t.planned);
     $("task-minutes").value = t.minutes; $("save-task").textContent = "Save task";
     $("task-challenge").value = t.challenge; $("task-interest").value = t.interest;
-    $("task-form").querySelector("[name=nonpersonal_confirmed]").checked = false;
+
     $("task-form-heading").textContent = "Edit task"; $("cancel-edit").hidden = false; $("task-title").focus();
   }
   function syncProjects(next) {

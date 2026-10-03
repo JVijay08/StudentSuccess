@@ -13,46 +13,24 @@ def task_data(**extra):
         "difficulty":"medium", "interest_level":"medium", **extra}
 
 
-def test_task_create_and_edit_require_fresh_confirmation(app):
+def test_routine_tasks_and_search_do_not_require_confirmation(app):
     client = app.test_client()
     create(client)
-    response = client.post("/tasks", data=task_data())
-    assert b"Confirm that these entries" in response.data
-    with app.app_context():
-        assert Task.query.count() == 0
-    assert client.post("/tasks", data=task_data(nonpersonal_confirmed="yes")).status_code == 302
+    assert client.post("/tasks", data=task_data()).status_code == 302
     with app.app_context():
         task_id = Task.query.one().id
-    response = client.post(f"/tasks/{task_id}/edit", data=task_data(title="Edited sample"))
-    assert b"Confirm that these entries" in response.data
-    with app.app_context():
-        assert db.session.get(Task, task_id).title == "Sample algebra"
-    assert client.post(f"/tasks/{task_id}/edit", data=task_data(title="Edited sample", nonpersonal_confirmed="yes")).status_code == 302
-    with app.app_context():
-        assert db.session.get(Task, task_id).title == "Edited sample"
-    # Starting/completing tasks does not add arbitrary text or need another acknowledgment.
-    assert client.post(f"/tasks/{task_id}/start").status_code == 302
+    assert client.post(f"/tasks/{task_id}/edit", data=task_data(title="Updated")).status_code == 302
+    assert client.post("/courses", data={"q":"Calculus"}, follow_redirects=True).status_code == 200
+    assert client.get("/courses?q=Calculus").status_code == 200
+    for route in ["/tasks", "/courses", "/onboarding"]:
+        assert b'name="nonpersonal_confirmed"' not in client.get(route).data
 
 
-def test_catalog_keeps_filters_and_blocks_unconfirmed_free_text(app):
-    client = app.test_client()
-    create(client)
-    assert client.post("/courses", data={"subject":"Math", "course_type":"AP"}, follow_redirects=True).status_code == 200
-    with patch("routes.course_routes.course_service.filter_courses", return_value=[]) as search:
-        response = client.post("/courses", data={"q":"sample identifying text"})
-        assert response.status_code == 400
-        assert search.call_args.kwargs["query"] is None
-        assert b"Confirm that these entries" in response.data
-    response = client.post("/courses", data={"q":"Calculus", "nonpersonal_confirmed":"yes"}, follow_redirects=True)
-    assert response.status_code == 200
-    assert b"Calculus" in response.data
-    assert not re.search(rb"<h3>.*?Biology.*?</h3>", response.data)
-    assert client.get("/courses?q=unconfirmed").status_code == 400
-
-
-def test_legacy_profile_requires_nonpersonal_confirmation(authed_client):
-    response = authed_client.post("/onboarding", data={"csrf_token": csrf(authed_client)})
-    assert b"Confirm that these entries" in response.data
+def test_calendar_import_keeps_explicit_confirmation(app):
+    from services.privacy_service import confirmation_errors
+    assert confirmation_errors({}, required=True)
+    assert not confirmation_errors({})
+    assert not confirmation_errors({"nonpersonal_confirmed":"yes"}, required=True)
 
 
 def test_full_workspace_retains_catalog_comparison_and_plan(app):

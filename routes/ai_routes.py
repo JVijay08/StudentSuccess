@@ -1,4 +1,5 @@
 import secrets
+import json
 from datetime import datetime, timedelta, timezone
 from flask import Blueprint, abort, current_app, flash, g, redirect, render_template, request, session, url_for
 from sqlalchemy import update
@@ -30,6 +31,47 @@ def eligible(task):
 def bounded_request():
     if request.content_length and request.content_length > 16384:
         abort(413)
+
+
+@ai_bp.route("/tasks/ai/new", methods=["GET", "POST"])
+@login_required
+def new_assignment():
+    from routes.task_routes import _validate_task_form
+    from services.settings_service import get_or_create_settings
+    settings = get_or_create_settings(g.current_user)
+    available = ai.configured() and not session.get("demo_mode")
+    values = request.form.to_dict() if request.method == "POST" else {
+        "estimated_minutes": settings.default_task_minutes}
+    errors = []
+    if request.method == "POST":
+        verify_csrf()
+        description = request.form.get("description", "").strip()
+        fields = dict(title=(description.splitlines()[0][:160] if description else ""),
+            subject=request.form.get("subject", ""), due_at=request.form.get("due_at", ""),
+            estimated_minutes=request.form.get("estimated_minutes", ""))
+        cleaned, errors = _validate_task_form(fields, settings.timezone_name)
+        if not 1 <= len(description) <= 2000:
+            errors.append("Describe the assignment in 1 to 2,000 characters.")
+        if request.form.get("consent") != "yes":
+            errors.append("Confirm the sharing notice before requesting AI suggestions.")
+        if not available:
+            errors.append("AI drafting is unavailable right now. You can add a task manually.")
+        if not errors:
+            try:
+                ai.reserve(g.current_user.id)
+                steps = ai.generate(description, cleaned["estimated_minutes"])
+            except ai.AIUnavailable as exc:
+                errors.append(str(exc))
+            else:
+                parent = dict(title=cleaned["title"], subject=cleaned["subject"],
+                    due_at=cleaned["due_at"].isoformat(),
+                    estimated_minutes=cleaned["estimated_minutes"])
+                draft = AIDraft(id=secrets.token_urlsafe(24), user_id=g.current_user.id,
+                    task_id=0, snapshot=json.dumps(parent), steps=steps,
+                    expires_at=datetime.now(timezone.utc)+timedelta(minutes=30))
+                db.session.add(draft); db.session.commit()
+                return redirect(url_for("ai.review", draft_id=draft.id))
+    return render_template("ai_new.html", values=values, errors=errors, available=available)
 
 
 @ai_bp.route("/tasks/<int:task_id>/ai", methods=["GET", "POST"])
@@ -77,15 +119,26 @@ def review(draft_id):
     if draft.consumed or expires < datetime.now(timezone.utc):
         flash("This draft was already used or expired. Your saved tasks are unchanged.", "warning")
         return redirect(url_for("tasks.tasks"))
-    task = owned_task(draft.task_id, lock=request.method == "POST")
+    is_new = draft.task_id == 0
+    if is_new:
+        values = json.loads(draft.snapshot)
+        values["due_at"] = datetime.fromisoformat(values["due_at"])
+        task = Task(student_profile_id=g.current_user.profile.id,
+                    status="not_started", **values)
+    else:
+        task = owned_task(draft.task_id, lock=request.method == "POST")
     errors, rows = [], draft.steps
     if request.method == "POST":
         verify_csrf()
         if request.form.get("action") == "discard":
             db.session.delete(draft)
             db.session.commit()
-            return redirect(url_for("tasks.task_detail", task_id=task.id))
-        if not eligible(task) or ai.snapshot(task) != draft.snapshot:
+            return redirect(url_for("tasks.tasks") if is_new else url_for("tasks.task_detail", task_id=task.id))
+        if is_new:
+            task.title = request.form.get("parent_title", task.title).strip()
+            if not 1 <= len(task.title) <= 160:
+                errors.append("Enter an assignment title of 1 to 160 characters.")
+        if not is_new and (not eligible(task) or ai.snapshot(task) != draft.snapshot):
             errors.append("This assignment changed after the draft was created. Return to the task and generate a fresh draft.")
         rows = []
         try:
@@ -100,8 +153,6 @@ def review(draft_id):
             rows = ai.validate_steps(rows, task.estimated_minutes)
         except (ValueError, TypeError) as exc:
             errors.append(str(exc) if str(exc).startswith(("Choose", "Each", "Step", "The", "Select")) else "Enter whole minutes for the selected steps.")
-        if request.form.get("nonpersonal_confirmed") != "yes":
-            errors.append("Confirm the steps exclude personal identifiers and sensitive details.")
         if not errors:
             claimed = db.session.execute(update(AIDraft).where(
                 AIDraft.id == draft.id, AIDraft.consumed.is_(False)).values(consumed=True))
@@ -109,6 +160,10 @@ def review(draft_id):
                 db.session.rollback()
                 flash("This draft has already been applied.", "warning")
                 return redirect(url_for("tasks.task_detail", task_id=task.id))
+            if is_new:
+                db.session.add(task)
+                db.session.flush()
+                draft.task_id = task.id
             for step in rows:
                 db.session.add(Task(student_profile_id=task.student_profile_id,
                     parent_task_id=task.id, title=step["title"], estimated_minutes=step["minutes"],
@@ -126,4 +181,4 @@ def review(draft_id):
                  "minutes":request.form.get(f"minutes_{i}", step["minutes"])}
                 for i, step in enumerate(draft.steps)]
     selected = request.form.getlist("selected") if request.method == "POST" else [str(i) for i in range(len(rows))]
-    return render_template("ai_review.html", task=task, draft=draft, rows=rows, selected=selected, errors=errors)
+    return render_template("ai_review.html", task=task, draft=draft, rows=rows, selected=selected, errors=errors, is_new=is_new)

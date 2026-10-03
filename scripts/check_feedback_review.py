@@ -37,7 +37,7 @@ try:
         page.get_by_text('Filter courses',exact=True).click()
         form=page.locator('.filter-panel form')
         form.locator('[name=q]').fill('Personal Fitness')
-        form.locator('[name=nonpersonal_confirmed]').check()
+        if form.locator('[name=nonpersonal_confirmed]').count(): form.locator('[name=nonpersonal_confirmed]').check()
         form.get_by_role('button',name='Apply filters',exact=True).first.click()
         card = page.locator('#course-GA_FCS_FITNESS')
         card.get_by_role('button',name='Add to plan',exact=True).click()

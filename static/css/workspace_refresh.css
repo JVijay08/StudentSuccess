@@ -1,0 +1,83 @@
+/* Notebook refresh: hierarchy and spacing without changing the palette. */
+body main{padding-top:28px}
+body main>header,.dashboard-header{position:relative;padding-bottom:20px;border-bottom:1px solid var(--line);margin-bottom:24px}
+body main>header::after,.dashboard-header::after{content:"";position:absolute;bottom:-2px;left:0;width:48px;height:3px;border-radius:4px;background:var(--amber)}
+body h1,body header h1{font-size:clamp(1.8rem,3.5vw,2.65rem);letter-spacing:-.035em}
+body header p{margin:8px 0;max-width:65ch}
+body .planner-clock{margin-bottom:8px;font-size:.72rem}
+body .dashboard-header{display:grid;grid-template-columns:1fr auto;align-items:center;gap:4px 20px}
+.dashboard-header>.eyebrow,.dashboard-header>h1,.dashboard-header>p{grid-column:1}
+.dashboard-header>.button{grid-column:2;grid-row:2/4;justify-self:end}
+body .focus-card{padding:22px 26px;border-left:3px solid var(--blue)}
+body .focus-card .task-overview{padding:16px 0;min-height:0}
+body .focus-card .task-overview-heading h2{font-size:clamp(1.25rem,2.4vw,1.7rem);margin:6px 0 10px}
+body .task-overview .task-deadline{margin:8px 0 14px}
+body .streamlined-task{padding:18px 78px 18px 22px;margin-bottom:10px}
+body .streamlined-task h3{margin:6px 0 8px;font-size:1.08rem;max-width:70ch}
+body .streamlined-task p{margin:5px 0;font-size:.88rem}
+body .streamlined-task .actions{margin-top:14px;gap:8px;display:flex;flex-wrap:wrap}
+body .streamlined-task .actions form{margin:0}
+body .task-tier{font-size:.7rem;letter-spacing:.035em}
+body .streamlined-task h3 a,body .task-overview-heading h2 a{text-decoration:none}
+body .streamlined-task h3 a:hover,body .task-overview-heading h2 a:hover{text-decoration:underline}
+body .task-menu-panel{padding:12px 16px}
+body .task-menu-panel>a{padding:9px 0}
+body .task-menu-panel .eyebrow{display:none}
+body .task-entry>summary{font-weight:650;padding:4px 0}
+body .entry-intro{font-size:.9rem;color:var(--muted);margin:14px 0 20px}
+body #task-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 20px}
+body #task-form>label:first-of-type,body #task-form>.more-options,body #task-form>.schedule-options,body #task-form>.due-shortcuts,body #task-form>button{grid-column:1/-1}
+body #task-form>label{margin:0}
+body #task-form>button{justify-self:start}
+body #task-form .more-options,body #task-form .schedule-options,body #task-form .custom-subject{align-self:start;padding:10px 0;border-top:1px solid var(--line)}
+body #task-form details label{display:block;margin-top:12px}
+body #task-form details summary{font-size:.9rem}
+body .settings-form{display:block}
+body .settings-group{margin:0 0 12px;background:var(--white);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}
+body .settings-group>summary{padding:20px 24px;font-size:1.05rem;font-weight:650;color:var(--ink)}
+body .settings-group[open]>summary{border-bottom:1px solid var(--line)}
+body .settings-group-body{padding:20px 24px}
+body .settings-group-body>p:first-child{margin-top:0;color:var(--muted)}
+body .settings-toolbar{border-radius:10px;gap:16px}
+body .insights-disclosure>summary{font-weight:650}
+body .insights-disclosure[open]>summary{margin-bottom:20px}
+body .course-card,body .term-card{padding:20px}
+body .term-course{padding:18px 0}
+body .term-course h3{margin:8px 0}
+body .term-course p{margin:8px 0}
+body .course-actions{gap:12px}
+body .filter-panel{padding:20px;border-radius:12px}
+body .filter-panel label{margin-bottom:14px}
+body .college-context{padding:18px 22px}
+body .college-context h2{font-size:1.1rem}
+body .college-context p{font-size:.9rem;margin:6px 0}
+body .account-grid article{box-shadow:none}
+body .ai-planner .panel{padding:24px}
+body .ai-steps>li{padding:12px 0}
+body .ai-confirm{font-weight:400}
+body .settings-group-body .fields{gap:18px}
+@media(min-width:900px){body .explorer-layout{gap:24px;grid-template-columns:250px minmax(0,1fr)}}
+@media(max-width:680px){
+ body main{padding:22px 16px 48px}
+ body .dashboard-header{display:block}
+ body .dashboard-header>.button{margin-top:12px}
+ body .focus-card{padding:18px}
+ body .streamlined-task{padding:16px 68px 16px 16px}
+ body #task-form{grid-template-columns:1fr}
+ body #task-form>*{grid-column:1!important}
+ body .settings-group>summary,body .settings-group-body{padding:16px}
+ body .settings-toolbar>span{display:none}
+ body .ai-planner .panel{padding:16px}
+}
+@media(prefers-reduced-motion:no-preference){.settings-group>summary,.task-entry>summary{transition:color .15s}.settings-group>summary:hover,.task-entry>summary:hover{color:var(--blue)}}
+
+body .queue-tools{display:flex;align-items:center;flex-wrap:wrap;gap:16px}
+body .queue-options{display:flex;align-items:center;flex-wrap:wrap;gap:16px;margin:12px 0 20px}
+body .queue-options form{margin:0;flex:0 1 300px}
+body .queue-options label{display:flex;align-items:center;gap:12px;white-space:nowrap}
+body .queue-options select{margin:0}
+body .queue-help{font-size:.88rem}
+body .focus-card .priority-item:not(:first-child) h2{font-size:1.05rem}
+body .focus-card .priority-item:not(:first-child) .task-overview-meta{font-size:.82rem}
+body .focus-card .priority-item:not(:first-child){padding:12px 0}
+@media(max-width:680px){body .queue-tools{width:100%;justify-content:space-between}body .queue-tools .view-tabs{width:auto}body .queue-options form{flex:1 1 100%}}

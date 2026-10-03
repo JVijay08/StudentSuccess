@@ -5,7 +5,9 @@ Open an unstarted assignment with no subtasks or recurring schedule, then choose
 Groq, and request a draft. Edit titles/minutes, uncheck unwanted steps, and explicitly
 add the selected steps. Discarding does not change the assignment.
 
-The initial feature breaks down existing assignments. It does not create schedules,
+The task-entry form also offers **Draft from assignment text with AI**. Enter instructions, a deadline, an estimate, and an optional subject; review and edit the title and steps before the assignment and selected subtasks are created atomically. The title starts with the first line of the supplied instructions, and remains editable. The deadline and subject are not sent to Groq. No additional database columns are needed.
+
+AI does not create schedules,
 change deadlines, rank tasks, browse websites, verify course requirements, or complete
 schoolwork. Existing deterministic ranking remains unchanged.
 
@@ -52,7 +54,7 @@ and provider error bodies are not logged or stored by this feature. Groq's own
 retention is governed by its settings and terms; do not promise zero retention
 unless it is configured there.
 
-Saving requires ownership, CSRF, an unchanged eligible assignment, valid edited
+Saving requires ownership, CSRF, an unchanged eligible assignment when editing existing work, valid edited
 steps, and explicit confirmation. A consumed flag prevents repeat submission.
 Subtasks inherit subject, task type, deadline, challenge, interest, and reminders.
 They do not receive invented planned start dates.

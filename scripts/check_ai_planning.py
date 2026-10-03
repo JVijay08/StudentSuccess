@@ -50,7 +50,6 @@ try:
             page.set_viewport_size({"width":width,"height":960})
             issues.extend(page.evaluate(BOUNDS))
         page.locator("[name=title_0]").fill("Check the rubric")
-        page.locator("[name=nonpersonal_confirmed]").check()
         page.get_by_role("button",name="Add selected steps").click()
         expect(page.get_by_role("link",name="Check the rubric",exact=True)).to_be_visible()
         with app.app_context():

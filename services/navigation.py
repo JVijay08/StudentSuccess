@@ -6,7 +6,7 @@ from itsdangerous import BadData, URLSafeSerializer
 from werkzeug.exceptions import HTTPException
 
 PAGES = {
-    "ai.plan": "AI step planner", "ai.review": "AI draft",
+    "ai.new_assignment": "AI assignment draft", "ai.plan": "AI step planner", "ai.review": "AI draft",
     "task_bulk.select": "task selection",
     "colleges.browse": "college directory", "terms.edit": "college course editor",
     "tasks.import_calendar": "calendar import",

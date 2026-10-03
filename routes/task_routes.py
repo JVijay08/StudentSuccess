@@ -639,7 +639,7 @@ def import_calendar():
     error, events, preview = None, [], None
     if request.method == "POST":
         try:
-            errors = confirmation_errors(request.form)
+            errors = confirmation_errors(request.form, required=True)
             if errors:
                 raise ValueError(errors[0])
             if request.form.get("confirm"):

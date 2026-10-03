@@ -35,7 +35,7 @@ def main():
             row.get_by_role('button', name='Edit', exact=True).click()
             page.locator('#task-title').fill('Updated sample algebra')
             # Simulate the privacy-confirmed submission after filling the form.
-            page.locator('#task-form [name=nonpersonal_confirmed]').check()
+            if page.locator('#task-form [name=nonpersonal_confirmed]').count(): page.locator('#task-form [name=nonpersonal_confirmed]').check()
             page.get_by_role('button', name='Save task', exact=True).click()
             assert row.get_by_role('heading').inner_text() == 'Updated sample algebra'
             assert row.evaluate('(element) => element === document.activeElement')

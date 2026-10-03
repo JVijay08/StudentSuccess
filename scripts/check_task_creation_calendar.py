@@ -34,7 +34,7 @@ try:
         form.locator('[name=recurrence_rule]').select_option('daily')
         form.locator('[name=repeat_start]').fill('2026-09-28')
         expect(form.locator('[data-due-label]')).to_have_text('Repeat through (inclusive)')
-        form.locator('[name=nonpersonal_confirmed]').check()
+        if form.locator('[name=nonpersonal_confirmed]').count(): form.locator('[name=nonpersonal_confirmed]').check()
         for width in [320,375,390,430]:
             page.set_viewport_size({'width':width,'height':844})
             issues.extend((width,'form',issue) for issue in page.evaluate(BOUNDS))

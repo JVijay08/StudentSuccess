@@ -36,7 +36,7 @@ def main():
             page.locator("#task-title").fill("<img src=x onerror=alert(1)> Algebra")
             page.locator("#task-due").fill("2027-05-01T16:00")
             page.locator("#task-start").fill("2027-05-01T15:00")
-            page.locator("#task-form [name=nonpersonal_confirmed]").check()
+            if page.locator("#task-form [name=nonpersonal_confirmed]").count(): page.locator("#task-form [name=nonpersonal_confirmed]").check()
             page.locator("#save-task").click()
             assert page.locator("#tasks h3").inner_text().startswith("<img")
             assert page.locator("#tasks img").count() == 0
@@ -51,13 +51,13 @@ def main():
             page.get_by_role("button", name="Reopen", exact=True).click()
             page.get_by_role("button", name="Edit", exact=True).click()
             page.locator("#task-title").fill("Updated algebra")
-            page.locator("#task-form [name=nonpersonal_confirmed]").check()
+            if page.locator("#task-form [name=nonpersonal_confirmed]").count(): page.locator("#task-form [name=nonpersonal_confirmed]").check()
             page.locator("#save-task").click()
             page.locator("#budget").fill("5")
             page.get_by_role("button", name="Save availability").click()
             page.locator("#course-title").fill("Algebra")
             page.locator("#course-hours").fill("7")
-            page.locator("#course-form [name=nonpersonal_confirmed]").check()
+            if page.locator("#course-form [name=nonpersonal_confirmed]").count(): page.locator("#course-form [name=nonpersonal_confirmed]").check()
             page.get_by_role("button", name="Add course", exact=True).click()
             assert "2 hours over" in page.locator("#courses").inner_text()
             with page.expect_download() as download:
@@ -80,7 +80,7 @@ def main():
             assert page.locator("#catalog-choice option").count() > 20
             requests.clear()
             page.locator("#catalog-search").fill("Statistics")
-            page.locator("#catalog-filter [name=nonpersonal_confirmed]").check()
+            if page.locator("#catalog-filter [name=nonpersonal_confirmed]").count(): page.locator("#catalog-filter [name=nonpersonal_confirmed]").check()
             page.get_by_role("button", name="Apply filters", exact=True).click()
             card = page.locator("#catalog-results article").first
             assert "Statistics" in card.inner_text()
@@ -111,7 +111,7 @@ def main():
             page.evaluate("() => { Storage.prototype.setItem = () => { throw new Error('quota'); }; }")
             page.locator("#task-title").fill("Memory only")
             page.locator("#task-due").fill("2027-05-01T16:00")
-            page.locator("#task-form [name=nonpersonal_confirmed]").check()
+            if page.locator("#task-form [name=nonpersonal_confirmed]").count(): page.locator("#task-form [name=nonpersonal_confirmed]").check()
             page.locator("#save-task").click()
             assert "only in memory" in page.locator("#storage-state").inner_text()
             assert page.locator("#tasks h3").inner_text() == "Memory only"

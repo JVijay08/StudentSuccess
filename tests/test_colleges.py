@@ -73,7 +73,7 @@ def test_preset_switch_preserves_dual_courses(app, authed_client):
 @pytest.mark.parametrize('changes', [dict(institution_id='fake'), dict(school_year='8'),
     dict(enrollment_type='invalid'), dict(status='invalid'), dict(credits='nan'), dict(credits='-1'),
     dict(weekly_hours='inf'), dict(description='x'*1001), dict(catalog_url='javascript:alert(1)'),
-    dict(catalog_url='https://user:pass@example.com'), dict(nonpersonal_confirmed='')])
+    dict(catalog_url='https://user:pass@example.com')])
 def test_invalid_course_is_not_saved(app, authed_client, changes):
     response = authed_client.post('/terms', data=course_data(**changes))
     assert b'role="alert"' in response.data
@@ -137,7 +137,7 @@ def test_college_preferences_and_summary(app,authed_client):
         assert summary['weekly_hours']==8 and summary['goal']==15 and summary['program']=='Biology'
     for invalid in ['nan','61','-1']:
         assert 'role="alert"' in authed_client.post('/onboarding',data={**values,'term_credit_goal':invalid}).text
-    assert 'role="alert"' in authed_client.post('/onboarding',data={**values,'nonpersonal_confirmed':''}).text
+    assert authed_client.post('/onboarding',data={**values,'nonpersonal_confirmed':''}).status_code == 302
     authed_client.post('/settings',data={'academic_context':'high_school'})
     assert 'Planned' in authed_client.get('/courses?course_source=dual').text
     with app.app_context():
