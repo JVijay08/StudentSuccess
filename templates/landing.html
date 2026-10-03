@@ -14,7 +14,7 @@
   <main id="main-content">
     <nav aria-label="Primary navigation">
       <a class="brand" href="{{ nav_url('main.home') }}">StudentSuccess</a>
-      <div><a href="{{ nav_url('auth.login') }}">Sign in</a><a class="nav-cta" href="{{ nav_url('auth.register') }}">Create a planner</a></div>
+      <div><a href="{{ url_for('seo.features') }}">Features</a><a href="{{ nav_url('auth.login') }}">Sign in</a></div>
     </nav>
 
     <section class="hero">
@@ -24,11 +24,10 @@
         <p class="lede">StudentSuccess is an academic planner for high-school and college students. Organize assignments, find your next task, and plan a manageable course load.</p>
         <div class="hero-actions"><form method="post" action="{{ url_for('tutorial.start') }}">{% include '_navigation_fields.html' %}<input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><button class="primary-action">Start tutorial</button></form>
           <a class="secondary-action" href="{{ nav_url('auth.register') }}">Create an account</a>
-          <a href="{{ nav_url('auth.login') }}">Sign in</a>
         </div>
-        <p class="prototype-note">Plan your actual courses and tasks. Leave out personal identifiers and sensitive details. Your account saves your planner on the server.</p>
+        <p class="prototype-note">No signup needed for the tutorial. Explore real controls in a separate sample planner.</p>
       </div>
-    <section class="product-preview" aria-label="Example of the task planner"><div class="notebook-tab" aria-hidden="true">ONE STEP AT A TIME</div><div class="preview-top"><strong>Today</strong><span>Example planner</span></div><p class="eyebrow">Recommended next task</p><h2>Draft your introduction</h2><p>Composition &middot; 45 minutes &middot; Due tonight</p><p class="recommendation-brief">This deadline is within 24 hours. A short first draft makes the rest of the paper easier to start.</p><form method="post" action="{{ url_for('tutorial.start') }}">{% include '_navigation_fields.html' %}<input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><button class="secondary">Try the interactive tutorial &rarr;</button></form><div class="preview-queue"><h3>Up next</h3><p><strong>Review biology notes</strong><span>30 min &middot; Tomorrow</span></p><p><strong>Research paper</strong><span>2 of 5 subtasks complete</span></p><progress value="40" max="100">40%</progress></div><p class="preview-caption">Deadlines, subtasks, and a clear place to start.</p></section>
+    <section class="product-preview" aria-label="Example of the task planner"><div class="notebook-tab" aria-hidden="true">ONE STEP AT A TIME</div><div class="preview-top"><strong>Today</strong><span>Example planner</span></div><p class="eyebrow">Recommended next task</p><h2>Draft your introduction</h2><p>Composition &middot; 45 minutes &middot; Due tonight</p><p class="recommendation-brief">This deadline is within 24 hours. A short first draft makes the rest of the paper easier to start.</p><div class="preview-queue"><h3>Up next</h3><p><strong>Review biology notes</strong><span>30 min &middot; Tomorrow</span></p><p><strong>Research paper</strong><span>2 of 5 subtasks complete</span></p><progress value="40" max="100">40%</progress></div><p class="preview-caption">Deadlines, subtasks, and a clear place to start.</p></section>
     </section>
 
 

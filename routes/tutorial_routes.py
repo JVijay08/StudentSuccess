@@ -66,12 +66,13 @@ def _start():
     previous = session.get('tutorial_return')
     if session.get('user_id') and not session.get('demo_mode'):
         previous = {key: session[key] for key in ('user_id', 'auth_version', '_last_active', 'access_version') if key in session}
-    if session.get('demo_mode'):
-        old = db.session.get(User, session.get('user_id'))
-        if old and old.username.startswith('demo-'):
-            db.session.delete(old)
-            db.session.commit()
+    old = db.session.get(User, session.get('user_id')) if session.get('demo_mode') else None
     response = start_demo()
+    if isinstance(response, tuple) and response[1] == 429:
+        return response
+    if old and old.username.startswith('demo-'):
+        db.session.delete(old)
+        db.session.commit()
     session['tutorial_mode'] = True
     session['tutorial_step'] = 0
     if previous:

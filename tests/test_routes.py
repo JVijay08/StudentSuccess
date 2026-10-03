@@ -10,6 +10,7 @@ def test_public_home_explains_real_use_and_offers_demo(app):
     assert response.status_code == 200
     assert b"Plan less." in response.data
     assert b"Start tutorial" in response.data
+    assert b"No signup needed for the tutorial." in response.data
     assert b"Plan your actual courses and tasks" in response.data
     assert b"high-school and college students" in response.data
     assert b'property="og:image"' in response.data
@@ -46,6 +47,51 @@ def test_one_click_demo_creates_isolated_populated_workspace(app):
     with app.app_context():
         assert User.query.filter(User.username.startswith("demo-")).count() == 1
         assert Task.query.count() == 7
+
+
+def test_tutorial_start_rate_limit_preserves_current_practice_workspace(app):
+    from tests.account_helpers import csrf
+
+    app.config["PRACTICE_START_LIMIT"] = 1
+    client = app.test_client()
+    first = client.post("/tutorial/start", data={"csrf_token": csrf(client)})
+    assert first.status_code == 302
+    with client.session_transaction() as session:
+        practice_user_id = session["user_id"]
+        assert session.get("demo_mode") is True
+
+    limited = client.post("/tutorial/start", data={"csrf_token": csrf(client)})
+    assert limited.status_code == 429
+    assert limited.headers["Retry-After"] == "900"
+    with client.session_transaction() as session:
+        assert session["user_id"] == practice_user_id
+    with app.app_context():
+        assert db.session.get(User, practice_user_id) is not None
+        assert User.query.filter(User.username.startswith("demo-")).count() == 1
+
+
+def test_cross_site_post_cannot_start_a_practice_workspace(app):
+    response = app.test_client().post(
+        "/demo",
+        headers={
+            "Origin": "https://attacker.example",
+            "Sec-Fetch-Site": "cross-site",
+        },
+    )
+
+    assert response.status_code == 400
+    with app.app_context():
+        assert User.query.filter(User.username.startswith("demo-")).count() == 0
+
+
+def test_production_responses_advertise_transport_and_content_policies(app):
+    app.config["SESSION_COOKIE_SECURE"] = True
+    response = app.test_client().get("/")
+
+    assert response.headers["Strict-Transport-Security"] == "max-age=31536000"
+    policy = response.headers["Content-Security-Policy"]
+    assert "default-src 'self'" in policy
+    assert "frame-ancestors 'none'" in policy
 
 
 def test_authenticated_home_redirects_to_dashboard(authed_client):

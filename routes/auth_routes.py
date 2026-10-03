@@ -15,6 +15,13 @@ auth_bp = Blueprint("auth", __name__)
 @auth_bp.post("/demo")
 def start_demo():
     """Create an isolated fictional workspace for a public demo visitor."""
+    from flask import current_app
+    from services.account_policy import allow_attempt
+    if not allow_attempt(request.remote_addr or 'unknown', 'practice',
+                         limit=current_app.config['PRACTICE_START_LIMIT']):
+        return render_template('error.html', status_code=429,
+            heading='Please wait before starting another tutorial.',
+            message='Too many practice workspaces were started from this connection. Try again in 15 minutes, or sign in to your existing account.'), 429, {'Retry-After': '900'}
     cutoff = datetime.now(timezone.utc) - timedelta(days=1)
     stale_demo_users = User.query.filter(
         User.username.startswith("demo-"), User.created_at < cutoff

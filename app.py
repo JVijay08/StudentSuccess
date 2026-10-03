@@ -78,6 +78,20 @@ def create_app(test_config=None):
         elif not user.onboarding_completed and request.endpoint != 'profile.onboarding':
             return redirect(url_for('profile.onboarding'))
 
+    @app.before_request
+    def reject_cross_site_writes():
+        # Defense in depth for browser requests, alongside per-form CSRF checks.
+        # Do not trust arbitrary forwarded headers or change local HTTP behavior.
+        if request.method not in {'GET', 'HEAD', 'OPTIONS'}:
+            from flask import abort
+            from urllib.parse import urlsplit
+            origin = request.headers.get('Origin')
+            allowed = {urlsplit(app.config['PUBLIC_SITE_URL']).netloc, request.host}
+            if request.headers.get('Sec-Fetch-Site') == 'cross-site' or (
+                origin and (urlsplit(origin).scheme not in {'http', 'https'} or urlsplit(origin).netloc not in allowed)
+            ):
+                abort(400)
+
     @app.template_filter("planner_time")
     def planner_time(value):
         if value is None:
@@ -124,6 +138,12 @@ def create_app(test_config=None):
         response.headers.setdefault("X-Frame-Options", "DENY")
         response.headers.setdefault("Referrer-Policy", "strict-origin-when-cross-origin")
         response.headers.setdefault("Permissions-Policy", "camera=(), microphone=(), geolocation=()")
+        if app.config.get('SESSION_COOKIE_SECURE'):
+            response.headers.setdefault('Strict-Transport-Security', 'max-age=31536000')
+        response.headers.setdefault('Content-Security-Policy',
+            "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; "
+            "img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; "
+            "object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'")
         return response
 
     @app.get("/time")
@@ -137,6 +157,11 @@ def create_app(test_config=None):
     @app.errorhandler(404)
     def page_not_found(_error):
         return render_template("error.html", status_code=404, heading="That page is not here.", message="The link may be outdated, or the item may have been removed."), 404
+
+    @app.errorhandler(413)
+    def form_too_large(_error):
+        return render_template('error.html', status_code=413, heading='This upload or form is too large.',
+            message='Use a calendar file smaller than 1 MB, or shorten the form and try again. Previously saved work is unchanged.'), 413
 
     @app.errorhandler(500)
     def internal_error(_error):

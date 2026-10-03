@@ -32,6 +32,22 @@ Search engines decide whether and when pages appear; these changes do not promis
 rankings. No new analytics/tracking was installed. Cold-start hosting latency can
 still affect page experience and should be evaluated with real measurements.
 
+## Launch-readiness spot checks (2026-10-03)
+
+- The live HTTP homepage redirected to the same HTTPS URL (301); HTTPS returned
+  200. The live sitemap listed only the homepage, Features, and Updates, and
+  `robots.txt` advertised that sitemap.
+- The local Playwright discovery check passed at 320, 390, and 1440 pixels for
+  those three public pages, including canonical/description/H1 checks, JavaScript
+  error monitoring, and the Features FAQ with JavaScript disabled. This does not
+  cover every private workspace screen.
+- One warm live request measured 0.161 s to first byte for the homepage and
+  0.189 s for Features. These are single-request observations, not Lighthouse,
+  cold-start, or Core Web Vitals measurements.
+- The source social-preview PNG was losslessly recompressed from 1,094,387 to
+  981,556 bytes (10.3% smaller, pixel-identical). The live image remains at its
+  deployed size until this source change is released.
+
 References: [Google robots directives](https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag),
 [sitemap guidance](https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview),
 and [supported metadata](https://developers.google.com/search/docs/crawling-indexing/special-tags).

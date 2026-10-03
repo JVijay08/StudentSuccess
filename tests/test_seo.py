@@ -18,6 +18,12 @@ def test_public_metadata_and_canonical_host(app):
         assert 'property="og:image"' in html and 'name="twitter:card"' in html
         titles.append(re.search(r'<title>(.*?)</title>',html).group(1))
     assert len(set(titles))==3
+    image = re.search(r'property="og:image" content="([^"]+)"', html).group(1)
+    assert image == 'https://studentsuccess.onrender.com/static/images/studentsuccess-social-preview.png'
+    assert 'property="og:image:alt" content="StudentSuccess — Plan less. Start sooner."' in html
+    preview = client.get('/static/images/studentsuccess-social-preview.png')
+    assert preview.status_code == 200
+    assert preview.mimetype == 'image/png'
     html=client.get('/').get_data(as_text=True)
     schema=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',html,re.S).group(1))
     assert schema['@graph'][0]['@type']=='WebSite'

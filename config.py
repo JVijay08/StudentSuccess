@@ -21,6 +21,10 @@ DATABASE_URL = normalize_database_url(os.environ.get("DATABASE_URL"))
 
 
 class config:
+    # Calendar uploads allow 1 MiB; leave room for multipart/form metadata.
+    MAX_CONTENT_LENGTH = 2 * 1024 * 1024
+    MAX_FORM_MEMORY_SIZE = 1024 * 1024
+    PRACTICE_START_LIMIT = 30
     GROQ_API_KEY = os.environ.get("GROQ_API_KEY") or os.environ.get("API_KEY", "")
     GROQ_MODEL = os.environ.get("GROQ_MODEL", "openai/gpt-oss-20b")
     AI_ENABLED = os.environ.get("AI_ENABLED", "1") == "1"
