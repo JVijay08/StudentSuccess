@@ -37,7 +37,10 @@ class config:
     SESSION_REFRESH_EACH_REQUEST = True
     SESSION_COOKIE_HTTPONLY = True
     SESSION_COOKIE_SAMESITE = "Lax"
-    SESSION_COOKIE_SECURE = os.environ.get("APP_ENV") == "production"
+    SESSION_COOKIE_SECURE = (
+        os.environ.get("APP_ENV") == "production"
+        or bool(os.environ.get("RENDER_EXTERNAL_HOSTNAME"))
+    )
     SECRET_KEY = os.environ.get("SECRET_KEY") or (
         "dev-only-secret"
         if os.environ.get("APP_ENV", "development") != "production"
