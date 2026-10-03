@@ -6,4 +6,5 @@
     <label>Choose a time<input type="datetime-local" name="planned_start_at"></label>
     <div class="schedule-shortcuts"><button name="schedule_choice" value="custom">Save time</button><button class="quiet-button" name="schedule_choice" value="clear">Clear planned start</button></div>
   </form>
+  {% if task is defined and not task.parent_task_id and not task.children and not task.recurrence_rule and task.status == 'not_started' %}<p><a href="{{ url_for('ai.plan',task_id=schedule_task_id) }}">Break remaining work into study sessions with AI</a></p>{% endif %}
 </details>

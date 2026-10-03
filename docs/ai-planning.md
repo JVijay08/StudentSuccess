@@ -5,11 +5,13 @@ Open an unstarted assignment with no subtasks or recurring schedule, then choose
 Groq, and request a draft. Edit titles/minutes, uncheck unwanted steps, and explicitly
 add the selected steps. Discarding does not change the assignment.
 
-The task-entry form also offers **Draft from assignment text with AI**. Enter instructions, a deadline, an estimate, and an optional subject; review and edit the title and steps before the assignment and selected subtasks are created atomically. The title starts with the first line of the supplied instructions, and remains editable. The deadline and subject are not sent to Groq. No additional database columns are needed.
+The task-entry form also offers **Draft from assignment text with AI**. A rough note or vague study goal can produce a suggested title, subject, deadline, focused-work estimate, and concrete steps/checkpoints. Missing deadlines remain empty for the student to supply. The review screen makes the title, subject, deadline, total estimate, and each step editable. Relative dates and estimates must be checked. Manual deadline/estimate entry remains available. No new database columns are needed.
 
-AI does not create schedules,
-change deadlines, rank tasks, browse websites, verify course requirements, or complete
-schoolwork. Existing deterministic ranking remains unchanged.
+Review also offers **Spread the work across study sessions**. It uses AI-generated steps and a deterministic local scheduler, not an AI-controlled calendar. Students choose a first study time and daily minute budget. Long steps split into at most eight sessions; the scheduler retains local wall-clock time across days, avoids other uncompleted leaf tasks with planned starts, includes ten-minute breaks, and rejects plans that cannot fit before the deadline. It does not know external calendar events, classes, or unplanned work. Preview writes no tasks; apply validates the dates/conflicts again and requires explicit confirmation. Existing assignments must be unstarted, non-recurring, and have no subtasks; other tasks keep the manual rescheduler.
+
+Recommendation explanations already translate actual ranking factors into readable reasons, comparisons, and recorded-history notes. They remain deterministic, with no AI rewrite that might invent reasons or change the ordering.
+
+AI does not independently change schedules or deadlines, rank tasks, browse websites, verify course requirements, or complete schoolwork. Date suggestions and locally generated study sessions require review. Existing deterministic ranking remains unchanged.
 
 ## Render configuration
 
@@ -33,7 +35,7 @@ Groq's free plan and provider-side limits; the app does not enable billing.
 ## Boundaries and data handling
 
 Only the text visible in the AI request form and the assignment's minute budget go
-to Groq. Names, account IDs, other tasks, institutions, and study history are not
+to Groq in manual/step mode. Task-detail inference also sends today's local date. Names, account IDs, other tasks, institutions, and study history are not
 automatically included. Users can edit the prefilled task title before sending.
 The notice is an acknowledgment, not automated personal-data detection.
 

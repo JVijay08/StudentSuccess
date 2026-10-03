@@ -18,6 +18,8 @@ with app.app_context():
  user=User.query.one();user.username="refresh-preview";user.password_hash=hash_password("sample-refresh-password")
  tid=Task.query.filter_by(status="not_started").first().id
  db.session.commit()
+original_assignment=ai_planning.generate_assignment
+ai_planning.generate_assignment=lambda *args:dict(title="Energy presentation", subject="Science", due_at="2027-06-01T23:59", estimated_minutes=60, steps=[{"title":"Read the brief","minutes":20},{"title":"Draft and self-check","minutes":40}])
 original=ai_planning.generate
 ai_planning.generate=lambda *args:[{"title":"Read the brief","minutes":20},{"title":"Draft and revise","minutes":40}]
 logging.getLogger("werkzeug").setLevel(logging.ERROR)
@@ -58,21 +60,28 @@ try:
    page.screenshot(path=str(out/("settings-"+theme+".png")),animations="disabled")
   page.goto(base+"/tasks/ai/new")
   page.locator("[name=description]").fill("Prepare a renewable energy presentation")
-  page.locator("[name=due_at]").fill("2027-06-01")
-  page.locator("[name=estimated_minutes]").fill("60")
   page.locator("[name=consent]").check()
   page.get_by_role("button",name="Draft my assignment").click()
   expect(page.locator("[name=parent_title]")).to_be_visible()
   page.locator("[name=parent_title]").fill("Renewable energy presentation")
+  page.get_by_text("Spread the work across study sessions",exact=True).click()
+  page.locator("[name=first_start]").fill("2027-05-20T17:00")
+  page.locator("[name=daily_minutes]").fill("30")
+  page.get_by_role("button",name="Preview study sessions").click()
+  expect(page.locator("[name=start_2]")).to_have_value("2027-05-22T17:00")
+  for width in [320,390,1440]:
+   page.set_viewport_size({"width":width,"height":960})
+   issues.extend(page.evaluate(BOUNDS));views+=1
   page.get_by_role("button",name="Create assignment & steps").click()
   expect(page.get_by_role("heading",name="Renewable energy presentation",exact=True)).to_be_visible()
   with app.app_context():
    task=Task.query.filter_by(title="Renewable energy presentation").one()
-   assert len(task.children)==2
+   assert len(task.children)==3 and all(child.planned_start_at for child in task.children)
   browser.close()
  assert not errors,errors
  assert not issues,issues
  print(f"Passed {views} cross-page responsive checks, settings save, themes, and AI assignment creation.")
 finally:
  ai_planning.generate=original
+ ai_planning.generate_assignment=original_assignment
  server.shutdown()

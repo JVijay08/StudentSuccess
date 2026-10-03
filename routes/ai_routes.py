@@ -1,5 +1,7 @@
 import secrets
 import json
+from zoneinfo import ZoneInfo
+from services.datetime_util import to_utc
 from datetime import datetime, timedelta, timezone
 from flask import Blueprint, abort, current_app, flash, g, redirect, render_template, request, session, url_for
 from sqlalchemy import update
@@ -41,7 +43,7 @@ def new_assignment():
     settings = get_or_create_settings(g.current_user)
     available = ai.configured() and not session.get("demo_mode")
     values = request.form.to_dict() if request.method == "POST" else {
-        "estimated_minutes": settings.default_task_minutes}
+        "estimated_minutes": settings.default_task_minutes, "autofill": "yes"}
     errors = []
     if request.method == "POST":
         verify_csrf()
@@ -49,7 +51,8 @@ def new_assignment():
         fields = dict(title=(description.splitlines()[0][:160] if description else ""),
             subject=request.form.get("subject", ""), due_at=request.form.get("due_at", ""),
             estimated_minutes=request.form.get("estimated_minutes", ""))
-        cleaned, errors = _validate_task_form(fields, settings.timezone_name)
+        autofill = request.form.get("autofill") == "yes"
+        cleaned, errors = _validate_task_form(fields, settings.timezone_name) if not autofill else ({}, [])
         if not 1 <= len(description) <= 2000:
             errors.append("Describe the assignment in 1 to 2,000 characters.")
         if request.form.get("consent") != "yes":
@@ -59,12 +62,18 @@ def new_assignment():
         if not errors:
             try:
                 ai.reserve(g.current_user.id)
-                steps = ai.generate(description, cleaned["estimated_minutes"])
+                if autofill:
+                    suggestion = ai.generate_assignment(description, datetime.now(ZoneInfo(settings.timezone_name)).date().isoformat())
+                    steps = suggestion.pop('steps')
+                    cleaned = suggestion
+                    cleaned['due_at'] = to_utc(suggestion['due_at'], settings.timezone_name) if suggestion['due_at'] else None
+                else:
+                    steps = ai.generate(description, cleaned["estimated_minutes"])
             except ai.AIUnavailable as exc:
                 errors.append(str(exc))
             else:
                 parent = dict(title=cleaned["title"], subject=cleaned["subject"],
-                    due_at=cleaned["due_at"].isoformat(),
+                    due_at=cleaned["due_at"].isoformat() if cleaned["due_at"] else None,
                     estimated_minutes=cleaned["estimated_minutes"])
                 draft = AIDraft(id=secrets.token_urlsafe(24), user_id=g.current_user.id,
                     task_id=0, snapshot=json.dumps(parent), steps=steps,
@@ -122,12 +131,16 @@ def review(draft_id):
     is_new = draft.task_id == 0
     if is_new:
         values = json.loads(draft.snapshot)
-        values["due_at"] = datetime.fromisoformat(values["due_at"])
+        values["due_at"] = datetime.fromisoformat(values["due_at"]) if values["due_at"] else None
         task = Task(student_profile_id=g.current_user.profile.id,
                     status="not_started", **values)
     else:
         task = owned_task(draft.task_id, lock=request.method == "POST")
+    from services.settings_service import get_or_create_settings
+    settings = get_or_create_settings(g.current_user)
     errors, rows = [], draft.steps
+    parent_due = (task.due_at.replace(tzinfo=timezone.utc) if task.due_at and task.due_at.tzinfo is None else task.due_at)
+    due_input = parent_due.astimezone(ZoneInfo(settings.timezone_name)).strftime('%Y-%m-%dT%H:%M') if parent_due else ''
     if request.method == "POST":
         verify_csrf()
         if request.form.get("action") == "discard":
@@ -135,9 +148,16 @@ def review(draft_id):
             db.session.commit()
             return redirect(url_for("tasks.tasks") if is_new else url_for("tasks.task_detail", task_id=task.id))
         if is_new:
-            task.title = request.form.get("parent_title", task.title).strip()
-            if not 1 <= len(task.title) <= 160:
-                errors.append("Enter an assignment title of 1 to 160 characters.")
+            from routes.task_routes import _validate_task_form
+            due_input = request.form.get('parent_due', due_input)
+            fields = dict(title=request.form.get('parent_title', task.title),
+                subject=request.form.get('parent_subject', task.subject or ''), due_at=due_input,
+                estimated_minutes=request.form.get('parent_minutes', str(task.estimated_minutes)))
+            cleaned, parent_errors = _validate_task_form(fields, settings.timezone_name)
+            errors.extend(parent_errors)
+            if not parent_errors:
+                for key in ('title', 'subject', 'due_at', 'estimated_minutes'):
+                    setattr(task, key, cleaned[key])
         if not is_new and (not eligible(task) or ai.snapshot(task) != draft.snapshot):
             errors.append("This assignment changed after the draft was created. Return to the task and generate a fresh draft.")
         rows = []
@@ -153,6 +173,40 @@ def review(draft_id):
             rows = ai.validate_steps(rows, task.estimated_minutes)
         except (ValueError, TypeError) as exc:
             errors.append(str(exc) if str(exc).startswith(("Choose", "Each", "Step", "The", "Select")) else "Enter whole minutes for the selected steps.")
+        if not errors and request.form.get('action') == 'schedule':
+            from services.ai_schedule import spread
+            try:
+                first = to_utc(request.form.get('first_start', ''), settings.timezone_name)
+                others = Task.query.filter(Task.student_profile_id == task.student_profile_id,
+                    Task.id != (task.id or 0)).all()
+                scheduled = spread(rows, first, int(request.form.get('daily_minutes', '')),
+                    task.due_at, others, settings.timezone_name)
+            except (ValueError, OverflowError):
+                errors.append('The schedule could not fit. Use a future start, 10 to 480 minutes per day, and a deadline with enough room for up to eight sessions. Existing planned work is kept in place.')
+            else:
+                draft.steps = scheduled
+                if is_new:
+                    draft.snapshot = json.dumps(dict(title=task.title, subject=task.subject,
+                        due_at=task.due_at.isoformat(), estimated_minutes=task.estimated_minutes))
+                db.session.commit()
+                return redirect(url_for('ai.review', draft_id=draft.id))
+        if not errors:
+            from services.ai_schedule import utc, busy_intervals
+            others = Task.query.filter(Task.student_profile_id == task.student_profile_id,
+                Task.id != (task.id or 0)).all()
+            busy = busy_intervals(others)
+            try:
+                for step, index in zip(rows, selected):
+                    raw = request.form.get('start_' + index, draft.steps[int(index)].get('planned_start_at', ''))
+                    start = to_utc(raw, settings.timezone_name) if raw else None
+                    if start:
+                        end = start + timedelta(minutes=step['minutes'])
+                        if start < datetime.now(timezone.utc) or end > utc(task.due_at) or any(start < b and end > a for a,b in busy):
+                            raise ValueError('Invalid study session')
+                        busy.append((start,end))
+                    step['planned_start_at'] = start
+            except (ValueError, OverflowError):
+                errors.append('A study session is in the past, overlaps planned work, or finishes after the deadline. Adjust its time or leave it blank.')
         if not errors:
             claimed = db.session.execute(update(AIDraft).where(
                 AIDraft.id == draft.id, AIDraft.consumed.is_(False)).values(consumed=True))
@@ -167,18 +221,27 @@ def review(draft_id):
             for step in rows:
                 db.session.add(Task(student_profile_id=task.student_profile_id,
                     parent_task_id=task.id, title=step["title"], estimated_minutes=step["minutes"],
+                    planned_start_at=step.get("planned_start_at"),
                     subject=task.subject, task_type=task.task_type, due_at=task.due_at,
                     difficulty=task.difficulty, interest_level=task.interest_level,
                     reminder_enabled=task.reminder_enabled))
             # Erase draft content immediately after applying; retain a replay guard until expiry.
             draft.steps = []
             db.session.commit()
-            flash("Your reviewed steps were added. All share the assignment deadline; set planned starts when you are ready.", "success")
+            flash("Your reviewed steps and study times were saved. The assignment deadline is unchanged.", "success")
             return redirect(url_for("tasks.task_detail", task_id=task.id))
         db.session.rollback()
         # Preserve every submitted edit and selection when correcting a validation error.
         rows = [{"title":request.form.get(f"title_{i}", step["title"]),
-                 "minutes":request.form.get(f"minutes_{i}", step["minutes"])}
+                 "minutes":request.form.get(f"minutes_{i}", step["minutes"]),
+                 "planned_start_at":request.form.get(f"start_{i}", step.get("planned_start_at", ""))}
                 for i, step in enumerate(draft.steps)]
+    for row in rows:
+        start = row.get('planned_start_at')
+        if start:
+            try:
+                row['start_input'] = to_utc(start, settings.timezone_name).astimezone(ZoneInfo(settings.timezone_name)).strftime('%Y-%m-%dT%H:%M')
+            except (ValueError, TypeError):
+                row['start_input'] = start
     selected = request.form.getlist("selected") if request.method == "POST" else [str(i) for i in range(len(rows))]
-    return render_template("ai_review.html", task=task, draft=draft, rows=rows, selected=selected, errors=errors, is_new=is_new)
+    return render_template("ai_review.html", task=task, draft=draft, rows=rows, selected=selected, errors=errors, is_new=is_new, due_input=due_input)
