@@ -133,7 +133,9 @@ def create_app(test_config=None):
     def add_security_headers(response):
         if request.path.startswith(("/access/", "/account/", "/transfer-planner")) or session.get("user_id") or request.path in ("/login", "/register"):
             response.headers["Cache-Control"] = "no-store"
-            response.headers["Referrer-Policy"] = "no-referrer"
+            # Keep external referrers private without making same-site form
+            # submissions send Origin: null and fail the cross-site write guard.
+            response.headers["Referrer-Policy"] = "same-origin"
         response.headers.setdefault("X-Content-Type-Options", "nosniff")
         response.headers.setdefault("X-Frame-Options", "DENY")
         response.headers.setdefault("Referrer-Policy", "strict-origin-when-cross-origin")
