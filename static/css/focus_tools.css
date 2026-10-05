@@ -1,0 +1,7 @@
+#focus-dialog,#park-dialog{width:min(620px,calc(100vw - 32px));max-height:calc(100dvh - 32px);overflow:auto;box-sizing:border-box;padding:28px;border:1px solid var(--line);border-radius:12px;background:var(--white);color:var(--ink);box-shadow:var(--shadow-raised)}
+#focus-dialog::backdrop,#park-dialog::backdrop{background:rgb(0 0 0 / .65)}
+.focus-dialog-top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:20px}.focus-dialog-top h2,.focus-dialog-top p{margin:0}
+#focus-heading{font-size:1.6rem;overflow-wrap:anywhere}#focus-time{display:block;font-size:clamp(3rem,12vw,5rem);font-variant-numeric:tabular-nums;margin:24px 0}
+.focus-controls,.focus-utilities{display:flex;align-items:center;flex-wrap:wrap;gap:12px}.focus-utilities{margin-top:20px;font-size:.9rem}.focus-help{font-size:.85rem;color:var(--muted);line-height:1.5}
+#park-form{display:grid;gap:12px}#park-form button{justify-self:start}#park-list{padding:0;list-style:none}#park-list li{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}#park-list span{overflow-wrap:anywhere;min-width:0}#park-list button{flex-shrink:0}
+@media(max-width:560px){#focus-dialog,#park-dialog{padding:18px}.focus-dialog-top{align-items:start;flex-wrap:wrap}.focus-controls button{flex:1 1 auto}}

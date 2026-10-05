@@ -389,6 +389,10 @@ def start_task(task_id):
     task.status = "in_progress"
     _sync_parent(task)
     db.session.commit()
+    if request.form.get('focus_minutes') == '5':
+        session['focus_starter'] = dict(task_id=task.id, title=task.title,
+                                       minutes=int(request.form['focus_minutes']))
+        return redirect(url_for('main.dashboard'))
     if request.form.get("redirect_to") == "dashboard":
         return redirect(return_url("main.dashboard"))
     return redirect(return_url("tasks.tasks"))

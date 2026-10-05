@@ -1,0 +1,21 @@
+<div class="focus-utilities" hidden data-focus-user="{{ g.current_user.id }}-{{ g.current_user.created_at.isoformat() }}">
+<button type="button" class="secondary" id="resume-focus" hidden>Return to focus timer</button>
+<button type="button" class="secondary" data-park-open>Park a thought</button>
+<span>Set distractions aside for later.</span>
+</div>
+<dialog id="focus-dialog" aria-labelledby="focus-heading">
+<div class="focus-dialog-top"><p>Focus session</p><button type="button" class="secondary" data-focus-close>Back to dashboard</button></div>
+<h2 id="focus-heading">One task, five minutes.</h2>
+<p>Just do five minutes. You can stop when the timer ends.</p>
+<output id="focus-time" aria-live="off" aria-label="Time remaining">05:00</output>
+<p id="focus-status" role="status"></p>
+<div class="focus-controls"><button type="button" id="focus-pause">Pause</button><button type="button" class="secondary" id="focus-more">Start 5 more minutes</button><button type="button" class="secondary" data-park-open>Park a thought</button><button type="button" class="secondary" id="focus-end">End session</button></div>
+<p class="focus-help">This timer does not complete your task or record actual minutes. Closing this view keeps the timer running; End session clears it.</p>
+</dialog>
+<dialog id="park-dialog" aria-labelledby="park-heading">
+<div class="focus-dialog-top"><h2 id="park-heading">Park it for later</h2><button type="button" class="secondary" id="park-close">Close</button></div>
+<p>Saved only in this browser tab. Closing the tab normally clears these notes; browser session restoration may retain them. Use Clear all thoughts to remove them now. They are not sent to AI or included in account exports. Avoid sensitive information.</p>
+<form id="park-form"><label for="park-text">What's on your mind?</label><textarea id="park-text" maxlength="300" rows="3" required></textarea><button>Save thought</button></form>
+<p id="park-status" role="status"></p><ul id="park-list"></ul><button type="button" class="secondary" id="park-clear">Clear all thoughts</button>
+</dialog>
+<script type="application/json" id="focus-initial">{{ session.pop('focus_starter', none)|tojson }}</script>

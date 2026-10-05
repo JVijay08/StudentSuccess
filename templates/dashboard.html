@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
   {% include '_accessibility_head.html' %}
   <link rel="stylesheet" href="{{ url_for('static', filename='css/nonpersonal.css') }}">
-<link rel="stylesheet" href="{{ url_for('static',filename='css/task_cards.css') }}"><script src="{{ url_for('static',filename='js/task_cards.js') }}" defer></script></head>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/task_cards.css') }}"><script src="{{ url_for('static',filename='js/task_cards.js') }}" defer></script><link rel="stylesheet" href="{{ url_for('static',filename='css/focus_tools.css') }}"><script src="{{ url_for('static',filename='js/focus_tools.js') }}" defer></script></head>
 <body class="notebook-dashboard">
   {% include '_accessibility_body.html' %}
   <div class="shell">
@@ -35,9 +35,8 @@
       {% endif %}
 
       <header class="dashboard-header">
-        <p class="eyebrow">TODAY</p>
         {% if profile %}
-          <h1>Your day, in focus.</h1>
+          <h1>Today</h1>
           <p>One assignment at a time. Start here, then work through your queue.</p>
         {% else %}
           <h1>Welcome to StudentSuccess.</h1>
@@ -46,11 +45,11 @@
         {% if prioritized_tasks %}<a class="button secondary" href="{{ nav_url('tasks.tasks', _anchor='task-form') }}">Add a task</a>{% endif %}
       </header>
 
-      <div class="workspace-index"><span>A little progress is still progress.</span><a href="{{ nav_url('tasks.tasks', _anchor='task-form') }}">Write down a task <span aria-hidden="true">&#8599;</span></a></div>
+
 
       <section class="focus-card">
         <nav class="view-tabs dashboard-views" aria-label="Dashboard view"><a href="{{ url_for('main.dashboard', view='today') }}" {% if focus_view %}aria-current="page"{% endif %}>Today view</a><a href="{{ url_for('main.dashboard', view='full') }}" {% if not focus_view %}aria-current="page"{% endif %}>Full dashboard</a></nav>
-        <div class="illustrated-title"><p class="eyebrow accent">Recommended next task</p><span class="focus-annotation">One thing at a time. &#8600;</span></div>
+        <h2 class="focus-section-title">Start here</h2>
         {% if prioritized_tasks %}
           <ol class="priority-list">
             {% for row in prioritized_tasks[:(1 if focus_view else settings.recommendation_count)] %}
@@ -60,7 +59,7 @@
                 <p class="task-overview-meta">{% if task.subject %}{{ task.subject }} &middot; {% endif %}{% if task.estimated_minutes >= 60 %}{{ task.estimated_minutes // 60 }} hr{% if task.estimated_minutes % 60 %} {{ task.estimated_minutes % 60 }} min{% endif %}{% else %}{{ task.estimated_minutes }} min{% endif %} estimated</p>
                 <p class="task-deadline">Due {{ row.due_at_display }}</p>
                 {% if task.planned_start_at and task.status == 'not_started' %}<p class="task-overview-meta">Planned start {{ task.planned_start_at|planner_time }}</p>{% endif %}
-                <div class="task-primary-actions">{% if task.status == 'not_started' %}<form class="start-next-task" method="post" action="{{ url_for('tasks.start_task', task_id=task.id) }}">{% include '_csrf_field.html' %}{% include '_navigation_fields.html' %}<input type="hidden" name="redirect_to" value="dashboard"><button>Start this task</button></form>{% else %}<form class="complete-next-task" method="post" action="{{ url_for('tasks.complete_task', task_id=task.id) }}">{% include '_csrf_field.html' %}{% include '_navigation_fields.html' %}<button>Complete task</button></form>{% endif %}</div>
+                <div class="task-primary-actions">{% if task.status == 'not_started' %}<form class="start-next-task" method="post" action="{{ url_for('tasks.start_task', task_id=task.id) }}">{% include '_csrf_field.html' %}{% include '_navigation_fields.html' %}<input type="hidden" name="redirect_to" value="dashboard"><button>Start this task</button>{% if loop.first %}<button class="secondary" data-five-start hidden name="focus_minutes" value="5">Just 5 minutes</button>{% endif %}</form>{% else %}<form class="complete-next-task" method="post" action="{{ url_for('tasks.complete_task', task_id=task.id) }}">{% include '_csrf_field.html' %}{% include '_navigation_fields.html' %}<button>Complete task</button></form>{% if loop.first %}<button type="button" class="secondary" hidden data-focus-open data-task-id="{{ task.id }}" data-task-title="{{ task.title }}">Just 5 minutes</button>{% endif %}{% endif %}</div>
               </li>
             {% endfor %}
           </ol>
@@ -76,6 +75,7 @@
         {% endif %}
       </section>
 
+      {% include '_focus_tools.html' %}
       {% if reminder_tasks %}
       <section class="reminder-panel" aria-labelledby="reminder-title">
         <p class="eyebrow" id="reminder-title">REMINDERS YOU REQUESTED</p>
@@ -160,6 +160,7 @@
       </section>
       {% endif %}
       {% include '_orientation.html' %}
+
     </main>
   </div>
   <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
