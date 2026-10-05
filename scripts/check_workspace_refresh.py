@@ -7,7 +7,9 @@ from app import create_app
 from extensions import db
 from models import User,Task
 from services.auth_service import hash_password
-from services import ai_planning
+from services import ai_planning, ai_task_batch
+from models.ai_planning import AIQuota
+from tests.test_ai_task_batch import samples
 from werkzeug.serving import make_server
 from playwright.sync_api import sync_playwright,expect
 from audit_responsive import BOUNDS
@@ -20,6 +22,8 @@ with app.app_context():
  db.session.commit()
 original_assignment=ai_planning.generate_assignment
 ai_planning.generate_assignment=lambda *args:dict(title="Energy presentation", subject="Science", due_at="2027-06-01T23:59", estimated_minutes=60, steps=[{"title":"Read the brief","minutes":20},{"title":"Draft and self-check","minutes":40}])
+original_batch=ai_task_batch.generate
+ai_task_batch.generate=lambda *args:samples()
 original=ai_planning.generate
 ai_planning.generate=lambda *args:[{"title":"Read the brief","minutes":20},{"title":"Draft and revise","minutes":40}]
 logging.getLogger("werkzeug").setLevel(logging.ERROR)
@@ -58,7 +62,7 @@ try:
    page.set_viewport_size({"width":390,"height":960})
    issues.extend(page.evaluate(BOUNDS));views+=1
    page.screenshot(path=str(out/("settings-"+theme+".png")),animations="disabled")
-  page.goto(base+"/tasks/ai/new")
+  page.goto(base+"/tasks/ai/new?classic=1")
   page.locator("[name=description]").fill("Prepare a renewable energy presentation")
   page.locator("[name=consent]").check()
   page.get_by_role("button",name="Draft my assignment").click()
@@ -77,11 +81,34 @@ try:
   with app.app_context():
    task=Task.query.filter_by(title="Renewable energy presentation").one()
    assert len(task.children)==3 and all(child.planned_start_at for child in task.children)
+  with app.app_context():
+   AIQuota.query.delete();db.session.commit()
+  page.goto(base+"/tasks/ai/new")
+  page.locator('[name=description]').fill('Math homework and a history essay')
+  page.locator('[name=output_format]').select_option('mixed')
+  page.locator('[name=detail_style]').select_option('detailed')
+  page.locator('[name=consent]').check()
+  page.get_by_role('button',name='Draft my tasks').click()
+  expect(page.get_by_role('heading',name='Make this plan yours.')).to_be_visible()
+  page.locator('[name=save_as_1]').select_option('separate')
+  page.get_by_role('button',name='Preview selection').click()
+  expect(page.get_by_role('status')).to_contain_text('3 tasks')
+  for width in [320,390,1440]:
+   page.set_viewport_size({'width':width,'height':960})
+   issues.extend(page.evaluate(BOUNDS));views+=1
+  page.screenshot(path=str(out/'ai-batch-review.png'),full_page=True)
+  page.get_by_role('button',name='Save selected tasks').click()
+  page.wait_for_url('**/tasks')
+  with app.app_context():
+   assert Task.query.filter_by(title='Math exercises').one().parent_task_id is None
+   assert Task.query.filter_by(title='History essay').count()==0
+   assert Task.query.filter_by(title='Research').one().parent_task_id is None
   browser.close()
  assert not errors,errors
  assert not issues,issues
  print(f"Passed {views} cross-page responsive checks, settings save, themes, and AI assignment creation.")
 finally:
+ ai_task_batch.generate=original_batch
  ai_planning.generate=original
  ai_planning.generate_assignment=original_assignment
  server.shutdown()

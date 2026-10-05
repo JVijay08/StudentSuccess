@@ -37,7 +37,7 @@
 
     <details class="panel task-entry" {% if errors or not task_rows or using_template %}open{% endif %}><summary>Add a task</summary>
       {% if using_template %}<p role="status">Template ready. Choose a new due date, then add your task. The original stays unchanged.</p>{% endif %}
-      <p class="entry-intro">Start with a title, deadline, and estimate. <a href="{{ nav_url('ai.new_assignment') }}">Draft from assignment text with AI &rarr;</a></p>
+      <p class="entry-intro">Start with a title, deadline, and estimate. <a href="{{ nav_url('ai.new_assignment') }}">Draft tasks with AI &rarr;</a></p>
       {% if errors %}
         <div class="errors" role="alert">
           <ul>

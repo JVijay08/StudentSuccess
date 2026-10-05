@@ -6,3 +6,5 @@
 .ai-steps{padding-left:24px}.ai-steps li{padding:16px 0;border-bottom:1px solid var(--border,#d6e1eb)}
 .ai-planner button{margin:8px 8px 8px 0}.ai-planner .panel{min-width:0}
 @media(max-width:480px){.ai-planner{padding:16px}.ai-planner .panel{padding:16px}}
+
+.ai-planner select{display:block;width:100%;max-width:100%;box-sizing:border-box;margin:8px 0 20px;font:inherit}.ai-batch-item{margin-block:24px}.ai-planner details{margin-block:20px}

@@ -31,7 +31,9 @@ def eligible(task):
 
 @ai_bp.before_request
 def bounded_request():
-    if request.content_length and request.content_length > 16384:
+    # Review can contain 32 edited Unicode titles plus their form fields.
+    limit = 128 * 1024 if request.endpoint == "ai.review" else 16384
+    if request.content_length and request.content_length > limit:
         abort(413)
 
 
@@ -42,6 +44,9 @@ def new_assignment():
     from services.settings_service import get_or_create_settings
     settings = get_or_create_settings(g.current_user)
     available = ai.configured() and not session.get("demo_mode")
+    if request.method == 'POST' and 'output_format' in request.form:
+        from routes.ai_batch_review import generate_batch
+        return generate_batch(settings, available)
     values = request.form.to_dict() if request.method == "POST" else {
         "estimated_minutes": settings.default_task_minutes, "autofill": "yes"}
     errors = []
@@ -80,7 +85,7 @@ def new_assignment():
                     expires_at=datetime.now(timezone.utc)+timedelta(minutes=30))
                 db.session.add(draft); db.session.commit()
                 return redirect(url_for("ai.review", draft_id=draft.id))
-    return render_template("ai_new.html", values=values, errors=errors, available=available)
+    return render_template("ai_new_legacy.html" if request.args.get("classic") == "1" else "ai_new.html", values=values, errors=errors, available=available)
 
 
 @ai_bp.route("/tasks/<int:task_id>/ai", methods=["GET", "POST"])
@@ -131,6 +136,9 @@ def review(draft_id):
     is_new = draft.task_id == 0
     if is_new:
         values = json.loads(draft.snapshot)
+        if values.get('kind') == 'task_batch':
+            from routes.ai_batch_review import review_batch
+            return review_batch(draft)
         values["due_at"] = datetime.fromisoformat(values["due_at"]) if values["due_at"] else None
         task = Task(student_profile_id=g.current_user.profile.id,
                     status="not_started", **values)

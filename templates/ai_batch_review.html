@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Review your tasks | StudentSuccess</title>{% include '_accessibility_head.html' %}<link rel="stylesheet" href="{{ url_for('static',filename='css/ai_planning.css') }}"></head><body>{% include '_accessibility_body.html' %}<main id="main-content" class="ai-planner">
+<p><a href="{{ url_for('tasks.tasks') }}">Back to tasks</a></p><header><h1>Make this plan yours.</h1><p>Keep what helps. Edit each task, check its deadline, and choose how to save the work. Nothing is saved until you confirm.</p></header>
+{% if errors %}<div class="errors" role="alert"><ul>{% for error in errors %}<li>{{ error }}</li>{% endfor %}</ul></div>{% endif %}
+{% if preview_count is not none %}<p role="status">Your selection will create <strong>{{ preview_count }} tasks</strong>, including subtasks and repeat occurrences. Check the details, then save.</p>{% endif %}
+{% if budget %}<p>Your total budget is {{ budget }} focused minutes, including repetitions.</p>{% endif %}
+<form method="post">{% include '_csrf_field.html' %}
+{% for row in rows %}{% set i=loop.index0 %}<section class="panel ai-batch-item" aria-labelledby="draft-heading-{{ i }}">
+<h2 id="draft-heading-{{ i }}">{{ loop.index }}. {{ row.title }}</h2>
+<label class="ai-confirm"><input type="checkbox" name="selected" value="{{ i }}" {% if i|string in selected %}checked{% endif %}> Include this task{% if row.steps %} and its selected steps{% endif %}</label>
+<label>Task or project title<input name="title_{{ i }}" maxlength="160" value="{{ row.title }}"></label>
+<div class="fields"><label>Deadline<input name="due_at_{{ i }}" type="datetime-local" value="{{ row.due_at }}"><small>Your planner timezone; required for included tasks.</small></label>
+<label>Focused minutes<input name="estimated_minutes_{{ i }}" type="number" min="1" max="10080" value="{{ row.estimated_minutes }}"></label>
+<label>Course or subject<input name="subject_{{ i }}" maxlength="80" value="{{ row.subject }}"></label></div>
+{% if row.steps %}<label>Save these steps as<select name="save_as_{{ i }}"><option value="project" {% if row.save_as!='separate' %}selected{% endif %}>Subtasks under this project</option><option value="separate" {% if row.save_as=='separate' %}selected{% endif %}>Separate tasks without a parent</option></select></label><p>Separate tasks inherit this course and deadline. Uncheck every step to save just the main task.</p>
+<ol class="ai-steps">{% for step in row.steps %}{% set j=loop.index0 %}<li><label class="ai-confirm"><input type="checkbox" name="steps_{{ i }}" value="{{ j }}" {% if j|string in step_selected[i] %}checked{% endif %}> Include step {{ loop.index }}</label><label>Step title<input name="step_title_{{ i }}_{{ j }}" maxlength="160" value="{{ step.title }}"></label><label>Minutes<input name="step_minutes_{{ i }}_{{ j }}" type="number" min="1" max="10080" value="{{ step.minutes }}"></label></li>{% endfor %}</ol>{% endif %}
+<details><summary>Timing, repeats, and task preferences</summary>
+<label>Planned start (standalone tasks only)<input type="datetime-local" name="planned_start_at_{{ i }}" value="{{ row.planned_start_at }}"></label><p>For projects, schedule the individual steps after saving.</p>
+<label>Repeat<select name="repeat_rule_{{ i }}">{% for key,label in [('','Does not repeat'),('daily','Daily'),('weekly','Weekly'),('biweekly','Every two weeks'),('monthly','Monthly')] %}<option value="{{ key }}" {% if row.repeat_rule==key %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label>
+<label>Repeat through (inclusive)<input type="date" name="repeat_until_{{ i }}" value="{{ row.repeat_until }}"></label><p>The deadline above is the first occurrence. Repeats use the same local due time through this end date. Each occurrence is independent. Preview to see the count; at most 100 task rows can be saved at once.</p>
+<label>Task type<input name="task_type_{{ i }}" maxlength="40" value="{{ row.task_type }}"></label>
+<label>Difficulty<select name="difficulty_{{ i }}">{% for level in ['low','medium','high'] %}<option {% if row.difficulty==level %}selected{% endif %}>{{ level }}</option>{% endfor %}</select></label>
+<label>Interest<select name="interest_level_{{ i }}">{% for level in ['low','medium','high'] %}<option {% if row.interest_level==level %}selected{% endif %}>{{ level }}</option>{% endfor %}</select></label>
+</details></section>{% endfor %}
+<p>Drafts expire after 30 minutes. Check relative dates and time estimates. Unselected items are not saved.</p><button class="secondary" name="action" value="preview">Preview selection</button><button name="action" value="apply">Save selected tasks</button>
+</form><form method="post">{% include '_csrf_field.html' %}<button class="secondary" name="action" value="discard">Discard draft</button></form>
+</main>{% include '_legal_footer.html' %}</body></html>

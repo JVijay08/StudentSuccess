@@ -84,11 +84,11 @@ def generate(description, budget):
         raise AIUnavailable("AI could not produce a usable draft right now. Try later or add steps manually.") from None
 
 
-def _request(description, budget, instruction=None):
+def _request(description, budget, instruction=None, max_tokens=1800):
     payload = {
         "model": current_app.config["GROQ_MODEL"],
         "temperature": 0.2,
-        "max_completion_tokens": 1800,
+        "max_completion_tokens": max_tokens,
         "response_format": {"type": "json_object"},
         "messages": [
             {"role": "system", "content":
