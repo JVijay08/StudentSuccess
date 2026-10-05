@@ -89,7 +89,7 @@ try:
   page.locator('[name=detail_style]').select_option('detailed')
   page.locator('[name=consent]').check()
   page.get_by_role('button',name='Draft my tasks').click()
-  expect(page.get_by_role('heading',name='Make this plan yours.')).to_be_visible()
+  expect(page.get_by_role('heading',name='Review drafted tasks')).to_be_visible()
   page.locator('[name=save_as_1]').select_option('separate')
   page.get_by_role('button',name='Preview selection').click()
   expect(page.get_by_role('status')).to_contain_text('3 tasks')

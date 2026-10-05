@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Review your tasks | StudentSuccess</title>{% include '_accessibility_head.html' %}<link rel="stylesheet" href="{{ url_for('static',filename='css/ai_planning.css') }}"></head><body>{% include '_accessibility_body.html' %}<main id="main-content" class="ai-planner">
-<p><a href="{{ url_for('tasks.tasks') }}">Back to tasks</a></p><header><h1>Make this plan yours.</h1><p>Keep what helps. Edit each task, check its deadline, and choose how to save the work. Nothing is saved until you confirm.</p></header>
+<p><a href="{{ url_for('tasks.tasks') }}">Back to tasks</a></p><header><h1>Review drafted tasks</h1><p>Check deadlines and estimates. Uncheck anything you do not want to save.</p></header>
 {% if errors %}<div class="errors" role="alert"><ul>{% for error in errors %}<li>{{ error }}</li>{% endfor %}</ul></div>{% endif %}
 {% if preview_count is not none %}<p role="status">Your selection will create <strong>{{ preview_count }} tasks</strong>, including subtasks and repeat occurrences. Check the details, then save.</p>{% endif %}
 {% if budget %}<p>Your total budget is {{ budget }} focused minutes, including repetitions.</p>{% endif %}

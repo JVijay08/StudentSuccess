@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI step planner | StudentSuccess</title>{% include '_accessibility_head.html' %}<link rel="stylesheet" href="{{ url_for('static',filename='css/ai_planning.css') }}"></head><body>{% include '_accessibility_body.html' %}<main id="main-content" class="ai-planner"><p><a href="{{ url_for('tasks.task_detail',task_id=task.id) }}">Back to assignment</a></p>
 {% if errors %}<div class="errors" role="alert"><h2>Check your draft</h2><ul>{% for error in errors %}<li>{{ error }}</li>{% endfor %}</ul></div>{% endif %}
 
-<header><p class="eyebrow">AI STEP PLANNER / BETA</p><h1>A smaller first step.</h1><p>Turn an assignment or vague study goal into concrete steps and checkpoints. After reviewing, you can spread the work across study sessions, including after a missed start.</p></header>
+<header><h1>Break down this assignment</h1><p>Turn an assignment or vague study goal into concrete steps and checkpoints. After reviewing, you can spread the work across study sessions, including after a missed start.</p></header>
 <section class="panel"><h2>{{ task.title }}</h2><p>{{ task.estimated_minutes }} minutes available &middot; Due {{ task.due_at|planner_time }}</p>
 {% if not eligible %}<p>This tool works with an unstarted assignment that has no subtasks or recurring schedule. You can still add steps manually from the assignment.</p>
 {% elif not available %}<p>AI suggestions are not available in this workspace right now. Manual subtasks and work blocks still work.</p>

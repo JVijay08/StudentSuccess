@@ -12,7 +12,7 @@
 <body class="settings-workspace">
   {% include '_accessibility_body.html' %}
   <main id="main-content">
-    <header><div><p class="eyebrow">STUDENTSUCCESS / SETTINGS</p><h1>Settings</h1><p>Adjust your workspace, accessibility, and account.</p></div><a href="{{ nav_back_url('main.dashboard') }}">{{ nav_back_label('main.dashboard') }}</a></header>
+    <header><div><h1>Settings</h1><p>Adjust your workspace, accessibility, and account.</p></div><a href="{{ nav_back_url('main.dashboard') }}">{{ nav_back_label('main.dashboard') }}</a></header>
 
     {% with messages = get_flashed_messages(with_categories=true) %}{% if messages %}<div class="flash" role="status">{% for category,message in messages %}<p class="flash-{{ category }}">{{ message }}</p>{% endfor %}</div>{% endif %}{% endwith %}
 

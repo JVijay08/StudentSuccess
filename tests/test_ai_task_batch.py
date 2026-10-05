@@ -36,7 +36,7 @@ def payload(client):
 
 def test_mixed_preview_and_atomic_save(app,ready,monkeypatch):
     client,_=ready;url=draft(client,monkeypatch)
-    assert b'Make this plan yours' in client.get(url).data
+    assert b'Review drafted tasks' in client.get(url).data
     data=payload(client);data['action']='preview'
     assert b'4 tasks' in client.post(url,data=data).data
     with app.app_context():assert Task.query.count()==1
