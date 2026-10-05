@@ -1,4 +1,4 @@
-<footer class="legal-footer"><nav aria-label="Policies and support">
+<footer class="legal-footer">{% if landing_footer|default(false) %}<nav aria-label="About StudentSuccess"><a href="{{ url_for('seo.features') }}">Features &amp; FAQ</a><a href="{{ url_for('main.updates') }}">What's new</a></nav>{% include '_welcome.html' %}{% endif %}<nav aria-label="Policies and support">
   <a href="{{ url_for('legal.notice', page='privacy') }}">Privacy</a>
   <a href="{{ url_for('legal.notice', page='terms-of-service') }}">Terms</a>
   <a href="{{ url_for('legal.notice', page='cookies') }}">Cookies</a>

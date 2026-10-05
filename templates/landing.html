@@ -39,14 +39,10 @@
     </section>
     <section class="storage-choice"><h2>A planner you can return to</h2><p>A username and password let you pick up your planner on another device. No email address or real name is needed.</p><p>The tutorial contains sample assignments and course plans. The free server may take up to a minute to wake.</p></section>
 
-    <footer>
-      <p><a href="{{ url_for('seo.features') }}">Student planner features &amp; FAQ</a></p>
-      <p><a href="{{ nav_url('main.updates') }}">What&apos;s new &rarr;</a></p>
-      <p>Planning estimates are informational. Confirm course requirements and availability with your school counselor.</p>
-    </footer>
+
   </main>
   <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
 
-  {% include '_welcome.html' %}
+  {% set landing_footer = true %}
 {% include '_legal_footer.html' %}</body>
 </html>
