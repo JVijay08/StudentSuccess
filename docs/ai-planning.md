@@ -9,11 +9,11 @@ The task-entry form also offers **Draft tasks with AI**. A rough note or vague s
 
 ## Task formats and customization
 
-The default drafter now supports **Let AI choose**, **One standalone task**, **One project with subtasks**, **Separate tasks**, and **Tasks and projects**. Students can select broad steps, detailed steps, or study/self-check sessions; set a maximum of 1-8 main tasks; and optionally cap total minutes. A shared course or deadline can override generated values locally. The prompt, local date, selected format/detail, and limits are sent to Groq; shared overrides and other saved tasks are not.
+The default drafter now supports **Let AI choose**, **One standalone task**, **One project with subtasks**, **Separate tasks**, and **Tasks and projects**. Students can select broad steps, detailed steps, or study/self-check sessions; set a maximum of 1-30 main tasks (10 by default); and optionally cap total minutes. A shared course or deadline can override generated values locally. The prompt, local date, selected format/detail, and limits are sent to Groq; shared overrides and other saved tasks are not.
 
 The multi-task review gives each item its own editable title, deadline, course, minutes, task type, difficulty, interest, and optional planned start. Items and subtasks can be excluded. Project steps may be saved under their parent or converted into independent tasks with the same course/deadline; unchecking all steps saves just the main task. An entire selected batch commits atomically and consumed drafts cannot be replayed.
 
-Repeating work can be recognized from the prompt or configured during review: daily, weekly, every two weeks, or monthly. The entered deadline is the first occurrence; a repeat-through date is required and inclusive. Recurrences are materialized as independent tasks (and project children where selected), not an unbounded repeating rule. Preview shows the number of rows that will be created. Draft generation allows at most 32 task/subtask rows; saving, including repetitions, allows at most 100. An optional total-minute budget also applies across repeat occurrences.
+Repeating work can be recognized from the prompt or configured during review: daily, weekly, every two weeks, or monthly. The entered deadline is the first occurrence; a repeat-through date is required and inclusive. Recurrences are materialized as independent tasks (and project children where selected), not an unbounded repeating rule. Preview shows the number of rows that will be created. Draft generation allows at most 100 task/subtask rows; saving, including repetitions, allows at most 100. An optional total-minute budget also applies across repeat occurrences.
 
 Planned times for standalone tasks are checked against other planned work, past times, and deadlines. Project steps are scheduled after saving, or through the separate **Plan one assignment into scheduled study sessions** link. This preserves the earlier one-assignment scheduling workflow; batch drafting does not automatically move existing tasks or infer availability.
 
@@ -49,9 +49,9 @@ to Groq in manual/step mode. Task-detail inference also sends today's local date
 automatically included. Users can edit the prefilled task title before sending.
 The notice is an acknowledgment, not automated personal-data detection.
 
-Generation forms are capped at 16 KiB; multi-item review forms at 128 KiB to accommodate edited Unicode text.
+Generation forms are capped at 16 KiB; multi-item review forms at 256 KiB to accommodate edited Unicode text.
 
-The provider is called server-side over HTTPS with a 15-second timeout, bounded
+The provider is called server-side over HTTPS with a 15-second timeout for smaller responses and 25 seconds for larger multi-task drafts, bounded
 output, no tools, and no retries. JSON is validated independently of the model:
 1-8 steps, titles up to 160 characters, positive integer minutes, total within the
 assignment estimate. Text is escaped by Jinja, never rendered as provider HTML.

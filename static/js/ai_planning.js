@@ -3,7 +3,7 @@ document.querySelectorAll('[data-ai-generate]').forEach(form => {
   form.addEventListener('submit', () => {
     const button = form.querySelector('button[type=submit]');
     button.disabled = true;
-    form.querySelector('[data-ai-status]').textContent = 'Drafting steps. This may take a few seconds...';
+    form.querySelector('[data-ai-status]').textContent = 'Drafting your tasks. Larger batches may take up to 25 seconds...';
   });
 });
 window.addEventListener('pageshow', () => {

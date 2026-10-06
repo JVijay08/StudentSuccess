@@ -125,7 +125,7 @@ def test_batch_transport_shape_and_input_limits(app,ready,monkeypatch):
     def response(description,budget,instruction,max_tokens):
         import json
         seen.update(json.loads(description))
-        assert max_tokens==4500
+        assert max_tokens==3300
         return {'tasks':[dict(title='Independent task',subject='',due_at=None,estimated_minutes=20,steps=[])]}
     monkeypatch.setattr(batch.ai,'_request',response)
     opts=dict(format='single',style='concise',limit=1,budget=30)
@@ -133,5 +133,26 @@ def test_batch_transport_shape_and_input_limits(app,ready,monkeypatch):
     assert result[0]['due_at']=='' and result[0]['steps']==[]
     assert seen==dict(note='Write notes',local_today='2026-10-04',**opts)
     url=draft(client,monkeypatch)
-    assert client.post(url,data=dict(csrf_token=token(client),padding='x'*(128*1024))).status_code==413
+    assert client.post(url,data=dict(csrf_token=token(client),padding='x'*(256*1024))).status_code==413
     assert client.post('/tasks/ai/new',data=dict(csrf_token=token(client),padding='x'*16384)).status_code==413
+
+
+def test_thirty_independent_tasks_preview_and_save(app,ready,monkeypatch):
+    client,_=ready
+    opts=batch.options(dict(output_format='multiple',task_limit='30'))
+    tasks=[dict(title=f'Practice topic {i+1}',subject='Math',due_at='2027-06-01T23:59',estimated_minutes=10,steps=[]) for i in range(30)]
+    rows=batch.validate(tasks,opts)
+    monkeypatch.setattr(batch,'generate',lambda *args:rows)
+    response=client.post('/tasks/ai/new',data=dict(csrf_token=token(client),description='Thirty practice topics',output_format='multiple',task_limit='30',consent='yes'))
+    assert response.status_code==302
+    data=dict(csrf_token=token(client),action='preview',selected=[str(i) for i in range(30)])
+    for i,row in enumerate(rows):
+        for key,value in row.items():
+            if key!='steps':data[f'{key}_{i}']=str(value)
+    assert b'30 tasks' in client.post(response.location,data=data).data
+    with app.app_context():assert Task.query.count()==1
+    data['action']='apply'
+    assert client.post(response.location,data=data).status_code==302
+    with app.app_context():assert Task.query.count()==31
+    with pytest.raises(ValueError):batch.options(dict(task_limit='31'))
+    with pytest.raises(ValueError):batch.validate(tasks+[tasks[0]],opts)

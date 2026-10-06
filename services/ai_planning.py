@@ -109,7 +109,7 @@ def _request(description, budget, instruction=None, max_tokens=1800):
                  "Content-Type": "application/json", "User-Agent": "StudentSuccess/1.0"},
         method="POST")
     try:
-        with urllib.request.urlopen(request, timeout=15) as response:
+        with urllib.request.urlopen(request, timeout=25 if max_tokens > 4500 else 15) as response:
             raw = response.read(65537)
         if len(raw) > 65536:
             raise ValueError("Response too large")

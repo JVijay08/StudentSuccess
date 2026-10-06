@@ -31,8 +31,8 @@ def eligible(task):
 
 @ai_bp.before_request
 def bounded_request():
-    # Review can contain 32 edited Unicode titles plus their form fields.
-    limit = 128 * 1024 if request.endpoint == "ai.review" else 16384
+    # Review can contain 100 edited Unicode titles plus their form fields.
+    limit = 256 * 1024 if request.endpoint == "ai.review" else 16384
     if request.content_length and request.content_length > limit:
         abort(413)
 

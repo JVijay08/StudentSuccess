@@ -12,12 +12,12 @@ STYLES = {'concise': 'Few broad steps', 'detailed': 'Smaller, specific steps', '
 def options(form):
     result = {'format': form.get('output_format', 'auto'), 'style': form.get('detail_style', 'concise')}
     try:
-        result['limit'] = int(form.get('task_limit', '5'))
+        result['limit'] = int(form.get('task_limit', '10'))
         result['budget'] = int(form['total_budget']) if form.get('total_budget', '').strip() else None
     except (ValueError, TypeError):
         raise ValueError('Enter whole numbers for the task limit and optional total minutes.') from None
-    if result['format'] not in FORMATS or result['style'] not in STYLES or not 1 <= result['limit'] <= 8:
-        raise ValueError('Choose a task format, detail level, and a limit of 1 to 8 tasks.')
+    if result['format'] not in FORMATS or result['style'] not in STYLES or not 1 <= result['limit'] <= 30:
+        raise ValueError('Choose a task format, detail level, and a limit of 1 to 30 tasks.')
     if result['budget'] is not None and not 1 <= result['budget'] <= 10080:
         raise ValueError('Total focused minutes must be between 1 and 10080.')
     return result
@@ -64,7 +64,7 @@ def validate(value, opts):
         if opts['format'] == 'project' and not steps:
             raise ValueError('Project needs steps')
         count += 1 + len(steps)
-        if count > 32:
+        if count > 100:
             raise ValueError('Too many task rows')
         rule = item.get('repeat_rule') or ''
         until = item.get('repeat_until') or ''
@@ -91,7 +91,7 @@ def generate(description, today, opts):
         ' Each tasks entry is an independent task or project with its own deadline and subject.'
         ' Obey selected format: single means exactly one task with empty steps; project means one project with steps;'
         ' multiple means independent tasks with empty steps; mixed and auto allow both.'
-        ' limit is a maximum, not a target; do not invent extra work. Maximum 8 steps per project and 32 total rows.'
+        ' limit is a maximum, not a target; do not invent extra work. Maximum 8 steps per project and 100 total rows.'
         ' Interpret relative dates using local_today. If no deadline is stated return null; never invent one.'
         ' Use 23:59 for dates without times. Estimate realistic focused minutes, not the maximum budget.'
         ' Sum project steps within its estimate; budget, when set, caps the sum of top-level estimates.'
@@ -102,7 +102,7 @@ def generate(description, today, opts):
     )
     try:
         result = ai._request(json.dumps(dict(note=description, local_today=today, **opts)),
-                             opts['budget'] or 10080, instruction, max_tokens=4500)
+                             opts['budget'] or 10080, instruction, max_tokens=min(12000, 3000 + 300 * opts['limit']))
         return validate(result['tasks'], opts)
     except (ValueError, KeyError, TypeError):
         raise ai.AIUnavailable('AI could not produce a draft matching those options. Try fewer tasks or a simpler prompt.') from None
