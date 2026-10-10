@@ -21,6 +21,22 @@ from services.timing_service import timing_summary
 main_bp = Blueprint("main", __name__)
 
 UPDATE_PRESENTATION = {
+    "Align planner pages with layout references": {
+        "display_title": "A clearer layout across your planner",
+        "summary": "The next task is easier to spot, course lists are more readable, and supporting pages are less cluttered.",
+        "highlights": [
+            "Scan compact task rows and expand course details only when needed.",
+            "Find account actions, calendar choices, and older updates more easily.",
+        ],
+    },
+    "A clearer layout across your planner": {
+        "display_title": "A clearer layout across your planner",
+        "summary": "The next task is easier to spot, course lists are more readable, and supporting pages are less cluttered.",
+        "highlights": [
+            "Scan compact task rows and expand course details only when needed.",
+            "Find account actions, calendar choices, and older updates more easily.",
+        ],
+    },
     "Refine catalog and update history": {
         "display_title": "Find courses and updates faster",
         "summary": "Course filters stay in the page flow, and recent planner changes are easier to scan.",

@@ -92,6 +92,20 @@ def test_updates_spotlight_uses_student_facing_release_copy(app, monkeypatch):
     assert "shallow deployment clones" not in body
 
 
+def test_current_layout_release_has_feature_summary(app, monkeypatch):
+    from routes import main_routes
+    monkeypatch.setattr(main_routes, "get_updates", lambda: [
+        {"hash": "a" * 40, "date": "2026-10-10", "title": "Align planner pages with layout references"},
+    ])
+
+    response = app.test_client().get("/updates")
+    body = response.get_data(as_text=True)
+
+    assert "A clearer layout across your planner" in body
+    assert "The next task is easier to spot" in body
+    assert "Scan compact task rows" in body
+
+
 def test_build_expands_shallow_history(monkeypatch, tmp_path):
     from scripts.build_updates import complete_checkout_history
     calls = []
