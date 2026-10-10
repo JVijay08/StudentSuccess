@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#18283d">
   <title>{{ seo.title }}</title>
   {% include '_accessibility_head.html' %}
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css', v='20261010-compact') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css', v='20261010-illustrated') }}">
   <script src="{{ url_for('static', filename='js/landing.js', v='20261010') }}" defer></script>
 </head>
 <body class="fieldnotes-landing">
@@ -44,16 +44,16 @@
     <section id="features" class="landing-section" aria-labelledby="features-title" tabindex="-1">
       <div class="section-heading"><div><h2 id="features-title">From the semester ahead<br>to the work in front of you.</h2><p>Keep the big picture without losing your next step.</p></div></div>
       <dl class="landing-feature-list">
-        <div><dt>Plan your courses</dt><dd>Compare high-school options, add dual enrollment, or organize college courses by term and institution.</dd></div>
-        <div><dt>Break down assignments</dt><dd>Create tasks and smaller steps yourself, or review an optional AI draft before saving.</dd></div>
-        <div><dt>Find your next step</dt><dd>See why a task comes first, try five minutes of focus, and reschedule when plans change.</dd></div>
+        <div><dt><svg class="feature-sketch" viewBox="0 0 72 50" aria-hidden="true" focusable="false"><rect x="5" y="6" width="62" height="38" rx="4"/><path d="M5 17h62M25 17v27M46 17v27"/><path class="sketch-accent" d="M11 24h8v6h-8zM31 33h9v6h-9zM52 24h9v6h-9z"/></svg><span>Plan your courses</span></dt><dd>Compare high-school options, add dual enrollment, or organize college courses by term and institution.</dd></div>
+        <div><dt><svg class="feature-sketch" viewBox="0 0 72 50" aria-hidden="true" focusable="false"><rect x="6" y="5" width="60" height="40" rx="4"/><path d="M29 15h26M29 25h20M29 35h24"/><path class="sketch-check" d="m13 14 3 3 6-6m-9 14 3 3 6-6"/><rect x="13" y="32" width="7" height="7" rx="1"/></svg><span>Break down assignments</span></dt><dd>Create tasks and smaller steps yourself, or review an optional AI draft before saving.</dd></div>
+        <div><dt><svg class="feature-sketch" viewBox="0 0 72 50" aria-hidden="true" focusable="false"><circle cx="36" cy="26" r="18"/><path d="M31 3h10M36 3v5M51 11l4-4"/><path class="sketch-check" d="M36 14v12l8 5"/><circle class="sketch-accent" cx="36" cy="26" r="2"/></svg><span>Find your next step</span></dt><dd>See why a task comes first, try five minutes of focus, and reschedule when plans change.</dd></div>
       </dl>
       <a href="{{ url_for('seo.features') }}">Explore all features &amp; FAQ &rarr;</a>
     </section>
 
     <section id="how-it-works" class="landing-section landing-setup" aria-labelledby="how-title" tabindex="-1"><h2 id="how-title">Make it yours.</h2><p>Create a username and password, choose your education setting, then add courses and assignments. No email or real name needed. Or try the tutorial with sample data first.</p></section>
 
-    <section id="about" class="landing-section developer-section" aria-labelledby="about-title" tabindex="-1"><div><h2 id="about-title">About the Developer</h2><p class="developer-name">Jayesh Vijay</p><p class="landing-small">Designed, developed, and launched independently.</p></div><div><p>StudentSuccess was independently designed, developed, and launched by Jayesh Vijay, a high school student passionate about computer science and solving real-world problems.</p><p>Built using Python, Flask, JavaScript, and PostgreSQL, the platform helps students make informed decisions about academic priorities, manage coursework, and adapt their schedules. User feedback guided ongoing improvements to usability, task planning, and personalized recommendations.</p></div></section>
+    <section id="about" class="landing-section developer-section" aria-labelledby="about-title" tabindex="-1"><div><h2 id="about-title">About the Developer</h2><p class="developer-name"><span class="developer-stamp" aria-hidden="true">JV</span>Jayesh Vijay</p><p class="landing-small">Designed, developed, and launched independently.</p></div><div><p>StudentSuccess was independently designed, developed, and launched by Jayesh Vijay, a high school student passionate about computer science and solving real-world problems.</p><p>Built using Python, Flask, JavaScript, and PostgreSQL, the platform helps students make informed decisions about academic priorities, manage coursework, and adapt their schedules. User feedback guided ongoing improvements to usability, task planning, and personalized recommendations.</p></div></section>
 
   </main>
   <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
