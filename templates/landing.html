@@ -23,7 +23,7 @@
         <p class="landing-lede">A full course load.<br>A long to-do list.<br><strong>One clear next step.</strong></p>
         <p>Bring your courses, assignments, and study time together in a planner built for high-school and college life.</p>
         <div class="landing-actions"><form method="post" action="{{ url_for('tutorial.start') }}">{% include '_navigation_fields.html' %}<input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><button class="primary-action">Start tutorial</button></form><a href="{{ nav_url('auth.register') }}">Create an account</a></div>
-        <p class="landing-small">Try a sample planner. No signup needed.</p>
+        <p class="landing-small">Try the tutorial without signing up. Accounts use a username and password, not an email or real name.</p>
       </div>
       <div class="landing-notebook" aria-label="Interactive example planner">
         <div class="notebook-heading"><strong>Your working notebook</strong><span>Example planner</span></div>
@@ -50,8 +50,6 @@
       </dl>
       <a href="{{ url_for('seo.features') }}">Explore all features &amp; FAQ &rarr;</a>
     </section>
-
-    <section id="how-it-works" class="landing-section landing-setup" aria-labelledby="how-title" tabindex="-1"><h2 id="how-title">Make it yours.</h2><p>Create a username and password, choose your education setting, then add courses and assignments. No email or real name needed. Or try the tutorial with sample data first.</p></section>
 
     <section id="about" class="landing-section developer-section" aria-labelledby="about-title" tabindex="-1"><div><h2 id="about-title">About the Developer</h2><p class="developer-name"><span class="developer-stamp" aria-hidden="true">JV</span>Jayesh Vijay</p><p class="landing-small">Designed, developed, and launched independently.</p></div><div><p>StudentSuccess was independently designed, developed, and launched by Jayesh Vijay, a high school student passionate about computer science and solving real-world problems.</p><p>Built using Python, Flask, JavaScript, and PostgreSQL, the platform helps students make informed decisions about academic priorities, manage coursework, and adapt their schedules. User feedback guided ongoing improvements to usability, task planning, and personalized recommendations.</p></div></section>
 
