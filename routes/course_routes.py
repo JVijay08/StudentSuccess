@@ -150,17 +150,19 @@ def course_explorer(course_errors=None, editing=None):
     if source=='dual': courses=[]
     if source=='high_school': dual_courses=[]
     total_courses = len(courses)
-    page_count = max(1, (total_courses + 29) // 30)
+    page_size = 12
+    page_count = max(1, (total_courses + page_size - 1) // page_size)
     page = max(1, min(request.args.get('page', 1, type=int) or 1, page_count))
     page_args = {key: value for key, value in request.args.items() if key not in {'page', 'nav'}}
     previous_page = same_page('courses.course_explorer', page=page-1, **page_args) if page > 1 else None
     next_page = same_page('courses.course_explorer', page=page+1, **page_args) if page < page_count else None
-    courses = courses[(page-1)*30:page*30]
+    courses = courses[(page-1)*page_size:page*page_size]
     return render_template(
         "courses.html",
         profile=profile,
         courses=courses,
-        total_courses=total_courses, page=page, page_count=page_count, previous_page=previous_page, next_page=next_page,
+        total_courses=total_courses, page=page, page_count=page_count,
+        page_size=page_size, previous_page=previous_page, next_page=next_page,
         filters=submitted,
         options=course_service.get_catalog_options(catalog_id),
         catalogs=course_service.get_catalogs(),
