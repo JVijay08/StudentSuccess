@@ -42,6 +42,9 @@ body.fieldnotes-landing main{width:min(1180px,100%);margin:0 auto;padding:0 32px
 .landing-feature-list>div{padding:10px 0}
 .developer-name{display:flex;align-items:center;gap:12px}
 .developer-stamp{display:inline-grid;place-items:center;width:38px;height:38px;border:1px solid var(--line);border-radius:6px;background:var(--white);font-size:.85rem;letter-spacing:.04em;color:var(--blue)}
+.developer-links{display:flex;gap:20px;margin-top:16px}
+.developer-links a{display:inline-flex;align-items:center;gap:8px;text-underline-offset:4px}
+.developer-links svg{width:16px;height:16px;fill:currentColor}
 body.fieldnotes-landing .legal-footer,body.fieldnotes-landing .legal-footer nav{justify-content:center;text-align:center}
 @media(max-width:680px){.feature-sketch{width:44px;height:32px}}
 
