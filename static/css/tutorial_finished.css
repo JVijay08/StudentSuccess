@@ -1,0 +1,9 @@
+body.tutorial-finished main{width:100%;max-width:800px;margin:0 auto;padding:56px 24px 24px}
+body.tutorial-finished .account-sheet{padding:36px;border:1px solid var(--line);border-radius:12px;background:var(--white);box-shadow:var(--shadow);margin:0}
+.tutorial-finished .account-sheet h1{font-size:clamp(2rem,5vw,2.8rem);line-height:1.15;margin:0 0 16px;overflow-wrap:anywhere}
+.tutorial-finished .account-sheet>p{max-width:60ch;margin:0;color:var(--muted);line-height:1.7}
+.completion-actions,.completion-secondary{display:flex;align-items:center;flex-wrap:wrap;gap:16px 24px}
+.completion-actions{margin:28px 0}.completion-secondary{border-top:1px solid var(--line);padding-top:20px}
+.completion-secondary form,.completion-secondary p{margin:0}.completion-secondary button{margin:0}
+body.tutorial-finished .legal-footer{margin-top:12px}
+@media(max-width:600px){body.tutorial-finished main{padding:24px 16px 16px}body.tutorial-finished .account-sheet{padding:24px}.completion-actions,.completion-secondary{align-items:flex-start;flex-direction:column;gap:16px}}
