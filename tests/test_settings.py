@@ -77,7 +77,7 @@ def test_focus_mode_hides_dashboard_detail_grid(app, authed_client):
     response = authed_client.get("/dashboard")
 
     assert response.status_code == 200
-    assert b'class="focus-card"' in response.data
+    assert b'class="focus-card' in response.data
     assert b"COMPLETION RATE" not in response.data
 
 

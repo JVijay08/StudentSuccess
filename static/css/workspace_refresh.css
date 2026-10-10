@@ -140,3 +140,26 @@ body .focus-card .priority-item:not(:first-child){border-bottom:0}
 body .focus-card .priority-list{border-bottom:1px solid var(--line);padding-bottom:12px}
 body #orientation-reopen{margin-top:24px}
 @media(max-width:680px){body.fieldnotes-landing .planning-overview dl>div{grid-template-columns:1fr;gap:6px}body.fieldnotes-landing .legal-footer{gap:8px 16px;padding:16px}}
+
+/* Keep the familiar paper grid, but let today's recommended work lead. */
+body.notebook-dashboard{background-image:linear-gradient(rgba(24,35,33,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(24,35,33,.018) 1px,transparent 1px)}
+[data-theme="dark"] body.notebook-dashboard{background-image:linear-gradient(rgba(196,208,202,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(196,208,202,.018) 1px,transparent 1px)}
+[data-theme="high-contrast"] body.notebook-dashboard{background-image:none}
+body.notebook-dashboard .dashboard-up-next{margin:22px 0 20px}
+body.notebook-dashboard .dashboard-up-next-heading{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+body.notebook-dashboard .dashboard-up-next-heading h2{margin:0;font-family:inherit;font-size:1.15rem;font-weight:650;line-height:1.35;letter-spacing:-.02em}
+body.notebook-dashboard .dashboard-up-next-heading a{color:var(--blue);font-size:.85rem;text-underline-offset:4px}
+body.notebook-dashboard .dashboard-up-next-item{display:grid;grid-template-columns:12px minmax(0,1fr) auto;align-items:center;gap:12px;padding:14px 2px;border-bottom:1px solid var(--line)}
+body.notebook-dashboard .dashboard-up-next-item:hover .dashboard-up-next-copy strong{text-decoration:underline;text-underline-offset:3px}
+body.notebook-dashboard .dashboard-up-next-mark{width:9px;height:9px;border-radius:50%;background:var(--blue)}
+body.notebook-dashboard .dashboard-up-next-copy{display:grid;gap:3px;min-width:0}
+body.notebook-dashboard .dashboard-up-next-copy strong{overflow-wrap:anywhere}
+body.notebook-dashboard .dashboard-up-next-copy small{color:var(--muted);line-height:1.45}
+body.notebook-dashboard .dashboard-up-next-arrow{color:var(--muted);font-size:1.2rem}
+body.notebook-dashboard .dashboard-summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));margin:18px 0 26px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+body.notebook-dashboard .dashboard-summary>div{display:flex;flex-direction:column;align-items:flex-start;gap:4px;padding:12px 16px;border:0;border-right:1px solid var(--line)}
+body.notebook-dashboard .dashboard-summary>div:last-child{border-right:0}
+body.notebook-dashboard .dashboard-summary dt{font-size:.78rem}
+body.notebook-dashboard .dashboard-summary dd{color:var(--ink);font-size:1.25rem;font-variant-numeric:tabular-nums;text-align:left}
+body.notebook-dashboard .dashboard-summary dd small{display:block;margin-top:2px;color:var(--muted);font-size:.72rem;font-weight:400}
+@media(max-width:680px){body.notebook-dashboard .dashboard-up-next{margin-top:18px}body.notebook-dashboard .dashboard-summary{grid-template-columns:repeat(2,minmax(0,1fr))}body.notebook-dashboard .dashboard-summary>div:nth-child(2){border-right:0}body.notebook-dashboard .dashboard-summary>div:nth-child(n+3){border-top:1px solid var(--line)}}

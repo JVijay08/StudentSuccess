@@ -203,6 +203,45 @@ def test_dashboard_overdue_empty_state(app, authed_client):
     assert b"Nothing overdue to start." in response.data
 
 
+def test_today_dashboard_prioritizes_work_and_compacts_progress(app, authed_client):
+    now = datetime.now(timezone.utc)
+    with app.app_context():
+        profile = add_profile(authed_client.user_id)
+        for title, days in (("Recommended lab", 1), ("Upcoming essay", 2)):
+            db.session.add(
+                Task(
+                    student_profile_id=profile.id,
+                    title=title,
+                    subject="Biology",
+                    due_at=now + timedelta(days=days),
+                    estimated_minutes=60,
+                    difficulty="medium",
+                    interest_level="medium",
+                    status="not_started",
+                )
+            )
+        db.session.commit()
+
+    response = authed_client.get("/dashboard?view=today")
+    assert response.status_code == 200
+    body = response.data.decode()
+
+    assert "Your next task" in body
+    assert "Recommended lab" in body
+    assert 'class="dashboard-up-next"' in body
+    assert "Upcoming essay" in body
+    assert 'aria-label="Progress and workload"' in body
+    assert "Active tasks" in body
+    assert "Planned courses" in body
+    assert "COMPLETION RATE" not in body
+
+    full_response = authed_client.get("/dashboard?view=full")
+    assert full_response.status_code == 200
+    full_body = full_response.data.decode()
+    assert "Planning overview" in full_body
+    assert 'class="dashboard-up-next"' not in full_body
+
+
 def test_dashboard_connects_current_course_load_to_task_planning(
     app, authed_client
 ):
