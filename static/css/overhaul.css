@@ -352,3 +352,7 @@ body .task-card.streamlined-task .actions>details {flex:1 1 180px;min-width:0;}
 .schedule-feedback {display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:16px;border:1px solid var(--line);border-left:4px solid var(--blue);background:var(--white);margin:16px 0;}
 .schedule-feedback form {margin:0;}
 @media(max-width:680px) {body .task-card.streamlined-task .actions>details {flex-basis:100%;}.task-workspace .view-tabs {width:100%;}.schedule-shortcuts button {flex:1 1 120px;}}
+
+/* Shared notebook depth and readable link underlines across public and account pages. */
+:root{--shadow-paper:4px 5px 0 var(--paper),5px 6px 0 var(--line),var(--shadow-raised)}
+a{text-underline-offset:3px;text-decoration-thickness:1px}

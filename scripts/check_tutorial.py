@@ -20,6 +20,7 @@ try:
     with sync_playwright() as pw:
         browser=pw.chromium.launch(channel='chrome',headless=True)
         page=browser.new_page(viewport={'width':1440,'height':1000})
+        page.emulate_media(reduced_motion='reduce')
         page.on('pageerror',lambda error:errors.append(str(error)))
         page.goto(base)
         page.get_by_role('button',name='Start tutorial',exact=True).first.click()
@@ -28,6 +29,12 @@ try:
             expect(page.locator('#tutorial-guide')).to_have_attribute('data-step',str(index))
             page.locator('#tutorial-show').click()
             expect(page.locator('.tutorial-target')).to_have_count(1)
+            assert not page.locator('#tutorial-panel').evaluate('(el) => el.open')
+            page.evaluate('window.scrollTo(0, document.body.scrollHeight)')
+            expect(page.locator('#tutorial-show')).to_be_in_viewport()
+            if index < len(STEPS)-1:
+                expect(page.get_by_role('button',name='Next section',exact=True)).to_be_in_viewport()
+            page.locator('#tutorial-show').click()
             if index==1:
                 page.locator('.tutorial-target').click()
                 expect(page.locator('.task-state').first).to_have_text('In progress')
@@ -47,8 +54,14 @@ try:
             page.set_viewport_size({'width':1440,'height':1000})
             if index<len(STEPS)-1:
                 page.get_by_role('button',name='Next section',exact=True).click()
+        page.set_viewport_size({'width':390,'height':844})
+        for theme in ['light','dark','high-contrast']:
+            page.evaluate('(theme) => document.documentElement.dataset.theme=theme',theme)
+            page.add_script_tag(path='.test-policy-audit/axe.min.js')
+            audit=page.evaluate('async () => (await axe.run(document.querySelector("#tutorial-guide"), {runOnly:{type:"tag",values:["wcag2a","wcag2aa","wcag21aa"]}})).violations')
+            assert not audit, audit
         page.get_by_role('button',name='Finish tutorial',exact=True).click()
-        expect(page.get_by_role('heading',name='Make room for your own plans.')).to_be_visible()
+        expect(page.get_by_role('heading',name='Tutorial complete')).to_be_visible()
         # Server-rendered tutorial navigation must not depend on JavaScript.
         context=browser.new_context(java_script_enabled=False)
         other=context.new_page()
@@ -58,7 +71,7 @@ try:
         expect(other.locator('#tutorial-guide')).to_have_attribute('data-step','1')
         other.screenshot(path='.test-overhaul-browser/tutorial-nojs.png',full_page=True)
         other.get_by_role('button',name='Exit tutorial',exact=True).click()
-        expect(other.get_by_role('heading',name='Make room for your own plans.')).to_be_visible()
+        expect(other.get_by_role('heading',name='Tutorial complete')).to_be_visible()
         browser.close()
     assert not errors,errors
     assert not issues,issues

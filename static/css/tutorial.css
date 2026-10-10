@@ -1,18 +1,13 @@
-.tutorial-guide{max-width:1160px;margin:20px auto;padding:0 16px;box-sizing:border-box;color:var(--ink);}
-.tutorial-guide>details{border:2px solid var(--blue);border-radius:12px;background:var(--white);box-shadow:0 3px 0 var(--line);overflow-wrap:anywhere;}
-.tutorial-guide>details>summary{padding:14px 18px;font-weight:700;cursor:pointer;}
-.tutorial-guide>details>summary span{font-size:.85rem;font-weight:400;margin-left:8px;}
-.tutorial-content{padding:0 18px 16px;}
-.tutorial-content h2{font-size:1.3rem;margin:4px 0 8px;}
-.tutorial-content p{max-width:78ch;margin:8px 0;}
-.tutorial-actions,.tutorial-actions form,.tutorial-exit{display:flex;align-items:center;flex-wrap:wrap;gap:10px;}
-.tutorial-guide button{width:auto;min-height:44px;margin:0;}
-.tutorial-guide a{text-decoration:underline;}
-.tutorial-sections{margin:12px 0;}
-.tutorial-sections form{display:flex;align-items:end;gap:10px;flex-wrap:wrap;margin-top:10px;}
-.tutorial-sections label{flex:1 1 230px;min-width:0;}
-.tutorial-sections select{width:100%;max-width:100%;}
-.tutorial-exit span,.tutorial-hint{font-size:.9rem;}
-.tutorial-target{outline:3px solid var(--blue)!important;outline-offset:5px!important;scroll-margin-block:120px;}
-@media(max-width:600px){.tutorial-guide{padding:0 12px;margin:12px auto;}.tutorial-content{padding:0 12px 12px;}.tutorial-guide>details>summary span{display:block;margin:4px 0 0;}.tutorial-actions{align-items:stretch;}.tutorial-actions form{width:100%;}.tutorial-actions form button{flex:1;}.tutorial-content h2{font-size:1.15rem;}}
-.tutorial-return{position:fixed;right:16px;bottom:16px;z-index:1000;width:auto;max-width:calc(100vw - 32px);min-height:44px;box-shadow:0 3px 8px #0003;}
+/* Native, in-flow guide without JS; a measured bottom dock when enhanced. */
+body .tutorial-guide{max-width:960px;margin:20px auto;padding:0;color:var(--ink);background:var(--white);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow-raised);overflow-wrap:anywhere}
+body .tutorial-guide>details{border:0;margin:0;padding:0;background:none}
+body .tutorial-guide>details>summary{display:flex;align-items:center;gap:12px;padding:12px 16px;cursor:pointer;min-height:48px;list-style:none}
+.tutorial-guide>details>summary::-webkit-details-marker{display:none}
+.tutorial-guide summary strong{flex:1;font-size:.95rem}.tutorial-progress{font-size:.8rem;color:var(--muted);white-space:nowrap}.tutorial-expand{font-size:.8rem;color:var(--blue);text-decoration:underline;text-underline-offset:3px}.tutorial-expand:after{content:' +'}.tutorial-guide>details[open] .tutorial-expand:after{content:' \2212'}
+.tutorial-content{padding:0 16px 12px;max-height:35vh;overflow:auto;overscroll-behavior:contain}.tutorial-content p{max-width:85ch;margin:8px 0}.tutorial-content>p:first-child{margin-top:0}.tutorial-hint{font-size:.85rem;color:var(--muted)}
+body .tutorial-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding:10px 16px}.tutorial-actions form,.tutorial-exit{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:0}.tutorial-actions form{margin-left:auto}
+body .tutorial-guide button{width:auto;min-height:44px;margin:0;padding:8px 14px}.tutorial-guide a{text-underline-offset:4px}.tutorial-sections{margin:12px 0}.tutorial-sections form{display:flex;align-items:end;gap:10px;flex-wrap:wrap;margin-top:10px}.tutorial-sections label{flex:1 1 230px;min-width:0}.tutorial-sections select{width:100%;max-width:100%}.tutorial-exit span{font-size:.8rem;color:var(--muted)}
+body.tutorial-docked{padding-bottom:var(--tutorial-space,240px)}body .tutorial-guide.is-docked{position:fixed;bottom:12px;left:16px;right:16px;width:auto;z-index:900;margin:0 auto;max-height:calc(100dvh - 32px)}
+html:has(.tutorial-guide.is-docked){scroll-padding-bottom:var(--tutorial-space,240px)}
+.tutorial-target{outline:3px solid var(--blue)!important;outline-offset:5px!important;scroll-margin-block:90px var(--tutorial-space,240px)}
+@media(max-width:600px){body .tutorial-guide{margin:12px}.tutorial-guide summary strong{font-size:.85rem}.tutorial-guide>details>summary{flex-wrap:wrap;gap:4px 10px!important;padding:10px 12px!important}.tutorial-progress{flex:1 1 60%}.tutorial-guide summary strong{order:3;flex:1 1 100%}.tutorial-expand{margin-left:auto}.tutorial-content{padding:0 12px 10px;max-height:30dvh}body .tutorial-actions{padding:8px 12px;gap:6px}.tutorial-actions form{gap:6px}body .tutorial-guide button{font-size:.85rem;padding:8px 10px}body .tutorial-guide.is-docked{left:8px;right:8px;bottom:8px}.tutorial-exit{gap:6px}}

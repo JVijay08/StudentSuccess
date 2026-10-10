@@ -32,7 +32,7 @@ for (const phase of ['pageswap','pagereveal']) window.addEventListener(phase, ev
 });
 </script>
 
-{% if tutorial %}<link rel="stylesheet" href="{{ url_for('static',filename='css/tutorial.css') }}"><script src="{{ url_for('static',filename='js/tutorial.js') }}" defer></script>{% endif %}
+{% if tutorial %}<link rel="stylesheet" href="{{ url_for('static',filename='css/tutorial.css',v='20261010-dock') }}"><script src="{{ url_for('static',filename='js/tutorial.js',v='20261010-dock') }}" defer></script>{% endif %}
 {% include '_seo_head.html' %}
 
 <link rel="stylesheet" href="{{ url_for('static',filename='css/workspace_refresh.css',v='20261003-design') }}">

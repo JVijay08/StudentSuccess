@@ -1,5 +1,11 @@
 [
   {
+    "hash": "80519ccd83a3c58c7d422d076014d5025cd08465",
+    "timestamp": 1791649653,
+    "date": "2026-10-10",
+    "title": "Restore complete update history and expand shallow deployment clones"
+  },
+  {
     "hash": "09be0584effc8819a48ba6022ea323377bad1e40",
     "timestamp": 1791649299,
     "date": "2026-10-10",

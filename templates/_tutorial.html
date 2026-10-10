@@ -1,19 +1,19 @@
 {% if tutorial %}
 <aside id="tutorial-guide" class="tutorial-guide" aria-label="Interactive tutorial" data-target="{{ tutorial.target }}" data-step="{{ tutorial.index }}">
   <details open id="tutorial-panel">
-    <summary>Tutorial <span>{{ tutorial.index + 1 }} of {{ tutorial.total }} · Practice workspace</span></summary>
+    <summary><span class="tutorial-progress">Tutorial {{ tutorial.index + 1 }} of {{ tutorial.total }}</span><strong>{{ tutorial.title }}</strong><span class="tutorial-expand">Instructions</span></summary>
     <div class="tutorial-content">
-      <h2>{{ tutorial.title }}</h2><p>{{ tutorial.description }}</p>
-      <p class="tutorial-hint" role="status" id="tutorial-hint">Try the controls on the page. Skipping an exercise is fine.</p>
+      <p>{{ tutorial.description }}</p>
+      <p class="tutorial-hint" role="status" id="tutorial-hint">Try the controls on the page. You can skip an exercise with Next section.</p>
       <noscript><p>Follow the instructions above to find each control. Section navigation works without JavaScript; highlighting needs JavaScript.</p></noscript>
-      <div class="tutorial-actions">
-        <button type="button" id="tutorial-show" hidden>Show me</button>
-        <a href="{{ tutorial.url }}">Return to this section</a>
-        <form method="post" action="{{ url_for('tutorial.advance') }}"><input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}">{% if tutorial.index > 0 %}<button name="step" value="{{ tutorial.index - 1 }}" class="secondary">Back</button>{% endif %}{% if tutorial.index + 1 < tutorial.total %}<button name="step" value="{{ tutorial.index + 1 }}">Next section</button>{% endif %}</form>
-      </div>
-      <details class="tutorial-sections"><summary>Jump to a section</summary><form method="post" action="{{ url_for('tutorial.advance') }}"><input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><label>Section<select name="step">{% for step in tutorial.steps %}<option value="{{ loop.index0 }}" {% if loop.index0 == tutorial.index %}selected{% endif %}>{{ loop.index }}. {{ step[0] }}</option>{% endfor %}</select></label><button>Go to section</button></form></details>
-      <form method="post" action="{{ url_for('tutorial.finish') }}" class="tutorial-exit"><input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><button class="secondary">{{ 'Finish tutorial' if tutorial.index + 1 == tutorial.total else 'Exit tutorial' }}</button><span>Deletes practice data{% if session.get('tutorial_return') %} and returns to your account{% endif %}.</span></form>
+      <p><a href="{{ tutorial.url }}">Return to this section</a></p><details class="tutorial-sections"><summary>Jump to a section</summary><form method="post" action="{{ url_for('tutorial.advance') }}"><input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><label>Section<select name="step">{% for step in tutorial.steps %}<option value="{{ loop.index0 }}" {% if loop.index0 == tutorial.index %}selected{% endif %}>{{ loop.index }}. {{ step[0] }}</option>{% endfor %}</select></label><button>Go to section</button></form></details>
+      {% if tutorial.index + 1 < tutorial.total %}<form method="post" action="{{ url_for('tutorial.finish') }}" class="tutorial-exit"><input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><button class="secondary">{{ 'Finish tutorial' if tutorial.index + 1 == tutorial.total else 'Exit tutorial' }}</button><span>Deletes practice data{% if session.get('tutorial_return') %} and returns to your account{% endif %}.</span></form>{% endif %}
     </div>
   </details>
+      <div class="tutorial-actions">
+        <button type="button" id="tutorial-show" hidden>Show me</button>
+        <form method="post" action="{{ url_for('tutorial.advance') }}"><input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}">{% if tutorial.index > 0 %}<button name="step" value="{{ tutorial.index - 1 }}" class="secondary">Back</button>{% endif %}{% if tutorial.index + 1 < tutorial.total %}<button name="step" value="{{ tutorial.index + 1 }}">Next section</button>{% endif %}</form>
+        {% if tutorial.index + 1 == tutorial.total %}<form method="post" action="{{ url_for('tutorial.finish') }}"><input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><button>Finish tutorial</button></form>{% endif %}
+      </div>
 </aside>
 {% endif %}
