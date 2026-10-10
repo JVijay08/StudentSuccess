@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ seo.title }}</title>
   {% include '_accessibility_head.html' %}
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/updates.css', v='20261010-grouped-v2') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/updates.css', v='20261010-grouped-v3') }}">
 </head>
 <body class="updates-page">
   {% include '_accessibility_body.html' %}
@@ -16,11 +16,12 @@
       <h1>What's new</h1>
       <p>Recent improvements to course planning, tasks, and the rest of your planner.</p>
     </header>
-    <div class="update-search" hidden>
-      <label for="update-query">Find an update</label>
+    <details class="update-search" hidden>
+      <summary>Find an update</summary>
+      <label for="update-query">Search by task, course, or setting</label>
       <input id="update-query" type="search" placeholder="Try tasks, courses, or settings" autocomplete="off">
       <p id="update-count" role="status" aria-live="polite">{{ updates|length }} updates</p>
-    </div>
+    </details>
     <div id="update-history">
       {% if latest_update %}
         <section class="update-month" aria-labelledby="latest-month-title">

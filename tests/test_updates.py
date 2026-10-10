@@ -64,6 +64,8 @@ def test_updates_feature_latest_and_collapse_older_months(app, monkeypatch):
     assert response.status_code == 200
     body = response.get_data(as_text=True)
     assert "Latest update" in body
+    assert '<details class="update-search"' in body
+    assert "<summary>Find an update</summary>" in body
     assert "Latest planner improvement" in body
     assert "Another October improvement" in body
     assert "October task improvements" in body

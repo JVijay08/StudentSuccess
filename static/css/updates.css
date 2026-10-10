@@ -5,7 +5,8 @@
 .updates-notebook header{margin:26px 0 22px}
 .updates-notebook h1{margin:0 0 8px;font-size:clamp(2rem,5vw,3.2rem);font-weight:650;line-height:1.1;letter-spacing:-.04em}
 .updates-notebook header>p:last-child{max-width:620px;margin:0;color:var(--muted);line-height:1.6}
-.update-search{margin:20px 0 26px}
+.update-search{margin:12px 0 18px}
+.update-search>summary{display:inline-flex;align-items:center;min-height:36px;padding:4px 0;color:var(--blue);font-size:.84rem}
 .update-search label{display:block;margin-bottom:8px;font-size:.85rem;font-weight:650}
 .update-search input{box-sizing:border-box;width:min(100%,560px);min-height:46px;padding:10px 14px;font:inherit;border:1px solid var(--line);border-radius:8px;background:var(--white);color:var(--ink)}
 .update-search input:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
