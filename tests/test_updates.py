@@ -47,3 +47,38 @@ def test_updates_public_and_titles_escaped(app, monkeypatch):
     assert b"&lt;script&gt;alert(1)&lt;/script&gt;" in response.data
     assert b"Revision aaaaaaa" in response.data
     assert re.search(rb'href="/updates(?:\?[^"]*)?"', client.get('/').data)
+
+
+def test_build_expands_shallow_history(monkeypatch, tmp_path):
+    from scripts.build_updates import complete_checkout_history
+    calls = []
+    def run(command, **kwargs):
+        calls.append(command)
+        return subprocess.CompletedProcess(command, 0, "true\n")
+    monkeypatch.setattr(subprocess, "run", run)
+    complete_checkout_history(tmp_path)
+    assert calls[-1] == ["git", "fetch", "--unshallow", "--no-tags", "origin"]
+
+
+def test_build_full_checkout_needs_no_network(monkeypatch, tmp_path):
+    from scripts.build_updates import complete_checkout_history
+    calls = []
+    def run(command, **kwargs):
+        calls.append(command)
+        return subprocess.CompletedProcess(command, 0, "false\n")
+    monkeypatch.setattr(subprocess, "run", run)
+    complete_checkout_history(tmp_path)
+    assert len(calls) == 1
+
+
+def test_build_keeps_snapshot_when_fetch_fails(monkeypatch, tmp_path, capsys):
+    from scripts.build_updates import complete_checkout_history
+    def run(command, **kwargs):
+        if command[1] == "fetch":
+            raise subprocess.CalledProcessError(1, command, stderr="private remote details")
+        return subprocess.CompletedProcess(command, 0, "true\n")
+    monkeypatch.setattr(subprocess, "run", run)
+    complete_checkout_history(tmp_path)
+    output = capsys.readouterr().out
+    assert "keeping the bundled update history" in output
+    assert "private remote details" not in output

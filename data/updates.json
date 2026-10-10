@@ -1,5 +1,245 @@
 [
   {
+    "hash": "09be0584effc8819a48ba6022ea323377bad1e40",
+    "timestamp": 1791649299,
+    "date": "2026-10-10",
+    "title": "Redesign landing page with notebook previews and developer section"
+  },
+  {
+    "hash": "94e34223184b9f3ae6234977020435ba5a1b7a87",
+    "timestamp": 1791249423,
+    "date": "2026-10-05",
+    "title": "Raise AI drafts to thirty main tasks and expose the task-count control"
+  },
+  {
+    "hash": "c9b8cb2a0d8b1fc41d09c769acc104784f2b4908",
+    "timestamp": 1791174548,
+    "date": "2026-10-05",
+    "title": "Remove redundant course-plan banner and tighten landing and dashboard layouts"
+  },
+  {
+    "hash": "8628b009726daa535cb6606748131ad47f5e467d",
+    "timestamp": 1791170724,
+    "date": "2026-10-04",
+    "title": "Reflow dashboard whitespace and add optional five-minute focus tools"
+  },
+  {
+    "hash": "0930b292912e377d35a6d736da314866704e8907",
+    "timestamp": 1791164084,
+    "date": "2026-10-04",
+    "title": "Tighten planner copy and simplify AI editing layouts"
+  },
+  {
+    "hash": "3e21ce65f51e22b9082f915a78a9b3d013e434ce",
+    "timestamp": 1791158702,
+    "date": "2026-10-04",
+    "title": "Support customizable AI drafts for standalone tasks, projects, and repeating batches"
+  },
+  {
+    "hash": "e2c5a1b3d33d01d1d5dc717e14c45b583ef67b39",
+    "timestamp": 1791070013,
+    "date": "2026-10-03",
+    "title": "Draft task details and workload with AI and preview conflict-aware study sessions"
+  },
+  {
+    "hash": "4c323f6bc62a544b542ff92bba062e8e965c1ddb",
+    "timestamp": 1791061632,
+    "date": "2026-10-03",
+    "title": "Enforce site-wide CSRF and harden account, upload, and AI boundaries"
+  },
+  {
+    "hash": "403aba363d0a62472cf960fdae73ed0d5722840d",
+    "timestamp": 1791045669,
+    "date": "2026-10-03",
+    "title": "Simplify decorative UI patterns while retaining notebook design"
+  },
+  {
+    "hash": "c22c0877c76eef78ba8ff176073fb1289981f614",
+    "timestamp": 1791042703,
+    "date": "2026-10-03",
+    "title": "Fix native sign-in rejected by opaque Origin header"
+  },
+  {
+    "hash": "b873fbaf4a5f65b325fe9e15e78afd230a6c2bb8",
+    "timestamp": 1791003894,
+    "date": "2026-10-03",
+    "title": "Enable secure session cookies on Render"
+  },
+  {
+    "hash": "878a3e5f1384b19cafddb812a8d268fc1d2d1486",
+    "timestamp": 1791003578,
+    "date": "2026-10-03",
+    "title": "Harden launch readiness and compress social preview"
+  },
+  {
+    "hash": "5cc07fa62a4b1ed09c5cc62f2cb3166d3a9c22d0",
+    "timestamp": 1791002274,
+    "date": "2026-10-03",
+    "title": "Add privacy notices, age acknowledgment, deletion guidance and accessibility fixes"
+  },
+  {
+    "hash": "a88b5cb3a118637f6261a43aedebe49c0f6de8d6",
+    "timestamp": 1791001238,
+    "date": "2026-10-03",
+    "title": "Simplify planner workspace and add reviewed AI assignment drafts"
+  },
+  {
+    "hash": "d3cfd5e38712ce5d51aea744aced11f726ad6bae",
+    "timestamp": 1790965003,
+    "date": "2026-10-02",
+    "title": "Add reviewed AI assignment breakdown with Groq and usage limits"
+  },
+  {
+    "hash": "a9597d2ee4b06bb648259c94b004365a4ce15e3e",
+    "timestamp": 1790824158,
+    "date": "2026-09-30",
+    "title": "Replace cached dashboard image and expand current product gallery"
+  },
+  {
+    "hash": "fd19b926fe8dc9337aff02ff0b1e77f49dccd710",
+    "timestamp": 1790823529,
+    "date": "2026-09-30",
+    "title": "Refresh public project documentation and current site screenshots"
+  },
+  {
+    "hash": "0bf4a37fbef1640f645d6af0add7aec65404db8a",
+    "timestamp": 1790812755,
+    "date": "2026-09-30",
+    "title": "Link parent tasks from queue and include their titles in search"
+  },
+  {
+    "hash": "ea815f4aa04846c58498bec994ba66a047c3b8bd",
+    "timestamp": 1790804277,
+    "date": "2026-09-30",
+    "title": "Add notebook checkmark logo to site branding"
+  },
+  {
+    "hash": "edd85370ad7f2899f31e5427a2295ae854f6ea3f",
+    "timestamp": 1790726247,
+    "date": "2026-09-29",
+    "title": "Add public SEO metadata, sitemap, and student planner guide"
+  },
+  {
+    "hash": "8b6c57f8999639bd107004f6692027a88c90bddd",
+    "timestamp": 1790725721,
+    "date": "2026-09-29",
+    "title": "Streamline task entry, selection, and tutorial navigation"
+  },
+  {
+    "hash": "a0d960fb6db90c6aedbaa297161b966c0b670ece",
+    "timestamp": 1790612816,
+    "date": "2026-09-28",
+    "title": "Add reviewed bulk deletion for selected tasks"
+  },
+  {
+    "hash": "fe8edb916221e516beb8d3584f3e2621e2f28594",
+    "timestamp": 1790612229,
+    "date": "2026-09-28",
+    "title": "Clarify repeat-through tasks and add Google Calendar deadlines"
+  },
+  {
+    "hash": "0c886a358c1ff5db4d20398e8b6483dec597ed68",
+    "timestamp": 1790611476,
+    "date": "2026-09-28",
+    "title": "Replace public demo entry with an interactive practice tutorial"
+  },
+  {
+    "hash": "afd52500d02109870a3926751982b6d16ac07a8e",
+    "timestamp": 1790562658,
+    "date": "2026-09-27",
+    "title": "Add accessible notebook motion for tasks and course planning"
+  },
+  {
+    "hash": "31d8296cbe08063e65a2844833440181ad3c9523",
+    "timestamp": 1790561393,
+    "date": "2026-09-27",
+    "title": "Improve course planning, task steps, and session recovery"
+  },
+  {
+    "hash": "4b6bfc4227c53e9a91a3d1471ecf280906e98ef1",
+    "timestamp": 1790469658,
+    "date": "2026-09-26",
+    "title": "Fix task history editing and large-text task menu states"
+  },
+  {
+    "hash": "ebde79a185c47c4b132a847e0623ac48274a366f",
+    "timestamp": 1790469044,
+    "date": "2026-09-26",
+    "title": "Simplify task cards and remove duplicate task creation action"
+  },
+  {
+    "hash": "04742bfc010bd0e2326defbf0a51bc0e2b1a3c0f",
+    "timestamp": 1790389539,
+    "date": "2026-09-25",
+    "title": "Add purposeful reminder and college-search controls"
+  },
+  {
+    "hash": "b00f10df6c9f6557309f3c0b90810c7234fda1bf",
+    "timestamp": 1790368569,
+    "date": "2026-09-25",
+    "title": "Replace legacy sign-in with usernames and require planner setup"
+  },
+  {
+    "hash": "129b5bba1abb43ac2ce35ae33195d152a4177dcf",
+    "timestamp": 1790298584,
+    "date": "2026-09-24",
+    "title": "Streamline tasks and prepare verified email accounts"
+  },
+  {
+    "hash": "29f8ff6d9135869297810653dcfa1652a94217a3",
+    "timestamp": 1790279959,
+    "date": "2026-09-24",
+    "title": "Integrate dual enrollment and college presets"
+  },
+  {
+    "hash": "4d16a7a00b73407dcc355f5c990f1cffebe2c692",
+    "timestamp": 1790213918,
+    "date": "2026-09-23",
+    "title": "Allow real course and task planning with privacy guidance"
+  },
+  {
+    "hash": "96e63d74e1359e18f96ab926715ef4082aeb4c80",
+    "timestamp": 1790213450,
+    "date": "2026-09-23",
+    "title": "Add college directory and dual-enrollment planning"
+  },
+  {
+    "hash": "295eedc2faff81bb409accca465d6f2a689caee4",
+    "timestamp": 1790212067,
+    "date": "2026-09-23",
+    "title": "Fix Updates page for signed-in workspaces"
+  },
+  {
+    "hash": "a38228292572e0d410bdeb143a4e6aadbbce71db",
+    "timestamp": 1790211416,
+    "date": "2026-09-23",
+    "title": "Restore notebook depth and connect courses, assignments, and subtasks"
+  },
+  {
+    "hash": "bfd0705f20d382d626c8aeedb3e09bfc48a79d79",
+    "timestamp": 1790127560,
+    "date": "2026-09-22",
+    "title": "Overhaul the planner UI and implement student feedback"
+  },
+  {
+    "hash": "d676e25a2d9021c131c4e162b73d4040a651a114",
+    "timestamp": 1789883559,
+    "date": "2026-09-20",
+    "title": "Move planning preferences from the sidebar into Settings"
+  },
+  {
+    "hash": "a18f16332567c5aa36b45a334bf4d446be1244d0",
+    "timestamp": 1789881706,
+    "date": "2026-09-20",
+    "title": "Finish task and course button flows with clear outcomes and return actions"
+  },
+  {
+    "hash": "c5b307ed769e5b843116c615aca6598c75337a11",
+    "timestamp": 1789881227,
+    "date": "2026-09-20",
+    "title": "Preserve navigation context and move settings and updates into a gear menu"
+  },
+  {
     "hash": "353b87ecf991906ba6894d88694aba26ce7393f3",
     "timestamp": 1789864684,
     "date": "2026-09-19",
