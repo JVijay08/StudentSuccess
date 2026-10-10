@@ -11,8 +11,9 @@
       entry.hidden = !words.every(word => text.includes(word));
       if (!entry.hidden) count++;
     });
-    document.querySelectorAll('.update-day').forEach(day => {
-      day.hidden = !day.querySelector('.update-entry:not([hidden])');
+    document.querySelectorAll('[data-update-archive]').forEach(archive => {
+      archive.open = words[0] !== '' && archive.querySelector('.update-entry:not([hidden])') !== null;
+      archive.hidden = !archive.querySelector('.update-entry:not([hidden])');
     });
     document.getElementById('update-count').textContent = `${count} of ${entries.length} updates`;
     document.getElementById('no-updates').hidden = count !== 0;

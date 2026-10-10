@@ -34,3 +34,11 @@ body .catalog-results .course-card:has(.compare-check input:checked){border:0;bo
 .compare-invitation p{margin:8px 0;color:var(--muted);font-size:.86rem;line-height:1.5}
 .compare-invitation .example-pairs{margin:10px 0}
 @media(max-width:680px){body .catalog-results .course-card{gap:6px 10px;padding:12px 0}.catalog-results .course-card h3{font-size:1rem}.catalog-results .course-card .card-actions{grid-column:2;grid-row:2/4}.catalog-results .course-card .small-button{padding:8px}.catalog-results .course-card .compare-check{font-size:.65rem}.filter-panel .catalog-search input{min-height:48px}}
+
+/* Keep the complete filter form in normal page flow instead of clipping it
+   inside a nested viewport-sized scroller. */
+body .filter-panel{position:static;top:auto;max-height:none;overflow:visible}
+body .explorer-layout{grid-template-columns:minmax(220px,250px) minmax(0,1fr)}
+body .catalog-results .course-card,body .catalog-results .course-card>*{min-width:0}
+body .catalog-results .course-card h3,body .catalog-results .course-card p,body .catalog-results .course-card a{overflow-wrap:anywhere}
+@media(max-width:760px){body .explorer-layout{grid-template-columns:minmax(0,1fr)}}

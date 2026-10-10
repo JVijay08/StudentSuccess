@@ -1,6 +1,4 @@
-﻿from datetime import timezone
-
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 from flask import Blueprint, g, redirect, render_template, session, url_for, request
@@ -33,7 +31,43 @@ def updates():
 
 
 def _render_updates():
-    return render_template("updates.html", updates=get_updates())
+    updates = get_updates()
+    latest_update = updates[0] if updates else None
+    latest_month = latest_update["date"][:7] if latest_update else None
+    recent_updates = [
+        update for update in updates
+        if update["date"][:7] == latest_month and update is not latest_update
+    ]
+
+    earlier_months = []
+    month_lookup = {}
+    for update in updates:
+        month_key = update["date"][:7]
+        if month_key == latest_month:
+            continue
+        month = month_lookup.get(month_key)
+        if month is None:
+            month_date = datetime.strptime(month_key, "%Y-%m")
+            month = {
+                "key": month_key,
+                "label": month_date.strftime("%B %Y"),
+                "updates": [],
+            }
+            month_lookup[month_key] = month
+            earlier_months.append(month)
+        month["updates"].append(update)
+
+    return render_template(
+        "updates.html",
+        updates=updates,
+        latest_update=latest_update,
+        latest_month_label=(
+            datetime.strptime(latest_month, "%Y-%m").strftime("%B %Y")
+            if latest_month else None
+        ),
+        recent_updates=recent_updates,
+        earlier_months=earlier_months,
+    )
 
 
 def _build_course_load_summary(profile):

@@ -49,6 +49,26 @@ def test_updates_public_and_titles_escaped(app, monkeypatch):
     assert re.search(rb'href="/updates(?:\?[^"]*)?"', client.get('/').data)
 
 
+def test_updates_feature_latest_and_collapse_older_months(app, monkeypatch):
+    from routes import main_routes
+    monkeypatch.setattr(main_routes, "get_updates", lambda: [
+        {"hash": "a" * 40, "date": "2026-10-10", "title": "Latest planner improvement"},
+        {"hash": "b" * 40, "date": "2026-10-05", "title": "Another October improvement"},
+        {"hash": "c" * 40, "date": "2026-09-30", "title": "September improvement"},
+    ])
+
+    response = app.test_client().get("/updates")
+
+    assert response.status_code == 200
+    body = response.get_data(as_text=True)
+    assert "Latest update" in body
+    assert "Latest planner improvement" in body
+    assert "Another October improvement" in body
+    assert "September 2026" in body
+    assert 'data-update-archive' in body
+    assert '<details class="update-archive update-month" data-update-archive>' in body
+
+
 def test_build_expands_shallow_history(monkeypatch, tmp_path):
     from scripts.build_updates import complete_checkout_history
     calls = []
