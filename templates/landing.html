@@ -5,41 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#18283d">
   <title>{{ seo.title }}</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
   {% include '_accessibility_head.html' %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css', v='20261010') }}">
+  <script src="{{ url_for('static', filename='js/landing.js', v='20261010') }}" defer></script>
 </head>
 <body class="fieldnotes-landing">
   {% include '_accessibility_body.html' %}
   <main id="main-content">
-    <nav aria-label="Primary navigation">
+    <nav class="landing-nav" aria-label="Primary navigation">
       <a class="brand" href="{{ nav_url('main.home') }}">StudentSuccess</a>
-      <div><a href="{{ url_for('seo.features') }}">Features</a><a href="{{ nav_url('auth.login') }}">Sign in</a></div>
+      <div class="landing-links"><a href="#features">Features</a><a href="#how-it-works">How it works</a><a href="#about">About</a><a href="{{ nav_url('auth.login') }}">Sign in</a></div>
     </nav>
 
-    <section class="hero">
-      <div>
-        <h1>Plan less.<br>Start sooner.</h1>
-        <p class="lede">StudentSuccess is an academic planner for high-school and college students. Organize assignments, find your next task, and plan a manageable course load.</p>
-        <div class="hero-actions"><form method="post" action="{{ url_for('tutorial.start') }}">{% include '_navigation_fields.html' %}<input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><button class="primary-action">Start tutorial</button></form>
-          <a class="secondary-action" href="{{ nav_url('auth.register') }}">Create an account</a>
-        </div>
-        <p class="prototype-note">No signup needed for the tutorial. Explore real controls in a separate sample planner.</p>
+    <section class="landing-hero" aria-labelledby="landing-title">
+      <div class="landing-intro">
+        <h1 id="landing-title">Plan less.<br>Start sooner.</h1>
+        <p class="landing-lede">A full course load.<br>A long to-do list.<br><strong>One clear next step.</strong></p>
+        <p>Bring your courses, assignments, and study time together in a planner built for high-school and college life.</p>
+        <div class="landing-actions"><form method="post" action="{{ url_for('tutorial.start') }}">{% include '_navigation_fields.html' %}<input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><button class="primary-action">Start tutorial</button></form><a href="{{ nav_url('auth.register') }}">Create an account</a></div>
+        <p class="landing-small">Try a sample planner. No signup needed.</p>
       </div>
-    <section class="product-preview" aria-label="Example of the task planner"><div class="preview-top"><strong>Today</strong><span>Example planner</span></div><p class="eyebrow">Recommended next task</p><h2>Draft your introduction</h2><p>Composition &middot; 45 minutes &middot; Due tonight</p><p class="recommendation-brief">This deadline is within 24 hours. A short first draft makes the rest of the paper easier to start.</p><div class="preview-queue"><h3>Up next</h3><p><strong>Review biology notes</strong><span>30 min &middot; Tomorrow</span></p><p><strong>Research paper</strong><span>2 of 5 subtasks complete</span></p><progress value="40" max="100">40%</progress></div><p class="preview-caption">Deadlines, subtasks, and a clear place to start.</p></section>
+      <div class="landing-notebook" aria-label="Interactive example planner">
+        <div class="notebook-heading"><strong>Your working notebook</strong><span>Example planner</span></div>
+        <div class="preview-tabs" hidden role="tablist" aria-label="Explore the planner"><button role="tab" id="tab-today" aria-controls="preview-today" aria-selected="true">Today</button><button role="tab" id="tab-steps" aria-controls="preview-steps" aria-selected="false" tabindex="-1">Project steps</button><button role="tab" id="tab-courses" aria-controls="preview-courses" aria-selected="false" tabindex="-1">Courses</button></div>
+        <section id="preview-today" class="notebook-page">
+          <p class="landing-small">START HERE</p><h2>Draft your introduction</h2><p>Composition &middot; 45 minutes &middot; Due tonight</p>
+          <p class="notebook-reason">A deadline within 24 hours puts this near the top. See why a task is recommended before you begin.</p>
+          <div class="notebook-row"><strong>Review biology notes</strong><span>30 min &middot; Tomorrow</span></div>
+          <div class="notebook-row"><strong>Research paper</strong><span>2 of 5 steps complete</span></div>
+          <label class="landing-small" for="sample-progress">Research paper progress</label><progress id="sample-progress" value="2" max="5">2 of 5 steps</progress>
+        </section>
+        <section id="preview-steps" class="notebook-page" hidden><p class="landing-small">ONE ASSIGNMENT, SMALLER STEPS</p><h2>Research paper</h2><p>A big deadline becomes a few places to begin.</p><ol class="sample-steps"><li><s>Choose a topic</s><span>Done</span></li><li><s>Collect sources</s><span>Done</span></li><li><strong>Write an outline</strong><span>Next &middot; 30 min</span></li><li>Draft the paper<span>60 min</span></li><li>Revise and cite sources<span>45 min</span></li></ol></section>
+        <section id="preview-courses" class="notebook-page" hidden><p class="landing-small">YOUR COURSES, TOGETHER</p><h2>A semester that fits</h2><p>High school and college courses can share one plan.</p><div class="notebook-row"><strong>AP Biology</strong><span>High school</span></div><div class="notebook-row"><strong>English Composition I</strong><span>Dual enrollment &middot; 3 credits</span></div><div class="notebook-row"><strong>Precalculus</strong><span>High school</span></div><p class="notebook-reason">Compare workload before adding another course. Confirm requirements with your school counselor.</p></section>
+        <p class="notebook-footnote">Sample content. Your planner starts with your own courses and tasks.</p>
+      </div>
     </section>
 
-
-    <section class="planning-overview" aria-labelledby="planning-overview-title">
-      <h2 id="planning-overview-title">Courses, assignments, and time to do the work.</h2>
-      <dl>
-        <div><dt>Plan your courses</dt><dd>Compare high-school courses, add dual enrollment, or organize college courses by term and institution.</dd></div>
-        <div><dt>Break down the assignment</dt><dd>Add a deadline and work estimate. Divide a project into steps yourself, or review an optional AI draft.</dd></div>
-        <div><dt>Choose what to start</dt><dd>See your next task and why it comes first. Reschedule from its menu, then keep completed work in your history.</dd></div>
-      </dl>
+    <section id="features" class="landing-section" aria-labelledby="features-title" tabindex="-1">
+      <div class="section-heading"><span class="section-number" aria-hidden="true">01</span><div><h2 id="features-title">From the semester ahead<br>to the work in front of you.</h2><p>Keep the big picture without losing your next step.</p></div></div>
+      <div class="feature-story"><div><h3>Make room for the right courses.</h3><p>Compare high-school options and build a four-year plan. Add dual-enrollment courses alongside them, or organize college courses by term, credits, and institution.</p><p>Studying at more than one college? Each course can belong to its own institution.</p></div><div class="course-example"><div class="example-heading">A sample semester</div><div class="course-line"><strong>Biology</strong><span>High school</span></div><div class="course-line"><strong>Composition</strong><span>College &middot; 3 credits</span></div><div class="course-line"><strong>Statistics</strong><span>College &middot; 3 credits</span></div><p class="landing-small">Course planning and everyday assignments, in the same workspace.</p></div></div>
+      <div class="feature-story"><div><h3>A rough idea is enough to begin.</h3><p>Write an assignment yourself or ask the optional AI drafter to suggest tasks, estimates, and smaller steps. Draft a single project or a batch of assignments.</p><p>You review, edit, and choose what to save. Recommendations about what to start stay grounded in explainable rules.</p></div><div class="draft-example"><div class="example-heading">An example of breaking down a goal</div><p class="sample-prompt">&ldquo;Study for my chemistry test next Friday.&rdquo;</p><ol><li>Review the concepts you find hardest</li><li>Work through practice questions</li><li>Check mistakes and revisit your notes</li></ol><p class="landing-small">AI suggestions are a starting point. You make the final plan.</p></div></div>
+      <div class="feature-story"><div><h3>Less deciding. More getting started.</h3><p>See the next recommended task and the reasons behind its place in the queue. Start with just five minutes when a whole assignment feels like too much.</p><p>Plans change. Reschedule from the task menu, keep completed work in your history, and review your timing as you go.</p></div><div class="focus-example"><span class="landing-small">A SMALL START COUNTS</span><p class="sample-timer">05<span>:</span>00</p><strong>Just five minutes of focus.</strong><p>You can keep going, or stop when the timer ends.</p><a href="#how-it-works">Find your starting point &darr;</a></div></div>
     </section>
-    <section class="storage-choice"><h2>A planner you can return to</h2><p>A username and password let you pick up your planner on another device. No email address or real name is needed.</p><p>The tutorial contains sample assignments and course plans. The free server may take up to a minute to wake.</p></section>
 
+    <section id="how-it-works" class="landing-section" aria-labelledby="how-title" tabindex="-1"><div class="section-heading"><span class="section-number" aria-hidden="true">02</span><div><h2 id="how-title">Set it up for your life.</h2><p>Start small. Your planner can grow with your semester.</p></div></div><ol class="landing-workflow"><li><h3>Make it yours</h3><p>Create a username and password, then choose your education setting and planning preferences. No email address or real name needed.</p></li><li><h3>Put the work on paper</h3><p>Add courses and assignments, set deadlines, and break bigger projects into manageable steps.</p></li><li><h3>Take the next step</h3><p>Open Today, choose a task, and begin. Adjust your plan when things change.</p></li></ol><div class="landing-note"><strong>Want to explore first?</strong><p>The interactive tutorial walks you through a separate sample planner. The free server may take up to a minute to wake.</p></div></section>
 
+    <section class="landing-section landing-questions" aria-labelledby="questions-title"><h2 id="questions-title">A few things to know.</h2><div><details><summary>Do I have to use AI?</summary><p>No. You can create tasks, plan courses, and use the task recommendations without AI. AI drafting is optional and requires your review before anything is saved.</p></details><details><summary>Can I use it for both high school and college?</summary><p>Yes. High-school planning includes dual enrollment. College planning supports terms, credits, and courses at multiple institutions.</p></details><details><summary>What happens to my information?</summary><p>Your account saves your planner so you can return on another device. Use a nickname and keep sensitive personal information out of tasks. You can export your data or delete your account in Settings. <a href="{{ url_for('seo.features') }}">Read the features and FAQ</a>, or review the privacy links below.</p></details></div></section>
+
+    <section id="about" class="landing-section developer-section" aria-labelledby="about-title" tabindex="-1"><div><span class="section-number" aria-hidden="true">03</span><h2 id="about-title">About the Developer</h2><p class="developer-name">Jayesh Vijay</p><p class="landing-small">Designed, developed, and launched independently.</p></div><div><p>StudentSuccess was independently designed, developed, and launched by Jayesh Vijay, a high school student passionate about computer science and solving real-world problems.</p><p>Built using Python, Flask, JavaScript, and PostgreSQL, the platform helps students make informed decisions about academic priorities, manage coursework, and adapt their schedules. User feedback guided ongoing improvements to usability, task planning, and personalized recommendations.</p></div></section>
+
+    <section class="landing-closing" aria-labelledby="closing-title"><div><h2 id="closing-title">Your next step can be a small one.</h2><p>Try the planner with sample courses and assignments.</p></div><form method="post" action="{{ url_for('tutorial.start') }}">{% include '_navigation_fields.html' %}<input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><button class="primary-action">Start tutorial</button></form></section>
   </main>
   <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
 
