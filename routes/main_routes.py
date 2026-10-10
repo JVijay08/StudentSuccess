@@ -20,6 +20,25 @@ from services.timing_service import timing_summary
 
 main_bp = Blueprint("main", __name__)
 
+UPDATE_PRESENTATION = {
+    "Refine catalog and update history": {
+        "display_title": "Find courses and updates faster",
+        "summary": "Course filters stay in the page flow, and recent planner changes are easier to scan.",
+        "highlights": [
+            "Browse course results without a nested filter scroller.",
+            "Find the newest updates first, with older changes grouped by month.",
+        ],
+    },
+    "Restore complete update history and expand shallow deployment clones": {
+        "display_title": "Catch up on recent improvements",
+        "summary": "The update page can show the complete history, even when a deployment starts from a shallow checkout.",
+    },
+    "Redesign landing page with notebook previews and developer section": {
+        "display_title": "A clearer introduction to StudentSuccess",
+        "summary": "The landing page now explains the planner with a notebook preview and focused feature descriptions.",
+    },
+}
+
 
 @main_bp.get("/updates")
 def updates():
@@ -31,13 +50,24 @@ def updates():
 
 
 def _render_updates():
-    updates = get_updates()
+    updates = [
+        {
+            **update,
+            **UPDATE_PRESENTATION.get(update["title"], {}),
+            "display_title": UPDATE_PRESENTATION.get(update["title"], {}).get(
+                "display_title", update["title"]
+            ),
+        }
+        for update in get_updates()
+    ]
     latest_update = updates[0] if updates else None
     latest_month = latest_update["date"][:7] if latest_update else None
     recent_updates = [
         update for update in updates
         if update["date"][:7] == latest_month and update is not latest_update
     ]
+    recent_highlights = recent_updates[:2]
+    current_month_archive = recent_updates[2:]
 
     earlier_months = []
     month_lookup = {}
@@ -66,6 +96,8 @@ def _render_updates():
             if latest_month else None
         ),
         recent_updates=recent_updates,
+        recent_highlights=recent_highlights,
+        current_month_archive=current_month_archive,
         earlier_months=earlier_months,
     )
 

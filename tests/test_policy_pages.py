@@ -11,6 +11,8 @@ def test_notices_public_and_available_during_onboarding(app):
         response = client.get(path)
         assert response.status_code == 200
         assert b'Policies and support' in response.data
+    privacy = client.get('/privacy')
+    assert b'policies.css?v=20261010-article-layout' in privacy.data
     register(client)
     for path in paths:
         assert client.get(path).status_code == 200

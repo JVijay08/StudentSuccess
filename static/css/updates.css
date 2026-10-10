@@ -1,5 +1,5 @@
 .updates-page{min-height:100vh;margin:0;color:var(--ink);background-color:var(--paper);background-image:linear-gradient(var(--graph-line) 1px,transparent 1px),linear-gradient(90deg,var(--graph-line) 1px,transparent 1px);background-size:28px 28px}
-.updates-notebook{width:min(100% - 40px,1000px);margin:auto;padding:32px 0 48px}
+.updates-notebook{width:min(100% - 40px,900px);margin:auto;padding:32px 0 48px}
 .updates-notebook>nav{padding-bottom:22px;border-bottom:1px solid var(--line)}
 .updates-notebook>nav a,.updates-notebook footer a{color:var(--blue);text-underline-offset:4px}
 .updates-notebook header{margin:26px 0 22px}
@@ -16,6 +16,9 @@
 .update-featured-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;color:var(--blue);font-weight:650}
 .update-badge{padding:3px 9px;border-radius:999px;background:color-mix(in srgb,var(--green) 14%,var(--white));color:var(--green);font-size:.72rem}
 .update-featured h3{margin:0 0 8px;font-size:1.12rem;line-height:1.4}
+.update-featured>p{margin:0 0 8px;color:var(--muted);line-height:1.5}
+.update-highlights{display:grid;gap:6px;margin:10px 0 0;padding:0;list-style:none;color:var(--muted);font-size:.86rem}
+.update-highlights li::before{content:"✓";margin-right:8px;color:var(--green);font-weight:700}
 .update-featured small{color:var(--muted);font-size:.76rem}
 .update-recent-list{grid-column:2;list-style:none;margin:0;padding:0}
 .update-entry[hidden],.update-archive[hidden],.updates-page [hidden]{display:none!important}
@@ -24,7 +27,8 @@
 .update-recent-list .update-entry details>summary span{flex:none;color:var(--blue);font-size:.78rem;font-weight:500}
 .update-recent-list .update-entry details[open]>summary{margin-bottom:8px}
 .update-recent-list .update-entry small{display:block}
-.update-archive{grid-column:2;margin:0;border-top:1px solid var(--line)}
+.update-recent-list .update-entry details>p{margin:8px 0 0;color:var(--muted);font-size:.86rem;line-height:1.5}
+.update-archive{grid-column:2;display:block;margin:10px 0 0;border-top:1px solid var(--line)}
 .update-archive>summary{display:flex;justify-content:space-between;gap:16px;padding:14px 8px;cursor:pointer;font-weight:650}
 .update-archive>summary span{color:var(--muted);font-size:.8rem;font-weight:400}
 .update-archive>summary::after{content:"+";color:var(--blue);font-size:1.1rem;font-weight:400}

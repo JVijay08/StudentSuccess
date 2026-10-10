@@ -25,6 +25,16 @@ def test_settings_page_and_preferences_persist(app, authed_client):
     response = authed_client.get("/settings")
     assert response.status_code == 200
     assert b"<h1>Settings</h1>" in response.data
+    assert b'account-group account-group-danger' in response.data
+    assert b"Danger zone" in response.data
+    assert b'class="account-grid"' not in response.data
+    assert b"settings.css?v=20261010-flat-account-sections" in response.data
+
+    calendar_response = authed_client.get("/calendar")
+    assert calendar_response.status_code == 200
+    assert b'class="calendar-actions"' in calendar_response.data
+    assert b"Copies, not automatic sync" in calendar_response.data
+    assert b"tasks.css?v=20261010-action-calendar" in calendar_response.data
 
     response = authed_client.post(
         "/settings",

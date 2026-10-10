@@ -37,8 +37,10 @@ body .catalog-results .course-card:has(.compare-check input:checked){border:0;bo
 
 /* Keep the complete filter form in normal page flow instead of clipping it
    inside a nested viewport-sized scroller. */
-body .filter-panel{position:static;top:auto;max-height:none;overflow:visible}
+body .course-page,body .explorer-layout,body .results-panel,body .catalog-results{height:auto;min-height:0;max-height:none;overflow:visible}
+body .filter-panel{position:static;top:auto;height:auto;max-height:none;overflow:visible}
 body .explorer-layout{grid-template-columns:minmax(220px,250px) minmax(0,1fr)}
-body .catalog-results .course-card,body .catalog-results .course-card>*{min-width:0}
+body .catalog-results .course-card,body .catalog-results .course-card>*{height:auto;min-width:0;max-height:none;overflow:visible}
 body .catalog-results .course-card h3,body .catalog-results .course-card p,body .catalog-results .course-card a{overflow-wrap:anywhere}
+body .catalog-results .course-card .card-actions{min-width:120px}
 @media(max-width:760px){body .explorer-layout{grid-template-columns:minmax(0,1fr)}}

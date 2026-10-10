@@ -106,7 +106,7 @@
     </details>
 
     <section class="task-list" id="task-queue">
-      <div class="queue-heading"><h2>Your next actions <span class="count-badge">{{ task_rows|length }}</span></h2><div class="queue-tools"><a class="text-link" href="{{ nav_url('task_bulk.select') }}">Select tasks</a><nav class="view-tabs" aria-label="Task views"><a href="{{ nav_url('tasks.tasks') }}" {% if task_view == 'queue' %}aria-current="page"{% endif %}>Next up</a><a href="{{ nav_url('tasks.tasks', view='courses') }}" {% if task_view == 'courses' %}aria-current="page"{% endif %}>By course</a></nav></div></div>
+      <div class="queue-heading"><h2>Upcoming tasks <span class="count-badge">{{ task_rows|length }}</span></h2><div class="queue-tools"><a class="text-link" href="{{ nav_url('task_bulk.select') }}">Select tasks</a><nav class="view-tabs" aria-label="Task views"><a href="{{ nav_url('tasks.tasks') }}" {% if task_view == 'queue' %}aria-current="page"{% endif %}>Next up</a><a href="{{ nav_url('tasks.tasks', view='courses') }}" {% if task_view == 'courses' %}aria-current="page"{% endif %}>By course</a></nav></div></div>
       {% if task_view == 'courses' %}
         {% include '_course_tasks.html' %}
       {% else %}

@@ -44,11 +44,8 @@
         {% endif %}
         {% if prioritized_tasks %}<a class="button secondary" href="{{ nav_url('tasks.tasks', _anchor='task-form') }}">Add a task</a>{% endif %}
       </header>
-
-
-
+      <nav class="view-tabs dashboard-views" aria-label="Dashboard view"><a href="{{ url_for('main.dashboard', view='today') }}" {% if focus_view %}aria-current="page"{% endif %}>Today view</a><a href="{{ url_for('main.dashboard', view='full') }}" {% if not focus_view %}aria-current="page"{% endif %}>Full dashboard</a></nav>
       <section class="focus-card{% if focus_view %} focus-card-today{% endif %}">
-        <nav class="view-tabs dashboard-views" aria-label="Dashboard view"><a href="{{ url_for('main.dashboard', view='today') }}" {% if focus_view %}aria-current="page"{% endif %}>Today view</a><a href="{{ url_for('main.dashboard', view='full') }}" {% if not focus_view %}aria-current="page"{% endif %}>Full dashboard</a></nav>
         <h2 class="focus-section-title">{{ "Your next task" if prioritized_tasks else "Start here" }}</h2>
         {% if prioritized_tasks %}
           <ol class="priority-list">

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ seo.title }}</title>
   {% include '_accessibility_head.html' %}
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/updates.css', v='20261010-grouped') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/updates.css', v='20261010-grouped-v2') }}">
 </head>
 <body class="updates-page">
   {% include '_accessibility_body.html' %}
@@ -27,20 +27,39 @@
           <h2 id="latest-month-title">{{ latest_month_label }}</h2>
           <article class="update-entry update-featured">
             <div class="update-featured-top"><span>Latest update</span><span class="update-badge">New</span></div>
-            <h3>{{ latest_update.title }}</h3>
-            <small><time datetime="{{ latest_update.date }}">{{ latest_month_label }}</time> &middot; Revision {{ latest_update.hash[:7] }}</small>
+            <h3>{{ latest_update.display_title }}</h3>
+            <small><time datetime="{{ latest_update.date }}">{{ latest_update.date }}</time> &middot; Revision {{ latest_update.hash[:7] }}</small>
+            {% if latest_update.summary %}<p>{{ latest_update.summary }}</p>{% endif %}
+            {% if latest_update.highlights %}<ul class="update-highlights">{% for highlight in latest_update.highlights %}<li>{{ highlight }}</li>{% endfor %}</ul>{% endif %}
           </article>
-          {% if recent_updates %}
+          {% if recent_highlights %}
             <ol class="update-recent-list">
-              {% for update in recent_updates %}
+              {% for update in recent_highlights %}
                 <li class="update-entry">
                   <details>
-                    <summary>{{ update.title }}<span>View details</span></summary>
+                    <summary>{{ update.display_title }}<span>View details</span></summary>
                     <small><time datetime="{{ update.date }}">{{ update.date }}</time> &middot; Revision {{ update.hash[:7] }}</small>
+                    {% if update.summary %}<p>{{ update.summary }}</p>{% endif %}
                   </details>
                 </li>
               {% endfor %}
             </ol>
+          {% endif %}
+          {% if current_month_archive %}
+            <details class="update-archive update-month" data-update-archive>
+              <summary>More from {{ latest_month_label }} <span>{{ current_month_archive|length }} update{{ '' if current_month_archive|length == 1 else 's' }}</span></summary>
+              <ol class="update-recent-list">
+                {% for update in current_month_archive %}
+                  <li class="update-entry">
+                    <details>
+                      <summary>{{ update.display_title }}<span>View details</span></summary>
+                      <small><time datetime="{{ update.date }}">{{ update.date }}</time> &middot; Revision {{ update.hash[:7] }}</small>
+                      {% if update.summary %}<p>{{ update.summary }}</p>{% endif %}
+                    </details>
+                  </li>
+                {% endfor %}
+              </ol>
+            </details>
           {% endif %}
         </section>
         {% for month in earlier_months %}
@@ -50,8 +69,9 @@
               {% for update in month.updates %}
                 <li class="update-entry">
                   <details>
-                    <summary>{{ update.title }}<span>View details</span></summary>
+                    <summary>{{ update.display_title }}<span>View details</span></summary>
                     <small><time datetime="{{ update.date }}">{{ update.date }}</time> &middot; Revision {{ update.hash[:7] }}</small>
+                    {% if update.summary %}<p>{{ update.summary }}</p>{% endif %}
                   </details>
                 </li>
               {% endfor %}
@@ -64,6 +84,6 @@
     {% if updates %}<footer><a href="#update-history">View update history &rarr;</a></footer>{% endif %}
   </main>
   <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
-  <script src="{{ url_for('static', filename='js/updates.js', v='20261010-grouped') }}" defer></script>
+  <script src="{{ url_for('static', filename='js/updates.js', v='20261010-grouped-v2') }}" defer></script>
 {% include '_legal_footer.html' %}</body>
 </html>

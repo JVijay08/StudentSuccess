@@ -3,8 +3,10 @@
 .legal-footer nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 24px}
 .legal-footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--ink);text-decoration:underline;text-underline-offset:3px}
 body .legal-page{max-width:860px;width:100%;margin:0 auto;padding:36px 24px;box-sizing:border-box}
-.legal-sheet{background:var(--white);color:var(--ink);padding:clamp(20px,4vw,40px);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);line-height:1.7}
-.legal-sheet h2{font-size:1.3rem;margin:30px 0 12px}.legal-sheet p,.legal-sheet li,.legal-sheet dd{color:var(--ink);font-size:1rem}
+.legal-sheet{max-width:740px;margin:0 auto;background:transparent;color:var(--ink);padding:0;border:0;border-radius:0;box-shadow:none;line-height:1.75}
+.legal-sheet h2{font-size:1.35rem;margin:38px 0 12px;padding-top:4px}.legal-sheet p,.legal-sheet li,.legal-sheet dd{color:var(--ink);font-size:1rem}
+.legal-sheet h2~h2{border-top:1px solid var(--line);padding-top:22px}
+.legal-page>header{margin:28px auto 34px;max-width:740px}
 .legal-sheet dt{font-weight:700;margin-top:20px}.legal-sheet dd{margin:8px 0 20px}.legal-sheet code{overflow-wrap:anywhere}.legal-sheet ul,.legal-sheet ol{padding-left:24px}
 .legal-sheet a{text-decoration:underline}.legal-page .eyebrow{color:var(--ink)}
 body .queue-options form{display:flex;align-items:end;gap:8px;flex-wrap:wrap}

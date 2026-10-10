@@ -15,6 +15,7 @@ def test_course_explorer_filters_catalog(authed_client):
     assert b"AP Calculus AB" in response.data
     assert b"AP Biology" not in response.data
     assert b"U.S. high-school planning" in response.data
+    assert b"courses.css?v=20261010-no-clip" in response.data
 
 
 def test_program_catalog_selection_overrides_stale_state_selection(authed_client):
@@ -46,6 +47,7 @@ def test_course_can_be_added_and_removed_from_plan(app, authed_client):
     plan_response = authed_client.get("/courses/plan")
     assert plan_response.status_code == 200
     assert b"AP Statistics" in plan_response.data
+    assert b'planned-course-detail' in plan_response.data
 
     delete_response = authed_client.post(
         f"/courses/plan/{planned_id}/delete"

@@ -26,3 +26,16 @@ button:hover { background:#6b94ff; transform:translateY(-2px); } button.secondar
 @media(max-width:680px){main{width:min(100% - 28px,560px);padding:30px 0 50px}header,.task-card{display:flex;flex-direction:column}header a{align-self:flex-start}.panel form{grid-template-columns:1fr}.task-card .actions{width:100%}.actions span{text-align:left}}
 .inline-check{display:flex;align-items:center;gap:8px;min-height:44px;color:var(--ink);font-family:inherit;font-size:.9rem;letter-spacing:0;text-transform:none}.inline-check input{width:22px;min-height:22px}
 .actual-time{gap:4px;font-size:.6rem}.actual-time input{min-height:38px;padding:7px 9px}
+
+body .calendar-page{width:min(1080px,calc(100% - 36px));max-width:1080px}
+body .calendar-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+body main.calendar-page .calendar-option{position:relative;display:flex;flex-direction:column;align-items:flex-start;min-width:0;padding:24px;border:1px solid var(--line);border-top:3px solid var(--blue);border-radius:2px;background:rgba(255,253,248,.76);box-shadow:7px 7px 0 rgba(24,35,33,.07)}
+body .calendar-option h2{margin:8px 0 10px;font-size:1.35rem}
+body .calendar-option p{color:var(--muted);line-height:1.55}
+body .calendar-option .button{margin-top:auto}
+body .calendar-step{color:var(--blue);font:700 .75rem "Courier New",monospace;letter-spacing:.1em}
+body .calendar-note{margin-top:24px;padding:16px 0;border-top:1px solid var(--line);color:var(--muted)}
+body .calendar-note h2{margin:0 0 8px;color:var(--ink);font-size:1.05rem}
+body .calendar-note p{max-width:78ch;margin:0 0 8px;line-height:1.6}
+body .calendar-note a{color:var(--blue);text-decoration:underline}
+@media(max-width:680px){body .calendar-actions{grid-template-columns:minmax(0,1fr)}}

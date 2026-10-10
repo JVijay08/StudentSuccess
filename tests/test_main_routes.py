@@ -234,6 +234,7 @@ def test_today_dashboard_prioritizes_work_and_compacts_progress(app, authed_clie
     assert "Active tasks" in body
     assert "Planned courses" in body
     assert "COMPLETION RATE" not in body
+    assert body.index('class="view-tabs dashboard-views"') < body.index('class="focus-card')
 
     full_response = authed_client.get("/dashboard?view=full")
     assert full_response.status_code == 200

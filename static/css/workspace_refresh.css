@@ -163,3 +163,23 @@ body.notebook-dashboard .dashboard-summary dt{font-size:.78rem}
 body.notebook-dashboard .dashboard-summary dd{color:var(--ink);font-size:1.25rem;font-variant-numeric:tabular-nums;text-align:left}
 body.notebook-dashboard .dashboard-summary dd small{display:block;margin-top:2px;color:var(--muted);font-size:.72rem;font-weight:400}
 @media(max-width:680px){body.notebook-dashboard .dashboard-up-next{margin-top:18px}body.notebook-dashboard .dashboard-summary{grid-template-columns:repeat(2,minmax(0,1fr))}body.notebook-dashboard .dashboard-summary>div:nth-child(2){border-right:0}body.notebook-dashboard .dashboard-summary>div:nth-child(n+3){border-top:1px solid var(--line)}}
+
+/* Keep dashboard navigation outside the recommendation surface. */
+body.notebook-dashboard .dashboard-views{display:flex;justify-content:flex-end;gap:8px;margin:0 0 10px}
+body.notebook-dashboard .focus-card .dashboard-views{margin:0}
+body.notebook-dashboard .focus-card-today{padding-bottom:18px}
+
+/* Make routine task entries scan like a list while retaining their controls. */
+body main.task-workspace .streamlined-task{grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:8px 20px;margin:0;padding:14px 68px 14px 4px;border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;box-shadow:none}
+body main.task-workspace .streamlined-task>div:first-child{min-width:0}
+body main.task-workspace .streamlined-task .task-tier{margin-bottom:4px}
+body main.task-workspace .streamlined-task h3{margin:0 0 4px;font-size:1rem;line-height:1.4}
+body main.task-workspace .streamlined-task p{margin:3px 0;font-size:.82rem}
+body main.task-workspace .streamlined-task .task-deadline{font-size:.84rem}
+body main.task-workspace .streamlined-task .actions{grid-column:2;grid-row:1/5;display:flex;align-items:center;justify-content:flex-end;gap:8px;margin:0}
+body main.task-workspace .streamlined-task .actions button{width:auto;min-height:38px;padding:8px 12px}
+body main.task-workspace .streamlined-task>.task-menu{top:50%;right:4px;transform:translateY(-50%)}
+body .planned-course-detail>summary{padding:4px 0;font-weight:650;color:var(--ink)}
+body .planned-course-detail small{display:block;margin:3px 0 5px;color:var(--muted);line-height:1.4}
+body .planned-course-detail .course-task-link{font-size:.76rem}
+@media(max-width:680px){body main.task-workspace .streamlined-task{grid-template-columns:minmax(0,1fr);gap:8px;padding:12px 48px 12px 0}body main.task-workspace .streamlined-task .actions{grid-column:1;grid-row:auto;justify-content:flex-start}body main.task-workspace .streamlined-task>.task-menu{right:0}}
