@@ -18,3 +18,16 @@ body main.account-page {max-width:620px;padding:40px 20px 64px;}
 @media(max-width:680px) {body main.account-page {padding:24px 16px;}.account-sheet {padding:24px 20px;}.account-sheet h1 {font-size:1.85rem;}.onboarding-sheet fieldset {padding:16px;}.onboarding-sheet .setup-fields {grid-template-columns:minmax(0,1fr);}.setup-top {padding:12px 16px;}}
 
 .account-sheet .remember-device{display:flex;align-items:flex-start;gap:10px;margin:16px 0 4px;font-weight:400}.account-sheet .remember-device input{width:18px;min-height:18px;height:18px;flex:none;margin:3px 0 0}
+
+/* Sign-in is a working form on the notebook page, without a floating card. */
+body.signin-page main.account-page{max-width:560px;padding-top:32px}
+body.signin-page .account-sheet{background:transparent;border:0;border-radius:0;box-shadow:none;padding:12px 16px}
+.signin-page .account-sheet h1{margin:24px 0 12px}
+.signin-page .account-sheet form{padding-top:20px;border-top:1px solid var(--line);gap:8px}
+.signin-page .helper-text{font-size:.85rem;color:var(--muted);margin:0 0 12px}
+.signin-page .signin-field-error{color:var(--danger);font-size:.9rem}
+.signin-page input[aria-invalid=true]{border-color:var(--danger)}
+.signin-page #signin-status:empty{display:none}
+.signin-page .form-errors{border-left:3px solid var(--danger);padding:8px 14px;margin:16px 0}
+.signin-page .form-errors p{margin:4px 0}
+.signin-page #signin-submit:disabled{cursor:wait}
