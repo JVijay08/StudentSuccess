@@ -229,6 +229,16 @@ def tasks():
     )
     all_tasks = list(task_list)
     completed_tasks = sorted((t for t in all_tasks if t.status == "completed"), key=lambda t: (utc(t.completed_at or t.updated_at), t.id), reverse=True)
+    completed_total = len(completed_tasks)
+    archive_query = request.args.get('history_q', '')[:160].strip()
+    if archive_query:
+        completed_tasks = [t for t in completed_tasks if archive_query.casefold() in f"{t.title} {t.subject or ''}".casefold()]
+    archive_count = len(completed_tasks)
+    archive_pages = max(1, (archive_count + 9) // 10)
+    archive_page = min(max(request.args.get('history_page', 1, type=int), 1), archive_pages)
+    completed_tasks = completed_tasks[(archive_page-1)*10:archive_page*10]
+    work_items = [t for t in all_tasks if not t.children]
+    progress_done = sum(t.status == 'completed' for t in work_items)
     task_rows = suggestion_service.get_suggested_tasks(all_tasks)
     sort = request.args.get("sort", "recommended")
     if sort in {"due", "planned", "subject", "status"}:
@@ -270,6 +280,9 @@ def tasks():
         profile=profile,
         task_rows=task_rows,
         completed_tasks=completed_tasks,
+        completed_total=completed_total, archive_query=archive_query,
+        archive_count=archive_count, archive_page=archive_page, archive_pages=archive_pages,
+        progress_done=progress_done, progress_total=len(work_items),
         projects=[t for t in all_tasks if t.children and t.status != "completed"],
         saved_courses=sorted(set(course_names)),
         subject_suggestions=sorted(set(course_names) | {t.subject for t in all_tasks if t.subject} | {"Math", "Science", "English", "History", "Computer Science"}),

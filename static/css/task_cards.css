@@ -21,3 +21,11 @@ body .streamlined-task {position:relative;padding-right:84px;}
 .due-shortcuts{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 12px;}.due-shortcuts[hidden]{display:none;}.due-shortcuts button{width:auto;min-height:44px;padding:8px 12px;}
 
 .task-menu-panel .extra-task-tools>a{display:block;padding:10px 0}.task-menu-panel .extra-task-tools>.eyebrow{margin-top:0}
+
+.task-progress-summary{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin:20px 0;font-size:.9rem}.task-progress-summary progress{width:180px;max-width:100%;height:8px;accent-color:var(--blue)}
+body .task-search{max-width:520px;margin:16px 0}.task-search input{width:100%}
+.archive-search{display:flex;align-items:end;flex-wrap:wrap;gap:12px;margin:20px 0}.archive-search label{flex:1;min-width:160px}.archive-search input[type=search]{width:100%}
+body #completed-tasks .archive-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;border:0;border-bottom:1px solid var(--line);padding:14px 0;background:none;box-shadow:none;margin:0}
+.archive-row h3{font-size:1rem;margin:0 0 6px}.archive-row p{font-size:.85rem;color:var(--muted);margin:0}.archive-row>details{min-width:80px}.archive-row>details form{margin:10px 0}
+.archive-pages{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:20px;padding:20px 0 0;font-size:.9rem}
+@media(max-width:600px){body #completed-tasks .archive-row{grid-template-columns:minmax(0,1fr);gap:8px}.archive-search{align-items:stretch}.archive-search label{flex-basis:100%}}

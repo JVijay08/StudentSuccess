@@ -6,15 +6,24 @@
   const input = search.querySelector('[data-task-query]');
   const status = search.querySelector('[data-task-search-status]');
   search.hidden = false;
-  input.addEventListener('input', () => {
+  const course = search.querySelector('[data-task-course]');
+  if (course) {
+    [...new Set(cards.map(card => card.dataset.taskSubject))].filter(Boolean).sort().forEach(subject => {
+      const option = document.createElement('option');
+      option.value = subject; option.textContent = subject; course.append(option);
+    });
+  }
+  const filter = () => {
     const query = input.value.trim().toLocaleLowerCase();
     let count = 0;
     cards.forEach(card => {
-      card.hidden = !card.dataset.taskSearchText.toLocaleLowerCase().includes(query);
+      card.hidden = !card.dataset.taskSearchText.toLocaleLowerCase().includes(query) || Boolean(course?.value && card.dataset.taskSubject !== course.value);
       if (!card.hidden) count++;
     });
-    status.textContent = query ? `${count} matching task${count === 1 ? '' : 's'}. ${count ? '' : 'Try another title or course.'}` : '';
-  });
+    status.textContent = (query || course?.value) ? `${count} matching task${count === 1 ? '' : 's'}. ${count ? '' : 'Try another title or course.'}` : '';
+  };
+  input.addEventListener('input', filter);
+  course?.addEventListener('change', filter);
 })();
 
 (() => {const form=document.getElementById('task-form');const saved=form?.elements.saved_course;const custom=form?.elements.subject;if(!saved||!custom)return;const update=()=>{custom.disabled=Boolean(saved.value);custom.closest('label').hidden=Boolean(saved.value);};saved.addEventListener('change',update);update();})();
