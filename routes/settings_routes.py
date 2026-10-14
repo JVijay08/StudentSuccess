@@ -36,7 +36,7 @@ TONES = {"neutral", "direct", "encouraging"}
 TIME_FORMATS = {"12-hour", "24-hour"}
 WEEK_STARTS = {"Sunday", "Monday"}
 DATE_FORMATS = {"month-first", "day-first", "year-first"}
-SESSION_TIMEOUTS = {30, 60, 120, 480}
+SESSION_TIMEOUTS = {30, 60, 120, 480, 1440, 10080, 43200}
 CARD_NAMES = {"overdue", "courses", "profile", "completion", "delay", "estimates", "history"}
 
 
@@ -88,6 +88,8 @@ def settings():
         preferences.date_format = _choice(request.form, "date_format", DATE_FORMATS, preferences.date_format)
         preferences.relative_dates = "relative_dates" in request.form
         preferences.session_timeout_minutes = _integer_choice(request.form, "session_timeout_minutes", SESSION_TIMEOUTS, preferences.session_timeout_minutes)
+        if "session_timeout_minutes" in request.form:
+            session.pop("remember_device", None)
         db.session.commit()
         flash("Settings saved.", "success")
         return redirect(return_url("settings.settings"))

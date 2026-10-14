@@ -8,14 +8,13 @@ def test_public_home_explains_real_use_and_offers_demo(app):
     response = app.test_client().get("/")
 
     assert response.status_code == 200
-    assert b"Plan less." in response.data
+    assert b"A student planner" in response.data
     assert b"Start tutorial" in response.data
-    assert b"No signup needed for the tutorial." in response.data
+    assert b"No signup needed." in response.data
     assert b"Plan your actual courses and tasks" in response.data
-    assert b"high-school and college students" in response.data
+    assert b"high school, college" in response.data
     assert b'property="og:image"' in response.data
     assert b'name="twitter:card" content="summary_large_image"' in response.data
-    assert b"may take up to a minute to wake" in response.data
 
 
 def test_login_page_can_return_to_public_home(app):

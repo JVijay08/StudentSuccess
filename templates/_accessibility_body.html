@@ -21,7 +21,7 @@
   <button type="button" id="extend-session">Extend session</button>
   <a id="session-recovery" href="{{ url_for('auth.login') }}" hidden>Sign in again</a>
 </div>
-<script>window.studentSuccessSessionMinutes = {{ ui_settings.session_timeout_minutes|tojson }};</script>
+<script>window.studentSuccessSessionMinutes = {{ (43200 if session.get('remember_device') and not session.get('demo_mode') else ui_settings.session_timeout_minutes)|tojson }};</script>
 {% endif %}
 
 {% if session.get('user_id') and g.current_user is defined and not g.current_user.onboarding_completed %}<div class="setup-top"><strong>StudentSuccess</strong><form method="post" action="{{ url_for('auth.logout') }}">{% include '_csrf_field.html' %}<button class="secondary">Sign out</button></form></div>{% endif %}

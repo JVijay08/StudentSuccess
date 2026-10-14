@@ -9,6 +9,12 @@ from extensions import db
 SESSION_TIMEOUT_MINUTES = 30
 
 
+def session_timeout_minutes(user):
+    if session.get('remember_device') and not session.get('demo_mode'):
+        return 30 * 24 * 60
+    return user.settings.session_timeout_minutes if user.settings else SESSION_TIMEOUT_MINUTES
+
+
 def hash_password(plaintext: str) -> str:
     """Hash a plaintext password using werkzeug's secure hashing."""
     return generate_password_hash(plaintext)
@@ -57,11 +63,7 @@ def login_required(f):
             session.clear()
             return redirect(url_for("auth.login", next=request.full_path.rstrip("?"), reason="session"))
 
-        timeout_minutes = (
-            user.settings.session_timeout_minutes
-            if user.settings is not None
-            else SESSION_TIMEOUT_MINUTES
-        )
+        timeout_minutes = session_timeout_minutes(user)
 
         # Check session inactivity timeout
         last_active_str = session.get("_last_active")

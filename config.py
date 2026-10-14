@@ -47,4 +47,4 @@ class config:
         if os.environ.get("APP_ENV", "development") != "production" and not os.environ.get("RENDER_EXTERNAL_HOSTNAME")
         else None
     )
-    PERMANENT_SESSION_LIFETIME = timedelta(minutes=30)
+    PERMANENT_SESSION_LIFETIME = timedelta(days=30)

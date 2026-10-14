@@ -143,6 +143,7 @@ def _sign_in(user):
     session.clear()
     session['user_id'] = user.id
     session['auth_version'] = user.auth_version
+    session['remember_device'] = request.form.get('remember_device') == 'yes'
     session['_last_active'] = datetime.now(timezone.utc).isoformat()
     session.permanent = True
     csrf_token()

@@ -65,7 +65,7 @@ def _start():
     from routes.auth_routes import start_demo
     previous = session.get('tutorial_return')
     if session.get('user_id') and not session.get('demo_mode'):
-        previous = {key: session[key] for key in ('user_id', 'auth_version', '_last_active', 'access_version') if key in session}
+        previous = {key: session[key] for key in ('user_id', 'auth_version', '_last_active', 'access_version', 'remember_device') if key in session}
     old = db.session.get(User, session.get('user_id')) if session.get('demo_mode') else None
     response = start_demo()
     if isinstance(response, tuple) and response[1] == 429:

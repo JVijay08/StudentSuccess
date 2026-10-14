@@ -2,7 +2,17 @@
   const warning=document.getElementById("session-warning");
   if(!warning||!window.studentSuccessSessionMinutes)return;
   const warningDelay=Math.max(1000,(window.studentSuccessSessionMinutes-2)*60*1000);
-  let timer=window.setTimeout(()=>{warning.hidden=false},warningDelay);
+  let timer;
+  let warningAt;
+  const checkWarning=()=>{
+    window.clearTimeout(timer);
+    const remaining=warningAt-Date.now();
+    if(remaining<=0){warning.hidden=false;return;}
+    timer=window.setTimeout(checkWarning,Math.min(remaining,86400000));
+  };
+  const scheduleWarning=()=>{warningAt=Date.now()+warningDelay;checkWarning();};
+  scheduleWarning();
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden)checkWarning();});
   const title=document.getElementById("session-warning-title");
   const extend=document.getElementById("extend-session");
   const message=document.getElementById("session-warning-message");
@@ -30,7 +40,7 @@
       recovery.hidden=true;
       message.textContent="Extend it to keep working. Saved information will not be deleted.";
       window.clearTimeout(timer);
-      timer=window.setTimeout(()=>{warning.hidden=false},warningDelay);
+      scheduleWarning();
     } catch(error) {
       title.textContent="We could not reconnect.";
       message.textContent="We could not reconnect. The site may still be waking up or your connection may be offline. Try extending again, or sign in again if your session has ended.";

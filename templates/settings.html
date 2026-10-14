@@ -55,7 +55,7 @@
         <label>Week starts<select name="week_start"><option {% if settings.week_start=='Sunday' %}selected{% endif %}>Sunday</option><option {% if settings.week_start=='Monday' %}selected{% endif %}>Monday</option></select></label>
         <label>Date format<select name="date_format"><option value="month-first" {% if settings.date_format=='month-first' %}selected{% endif %}>Month / day / year</option><option value="day-first" {% if settings.date_format=='day-first' %}selected{% endif %}>Day / month / year</option><option value="year-first" {% if settings.date_format=='year-first' %}selected{% endif %}>Year / month / day</option></select></label>
         <label class="check"><input type="checkbox" name="relative_dates" {% if settings.relative_dates %}checked{% endif %}> Use relative dates such as “tomorrow”</label>
-        <label>Inactive session timeout<select name="session_timeout_minutes">{% for minutes in [30,60,120,480] %}<option value="{{ minutes }}" {% if settings.session_timeout_minutes==minutes %}selected{% endif %}>{% if minutes==480 %}8 hours{% else %}{{ minutes }} minutes{% endif %}</option>{% endfor %}</select></label>
+        <label>Inactive session timeout<select name="session_timeout_minutes">{% for minutes in [30,60,120,480,1440,10080,43200] %}<option value="{{ minutes }}" {% if (43200 if session.get('remember_device') else settings.session_timeout_minutes)==minutes %}selected{% endif %}>{% if minutes>=1440 %}{{ minutes // 1440 }} {{ 'day' if minutes==1440 else 'days' }}{% elif minutes==480 %}8 hours{% else %}{{ minutes }} minutes{% endif %}</option>{% endfor %}</select></label>
       </div></div></details>
 
     </form>
