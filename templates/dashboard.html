@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
   {% include '_accessibility_head.html' %}
   <link rel="stylesheet" href="{{ url_for('static', filename='css/nonpersonal.css') }}">
-<link rel="stylesheet" href="{{ url_for('static',filename='css/task_cards.css') }}"><script src="{{ url_for('static',filename='js/task_cards.js') }}" defer></script><link rel="stylesheet" href="{{ url_for('static',filename='css/focus_tools.css') }}"><script src="{{ url_for('static',filename='js/focus_tools.js') }}" defer></script></head>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/dashboard_insights.css') }}"><link rel="stylesheet" href="{{ url_for('static',filename='css/task_cards.css') }}"><script src="{{ url_for('static',filename='js/task_cards.js') }}" defer></script><link rel="stylesheet" href="{{ url_for('static',filename='css/focus_tools.css') }}"><script src="{{ url_for('static',filename='js/focus_tools.js') }}" defer></script></head>
 <body class="notebook-dashboard">
   {% include '_accessibility_body.html' %}
   <div class="shell">
@@ -139,14 +139,14 @@
             </ul>
           {% else %}
             <h2>Nothing overdue to start.</h2>
-            <p>When a task's planned start time passes before you begin it, it will show up here with quick ways to start or replan.</p>
+            <p>Your planned starts are up to date.</p>
           {% endif %}
         </article>{% endif %}
 
         <article class="card card-tasks">
           <p class="eyebrow">TASKS</p>
           <h2>{{ active_task_count }} active</h2>
-          <p>Deadline risk flags tasks that may be left too late. It uses the deadline, start status, estimated time, task challenge, and interest. It is not a grade or a measure of ability.</p>
+          <p><a href="{{ nav_url('tasks.tasks', _anchor='task-queue') }}">Open task queue &rarr;</a></p>
         </article>
 
         {% if 'courses' not in settings.hidden_cards %}<article class="card card-courses">
@@ -182,7 +182,7 @@
           <p class="eyebrow">COMPLETION RATE</p>
           {% if success_rate.percent is not none %}
             <h2>{{ success_rate.completed }} / {{ success_rate.total }} tasks completed &mdash; {{ success_rate.percent }}%</h2>
-            <p>Share of all your tasks that have reached completed status.</p>
+            <p><a href="{{ nav_url('tasks.tasks', _anchor='completed-tasks') }}">Review completed work &rarr;</a>
           {% else %}
             <h2>No tasks yet.</h2>
             <p>Add tasks to begin tracking how many you finish.</p>

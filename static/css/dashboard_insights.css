@@ -1,0 +1,12 @@
+body .insights-disclosure>.timing-panel{padding:20px 0 0;border:0;box-shadow:none;background:transparent}
+.timing-charts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin:24px 0}
+.timing-charts>section{min-width:0}.timing-charts h3{font-size:1.05rem;margin:0 0 12px}
+.timing-panel .chart-row{grid-template-columns:minmax(0,1fr) minmax(80px,1fr) auto;gap:12px;border-bottom:1px solid var(--line);padding:10px 0;margin:0;font-size:.85rem}
+.chart-row small{display:block;color:var(--muted)}.chart-key{display:flex;flex-wrap:wrap;gap:16px;font-size:.8rem;color:var(--muted)}
+.timing-panel .duration-track i{height:8px}.timing-panel .duration-track .actual{background:repeating-linear-gradient(135deg,var(--ink) 0 2px,transparent 2px 4px);border:1px solid var(--ink)}
+.chart-empty{display:flex;align-items:flex-start;gap:16px;padding:20px 0;color:var(--muted)}.chart-empty svg{flex:none}.chart-empty p{margin:0 0 10px;font-size:.9rem}.chart-empty a{font-size:.9rem}
+.timing-panel>details{border-top:1px solid var(--line);padding:12px 0}.history-table{overflow-x:auto}.history-table table{width:100%}
+@media(max-width:850px){.timing-charts{grid-template-columns:1fr}.timing-panel .chart-row{grid-template-columns:minmax(0,1fr) minmax(60px,1fr) auto}}
+@media(max-width:480px){.timing-panel .chart-row{grid-template-columns:minmax(0,1fr) auto}.timing-panel .chart-row>span:first-child{grid-column:1/-1}.chart-empty{gap:10px}}
+
+.timing-panel .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}

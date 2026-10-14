@@ -49,6 +49,18 @@ try:
     views+=1
    if route in ["/dashboard","/tasks","/courses","/settings"]:
     page.screenshot(path=str(out/(route.strip("/")+".png")),animations="disabled")
+  page.goto(base+"/dashboard?view=full")
+  page.locator('.insights-disclosure>summary').click()
+  expect(page.locator('.timing-charts')).to_be_visible()
+  assert page.locator('.timing-charts .chart-row, .timing-charts .chart-empty').count() > 0
+  for width in [320,390,1440]:
+   page.set_viewport_size({"width":width,"height":960})
+   issues.extend(page.evaluate(BOUNDS))
+  page.locator('.task-menu>summary').first.click()
+  expect(page.locator('.extra-task-tools').first).to_be_visible()
+  expect(page.locator('.extra-task-tools').first.get_by_text('Use as template')).not_to_be_visible()
+  page.locator('.extra-task-tools>summary').first.click()
+  expect(page.locator('.extra-task-tools').first.get_by_text('Use as template')).to_be_visible()
   page.goto(base+"/settings")
   expect(page.locator(".settings-group")).to_have_count(7)
   assert page.locator("#workspace-settings").locator("[name=theme]").count()==1
