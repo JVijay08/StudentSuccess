@@ -115,6 +115,42 @@ try:
    assert Task.query.filter_by(title='Math exercises').one().parent_task_id is None
    assert Task.query.filter_by(title='History essay').count()==0
    assert Task.query.filter_by(title='Research').one().parent_task_id is None
+  # New feedback controls, tested with synthetic data only.
+  page.goto(base+'/courses')
+  expect(page.locator('.filter-panel')).not_to_have_attribute('open','')
+  page.locator('.filter-panel>summary').click()
+  expect(page.locator('.filter-panel input[type=search]').first).to_be_visible()
+  page.goto(base+'/settings')
+  page.locator('details.settings-group').filter(has=page.locator('#timezone-name')).locator(':scope > summary').click()
+  page.locator('#timezone-name').fill('Europe/London')
+  expect(page.locator('#settings-save-status')).to_have_text('Unsaved changes')
+  page.locator('#detect-timezone').click()
+  expect(page.locator('#timezone-feedback')).to_contain_text('Save settings')
+  page.locator('#settings-save-bar button').click()
+  page.wait_for_load_state('networkidle')
+  expect(page.locator('#settings-save-status')).to_have_text('No unsaved changes')
+  page.goto(base+'/updates')
+  page.locator('#update-query').fill('subscription')
+  expect(page.locator('.release-entry:visible')).to_have_count(1)
+  page.locator('#update-category').select_option('Bug fixes')
+  expect(page.locator('#no-updates')).to_be_visible()
+  page.locator('#update-query').fill('')
+  expect(page.locator('.release-entry:visible')).to_have_count(1)
+  page.locator('#update-category').select_option('')
+  for route in ['/updates','/updates?history=1','/calendar','/courses/plan']:
+   page.goto(base+route)
+   for width in [320,390,1440]:
+    page.set_viewport_size({'width':width,'height':960})
+    issues.extend([{'route':route,'width':width,**x} for x in page.evaluate(BOUNDS)])
+    views+=1
+   page.screenshot(path=str(out/(route.strip('/').replace('/','-').replace('?','-')+'.png')),animations='disabled')
+  page.goto(base+'/calendar')
+  page.get_by_role('button',name='Create private subscription link').click()
+  expect(page.locator('#calendar-feed-url')).to_be_visible()
+  page.get_by_role('button',name='Replace subscription link').click()
+  expect(page.locator('#calendar-feed-url')).to_be_visible()
+  page.get_by_role('button',name='Revoke link').click()
+  expect(page.get_by_role('button',name='Create private subscription link')).to_be_visible()
   browser.close()
  assert not errors,errors
  assert not issues,issues

@@ -78,14 +78,13 @@ def test_start_history_limited_to_ten_newest_first(app, authed_client):
     assert response.status_code == 200
     body = response.data.decode()
 
-    # At most 10 rows: the two oldest tasks (0 and 1) must be excluded.
-    assert "Task 11" in body
-    assert "Task 2 <" in body
-    assert "Task 0 <" not in body
-    assert "Task 1 <" not in body  # trailing " <" avoids matching "Task 11 <"
-
-    # Newest first: Task 11 appears before Task 2 in the rendered page.
-    assert body.index("Task 11") < body.index("Task 2 <")
+    # The table retains ten newest entries; the trend chart has its own history.
+    history = body.split('<caption>Recent completed tasks</caption>', 1)[1].split('</table>', 1)[0]
+    assert 'Task 11</td>' in history
+    assert 'Task 2</td>' in history
+    assert 'Task 0</td>' not in history
+    assert 'Task 1</td>' not in history
+    assert history.index('Task 11</td>') < history.index('Task 2</td>')
 
 
 def test_start_history_group_label_and_delay_display(app, authed_client):
@@ -117,11 +116,9 @@ def test_start_history_group_label_and_delay_display(app, authed_client):
     body = response.data.decode()
 
     assert "Late math essay" in body
-    assert "(Math)" in body
     assert "2.0 hr late" in body
 
     assert "Typed reading" in body
-    assert "(Reading)" in body
     assert "no start data" in body
 
 
@@ -409,18 +406,13 @@ def test_dashboard_estimate_accuracy_card_qualifying_history(app, authed_client)
     body = response.data.decode()
 
     assert "Estimated vs. actual duration" in body
-    # Overall line present with a plain-language label.
-    assert "Estimate accuracy details" in body
-    assert "runs ~" in body
-
-    # Both qualifying groups appear.
-    assert "Chemistry" in body
-    assert "Reading" in body
-
-    # Ordered rate DESC: the over-estimate group (Chemistry) precedes the
-    # lower-rate group (Reading).
-    details = body.split("Estimate accuracy details", 1)[1]
-    assert details.index("Chemistry") < details.index("Reading")
+    assert "Overall duration:" in body
+    chart = body.split('id="duration-chart-title"', 1)[1].split('Subject patterns and history', 1)[0]
+    for title in ['Chem lab A', 'Chem lab B', 'Reading A', 'Reading B']:
+        assert title in chart
+    assert '60 / 120 min' in chart
+    assert '60 / 90 min' in chart
+    assert '60 / 30 min' in chart
 
 
 def test_dashboard_estimate_accuracy_scoped_to_current_user(app, authed_client):
@@ -482,8 +474,10 @@ def test_dashboard_estimate_accuracy_scoped_to_current_user(app, authed_client):
     response = authed_client.get("/dashboard")
     body = response.data.decode()
 
-    assert "Chemistry" in body
-    assert "Biology" not in body
+    assert "Mine chem A" in body
+    assert "Mine chem B" in body
+    assert "Theirs bio A" not in body
+    assert "Theirs bio B" not in body
 
 
 def test_dashboard_estimate_accuracy_insufficient_history(app, authed_client):

@@ -92,4 +92,4 @@ def test_export_preference_hides_google_links(app,authed_client):
         db.session.commit()
     assert b'calendar.google.com/calendar/r/eventedit' not in authed_client.get(f'/tasks/{task_id}').data
     assert authed_client.get('/settings/calendar.ics').status_code==404
-    assert b'Calendar export is turned off' in authed_client.get('/calendar').data
+    assert b'Enable calendar export in Settings' in authed_client.get('/calendar').data

@@ -9,15 +9,15 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/comparison.css') }}">
   {% include '_accessibility_head.html' %}
   <link rel="stylesheet" href="{{ url_for('static', filename='css/nonpersonal.css') }}">
-<link rel="stylesheet" href="{{ url_for('static',filename='css/planner_controls.css') }}"></head>
-<body>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/planner_controls.css') }}"><link rel="stylesheet" href="{{ url_for('static',filename='css/course_browser_refinements.css') }}"></head>
+<body class="course-browser">
   {% include '_accessibility_body.html' %}
   <main id="main-content" class="course-page">
     <header class="page-header">
       <div>
         <p class="eyebrow">STUDENTSUCCESS / COURSE-LOAD PLANNER</p>
         <h1>Choose your courses</h1>
-        <p class="lede">Choose high-school courses and add college courses for dual enrollment in one place.</p>
+        <p class="lede">Find classes for your next school year, including dual enrollment.</p>
       </div>
       <div class="header-actions"><a class="quiet-link" href="{{ nav_back_url() }}">{{ nav_back_label() }}</a>
 
@@ -34,8 +34,8 @@
     {% endwith %}
 
     <section class="explorer-layout">
-      <aside class="filter-panel">
-        <div class="section-kicker">FIND A COURSE OPTION</div>
+      <details class="filter-panel"><summary>Filter courses</summary>
+
         <form action="{{ url_for('courses.course_explorer') }}" method="post" data-nonpersonal-form data-optional-confirmation>{% include '_csrf_field.html' %}{% include '_navigation_fields.html' %}
           <label class="catalog-search">Search courses
             <input type="search" name="q" maxlength="120" data-nonpersonal-input value="{{ filters.get('q', '') }}" placeholder="e.g. calculus, engineering" aria-label="Search courses by name or subject">
@@ -71,10 +71,12 @@
           <button type="submit">Apply filters</button>
           <a class="reset-link" href="{{ nav_same('courses.course_explorer') }}">Reset filters</a>
         </form>
-      </aside>
+      </details>
 
-      <section class="results-panel"><p class="catalog-note"><strong>{{ catalogs[catalog_id].label }}</strong> &mdash; {{ catalog_note }}</p>{% if excluded_count %}<p class="catalog-note">{{ excluded_count }} imported entries are awaiting source verification and are excluded from these results. Existing saved courses are retained.</p>{% endif %}
+      <section class="results-panel"><details class="catalog-guidance"><summary>Catalog coverage: {{ catalogs[catalog_id].label }}</summary><p class="catalog-note"><strong>{{ catalogs[catalog_id].label }}</strong> &mdash; {{ catalog_note }}</p>{% if excluded_count %}<p class="catalog-note">{{ excluded_count }} imported entries are awaiting source verification and are excluded from these results. Existing saved courses are retained.</p>{% endif %}
         {% if state_code and catalog_id == 'national' %}<div class="catalog-note state-note">No verified local catalog is loaded for this state yet. Showing the national reference catalog instead.</div>{% endif %}
+        </details>
+        {% include '_course_budget.html' %}
         <details class="panel integrated-college-entry" id="college-entry" {% if errors or editing or college_query or college_state or course_source=='dual' %}open{% endif %}><summary>{{ 'Edit college course' if editing else 'Add a college course for dual enrollment' }}</summary><p>Choose a college, then enter a course from its catalog. We have institution listings, not a verified catalog of every college course.</p>{% if errors %}<div class="errors" role="alert">{% for error in errors %}<p>{{ error }}</p>{% endfor %}</div>{% endif %}{% include '_college_finder.html' %}{% include '_college_course_form.html' %}</details>
         {% include '_course_pagination.html' %}<div class="results-heading"><div><span class="section-kicker">{{ total_courses + dual_courses|length }} MATCHES</span><h2>Courses to consider</h2></div>{% if courses %}<span class="micro-note">Showing {{ (page - 1) * page_size + 1 }}&ndash;{{ [page * page_size, total_courses]|min }} of {{ total_courses }} &middot; compare up to three</span>{% endif %}</div>
         {% if courses %}<details class="compare-invitation"><summary>Compare courses before planning</summary><p>Select two or three courses to compare workload, prerequisites, and pathways.</p><div class="example-pairs">{% for pair in comparison_examples %}<a href="{{ nav_url('courses.course_compare', catalog=catalog_id, id=[pair[0].course_id, pair[1].course_id]) }}">{{ pair[0].course_name }} <span>vs.</span> {{ pair[1].course_name }} <span aria-hidden="true">&#8599;</span></a>{% else %}<p>Select courses below to explore their differences.</p>{% endfor %}</div></details>{% endif %}
@@ -86,6 +88,7 @@
                 <div class="course-card-top"><span class="tag">{{ course.course_type }}</span><label class="compare-check"><input form="compare-form" type="checkbox" name="id" value="{{ course.course_id }}" {% if course.course_id in request.args.getlist('selected') %}checked{% endif %} data-course-name="{{ course.display_name }}" aria-label="Compare {{ course.display_name }}"> Compare</label></div>
                 <h3><a href="{{ nav_url('courses.course_detail', course_id=course.course_id, catalog=catalog_id) }}">{{ course.display_name }}</a></h3>
                 <p class="course-meta">{{ course.subject }} &middot; grades {{ course.grade_levels|join(', ') }}</p>
+                {% set prep = preparation[course.course_id] %}{% if prep.has_prerequisites %}<details class="course-preparation"><summary>{{ 'Check preparation' if prep.missing else 'Prerequisites recorded' }}</summary>{% if prep.missing %}<p>Not recorded as completed: {{ prep.missing|join(', ') }}. Catalog requirements can include alternatives or placement; confirm with your school.</p>{% else %}<p>Your completed course entries match the catalog prerequisite names. Confirm school-specific placement and credit rules.</p>{% endif %}</details>{% endif %}
                 <div class="card-actions">{% if course_is_planned %}<span class="saved-label" aria-label="Already in your plan">In your plan</span>{% else %}<button type="button" class="small-button" data-course-id="{{ course.course_id }}" onclick="this.closest('.course-card').querySelector('.quick-add').hidden = false; this.hidden = true;">Add to plan</button>{% endif %}</div>
                 <details class="course-more">
                   <summary>Course details</summary>

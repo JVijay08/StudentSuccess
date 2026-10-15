@@ -11,6 +11,7 @@ class User(db.Model):
     email = db.Column(db.String(254), unique=True, nullable=True)
     onboarding_completed = db.Column(db.Boolean, nullable=False, default=False)
     auth_version = db.Column(db.Integer, nullable=False, default=0)
+    calendar_subscription = db.relationship('CalendarSubscription', cascade='all, delete-orphan', uselist=False)
     account_requests = db.relationship('AccountRequest', cascade='all, delete-orphan')
     created_at = db.Column(
         db.DateTime(timezone=True), nullable=False, default=get_current_time

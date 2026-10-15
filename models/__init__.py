@@ -23,3 +23,5 @@ from .account_request import AccountRequest, AuthAttempt
 from .ai_planning import AIQuota, AIDraft
 
 from .account_agreement import AccountAgreement
+
+from .calendar_subscription import CalendarSubscription

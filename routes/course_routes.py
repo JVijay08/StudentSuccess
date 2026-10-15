@@ -157,6 +157,7 @@ def course_explorer(course_errors=None, editing=None):
     previous_page = same_page('courses.course_explorer', page=page-1, **page_args) if page > 1 else None
     next_page = same_page('courses.course_explorer', page=page+1, **page_args) if page < page_count else None
     courses = courses[(page-1)*page_size:page*page_size]
+    preparation_rows = _planned_course_rows(profile)
     return render_template(
         "courses.html",
         profile=profile,
@@ -170,6 +171,7 @@ def course_explorer(course_errors=None, editing=None):
         catalog_id=catalog_id,
         state_code=state_code,
         planned_ids=_planned_ids(profile, catalog_id),
+        preparation={c["course_id"]: _prerequisite_status(c, preparation_rows) for c in courses},
         comparison_examples=suggested_pairs(courses, profile.grade),
         catalog_note=course_service.get_catalogs()[catalog_id]["description"],
         excluded_count=sum(course_service.course_title_needs_review(c) for c in course_service.load_courses(catalog_id)),
@@ -295,6 +297,8 @@ def course_plan():
 
     year_summaries = []
     dual_courses = TermCourse.query.filter_by(user_id=g.current_user.id, enrollment_type='dual').order_by(TermCourse.term, TermCourse.title).all()
+    from services.course_plan_review import review_plan
+    prerequisite_checks, study_warnings = review_plan(rows, dual_courses, profile.study_hours_per_week)
     for school_year in range(9, 13):
         year_rows = by_year.get(school_year, [])
         summary = course_service.summarize_course_load(
@@ -313,6 +317,7 @@ def course_plan():
         "course_plan.html",
         profile=profile,
         year_summaries=year_summaries,
+        prerequisite_checks=prerequisite_checks, study_warnings=study_warnings,
         planned_rows=rows,
         catalogs=course_service.get_catalogs(),
     )

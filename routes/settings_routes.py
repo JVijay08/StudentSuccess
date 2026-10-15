@@ -16,7 +16,7 @@ from flask import (
 )
 
 from extensions import db
-from models import StudentProfile, Task
+from models import StudentProfile, Task, CalendarSubscription
 from services.auth_service import check_password, hash_password, login_required
 from services.settings_service import get_or_create_settings
 from services.access_service import verify_csrf
@@ -81,6 +81,10 @@ def settings():
         preferences.snooze_minutes = _integer_choice(request.form, "snooze_minutes", {10, 15, 30, 60, 120, 1440}, preferences.snooze_minutes)
         preferences.calendar_export_enabled = "calendar_export_enabled" in request.form
         timezone_name = request.form.get("timezone_name", preferences.timezone_name)
+        if timezone_name not in available_timezones():
+            db.session.rollback()
+            flash("Choose a valid time zone from the suggestions. Your changes were not saved.", "error")
+            return redirect(url_for("settings.settings"))
         if timezone_name in available_timezones():
             preferences.timezone_name = timezone_name
         preferences.time_format = _choice(request.form, "time_format", TIME_FORMATS, preferences.time_format)
@@ -90,6 +94,10 @@ def settings():
         preferences.session_timeout_minutes = _integer_choice(request.form, "session_timeout_minutes", SESSION_TIMEOUTS, preferences.session_timeout_minutes)
         if "session_timeout_minutes" in request.form:
             session.pop("remember_device", None)
+        if not preferences.calendar_export_enabled:
+            subscription = db.session.get(CalendarSubscription, g.current_user.id)
+            if subscription:
+                db.session.delete(subscription)
         db.session.commit()
         flash("Settings saved.", "success")
         return redirect(return_url("settings.settings"))
@@ -223,7 +231,7 @@ def export_calendar():
 @settings_bp.get('/calendar')
 @login_required
 def calendar_help():
-    return render_template('calendar.html', settings=get_or_create_settings(g.current_user))
+    return render_template('calendar.html', settings=get_or_create_settings(g.current_user), subscription_active=bool(g.current_user.calendar_subscription and g.current_user.calendar_subscription.auth_version == g.current_user.auth_version))
 
 
 @settings_bp.post("/settings/clear-history")

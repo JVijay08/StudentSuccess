@@ -32,9 +32,9 @@ def test_settings_page_and_preferences_persist(app, authed_client):
 
     calendar_response = authed_client.get("/calendar")
     assert calendar_response.status_code == 200
-    assert b'class="calendar-actions"' in calendar_response.data
-    assert b"Copies, not automatic sync" in calendar_response.data
-    assert b"tasks.css?v=20261010-action-calendar" in calendar_response.data
+    assert b'Subscribe to active deadlines' in calendar_response.data
+    assert b"Export a one-time copy instead" in calendar_response.data
+    assert b"Create private subscription link" in calendar_response.data
 
     response = authed_client.post(
         "/settings",

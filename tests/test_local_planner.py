@@ -21,7 +21,7 @@ def test_home_offers_full_workspace_and_no_reduced_planner(app):
     assert b'Create an account' in response.data
     assert re.search(rb'href="/register(?:\?[^"]*)?"', response.data)
     assert b'href="/planner"' not in response.data
-    assert b'course plans' in response.data
+    assert b'course plan' in response.data
     assert b'View source on GitHub' not in response.data
 
 

@@ -32,7 +32,7 @@ def test_plan_detail_returns_to_plan_with_no_referrer(authed_client):
     complete_profile(authed_client)
     authed_client.post("/courses/plan/add/MATH_AP_STATISTICS", data={"school_year": "11"})
     plan_url = link(authed_client.get("/dashboard"), "Course load")
-    detail_url = link(authed_client.get(plan_url), "AP Statistics")
+    detail_url = link(authed_client.get(plan_url), "Course details")
     detail = authed_client.get(detail_url)
     assert link(detail, "Back to four-year plan") == plan_url
     assert link(authed_client.get(plan_url), "Back to dashboard") == "/dashboard"
@@ -76,7 +76,7 @@ def test_task_edit_validation_save_and_cancel_keep_task_parent(app, authed_clien
     authed_client.post("/tasks", data=task_data(nonpersonal_confirmed="yes"))
     with app.app_context():
         task_id = Task.query.one().id
-    tasks_url = link(authed_client.get("/courses/plan"), "Open task planner")
+    tasks_url = link(authed_client.get("/courses/plan"), "Tasks")
     edit_url = link(authed_client.get(tasks_url), "Edit")
     edit = authed_client.get(edit_url)
     parent = tasks_url.split("#", 1)[0] + f"#task-{task_id}"

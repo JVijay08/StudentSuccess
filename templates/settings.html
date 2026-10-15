@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/settings.css', v='20261010-flat-account-sections') }}">
   {% include '_accessibility_head.html' %}
   <link rel="stylesheet" href="{{ url_for('static',filename='css/planner_controls.css') }}">
-</head>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/settings_refinements.css') }}"><script src="{{ url_for('static',filename='js/settings_refinements.js') }}" defer></script></head>
 <body class="settings-workspace">
   {% include '_accessibility_body.html' %}
   <main id="main-content">
@@ -16,7 +16,7 @@
 
     {% with messages = get_flashed_messages(with_categories=true) %}{% if messages %}<div class="flash" role="status">{% for category,message in messages %}<p class="flash-{{ category }}">{{ message }}</p>{% endfor %}</div>{% endif %}{% endwith %}
 
-    <div class="settings-toolbar"><span>Your workspace, your way.</span><button class="primary" type="submit" form="workspace-settings">Save all settings</button></div>
+    <div class="settings-toolbar" id="settings-save-bar"><span id="settings-save-status" role="status">No unsaved changes</span><button class="primary" type="submit" form="workspace-settings">Save all settings</button></div>
     <form method="post" class="settings-form" id="workspace-settings">{% include '_csrf_field.html' %}{% include '_navigation_fields.html' %}
       <details class="settings-group" id="planning-preferences"><summary>Planning preferences</summary><div class="settings-group-body"><p>{{ 'Choose your weekly study budget.' if settings.academic_context == 'college' else 'Choose your planning year and weekly study budget.' }}</p><a class="secondary-link" href="{{ nav_url('profile.onboarding') }}">Edit planning preferences</a></div></details>
       <details class="settings-group" open><summary>Academic context</summary><div class="settings-group-body"><label>Planning for<select name="academic_context"><option value="high_school" {% if settings.academic_context == 'high_school' %}selected{% endif %}>High school</option><option value="college" {% if settings.academic_context == 'college' %}selected{% endif %}>College / university</option></select></label><p>Both presets support college selection. High-school planning also includes dual enrollment; college mode uses semester / term planning. Your existing plans stay saved.<br><a href="{{ nav_url('colleges.browse') }}">Choose a college</a></p></div></details><details class="settings-group"><summary>Appearance</summary><div class="settings-group-body"><p>Browser zoom and assistive technology continue to work with these preferences.</p><div class="fields">
@@ -31,8 +31,8 @@
         <label>Dashboard mode<select name="dashboard_mode"><option value="standard" {% if settings.dashboard_mode=='standard' %}selected{% endif %}>Standard</option><option value="focus" {% if settings.dashboard_mode=='focus' %}selected{% endif %}>Focus: one next task</option></select></label>
         <label>Card spacing<select name="card_density"><option value="comfortable" {% if settings.card_density=='comfortable' %}selected{% endif %}>Comfortable</option><option value="compact" {% if settings.card_density=='compact' %}selected{% endif %}>Compact</option></select></label>
         <label>Recommendations shown<select name="recommendation_count">{% for count in [1,2,3,5] %}<option value="{{ count }}" {% if settings.recommendation_count==count %}selected{% endif %}>{{ count }}</option>{% endfor %}</select></label>
-        <label>Recommendation wording<select name="recommendation_tone"><option value="neutral" {% if settings.recommendation_tone=='neutral' %}selected{% endif %}>Neutral</option><option value="direct" {% if settings.recommendation_tone=='direct' %}selected{% endif %}>Direct</option><option value="encouraging" {% if settings.recommendation_tone=='encouraging' %}selected{% endif %}>Encouraging</option></select></label>
-      </div><fieldset><legend>Hide optional dashboard cards</legend><div class="checks">{% for card in card_names %}<label class="check"><input type="checkbox" name="hidden_cards" value="{{ card }}" {% if card in settings.hidden_cards %}checked{% endif %}> {{ card|replace('-', ' ')|title }}</label>{% endfor %}</div></fieldset></div></details>
+
+      </div><details class="settings-advanced"><summary>More dashboard options</summary>        <label>Recommendation wording<select name="recommendation_tone"><option value="neutral" {% if settings.recommendation_tone=='neutral' %}selected{% endif %}>Neutral</option><option value="direct" {% if settings.recommendation_tone=='direct' %}selected{% endif %}>Direct</option><option value="encouraging" {% if settings.recommendation_tone=='encouraging' %}selected{% endif %}>Encouraging</option></select></label><fieldset><legend>Hide optional dashboard cards</legend><div class="checks">{% for card in card_names %}<label class="check"><input type="checkbox" name="hidden_cards" value="{{ card }}" {% if card in settings.hidden_cards %}checked{% endif %}> {{ card|replace('-', ' ')|title }}</label>{% endfor %}</div></fieldset></details></div></details>
 
       <details class="settings-group"><summary>Task planning</summary><div class="settings-group-body"><div class="fields">
         <label>Default task duration<select name="default_task_minutes">{% for minutes in [15,25,30,45,60,90,120] %}<option value="{{ minutes }}" {% if settings.default_task_minutes==minutes %}selected{% endif %}>{{ minutes }} minutes</option>{% endfor %}</select></label>
@@ -50,7 +50,7 @@
       </div>{% if settings.calendar_export_enabled %}<a class="secondary-link" href="{{ nav_url('settings.calendar_help') }}">Google Calendar &amp; calendar export</a>{% endif %}</div></details>
 
       <details class="settings-group"><summary>Date, time, and session</summary><div class="settings-group-body"><div class="fields">
-        <label>Time zone<select name="timezone_name">{% for zone in timezones %}<option value="{{ zone }}" {% if settings.timezone_name==zone %}selected{% endif %}>{{ zone }}</option>{% endfor %}</select></label>
+        <div class="timezone-control"><label for="timezone-name">Time zone</label><input id="timezone-name" name="timezone_name" list="timezone-options" value="{{ settings.timezone_name }}" autocomplete="off" required aria-describedby="timezone-help"><datalist id="timezone-options">{% for zone in timezones %}<option value="{{ zone }}">{{ zone|replace('_',' ') }}</option>{% endfor %}</datalist><button type="button" class="secondary" id="detect-timezone" hidden>Use device time zone</button><small id="timezone-help">Type a city or region, such as New York or Europe/London.</small><p id="timezone-feedback" role="status"></p></div>
         <label>Clock<select name="time_format"><option value="12-hour" {% if settings.time_format=='12-hour' %}selected{% endif %}>12-hour</option><option value="24-hour" {% if settings.time_format=='24-hour' %}selected{% endif %}>24-hour</option></select></label>
         <label>Week starts<select name="week_start"><option {% if settings.week_start=='Sunday' %}selected{% endif %}>Sunday</option><option {% if settings.week_start=='Monday' %}selected{% endif %}>Monday</option></select></label>
         <label>Date format<select name="date_format"><option value="month-first" {% if settings.date_format=='month-first' %}selected{% endif %}>Month / day / year</option><option value="day-first" {% if settings.date_format=='day-first' %}selected{% endif %}>Day / month / year</option><option value="year-first" {% if settings.date_format=='year-first' %}selected{% endif %}>Year / month / day</option></select></label>
@@ -65,7 +65,7 @@
       <p><a href="/privacy">How your data is used</a> &middot; <a href="/data-deletion">Export and deletion help</a></p>
       {% if not session.get('demo_mode') %}
         <section class="account-group">
-          <div><h3>Account</h3><p>Username: <strong>{{ g.current_user.username }}</strong>. Keep your sign-in in a password manager. No email address is collected.</p></div>
+          <div><h3>Account</h3><p>Username: <strong>{{ g.current_user.username }}</strong>.</p></div>
           <form method="post" action="{{ url_for('settings.change_password') }}">{% include '_navigation_fields.html' %}<input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><label>Current password<input type="password" name="current_password" maxlength="128" autocomplete="current-password" required></label><label>New password<input type="password" name="new_password" minlength="15" maxlength="128" autocomplete="new-password" required></label><button>Change password</button></form>
         </section>
       {% endif %}

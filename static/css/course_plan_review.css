@@ -1,0 +1,14 @@
+body.notebook-course-plan .plan-grid{grid-template-columns:1fr;gap:12px}
+body.notebook-course-plan .year-card{min-height:0;padding:0}
+.year-toggle{padding:18px 24px;cursor:pointer;list-style:none}.year-toggle::-webkit-details-marker{display:none}
+body .year-toggle .year-heading{border:0;padding:0;align-items:center}.year-count{display:block;color:var(--muted);font-size:.85rem;margin-top:8px}
+.year-card>.planned-list,.year-card>.dual-course-list{margin:0 24px}.year-card>.workload-note{margin:12px 24px 20px}.year-card>.empty-state{margin:12px 24px}
+body .year-card .planned-list li{padding:12px 0}.year-card .planned-course-detail{margin:0}.year-card .planned-course-detail summary{font-weight:600}
+.preparation-marker{display:inline-block;margin-left:10px;color:var(--muted);font-size:.75rem;font-weight:400}.prerequisite-review{font-size:.85rem;padding:10px 12px;border-left:2px solid var(--amber);max-width:75ch}
+.plan-review{border:1px solid var(--line);padding:20px;margin:16px 0;background:var(--white);border-radius:8px}.plan-review h2{font-size:1.1rem;margin-top:0}.plan-review p,.plan-review li{font-size:.9rem}.dual-course-list{padding-bottom:20px}
+@media(max-width:600px){.year-toggle{padding:16px}.year-card>.planned-list,.year-card>.dual-course-list{margin:0 16px}.preparation-marker{display:block;margin:4px 0 0}}
+
+.year-toggle::after{content:"Expand year";display:block;font-size:.8rem;color:var(--muted);margin-top:6px}.year-card[open]>.year-toggle::after{content:"Collapse year"}
+
+body.notebook-course-plan main.course-page{width:calc(100% - 40px);max-width:1200px;margin-inline:auto}.year-toggle{padding:12px 20px}.year-heading h2{margin:4px 0;font-size:1.15rem}.year-count{margin-top:2px}.year-toggle::after{margin-top:3px}.year-heading .workload{color:var(--ink);background:var(--white);border:1px solid var(--line)}
+@media(max-width:600px){body.notebook-course-plan main.course-page{width:calc(100% - 24px)}}

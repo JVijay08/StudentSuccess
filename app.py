@@ -50,6 +50,8 @@ def create_app(test_config=None):
     app.register_blueprint(main_bp)
     app.register_blueprint(profile_bp)
     app.register_blueprint(settings_bp)
+    from routes.calendar_routes import calendar_bp
+    app.register_blueprint(calendar_bp)
     from routes.term_routes import term_bp
     app.register_blueprint(term_bp)
     from routes.college_routes import college_bp
@@ -62,7 +64,7 @@ def create_app(test_config=None):
 
     @app.before_request
     def require_account_setup():
-        if request.blueprint == 'legal' or request.endpoint in {'static', 'seo.robots', 'seo.sitemap'} or not session.get('user_id'):
+        if request.blueprint == 'legal' or request.endpoint in {'static', 'seo.robots', 'seo.sitemap', 'calendar_feed.feed'} or not session.get('user_id'):
             return None
         from flask import g, redirect, url_for
         from services.auth_service import login_required

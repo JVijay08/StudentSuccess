@@ -32,7 +32,14 @@ def entry_context(editing=None):
             school_year=g.current_user.profile.grade if g.current_user.profile else 9,
             term=preferences.college_term if preferences.academic_context=='college' else '',
             enrollment_type='dual' if preferences.academic_context=='high_school' else 'college')
-    return dict(term_courses=courses,values=values,editing=editing,selected_college=selected,
+    from collections import defaultdict
+    hour_groups=defaultdict(float)
+    for course in courses:
+        if course.status != 'completed':
+            hour_groups[(course.school_year if course.enrollment_type=='dual' else None, course.term.strip().casefold())] += course.weekly_hours
+    budget=g.current_user.profile.study_hours_per_week if g.current_user.profile else 0
+    capacity=[dict(year=year,term=term,hours=hours,budget=budget,percent=min(100,round(hours/budget*100)) if budget else 0) for (year,term),hours in sorted(hour_groups.items(),key=lambda item:(item[0][0] or 0,item[0][1]))]
+    return dict(course_capacity=capacity,term_courses=courses,values=values,editing=editing,selected_college=selected,
         college_choices=sorted(choices.values(),key=lambda r:r['name']),college_query=query,college_state=state,
         college_matches=len(matches),college_states=college_directory.states(),college_state_names=college_directory.STATE_NAMES,
         requirement_areas=REQUIREMENT_AREAS)

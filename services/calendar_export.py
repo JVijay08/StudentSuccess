@@ -35,7 +35,7 @@ def fold(line):
     return '\r\n'.join(result)
 
 
-def calendar_file(tasks):
+def calendar_file(tasks, subscription=False):
     lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//StudentSuccess//Task Calendar//EN','CALSCALE:GREGORIAN','METHOD:PUBLISH']
     for task in tasks:
         due=utc(task.due_at)
@@ -43,7 +43,7 @@ def calendar_file(tasks):
             f'DTSTAMP:{datetime.now(timezone.utc):%Y%m%dT%H%M%SZ}',
             f'DTSTART:{due:%Y%m%dT%H%M%SZ}',f'DTEND:{due+timedelta(minutes=1):%Y%m%dT%H%M%SZ}',
             'TRANSP:TRANSPARENT',f'SUMMARY:{escape(task.title)} due',
-            'DESCRIPTION:Deadline marker (1 minute). Changes in StudentSuccess do not sync. Update or remove this calendar copy manually.',
+            ('DESCRIPTION:Deadline marker (1 minute). Read-only subscription; updates appear when your calendar refreshes.' if subscription else 'DESCRIPTION:Deadline marker (1 minute). Changes in StudentSuccess do not sync. Update or remove this calendar copy manually.'),
             'END:VEVENT'])
     lines.append('END:VCALENDAR')
     return '\r\n'.join(fold(line) for line in lines)+'\r\n'

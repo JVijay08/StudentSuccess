@@ -1,21 +1,7 @@
 (() => {
-  const search = document.querySelector('.update-search');
-  const query = document.getElementById('update-query');
-  const entries = [...document.querySelectorAll('.update-entry')];
-  search.hidden = false;
-  query.addEventListener('input', () => {
-    const words = query.value.toLocaleLowerCase().trim().split(/\s+/);
-    let count = 0;
-    entries.forEach(entry => {
-      const text = entry.textContent.toLocaleLowerCase();
-      entry.hidden = !words.every(word => text.includes(word));
-      if (!entry.hidden) count++;
-    });
-    document.querySelectorAll('[data-update-archive]').forEach(archive => {
-      archive.open = words[0] !== '' && archive.querySelector('.update-entry:not([hidden])') !== null;
-      archive.hidden = !archive.querySelector('.update-entry:not([hidden])');
-    });
-    document.getElementById('update-count').textContent = `${count} of ${entries.length} updates`;
-    document.getElementById('no-updates').hidden = count !== 0;
-  });
+ const search=document.querySelector('.update-search');if(!search)return;
+ const query=document.getElementById('update-query'),category=document.getElementById('update-category');
+ const entries=[...document.querySelectorAll('.update-entry')];search.hidden=false;
+ const filter=()=>{const words=query.value.trim().toLocaleLowerCase().split(/\s+/);let count=0;entries.forEach(entry=>{entry.hidden=!words.every(word=>entry.textContent.toLocaleLowerCase().includes(word))||Boolean(category.value&&entry.dataset.category!==category.value);if(!entry.hidden)count++;});document.getElementById('update-count').textContent=`${count} of ${entries.length} releases`;document.getElementById('no-updates').hidden=count!==0;};
+ query.addEventListener('input',filter);category.addEventListener('change',filter);
 })();

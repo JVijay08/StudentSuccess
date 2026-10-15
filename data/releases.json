@@ -1,0 +1,74 @@
+[
+  {
+    "date": "2026-10-14",
+    "title": "Easier planning across your workspace",
+    "category": "Improvements",
+    "summary": "Find courses, change settings, and review your work with fewer menus and less scrolling.",
+    "highlights": [
+      "Course filters open in a full-width panel; grade plans expand when needed.",
+      "Completed tasks have search and ten-entry pages.",
+      "Search for a time zone and keep Save settings within reach."
+    ],
+    "image": "images/releases/planner.webp"
+  },
+  {
+    "date": "2026-10-14",
+    "title": "Keep your deadlines in a subscribed calendar",
+    "category": "New features",
+    "summary": "Create a private calendar subscription link for your active task deadlines.",
+    "highlights": [
+      "Calendar apps can retrieve changes without another file import.",
+      "Replace or disable the subscription link from the Calendar page.",
+      "Refresh timing depends on your calendar app; this is a one-way feed."
+    ]
+  },
+  {
+    "date": "2026-10-14",
+    "title": "Stay signed in on your own device",
+    "category": "Improvements",
+    "summary": "Choose a thirty-day session when signing in, or set a longer inactivity limit in Settings.",
+    "highlights": [
+      "Sign-in forms show useful errors and a loading state.",
+      "Logout and password changes still revoke account sessions."
+    ]
+  },
+  {
+    "date": "2026-10-10",
+    "title": "A tutorial that stays with you",
+    "category": "Improvements",
+    "summary": "The tutorial controls stay at the bottom while you explore the practice planner.",
+    "highlights": [
+      "Collapse instructions without losing Show me or Next.",
+      "A shorter homepage introduces the planner and its developer."
+    ]
+  },
+  {
+    "date": "2026-10-10",
+    "title": "Missing update history restored",
+    "category": "Bug fixes",
+    "summary": "Restored the entries missing between September 19 and the latest release.",
+    "highlights": [
+      "The complete technical history remains available separately."
+    ]
+  },
+  {
+    "date": "2026-10-05",
+    "title": "Draft a larger set of assignments",
+    "category": "New features",
+    "summary": "The optional AI drafter can suggest up to thirty main tasks in one draft.",
+    "highlights": [
+      "Review and edit suggestions before saving.",
+      "Choose standalone tasks, projects with steps, or a mix."
+    ]
+  },
+  {
+    "date": "2026-10-04",
+    "title": "Start with five minutes",
+    "category": "New features",
+    "summary": "Start a short focus timer from Today and park distracting thoughts for later.",
+    "highlights": [
+      "The timer does not complete tasks automatically.",
+      "Parked thoughts stay in your browser tab."
+    ]
+  }
+]

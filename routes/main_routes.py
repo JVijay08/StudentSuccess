@@ -20,42 +20,6 @@ from services.timing_service import timing_summary
 
 main_bp = Blueprint("main", __name__)
 
-UPDATE_PRESENTATION = {
-    "Align planner pages with layout references": {
-        "display_title": "A clearer layout across your planner",
-        "summary": "The next task is easier to spot, course lists are more readable, and supporting pages are less cluttered.",
-        "highlights": [
-            "Scan compact task rows and expand course details only when needed.",
-            "Find account actions, calendar choices, and older updates more easily.",
-        ],
-    },
-    "A clearer layout across your planner": {
-        "display_title": "A clearer layout across your planner",
-        "summary": "The next task is easier to spot, course lists are more readable, and supporting pages are less cluttered.",
-        "highlights": [
-            "Scan compact task rows and expand course details only when needed.",
-            "Find account actions, calendar choices, and older updates more easily.",
-        ],
-    },
-    "Refine catalog and update history": {
-        "display_title": "Find courses and updates faster",
-        "summary": "Course filters stay in the page flow, and recent planner changes are easier to scan.",
-        "highlights": [
-            "Browse course results without a nested filter scroller.",
-            "Find the newest updates first, with older changes grouped by month.",
-        ],
-    },
-    "Restore complete update history and expand shallow deployment clones": {
-        "display_title": "Catch up on recent improvements",
-        "summary": "The update page can show the complete history, even when a deployment starts from a shallow checkout.",
-    },
-    "Redesign landing page with notebook previews and developer section": {
-        "display_title": "A clearer introduction to StudentSuccess",
-        "summary": "The landing page now explains the planner with a notebook preview and focused feature descriptions.",
-    },
-}
-
-
 @main_bp.get("/updates")
 def updates():
     # Public history stays available anonymously; workspace navigation needs
@@ -66,56 +30,20 @@ def updates():
 
 
 def _render_updates():
-    updates = [
-        {
-            **update,
-            **UPDATE_PRESENTATION.get(update["title"], {}),
-            "display_title": UPDATE_PRESENTATION.get(update["title"], {}).get(
-                "display_title", update["title"]
-            ),
-        }
-        for update in get_updates()
-    ]
-    latest_update = updates[0] if updates else None
-    latest_month = latest_update["date"][:7] if latest_update else None
-    recent_updates = [
-        update for update in updates
-        if update["date"][:7] == latest_month and update is not latest_update
-    ]
-    recent_highlights = recent_updates[:2]
-    current_month_archive = recent_updates[2:]
-
-    earlier_months = []
-    month_lookup = {}
-    for update in updates:
-        month_key = update["date"][:7]
-        if month_key == latest_month:
-            continue
-        month = month_lookup.get(month_key)
-        if month is None:
-            month_date = datetime.strptime(month_key, "%Y-%m")
-            month = {
-                "key": month_key,
-                "label": month_date.strftime("%B %Y"),
-                "updates": [],
-            }
-            month_lookup[month_key] = month
-            earlier_months.append(month)
-        month["updates"].append(update)
-
-    return render_template(
-        "updates.html",
-        updates=updates,
-        latest_update=latest_update,
-        latest_month_label=(
-            datetime.strptime(latest_month, "%Y-%m").strftime("%B %Y")
-            if latest_month else None
-        ),
-        recent_updates=recent_updates,
-        recent_highlights=recent_highlights,
-        current_month_archive=current_month_archive,
-        earlier_months=earlier_months,
-    )
+    import json
+    from pathlib import Path
+    from math import ceil
+    releases = json.loads((Path(__file__).resolve().parents[1] / 'data' / 'releases.json').read_text(encoding='utf-8'))
+    history = request.args.get('history') == '1'
+    query = request.args.get('q', '').strip()[:160]
+    entries = get_updates() if history else []
+    if query:
+        entries = [entry for entry in entries if query.casefold() in entry['title'].casefold()]
+    pages = max(1, ceil(len(entries) / 20))
+    page = min(max(request.args.get('page', 1, type=int), 1), pages)
+    return render_template('updates.html', releases=releases, technical_history=history,
+        updates=entries[(page-1)*20:page*20], history_count=len(entries),
+        query=query, page=page, pages=pages)
 
 
 def _build_course_load_summary(profile):

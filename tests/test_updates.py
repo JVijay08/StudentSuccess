@@ -42,70 +42,32 @@ def test_updates_public_and_titles_escaped(app, monkeypatch):
         {"hash": "a" * 40, "date": "2026-09-19", "title": "<script>alert(1)</script>"}
     ])
     client = app.test_client()
-    response = client.get("/updates")
+    response = client.get("/updates?history=1")
     assert response.status_code == 200
     assert b"&lt;script&gt;alert(1)&lt;/script&gt;" in response.data
     assert b"Revision aaaaaaa" in response.data
     assert re.search(rb'href="/updates(?:\?[^"]*)?"', client.get('/').data)
 
 
-def test_updates_feature_latest_and_collapse_older_months(app, monkeypatch):
+def test_releases_separate_from_raw_history(app, monkeypatch):
     from routes import main_routes
-    monkeypatch.setattr(main_routes, "get_updates", lambda: [
-        {"hash": "a" * 40, "date": "2026-10-10", "title": "Latest planner improvement"},
-        {"hash": "b" * 40, "date": "2026-10-05", "title": "Another October improvement"},
-        {"hash": "d" * 40, "date": "2026-10-03", "title": "October task improvements"},
-        {"hash": "e" * 40, "date": "2026-10-01", "title": "October course improvements"},
-        {"hash": "c" * 40, "date": "2026-09-30", "title": "September improvement"},
-    ])
-
-    response = app.test_client().get("/updates")
-
-    assert response.status_code == 200
-    body = response.get_data(as_text=True)
-    assert "Latest update" in body
-    assert '<details class="update-search"' in body
-    assert "<summary>Find an update</summary>" in body
-    assert "Latest planner improvement" in body
-    assert "Another October improvement" in body
-    assert "October task improvements" in body
-    assert "October course improvements" in body
-    assert "More from October 2026" in body
-    assert "September 2026" in body
-    assert 'data-update-archive' in body
-    assert '<details class="update-archive update-month" data-update-archive>' in body
+    monkeypatch.setattr(main_routes, "get_updates", lambda: [{"hash":"a"*40,"date":"2026-10-10","title":"Internal build change"}])
+    body = app.test_client().get('/updates').get_data(as_text=True)
+    assert 'Easier planning' in body
+    assert 'update-category' in body
+    assert 'planner.webp' in body
+    assert 'Internal build change' not in body
+    assert 'Revision aaaaaaa' not in body
 
 
-def test_updates_spotlight_uses_student_facing_release_copy(app, monkeypatch):
+def test_history_search_covers_all_pages(app, monkeypatch):
     from routes import main_routes
-    monkeypatch.setattr(main_routes, "get_updates", lambda: [
-        {"hash": "a" * 40, "date": "2026-10-10", "title": "Refine catalog and update history"},
-        {"hash": "b" * 40, "date": "2026-10-05", "title": "Restore complete update history and expand shallow deployment clones"},
-        {"hash": "c" * 40, "date": "2026-10-01", "title": "Redesign landing page with notebook previews and developer section"},
-    ])
-
-    response = app.test_client().get("/updates")
-    body = response.get_data(as_text=True)
-
-    assert "Find courses and updates faster" in body
-    assert "Course filters stay in the page flow" in body
-    assert "Catch up on recent improvements" in body
-    assert "A clearer introduction to StudentSuccess" in body
-    assert "shallow deployment clones" not in body
-
-
-def test_current_layout_release_has_feature_summary(app, monkeypatch):
-    from routes import main_routes
-    monkeypatch.setattr(main_routes, "get_updates", lambda: [
-        {"hash": "a" * 40, "date": "2026-10-10", "title": "Align planner pages with layout references"},
-    ])
-
-    response = app.test_client().get("/updates")
-    body = response.get_data(as_text=True)
-
-    assert "A clearer layout across your planner" in body
-    assert "The next task is easier to spot" in body
-    assert "Scan compact task rows" in body
+    monkeypatch.setattr(main_routes, 'get_updates', lambda: [
+        {'hash':str(i).zfill(40),'date':'2026-10-10','title':f'Change {i}'} for i in range(45)])
+    client = app.test_client()
+    assert b'Change 44' not in client.get('/updates?history=1').data
+    assert b'Change 44' in client.get('/updates?history=1&page=3').data
+    assert b'Change 44' in client.get('/updates?history=1&q=Change+44').data
 
 
 def test_build_expands_shallow_history(monkeypatch, tmp_path):

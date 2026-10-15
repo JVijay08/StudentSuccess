@@ -59,7 +59,7 @@ def main():
             page.locator('[name=password]').fill('sample-policy-password')
             page.locator('button[type=submit]').click()
             page.wait_for_url('**/dashboard')
-            for route in ['/dashboard', '/tasks', '/courses', '/settings', '/tasks/ai/new', '/calendar', '/planner']:
+            for route in ['/dashboard', '/tasks', '/courses', '/settings', '/tasks/ai/new', '/calendar', '/planner', '/courses/plan', '/updates', '/updates?history=1']:
                 audit(route)
             (out / 'results.json').write_text(json.dumps({'issues': issues, 'errors': errors}, indent=2), encoding='utf-8')
             # A disclosure can be operated and dismissed without a pointer.
@@ -71,7 +71,7 @@ def main():
             expect(menu).not_to_have_attribute('open', '')
             expect(menu.locator(':scope > summary')).to_be_focused()
             # Selecting a sort does not cause an unexpected context change.
-            select = page.locator('[name=sort]')
+            select = page.locator('select[name=sort]')
             select.select_option('due')
             assert 'sort=due' not in page.url
             page.get_by_role('button', name='Sort', exact=True).click()
@@ -91,7 +91,7 @@ def main():
             assert not external, external
             browser.close()
         (out / 'results.json').write_text(json.dumps({'issues': issues, 'errors': errors, 'external': sorted(external)}, indent=2), encoding='utf-8')
-        print(f'Audited 15 pages in 3 themes; {len(issues)} issue groups; {len(errors)} JS errors. Keyboard and cookie checks passed.')
+        print(f'Audited 18 pages in 3 themes; {len(issues)} issue groups; {len(errors)} JS errors. Keyboard and cookie checks passed.')
         if issues or errors: raise SystemExit(1)
     finally:
         server.shutdown()
