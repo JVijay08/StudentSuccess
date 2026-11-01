@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-10-31",
+    "title": "Bring your plan with you and focus on today",
+    "category": "New features",
+    "summary": "Transfer a browser plan into your account, review school calendar imports, and choose how you track your work.",
+    "highlights": [
+      "Preview browser tasks, subtasks, and courses before transferring; keep existing account work and the browser copy.",
+      "Import an HTTPS school calendar and manually review new assignments or changed deadlines.",
+      "See tasks due or planned today, separate overdue work, and a visible recommendation reason.",
+      "Turn start and duration tracking off in Settings. Completing a task no longer invents its start time."
+    ]
+  },
+  {
     "date": "2026-10-14",
     "title": "Easier planning across your workspace",
     "category": "Improvements",

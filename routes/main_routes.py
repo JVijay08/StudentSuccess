@@ -16,6 +16,7 @@ from services.settings_service import get_or_create_settings
 from services.recommendation_explanations import explain_recommendations
 from services.update_history import get_updates
 from services.timing_service import timing_summary
+from services.daily_tasks import daily_task_rows
 
 
 main_bp = Blueprint("main", __name__)
@@ -54,9 +55,7 @@ def _build_course_load_summary(profile):
         if planned.school_year != profile.grade:
             continue
         try:
-            course = course_service.get_course_by_id(
-                planned.course_id, planned.catalog_id
-            )
+            course = course_service.planned_course_details(planned)
         except ValueError:
             course = None
         if course is not None:
@@ -99,6 +98,7 @@ def _build_start_delay_summary(profile):
         Task.status == "completed",
         Task.planned_start_at.isnot(None),
         Task.started_at.isnot(None),
+        Task.timing_excluded.is_(False),
     ).all()
 
     grouped = {}
@@ -241,18 +241,18 @@ def dashboard():
         active_task_count = sum(
             1 for task in all_tasks if task.status != "completed" and not task.children
         )
-        prioritized_tasks = suggestion_service.get_suggested_tasks(all_tasks)
-        explain_recommendations(prioritized_tasks, all_tasks)
+        prioritized_tasks = suggestion_service.get_suggested_tasks(all_tasks, use_history=settings.time_tracking_enabled)
+        explain_recommendations(prioritized_tasks, all_tasks if settings.time_tracking_enabled else [])
         for row in prioritized_tasks:
             row["due_at_display"] = _format_local(
                 row["task"].due_at, settings, include_time=True
             )
         success_rate = _build_success_rate(profile)
-        start_delay_summary = _build_start_delay_summary(profile)
-        start_history = _build_start_history(profile, settings)
+        start_delay_summary = _build_start_delay_summary(profile) if settings.time_tracking_enabled else []
+        start_history = _build_start_history(profile, settings) if settings.time_tracking_enabled else []
         estimate_accuracy = {
-            "groups": burn_rate_service.group_burn_rates(all_tasks),
-            "overall": burn_rate_service.overall_burn_rate(all_tasks),
+            "groups": burn_rate_service.group_burn_rates(all_tasks) if settings.time_tracking_enabled else [],
+            "overall": burn_rate_service.overall_burn_rate(all_tasks) if settings.time_tracking_enabled else None,
         }
 
         for row in nudge_service.overdue_to_start(all_tasks):
@@ -299,8 +299,11 @@ def dashboard():
                     )
                 ]
 
+    today_rows, overdue_rows = daily_task_rows(prioritized_tasks, settings.timezone_name)
     return render_template(
         "dashboard.html",
+        today_rows=today_rows,
+        overdue_rows=overdue_rows,
         profile=profile,
         active_task_count=active_task_count,
         prioritized_tasks=prioritized_tasks,
@@ -313,6 +316,6 @@ def dashboard():
         college_summary=college_summary,
         reminder_tasks=reminder_tasks,
         settings=settings,
-        timing=timing_summary(all_tasks),
+        timing=timing_summary(all_tasks if settings.time_tracking_enabled else []),
         focus_view=focus_view,
     )

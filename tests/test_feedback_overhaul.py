@@ -189,6 +189,8 @@ def test_additive_migration_preserves_legacy_rows(app):
         db.session.execute(text("INSERT INTO users (id,username) VALUES (1,'existing-account')"))
         db.session.execute(text("CREATE TABLE tasks (id INTEGER PRIMARY KEY, title VARCHAR(160))"))
         db.session.execute(text("CREATE TABLE user_settings (id INTEGER PRIMARY KEY)"))
+        db.session.execute(text("CREATE TABLE planned_courses (id INTEGER PRIMARY KEY, course_id VARCHAR(100))"))
+        db.session.execute(text("INSERT INTO planned_courses (id,course_id) VALUES (1,'existing-course')"))
         db.session.execute(text("CREATE TABLE term_courses (id INTEGER PRIMARY KEY, title VARCHAR(120), weekly_hours FLOAT)"))
         db.session.execute(text("INSERT INTO term_courses (id,title,weekly_hours) VALUES (1,'Existing college course',4)"))
         db.session.execute(text("INSERT INTO tasks (id,title) VALUES (1,'Existing history')"))
@@ -199,6 +201,10 @@ def test_additive_migration_preserves_legacy_rows(app):
         assert db.session.execute(text("SELECT username,email,auth_version,onboarding_completed FROM users WHERE id=1")).one() == ('existing-account', None, 0, False)
         assert db.session.execute(text("SELECT title FROM tasks WHERE id=1")).scalar() == "Existing history"
         assert db.session.execute(text("SELECT academic_context FROM user_settings WHERE id=1")).scalar() == "high_school"
+        assert db.session.execute(text("SELECT time_tracking_enabled FROM user_settings WHERE id=1")).scalar() == 1
+        assert db.session.execute(text("SELECT timing_excluded FROM tasks WHERE id=1")).scalar() == 0
+        assert db.session.execute(text("SELECT course_id, imported_details FROM planned_courses WHERE id=1")).one() == ('existing-course', None)
+        assert db.session.execute(text("SELECT browser_source_key, imported_details FROM term_courses WHERE id=1")).one() == (None, None)
         assert db.session.execute(text("SELECT title, weekly_hours, enrollment_type, status, institution_id FROM term_courses WHERE id=1")).one() == ('Existing college course', 4, 'college', 'planned', None)
         assert db.session.execute(text("SELECT college_program, college_term, term_credit_goal FROM user_settings WHERE id=1")).one() == ('', '', None)
         assert db.session.execute(text("SELECT requirement_area FROM term_courses WHERE id=1")).scalar() == 'unspecified'

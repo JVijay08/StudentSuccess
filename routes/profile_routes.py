@@ -2,7 +2,7 @@ from datetime import datetime
 import math
 from zoneinfo import available_timezones
 
-from flask import Blueprint, g, redirect, render_template, request, url_for
+from flask import Blueprint, g, redirect, render_template, request, url_for, session
 from extensions import db
 from models import StudentProfile
 from services.auth_service import login_required
@@ -86,6 +86,11 @@ def onboarding():
                 preferences.reminders_enabled = 'reminders_enabled' in request.form
             user.onboarding_completed = True
             db.session.commit()
+            if first_setup:
+                from services.navigation import safe_page
+                destination = safe_page(session.pop('after_setup', None))
+                if destination:
+                    return redirect(destination)
             return redirect(url_for('main.dashboard') if first_setup else url_for('settings.settings'))
     return render_template('onboarding.html',errors=errors,values=values,first_setup=first_setup,
                            timezones=sorted(available_timezones()))

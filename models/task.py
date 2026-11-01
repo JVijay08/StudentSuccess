@@ -27,6 +27,7 @@ class Task(db.Model):
     estimated_minutes = db.Column(db.Integer, nullable=False)
     break_minutes = db.Column(db.Integer, nullable=False, default=0)
     actual_minutes = db.Column(db.Integer, nullable=True)
+    timing_excluded = db.Column(db.Boolean, nullable=False, default=False)
     difficulty = db.Column(db.String(20), nullable=False, default="medium")
     interest_level = db.Column(db.String(20), nullable=False, default="medium")
     status = db.Column(db.String(20), nullable=False, default="not_started")

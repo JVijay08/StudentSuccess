@@ -68,6 +68,8 @@ def settings():
         hidden_cards = sorted(set(request.form.getlist("hidden_cards")) & CARD_NAMES)
         preferences.hidden_dashboard_cards = ",".join(hidden_cards)
         preferences.card_density = _choice(request.form, "card_density", DENSITIES, preferences.card_density)
+        if request.form.get("time_tracking_enabled") in {"yes", "no"}:
+            preferences.time_tracking_enabled = request.form["time_tracking_enabled"] == "yes"
         preferences.default_task_minutes = _integer_choice(request.form, "default_task_minutes", {15, 25, 30, 45, 60, 90, 120}, preferences.default_task_minutes)
         preferences.work_session_minutes = _integer_choice(request.form, "work_session_minutes", {15, 20, 25, 30, 45, 50, 60}, preferences.work_session_minutes)
         preferences.start_buffer_days = _integer_choice(request.form, "start_buffer_days", {0, 1, 2, 3, 5, 7}, preferences.start_buffer_days)
@@ -160,10 +162,11 @@ def export_data():
         "tasks": [],
         "planned_courses": [],
         "academic_context": get_or_create_settings(g.current_user).academic_context,
+        "time_tracking_enabled": get_or_create_settings(g.current_user).time_tracking_enabled,
         "institution_id": get_or_create_settings(g.current_user).institution_id,
         "college_planning": {key:getattr(get_or_create_settings(g.current_user),key) for key in ('college_program','college_term','term_credit_goal')},
         "term_courses": [{key: getattr(c, key) for key in ('title', 'term', 'weekly_hours', 'institution_id',
-            'enrollment_type', 'school_year', 'status', 'course_code', 'credits', 'description', 'catalog_url', 'requirement_area')}
+            'enrollment_type', 'school_year', 'status', 'course_code', 'credits', 'description', 'catalog_url', 'requirement_area', 'imported_details')}
             for c in g.current_user.term_courses],
     }
     if profile is not None:
@@ -182,6 +185,7 @@ def export_data():
                 "id": task.id,
                 "parent_task_id": task.parent_task_id,
                 "actual_minutes": task.actual_minutes,
+                "timing_excluded": task.timing_excluded,
                 "break_minutes": task.break_minutes,
                 "started_at": task.started_at.isoformat() if task.started_at else None,
                 "completed_at": task.completed_at.isoformat() if task.completed_at else None,
@@ -202,6 +206,7 @@ def export_data():
                 "school_year": item.school_year,
                 "term": item.term,
                 "status": item.status,
+                "imported_details": item.imported_details,
             }
             for item in profile.planned_courses
         ]

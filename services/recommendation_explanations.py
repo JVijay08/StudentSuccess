@@ -6,7 +6,7 @@ from services.task_policy import tier
 
 def explain_recommendations(rows, tasks):
     counts = Counter(delay_service.group_key(task) for task in tasks
-                     if task.status == "completed" and delay_service.start_delay(task) is not None)
+                     if task.status == "completed" and not getattr(task, "children", []) and delay_service.start_delay(task) is not None)
     averages = delay_service.average_start_delay_by_group(tasks)
     for index, row in enumerate(rows):
         # Prefer the largest actual contributions; put deadlines first on a tie.

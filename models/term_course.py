@@ -8,6 +8,8 @@ class TermCourse(db.Model):
     title = db.Column(db.String(120), nullable=False)
     term = db.Column(db.String(60), nullable=False)
     weekly_hours = db.Column(db.Float, nullable=False, default=0)
+    browser_source_key = db.Column(db.String(80), nullable=True)
+    imported_details = db.Column(db.JSON, nullable=True)
     institution_id = db.Column(db.String(12), nullable=True)
     enrollment_type = db.Column(db.String(20), nullable=False, default='college')
     school_year = db.Column(db.Integer, nullable=True)

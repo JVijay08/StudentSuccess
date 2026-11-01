@@ -33,7 +33,7 @@ def start_delay(task) -> "timedelta | None":
     the student started late; negative means early. Returns ``None`` when either
     timestamp is missing.
     """
-    if task.planned_start_at is None or task.started_at is None:
+    if getattr(task, "timing_excluded", False) or task.planned_start_at is None or task.started_at is None:
         return None
     return _as_utc(task.started_at) - _as_utc(task.planned_start_at)
 

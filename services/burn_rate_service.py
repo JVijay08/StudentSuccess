@@ -34,12 +34,13 @@ def _as_utc(value: datetime) -> datetime:
 def is_measurable(task) -> bool:
     """True iff the task has usable actual-time data.
 
-    Requires ``status == "completed"`` AND ``started_at is not None`` AND
-    ``completed_at is not None``. Reads only existing fields; persists nothing.
+    Requires completion plus either an observed start or explicitly recorded
+    minutes. Tasks worked with tracking disabled are excluded.
     """
     return (
         task.status == "completed"
-        and task.started_at is not None
+        and not getattr(task, "timing_excluded", False)
+        and (task.started_at is not None or getattr(task, "actual_minutes", None) is not None)
         and task.completed_at is not None
     )
 

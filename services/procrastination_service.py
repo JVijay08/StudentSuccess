@@ -46,7 +46,7 @@ def priority_factors(task, now):
     def add(key, label, points, reason, short):
         factors.append(dict(key=key, label=label, points=points, reason=reason, short=short))
     hours = (_as_utc(task.due_at) - _as_utc(now)).total_seconds() / 3600
-    if task.started_at is None:
+    if task.status == "not_started":
         add("start", "Not started", 2, "assignment has not been started", "not started yet")
     if hours < 0:
         add("deadline", "Deadline", 4, "deadline has passed", "the deadline has passed")

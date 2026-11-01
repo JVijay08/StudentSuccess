@@ -28,6 +28,7 @@ class PlannedCourse(db.Model):
     school_year = db.Column(db.Integer, nullable=False)
     term = db.Column(db.String(30), nullable=False, default="Full year")
     status = db.Column(db.String(20), nullable=False, default="considering")
+    imported_details = db.Column(db.JSON, nullable=True)
     created_at = db.Column(
         db.DateTime(timezone=True), nullable=False, default=get_current_time
     )

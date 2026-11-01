@@ -187,6 +187,10 @@ def register():
                 errors.append('That username is unavailable. Choose another.')
             else:
                 _sign_in(user)
+                from services.navigation import safe_page
+                destination = safe_page(request.form.get('next'))
+                if destination:
+                    session['after_setup'] = destination
                 return redirect(url_for('profile.onboarding'))
     return render_template('register.html', errors=errors), (400 if errors else 200)
 

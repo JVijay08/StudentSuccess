@@ -28,4 +28,26 @@
     });
   });
   activate(tabs[0]);
+  const draft = document.getElementById('sample-draft');
+  const result = document.getElementById('sample-draft-result');
+  const steps = [...document.querySelectorAll('[data-sample-step]')];
+  draft.hidden = false;
+  result.hidden = true;
+  draft.addEventListener('click', () => {
+    result.hidden = false;
+    draft.hidden = true;
+    steps[2].focus();
+    document.getElementById('sample-status').textContent = 'Example breakdown ready. Try checking off a step.';
+  });
+  steps.forEach(step => {
+    step.disabled = false;
+    step.addEventListener('change', () => {
+      const done = steps.filter(item => item.checked).length;
+      const text = `${done} of ${steps.length} steps complete`;
+      document.getElementById('sample-progress').value = done;
+      document.getElementById('sample-progress').textContent = text;
+      document.querySelector('[data-sample-count]').textContent = text;
+      document.getElementById('sample-status').textContent = text;
+    });
+  });
 })();

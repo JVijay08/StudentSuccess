@@ -78,3 +78,11 @@ body.fieldnotes-landing .legal-footer,body.fieldnotes-landing .legal-footer nav{
   .notebook-footnote{padding:6px 16px}
 }
 @media(min-width:681px) and (max-width:900px){.fieldnotes-landing .landing-hero{gap:24px}}
+
+/* Balanced introduction and a small, local-only working example. */
+.fieldnotes-landing .landing-hero h1{font-size:clamp(2rem,3.5vw,3.1rem);line-height:1.13;letter-spacing:-.035em;max-width:none}
+.fieldnotes-landing .landing-hero{align-items:center;padding:24px 0;gap:32px}
+.fieldnotes-landing .landing-intro .landing-lede{max-width:38ch;font-size:1.08rem}
+.sample-prompt{border-left:2px solid var(--blue);padding-left:10px}.sample-steps{list-style:none;padding:0;margin:8px 0}.sample-steps li{padding:4px 0}.sample-steps label{display:flex;align-items:center;gap:10px;cursor:pointer}.sample-steps input{width:18px;height:18px;accent-color:var(--blue);flex:none}.sample-steps input:checked+span{text-decoration:line-through;color:var(--muted)}
+.fieldnotes-landing .legal-footer{display:flex;flex-direction:column;gap:12px;padding:22px 0}.fieldnotes-landing .legal-footer nav{gap:12px 22px;flex-wrap:wrap}.fieldnotes-landing .legal-footer nav[aria-label="Policies and support"]{font-size:.8rem}
+@media(max-width:680px){.fieldnotes-landing .landing-hero h1{font-size:clamp(1.85rem,7.2vw,2.6rem)}.fieldnotes-landing .landing-hero{gap:20px}}

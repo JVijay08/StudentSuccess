@@ -47,16 +47,14 @@ def test_includes_past_unstarted_not_completed_task():
     assert [row["task"] for row in rows] == [task]
 
 
-def test_includes_in_progress_task_since_not_completed():
-    # status != "completed" is the rule, so in_progress (with no started_at
-    # recorded) still counts as overdue-to-start.
+def test_excludes_in_progress_without_timestamp_when_tracking_is_off():
+    # A task can be started without collecting a timestamp.
     task = _task(
         planned_start_at=_utc(2024, 1, 5, 9, 0),
         started_at=None,
         status="in_progress",
     )
-    rows = overdue_to_start([task], now=NOW)
-    assert [row["task"] for row in rows] == [task]
+    assert overdue_to_start([task], now=NOW) == []
 
 
 def test_excludes_task_with_null_planned_start():
@@ -219,7 +217,7 @@ def test_overdue_predicate_iff(planned_offset, started_offset, status, due_offse
         planned is not None
         and _as_utc(planned) < PROP_NOW  # STRICT: offset 0 excluded
         and started is None
-        and status != "completed"
+        and status == "not_started"
     )
     assert is_included == expected
 
@@ -229,7 +227,7 @@ def test_overdue_predicate_iff(planned_offset, started_offset, status, due_offse
     # planned strictly in the past guarantees the task IS overdue when it is
     # unstarted and not completed.
     planned_offset=st.integers(min_value=-100000, max_value=-1),
-    status=st.sampled_from(("not_started", "in_progress")),
+    status=st.just("not_started"),
     due_offset=st.integers(min_value=-200000, max_value=200000),
 )
 def test_overdue_amount_positive(planned_offset, status, due_offset):

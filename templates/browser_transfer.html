@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Transfer browser plan | StudentSuccess</title><link rel="stylesheet" href="{{ url_for('static', filename='css/tasks.css') }}">{% include '_accessibility_head.html' %}</head>
+<body>{% include '_accessibility_body.html' %}<main id="main-content">
+<a href="{{ url_for('main.local_planner') }}">Back to browser planner</a><h1>Copy your browser plan into your account</h1>
+{% if practice %}<p>Use your own account to transfer a browser plan. Practice workspaces are temporary.</p><a href="{{ url_for('auth.register', next=url_for('browser_transfer.transfer')) }}">Create an account</a><a href="{{ url_for('auth.login', next=url_for('browser_transfer.transfer')) }}">Sign in</a>
+{% else %}<p>Destination: <strong>{{ g.current_user.username }}</strong>. Review first, then save. Existing account items are kept. Your browser copy stays on this device; later changes do not sync.</p>
+{% if error %}<p role="alert">{{ error }}</p>{% endif %}
+{% if preview %}<section class="panel"><h2>Transfer preview</h2><p>{{ rows|rejectattr('skip')|list|length }} items to add; {{ rows|selectattr('skip')|list|length }} to keep unchanged. Tasks and subtasks keep their relationships and progress. Imported historical timing is excluded from recommendations because browser backups cannot prove an observed start.</p>
+<ul>{% for row in rows %}<li><strong>{{ 'Keep existing' if row.skip else 'Add' }} {{ row.kind }}:</strong> {{ row.title }}{% if row.reason %} &mdash; {{ row.reason }}{% endif %}{% if row.kind == 'task' %}<p>{{ row.data.status|replace('_', ' ') }} &middot; {{ row.data.minutes }} min &middot; Due {{ row.data.due }}{% if row.data.parent %} &middot; Subtask{% endif %}</p>{% else %}<p>{{ row.data.hours }} hours/week &middot; {{ row.data.term if data.context == 'college' else 'Grade ' ~ row.data.year }}</p>{% endif %}</li>{% endfor %}</ul>
+<form method="post">{% include '_csrf_field.html' %}<input type="hidden" name="preview" value="{{ preview }}">
+<label><input type="checkbox" name="apply_context" value="yes"> Use the browser's {{ data.context|replace('_', ' ') }} academic context</label>
+{% if data.budget is not none and data.budget <= 80 %}<label><input type="checkbox" name="apply_budget" value="yes"> Use the browser's {{ data.budget }} hours/week study budget</label>{% elif data.budget is not none %}<p>The browser study budget exceeds the account's 80-hour limit. Your account budget will stay unchanged.</p>{% endif %}
+<p>With time tracking off, historical start timestamps and worked minutes will not be copied. Completion dates and planned schedules are kept.</p>
+<label><input type="checkbox" name="confirmed" value="yes" required> Copy these items into this account. I have reviewed the plan and left out sensitive details.</label>
+<button name="save" value="yes">Save transfer</button><a href="{{ url_for('browser_transfer.transfer') }}">Cancel</a></form></section>
+{% else %}<section class="panel"><h2>Choose your browser plan</h2>
+<form method="post" enctype="multipart/form-data" id="browser-transfer-form">{% include '_csrf_field.html' %}
+<label>StudentSuccess JSON backup (up to 1 MB)<input type="file" name="backup" id="browser-transfer-file" accept=".json,application/json" required></label>
+<button type="button" class="secondary" id="use-browser-plan" hidden>Use the plan saved in this browser</button><p id="browser-transfer-status" role="status"></p>
+<label><input type="checkbox" name="confirmed" value="yes" required> Upload this plan for preview in my account. I have left out personal identifiers and sensitive details.</label><button>Preview transfer</button></form>
+<p>Nothing is uploaded until you choose Preview transfer. You can also download a backup from the browser planner and choose it here.</p></section>
+<script src="{{ url_for('static', filename='js/browser_transfer.js') }}" defer></script>{% endif %}{% endif %}
+</main>{% include '_legal_footer.html' %}</body></html>

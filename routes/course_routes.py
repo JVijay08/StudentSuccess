@@ -47,11 +47,7 @@ def _planned_course_rows(profile):
         profile.planned_courses,
         key=lambda item: (item.school_year, item.term, item.course_id),
     ):
-        catalog = {
-            course["course_id"]: course
-            for course in course_service.load_courses(planned.catalog_id)
-        }
-        course = catalog.get(planned.course_id)
+        course = course_service.planned_course_details(planned)
         if course is not None:
             rows.append(
                 {"planned": planned, "course": course, "catalog_id": planned.catalog_id}
@@ -319,7 +315,7 @@ def course_plan():
         year_summaries=year_summaries,
         prerequisite_checks=prerequisite_checks, study_warnings=study_warnings,
         planned_rows=rows,
-        catalogs=course_service.get_catalogs(),
+        catalogs={**course_service.get_catalogs(), 'browser': {'label': 'Your custom browser course'}},
     )
 
 

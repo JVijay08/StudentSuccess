@@ -31,7 +31,7 @@ def overdue_to_start(tasks, now=None) -> "list[dict]":
         - ``task.planned_start_at`` is not None
         - ``_as_utc(task.planned_start_at) < now``  (STRICTLY earlier; equal excluded)
         - ``task.started_at`` is None
-        - ``task.status != "completed"``
+        - ``task.status == "not_started"`` (status works with tracking off)
 
     For each match, ``overdue_amount = now - _as_utc(task.planned_start_at)``
     (a positive ``timedelta``).
@@ -51,9 +51,7 @@ def overdue_to_start(tasks, now=None) -> "list[dict]":
     for task in tasks:
         if task.planned_start_at is None:
             continue
-        if task.started_at is not None:
-            continue
-        if task.status == "completed":
+        if task.status != "not_started" or task.started_at is not None:
             continue
 
         planned_utc = _as_utc(task.planned_start_at)

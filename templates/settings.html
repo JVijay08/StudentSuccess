@@ -35,6 +35,8 @@
       </div><details class="settings-advanced"><summary>More dashboard options</summary>        <label>Recommendation wording<select name="recommendation_tone"><option value="neutral" {% if settings.recommendation_tone=='neutral' %}selected{% endif %}>Neutral</option><option value="direct" {% if settings.recommendation_tone=='direct' %}selected{% endif %}>Direct</option><option value="encouraging" {% if settings.recommendation_tone=='encouraging' %}selected{% endif %}>Encouraging</option></select></label><fieldset><legend>Hide optional dashboard cards</legend><div class="checks">{% for card in card_names %}<label class="check"><input type="checkbox" name="hidden_cards" value="{{ card }}" {% if card in settings.hidden_cards %}checked{% endif %}> {{ card|replace('-', ' ')|title }}</label>{% endfor %}</div></fieldset></details></div></details>
 
       <details class="settings-group"><summary>Task planning</summary><div class="settings-group-body"><div class="fields">
+        <label>Start and duration tracking<select name="time_tracking_enabled"><option value="yes" {% if settings.time_tracking_enabled %}selected{% endif %}>On</option><option value="no" {% if not settings.time_tracking_enabled %}selected{% endif %}>Off</option></select></label>
+        <p>When off, starting tasks changes their status without recording a start time. Time entry, timing analytics, and history-based recommendations are disabled. Planned starts remain available for scheduling. Existing history is kept; task completion dates are still saved.</p>
         <label>Default task duration<select name="default_task_minutes">{% for minutes in [15,25,30,45,60,90,120] %}<option value="{{ minutes }}" {% if settings.default_task_minutes==minutes %}selected{% endif %}>{{ minutes }} minutes</option>{% endfor %}</select></label>
         <label>Preferred work session<select name="work_session_minutes">{% for minutes in [15,20,25,30,45,50,60] %}<option value="{{ minutes }}" {% if settings.work_session_minutes==minutes %}selected{% endif %}>{{ minutes }} minutes</option>{% endfor %}</select></label>
         <label>Default start buffer<select name="start_buffer_days">{% for days in [0,1,2,3,5,7] %}<option value="{{ days }}" {% if settings.start_buffer_days==days %}selected{% endif %}>{{ days }} day{% if days != 1 %}s{% endif %} before</option>{% endfor %}</select></label>
@@ -70,7 +72,7 @@
         </section>
       {% endif %}
       <section class="account-group">
-        <div><h3>Data and privacy</h3><p>Download a copy of your preferences, tasks, and course plan, or clear completed-task history. Active tasks stay in your planner.</p></div>
+        <div><h3>Data and privacy</h3><p><a href="{{ url_for('browser_transfer.transfer') }}">Import a browser plan</a></p><p>Download a copy of your preferences, tasks, and course plan, or clear completed-task history. Active tasks stay in your planner.</p></div>
         <div class="account-actions"><a class="secondary-link" href="{{ nav_url('settings.export_data') }}">Download my data</a><form method="post" action="{{ url_for('settings.clear_history') }}" onsubmit="return confirm('Delete all completed-task history?')">{% include '_navigation_fields.html' %}<input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><button class="secondary" type="submit">Clear completed history</button></form></div>
       </section>
       <section class="account-group account-group-danger">

@@ -17,7 +17,7 @@ def parse_calendar(raw, timezone_name):
         if line == "BEGIN:VEVENT":
             fields = {}
         elif line == "END:VEVENT" and fields is not None:
-            if "SUMMARY" in fields and ("DUE" in fields or "DTSTART" in fields):
+            if "SUMMARY" in fields and ("DUE" in fields or "DTSTART" in fields) and fields.get("STATUS", ("", ""))[1] != "CANCELLED":
                 prop, value = fields.get("DUE", fields.get("DTSTART"))
                 tzid = next((p.split("=", 1)[1].strip('"') for p in prop.split(";")[1:] if p.startswith("TZID=")), timezone_name)
                 try:

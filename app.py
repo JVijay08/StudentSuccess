@@ -1,4 +1,4 @@
-﻿from pathlib import Path
+from pathlib import Path
 import os
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
@@ -59,6 +59,8 @@ def create_app(test_config=None):
     from services.college_directory import institution
     app.jinja_env.globals['college_by_id'] = institution
     app.register_blueprint(task_bp)
+    from routes.browser_transfer_routes import browser_transfer_bp
+    app.register_blueprint(browser_transfer_bp)
     from services.task_policy import MAX_TASK_MINUTES
     app.jinja_env.globals["MAX_TASK_MINUTES"] = MAX_TASK_MINUTES
 
@@ -196,11 +198,14 @@ def create_app(test_config=None):
 def _migrate_feedback_columns():
     """Additive migration; existing tasks, history, and preferences are retained."""
     additions = {
+        "planned_courses": {"imported_details": "JSON"},
         "users": {"email": "VARCHAR(254)", "auth_version": "INTEGER NOT NULL DEFAULT 0", "onboarding_completed": "BOOLEAN NOT NULL DEFAULT FALSE"},
-        "tasks": {"break_minutes": "INTEGER NOT NULL DEFAULT 0", "parent_task_id": "INTEGER REFERENCES tasks(id)", "external_uid": "VARCHAR(255)"},
-        "user_settings": {"academic_context": "VARCHAR(20) NOT NULL DEFAULT 'high_school'", "institution_id": "VARCHAR(12)",
+        "tasks": {"timing_excluded": "BOOLEAN NOT NULL DEFAULT FALSE", "break_minutes": "INTEGER NOT NULL DEFAULT 0", "parent_task_id": "INTEGER REFERENCES tasks(id)", "external_uid": "VARCHAR(255)"},
+        "user_settings": {"time_tracking_enabled": "BOOLEAN NOT NULL DEFAULT TRUE", "academic_context": "VARCHAR(20) NOT NULL DEFAULT 'high_school'", "institution_id": "VARCHAR(12)",
             "college_program": "VARCHAR(120) NOT NULL DEFAULT ''", "college_term": "VARCHAR(60) NOT NULL DEFAULT ''", "term_credit_goal": "FLOAT"},
         "term_courses": {
+            "browser_source_key": "VARCHAR(80)",
+            "imported_details": "JSON",
             "institution_id": "VARCHAR(12)", "enrollment_type": "VARCHAR(20) NOT NULL DEFAULT 'college'",
             "school_year": "INTEGER", "status": "VARCHAR(20) NOT NULL DEFAULT 'planned'",
             "course_code": "VARCHAR(32) NOT NULL DEFAULT ''", "credits": "FLOAT",

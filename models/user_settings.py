@@ -22,6 +22,7 @@ class UserSettings(db.Model):
     dashboard_mode = db.Column(db.String(20), nullable=False, default="standard")
     hidden_dashboard_cards = db.Column(db.String(200), nullable=False, default="")
     card_density = db.Column(db.String(20), nullable=False, default="comfortable")
+    time_tracking_enabled = db.Column(db.Boolean, nullable=False, default=True)
     default_task_minutes = db.Column(db.Integer, nullable=False, default=60)
     work_session_minutes = db.Column(db.Integer, nullable=False, default=25)
     start_buffer_days = db.Column(db.Integer, nullable=False, default=2)

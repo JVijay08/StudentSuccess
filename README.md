@@ -22,7 +22,7 @@ Choose **Start tutorial** on the live site for a guided, interactive practice wo
 - **College planning across institutions.** Organize courses by term, credits, requirement category, and study workload. Each course can belong to a different college. Search the bundled IPEDS 2024 directory of 5,994 institutions by name or state.
 - **Five-minute focus sessions.** Start a task with a short timer, pause or resume it, and work in a distraction-free view. Park distracting thoughts in per-tab notes; neither timer completion nor notes change task completion or recorded minutes.
 - **Progress feedback.** Review completed work, planned versus actual starts, and time estimates through summaries and graphs.
-- **Calendar tools.** Add a task deadline to Google Calendar, export active deadlines as an ICS file, or review assignments imported from a calendar file. These are manual copies, not automatic two-way sync.
+- **Calendar tools.** Add a task deadline to Google Calendar, export active deadlines as an ICS file, or preview school assignments from an HTTPS calendar URL or uploaded file. Paste the URL again to review new assignments and deadline changes. Incoming refresh is manual; completed work and unselected changes stay intact.
 - **Personalization and accessibility.** Required onboarding sets education context, timezone, study budget, and preferences. Light, dark, and high-contrast themes, adjustable text and spacing, focus settings, and reduced-motion support adapt the notebook interface.
 - **Control over account data.** Export your data, clear completed history, or delete your account from Settings.
 
@@ -50,7 +50,7 @@ Screenshots refreshed **September 30, 2026**, using isolated synthetic sample da
 
 Save your credentials: email password recovery is not available. Actual course names and everyday tasks are welcome; leave out full names, student IDs, contact details, and sensitive records. The entry acknowledgment is not automatic detection or redaction.
 
-The optional [/planner](https://studentsuccess.onrender.com/planner) workspace stores its plan in the browser. It is separate from server accounts and does not automatically sync with them. Legacy private-code users have a one-time transfer path; private codes are not the current sign-in method.
+The optional [/planner](https://studentsuccess.onrender.com/planner) workspace stores its plan in the browser. Choose **Copy this plan into an account** to preview and transfer tasks, subtasks, and courses. The browser copy stays intact; later changes do not automatically sync. Legacy private-code users have a separate one-time transfer path; private codes are not the current sign-in method.
 
 ## How recommendations work
 

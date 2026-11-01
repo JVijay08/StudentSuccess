@@ -1,2 +1,28 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Import assignments | StudentSuccess</title><link rel="stylesheet" href="{{ url_for('static',filename='css/tasks.css') }}">{% include '_accessibility_head.html' %}</head><body>{% include '_accessibility_body.html' %}<main id="main-content"><a href="{{ nav_url('tasks.tasks') }}">Back to tasks</a><h1>Import assignments from a calendar</h1><p>Upload an .ics file, preview events, then choose assignments. Import your actual course deadlines and tasks. Before uploading, remove full names, student IDs, contact details, private meeting links, and sensitive events from the file. Descriptions are not imported. Recurring events import only the listed occurrence.</p>{% if error %}<p role="alert">{{ error }}</p>{% endif %}
-{% if events %}<form method="post">{% include '_csrf_field.html' %}{% include '_navigation_fields.html' %}<input type="hidden" name="preview" value="{{ preview }}"><label>Estimated minutes per selected task<input type="number" name="estimated_minutes" min="1" max="{{ MAX_TASK_MINUTES }}" value="60" required></label>{% for event in events %}<label><input type="checkbox" name="selected" value="{{ loop.index0 }}" checked>{{ event.title }} · {{ event.due_at }}{% if event.recurring %} (one occurrence){% endif %}</label>{% endfor %}{% with privacy_confirmation_required=true %}{% include '_nonpersonal_confirmation.html' %}{% endwith %}<button name="confirm" value="yes">Import selected assignments</button></form>{% else %}<form method="post" enctype="multipart/form-data">{% include '_csrf_field.html' %}{% include '_navigation_fields.html' %}<label>Calendar file<input type="file" name="calendar" accept=".ics,text/calendar" required></label>{% with privacy_confirmation_required=true %}{% include '_nonpersonal_confirmation.html' %}{% endwith %}<button>Preview events</button></form>{% endif %}</main>{% include '_legal_footer.html' %}</body></html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Import assignments | StudentSuccess</title><link rel="stylesheet" href="{{ url_for('static',filename='css/tasks.css') }}">{% include '_accessibility_head.html' %}</head>
+<body>{% include '_accessibility_body.html' %}<main id="main-content">
+<a href="{{ nav_url('tasks.tasks') }}">Back to tasks</a><h1>Import or refresh school assignments</h1>
+<p>Paste a calendar download URL from your school system, or upload an .ics file. Preview first, then choose what to save. Maximum 1 MB and 200 events. Recurring events import only the listed occurrence.</p>
+<p>Only titles and deadlines are imported. Descriptions are ignored. Use a calendar without personal identifiers or sensitive events. Private calendar links can grant access to your calendar: they are used for this download and are not saved to your account.</p>
+{% if error %}<p role="alert">{{ error }}</p>{% endif %}
+{% if events %}
+<section class="panel"><h2>Review changes</h2><p>New assignments are selected. Updates are unchecked so you can review changed titles and deadlines. Existing estimates, task progress, and completed assignments stay intact. Missing events are not deleted.</p>
+<form method="post">{% include '_csrf_field.html' %}{% include '_navigation_fields.html' %}<input type="hidden" name="preview" value="{{ preview }}">
+<label>Estimated minutes for new assignments<input type="number" name="estimated_minutes" min="1" max="{{ MAX_TASK_MINUTES }}" value="60" required></label>
+{% for event in events %}<div class="calendar-review-event">
+<label><input type="checkbox" name="selected" value="{{ loop.index0 }}" {% if event.action == 'add' %}checked{% elif event.action == 'skip' %}disabled{% endif %}> <strong>{{ {'add':'Add', 'update':'Update', 'skip':'Keep existing'}[event.action] }}</strong>: {{ event.title }}</label>
+<p>Deadline: {{ event.due_at }}{% if event.recurring %} (one listed occurrence){% endif %}</p>
+{% if event.action == 'update' %}<p>Currently: {{ event.previous.title }} &mdash; {{ event.previous.due_at }}</p>{% endif %}
+</div>{% endfor %}
+{% with privacy_confirmation_required=true %}{% include '_nonpersonal_confirmation.html' %}{% endwith %}
+<button name="confirm" value="yes">Save selected assignments</button><a href="{{ url_for('tasks.import_calendar') }}">Cancel / preview another calendar</a>
+</form></section>
+{% else %}
+<section class="panel"><h2>Calendar URL</h2><form method="post">{% include '_csrf_field.html' %}
+<label>HTTPS calendar download URL<input name="feed_url" type="url" maxlength="4096" placeholder="https://school.example/calendar.ics" autocomplete="off" required></label>
+<p>Use the calendar subscription/export link, not the school login page. To refresh later, paste the same URL again and review changes. Refresh is manual.</p>
+{% with privacy_confirmation_required=true %}{% include '_nonpersonal_confirmation.html' %}{% endwith %}<button>Preview calendar URL</button></form></section>
+<section class="panel"><h2>Or upload a calendar file</h2><form method="post" enctype="multipart/form-data">{% include '_csrf_field.html' %}
+<label>Calendar file<input type="file" name="calendar" accept=".ics,text/calendar" required></label>
+{% with privacy_confirmation_required=true %}{% include '_nonpersonal_confirmation.html' %}{% endwith %}<button>Preview events</button></form></section>
+{% endif %}</main>{% include '_legal_footer.html' %}</body></html>

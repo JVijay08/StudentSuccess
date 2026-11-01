@@ -225,6 +225,20 @@ def get_course_by_id(course_id, catalog="ga"):
     return None
 
 
+def planned_course_details(planned):
+    """Resolve catalog courses or a student's imported custom course."""
+    if planned.catalog_id == 'browser' and planned.imported_details:
+        details = planned.imported_details
+        return dict(course_id=planned.course_id, course_name=details['title'], display_name=details['title'],
+                    subject='Custom course', workload_level=details.get('workload', 'Medium'),
+                    rigor_level=details.get('depth', 'Not rated'), prerequisites=[],
+                    weekly_hours=details['hours'], imported=True)
+    try:
+        return get_course_by_id(planned.course_id, planned.catalog_id)
+    except ValueError:
+        return None
+
+
 def get_courses_by_subject(subject, catalog="ga"):
     return [
         course

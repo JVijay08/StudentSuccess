@@ -8,11 +8,11 @@ def test_public_home_explains_real_use_and_offers_demo(app):
     response = app.test_client().get("/")
 
     assert response.status_code == 200
-    assert b"A student planner" in response.data
+    assert b"Your courses.<br>Your next assignment." in response.data
     assert b"Start tutorial" in response.data
-    assert b"No signup needed." in response.data
-    assert b"Plan your actual courses and tasks" in response.data
-    assert b"high school, college" in response.data
+    assert b"No account or credit card needed." in response.data
+    assert b"See what is due, choose what to start" in response.data
+    assert b"High school and college courses" in response.data
     assert b'property="og:image"' in response.data
     assert b'name="twitter:card" content="summary_large_image"' in response.data
 

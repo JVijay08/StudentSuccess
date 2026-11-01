@@ -38,6 +38,8 @@ def _flash_realism_warning(profile, task):
     user's typical start delay. Never blocks the save; only flashes a message
     when a warning string is returned.
     """
+    if not get_or_create_settings(g.current_user).time_tracking_enabled:
+        return
     completed = Task.query.filter_by(
         student_profile_id=profile.id, status="completed"
     ).all()
@@ -239,7 +241,7 @@ def tasks():
     completed_tasks = completed_tasks[(archive_page-1)*10:archive_page*10]
     work_items = [t for t in all_tasks if not t.children]
     progress_done = sum(t.status == 'completed' for t in work_items)
-    task_rows = suggestion_service.get_suggested_tasks(all_tasks)
+    task_rows = suggestion_service.get_suggested_tasks(all_tasks, use_history=settings.time_tracking_enabled)
     sort = request.args.get("sort", "recommended")
     if sort in {"due", "planned", "subject", "status"}:
         task_rows.sort(key=lambda row: ((utc(row["task"].due_at).isoformat() if sort == "due" else utc(row["task"].planned_start_at).isoformat() if sort == "planned" and row["task"].planned_start_at else "9999" if sort == "planned" else subject_key(row["task"].subject) if sort == "subject" else row["task"].status), row["task"].id))
@@ -252,11 +254,9 @@ def tasks():
             settings.relative_dates,
         )
     course_names = [course.title[:80] for course in TermCourse.query.filter_by(user_id=g.current_user.id).all()]
-    from services.course_service import load_courses
-    catalogs = {planned.catalog_id: {course["course_id"]: course for course in load_courses(planned.catalog_id)}
-                for planned in profile.planned_courses}
+    from services.course_service import planned_course_details
     for planned in profile.planned_courses:
-        course = catalogs.get(planned.catalog_id, {}).get(planned.course_id)
+        course = planned_course_details(planned)
         if course:
             course_names.append(course["display_name"][:80])
     outline = course_outline(all_tasks, task_rows, course_names)
@@ -397,7 +397,10 @@ def start_task(task_id):
         message += " Find the next recurring session in the task queue." if task.recurrence_rule else " Use Undo completion in the task queue if you need to reopen it."
         flash(message, "warning")
         return redirect(return_url("main.dashboard" if request.form.get("redirect_to") == "dashboard" else "tasks.tasks"))
-    if task.started_at is None:
+    tracking = get_or_create_settings(g.current_user).time_tracking_enabled
+    if not tracking:
+        task.timing_excluded = True
+    if task.status == "not_started" and task.started_at is None and tracking and not task.timing_excluded:
         task.started_at = datetime.now(timezone.utc)
     task.status = "in_progress"
     _sync_parent(task)
@@ -493,7 +496,10 @@ def complete_task(task_id):
     if any(child.status != "completed" for child in task.children):
         flash("Complete the remaining subtasks first.", "warning")
         return redirect(return_url("tasks.tasks"))
-    actual_minutes_raw = request.form.get("actual_minutes", "").strip()
+    tracking = get_or_create_settings(g.current_user).time_tracking_enabled
+    actual_minutes_raw = request.form.get("actual_minutes", "").strip() if tracking else ""
+    if not tracking:
+        task.timing_excluded = True
     if actual_minutes_raw:
         try:
             actual_minutes = int(actual_minutes_raw)
@@ -504,8 +510,6 @@ def complete_task(task_id):
             return redirect(return_url("tasks.tasks"))
         task.actual_minutes = actual_minutes
     now = datetime.now(timezone.utc)
-    if task.started_at is None:
-        task.started_at = now
     task.completed_at = now
     task.status = "completed"
     _sync_parent(task)
@@ -584,7 +588,7 @@ def _sync_parent(task):
     if parent is None:
         return
     children = parent.children
-    parent.status = "completed" if all(c.status == "completed" for c in children) else "in_progress" if any(c.started_at for c in children) else "not_started"
+    parent.status = "completed" if all(c.status == "completed" for c in children) else "in_progress" if any(c.status in {"in_progress", "completed"} for c in children) else "not_started"
     parent.completed_at = max((utc(c.completed_at) for c in children if c.completed_at), default=None) if parent.status == "completed" else None
     parent.started_at = min((utc(c.started_at) for c in children if c.started_at), default=None)
     total = sum(c.actual_minutes or 0 for c in children)
@@ -651,6 +655,9 @@ def import_calendar():
     from flask import current_app
     from itsdangerous import URLSafeTimedSerializer, BadData
     from services.calendar_import import parse_calendar
+    from services.calendar_fetch import fetch_calendar
+    from services.calendar_review import review_events, fingerprint
+    from services.account_policy import allow_attempt
     profile = g.current_user.profile
     if profile is None:
         return redirect(url_for("profile.onboarding"))
@@ -669,30 +676,56 @@ def import_calendar():
                 if not 1 <= minutes <= MAX_TASK_MINUTES:
                     raise ValueError("Enter a valid duration.")
                 selected = {int(i) for i in request.form.getlist("selected")}
-                existing = {t.external_uid for t in profile.tasks if t.external_uid}
-                count = 0
+                if not selected <= set(range(len(payload['events']))):
+                    raise ValueError('Choose assignments from this preview.')
+                from models import User
+                db.session.query(User).filter_by(id=g.current_user.id).with_for_update().one()
+                existing = {t.external_uid: t for t in Task.query.filter_by(student_profile_id=profile.id).all() if t.external_uid}
+                count, updated, skipped = 0, 0, 0
                 for index, event in enumerate(payload["events"]):
-                    if index not in selected or event["uid"] in existing:
+                    if index not in selected:
                         continue
-                    db.session.add(Task(student_profile_id=profile.id, title=event["title"],
+                    current = existing.get(event['uid'])
+                    if current:
+                        if (event.get('action') == 'update' and current.status != 'completed'
+                                and event.get('baseline') == fingerprint(current)):
+                            current.title = event['title']
+                            current.due_at = datetime.fromisoformat(event['due_at'])
+                            updated += 1
+                        else:
+                            skipped += 1
+                        continue
+                    if event.get('action', 'add') != 'add':
+                        skipped += 1
+                        continue
+                    added = Task(student_profile_id=profile.id, title=event["title"],
                         due_at=datetime.fromisoformat(event["due_at"]), estimated_minutes=minutes,
-                        difficulty="medium", interest_level="medium", external_uid=event["uid"]))
-                    existing.add(event["uid"])
+                        difficulty="medium", interest_level="medium", external_uid=event["uid"])
+                    db.session.add(added)
+                    existing[event['uid']] = added
                     count += 1
                 db.session.commit()
-                flash(f"Imported {count} assignments. Previously imported events were skipped.", "success")
+                flash(f"Imported {count} assignments; updated {updated}; skipped {skipped}. Completed, unchanged, or changed-since-preview assignments are kept.", "success")
                 return redirect(url_for("tasks.tasks"))
             upload = request.files.get("calendar")
-            if not upload:
-                raise ValueError("Choose an .ics file.")
-            if not (upload.filename or '').lower().endswith('.ics') or upload.mimetype not in {
-                'text/calendar', 'application/ics', 'text/plain', 'application/octet-stream'
-            }:
-                from services.security_events import security_event
-                security_event('upload_type_rejected', user_id=g.current_user.id)
-                raise ValueError('Choose an .ics calendar file.')
-            events = parse_calendar(upload.read(1024 * 1024 + 1), get_or_create_settings(g.current_user).timezone_name)
+            feed_url = request.form.get('feed_url', '').strip()
+            if feed_url:
+                if not allow_attempt(str(g.current_user.id), 'calendar-fetch', limit=20):
+                    raise ValueError('Too many calendar downloads. Try again in 15 minutes.')
+                raw = fetch_calendar(feed_url)
+            else:
+                if not upload or not (upload.filename or '').lower().endswith('.ics') or upload.mimetype not in {
+                    'text/calendar', 'application/ics', 'text/plain', 'application/octet-stream'
+                }:
+                    raise ValueError('Choose an .ics calendar file or paste an HTTPS calendar URL.')
+                raw = upload.read(1024 * 1024 + 1)
+            events = review_events(parse_calendar(raw, get_or_create_settings(g.current_user).timezone_name), profile.tasks)
             preview = signer.dumps({"user": g.current_user.id, "events": events})
-        except (ValueError, UnicodeError, BadData):
-            error = "Could not import this calendar. Confirm that personal identifiers and sensitive details have been removed, use valid dates and durations, and keep the file below 1 MB and 200 events. Expired previews must be uploaded again."
+        except BadData:
+            error = 'Could not import this calendar. This preview expired or is invalid. Preview the calendar again.'
+        except UnicodeError:
+            error = 'Could not import this calendar. Use a UTF-8 .ics calendar with valid dates.'
+        except ValueError as exc:
+            detail = str(exc) if str(exc) and not str(exc).startswith('invalid literal') else 'Enter valid selections and a duration from 1 to 10,080 minutes.'
+            error = 'Could not import this calendar. ' + detail
     return render_template("calendar_import.html", events=events, preview=preview, error=error)

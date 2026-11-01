@@ -6,8 +6,8 @@
   <meta name="theme-color" content="#18283d">
   <title>{{ seo.title }}</title>
   {% include '_accessibility_head.html' %}
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css', v='20261010-notebook-card') }}">
-  <script src="{{ url_for('static', filename='js/landing.js', v='20261010') }}" defer></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css', v='20261014-preview') }}">
+  <script src="{{ url_for('static', filename='js/landing.js', v='20261014-preview') }}" defer></script>
 </head>
 <body class="fieldnotes-landing">
   {% include '_accessibility_body.html' %}
@@ -19,11 +19,11 @@
 
     <section class="landing-hero" aria-labelledby="landing-title">
       <div class="landing-intro">
-        <h1 id="landing-title">A student planner<br>for your coursework.</h1>
-        <p class="landing-lede">Keep your course plan and everyday assignments in the same place.</p>
-        <p>Compare classes, divide a research paper into steps, or figure out which assignment to start tonight.</p>
+        <h1 id="landing-title">Your courses.<br>Your next assignment.</h1>
+        <p class="landing-lede">See what is due, choose what to start, and keep your course plan nearby.</p>
+
         <div class="landing-actions"><form method="post" action="{{ url_for('tutorial.start') }}">{% include '_navigation_fields.html' %}<input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><button class="primary-action">Start tutorial</button></form><a href="{{ nav_url('auth.register') }}">Create an account</a></div>
-        <p class="landing-small">Try a sample planner. No signup needed.</p>
+        <p class="landing-small">The tutorial is free to try. No account or credit card needed.</p>
       </div>
       <div class="landing-notebook" aria-label="Interactive example planner">
         <div class="notebook-heading"><strong>Your working notebook</strong><span>Example planner</span></div>
@@ -32,21 +32,21 @@
           <p class="landing-small">START HERE</p><h2>Draft your introduction</h2><p>Composition &middot; 45 minutes &middot; Due tonight</p>
           <p class="notebook-reason">A deadline within 24 hours puts this near the top. See why a task is recommended before you begin.</p>
           <div class="notebook-row"><strong>Review biology notes</strong><span>30 min &middot; Tomorrow</span></div>
-          <div class="notebook-row"><strong>Research paper</strong><span>2 of 5 steps complete</span></div>
+          <div class="notebook-row"><strong>Research paper</strong><span data-sample-count>2 of 5 steps complete</span></div>
           <label class="landing-small" for="sample-progress">Research paper progress</label><progress id="sample-progress" value="2" max="5">2 of 5 steps</progress>
         </section>
-        <section id="preview-steps" class="notebook-page" hidden><p class="landing-small">ONE ASSIGNMENT, SMALLER STEPS</p><h2>Research paper</h2><p>A big deadline becomes a few places to begin.</p><ol class="sample-steps"><li><s>Choose a topic</s><span>Done</span></li><li><s>Collect sources</s><span>Done</span></li><li><strong>Write an outline</strong><span>Next &middot; 30 min</span></li><li>Draft the paper<span>60 min</span></li><li>Revise and cite sources<span>45 min</span></li></ol></section>
+        <section id="preview-steps" class="notebook-page" hidden><h2>Turn a paper into steps</h2><p class="sample-prompt">&ldquo;Research paper due next Friday&rdquo;</p><button type="button" id="sample-draft" hidden>Show example breakdown</button><div id="sample-draft-result"><p class="landing-small">Example AI draft. Check off a step to try it.</p><ul class="sample-steps">{% for title in ['Choose a topic', 'Collect sources', 'Write an outline', 'Draft the paper', 'Revise and cite sources'] %}<li><label><input type="checkbox" data-sample-step disabled{% if loop.index <= 2 %} checked{% endif %}> <span>{{ title }}</span></label></li>{% endfor %}</ul></div><p id="sample-status" class="landing-small" role="status">2 of 5 steps complete</p></section>
         <section id="preview-courses" class="notebook-page" hidden><p class="landing-small">YOUR COURSES, TOGETHER</p><h2>A semester that fits</h2><p>High school and college courses can share one plan.</p><div class="notebook-row"><strong>AP Biology</strong><span>High school</span></div><div class="notebook-row"><strong>English Composition I</strong><span>Dual enrollment &middot; 3 credits</span></div><div class="notebook-row"><strong>Precalculus</strong><span>High school</span></div><p class="notebook-reason">Compare workload before adding another course. Confirm requirements with your school counselor.</p></section>
-        <p class="notebook-footnote">Sample content. Your planner starts with your own courses and tasks.</p>
+        <p class="notebook-footnote">Interactive sample only. Nothing here is saved or sent to AI.</p>
       </div>
     </section>
 
     <section id="features" class="landing-section" aria-labelledby="features-title" tabindex="-1">
-      <div class="section-heading"><div><h2 id="features-title">Plan your semester.<br>Keep up with assignments.</h2><p>Built for high school, college, and students taking both.</p></div></div>
+      <div class="section-heading"><div><h2 id="features-title">What are you working on?</h2><p>A semester of classes, a paper due Friday, or tonight's homework.</p></div></div>
       <dl class="landing-feature-list">
-        <div><dt><svg class="feature-sketch" viewBox="0 0 72 50" aria-hidden="true" focusable="false"><rect x="5" y="6" width="62" height="38" rx="4"/><path d="M5 17h62M25 17v27M46 17v27"/><path class="sketch-accent" d="M11 24h8v6h-8zM31 33h9v6h-9zM52 24h9v6h-9z"/></svg><span>High school and college courses</span></dt><dd>Compare high-school options, add dual enrollment, or organize college courses by term and institution.</dd></div>
-        <div><dt><svg class="feature-sketch" viewBox="0 0 72 50" aria-hidden="true" focusable="false"><rect x="6" y="5" width="60" height="40" rx="4"/><path d="M29 15h26M29 25h20M29 35h24"/><path class="sketch-check" d="m13 14 3 3 6-6m-9 14 3 3 6-6"/><rect x="13" y="32" width="7" height="7" rx="1"/></svg><span>Projects and smaller steps</span></dt><dd>Create tasks and smaller steps yourself, or review an optional AI draft before saving.</dd></div>
-        <div><dt><svg class="feature-sketch" viewBox="0 0 72 50" aria-hidden="true" focusable="false"><circle cx="36" cy="26" r="18"/><path d="M31 3h10M36 3v5M51 11l4-4"/><path class="sketch-check" d="M36 14v12l8 5"/><circle class="sketch-accent" cx="36" cy="26" r="2"/></svg><span>A queue with reasons</span></dt><dd>See why a task comes first, try five minutes of focus, and reschedule when plans change.</dd></div>
+        <div><dt><svg class="feature-sketch" viewBox="0 0 72 50" aria-hidden="true" focusable="false"><rect x="5" y="6" width="62" height="38" rx="4"/><path d="M5 17h62M25 17v27M46 17v27"/><path class="sketch-accent" d="M11 24h8v6h-8zM31 33h9v6h-9zM52 24h9v6h-9z"/></svg><span>High school and college courses</span></dt><dd>Keep AP Biology and a college English class in the same plan. Compare workload before choosing another class.</dd></div>
+        <div><dt><svg class="feature-sketch" viewBox="0 0 72 50" aria-hidden="true" focusable="false"><rect x="6" y="5" width="60" height="40" rx="4"/><path d="M29 15h26M29 25h20M29 35h24"/><path class="sketch-check" d="m13 14 3 3 6-6m-9 14 3 3 6-6"/><rect x="13" y="32" width="7" height="7" rx="1"/></svg><span>Projects and smaller steps</span></dt><dd>Give a research paper a deadline, then split it into research, writing, and revision. Edit any AI suggestions before saving.</dd></div>
+        <div><dt><svg class="feature-sketch" viewBox="0 0 72 50" aria-hidden="true" focusable="false"><circle cx="36" cy="26" r="18"/><path d="M31 3h10M36 3v5M51 11l4-4"/><path class="sketch-check" d="M36 14v12l8 5"/><circle class="sketch-accent" cx="36" cy="26" r="2"/></svg><span>A queue with reasons</span></dt><dd>Open Today to pick an assignment. Start with five minutes, or move its planned start when your day changes.</dd></div>
       </dl>
       <a href="{{ url_for('seo.features') }}">Explore all features &amp; FAQ &rarr;</a>
     </section>
@@ -58,8 +58,8 @@
         <p class="landing-small">Independent Student Developer</p>
       </div>
       <div>
-        <p>StudentSuccess grew from a simple challenge: helping students decide what to work on next and why. Jayesh independently designed, built, and launched the platform to make academic planning more manageable and personalized.</p>
-        <p>Built with Python, Flask, JavaScript, and PostgreSQL, StudentSuccess helps students prioritize assignments, organize coursework, and adapt their schedules. User feedback has guided ongoing improvements to usability, task planning, and personalized recommendations.</p>
+        <p>I'm Jayesh Vijay, a high school student interested in computer science. I designed, built, and launched StudentSuccess to help students decide what to work on next and keep their coursework organized.</p>
+        <p>I built it with Python, Flask, JavaScript, and PostgreSQL. Feedback from students has shaped the task planner, course options, and layout. I'm continuing to improve the parts that make everyday planning harder than it needs to be.</p>
         <nav class="developer-links" aria-label="Developer links">
           <a href="https://github.com/JVijay08/StudentSuccess" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .5C5.65.5.5 5.75.5 12.23c0 5.18 3.3 9.57 7.87 11.12.58.11.79-.26.79-.57v-2.17c-3.2.71-3.87-1.39-3.87-1.39-.52-1.36-1.28-1.72-1.28-1.72-1.05-.74.08-.72.08-.72 1.16.08 1.77 1.22 1.77 1.22 1.03 1.81 2.7 1.29 3.36.99.1-.77.4-1.29.73-1.59-2.55-.3-5.23-1.31-5.23-5.82 0-1.29.45-2.34 1.2-3.17-.12-.3-.52-1.5.11-3.12 0 0 .98-.32 3.2 1.21a11.13 11.13 0 015.82 0c2.22-1.53 3.2-1.21 3.2-1.21.63 1.62.23 2.82.11 3.12.75.83 1.2 1.88 1.2 3.17 0 4.52-2.68 5.52-5.24 5.81.41.36.78 1.08.78 2.18v3.23c0 .32.21.69.8.57a11.74 11.74 0 007.13-10.89C23.5 5.75 18.35.5 12 .5z"/></svg>

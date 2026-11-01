@@ -57,7 +57,7 @@ def bonus_reason(task, averages_by_group):
     return f"you start {group} tasks about {round(avg)} hr late on average"
 
 
-def get_suggested_tasks(tasks, now=None):
+def get_suggested_tasks(tasks, now=None, *, use_history=True):
     """Combined ranking layered on ``priority_service``.
 
     Steps:
@@ -76,7 +76,7 @@ def get_suggested_tasks(tasks, now=None):
     """
     now = now or datetime.now(timezone.utc)
     tasks = list(tasks)
-    averages = delay_service.average_start_delay_by_group(tasks)
+    averages = delay_service.average_start_delay_by_group(tasks) if use_history else {}
 
     active = [task for task in tasks if task.status != "completed" and not getattr(task, "children", [])]
     base_rows = priority_service.get_prioritized_tasks(active, now=now)
