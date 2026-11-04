@@ -15,7 +15,7 @@
 <dialog id="park-dialog" aria-labelledby="park-heading">
 <div class="focus-dialog-top"><h2 id="park-heading">Park it for later</h2><button type="button" class="secondary" id="park-close">Close</button></div>
 <p>Saved only in this browser tab. Closing the tab normally clears these notes; browser session restoration may retain them. Use Clear all thoughts to remove them now. They are not sent to AI or included in account exports. Avoid sensitive information.</p>
-<form id="park-form"><label for="park-text">What's on your mind?</label><textarea id="park-text" maxlength="300" rows="3" required></textarea><button>Save thought</button></form>
+<form id="park-form"><label for="park-text">What's on your mind?</label><textarea id="park-text" maxlength="300" rows="3" required></textarea><button>Save thought</button><button type="button" class="secondary" id="park-to-task">Review as a task</button><p class="focus-help">Tab-only notes, not a permanent notebook. Press <kbd>Esc</kbd> to close. Review as a task opens a draft; nothing is saved to your account until you submit it.</p></form>
 <p id="park-status" role="status"></p><ul id="park-list"></ul><button type="button" class="secondary" id="park-clear">Clear all thoughts</button>
 </dialog>
 <script type="application/json" id="focus-initial">{{ session.pop('focus_starter', none)|tojson }}</script>

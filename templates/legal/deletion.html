@@ -1,5 +1,5 @@
 <p>You can remove your saved account data directly. You do not need to submit a separate request or wait for someone to approve it.</p>
-<h2>Delete your account</h2>
+<h2>Delete your account</h2><p><a class="button" href="{{ url_for('settings.export_data') }}">Download account data (JSON)</a></p><p>Sign in to download a copy before deleting. Browser-only plans require a separate browser backup.</p>
 <ol><li><a href="{{ url_for('auth.login') }}">Sign in</a> to your account.</li><li>Open <a href="{{ url_for('settings.settings') }}#account-privacy">Settings → Account and privacy</a>. Export your data first if you want a copy.</li><li>Under Delete account, enter your current password and confirm deletion.</li></ol>
 <p>This removes the account, profile, tasks and subtasks, course plans, preferences, AI drafts, and signup acknowledgment from the active application database. It signs you out and cannot be undone through the app. Infrastructure logs and backups have separate retention controls, as explained in the <a href="{{ url_for('legal.notice', page='privacy') }}">privacy policy</a>.</p>
 <h2>Other copies of your plan</h2>

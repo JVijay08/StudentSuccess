@@ -319,6 +319,27 @@ def course_plan():
     )
 
 
+@course_bp.post('/courses/plan/<int:planned_course_id>/move')
+@login_required
+def move_year(planned_course_id):
+    from sqlalchemy.exc import IntegrityError
+    planned = db.get_or_404(PlannedCourse, planned_course_id)
+    if planned.student_profile.user_id != g.current_user.id:
+        abort(404)
+    year = request.form.get('school_year', type=int)
+    if year not in {9, 10, 11, 12}:
+        flash('Choose a grade from 9 through 12.', 'error')
+    else:
+        planned.school_year = year
+        try:
+            db.session.commit()
+            flash('Course moved. Review the updated workload and preparation notes.', 'success')
+        except IntegrityError:
+            db.session.rollback()
+            flash('That course is already planned in the selected grade. Both existing entries were kept.', 'error')
+    return redirect(return_url('courses.course_plan'))
+
+
 @course_bp.get("/courses/compare")
 @login_required
 def course_compare():

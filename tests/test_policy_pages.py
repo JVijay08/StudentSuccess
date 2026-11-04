@@ -16,7 +16,8 @@ def test_notices_public_and_available_during_onboarding(app):
     register(client)
     for path in paths:
         assert client.get(path).status_code == 200
-    assert b'not a monitored address' in client.get('/privacy').data
+    assert b'A private support channel is not configured yet' in client.get('/privacy').data
+    assert b'privacy@example.com' not in client.get('/privacy').data
     assert b'Georgia, United States' in client.get('/privacy').data
     assert client.get('/dashboard').status_code == 302  # Onboarding still enforced.
 

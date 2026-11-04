@@ -1,5 +1,5 @@
 <p>StudentSuccess is an independent academic planning project operated from Georgia, United States. This notice describes the current website, including optional AI planning.</p>
-<h2>What we store and why</h2>
+<aside class="feature-note"><strong>At a glance</strong><ul><li>No email or legal name required at signup.</li><li>No advertising or analytics tracking in this application.</li><li>Export and delete your account data in Settings. AI sharing is optional.</li></ul></aside><h2>What we store and why</h2>
 <ul>
 <li><strong>Your account:</strong> a username, a one-way password hash, account timestamps, and security settings. New accounts do not require an email address, legal name, student ID, or date of birth. We record the version and time of your signup acknowledgment.</li>
 <li><strong>Your plan:</strong> tasks, deadlines, work estimates and timing history, subtasks, courses, institutions, and the planning preferences you enter. Academic profile fields and free text can be personal information even when you use a nickname. Enter only what you need for planning.</li>
@@ -16,7 +16,7 @@
 <h2>How long information stays</h2>
 <p>Saved planner data remains until you remove it or delete your account. AI drafts expire after 30 minutes and expired drafts are removed during a subsequent AI request; discarding a draft removes it immediately. Applying a draft clears its generated preview steps, while the tasks you approve remain in your plan. Short-lived security counters are periodically cleaned during relevant requests.</p>
 <p>Account deletion removes the active account and its associated planner records. Hosting logs, provider records, and any infrastructure backups have separate retention controls; deletion from the active application is not a promise of immediate erasure from every provider or backup. The project has not yet published a verified infrastructure backup retention period.</p>
-<h2>Your controls</h2>
+<h2>Your controls</h2><p><a href="{{ url_for('settings.settings') }}#account-privacy">Open Settings to export or delete account data</a></p>
 <p>You can edit your plan, export your account data, clear completed-task history, or delete your account in Settings. The browser-only planner is stored separately on your device. See <a href="{{ url_for('legal.notice', page='data-deletion') }}">Your data &amp; deletion</a> and the <a href="{{ url_for('legal.notice', page='cookies') }}">storage policy</a> for instructions.</p>
 <h2>Age and school use</h2>
 <p>Accounts are intended for students aged 13 or older. Do not create an account if you are under 13. We do not offer verified parental consent or a service designed for children under 13. If we learn that an under-13 child has provided account data, we will take steps to remove it. StudentSuccess is not a school information system; do not upload protected education records.</p>
@@ -24,4 +24,6 @@
 {% include 'legal/_contact.html' %}
 <p>This page will be updated when practices change. Check the effective date above. These notices describe this project; they do not certify compliance with every law or replace rights you have under applicable law.</p>
 
-<h2>Calendar subscriptions</h2><p>If you create a private calendar link, anyone with that link can read your active task titles and deadlines. We store a hash of its access token. You can revoke or replace the link on the Calendar page. Your calendar provider may retain previously retrieved events; remove that subscribed calendar there to clear its copies.</p>
+<h2>Calendar subscriptions</h2><p><a href="{{ url_for('settings.calendar_help') }}">Review or revoke calendar subscriptions</a></p><p>If you create a private calendar link, anyone with that link can read your active task titles and deadlines. We store a hash of its access token. You can revoke or replace the link on the Calendar page. Your calendar provider may retain previously retrieved events; remove that subscribed calendar there to clear its copies.</p>
+
+<details><summary>Where does data go when I use a feature?</summary><ul><li>Account tasks and courses: stored on the hosted server.</li><li>Browser planner: stays on this device unless you explicitly preview and save a transfer.</li><li>AI drafting: sends the text and options you approve to Groq.</li><li>School calendar import: downloads the URL you submit; the URL is not saved to your account.</li><li>Calendar subscriptions: shares active deadlines with anyone holding your private link until you revoke it.</li><li>Focus timer and parked thoughts: stay in this browser tab.</li></ul></details>

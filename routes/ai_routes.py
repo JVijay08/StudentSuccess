@@ -85,7 +85,7 @@ def new_assignment():
                     expires_at=datetime.now(timezone.utc)+timedelta(minutes=30))
                 db.session.add(draft); db.session.commit()
                 return redirect(url_for("ai.review", draft_id=draft.id))
-    return render_template("ai_new_legacy.html" if request.args.get("classic") == "1" else "ai_new.html", values=values, errors=errors, available=available)
+    return render_template("ai_new_legacy.html" if request.args.get("classic") == "1" else "ai_new.html", values=values, errors=errors, available=available, remaining=ai.remaining_requests(g.current_user.id))
 
 
 @ai_bp.route("/tasks/<int:task_id>/ai", methods=["GET", "POST"])

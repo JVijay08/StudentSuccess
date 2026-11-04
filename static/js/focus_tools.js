@@ -32,9 +32,15 @@
   pause.addEventListener('click',()=>{state.remaining=remaining();state.paused=!state.paused;if(!state.paused)state.end=Date.now()+state.remaining;save(key,state);render();});
   document.getElementById('focus-more').addEventListener('click',()=>{if(!state)return;state.end=Date.now()+300000;state.remaining=300000;state.paused=false;save(key,state);render();});
   document.getElementById('focus-end').addEventListener('click',()=>{state=null;try{sessionStorage.removeItem(key);}catch{}focus.close();render();});
+  function draftThought(text){
+    if(!text.trim()){input.focus();return;}
+    try{sessionStorage.setItem(key+'-task-draft',text.trim());window.location.assign('/tasks#task-form');}
+    catch(_){document.getElementById('park-status').textContent='Browser storage is unavailable. Copy your thought and add a task manually.';}
+  }
+  document.getElementById('park-to-task').addEventListener('click',()=>draftThought(input.value));
   function renderNotes(){
     const list=document.getElementById('park-list');list.replaceChildren();
-    notes.forEach((text,i)=>{const li=document.createElement('li'),span=document.createElement('span'),button=document.createElement('button');span.textContent=text;button.type='button';button.className='secondary';button.textContent='Remove';button.setAttribute('aria-label','Remove thought '+(i+1));button.addEventListener('click',()=>{notes.splice(i,1);save(notesKey,notes);renderNotes();input.focus();});li.append(span,button);list.append(li);});
+    notes.forEach((text,i)=>{const li=document.createElement('li'),span=document.createElement('span'),button=document.createElement('button');span.textContent=text;button.type='button';button.className='secondary';button.textContent='Remove';button.setAttribute('aria-label','Remove thought '+(i+1));button.addEventListener('click',()=>{notes.splice(i,1);save(notesKey,notes);renderNotes();input.focus();});const draft=document.createElement('button');draft.type='button';draft.className='secondary';draft.textContent='Review as a task';draft.setAttribute('aria-label','Review thought '+(i+1)+' as a task');draft.addEventListener('click',()=>draftThought(text));li.append(span,draft,button);list.append(li);});
     document.getElementById('park-clear').hidden=notes.length===0;
   }
   document.querySelectorAll('[data-park-open]').forEach(b=>b.addEventListener('click',()=>{previousPark=document.activeElement;renderNotes();park.showModal();input.focus();}));

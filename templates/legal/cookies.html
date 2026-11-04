@@ -1,5 +1,5 @@
 <p>The current site uses storage for sign-in and features you choose. It has no advertising or analytics cookies and no tracking SDKs. There is no optional tracking to accept or reject, so we do not display a cookie-consent banner.</p>
-<h2>What is stored in your browser</h2>
+<p class="feature-note"><strong>No advertising or analytics cookies.</strong> Essential sign-in storage and optional local planner features are described below.</p><h2>What is stored in your browser</h2>
 <dl>
 <dt>Session cookie (<code>session</code>)</dt><dd>Keeps you signed in, protects forms, and remembers session/tutorial state. It is signed, HTTP-only, and SameSite=Lax; production uses HTTPS-only cookies. The cookie can last up to 30 days, refreshed by activity. The planner enforces your shorter inactivity setting unless you select Keep me signed in on this device. That option allows up to 30 days of inactivity on that browser. Signing out clears the authenticated session. Blocking cookies prevents account features from working.</dd>
 <dt>Browser-only planner (<code>studentsuccess.local-plan.v1</code>)</dt><dd>Stores the plan you choose to keep on this browser. It is not automatically synced to a server account. It remains until you use the planner's erase control or clear this site's browser data.</dd>
@@ -10,3 +10,5 @@
 <h2>Control storage</h2>
 <p>Use your browser's site settings to clear cookies and local storage for this domain. Clearing them signs you out and may permanently remove a browser-only plan. Export that plan first if you want to keep it. Clearing browser storage does not delete your server account; use <a href="{{ url_for('legal.notice', page='data-deletion') }}">account deletion</a> for that.</p>
 <p>If optional tracking is introduced later, this policy and the relevant controls must change before it is enabled.</p>
+
+<section data-storage-inspector hidden><h2>Storage on this browser</h2><p data-storage-status role="status"></p><button type="button" data-local-backup>Download browser-plan backup</button><p>This check stays on your device. It cannot inspect the HTTP-only session cookie and does not verify whether you are signed in.</p></section><p>To manage site data, open your browser's site-information menu beside the address or its privacy settings. Download your browser plan before clearing site storage.</p>

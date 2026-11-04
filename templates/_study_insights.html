@@ -1,0 +1,12 @@
+<details class="panel study-insights"><summary>Progress charts</summary>
+<p>Assignments with steps are counted through their steps, so work is not counted twice.</p>
+{% if insights.total %}<div class="insight-overview"><div class="completion-donut" aria-hidden="true" style="--done:{{ insights.done_pct }}%;--active:{{ insights.active_end_pct }}%"></div>
+<div><h2>Task completion</h2><ul><li>{{ insights.completed }} completed</li><li>{{ insights.in_progress }} in progress</li><li>{{ insights.pending }} not started</li></ul><p>{{ insights.total }} total tasks and steps.</p></div></div>
+<details><summary>Work by course ({{ insights.courses|length }})</summary>{% for row in insights.courses %}<div class="insight-row"><strong>{{ row.name }}</strong><progress max="{{ row.completed + row.active }}" value="{{ row.completed }}" aria-label="{{ row.name }} tasks completed">{{ row.completed }}</progress><span>{{ row.completed }} complete / {{ row.completed + row.active }} total</span></div>{% endfor %}</details>
+{% else %}<p>Add your first task to see your progress here.</p>{% endif %}
+{% if settings.time_tracking_enabled %}
+<h2>Recorded work this week</h2><p>{{ insights.weekly_hours }} hours recorded / {{ insights.budget }} hour weekly study budget.</p>{% if insights.budget %}<progress max="100" value="{{ insights.weekly_pct }}" aria-label="Recorded work as a share of weekly study budget">{{ insights.weekly_pct }}%</progress>{% endif %}
+<p>Counts manually recorded minutes on tasks completed since {{ insights.week_start }}, in {{ settings.timezone_name }}. Work is assigned to its completion date; unrecorded work and timer sessions are not included.</p>
+<details><summary>Estimated vs. recorded minutes by course</summary><p>Both bars use the same scale and the same completed tasks with recorded minutes. Solid: estimated; striped: recorded.</p>
+{% for row in insights.courses if row.measured %}<div class="insight-row"><strong>{{ row.name }} ({{ row.measured }} tasks)</strong><div class="insight-bars" aria-hidden="true"><i style="width:{{ row.estimated_width }}%"></i><i class="recorded" style="width:{{ row.actual_width }}%"></i></div><span>{{ row.estimated }} estimated / {{ row.actual }} recorded min</span></div>{% else %}<p>Record minutes when completing a task to compare your estimates.</p>{% endfor %}</details>
+{% endif %}</details>

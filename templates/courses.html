@@ -24,7 +24,7 @@
         {% if nav_back_label() != 'Back to four-year plan' %}<a class="button" href="{{ nav_url('courses.course_plan') }}">My Four-Year Plan</a>{% endif %}
       </div>
     </header>
-    <details class="catalog-guidance"><summary>About course estimates and credit</summary><p>U.S. high-school planning with optional college courses. Academic depth describes content level; time commitment is a planning estimate. Check course availability, prerequisites, and dual-enrollment credit with your school and college.</p></details>
+    {% for item in course_capacity if item.hours > item.budget %}<p class="feature-note">{% if item.year %}Grade {{ item.year }}: {% endif %}{{ item.term }} has {{ item.hours|round(1) }} college study hours/week, above your {{ item.budget|round(1) }} hour budget. <a href="#college-entry">Review course hours</a></p>{% endfor %}<details class="catalog-guidance"><summary>About course estimates and credit</summary><p>U.S. high-school planning with optional college courses. Academic depth describes content level; time commitment is a planning estimate. Check course availability, prerequisites, and dual-enrollment credit with your school and college.</p></details>
     {% with messages = get_flashed_messages(with_categories=true) %}
       {% if messages %}
         <div class="flash" role="status">
@@ -73,7 +73,7 @@
         </form>
       </details>
 
-      <section class="results-panel"><details class="catalog-guidance"><summary>Catalog coverage: {{ catalogs[catalog_id].label }}</summary><p class="catalog-note"><strong>{{ catalogs[catalog_id].label }}</strong> &mdash; {{ catalog_note }}</p>{% if excluded_count %}<p class="catalog-note">{{ excluded_count }} imported entries are awaiting source verification and are excluded from these results. Existing saved courses are retained.</p>{% endif %}
+      <section class="results-panel">{% for item in course_capacity if item.hours > item.budget %}<p class="feature-note">{% if item.year %}Grade {{ item.year }}: {% endif %}{{ item.term }} has {{ item.hours|round(1) }} college study hours/week, above your {{ item.budget|round(1) }} hour budget. <a href="#college-entry">Review course hours</a></p>{% endfor %}<details class="catalog-guidance"><summary>Catalog coverage: {{ catalogs[catalog_id].label }}</summary><p class="catalog-note"><strong>{{ catalogs[catalog_id].label }}</strong> &mdash; {{ catalog_note }}</p>{% if excluded_count %}<p class="catalog-note">{{ excluded_count }} imported entries are awaiting source verification and are excluded from these results. Existing saved courses are retained.</p>{% endif %}
         {% if state_code and catalog_id == 'national' %}<div class="catalog-note state-note">No verified local catalog is loaded for this state yet. Showing the national reference catalog instead.</div>{% endif %}
         </details>
         {% include '_course_budget.html' %}

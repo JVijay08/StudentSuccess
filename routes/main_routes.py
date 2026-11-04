@@ -300,9 +300,16 @@ def dashboard():
                 ]
 
     today_rows, overdue_rows = daily_task_rows(prioritized_tasks, settings.timezone_name)
+    from services.study_insights import study_insights
+    tomorrow = datetime.now(ZoneInfo(settings.timezone_name)).date() + timedelta(days=1)
+    tomorrow_rows = [row for row in prioritized_tasks if any(
+        value and _as_utc(value).astimezone(ZoneInfo(settings.timezone_name)).date() == tomorrow
+        for value in (row['task'].due_at, row['task'].planned_start_at))]
+    insights = study_insights(all_tasks, settings, profile.study_hours_per_week if profile else 0)
     return render_template(
         "dashboard.html",
         today_rows=today_rows,
+        tomorrow_rows=tomorrow_rows, insights=insights,
         overdue_rows=overdue_rows,
         profile=profile,
         active_task_count=active_task_count,

@@ -10,7 +10,7 @@
     </section>
     <section aria-labelledby="duration-chart-title"><h3 id="duration-chart-title">Estimated vs. actual duration</h3>
       {% if timing.durations %}<p class="chart-key"><span class="legend-estimate">Solid: estimated</span><span class="legend-actual">Striped: actual</span></p>
-      {% for row in timing.durations %}<div class="chart-row"><span>{{ row.title }}</span><div class="duration-track" aria-hidden="true"><i style="width:{{ row.estimated_width }}%"></i><i class="actual" style="width:{{ row.actual_width }}%"></i></div><span>{{ row.estimated|round(0)|int }} / {{ row.actual|round(0)|int }} min<span class="sr-only"> estimated / actual</span></span></div>{% endfor %}
+      {% for row in timing.durations %}{% if loop.index == 6 %}<details><summary>View {{ timing.durations|length - 5 }} more tasks</summary>{% endif %}<div class="chart-row"><span>{{ row.title }}</span><div class="duration-track" aria-hidden="true"><i style="width:{{ row.estimated_width }}%"></i><i class="actual" style="width:{{ row.actual_width }}%"></i></div><span>{{ row.estimated|round(0)|int }} / {{ row.actual|round(0)|int }} min<span class="sr-only"> estimated / actual</span></span></div>{% if loop.last and timing.durations|length > 5 %}</details>{% endif %}{% endfor %}
       {% else %}{{ empty_chart('Use Record time & complete in a task menu to compare your estimate with time spent.') }}{% endif %}
     </section>
   </div>

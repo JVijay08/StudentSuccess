@@ -152,3 +152,9 @@ def generate_assignment(description, today):
                     estimated_minutes=minutes, steps=validate_steps(result['steps'], minutes))
     except (ValueError, KeyError, TypeError):
         raise AIUnavailable('AI could not produce usable task details. Try again or enter them manually.') from None
+
+
+def remaining_requests(user_id):
+    day = datetime.now(timezone.utc).strftime('%Y-%m-%d')
+    quota = db.session.get(AIQuota, f'day:{day}:user:{user_id}')
+    return max(0, current_app.config['AI_USER_DAILY_LIMIT'] - (quota.used if quota else 0))

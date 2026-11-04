@@ -7,5 +7,5 @@
 <main id="main-content" class="legal-page">
 <a href="{{ url_for('main.home') }}">StudentSuccess home</a>
 <header><p class="eyebrow">YOUR PLANNER, YOUR CHOICES</p><h1>{{ title }}</h1><p>Effective October 3, 2026</p></header>
-<article class="legal-sheet">{% include 'legal/' ~ content ~ '.html' %}</article>
+<nav id="notice-contents" aria-label="On this page" hidden></nav><article class="legal-sheet">{% include 'legal/' ~ content ~ '.html' %}</article>
 </main>{% include '_legal_footer.html' %}</body></html>

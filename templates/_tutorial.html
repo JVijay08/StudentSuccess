@@ -2,7 +2,7 @@
 <aside id="tutorial-guide" class="tutorial-guide" aria-label="Interactive tutorial" data-target="{{ tutorial.target }}" data-step="{{ tutorial.index }}">
   <details open id="tutorial-panel">
     <summary><span class="tutorial-progress">Tutorial {{ tutorial.index + 1 }} of {{ tutorial.total }}</span><strong>{{ tutorial.title }}</strong><span class="tutorial-expand">Instructions</span></summary>
-    <div class="tutorial-content">
+    <div class="tutorial-content"><progress max="{{ tutorial.total }}" value="{{ tutorial.index + 1 }}" aria-label="Tutorial section position">Section {{ tutorial.index + 1 }} of {{ tutorial.total }}</progress>
       <p>{{ tutorial.description }}</p>
       <p class="tutorial-hint" role="status" id="tutorial-hint">Try the controls on the page. You can skip an exercise with Next section.</p>
       <noscript><p>Follow the instructions above to find each control. Section navigation works without JavaScript; highlighting needs JavaScript.</p></noscript>

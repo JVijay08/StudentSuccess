@@ -20,17 +20,17 @@
     <section class="landing-hero" aria-labelledby="landing-title">
       <div class="landing-intro">
         <h1 id="landing-title">Your courses.<br>Your next assignment.</h1>
-        <p class="landing-lede">See what is due, choose what to start, and keep your course plan nearby.</p>
+        <p class="landing-small">Built by a student, for students.</p><p class="landing-lede">See what is due, choose what to start, and keep your course plan nearby.</p>
 
         <div class="landing-actions"><form method="post" action="{{ url_for('tutorial.start') }}">{% include '_navigation_fields.html' %}<input type="hidden" name="csrf_token" value="{{ access_csrf_token() }}"><button class="primary-action">Start tutorial</button></form><a href="{{ nav_url('auth.register') }}">Create an account</a></div>
         <p class="landing-small">The tutorial is free to try. No account or credit card needed.</p>
       </div>
       <div class="landing-notebook" aria-label="Interactive example planner">
-        <div class="notebook-heading"><strong>Your working notebook</strong><span>Example planner</span></div>
+        <p class="sample-assurance"><strong>Try this sample freely.</strong> Changes here stay on this page; nothing is saved or sent to AI.</p><div class="notebook-heading"><strong>Your working notebook</strong><span>Example planner</span></div>
         <div class="preview-tabs" hidden role="tablist" aria-label="Explore the planner"><button role="tab" id="tab-today" aria-controls="preview-today" aria-selected="true">Today</button><button role="tab" id="tab-steps" aria-controls="preview-steps" aria-selected="false" tabindex="-1">Project steps</button><button role="tab" id="tab-courses" aria-controls="preview-courses" aria-selected="false" tabindex="-1">Courses</button></div>
         <section id="preview-today" class="notebook-page">
           <p class="landing-small">START HERE</p><h2>Draft your introduction</h2><p>Composition &middot; 45 minutes &middot; Due tonight</p>
-          <p class="notebook-reason">A deadline within 24 hours puts this near the top. See why a task is recommended before you begin.</p>
+          <button type="button" class="secondary" id="sample-scenario" hidden>Try another priority scenario</button><p class="notebook-reason" id="sample-priority-reason">A deadline within 24 hours puts this near the top. See why a task is recommended before you begin.</p>
           <div class="notebook-row"><strong>Review biology notes</strong><span>30 min &middot; Tomorrow</span></div>
           <div class="notebook-row"><strong>Research paper</strong><span data-sample-count>2 of 5 steps complete</span></div>
           <label class="landing-small" for="sample-progress">Research paper progress</label><progress id="sample-progress" value="2" max="5">2 of 5 steps</progress>
@@ -41,7 +41,7 @@
       </div>
     </section>
 
-    <section id="features" class="landing-section" aria-labelledby="features-title" tabindex="-1">
+    <details class="landing-section"><summary>Why use this instead of a regular checklist?</summary><p>A checklist records what needs doing. StudentSuccess also ranks active work by status, deadlines, planned starts, and your estimates, with a reason you can inspect. You stay in control of what to start.</p><p>Split large assignments into steps and keep your course plan alongside your daily tasks.</p></details><section id="features" class="landing-section" aria-labelledby="features-title" tabindex="-1">
       <div class="section-heading"><div><h2 id="features-title">What are you working on?</h2><p>A semester of classes, a paper due Friday, or tonight's homework.</p></div></div>
       <dl class="landing-feature-list">
         <div><dt><svg class="feature-sketch" viewBox="0 0 72 50" aria-hidden="true" focusable="false"><rect x="5" y="6" width="62" height="38" rx="4"/><path d="M5 17h62M25 17v27M46 17v27"/><path class="sketch-accent" d="M11 24h8v6h-8zM31 33h9v6h-9zM52 24h9v6h-9z"/></svg><span>High school and college courses</span></dt><dd>Keep AP Biology and a college English class in the same plan. Compare workload before choosing another class.</dd></div>
