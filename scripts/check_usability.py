@@ -40,6 +40,20 @@ try:
         page.locator('.quick-controls button').nth(1).click()
         expect(page.locator('[data-task-search-status]')).to_contain_text('matching task')
         page.goto(base + '/settings')
+        for width in (390, 1358):
+            page.set_viewport_size({'width': width, 'height': 850})
+            page.evaluate('scrollTo(0, 0)')
+            page.locator('#workspace-tools > summary').click()
+            assert page.evaluate('''() => {
+                const panel = document.querySelector('.utility-panel');
+                const menu = panel.getBoundingClientRect();
+                const bar = document.querySelector('.settings-toolbar').getBoundingClientRect();
+                const x = Math.max(menu.left, bar.left) + 10;
+                const y = Math.max(menu.top, bar.top) + 10;
+                return x < Math.min(menu.right, bar.right) && y < Math.min(menu.bottom, bar.bottom)
+                    && panel.contains(document.elementFromPoint(x, y));
+            }'''), ('Menu covered by save bar', width)
+            page.keyboard.press('Escape')
         search = page.locator('[data-settings-search] input')
         search.fill('timezone')
         expect(page.locator('#workspace-settings > details:visible')).to_have_count(1)
